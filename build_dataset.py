@@ -243,6 +243,43 @@ def extract_label():
     return label_info
 
 
+"""
+    pkg_info.csv 的行数据不合规，把它处理为每列数据一一对应
+    :param in_file:
+    :param out_file:
+    :return:
+"""
+def convert_csv(in_file, out_file):
+    
+    def csv_reader(file):
+        reader = csv.reader(open(file))
+        next(reader)
+        return reader
+
+
+    def csv_writer(file):
+        writer = csv.writer(open(file, 'w', newline=''))
+        return writer
+
+    reader = csv_reader(in_file)
+    writer = csv_writer(out_file)
+    writer.writerow(["pkg_name", "desc_keyword", "pagerank", "in_degree", "out_degree", "label"])
+    for line in reader:
+        row = list()
+        text_rank = list()
+        keyword_rank = list()   # 存储每个关键词及排名的元组
+        for i, col in enumerate(line):
+            if 1 <= i <= 10:
+                col = re.findall(r'[A-Za-z]+|[0-9]+[.]?[0-9]+', col).pop(0)   # 正则表达式避免使用 *，否则将匹配出空字符串
+                keyword_rank.append(col)
+                if i % 2 == 0:
+                    text_rank.append(tuple(keyword_rank))
+                    keyword_rank.clear()
+                if i == 10:
+                    row.append(text_rank)
+            else:
+                row.append(col)
+        writer.writerow(row)
 
 
 words = {}
@@ -274,3 +311,5 @@ for key in package_info.keys():
         f.write(",{}".format(package_info[key][k]))
     f.write("\n")
 f.close()
+
+convert_csv('pkg_info.csv','pkg_info.csv');
