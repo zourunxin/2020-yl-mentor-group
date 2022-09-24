@@ -1,0 +1,50 @@
+digraph dep_Picture {
+	graph [rankdir=LR]
+	awscli
+	awscli -> "python-botocore"
+	awscli -> "python-s3transfer"
+	booth
+	booth -> pacemaker
+	booth -> "resource-agents"
+	clufter
+	corosync
+	corosync -> kronosnet
+	"corosync-qdevice"
+	"corosync-qdevice" -> corosync
+	"fence-agents"
+	"fence-agents" -> "python-boto3"
+	"fence-agents" -> "python3-azure-sdk"
+	"fence-agents" -> "google-api-python-client"
+	kronosnet
+	pacemaker
+	pacemaker -> corosync
+	pacemaker -> pacemaker
+	pacemaker -> "resource-agents"
+	pcs
+	pcs -> pacemaker
+	pcs -> clufter
+	pcs -> pcs
+	"python3-azure-sdk"
+	"python-boto3"
+	"python-boto3" -> "python-botocore"
+	"python-boto3" -> "python-s3transfer"
+	"python-botocore"
+	"python-fasteners"
+	"python-gflags"
+	"google-api-python-client"
+	"google-api-python-client" -> "python-httplib2"
+	"google-api-python-client" -> "python-oauth2client"
+	"google-api-python-client" -> "python-uritemplate"
+	"python-httplib2"
+	"python-oauth2client"
+	"python-oauth2client" -> "python-fasteners"
+	"python-oauth2client" -> "python-gflags"
+	"python-oauth2client" -> "python-httplib2"
+	"python-s3transfer"
+	"python-s3transfer" -> "python-botocore"
+	"python-uritemplate"
+	"resource-agents"
+	"resource-agents" -> "resource-agents"
+	"resource-agents" -> "google-api-python-client"
+}
+

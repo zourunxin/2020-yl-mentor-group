@@ -1,0 +1,1021 @@
+digraph dep_Picture {
+	graph [rankdir=LR]
+	CUnit
+	GConf2
+	LibRaw
+	ModemManager
+	NetworkManager
+	OpenEXR
+	OpenIPMI
+	PackageKit
+	SDL2
+	SuperLU
+	Xaw3d
+	"accel-config"
+	accountsservice
+	"adwaita-icon-theme"
+	asciidoc
+	aspell
+	atkmm
+	augeas
+	"autoconf-archive"
+	autoconf213
+	autogen
+	autotrace
+	autotrace -> pstoedit
+	avahi
+	babl
+	bash
+	bcc
+	"bind9.16"
+	bison
+	lapack
+	lapack -> lapack
+	bluez
+	boost
+	boost -> mpich
+	boost -> openmpi
+	brasero
+	brltty
+	cairomm
+	cdparanoia
+	celt051
+	clucene
+	clutter
+	"clutter-gst3"
+	"clutter-gtk"
+	codemodel
+	codemodel -> "javapackages-tools"
+	cogl
+	colord
+	"colord-gtk"
+	"compat-guile18"
+	corosync
+	corosync -> kronosnet
+	cppcheck
+	cppunit
+	cracklib
+	crash
+	ctags
+	"cups-filters"
+	dblatex
+	"dbus-c++"
+	dconf
+	dejagnu
+	devhelp
+	lvm2
+	"device-mapper-multipath"
+	"docbook-style-dsssl"
+	"docbook-style-dsssl" -> openjade
+	"docbook-utils"
+	"docbook-utils" -> "docbook-style-dsssl"
+	"docbook-utils" -> "perl-SGMLSpm"
+	"docbook-utils" -> elinks
+	docbook2X
+	docbook2X -> opensp
+	docbook2X -> openjade
+	docbook2X -> texinfo
+	"docbook5-schemas"
+	dotconf
+	"dotnet-build-reference-packages"
+	"dotnet3.1"
+	"dotnet5.0"
+	"dotnet6.0"
+	"dotnet5.0-build-reference-packages"
+	dovecot
+	doxygen
+	drpm
+	dtc
+	dwarves
+	dyninst
+	efivar
+	eglexternalplatform
+	eigen3
+	elfutils
+	elinks
+	enca
+	enchant
+	enchant2
+	evince
+	"evolution-data-server"
+	evolution
+	execstack
+	exempi
+	exiv2
+	fftw
+	file
+	fipscheck
+	flac
+	flatpak
+	flex
+	flite
+	fltk
+	"fontawesome-fonts"
+	fontconfig
+	fontforge
+	fontforge -> autotrace
+	fontforge -> libuninameslist
+	fontpackages
+	freeipmi
+	freerdp
+	"frei0r-plugins"
+	"fuse-sshfs"
+	fwupd
+	gamin
+	gc
+	gcc
+	"gcc-toolset-10-gcc"
+	"gcc-toolset-9-dyninst"
+	"gcc-toolset-9-dyninst" -> glibc
+	"gcc-toolset-9-gcc"
+	"gdk-pixbuf2"
+	gdm
+	gegl04
+	geoclue2
+	gflags
+	ghostscript
+	giflib
+	gjs
+	glade
+	glew
+	glib2
+	glibc
+	glibc -> libxcrypt
+	glibmm24
+	glm
+	glog
+	glog -> gflags
+	glusterfs
+	gtest
+	"gnome-bluetooth"
+	"gnome-common"
+	"gnome-common" -> "autoconf-archive"
+	"gnome-menus"
+	"gnome-software"
+	"gnu-efi"
+	gnuplot
+	"go-compilers"
+	"google-noto-cjk-fonts"
+	"google-roboto-slab-fonts"
+	gperf
+	gpgme
+	graphviz
+	grilo
+	groff
+	gsm
+	gspell
+	gssdp
+	"gstreamer1-plugins-bad-free"
+	"gtk-doc"
+	gtkmm24
+	gtkmm24 -> glibmm24
+	gtkmm30
+	gtksourceview3
+	gtkspell
+	gtkspell3
+	guile
+	gupnp
+	"gupnp-igd"
+	help2man
+	hesiod
+	"http-parser"
+	hwloc
+	hyphen
+	ibus
+	"ibus-table"
+	"ibus-typing-booster"
+	ilmbase
+	"ima-evm-utils"
+	imake
+	"intel-cmt-cat"
+	iproute
+	ipset
+	irssi
+	"iscsi-initiator-utils"
+	isl
+	"istack-commons"
+	"istack-commons" -> "javapackages-tools"
+	"istack-commons" -> "jvnet-parent"
+	"istack-commons" -> "maven-plugin-bundle"
+	jasper
+	"java-1.8.0-openjdk"
+	"java-1.8.0-openjdk" -> "java-1.8.0-openjdk"
+	"java-1.8.0-openjdk" -> "javapackages-tools"
+	"java-11-openjdk"
+	"java-11-openjdk" -> "java-11-openjdk"
+	"java-11-openjdk" -> "javapackages-tools"
+	"java-17-openjdk"
+	"java-17-openjdk" -> "java-17-openjdk"
+	"java-17-openjdk" -> "javapackages-tools"
+	jbigkit
+	jimtcl
+	jq
+	"uglify-js"
+	"uglify-js" -> "web-assets"
+	"json-c"
+	kernel
+	keybinder3
+	kmod
+	ladspa
+	lame
+	lasso
+	latex2html
+	lcms2
+	ldns
+	lensfun
+	leptonica
+	libEMF
+	libIDL
+	libXNVCtrl
+	libXdmcp
+	libXfont2
+	libXres
+	libXvMC
+	libaec
+	libao
+	libappindicator
+	"libappstream-glib"
+	libarchive
+	libassuan
+	libasyncns
+	libatasmart
+	libatomic_ops
+	babeltrace
+	"ding-libs"
+	libblockdev
+	libbpf
+	libburn
+	libbytesize
+	libcdio
+	"libcdio-paranoia"
+	ceph
+	libchamplain
+	cmocka
+	libcomps
+	libconfig
+	libcroco
+	libdaemon
+	libdap
+	libdatrie
+	libdazzle
+	libdb
+	libdbusmenu
+	libdnet
+	libdnf
+	libdv
+	libdvdread
+	libdwarf
+	libdwarf -> libdwarf
+	libecpg
+	libedit
+	libeot
+	libepubgen
+	libetonyek
+	libevdev
+	libexif
+	libfabric
+	libfontenc
+	gcab
+	libgee
+	libgexiv2
+	libgit2
+	"libgit2-glib"
+	libgnomekbd
+	libgphoto2
+	libgpod
+	libgsf
+	libgtop2
+	libgudev
+	libgusb
+	libgxps
+	libhbaapi
+	libidn
+	libiec61883
+	libimobiledevice
+	libindicator
+	libinput
+	libisoburn
+	libisofs
+	kronosnet
+	libksba
+	liblangtag
+	liblockfile
+	libmad
+	libmemcached
+	libmicrohttpd
+	libmodulemd
+	"util-linux"
+	libmpcdec
+	libmspack
+	libmtp
+	libmusicbrainz5
+	libnet
+	libnetfilter_conntrack
+	libnetfilter_queue
+	libnfnetlink
+	"nfs-utils"
+	libnftnl
+	nghttp2
+	libnice
+	libnma
+	libnsl2
+	libodfgen
+	libogg
+	liboggz
+	libopenraw
+	libpaper
+	libpcap
+	libpeas
+	libpfm
+	libpinyin
+	libplist
+	pmdk
+	libproxy
+	libpsl
+	libpsm2
+	pidgin
+	libpwquality
+	qhull
+	libquvi
+	librabbitmq
+	libraw1394
+	librdkafka
+	libreoffice
+	librepo
+	librevenge
+	librhsm
+	librx
+	libsamplerate
+	libsass
+	libselinux
+	libsemanage
+	libsepol
+	libshout
+	"libsigc++20"
+	libsigsegv
+	samba
+	libsmi
+	libsndfile
+	libsolv
+	libspectre
+	libsrtp
+	e2fsprogs
+	sssd
+	libstemmer
+	libstoragemgmt
+	sysfsutils
+	libthai
+	libtheora
+	libtiff
+	libucil
+	udisks2
+	libunicap
+	libuninameslist
+	libunistring
+	liburing
+	libusb
+	libusbmuxd
+	libuser
+	libutempter
+	libuv
+	"v4l-utils"
+	libvarlink
+	libvdpau
+	libvisio
+	libvisual
+	libvncserver
+	libvoikko
+	libvorbis
+	libvorbis -> libvorbis
+	libvpx
+	libwacom
+	libwmf
+	libwnck3
+	libwpd
+	libwpg
+	libwps
+	openwsman
+	libxcrypt
+	libxcrypt -> glibc
+	libxkbcommon
+	libxkbfile
+	libxklavier
+	libxmlb
+	libyaml
+	"linuxdoc-tools"
+	"linuxdoc-tools" -> groff
+	"linuxdoc-tools" -> openjade
+	lmdb
+	lockdev
+	lpsolve
+	"lttng-ust"
+	lua
+	"lua-filesystem"
+	"lua-lunit"
+	"lua-posix"
+	lynx
+	memkind
+	mesa
+	meson
+	meson -> "ninja-build"
+	metis
+	"mingw-binutils"
+	"mingw-binutils" -> "mingw-filesystem"
+	"mingw-filesystem"
+	"mingw-bzip2"
+	"mingw-bzip2" -> "mingw-filesystem"
+	"mingw-bzip2" -> "mingw-crt"
+	"mingw-bzip2" -> "mingw-pkg-config"
+	"mingw-cairo"
+	"mingw-cairo" -> "mingw-filesystem"
+	"mingw-cairo" -> "mingw-gcc"
+	"mingw-cairo" -> "mingw-glib2"
+	"mingw-cairo" -> "mingw-pixman"
+	"mingw-cairo" -> "mingw-libpng"
+	"mingw-cairo" -> "mingw-zlib"
+	"mingw-cairo" -> "mingw-crt"
+	"mingw-cairo" -> "mingw-fontconfig"
+	"mingw-cairo" -> "mingw-freetype"
+	"mingw-cairo" -> "mingw-pkg-config"
+	"mingw-gcc"
+	"mingw-gcc" -> "mingw-filesystem"
+	"mingw-gcc" -> "mingw-winpthreads"
+	"mingw-gcc" -> "mingw-binutils"
+	"mingw-gcc" -> "mingw-crt"
+	"mingw-gcc" -> "mingw-headers"
+	"mingw-crt"
+	"mingw-crt" -> "mingw-filesystem"
+	"mingw-expat"
+	"mingw-expat" -> "mingw-filesystem"
+	"mingw-expat" -> "mingw-crt"
+	"mingw-expat" -> "mingw-pkg-config"
+	"mingw-fontconfig"
+	"mingw-fontconfig" -> "mingw-filesystem"
+	"mingw-fontconfig" -> "mingw-expat"
+	"mingw-fontconfig" -> "mingw-freetype"
+	"mingw-fontconfig" -> "mingw-gcc"
+	"mingw-fontconfig" -> "mingw-crt"
+	"mingw-fontconfig" -> "mingw-pkg-config"
+	"mingw-freetype"
+	"mingw-freetype" -> "mingw-filesystem"
+	"mingw-freetype" -> "mingw-bzip2"
+	"mingw-freetype" -> "mingw-libpng"
+	"mingw-freetype" -> "mingw-zlib"
+	"mingw-freetype" -> "mingw-crt"
+	"mingw-freetype" -> "mingw-pkg-config"
+	"mingw-gettext"
+	"mingw-gettext" -> "mingw-filesystem"
+	"mingw-gettext" -> "mingw-win-iconv"
+	"mingw-gettext" -> "mingw-gcc"
+	"mingw-gettext" -> "mingw-termcap"
+	"mingw-gettext" -> "mingw-crt"
+	"mingw-glib2"
+	"mingw-glib2" -> "mingw-filesystem"
+	"mingw-glib2" -> "mingw-libffi"
+	"mingw-glib2" -> "mingw-gcc"
+	"mingw-glib2" -> "mingw-gettext"
+	"mingw-glib2" -> "mingw-pcre"
+	"mingw-glib2" -> "mingw-zlib"
+	"mingw-glib2" -> "mingw-crt"
+	"mingw-glib2" -> "mingw-pkg-config"
+	"mingw-gstreamer1"
+	"mingw-gstreamer1" -> "mingw-filesystem"
+	"mingw-gstreamer1" -> "mingw-gcc"
+	"mingw-gstreamer1" -> "mingw-glib2"
+	"mingw-gstreamer1" -> "mingw-gettext"
+	"mingw-gstreamer1" -> "mingw-winpthreads"
+	"mingw-gstreamer1" -> "mingw-crt"
+	"mingw-gstreamer1" -> "mingw-pkg-config"
+	"mingw-harfbuzz"
+	"mingw-harfbuzz" -> "mingw-icu"
+	"mingw-harfbuzz" -> "mingw-filesystem"
+	"mingw-harfbuzz" -> "mingw-cairo"
+	"mingw-harfbuzz" -> "mingw-freetype"
+	"mingw-harfbuzz" -> "mingw-gcc"
+	"mingw-harfbuzz" -> "mingw-glib2"
+	"mingw-harfbuzz" -> "mingw-crt"
+	"mingw-harfbuzz" -> "mingw-pkg-config"
+	"mingw-headers"
+	"mingw-headers" -> "mingw-filesystem"
+	"mingw-headers" -> "mingw-winpthreads"
+	"mingw-icu"
+	"mingw-icu" -> "mingw-filesystem"
+	"mingw-icu" -> "mingw-gcc"
+	"mingw-icu" -> "mingw-crt"
+	"mingw-icu" -> "mingw-pkg-config"
+	"mingw-libffi"
+	"mingw-libffi" -> "mingw-filesystem"
+	"mingw-libffi" -> "mingw-crt"
+	"mingw-libffi" -> "mingw-pkg-config"
+	"mingw-libjpeg-turbo"
+	"mingw-libjpeg-turbo" -> "mingw-filesystem"
+	"mingw-libjpeg-turbo" -> "mingw-crt"
+	"mingw-libpng"
+	"mingw-libpng" -> "mingw-filesystem"
+	"mingw-libpng" -> "mingw-gcc"
+	"mingw-libpng" -> "mingw-zlib"
+	"mingw-libpng" -> "mingw-crt"
+	"mingw-libpng" -> "mingw-pkg-config"
+	"mingw-libtiff"
+	"mingw-libtiff" -> "mingw-filesystem"
+	"mingw-libtiff" -> "mingw-gcc"
+	"mingw-libtiff" -> "mingw-libjpeg-turbo"
+	"mingw-libtiff" -> "mingw-zlib"
+	"mingw-libtiff" -> "mingw-crt"
+	"mingw-libtiff" -> "mingw-pkg-config"
+	"mingw-openssl"
+	"mingw-openssl" -> "mingw-filesystem"
+	"mingw-openssl" -> "mingw-gcc"
+	"mingw-openssl" -> "mingw-zlib"
+	"mingw-openssl" -> "mingw-crt"
+	"mingw-openssl" -> "mingw-pkg-config"
+	"mingw-pcre"
+	"mingw-pcre" -> "mingw-filesystem"
+	"mingw-pcre" -> "mingw-gcc"
+	"mingw-pcre" -> "mingw-crt"
+	"mingw-pcre" -> "mingw-pkg-config"
+	"mingw-pixman"
+	"mingw-pixman" -> "mingw-filesystem"
+	"mingw-pixman" -> "mingw-gcc"
+	"mingw-pixman" -> "mingw-crt"
+	"mingw-pixman" -> "mingw-pkg-config"
+	"mingw-pkg-config"
+	"mingw-pkg-config" -> "mingw-filesystem"
+	"mingw-readline"
+	"mingw-readline" -> "mingw-filesystem"
+	"mingw-readline" -> "mingw-termcap"
+	"mingw-readline" -> "mingw-crt"
+	"mingw-sqlite"
+	"mingw-sqlite" -> "mingw-filesystem"
+	"mingw-sqlite" -> "mingw-gcc"
+	"mingw-sqlite" -> "mingw-crt"
+	"mingw-sqlite" -> "mingw-pkg-config"
+	"mingw-termcap"
+	"mingw-termcap" -> "mingw-filesystem"
+	"mingw-termcap" -> "mingw-crt"
+	"mingw-win-iconv"
+	"mingw-win-iconv" -> "mingw-filesystem"
+	"mingw-win-iconv" -> "mingw-crt"
+	"mingw-winpthreads"
+	"mingw-winpthreads" -> "mingw-filesystem"
+	"mingw-winpthreads" -> "mingw-crt"
+	"mingw-zlib"
+	"mingw-zlib" -> "mingw-filesystem"
+	"mingw-zlib" -> "mingw-crt"
+	"mingw-zlib" -> "mingw-pkg-config"
+	"mobile-broadband-provider-info"
+	mozjs52
+	mozjs60
+	mpg123
+	mtdev
+	munge
+	mutter
+	mythes
+	nasm
+	nautilus
+	neon
+	netpbm
+	nftables
+	"ninja-build"
+	nkf
+	nmstate
+	ocaml
+	"ocaml-camlp4"
+	"ocaml-camlp4" -> ocaml
+	"ocaml-cppo"
+	"ocaml-extlib"
+	"ocaml-extlib" -> ocaml
+	"ocaml-findlib"
+	"ocaml-findlib" -> ocaml
+	"ocaml-labltk"
+	"ocaml-labltk" -> ocaml
+	"ocaml-ocamlbuild"
+	"ocaml-ocamlbuild" -> ocaml
+	"ocl-icd"
+	oniguruma
+	"openal-soft"
+	openblas
+	"opencl-headers"
+	opencryptoki
+	opencv
+	openjade
+	openjade -> opensp
+	openjpeg2
+	openldap
+	openscap
+	opensm
+	opensp
+	pandoc
+	pangomm
+	papi
+	parted
+	pcre
+	pcre2
+	"pcsc-lite"
+	"perl-AnyEvent"
+	"perl-B-Hooks-EndOfScope"
+	"perl-B-Hooks-EndOfScope" -> "perl-Module-Implementation"
+	"perl-B-Hooks-EndOfScope" -> "perl-Sub-Exporter-Progressive"
+	"perl-B-Hooks-EndOfScope" -> "perl-Variable-Magic"
+	"perl-Canary-Stability"
+	"perl-Capture-Tiny"
+	"perl-Class-Accessor"
+	"perl-Class-Data-Inheritable"
+	"perl-Class-Factory-Util"
+	"perl-Class-Method-Modifiers"
+	"perl-Class-Singleton"
+	"perl-Class-Tiny"
+	"perl-Class-XSAccessor"
+	"perl-Clone"
+	"perl-Config-AutoConf"
+	"perl-Config-AutoConf" -> "perl-Capture-Tiny"
+	"perl-Data-UUID"
+	"perl-Date-ISO8601"
+	"perl-DateTime"
+	"perl-DateTime" -> "perl-DateTime-Locale"
+	"perl-DateTime" -> "perl-DateTime-TimeZone"
+	"perl-DateTime" -> "perl-Dist-CheckConflicts"
+	"perl-DateTime" -> "perl-Params-ValidationCompiler"
+	"perl-DateTime" -> "perl-Specio"
+	"perl-DateTime" -> "perl-namespace-autoclean"
+	"perl-DateTime-Format-Builder"
+	"perl-DateTime-Format-Builder" -> "perl-Class-Factory-Util"
+	"perl-DateTime-Format-Builder" -> "perl-DateTime"
+	"perl-DateTime-Format-Builder" -> "perl-DateTime-Format-Strptime"
+	"perl-DateTime-Format-Builder" -> "perl-Params-Validate"
+	"perl-DateTime-Format-HTTP"
+	"perl-DateTime-Format-HTTP" -> "perl-DateTime"
+	"perl-DateTime-Format-ISO8601"
+	"perl-DateTime-Format-ISO8601" -> "perl-DateTime"
+	"perl-DateTime-Format-ISO8601" -> "perl-DateTime-Format-Builder"
+	"perl-DateTime-Format-ISO8601" -> "perl-Params-Validate"
+	"perl-DateTime-Format-Mail"
+	"perl-DateTime-Format-Mail" -> "perl-DateTime"
+	"perl-DateTime-Format-Mail" -> "perl-Params-Validate"
+	"perl-DateTime-Format-Strptime"
+	"perl-DateTime-Format-Strptime" -> "perl-DateTime"
+	"perl-DateTime-Format-Strptime" -> "perl-DateTime-Locale"
+	"perl-DateTime-Format-Strptime" -> "perl-DateTime-TimeZone"
+	"perl-DateTime-Format-Strptime" -> "perl-Package-DeprecationManager"
+	"perl-DateTime-Format-Strptime" -> "perl-Params-ValidationCompiler"
+	"perl-DateTime-Format-Strptime" -> "perl-Specio"
+	"perl-DateTime-Locale"
+	"perl-DateTime-Locale" -> "perl-Dist-CheckConflicts"
+	"perl-DateTime-Locale" -> "perl-Params-ValidationCompiler"
+	"perl-DateTime-Locale" -> "perl-Specio"
+	"perl-DateTime-Locale" -> "perl-namespace-autoclean"
+	"perl-DateTime-TimeZone"
+	"perl-DateTime-TimeZone" -> "perl-Class-Singleton"
+	"perl-DateTime-TimeZone" -> "perl-DateTime"
+	"perl-DateTime-TimeZone" -> "perl-DateTime-TimeZone-Tzfile"
+	"perl-DateTime-TimeZone" -> "perl-Params-ValidationCompiler"
+	"perl-DateTime-TimeZone" -> "perl-Specio"
+	"perl-DateTime-TimeZone" -> "perl-namespace-autoclean"
+	"perl-DateTime-TimeZone-SystemV"
+	"perl-DateTime-TimeZone-SystemV" -> "perl-Date-ISO8601"
+	"perl-DateTime-TimeZone-SystemV" -> "perl-Params-Classify"
+	"perl-DateTime-TimeZone-Tzfile"
+	"perl-DateTime-TimeZone-Tzfile" -> "perl-Date-ISO8601"
+	"perl-DateTime-TimeZone-Tzfile" -> "perl-DateTime-TimeZone-SystemV"
+	"perl-DateTime-TimeZone-Tzfile" -> "perl-Params-Classify"
+	"perl-Devel-CallChecker"
+	"perl-Devel-CallChecker" -> "perl-DynaLoader-Functions"
+	"perl-Devel-Caller"
+	"perl-Devel-Caller" -> "perl-PadWalker"
+	"perl-Devel-CheckLib"
+	"perl-Devel-GlobalDestruction"
+	"perl-Devel-GlobalDestruction" -> "perl-Sub-Exporter-Progressive"
+	"perl-Devel-LexAlias"
+	"perl-Devel-LexAlias" -> "perl-Devel-Caller"
+	"perl-Devel-StackTrace"
+	"perl-Devel-Symdump"
+	"perl-Digest-CRC"
+	"perl-Digest-SHA1"
+	"perl-Dist-CheckConflicts"
+	"perl-DynaLoader-Functions"
+	"perl-Eval-Closure"
+	"perl-Eval-Closure" -> "perl-Devel-LexAlias"
+	"perl-Eval-Closure" -> perltidy
+	"perl-Exception-Class"
+	"perl-Exception-Class" -> "perl-Class-Data-Inheritable"
+	"perl-Exception-Class" -> "perl-Devel-StackTrace"
+	"perl-Exporter-Tiny"
+	"perl-File-BaseDir"
+	"perl-File-Copy-Recursive"
+	"perl-File-DesktopEntry"
+	"perl-File-DesktopEntry" -> "perl-File-BaseDir"
+	"perl-File-Find-Object"
+	"perl-File-Find-Object" -> "perl-Class-XSAccessor"
+	"perl-File-Find-Rule"
+	"perl-File-Find-Rule" -> "perl-Number-Compare"
+	"perl-File-MimeInfo"
+	"perl-File-MimeInfo" -> "perl-File-BaseDir"
+	"perl-File-MimeInfo" -> "perl-File-DesktopEntry"
+	"perl-File-ReadBackwards"
+	"perl-File-Remove"
+	"perl-File-chdir"
+	"perl-HTML-Tree"
+	"perl-HTTP-Daemon"
+	"perl-IO-All"
+	"perl-IO-All" -> "perl-File-MimeInfo"
+	"perl-IO-All" -> "perl-File-ReadBackwards"
+	"perl-IO-Tty"
+	"perl-IO-stringy"
+	"perl-IPC-Run"
+	"perl-IPC-Run" -> "perl-IO-Tty"
+	"perl-IPC-Run3"
+	"perl-Import-Into"
+	"perl-Importer"
+	"perl-JSON-XS"
+	"perl-JSON-XS" -> "perl-Types-Serialiser"
+	"perl-JSON-XS" -> "perl-common-sense"
+	"perl-List-MoreUtils"
+	"perl-List-MoreUtils" -> "perl-Exporter-Tiny"
+	"perl-List-MoreUtils" -> "perl-List-MoreUtils-XS"
+	"perl-List-MoreUtils-XS"
+	"perl-gettext"
+	"perl-MIME-Charset"
+	"perl-MIME-Types"
+	"perl-Module-Implementation"
+	"perl-Module-Install"
+	"perl-Module-Install" -> "perl-File-Remove"
+	"perl-Module-Install" -> "perl-Module-ScanDeps"
+	"perl-Module-Install" -> "perl-YAML-Tiny"
+	"perl-Module-Install-AuthorTests"
+	"perl-Module-Install-AuthorTests" -> "perl-Module-Install"
+	"perl-Module-Install-ReadmeFromPod"
+	"perl-Module-Install-ReadmeFromPod" -> "perl-Capture-Tiny"
+	"perl-Module-Install-ReadmeFromPod" -> "perl-IO-All"
+	"perl-Module-Install-ReadmeFromPod" -> "perl-Module-Install"
+	"perl-Module-Install-ReadmeFromPod" -> "perl-Pod-Markdown"
+	"perl-Module-ScanDeps"
+	"perl-Number-Compare"
+	"perl-Package-DeprecationManager"
+	"perl-Package-DeprecationManager" -> "perl-Package-Stash"
+	"perl-Package-DeprecationManager" -> "perl-Sub-Name"
+	"perl-Package-Stash"
+	"perl-Package-Stash" -> "perl-Dist-CheckConflicts"
+	"perl-Package-Stash" -> "perl-Module-Implementation"
+	"perl-Package-Stash" -> "perl-Package-Stash-XS"
+	"perl-Package-Stash-XS"
+	"perl-PadWalker"
+	"perl-Params-Classify"
+	"perl-Params-Classify" -> "perl-Devel-CallChecker"
+	"perl-Params-Validate"
+	"perl-Params-Validate" -> "perl-Module-Implementation"
+	"perl-Params-ValidationCompiler"
+	"perl-Params-ValidationCompiler" -> "perl-Eval-Closure"
+	"perl-Params-ValidationCompiler" -> "perl-Exception-Class"
+	"perl-Path-Tiny"
+	"perl-Path-Tiny" -> "perl-Unicode-UTF8"
+	"perl-Perl-Destruct-Level"
+	"perl-PerlIO-utf8_strict"
+	"perl-Pod-Coverage"
+	"perl-Pod-Coverage" -> "perl-Devel-Symdump"
+	"perl-Pod-Markdown"
+	"perl-Readonly"
+	"perl-Ref-Util"
+	"perl-Ref-Util" -> "perl-Ref-Util-XS"
+	"perl-Ref-Util-XS"
+	"perl-Role-Tiny"
+	"perl-Role-Tiny" -> "perl-Class-Method-Modifiers"
+	"perl-SGMLSpm"
+	"perl-SGMLSpm" -> openjade
+	"perl-SUPER"
+	"perl-SUPER" -> "perl-Sub-Identify"
+	"perl-Scope-Guard"
+	"perl-Specio"
+	"perl-Specio" -> "perl-Devel-StackTrace"
+	"perl-Specio" -> "perl-Eval-Closure"
+	"perl-Specio" -> "perl-Ref-Util"
+	"perl-Specio" -> "perl-Role-Tiny"
+	"perl-Sub-Exporter-Progressive"
+	"perl-Sub-Identify"
+	"perl-Sub-Info"
+	"perl-Sub-Info" -> "perl-Importer"
+	"perl-Sub-Name"
+	"perl-Sub-Uplevel"
+	"perl-Switch"
+	"perl-Taint-Runtime"
+	"perl-Term-Size-Any"
+	"perl-Term-Size-Any" -> "perl-Term-Size-Perl"
+	"perl-Term-Size-Perl"
+	"perl-Term-Table"
+	"perl-Term-Table" -> "perl-Importer"
+	"perl-Test-Deep"
+	"perl-Test-Differences"
+	"perl-Test-Exception"
+	"perl-Test-Exception" -> "perl-Sub-Uplevel"
+	"perl-Test-Fatal"
+	"perl-Test-LongString"
+	"perl-Test-NoWarnings"
+	"perl-Test-Pod"
+	"perl-Test-Pod-Coverage"
+	"perl-Test-Pod-Coverage" -> "perl-Pod-Coverage"
+	"perl-Test-Requires"
+	"perl-Test-Taint"
+	"perl-Test-Warn"
+	"perl-Test-Warn" -> "perl-Sub-Uplevel"
+	"perl-Test-Warnings"
+	"perl-Test2-Suite"
+	"perl-Test2-Suite" -> "perl-Importer"
+	"perl-Test2-Suite" -> "perl-Scope-Guard"
+	"perl-Test2-Suite" -> "perl-Sub-Info"
+	"perl-Test2-Suite" -> "perl-Term-Table"
+	"perl-Text-CharWidth"
+	"perl-Text-WrapI18N"
+	"perl-Text-WrapI18N" -> "perl-Text-CharWidth"
+	"perl-Tie-IxHash"
+	"perl-Tk"
+	"perl-Types-Serialiser"
+	"perl-Types-Serialiser" -> "perl-common-sense"
+	"perl-Unicode-EastAsianWidth"
+	"perl-Unicode-LineBreak"
+	"perl-Unicode-LineBreak" -> sombok
+	"perl-Unicode-LineBreak" -> "perl-MIME-Charset"
+	"perl-Unicode-UTF8"
+	"perl-Variable-Magic"
+	"perl-XML-DOM"
+	"perl-XML-DOM" -> "perl-XML-RegExp"
+	"perl-XML-RegExp"
+	"perl-XML-Twig"
+	"perl-XML-Twig" -> "perl-HTML-Tree"
+	"perl-XML-Twig" -> "perl-IO-stringy"
+	"perl-YAML-LibYAML"
+	"perl-YAML-Syck"
+	"perl-YAML-Tiny"
+	"perl-common-sense"
+	"perl-namespace-autoclean"
+	"perl-namespace-autoclean" -> "perl-B-Hooks-EndOfScope"
+	"perl-namespace-autoclean" -> "perl-Sub-Identify"
+	"perl-namespace-autoclean" -> "perl-namespace-clean"
+	"perl-namespace-clean"
+	"perl-namespace-clean" -> "perl-B-Hooks-EndOfScope"
+	"perl-namespace-clean" -> "perl-Package-Stash"
+	"perl-prefork"
+	perltidy
+	plotutils
+	pmix
+	po4a
+	po4a -> opensp
+	po4a -> "perl-gettext"
+	po4a -> "perl-Text-WrapI18N"
+	po4a -> "perl-Unicode-LineBreak"
+	po4a -> "perl-YAML-Tiny"
+	poppler
+	ppp
+	"pps-tools"
+	protobuf
+	pstoedit
+	pstoedit -> libEMF
+	pstoedit -> plotutils
+	scotch
+	py3c
+	pygobject3
+	"python-cups"
+	"python-sphinx"
+	"python-sphinx" -> "python-imagesize"
+	"python-sphinx" -> "python-mock"
+	"python-sphinx" -> "python-packaging"
+	"python-sphinx" -> "python-snowballstemmer"
+	"python-sphinx" -> "python-sphinx-theme-alabaster"
+	"python-sphinx" -> "python-sphinx_rtd_theme"
+	"python-sphinx" -> "python-sphinxcontrib-websupport"
+	"python-iso8601"
+	Cython
+	"python-greenlet"
+	"python-httplib2"
+	"python-hypothesis"
+	"python-imagesize"
+	"python-lesscpy"
+	"python-markdown"
+	"python-mock"
+	mpich
+	openmpi
+	"python-packaging"
+	"python-pillow"
+	pyxattr
+	"python-qt5"
+	rrdtool
+	scons
+	"python-setuptools_scm"
+	sip
+	"python-snowballstemmer"
+	"python-sphinx-theme-alabaster"
+	"python-sphinx_rtd_theme"
+	"python-sphinx_rtd_theme" -> "google-roboto-slab-fonts"
+	"python-sphinx_rtd_theme" -> "fontawesome-fonts"
+	"python-sphinxcontrib-websupport"
+	"python-sphinxcontrib-websupport" -> "python-sphinx"
+	"python-sphinxcontrib-websupport" -> "python-whoosh"
+	"python-sure"
+	"python-unittest2"
+	"python-whoosh"
+	qatlib
+	qatzip
+	qrencode
+	qt5
+	"qt5-qtbase"
+	"qt5-qtbase" -> libinput
+	"qt5-qtdeclarative"
+	"qt5-qtquickcontrols2"
+	"qt5-qtserialbus"
+	"qt5-qttools"
+	"qt5-qtwayland"
+	quota
+	raptor2
+	rasqal
+	re2c
+	recode
+	redland
+	"rpcsvc-proto"
+	"rubygem-diff-lcs"
+	"rubygem-rspec"
+	"rubygem-rspec-core"
+	"rubygem-rspec-expectations"
+	"rubygem-rspec-mocks"
+	"rubygem-rspec-support"
+	sanlock
+	"sblim-cmpi-devel"
+	"sblim-gather"
+	"sblim-sfcc"
+	sendmail
+	sg3_utils
+	"shadow-utils"
+	sharutils
+	"shim-unsigned-x64"
+	snappy
+	socket_wrapper
+	sombok
+	soundtouch
+	sparsehash
+	"speech-dispatcher"
+	speex
+	speexdsp
+	spice
+	"spirv-tools"
+	suitesparse
+	taglib
+	tesseract
+	texi2html
+	texi2html -> latex2html
+	texi2html -> "perl-Unicode-EastAsianWidth"
+	texinfo
+	texinfo -> "perl-Unicode-EastAsianWidth"
+	texinfo -> texinfo
+	texlive
+	tinycdb
+	tinyxml2
+	tix
+	"tog-pegasus"
+	tokyocabinet
+	torque
+	"tpm-tools"
+	"tpm2-abrmd"
+	tracker
+	transfig
+	trousers
+	tss2
+	"libjpeg-turbo"
+	twolame
+	uid_wrapper
+	"unicode-ucd"
+	upower
+	"urw-base35-fonts"
+	"userspace-rcu"
+	ustr
+	uthash
+	uuid
+	vala
+	vte291
+	wavpack
+	"web-assets"
+	"webrtc-audio-processing"
+	wireshark
+	woff2
+	"xapian-core"
+	"xcb-proto"
+	"xcb-util"
+	"xcb-util-image"
+	"xcb-util-keysyms"
+	"xcb-util-renderutil"
+	"xcb-util-wm"
+	"xhtml1-dtds"
+	"xmlrpc-c"
+	xmlsec1
+	xmltoman
+	"xorg-x11-apps"
+	"xorg-x11-drv-libinput"
+	"xorg-x11-drv-wacom"
+	"xorg-x11-server"
+	"xorg-x11-util-macros"
+	"xorg-x11-xkb-utils"
+	"xorg-x11-xtrans-devel"
+	xz
+	yajl
+	yasm
+	yelp
+	zlib
+	zziplib
+}
+

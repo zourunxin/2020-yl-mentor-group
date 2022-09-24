@@ -1,0 +1,6387 @@
+digraph dep_Picture {
+	graph [rankdir=LR]
+	CUnit
+	GConf2
+	HdrHistogram_c
+	LibRaw
+	LibRaw -> jasper
+	LibRaw -> "libjpeg-turbo"
+	LibRaw -> lcms2
+	NetworkManager
+	"NetworkManager-libreswan"
+	"NetworkManager-libreswan" -> libreswan
+	"NetworkManager-libreswan" -> atk
+	"NetworkManager-libreswan" -> cairo
+	"NetworkManager-libreswan" -> gtk3
+	"NetworkManager-libreswan" -> libnma
+	"NetworkManager-libreswan" -> pango
+	OpenEXR
+	OpenEXR -> ilmbase
+	PackageKit
+	PackageKit -> gstreamer1
+	PackageKit -> atk
+	PackageKit -> cairo
+	PackageKit -> gtk3
+	PackageKit -> gtk2
+	PackageKit -> pango
+	SDL
+	WALinuxAgent
+	WALinuxAgent -> python36
+	WALinuxAgent -> WALinuxAgent
+	WALinuxAgent -> python2
+	WALinuxAgent -> "python-pyasn1"
+	Xaw3d
+	Xaw3d -> libX11
+	Xaw3d -> libXext
+	Xaw3d -> libXmu
+	Xaw3d -> libXpm
+	Xaw3d -> libXt
+	"abattis-cantarell-fonts"
+	abrt
+	abrt -> libreport
+	abrt -> satyr
+	abrt -> "python-augeas"
+	abrt -> gdb
+	abrt -> python2
+	abrt -> "python-argcomplete"
+	abrt -> "python-argh"
+	abrt -> "python-humanize"
+	abrt -> "gnome-abrt"
+	abrt -> atk
+	abrt -> cairo
+	abrt -> gtk3
+	abrt -> libnotify
+	abrt -> pango
+	abrt -> "container-exception-logger"
+	"abrt-java-connector"
+	"abrt-java-connector" -> abrt
+	"abrt-java-connector" -> libreport
+	"abrt-java-connector" -> satyr
+	accountsservice
+	acpid
+	"adobe-mappings-cmap"
+	"adobe-mappings-pdf"
+	"adwaita-icon-theme"
+	"gnome-themes-standard"
+	"gnome-themes-standard" -> gtk2
+	"gnome-themes-standard" -> atk
+	"gnome-themes-standard" -> cairo
+	"gnome-themes-standard" -> pango
+	"gnome-themes-standard" -> "abattis-cantarell-fonts"
+	"gnome-themes-standard" -> "adwaita-icon-theme"
+	"adwaita-qt"
+	"adwaita-qt" -> "qt5-qtbase"
+	"adwaita-qt" -> "qt5-qtx11extras"
+	"adwaita-qt" -> libxcb
+	aide
+	"alsa-firmware"
+	"alsa-firmware" -> "alsa-tools"
+	"alsa-lib"
+	"alsa-plugins"
+	"alsa-plugins" -> "alsa-lib"
+	"alsa-plugins" -> "alsa-utils"
+	"alsa-plugins" -> pulseaudio
+	"alsa-plugins" -> libsamplerate
+	"alsa-plugins" -> speexdsp
+	"alsa-plugins" -> speex
+	"alsa-tools"
+	"alsa-tools" -> "alsa-firmware"
+	"alsa-tools" -> "alsa-lib"
+	"alsa-utils"
+	"alsa-utils" -> "alsa-lib"
+	"alsa-utils" -> libsamplerate
+	"alsa-utils" -> fftw
+	amanda
+	amanda -> perl
+	amanda -> "perl-Carp"
+	amanda -> "perl-Data-Dumper"
+	amanda -> "perl-Encode"
+	amanda -> "perl-Encode-Locale"
+	amanda -> "perl-Exporter"
+	amanda -> "perl-File-Path"
+	amanda -> "perl-PathTools"
+	amanda -> "perl-File-Temp"
+	amanda -> "perl-Getopt-Long"
+	amanda -> "perl-IO-Socket-SSL"
+	amanda -> "perl-JSON"
+	amanda -> "perl-MIME-Base64"
+	amanda -> "perl-Math-BigInt"
+	amanda -> "perl-Scalar-List-Utils"
+	amanda -> "perl-Socket"
+	amanda -> "perl-Text-ParseWords"
+	amanda -> "perl-Time-Local"
+	amanda -> "perl-URI"
+	amanda -> "perl-XML-Simple"
+	amanda -> "perl-constant"
+	amanda -> "perl-parent"
+	amanda -> "perl-Text-Tabs+Wrap"
+	anaconda
+	anaconda -> flatpak
+	anaconda -> libreport
+	anaconda -> python2
+	anaconda -> "python-blivet"
+	anaconda -> libblockdev
+	anaconda -> "python-dasbus"
+	anaconda -> pykickstart
+	anaconda -> langtable
+	anaconda -> "python-meh"
+	anaconda -> "python-ntplib"
+	anaconda -> "python-ordered-set"
+	anaconda -> "python-pid"
+	anaconda -> "python-productmd"
+	anaconda -> pyparted
+	anaconda -> pytz
+	anaconda -> "python-requests-file"
+	anaconda -> "python-requests-ftp"
+	anaconda -> "adwaita-icon-theme"
+	anaconda -> "anaconda-user-help"
+	anaconda -> keybinder3
+	anaconda -> libgnomekbd
+	anaconda -> libtimezonemap
+	anaconda -> libxklavier
+	anaconda -> "network-manager-applet"
+	anaconda -> tigervnc
+	anaconda -> yelp
+	anaconda -> createrepo_c
+	anaconda -> gdb
+	anaconda -> isomd5sum
+	anaconda -> udisks2
+	anaconda -> "python-simpleline"
+	anaconda -> atk
+	anaconda -> cairo
+	anaconda -> gtk3
+	anaconda -> pango
+	"anaconda-user-help"
+	annobin
+	"anolis-logos"
+	"ansible-collection-microsoft-sql"
+	"ansible-core"
+	"ansible-core" -> python38
+	"ansible-core" -> git
+	"ansible-core" -> python2
+	"ansible-core" -> PyYAML
+	"ansible-core" -> "python-cryptography"
+	"ansible-core" -> "python-jinja2"
+	"ansible-core" -> "python-resolvelib"
+	"ansible-core" -> "python3x-six"
+	"ansible-core" -> sshpass
+	"ansible-core" -> "ansible-core"
+	"ansible-freeipa"
+	"ansible-pcp"
+	"appstream-data"
+	apr
+	"apr-util"
+	"apr-util" -> apr
+	"apr-util" -> "mariadb-connector-c"
+	"apr-util" -> unixODBC
+	"apr-util" -> libpq
+	asciidoc
+	asciidoc -> "docbook-style-xsl"
+	asciidoc -> graphviz
+	asciidoc -> python2
+	asciidoc -> "source-highlight"
+	asciidoc -> vim
+	aspell
+	"aspell-en"
+	"aspell-en" -> aspell
+	"dotnet3.0"
+	"dotnet3.0" -> "dotnet6.0"
+	"dotnet3.0" -> "lttng-ust"
+	"dotnet3.1"
+	"dotnet3.1" -> "dotnet3.1"
+	"dotnet3.1" -> "dotnet6.0"
+	"dotnet3.1" -> "lttng-ust"
+	"dotnet5.0"
+	"dotnet5.0" -> "dotnet5.0"
+	"dotnet5.0" -> "dotnet6.0"
+	"dotnet5.0" -> "lttng-ust"
+	"dotnet6.0"
+	"dotnet6.0" -> "dotnet6.0"
+	"dotnet6.0" -> "lttng-ust"
+	"at-spi2-atk"
+	"at-spi2-atk" -> "at-spi2-core"
+	"at-spi2-atk" -> atk
+	"at-spi2-core"
+	"at-spi2-core" -> libX11
+	"at-spi2-core" -> libXtst
+	atk
+	atkmm
+	atkmm -> glibmm24
+	atkmm -> atk
+	atkmm -> "libsigc++20"
+	authd
+	authselect
+	authselect -> python2
+	autoconf
+	autoconf -> perl
+	autoconf -> "perl-Carp"
+	autoconf -> "perl-PathTools"
+	autoconf -> "perl-Data-Dumper"
+	autoconf -> "perl-Exporter"
+	autoconf -> "perl-File-Path"
+	autoconf -> "perl-Getopt-Long"
+	autoconf -> "perl-Text-ParseWords"
+	autoconf -> "perl-constant"
+	libreoffice
+	libreoffice -> "pentaho-reporting-flow-engine"
+	libreoffice -> "postgresql-jdbc"
+	libreoffice -> boost
+	libreoffice -> libetonyek
+	libreoffice -> lcms2
+	libreoffice -> lpsolve
+	libreoffice -> libmwaw
+	libreoffice -> libnumbertext
+	libreoffice -> libodfgen
+	libreoffice -> liborcus
+	libreoffice -> librevenge
+	libreoffice -> libstaroffice
+	libreoffice -> libwps
+	libreoffice -> "google-crosextra-caladea-fonts"
+	libreoffice -> "google-crosextra-carlito-fonts"
+	libreoffice -> "java-1.8.0-openjdk"
+	libreoffice -> libICE
+	libreoffice -> libSM
+	libreoffice -> libX11
+	libreoffice -> libXext
+	libreoffice -> libXinerama
+	libreoffice -> cairo
+	libreoffice -> clucene
+	libreoffice -> libcmis
+	libreoffice -> dconf
+	libreoffice -> libepoxy
+	libreoffice -> libexttextcat
+	libreoffice -> graphite2
+	libreoffice -> "gstreamer1-plugins-base"
+	libreoffice -> gstreamer1
+	libreoffice -> harfbuzz
+	libreoffice -> hunspell
+	libreoffice -> hyphen
+	libreoffice -> "libjpeg-turbo"
+	libreoffice -> "mariadb-connector-c"
+	libreoffice -> mythes
+	libreoffice -> neon
+	libreoffice -> nspr
+	libreoffice -> nss
+	libreoffice -> raptor2
+	libreoffice -> redland
+	libreoffice -> xmlsec1
+	libreoffice -> gdb
+	libreoffice -> libcdr
+	libreoffice -> libfreehand
+	libreoffice -> libmspub
+	libreoffice -> libpagemaker
+	libreoffice -> libqxp
+	libreoffice -> libvisio
+	libreoffice -> libwpd
+	libreoffice -> libwpg
+	libreoffice -> libzmf
+	libreoffice -> "gstreamer1-plugins-good"
+	libreoffice -> atk
+	libreoffice -> gtk3
+	libreoffice -> pango
+	libreoffice -> "abattis-cantarell-fonts"
+	libreoffice -> "hunspell-af"
+	libreoffice -> zaf
+	libreoffice -> "bitmap-fonts"
+	libreoffice -> "hunspell-ar"
+	libreoffice -> "gnu-free-fonts"
+	libreoffice -> "hunspell-as"
+	libreoffice -> "hyphen-as"
+	libreoffice -> "hunspell-bg"
+	libreoffice -> "hyphen-bg"
+	libreoffice -> "mythes-bg"
+	libreoffice -> "hunspell-bn"
+	libreoffice -> "hyphen-bn"
+	libreoffice -> "hunspell-br"
+	libreoffice -> "hunspell-ca"
+	libreoffice -> "hyphen-ca"
+	libreoffice -> "mythes-ca"
+	libreoffice -> "openoffice.org-dict-cs_CZ"
+	libreoffice -> "mythes-cs"
+	libreoffice -> "hunspell-cy"
+	libreoffice -> "hyphen-cy"
+	libreoffice -> "hunspell-da"
+	libreoffice -> "hyphen-da"
+	libreoffice -> "mythes-da"
+	libreoffice -> "hunspell-de"
+	libreoffice -> "hyphen-de"
+	libreoffice -> "mythes-de"
+	libreoffice -> "google-noto-fonts"
+	libreoffice -> "hunspell-el"
+	libreoffice -> "hyphen-el"
+	libreoffice -> "mythes-el"
+	libreoffice -> "hunspell-en"
+	libreoffice -> "mythes-en"
+	libreoffice -> "hunspell-es"
+	libreoffice -> "hyphen-es"
+	libreoffice -> "mythes-es"
+	libreoffice -> "hunspell-et"
+	libreoffice -> "hunspell-eu"
+	libreoffice -> "hyphen-eu"
+	libreoffice -> "hunspell-fa"
+	libreoffice -> "hyphen-fa"
+	libreoffice -> "libreoffice-voikko"
+	libreoffice -> "hunspell-fr"
+	libreoffice -> "hyphen-fr"
+	libreoffice -> "mythes-fr"
+	libreoffice -> "hunspell-ga"
+	libreoffice -> "hyphen-ga"
+	libreoffice -> "mythes-ga"
+	libreoffice -> "hunspell-gl"
+	libreoffice -> "hyphen-gl"
+	libreoffice -> "hunspell-gu"
+	libreoffice -> "hyphen-gu"
+	libreoffice -> hspell
+	libreoffice -> "hunspell-hi"
+	libreoffice -> "hyphen-hi"
+	libreoffice -> "hunspell-hr"
+	libreoffice -> "hunspell-hu"
+	libreoffice -> "hyphen-hu"
+	libreoffice -> "mythes-hu"
+	libreoffice -> "hunspell-id"
+	libreoffice -> "hyphen-id"
+	libreoffice -> "hunspell-it"
+	libreoffice -> "hyphen-it"
+	libreoffice -> "mythes-it"
+	libreoffice -> "google-droid-fonts"
+	libreoffice -> "hunspell-kk"
+	libreoffice -> "hunspell-kn"
+	libreoffice -> "hyphen-kn"
+	libreoffice -> "hunspell-ko"
+	libreoffice -> "hunspell-lt"
+	libreoffice -> "hyphen-lt"
+	libreoffice -> "openoffice-lv"
+	libreoffice -> "hunspell-ml"
+	libreoffice -> "hyphen-ml"
+	libreoffice -> "hunspell-mr"
+	libreoffice -> "hyphen-mr"
+	libreoffice -> "hunspell-no"
+	libreoffice -> "hunspell-nl"
+	libreoffice -> "hyphen-nl"
+	libreoffice -> "mythes-nl"
+	libreoffice -> "hunspell-nr"
+	libreoffice -> "hunspell-nso"
+	libreoffice -> "hunspell-or"
+	libreoffice -> "hyphen-or"
+	libreoffice -> "hunspell-pa"
+	libreoffice -> "hyphen-pa"
+	libreoffice -> "hunspell-pl"
+	libreoffice -> "hyphen-pl"
+	libreoffice -> "mythes-pl"
+	libreoffice -> "hunspell-pt"
+	libreoffice -> "hyphen-pt"
+	libreoffice -> "mythes-pt"
+	libreoffice -> "hunspell-ro"
+	libreoffice -> "hyphen-ro"
+	libreoffice -> "mythes-ro"
+	libreoffice -> "hunspell-ru"
+	libreoffice -> "hyphen-ru"
+	libreoffice -> "mythes-ru"
+	libreoffice -> "hunspell-si"
+	libreoffice -> "hunspell-sk"
+	libreoffice -> "hyphen-sk"
+	libreoffice -> "mythes-sk"
+	libreoffice -> "hunspell-sl"
+	libreoffice -> "hyphen-sl"
+	libreoffice -> "mythes-sl"
+	libreoffice -> "hunspell-sr"
+	libreoffice -> "hunspell-ss"
+	libreoffice -> "hunspell-st"
+	libreoffice -> "hunspell-sv"
+	libreoffice -> "hyphen-sv"
+	libreoffice -> "mythes-sv"
+	libreoffice -> "hunspell-ta"
+	libreoffice -> "hyphen-ta"
+	libreoffice -> "hunspell-te"
+	libreoffice -> "hyphen-te"
+	libreoffice -> "hunspell-th"
+	libreoffice -> "hunspell-tn"
+	libreoffice -> "hunspell-ts"
+	libreoffice -> "hunspell-uk"
+	libreoffice -> "hyphen-uk"
+	libreoffice -> "mythes-uk"
+	libreoffice -> "hunspell-ve"
+	libreoffice -> "hunspell-xh"
+	libreoffice -> "hunspell-zu"
+	libreoffice -> poppler
+	libreoffice -> python2
+	libreoffice -> liblangtag
+	libreoffice -> libabw
+	libreoffice -> libepubgen
+	libreoffice -> libXrandr
+	libreoffice -> libXrender
+	autogen
+	automake
+	automake -> perl
+	automake -> autoconf
+	automake -> "perl-Carp"
+	automake -> "perl-Exporter"
+	automake -> "perl-File-Path"
+	automake -> "perl-PathTools"
+	automake -> "perl-Getopt-Long"
+	automake -> "perl-Thread-Queue"
+	automake -> "perl-constant"
+	automake -> "perl-threads"
+	avahi
+	avahi -> gtk3
+	avahi -> atk
+	avahi -> cairo
+	avahi -> pango
+	babl
+	bacula
+	bacula -> perl
+	bacula -> "mariadb-connector-c"
+	bacula -> libpq
+	bacula -> "mt-st"
+	bacula -> mtx
+	baobab
+	baobab -> gtk3
+	baobab -> cairo
+	baobab -> pango
+	bcc
+	bcc -> llvm
+	bcc -> clang
+	bcc -> "python-netaddr"
+	bcc -> python2
+	bind
+	bind -> fstrm
+	bind -> libmaxminddb
+	bind -> "protobuf-c"
+	bind -> "mariadb-connector-c"
+	bind -> libpq
+	bind -> python2
+	"bind9.16"
+	"bind9.16" -> fstrm
+	"bind9.16" -> libmaxminddb
+	"bind9.16" -> "protobuf-c"
+	"bind9.16" -> libuv
+	binutils
+	bison
+	"bitmap-fonts"
+	"bitmap-fonts" -> "ucs-miscfixed-fonts"
+	lapack
+	lapack -> lapack
+	"python-blivet"
+	"python-blivet" -> python2
+	"python-blivet" -> libblockdev
+	"python-blivet" -> libbytesize
+	"python-blivet" -> pyparted
+	bluez
+	bluez -> cups
+	bogofilter
+	bogofilter -> gsl
+	boost
+	bpftrace
+	bpftrace -> llvm
+	bpftrace -> bcc
+	bpftrace -> clang
+	"bpg-fonts"
+	brasero
+	brasero -> cdrkit
+	brasero -> cdrdao
+	brasero -> "dvd+rw-tools"
+	brasero -> libICE
+	brasero -> libSM
+	brasero -> libX11
+	brasero -> atk
+	brasero -> libburn
+	brasero -> cairo
+	brasero -> libcanberra
+	brasero -> gtk3
+	brasero -> "gstreamer1-plugins-base"
+	brasero -> gstreamer1
+	brasero -> libisofs
+	brasero -> libnotify
+	brasero -> pango
+	brasero -> "totem-pl-parser"
+	brasero -> tracker
+	brasero -> nautilus
+	brltty
+	brltty -> libX11
+	brltty -> libXext
+	brltty -> libXtst
+	brltty -> "alsa-lib"
+	brltty -> "at-spi2-core"
+	brltty -> "espeak-ng"
+	brltty -> libXaw
+	brltty -> libXt
+	brltty -> "ucs-miscfixed-fonts"
+	brltty -> "xorg-x11-fonts"
+	brltty -> python2
+	brotli
+	brotli -> python2
+	byacc
+	byteman
+	byteman -> "java-1.8.0-openjdk"
+	byteman -> "javapackages-tools"
+	c2esp
+	c2esp -> cups
+	c2esp -> "cups-filters"
+	c2esp -> jbigkit
+	cairo
+	cairo -> libX11
+	cairo -> libXext
+	cairo -> libXrender
+	cairo -> pixman
+	cairo -> libxcb
+	cairomm
+	cairomm -> cairo
+	cairomm -> libX11
+	cairomm -> libXext
+	cairomm -> libXrender
+	cairomm -> "libsigc++20"
+	cdparanoia
+	cdrdao
+	cdrdao -> libao
+	cdrdao -> libmad
+	cdrdao -> lame
+	cdrdao -> libvorbis
+	celt051
+	celt051 -> libogg
+	certmonger
+	certmonger -> nspr
+	certmonger -> nss
+	cgdcbxd
+	chan
+	check
+	cheese
+	cheese -> cheese
+	cheese -> "gnome-video-effects"
+	cheese -> "gstreamer1-plugins-bad-free"
+	cheese -> "gstreamer1-plugins-good"
+	cheese -> libglvnd
+	cheese -> libX11
+	cheese -> libXcomposite
+	cheese -> libXdamage
+	cheese -> libXext
+	cheese -> libXfixes
+	cheese -> libXi
+	cheese -> libXrandr
+	cheese -> atk
+	cheese -> cairo
+	cheese -> libcanberra
+	cheese -> clutter
+	cheese -> "clutter-gst3"
+	cheese -> "clutter-gtk"
+	cheese -> cogl
+	cheese -> libdrm
+	cheese -> mesa
+	cheese -> gtk3
+	cheese -> "gnome-desktop3"
+	cheese -> "gstreamer1-plugins-base"
+	cheese -> gstreamer1
+	cheese -> pango
+	cheese -> wayland
+	cheese -> libxkbcommon
+	"chrome-gnome-shell"
+	"chrome-gnome-shell" -> "gnome-shell"
+	"chrome-gnome-shell" -> "hicolor-icon-theme"
+	"chrome-gnome-shell" -> "mozilla-filesystem"
+	"chrome-gnome-shell" -> python2
+	"cim-schema"
+	"cldr-emoji-annotation"
+	clevis
+	clevis -> jose
+	clevis -> jq
+	clevis -> luksmeta
+	clevis -> udisks2
+	"cloud-init"
+	"cloud-init" -> python2
+	"cloud-init" -> python36
+	"cloud-init" -> "python-jinja2"
+	"cloud-init" -> "python-jsonpatch"
+	"cloud-init" -> "python-jsonschema"
+	"cloud-init" -> rsyslog
+	"cloud-utils-growpart"
+	clucene
+	clutter
+	clutter -> cairo
+	clutter -> cogl
+	clutter -> libglvnd
+	clutter -> libX11
+	clutter -> libXcomposite
+	clutter -> libXdamage
+	clutter -> libXext
+	clutter -> libXfixes
+	clutter -> libXi
+	clutter -> libXrandr
+	clutter -> atk
+	clutter -> libdrm
+	clutter -> mesa
+	clutter -> gtk3
+	clutter -> libinput
+	clutter -> pango
+	clutter -> wayland
+	clutter -> libxkbcommon
+	"clutter-gst2"
+	"clutter-gst2" -> libglvnd
+	"clutter-gst2" -> libX11
+	"clutter-gst2" -> libXcomposite
+	"clutter-gst2" -> libXdamage
+	"clutter-gst2" -> libXext
+	"clutter-gst2" -> libXfixes
+	"clutter-gst2" -> libXi
+	"clutter-gst2" -> libXrandr
+	"clutter-gst2" -> atk
+	"clutter-gst2" -> cairo
+	"clutter-gst2" -> clutter
+	"clutter-gst2" -> cogl
+	"clutter-gst2" -> libdrm
+	"clutter-gst2" -> mesa
+	"clutter-gst2" -> gtk3
+	"clutter-gst2" -> "gstreamer1-plugins-base"
+	"clutter-gst2" -> gstreamer1
+	"clutter-gst2" -> pango
+	"clutter-gst2" -> wayland
+	"clutter-gst2" -> libxkbcommon
+	"clutter-gst3"
+	"clutter-gst3" -> libglvnd
+	"clutter-gst3" -> libX11
+	"clutter-gst3" -> libXcomposite
+	"clutter-gst3" -> libXdamage
+	"clutter-gst3" -> libXext
+	"clutter-gst3" -> libXfixes
+	"clutter-gst3" -> libXi
+	"clutter-gst3" -> libXrandr
+	"clutter-gst3" -> atk
+	"clutter-gst3" -> cairo
+	"clutter-gst3" -> clutter
+	"clutter-gst3" -> cogl
+	"clutter-gst3" -> libdrm
+	"clutter-gst3" -> mesa
+	"clutter-gst3" -> gtk3
+	"clutter-gst3" -> "gstreamer1-plugins-base"
+	"clutter-gst3" -> gstreamer1
+	"clutter-gst3" -> pango
+	"clutter-gst3" -> wayland
+	"clutter-gst3" -> libxkbcommon
+	"clutter-gtk"
+	"clutter-gtk" -> clutter
+	"clutter-gtk" -> gtk3
+	"clutter-gtk" -> libglvnd
+	"clutter-gtk" -> libX11
+	"clutter-gtk" -> libXcomposite
+	"clutter-gtk" -> libXdamage
+	"clutter-gtk" -> libXext
+	"clutter-gtk" -> libXfixes
+	"clutter-gtk" -> libXi
+	"clutter-gtk" -> libXrandr
+	"clutter-gtk" -> atk
+	"clutter-gtk" -> cairo
+	"clutter-gtk" -> cogl
+	"clutter-gtk" -> libdrm
+	"clutter-gtk" -> mesa
+	"clutter-gtk" -> pango
+	"clutter-gtk" -> wayland
+	"clutter-gtk" -> libxkbcommon
+	cmake
+	cmake -> libuv
+	cmake -> vim
+	cmake -> "hicolor-icon-theme"
+	cmake -> "qt5-qtbase"
+	"cockpit-composer"
+	"cockpit-composer" -> "osbuild-composer"
+	"cockpit-appstream"
+	"cockpit-appstream" -> libvirt
+	"cockpit-appstream" -> "libvirt-dbus"
+	"cockpit-appstream" -> PackageKit
+	"cockpit-appstream" -> pcp
+	"cockpit-appstream" -> udisks2
+	"cockpit-session-recording"
+	"cockpit-session-recording" -> tlog
+	cogl
+	cogl -> libglvnd
+	cogl -> libX11
+	cogl -> libXcomposite
+	cogl -> libXdamage
+	cogl -> libXext
+	cogl -> libXfixes
+	cogl -> libXrandr
+	cogl -> cairo
+	cogl -> libdrm
+	cogl -> mesa
+	cogl -> pango
+	cogl -> wayland
+	"color-filesystem"
+	colord
+	colord -> "color-filesystem"
+	colord -> lcms2
+	"colord-gtk"
+	"colord-gtk" -> atk
+	"colord-gtk" -> cairo
+	"colord-gtk" -> colord
+	"colord-gtk" -> gtk3
+	"colord-gtk" -> lcms2
+	"colord-gtk" -> pango
+	"compat-exiv2-026"
+	"compat-libgfortran-48"
+	glibc
+	glibc -> perl
+	glibc -> gd
+	"compat-libtiff3"
+	"compat-libtiff3" -> "libjpeg-turbo"
+	"compat-openssl10"
+	lorax
+	lorax -> python2
+	lorax -> "python-pytoml"
+	lorax -> GConf2
+	lorax -> cdrkit
+	lorax -> isomd5sum
+	lorax -> "lorax-templates-anolis"
+	lorax -> pykickstart
+	lorax -> "python-mako"
+	lorax -> anaconda
+	lorax -> createrepo_c
+	lorax -> git
+	lorax -> libgit2
+	lorax -> "libgit2-glib"
+	lorax -> "python-flask"
+	lorax -> "python-gevent"
+	lorax -> "python-rpmfluff"
+	lorax -> "python-semantic_version"
+	lorax -> "qemu-kvm"
+	lorax -> edk2
+	"container-exception-logger"
+	convmv
+	convmv -> perl
+	convmv -> "perl-PathTools"
+	convmv -> "perl-Encode"
+	convmv -> "perl-Getopt-Long"
+	convmv -> "perl-Unicode-Normalize"
+	"copy-jdk-configs"
+	"copy-jdk-configs" -> lua
+	"coreos-installer"
+	corosync
+	gcc
+	gcc -> libmpc
+	gcc -> gcc
+	gcc -> isl
+	crash
+	"crash-gcore-command"
+	"crash-gcore-command" -> crash
+	"crash-ptdump-command"
+	"crash-ptdump-command" -> crash
+	"crash-trace-command"
+	"crash-trace-command" -> crash
+	createrepo_c
+	createrepo_c -> drpm
+	createrepo_c -> python2
+	cryptsetup
+	cscope
+	ctags
+	"culmus-fonts"
+	cups
+	cups -> cups
+	cups -> "cups-filters"
+	"cups-filters"
+	"cups-filters" -> cups
+	"cups-filters" -> ghostscript
+	"cups-filters" -> "libjpeg-turbo"
+	"cups-filters" -> lcms2
+	"cups-filters" -> poppler
+	"cups-filters" -> qpdf
+	"cups-filters" -> libtiff
+	"cups-pk-helper"
+	"cyrus-imapd"
+	"cyrus-imapd" -> perl
+	"cyrus-imapd" -> "mariadb-connector-c"
+	"cyrus-imapd" -> "net-snmp"
+	"cyrus-imapd" -> libpq
+	"cyrus-imapd" -> "xapian-core"
+	"cyrus-imapd" -> sscg
+	"cyrus-imapd" -> "perl-Carp"
+	"cyrus-imapd" -> "perl-Encode"
+	"cyrus-imapd" -> "perl-Exporter"
+	"cyrus-imapd" -> "perl-File-Path"
+	"cyrus-imapd" -> "perl-Getopt-Long"
+	"cyrus-imapd" -> "perl-JSON"
+	"cyrus-imapd" -> "perl-MIME-Base64"
+	"cyrus-imapd" -> "perl-Net-Server"
+	"cyrus-imapd" -> "perl-URI"
+	"cyrus-imapd" -> "perl-Unix-Syslog"
+	"cyrus-imapd" -> "perl-constant"
+	"cyrus-sasl"
+	"cyrus-sasl" -> "mariadb-connector-c"
+	"cyrus-sasl" -> libpq
+	ndctl
+	pmdk
+	pmdk -> pmdk
+	dbus
+	dbus -> libX11
+	"dbus-glib"
+	dconf
+	"dconf-editor"
+	"dconf-editor" -> dconf
+	"dconf-editor" -> gtk3
+	dcraw
+	dcraw -> jasper
+	dcraw -> "libjpeg-turbo"
+	dcraw -> lcms2
+	"dejavu-fonts"
+	"desktop-file-utils"
+	devhelp
+	devhelp -> atk
+	devhelp -> cairo
+	devhelp -> gtk3
+	devhelp -> webkit2gtk3
+	devhelp -> pango
+	dialog
+	diffstat
+	cdrkit
+	cdrkit -> perl
+	cdrkit -> "perl-PathTools"
+	cdrkit -> "perl-File-Path"
+	cdrkit -> "perl-Getopt-Long"
+	cdrkit -> "perl-Scalar-List-Utils"
+	cdrkit -> cdparanoia
+	cdrkit -> "vorbis-tools"
+	"dleyna-connector-dbus"
+	"dleyna-connector-dbus" -> "dleyna-core"
+	"dleyna-connector-dbus" -> gupnp
+	"dleyna-core"
+	"dleyna-core" -> gupnp
+	"dleyna-renderer"
+	"dleyna-renderer" -> "dleyna-connector-dbus"
+	"dleyna-renderer" -> "dleyna-core"
+	"dleyna-renderer" -> gssdp
+	"dleyna-renderer" -> gupnp
+	"dleyna-renderer" -> "gupnp-av"
+	"dleyna-renderer" -> "gupnp-dlna"
+	"dleyna-server"
+	"dleyna-server" -> "dleyna-connector-dbus"
+	"dleyna-server" -> "dleyna-core"
+	"dleyna-server" -> gssdp
+	"dleyna-server" -> gupnp
+	"dleyna-server" -> "gupnp-av"
+	"dleyna-server" -> "gupnp-dlna"
+	dnsmasq
+	"dnssec-trigger"
+	"dnssec-trigger" -> ldns
+	"dnssec-trigger" -> unbound
+	"dnssec-trigger" -> atk
+	"dnssec-trigger" -> cairo
+	"dnssec-trigger" -> gtk2
+	"dnssec-trigger" -> pango
+	"dnssec-trigger" -> "xdg-utils"
+	"docbook-dtds"
+	"docbook-style-xsl"
+	"docbook-style-xsl" -> "docbook-dtds"
+	dotconf
+	dotnet
+	dotnet -> "dotnet6.0"
+	dotnet -> "lttng-ust"
+	dovecot
+	dovecot -> clucene
+	dovecot -> "mariadb-connector-c"
+	dovecot -> libpq
+	dpdk
+	dpdk -> python36
+	driverctl
+	dropwatch
+	drpm
+	"dvd+rw-tools"
+	"dvd+rw-tools" -> cdrkit
+	dwz
+	dyninst
+	dyninst -> boost
+	dyninst -> tbb
+	edk2
+	"efi-rpm-macros"
+	"egl-wayland"
+	"egl-wayland" -> libglvnd
+	"egl-wayland" -> wayland
+	emacs
+	emacs -> "desktop-file-utils"
+	emacs -> libICE
+	emacs -> libSM
+	emacs -> libX11
+	emacs -> libXcomposite
+	emacs -> libXext
+	emacs -> libXfixes
+	emacs -> libXft
+	emacs -> libXinerama
+	emacs -> libXpm
+	emacs -> libXrandr
+	emacs -> libXrender
+	emacs -> "alsa-lib"
+	emacs -> atk
+	emacs -> cairo
+	emacs -> gtk3
+	emacs -> giflib
+	emacs -> webkit2gtk3
+	emacs -> "libjpeg-turbo"
+	emacs -> "m17n-lib"
+	emacs -> libotf
+	emacs -> pango
+	emacs -> librsvg2
+	emacs -> libtiff
+	emacs -> libxcb
+	emacs -> liblockfile
+	emacs -> Xaw3d
+	emacs -> libXmu
+	emacs -> libXt
+	emacs -> gpm
+	"ibus-typing-booster"
+	"ibus-typing-booster" -> "cldr-emoji-annotation"
+	"ibus-typing-booster" -> ibus
+	"ibus-typing-booster" -> "m17n-lib"
+	"ibus-typing-booster" -> python2
+	"ibus-typing-booster" -> "python-enchant"
+	"ibus-typing-booster" -> pyxdg
+	"ibus-typing-booster" -> "unicode-ucd"
+	enchant
+	enchant -> hunspell
+	enchant2
+	enchant2 -> aspell
+	enchant2 -> hunspell
+	enscript
+	enscript -> perl
+	eog
+	eog -> gtk3
+	eog -> libX11
+	eog -> cairo
+	eog -> exempi
+	eog -> libexif
+	eog -> "gnome-desktop3"
+	eog -> "libjpeg-turbo"
+	eog -> lcms2
+	eog -> libpeas
+	eog -> librsvg2
+	esc
+	esc -> gjs
+	esc -> gtk3
+	esc -> nspr
+	esc -> nss
+	"espeak-ng"
+	"espeak-ng" -> pcaudiolib
+	"eth-tools"
+	"eth-tools" -> perl
+	"eth-tools" -> "net-snmp"
+	evemu
+	evemu -> libevdev
+	evince
+	evince -> gtk3
+	evince -> atk
+	evince -> cairo
+	evince -> "gnome-desktop3"
+	evince -> pango
+	evince -> "mozilla-filesystem"
+	evince -> libgxps
+	evince -> poppler
+	evince -> libspectre
+	evince -> libtiff
+	evince -> nautilus
+	evolution
+	evolution -> "evolution-data-server"
+	evolution -> gtkspell3
+	evolution -> gvfs
+	evolution -> highlight
+	evolution -> libX11
+	evolution -> atk
+	evolution -> cairo
+	evolution -> libcanberra
+	evolution -> enchant
+	evolution -> gtk3
+	evolution -> gcr
+	evolution -> "gnome-autoar"
+	evolution -> "gnome-desktop3"
+	evolution -> libgweather
+	evolution -> webkit2gtk3
+	evolution -> libnotify
+	evolution -> nspr
+	evolution -> nss
+	evolution -> pango
+	evolution -> bogofilter
+	evolution -> yelp
+	evolution -> libpst
+	evolution -> spamassassin
+	"evolution-data-server"
+	"evolution-data-server" -> dconf
+	"evolution-data-server" -> "evolution-data-server"
+	"evolution-data-server" -> atk
+	"evolution-data-server" -> cairo
+	"evolution-data-server" -> gcr
+	"evolution-data-server" -> libgdata
+	"evolution-data-server" -> gtk3
+	"evolution-data-server" -> "gnome-online-accounts"
+	"evolution-data-server" -> libgweather
+	"evolution-data-server" -> webkit2gtk3
+	"evolution-data-server" -> nspr
+	"evolution-data-server" -> nss
+	"evolution-data-server" -> pango
+	"evolution-ews"
+	"evolution-ews" -> evolution
+	"evolution-ews" -> "evolution-data-server"
+	"evolution-ews" -> "evolution-ews"
+	"evolution-ews" -> atk
+	"evolution-ews" -> cairo
+	"evolution-ews" -> gtk3
+	"evolution-ews" -> webkit2gtk3
+	"evolution-ews" -> libmspack
+	"evolution-ews" -> nspr
+	"evolution-ews" -> nss
+	"evolution-ews" -> pango
+	"evolution-mapi"
+	"evolution-mapi" -> evolution
+	"evolution-mapi" -> "evolution-data-server"
+	"evolution-mapi" -> atk
+	"evolution-mapi" -> cairo
+	"evolution-mapi" -> gtk3
+	"evolution-mapi" -> webkit2gtk3
+	"evolution-mapi" -> openchange
+	"evolution-mapi" -> nspr
+	"evolution-mapi" -> nss
+	"evolution-mapi" -> pango
+	ipmitool
+	ipmitool -> ipmitool
+	exempi
+	exiv2
+	fabtests
+	fabtests -> ruby
+	fapolicyd
+	fapolicyd -> python2
+	fapolicyd -> rpm
+	fapolicyd -> fapolicyd
+	farstream02
+	farstream02 -> "gstreamer1-plugins-bad-free"
+	farstream02 -> "gstreamer1-plugins-good"
+	farstream02 -> gstreamer1
+	farstream02 -> "gstreamer1-plugins-base"
+	farstream02 -> gupnp
+	farstream02 -> "gupnp-igd"
+	farstream02 -> libnice
+	"fido-device-onboard"
+	"fido-device-onboard" -> clevis
+	"fence-agents"
+	"fence-agents" -> "fence-agents"
+	"fence-agents" -> "fence-virt"
+	"fence-agents" -> openwsman
+	"fence-agents" -> "net-snmp"
+	"fence-agents" -> "python-pycurl"
+	"fence-agents" -> "python-pexpect"
+	"fence-agents" -> gnutls
+	"fence-agents" -> ipmitool
+	"fence-agents" -> sbd
+	"fence-agents" -> libvirt
+	"fence-agents" -> "python-suds"
+	"fence-virt"
+	"fence-virt" -> nss
+	"fence-virt" -> nspr
+	"fence-virt" -> corosync
+	"fence-virt" -> libvirt
+	fetchmail
+	fftw
+	"file-roller"
+	"file-roller" -> ncompress
+	"file-roller" -> cdrkit
+	"file-roller" -> "desktop-file-utils"
+	"file-roller" -> cairo
+	"file-roller" -> gtk3
+	"file-roller" -> libnotify
+	"file-roller" -> pango
+	fio
+	fio -> pmdk
+	fio -> ceph
+	firefox
+	firefox -> libX11
+	firefox -> libXcomposite
+	firefox -> libXcursor
+	firefox -> libXdamage
+	firefox -> libXext
+	firefox -> libXfixes
+	firefox -> libXi
+	firefox -> libXrender
+	firefox -> libXt
+	firefox -> atk
+	firefox -> cairo
+	firefox -> gtk3
+	firefox -> nspr
+	firefox -> nss
+	firefox -> pango
+	firefox -> libxcb
+	firefox -> "mozilla-filesystem"
+	firewalld
+	firewalld -> dbus
+	firewalld -> "hicolor-icon-theme"
+	firewalld -> libnotify
+	firewalld -> pygobject3
+	firewalld -> "python-qt5"
+	firewalld -> gtk3
+	flac
+	flac -> libogg
+	flatpak
+	flatpak -> libXau
+	flatpak -> dconf
+	flatpak -> ostree
+	flatpak -> librsvg2
+	"flatpak-builder"
+	"flatpak-builder" -> git
+	"flatpak-builder" -> ostree
+	"flatpak-builder" -> flatpak
+	"flatpak-xdg-utils"
+	flex
+	fltk
+	fltk -> libglvnd
+	fltk -> "mesa-libGLU"
+	fltk -> libX11
+	fltk -> libXcursor
+	fltk -> libXext
+	fltk -> libXfixes
+	fltk -> libXft
+	fltk -> libXinerama
+	fltk -> libXrender
+	fltk -> "libjpeg-turbo"
+	flute
+	flute -> "java-1.8.0-openjdk"
+	flute -> "javapackages-tools"
+	flute -> sac
+	"fontawesome-fonts"
+	"fonts-tweak-tool"
+	"fonts-tweak-tool" -> gtk3
+	"fonts-tweak-tool" -> "hicolor-icon-theme"
+	"fonts-tweak-tool" -> libeasyfc
+	"fonts-tweak-tool" -> python2
+	"fonts-tweak-tool" -> pygobject3
+	foomatic
+	foomatic -> perl
+	foomatic -> colord
+	foomatic -> cups
+	foomatic -> "cups-filters"
+	foomatic -> "foomatic-db"
+	foomatic -> ghostscript
+	foomatic -> "perl-PathTools"
+	foomatic -> "perl-Data-Dumper"
+	foomatic -> "perl-Encode"
+	foomatic -> "perl-Exporter"
+	foomatic -> "perl-Getopt-Long"
+	"foomatic-db"
+	"foomatic-db" -> cups
+	fprintd
+	fprintd -> libfprint
+	fprintd -> authselect
+	freeglut
+	freeglut -> libglvnd
+	freeglut -> libICE
+	freeglut -> libX11
+	freeglut -> libXext
+	freeglut -> libXi
+	freeglut -> libXxf86vm
+	freerdp
+	freerdp -> libX11
+	freerdp -> libXcursor
+	freerdp -> libXext
+	freerdp -> libXfixes
+	freerdp -> libXi
+	freerdp -> libXinerama
+	freerdp -> libXrandr
+	freerdp -> libXrender
+	freerdp -> libXv
+	freerdp -> "alsa-lib"
+	freerdp -> gsm
+	freerdp -> "libjpeg-turbo"
+	freerdp -> lame
+	freerdp -> pulseaudio
+	freerdp -> wayland
+	freerdp -> libxkbcommon
+	freerdp -> libxkbfile
+	"frei0r-plugins"
+	"frei0r-plugins" -> cairo
+	"frei0r-plugins" -> gavl
+	"frei0r-plugins" -> opencv
+	fribidi
+	frr
+	frr -> "net-snmp"
+	frr -> libyang
+	fstrm
+	ftp
+	gavl
+	gavl -> libgdither
+	gc
+	gc -> libatomic_ops
+	"gcc-toolset-10"
+	"gcc-toolset-10" -> "scl-utils"
+	"gcc-toolset-10" -> "gcc-toolset-10-dyninst"
+	"gcc-toolset-10" -> "gcc-toolset-10-systemtap"
+	"gcc-toolset-10" -> "gcc-toolset-10-valgrind"
+	"gcc-toolset-10" -> "gcc-toolset-10-annobin"
+	"gcc-toolset-10" -> "gcc-toolset-10-binutils"
+	"gcc-toolset-10" -> "gcc-toolset-10-dwz"
+	"gcc-toolset-10" -> "gcc-toolset-10-elfutils"
+	"gcc-toolset-10" -> "gcc-toolset-10-gcc"
+	"gcc-toolset-10" -> "gcc-toolset-10-gdb"
+	"gcc-toolset-10" -> "gcc-toolset-10-ltrace"
+	"gcc-toolset-10" -> "gcc-toolset-10-make"
+	"gcc-toolset-10" -> "gcc-toolset-10-strace"
+	"gcc-toolset-10-annobin"
+	"gcc-toolset-10-annobin" -> "gcc-toolset-10-gcc"
+	"gcc-toolset-10-annobin" -> "gcc-toolset-10"
+	"gcc-toolset-10-binutils"
+	"gcc-toolset-10-binutils" -> "gcc-toolset-10"
+	"gcc-toolset-10-dwz"
+	"gcc-toolset-10-dwz" -> "gcc-toolset-10"
+	"gcc-toolset-10-dyninst"
+	"gcc-toolset-10-dyninst" -> "gcc-toolset-10"
+	"gcc-toolset-10-dyninst" -> boost
+	"gcc-toolset-10-dyninst" -> tbb
+	"gcc-toolset-10-elfutils"
+	"gcc-toolset-10-elfutils" -> "gcc-toolset-10"
+	"gcc-toolset-10-gcc"
+	"gcc-toolset-10-gcc" -> "gcc-toolset-10"
+	"gcc-toolset-10-gcc" -> libmpc
+	"gcc-toolset-10-gdb"
+	"gcc-toolset-10-gdb" -> "gcc-toolset-10"
+	"gcc-toolset-10-gdb" -> boost
+	"gcc-toolset-10-gdb" -> guile
+	"gcc-toolset-10-gdb" -> libipt
+	"gcc-toolset-10-gdb" -> "source-highlight"
+	"gcc-toolset-10-ltrace"
+	"gcc-toolset-10-ltrace" -> "gcc-toolset-10"
+	"gcc-toolset-10-make"
+	"gcc-toolset-10-make" -> "gcc-toolset-10"
+	"gcc-toolset-10-strace"
+	"gcc-toolset-10-strace" -> "gcc-toolset-10"
+	"gcc-toolset-10-systemtap"
+	"gcc-toolset-10-systemtap" -> "gcc-toolset-10"
+	"gcc-toolset-10-systemtap" -> perl
+	"gcc-toolset-10-systemtap" -> nspr
+	"gcc-toolset-10-systemtap" -> nss
+	"gcc-toolset-10-systemtap" -> boost
+	"gcc-toolset-10-systemtap" -> "gcc-toolset-10-dyninst"
+	"gcc-toolset-10-valgrind"
+	"gcc-toolset-10-valgrind" -> perl
+	"gcc-toolset-10-valgrind" -> "gcc-toolset-10"
+	"gcc-toolset-11"
+	"gcc-toolset-11" -> "scl-utils"
+	"gcc-toolset-11" -> "gcc-toolset-11-dyninst"
+	"gcc-toolset-11" -> "gcc-toolset-11-systemtap"
+	"gcc-toolset-11" -> "gcc-toolset-11-valgrind"
+	"gcc-toolset-11" -> "gcc-toolset-11-annobin"
+	"gcc-toolset-11" -> "gcc-toolset-11-binutils"
+	"gcc-toolset-11" -> "gcc-toolset-11-dwz"
+	"gcc-toolset-11" -> "gcc-toolset-11-elfutils"
+	"gcc-toolset-11" -> "gcc-toolset-11-gcc"
+	"gcc-toolset-11" -> "gcc-toolset-11-gdb"
+	"gcc-toolset-11" -> "gcc-toolset-11-ltrace"
+	"gcc-toolset-11" -> "gcc-toolset-11-make"
+	"gcc-toolset-11" -> "gcc-toolset-11-strace"
+	"gcc-toolset-11-annobin"
+	"gcc-toolset-11-annobin" -> "gcc-toolset-11"
+	"gcc-toolset-11-binutils"
+	"gcc-toolset-11-binutils" -> "gcc-toolset-11"
+	"gcc-toolset-11-dwz"
+	"gcc-toolset-11-dwz" -> "gcc-toolset-11"
+	"gcc-toolset-11-dyninst"
+	"gcc-toolset-11-dyninst" -> "gcc-toolset-11"
+	"gcc-toolset-11-dyninst" -> boost
+	"gcc-toolset-11-dyninst" -> tbb
+	"gcc-toolset-11-elfutils"
+	"gcc-toolset-11-elfutils" -> "gcc-toolset-11"
+	"gcc-toolset-11-elfutils" -> "gcc-toolset-10-elfutils"
+	"gcc-toolset-11-gcc"
+	"gcc-toolset-11-gcc" -> "gcc-toolset-11-binutils"
+	"gcc-toolset-11-gcc" -> "gcc-toolset-11"
+	"gcc-toolset-11-gcc" -> libmpc
+	"gcc-toolset-11-gdb"
+	"gcc-toolset-11-gdb" -> "gcc-toolset-11"
+	"gcc-toolset-11-gdb" -> boost
+	"gcc-toolset-11-gdb" -> guile
+	"gcc-toolset-11-gdb" -> libipt
+	"gcc-toolset-11-gdb" -> "source-highlight"
+	"gcc-toolset-11-ltrace"
+	"gcc-toolset-11-ltrace" -> "gcc-toolset-11"
+	"gcc-toolset-11-make"
+	"gcc-toolset-11-make" -> "gcc-toolset-11"
+	"gcc-toolset-11-strace"
+	"gcc-toolset-11-strace" -> "gcc-toolset-11"
+	"gcc-toolset-11-systemtap"
+	"gcc-toolset-11-systemtap" -> "gcc-toolset-11"
+	"gcc-toolset-11-systemtap" -> perl
+	"gcc-toolset-11-systemtap" -> nspr
+	"gcc-toolset-11-systemtap" -> nss
+	"gcc-toolset-11-systemtap" -> boost
+	"gcc-toolset-11-systemtap" -> dyninst
+	"gcc-toolset-11-valgrind"
+	"gcc-toolset-11-valgrind" -> perl
+	"gcc-toolset-11-valgrind" -> "gcc-toolset-11"
+	"gcc-toolset-9"
+	"gcc-toolset-9" -> "scl-utils"
+	"gcc-toolset-9" -> "gcc-toolset-9-dyninst"
+	"gcc-toolset-9" -> "gcc-toolset-9-systemtap"
+	"gcc-toolset-9" -> "gcc-toolset-9-valgrind"
+	"gcc-toolset-9" -> "gcc-toolset-9-annobin"
+	"gcc-toolset-9" -> "gcc-toolset-9-binutils"
+	"gcc-toolset-9" -> "gcc-toolset-9-dwz"
+	"gcc-toolset-9" -> "gcc-toolset-9-elfutils"
+	"gcc-toolset-9" -> "gcc-toolset-9-gcc"
+	"gcc-toolset-9" -> "gcc-toolset-9-gdb"
+	"gcc-toolset-9" -> "gcc-toolset-9-ltrace"
+	"gcc-toolset-9" -> "gcc-toolset-9-make"
+	"gcc-toolset-9" -> "gcc-toolset-9-strace"
+	"gcc-toolset-9-annobin"
+	"gcc-toolset-9-annobin" -> "gcc-toolset-9-gcc"
+	"gcc-toolset-9-annobin" -> "gcc-toolset-9"
+	"gcc-toolset-9-binutils"
+	"gcc-toolset-9-binutils" -> "gcc-toolset-9"
+	"gcc-toolset-9-dwz"
+	"gcc-toolset-9-dwz" -> "gcc-toolset-9"
+	"gcc-toolset-9-dyninst"
+	"gcc-toolset-9-dyninst" -> "gcc-toolset-9"
+	"gcc-toolset-9-dyninst" -> boost
+	"gcc-toolset-9-dyninst" -> tbb
+	"gcc-toolset-9-elfutils"
+	"gcc-toolset-9-elfutils" -> "gcc-toolset-9"
+	"gcc-toolset-9-elfutils" -> "gcc-toolset-10-elfutils"
+	"gcc-toolset-9-gcc"
+	"gcc-toolset-9-gcc" -> "gcc-toolset-9"
+	"gcc-toolset-9-gcc" -> libmpc
+	"gcc-toolset-9-gdb"
+	"gcc-toolset-9-gdb" -> "gcc-toolset-9"
+	"gcc-toolset-9-gdb" -> boost
+	"gcc-toolset-9-gdb" -> guile
+	"gcc-toolset-9-gdb" -> libipt
+	"gcc-toolset-9-gdb" -> "source-highlight"
+	"gcc-toolset-9-ltrace"
+	"gcc-toolset-9-ltrace" -> "gcc-toolset-9"
+	"gcc-toolset-9-make"
+	"gcc-toolset-9-make" -> "gcc-toolset-9"
+	"gcc-toolset-9-strace"
+	"gcc-toolset-9-strace" -> "gcc-toolset-9"
+	"gcc-toolset-9-systemtap"
+	"gcc-toolset-9-systemtap" -> "gcc-toolset-9"
+	"gcc-toolset-9-systemtap" -> perl
+	"gcc-toolset-9-systemtap" -> nspr
+	"gcc-toolset-9-systemtap" -> nss
+	"gcc-toolset-9-systemtap" -> boost
+	"gcc-toolset-9-systemtap" -> "gcc-toolset-9-dyninst"
+	"gcc-toolset-9-valgrind"
+	"gcc-toolset-9-valgrind" -> perl
+	"gcc-toolset-9-valgrind" -> "gcc-toolset-9"
+	gcr
+	gcr -> atk
+	gcr -> cairo
+	gcr -> gtk3
+	gcr -> pango
+	gd
+	gd -> libX11
+	gd -> libXpm
+	gd -> "libjpeg-turbo"
+	gd -> libtiff
+	gd -> libwebp
+	gdb
+	gdb -> boost
+	gdb -> guile
+	gdb -> libipt
+	gdb -> "source-highlight"
+	"gdk-pixbuf2"
+	"gdk-pixbuf2" -> jasper
+	"gdk-pixbuf2" -> "libjpeg-turbo"
+	"gdk-pixbuf2" -> libtiff
+	gdm
+	gdm -> accountsservice
+	gdm -> dconf
+	gdm -> "gnome-keyring"
+	gdm -> "gnome-session"
+	gdm -> "gnome-settings-daemon"
+	gdm -> "gnome-shell"
+	gdm -> "iso-codes"
+	gdm -> libX11
+	gdm -> libXau
+	gdm -> libXdmcp
+	gdm -> gtk3
+	gdm -> libxcb
+	gdm -> "xorg-x11-xkb-utils"
+	gdm -> "xorg-x11-server-utils"
+	gdm -> "xorg-x11-xinit"
+	gedit
+	gedit -> "desktop-file-utils"
+	gedit -> gspell
+	gedit -> gtk3
+	gedit -> gtksourceview3
+	gedit -> gvfs
+	gedit -> libX11
+	gedit -> atk
+	gedit -> cairo
+	gedit -> enchant2
+	gedit -> pango
+	gedit -> libpeas
+	gedit -> python2
+	gedit -> pygobject3
+	gedit -> zenity
+	"gedit-plugins"
+	"gedit-plugins" -> atk
+	"gedit-plugins" -> cairo
+	"gedit-plugins" -> gtk3
+	"gedit-plugins" -> gtksourceview3
+	"gedit-plugins" -> pango
+	"gedit-plugins" -> libpeas
+	"gedit-plugins" -> vte291
+	"gedit-plugins" -> gedit
+	"gedit-plugins" -> pygobject3
+	gegl
+	gegl -> babl
+	gegl -> dcraw
+	gegl -> ilmbase
+	gegl -> OpenEXR
+	gegl -> SDL
+	gegl -> cairo
+	gegl -> jasper
+	gegl -> "libjpeg-turbo"
+	gegl -> libopenraw
+	gegl -> pango
+	gegl -> librsvg2
+	gegl -> libspiro
+	gegl -> suitesparse
+	gegl04
+	gegl04 -> ilmbase
+	gegl04 -> OpenEXR
+	gegl04 -> SDL
+	gegl04 -> babl
+	gegl04 -> cairo
+	gegl04 -> jasper
+	gegl04 -> "libjpeg-turbo"
+	gegl04 -> lcms2
+	gegl04 -> pango
+	gegl04 -> LibRaw
+	gegl04 -> librsvg2
+	gegl04 -> libtiff
+	gegl04 -> suitesparse
+	gegl04 -> libwebp
+	geoclue2
+	geoclue2 -> libnotify
+	"geocode-glib"
+	geoipupdate
+	geolite2
+	gfbgraph
+	gfbgraph -> "gnome-online-accounts"
+	gfbgraph -> rest
+	"ghc-srpm-macros"
+	ghostscript
+	ghostscript -> libICE
+	ghostscript -> libSM
+	ghostscript -> libX11
+	ghostscript -> libXext
+	ghostscript -> libXt
+	ghostscript -> "adobe-mappings-cmap"
+	ghostscript -> "adobe-mappings-pdf"
+	ghostscript -> "google-droid-fonts"
+	ghostscript -> libidn
+	ghostscript -> libijs
+	ghostscript -> jbig2dec
+	ghostscript -> "libjpeg-turbo"
+	ghostscript -> lcms2
+	ghostscript -> openjpeg2
+	ghostscript -> libpaper
+	ghostscript -> libtiff
+	ghostscript -> "urw-base35-fonts"
+	giflib
+	git
+	git -> perl
+	git -> "perl-PathTools"
+	git -> "perl-Getopt-Long"
+	git -> "perl-TermReadKey"
+	git -> "perl-Authen-SASL"
+	git -> "perl-Error"
+	git -> "perl-File-Temp"
+	git -> "perl-IO-Socket-SSL"
+	git -> "perl-MIME-Base64"
+	git -> "perl-MailTools"
+	git -> "perl-libnet"
+	git -> "perl-Net-SMTP-SSL"
+	git -> "perl-Term-ANSIColor"
+	git -> "perl-Text-ParseWords"
+	git -> tk
+	git -> httpd
+	git -> "perl-Carp"
+	git -> "perl-Digest-MD5"
+	git -> "perl-File-Path"
+	git -> subversion
+	git -> "perl-CGI"
+	git -> "perl-Encode"
+	git -> "perl-Time-HiRes"
+	git -> "perl-constant"
+	git -> "perl-Exporter"
+	git -> "perl-Time-Local"
+	git -> "perl-Storable"
+	git -> "perl-YAML"
+	"git-lfs"
+	"git-lfs" -> git
+	gjs
+	gjs -> gtk3
+	gjs -> libX11
+	gjs -> libXext
+	gjs -> atk
+	gjs -> cairo
+	gjs -> pango
+	"gl-manpages"
+	glade
+	glade -> cairo
+	glade -> gtk3
+	glade -> pango
+	glade -> webkit2gtk3
+	glibmm24
+	glibmm24 -> "libsigc++20"
+	glusterfs
+	"mesa-demos"
+	"mesa-demos" -> libglvnd
+	"mesa-demos" -> libX11
+	"gnome-abrt"
+	"gnome-abrt" -> libX11
+	"gnome-abrt" -> abrt
+	"gnome-abrt" -> atk
+	"gnome-abrt" -> cairo
+	"gnome-abrt" -> gtk3
+	"gnome-abrt" -> pango
+	"gnome-abrt" -> libreport
+	"gnome-abrt" -> python2
+	"gnome-abrt" -> pygobject3
+	"gnome-abrt" -> "python-humanize"
+	"gnome-abrt" -> "xdg-utils"
+	"gnome-autoar"
+	"gnome-autoar" -> atk
+	"gnome-autoar" -> cairo
+	"gnome-autoar" -> gtk3
+	"gnome-autoar" -> pango
+	"gnome-backgrounds"
+	"gnome-bluetooth"
+	"gnome-bluetooth" -> gtk3
+	"gnome-bluetooth" -> pulseaudio
+	"gnome-bluetooth" -> atk
+	"gnome-bluetooth" -> libcanberra
+	"gnome-bluetooth" -> libnotify
+	"gnome-boxes"
+	"gnome-boxes" -> "adwaita-icon-theme"
+	"gnome-boxes" -> cdrkit
+	"gnome-boxes" -> cairo
+	"gnome-boxes" -> freerdp
+	"gnome-boxes" -> gtk3
+	"gnome-boxes" -> "gtk-vnc"
+	"gnome-boxes" -> libosinfo
+	"gnome-boxes" -> pango
+	"gnome-boxes" -> "spice-gtk"
+	"gnome-boxes" -> tracker
+	"gnome-boxes" -> libvirt
+	"gnome-boxes" -> "libvirt-glib"
+	"gnome-boxes" -> vte291
+	"gnome-boxes" -> webkit2gtk3
+	"gnome-calculator"
+	"gnome-calculator" -> atk
+	"gnome-calculator" -> gtk3
+	"gnome-calculator" -> gtksourceview3
+	"gnome-calculator" -> libmpc
+	"gnome-characters"
+	"gnome-characters" -> gjs
+	"gnome-characters" -> gtk3
+	"gnome-characters" -> pango
+	"gnome-shell-extensions"
+	"gnome-shell-extensions" -> nautilus
+	"gnome-shell-extensions" -> "gnome-menus"
+	"gnome-shell-extensions" -> "gnome-shell"
+	"gnome-shell-extensions" -> libgtop2
+	"gnome-color-manager"
+	"gnome-color-manager" -> cairo
+	"gnome-color-manager" -> libcanberra
+	"gnome-color-manager" -> "colord-gtk"
+	"gnome-color-manager" -> colord
+	"gnome-color-manager" -> libexif
+	"gnome-color-manager" -> exiv2
+	"gnome-color-manager" -> gtk3
+	"gnome-color-manager" -> lcms2
+	"gnome-color-manager" -> pango
+	"gnome-color-manager" -> libtiff
+	"gnome-color-manager" -> vte291
+	"gnome-control-center"
+	"gnome-control-center" -> libgnomekbd
+	"gnome-control-center" -> accountsservice
+	"gnome-control-center" -> "alsa-lib"
+	"gnome-control-center" -> cheese
+	"gnome-control-center" -> colord
+	"gnome-control-center" -> "cups-pk-helper"
+	"gnome-control-center" -> dbus
+	"gnome-control-center" -> "mesa-demos"
+	"gnome-control-center" -> "gnome-bluetooth"
+	"gnome-control-center" -> "gnome-control-center"
+	"gnome-control-center" -> "gnome-desktop3"
+	"gnome-control-center" -> "gnome-online-accounts"
+	"gnome-control-center" -> "gnome-settings-daemon"
+	"gnome-control-center" -> gtk3
+	"gnome-control-center" -> "iso-codes"
+	"gnome-control-center" -> libX11
+	"gnome-control-center" -> libXi
+	"gnome-control-center" -> atk
+	"gnome-control-center" -> cairo
+	"gnome-control-center" -> libcanberra
+	"gnome-control-center" -> clutter
+	"gnome-control-center" -> "clutter-gtk"
+	"gnome-control-center" -> "colord-gtk"
+	"gnome-control-center" -> grilo
+	"gnome-control-center" -> libgtop2
+	"gnome-control-center" -> ibus
+	"gnome-control-center" -> libnma
+	"gnome-control-center" -> pango
+	"gnome-control-center" -> pulseaudio
+	"gnome-control-center" -> upower
+	"gnome-control-center" -> libwacom
+	"gnome-control-center" -> wayland
+	"gnome-control-center" -> "network-manager-applet"
+	"gnome-control-center" -> "switcheroo-control"
+	"gnome-desktop3"
+	"gnome-desktop3" -> "gnome-themes-standard"
+	"gnome-desktop3" -> libX11
+	"gnome-desktop3" -> cairo
+	"gnome-desktop3" -> gtk3
+	"gnome-disk-utility"
+	"gnome-disk-utility" -> atk
+	"gnome-disk-utility" -> cairo
+	"gnome-disk-utility" -> libcanberra
+	"gnome-disk-utility" -> libdvdread
+	"gnome-disk-utility" -> gtk3
+	"gnome-disk-utility" -> libnotify
+	"gnome-disk-utility" -> pango
+	"gnome-disk-utility" -> udisks2
+	"gnome-font-viewer"
+	"gnome-font-viewer" -> cairo
+	"gnome-font-viewer" -> gtk3
+	"gnome-font-viewer" -> "gnome-desktop3"
+	"gnome-font-viewer" -> harfbuzz
+	"gnome-font-viewer" -> pango
+	"gnome-getting-started-docs"
+	"gnome-getting-started-docs" -> "gnome-user-docs"
+	"gnome-initial-setup"
+	"gnome-initial-setup" -> libgnomekbd
+	"gnome-initial-setup" -> gdm
+	"gnome-initial-setup" -> geoclue2
+	"gnome-initial-setup" -> libglvnd
+	"gnome-initial-setup" -> libX11
+	"gnome-initial-setup" -> libXcomposite
+	"gnome-initial-setup" -> libXdamage
+	"gnome-initial-setup" -> libXext
+	"gnome-initial-setup" -> libXfixes
+	"gnome-initial-setup" -> libXi
+	"gnome-initial-setup" -> libXrandr
+	"gnome-initial-setup" -> accountsservice
+	"gnome-initial-setup" -> atk
+	"gnome-initial-setup" -> cairo
+	"gnome-initial-setup" -> cheese
+	"gnome-initial-setup" -> clutter
+	"gnome-initial-setup" -> cogl
+	"gnome-initial-setup" -> libdrm
+	"gnome-initial-setup" -> mesa
+	"gnome-initial-setup" -> gtk3
+	"gnome-initial-setup" -> "geocode-glib"
+	"gnome-initial-setup" -> "gnome-desktop3"
+	"gnome-initial-setup" -> "gnome-online-accounts"
+	"gnome-initial-setup" -> gstreamer1
+	"gnome-initial-setup" -> libgweather
+	"gnome-initial-setup" -> ibus
+	"gnome-initial-setup" -> webkit2gtk3
+	"gnome-initial-setup" -> libnma
+	"gnome-initial-setup" -> PackageKit
+	"gnome-initial-setup" -> pango
+	"gnome-initial-setup" -> rest
+	"gnome-initial-setup" -> wayland
+	"gnome-initial-setup" -> libxkbcommon
+	"gnome-keyring"
+	"gnome-keyring" -> atk
+	"gnome-keyring" -> cairo
+	"gnome-keyring" -> gcr
+	"gnome-keyring" -> gtk3
+	"gnome-keyring" -> pango
+	"gnome-logs"
+	"gnome-logs" -> atk
+	"gnome-logs" -> cairo
+	"gnome-logs" -> gtk3
+	"gnome-logs" -> pango
+	"gnome-menus"
+	"gnome-online-accounts"
+	"gnome-online-accounts" -> gtk3
+	"gnome-online-accounts" -> atk
+	"gnome-online-accounts" -> cairo
+	"gnome-online-accounts" -> gcr
+	"gnome-online-accounts" -> webkit2gtk3
+	"gnome-online-accounts" -> pango
+	"gnome-online-accounts" -> rest
+	"gnome-online-miners"
+	"gnome-online-miners" -> "grilo-plugins"
+	"gnome-online-miners" -> gvfs
+	"gnome-online-miners" -> libgdata
+	"gnome-online-miners" -> gfbgraph
+	"gnome-online-miners" -> "gnome-online-accounts"
+	"gnome-online-miners" -> grilo
+	"gnome-online-miners" -> rest
+	"gnome-online-miners" -> tracker
+	"gnome-photos"
+	"gnome-photos" -> baobab
+	"gnome-photos" -> "dleyna-renderer"
+	"gnome-photos" -> gegl04
+	"gnome-photos" -> "gnome-online-miners"
+	"gnome-photos" -> "gnome-settings-daemon"
+	"gnome-photos" -> gtk3
+	"gnome-photos" -> atk
+	"gnome-photos" -> babl
+	"gnome-photos" -> cairo
+	"gnome-photos" -> libdazzle
+	"gnome-photos" -> libgdata
+	"gnome-photos" -> "geocode-glib"
+	"gnome-photos" -> libgexiv2
+	"gnome-photos" -> gfbgraph
+	"gnome-photos" -> "gnome-online-accounts"
+	"gnome-photos" -> grilo
+	"gnome-photos" -> "libjpeg-turbo"
+	"gnome-photos" -> pango
+	"gnome-photos" -> rest
+	"gnome-photos" -> tracker
+	"gnome-photos" -> "tracker-miners"
+	"gnome-remote-desktop"
+	"gnome-remote-desktop" -> libnotify
+	"gnome-remote-desktop" -> pipewire
+	"gnome-remote-desktop" -> libvncserver
+	"gnome-screenshot"
+	"gnome-screenshot" -> libX11
+	"gnome-screenshot" -> libXext
+	"gnome-screenshot" -> cairo
+	"gnome-screenshot" -> libcanberra
+	"gnome-screenshot" -> gtk3
+	"gnome-session"
+	"gnome-session" -> "gnome-control-center"
+	"gnome-session" -> dbus
+	"gnome-session" -> dconf
+	"gnome-session" -> libglvnd
+	"gnome-session" -> libICE
+	"gnome-session" -> libSM
+	"gnome-session" -> libX11
+	"gnome-session" -> libXcomposite
+	"gnome-session" -> libepoxy
+	"gnome-session" -> gtk3
+	"gnome-session" -> "gnome-desktop3"
+	"gnome-session" -> "anolis-logos"
+	"gnome-session" -> mutter
+	"gnome-session" -> "xorg-x11-server-Xwayland"
+	"gnome-settings-daemon"
+	"gnome-settings-daemon" -> colord
+	"gnome-settings-daemon" -> geoclue2
+	"gnome-settings-daemon" -> "geocode-glib"
+	"gnome-settings-daemon" -> "gnome-desktop3"
+	"gnome-settings-daemon" -> gtk3
+	"gnome-settings-daemon" -> "iio-sensor-proxy"
+	"gnome-settings-daemon" -> libX11
+	"gnome-settings-daemon" -> libXext
+	"gnome-settings-daemon" -> libXi
+	"gnome-settings-daemon" -> "alsa-lib"
+	"gnome-settings-daemon" -> cairo
+	"gnome-settings-daemon" -> libcanberra
+	"gnome-settings-daemon" -> libgweather
+	"gnome-settings-daemon" -> lcms2
+	"gnome-settings-daemon" -> libnotify
+	"gnome-settings-daemon" -> nspr
+	"gnome-settings-daemon" -> nss
+	"gnome-settings-daemon" -> pango
+	"gnome-settings-daemon" -> pulseaudio
+	"gnome-settings-daemon" -> upower
+	"gnome-settings-daemon" -> libwacom
+	"gnome-settings-daemon" -> wayland
+	"gnome-shell"
+	"gnome-shell" -> accountsservice
+	"gnome-shell" -> "at-spi2-atk"
+	"gnome-shell" -> "gnome-control-center"
+	"gnome-shell" -> gdm
+	"gnome-shell" -> geoclue2
+	"gnome-shell" -> gjs
+	"gnome-shell" -> "gnome-bluetooth"
+	"gnome-shell" -> "gnome-desktop3"
+	"gnome-shell" -> "gnome-session"
+	"gnome-shell" -> gstreamer1
+	"gnome-shell" -> gtk3
+	"gnome-shell" -> ibus
+	"gnome-shell" -> libglvnd
+	"gnome-shell" -> libX11
+	"gnome-shell" -> libXfixes
+	"gnome-shell" -> atk
+	"gnome-shell" -> cairo
+	"gnome-shell" -> "evolution-data-server"
+	"gnome-shell" -> gcr
+	"gnome-shell" -> libgweather
+	"gnome-shell" -> mutter
+	"gnome-shell" -> libnma
+	"gnome-shell" -> pango
+	"gnome-shell" -> pulseaudio
+	"gnome-shell" -> librsvg2
+	"gnome-shell" -> python36
+	"gnome-shell" -> "switcheroo-control"
+	"gnome-shell" -> upower
+	"gnome-shell" -> "xdg-desktop-portal-gtk"
+	"gnome-software"
+	"gnome-software" -> PackageKit
+	"gnome-software" -> "appstream-data"
+	"gnome-software" -> flatpak
+	"gnome-software" -> "gnome-desktop3"
+	"gnome-software" -> "gnome-menus"
+	"gnome-software" -> gtk3
+	"gnome-software" -> "iso-codes"
+	"gnome-software" -> atk
+	"gnome-software" -> cairo
+	"gnome-software" -> gspell
+	"gnome-software" -> ostree
+	"gnome-software" -> librsvg2
+	"gnome-system-monitor"
+	"gnome-system-monitor" -> atk
+	"gnome-system-monitor" -> atkmm
+	"gnome-system-monitor" -> cairo
+	"gnome-system-monitor" -> cairomm
+	"gnome-system-monitor" -> gtk3
+	"gnome-system-monitor" -> gtkmm30
+	"gnome-system-monitor" -> glibmm24
+	"gnome-system-monitor" -> libgtop2
+	"gnome-system-monitor" -> pango
+	"gnome-system-monitor" -> pangomm
+	"gnome-system-monitor" -> librsvg2
+	"gnome-system-monitor" -> "libsigc++20"
+	"gnome-terminal"
+	"gnome-terminal" -> dbus
+	"gnome-terminal" -> gtk3
+	"gnome-terminal" -> libX11
+	"gnome-terminal" -> atk
+	"gnome-terminal" -> cairo
+	"gnome-terminal" -> dconf
+	"gnome-terminal" -> pango
+	"gnome-terminal" -> vte291
+	"gnome-terminal" -> nautilus
+	"gnome-tweaks"
+	"gnome-tweaks" -> "gnome-desktop3"
+	"gnome-tweaks" -> "gnome-settings-daemon"
+	"gnome-tweaks" -> "gnome-shell"
+	"gnome-tweaks" -> "gnome-shell-extensions"
+	"gnome-tweaks" -> gtk3
+	"gnome-tweaks" -> libnotify
+	"gnome-tweaks" -> mutter
+	"gnome-tweaks" -> pango
+	"gnome-tweaks" -> python2
+	"gnome-user-docs"
+	"gnome-video-effects"
+	"gnome-video-effects" -> "frei0r-plugins"
+	"gnu-free-fonts"
+	gnuplot
+	gnuplot -> gnuplot
+	gnuplot -> "qt5-qtbase"
+	gnuplot -> "qt5-qtsvg"
+	gnuplot -> libX11
+	gnuplot -> libXpm
+	gnuplot -> cairo
+	gnuplot -> gd
+	gnuplot -> "libjpeg-turbo"
+	gnuplot -> pango
+	gnuplot -> libtiff
+	gnuplot -> libwebp
+	gnutls
+	gnutls -> unbound
+	gnutls -> autogen
+	"go-srpm-macros"
+	"gobject-introspection"
+	gom
+	gom -> python2
+	"google-crosextra-caladea-fonts"
+	"google-crosextra-carlito-fonts"
+	"google-droid-fonts"
+	"google-noto-cjk-fonts"
+	"google-noto-emoji-fonts"
+	"google-noto-fonts"
+	gpm
+	gpm -> linuxconsoletools
+	grafana
+	"grafana-pcp"
+	"grafana-pcp" -> grafana
+	graphite2
+	graphviz
+	graphviz -> libICE
+	graphviz -> libSM
+	graphviz -> libX11
+	graphviz -> libXaw
+	graphviz -> libXext
+	graphviz -> libXmu
+	graphviz -> libXpm
+	graphviz -> libXrender
+	graphviz -> libXt
+	graphviz -> atk
+	graphviz -> cairo
+	graphviz -> gd
+	graphviz -> gtk2
+	graphviz -> ghostscript
+	graphviz -> pango
+	graphviz -> librsvg2
+	graphviz -> "urw-base35-fonts"
+	graphviz -> "xorg-x11-fonts"
+	greenboot
+	greenboot -> "rpm-ostree"
+	greenboot -> greenboot
+	greenboot -> jq
+	grilo
+	grilo -> gtk3
+	grilo -> liboauth
+	grilo -> "totem-pl-parser"
+	"grilo-plugins"
+	"grilo-plugins" -> "dleyna-server"
+	"grilo-plugins" -> "gnome-online-accounts"
+	"grilo-plugins" -> grilo
+	"grilo-plugins" -> libdmapsharing
+	"grilo-plugins" -> libgdata
+	"grilo-plugins" -> gom
+	"grilo-plugins" -> gstreamer1
+	"grilo-plugins" -> libmediaart
+	"grilo-plugins" -> liboauth
+	"grilo-plugins" -> "totem-pl-parser"
+	"grilo-plugins" -> tracker
+	"gsettings-desktop-schemas"
+	gsl
+	gsm
+	gsound
+	gsound -> libcanberra
+	gspell
+	gspell -> gtk3
+	gspell -> "iso-codes"
+	gspell -> atk
+	gspell -> cairo
+	gspell -> enchant2
+	gspell -> pango
+	gssdp
+	gssntlmssp
+	gstreamer1
+	"gstreamer1-plugins-bad-free"
+	"gstreamer1-plugins-bad-free" -> soundtouch
+	"gstreamer1-plugins-bad-free" -> libX11
+	"gstreamer1-plugins-bad-free" -> cairo
+	"gstreamer1-plugins-bad-free" -> libdrm
+	"gstreamer1-plugins-bad-free" -> libdvdnav
+	"gstreamer1-plugins-bad-free" -> libdvdread
+	"gstreamer1-plugins-bad-free" -> gsm
+	"gstreamer1-plugins-bad-free" -> "gstreamer1-plugins-base"
+	"gstreamer1-plugins-bad-free" -> gstreamer1
+	"gstreamer1-plugins-bad-free" -> lcms2
+	"gstreamer1-plugins-bad-free" -> opus
+	"gstreamer1-plugins-bad-free" -> orc
+	"gstreamer1-plugins-bad-free" -> pango
+	"gstreamer1-plugins-bad-free" -> librsvg2
+	"gstreamer1-plugins-bad-free" -> libsndfile
+	"gstreamer1-plugins-bad-free" -> libsrtp
+	"gstreamer1-plugins-bad-free" -> wayland
+	"gstreamer1-plugins-bad-free" -> libwebp
+	"gstreamer1-plugins-bad-free" -> "webrtc-audio-processing"
+	"gstreamer1-plugins-base"
+	"gstreamer1-plugins-base" -> "iso-codes"
+	"gstreamer1-plugins-base" -> libglvnd
+	"gstreamer1-plugins-base" -> libX11
+	"gstreamer1-plugins-base" -> libXext
+	"gstreamer1-plugins-base" -> libXv
+	"gstreamer1-plugins-base" -> "alsa-lib"
+	"gstreamer1-plugins-base" -> cairo
+	"gstreamer1-plugins-base" -> gstreamer1
+	"gstreamer1-plugins-base" -> libogg
+	"gstreamer1-plugins-base" -> opus
+	"gstreamer1-plugins-base" -> orc
+	"gstreamer1-plugins-base" -> pango
+	"gstreamer1-plugins-base" -> libtheora
+	"gstreamer1-plugins-base" -> libvisual
+	"gstreamer1-plugins-base" -> libvorbis
+	"gstreamer1-plugins-base" -> wayland
+	"gstreamer1-plugins-base" -> libxcb
+	"gstreamer1-plugins-good"
+	"gstreamer1-plugins-good" -> flac
+	"gstreamer1-plugins-good" -> libX11
+	"gstreamer1-plugins-good" -> libXdamage
+	"gstreamer1-plugins-good" -> libXext
+	"gstreamer1-plugins-good" -> libXfixes
+	"gstreamer1-plugins-good" -> libavc1394
+	"gstreamer1-plugins-good" -> cairo
+	"gstreamer1-plugins-good" -> libdv
+	"gstreamer1-plugins-good" -> "gstreamer1-plugins-base"
+	"gstreamer1-plugins-good" -> gstreamer1
+	"gstreamer1-plugins-good" -> libiec61883
+	"gstreamer1-plugins-good" -> "libjpeg-turbo"
+	"gstreamer1-plugins-good" -> lame
+	"gstreamer1-plugins-good" -> mpg123
+	"gstreamer1-plugins-good" -> libogg
+	"gstreamer1-plugins-good" -> orc
+	"gstreamer1-plugins-good" -> pulseaudio
+	"gstreamer1-plugins-good" -> libraw1394
+	"gstreamer1-plugins-good" -> libshout
+	"gstreamer1-plugins-good" -> speex
+	"gstreamer1-plugins-good" -> taglib
+	"gstreamer1-plugins-good" -> libtheora
+	"gstreamer1-plugins-good" -> twolame
+	"gstreamer1-plugins-good" -> "v4l-utils"
+	"gstreamer1-plugins-good" -> libvorbis
+	"gstreamer1-plugins-good" -> libvpx
+	"gstreamer1-plugins-good" -> wavpack
+	"gstreamer1-plugins-good" -> atk
+	"gstreamer1-plugins-good" -> gtk3
+	"gstreamer1-plugins-good" -> pango
+	"gstreamer1-plugins-ugly-free"
+	"gstreamer1-plugins-ugly-free" -> a52dec
+	"gstreamer1-plugins-ugly-free" -> libcdio
+	"gstreamer1-plugins-ugly-free" -> libdvdread
+	"gstreamer1-plugins-ugly-free" -> "gstreamer1-plugins-base"
+	"gstreamer1-plugins-ugly-free" -> gstreamer1
+	"gstreamer1-plugins-ugly-free" -> orc
+	gtk3
+	gtk3 -> "adwaita-icon-theme"
+	gtk3 -> atk
+	gtk3 -> cairo
+	gtk3 -> "gdk-pixbuf2"
+	gtk3 -> "hicolor-icon-theme"
+	gtk3 -> libX11
+	gtk3 -> libXcomposite
+	gtk3 -> libXcursor
+	gtk3 -> libXdamage
+	gtk3 -> libXext
+	gtk3 -> libXfixes
+	gtk3 -> libXi
+	gtk3 -> libXinerama
+	gtk3 -> libXrandr
+	gtk3 -> "at-spi2-atk"
+	gtk3 -> colord
+	gtk3 -> libepoxy
+	gtk3 -> pango
+	gtk3 -> rest
+	gtk3 -> wayland
+	gtk3 -> libxkbcommon
+	"gtk-vnc"
+	"gtk-vnc" -> libX11
+	"gtk-vnc" -> atk
+	"gtk-vnc" -> cairo
+	"gtk-vnc" -> gtk3
+	"gtk-vnc" -> pango
+	gtk2
+	gtk2 -> atk
+	gtk2 -> "gdk-pixbuf2"
+	gtk2 -> gtk3
+	gtk2 -> "hicolor-icon-theme"
+	gtk2 -> libX11
+	gtk2 -> libXcomposite
+	gtk2 -> libXcursor
+	gtk2 -> libXdamage
+	gtk2 -> libXext
+	gtk2 -> libXfixes
+	gtk2 -> libXi
+	gtk2 -> libXinerama
+	gtk2 -> libXrandr
+	gtk2 -> libXrender
+	gtk2 -> cairo
+	gtk2 -> pango
+	gtk2 -> libtiff
+	gtkmm24
+	gtkmm24 -> atk
+	gtkmm24 -> atkmm
+	gtkmm24 -> cairo
+	gtkmm24 -> cairomm
+	gtkmm24 -> gtk2
+	gtkmm24 -> glibmm24
+	gtkmm24 -> pango
+	gtkmm24 -> pangomm
+	gtkmm24 -> "libsigc++20"
+	gtkmm30
+	gtkmm30 -> atkmm
+	gtkmm30 -> cairomm
+	gtkmm30 -> glibmm24
+	gtkmm30 -> gtk3
+	gtkmm30 -> pangomm
+	gtkmm30 -> "libsigc++20"
+	gtksourceview3
+	gtksourceview3 -> gtk3
+	gtksourceview3 -> atk
+	gtksourceview3 -> cairo
+	gtksourceview3 -> pango
+	gtkspell
+	gtkspell -> atk
+	gtkspell -> cairo
+	gtkspell -> enchant
+	gtkspell -> gtk2
+	gtkspell -> pango
+	gtkspell3
+	gtkspell3 -> "iso-codes"
+	gtkspell3 -> atk
+	gtkspell3 -> cairo
+	gtkspell3 -> enchant
+	gtkspell3 -> gtk3
+	gtkspell3 -> pango
+	"gubbi-fonts"
+	guile
+	guile -> gc
+	gupnp
+	gupnp -> gssdp
+	"gupnp-av"
+	"gupnp-dlna"
+	"gupnp-dlna" -> "gstreamer1-plugins-base"
+	"gupnp-dlna" -> gstreamer1
+	"gupnp-igd"
+	"gupnp-igd" -> gssdp
+	"gupnp-igd" -> gupnp
+	gutenprint
+	gutenprint -> cups
+	gutenprint -> atk
+	gutenprint -> cairo
+	gutenprint -> gtk2
+	gutenprint -> pango
+	gutenprint -> gimp
+	gvfs
+	gvfs -> "desktop-file-utils"
+	gvfs -> libcdio
+	gvfs -> "libcdio-paranoia"
+	gvfs -> gcr
+	gvfs -> udisks2
+	gvfs -> libimobiledevice
+	gvfs -> libplist
+	gvfs -> usbmuxd
+	gvfs -> libgdata
+	gvfs -> "gnome-online-accounts"
+	gvfs -> libgphoto2
+	gvfs -> libmtp
+	haproxy
+	harfbuzz
+	harfbuzz -> graphite2
+	hesiod
+	hesiod -> libidn
+	hexchat
+	hexchat -> libX11
+	hexchat -> libcanberra
+	hexchat -> gtk2
+	hexchat -> libnotify
+	hexchat -> pango
+	hexedit
+	"hicolor-icon-theme"
+	highlight
+	highlight -> libglvnd
+	highlight -> "qt5-qtbase"
+	hostapd
+	hplip
+	hplip -> cups
+	hplip -> hplip
+	hplip -> "libjpeg-turbo"
+	hplip -> "python-pillow"
+	hplip -> wget
+	hplip -> pygobject3
+	hplip -> "python-qt5"
+	hplip -> "python-reportlab"
+	hplip -> "sane-backends"
+	hplip -> python2
+	hspell
+	hspell -> perl
+	hspell -> "perl-Getopt-Long"
+	hspell -> hunspell
+	"http-parser"
+	hunspell
+	hunspell -> "hunspell-en"
+	"hunspell-af"
+	"hunspell-af" -> hunspell
+	"hunspell-ak"
+	"hunspell-ak" -> hunspell
+	"hunspell-am"
+	"hunspell-am" -> hunspell
+	"hunspell-ar"
+	"hunspell-ar" -> hunspell
+	"hunspell-as"
+	"hunspell-as" -> hunspell
+	"hunspell-ast"
+	"hunspell-ast" -> hunspell
+	"hunspell-az"
+	"hunspell-az" -> hunspell
+	"hunspell-be"
+	"hunspell-be" -> hunspell
+	"hunspell-be" -> hyphen
+	"hunspell-ber"
+	"hunspell-ber" -> hunspell
+	"hunspell-bg"
+	"hunspell-bg" -> hunspell
+	"hunspell-bn"
+	"hunspell-bn" -> hunspell
+	"hunspell-br"
+	"hunspell-br" -> hunspell
+	"hunspell-ca"
+	"hunspell-ca" -> hunspell
+	"hunspell-cop"
+	"hunspell-cop" -> hunspell
+	"openoffice.org-dict-cs_CZ"
+	"openoffice.org-dict-cs_CZ" -> hunspell
+	"openoffice.org-dict-cs_CZ" -> hyphen
+	"hunspell-csb"
+	"hunspell-csb" -> hunspell
+	"hunspell-cv"
+	"hunspell-cv" -> hunspell
+	"hunspell-cy"
+	"hunspell-cy" -> hunspell
+	"hunspell-da"
+	"hunspell-da" -> hunspell
+	"hunspell-de"
+	"hunspell-de" -> hunspell
+	"hunspell-dsb"
+	"hunspell-dsb" -> hunspell
+	"hunspell-el"
+	"hunspell-el" -> hunspell
+	"hunspell-en"
+	"hunspell-en" -> hunspell
+	"hunspell-eo"
+	"hunspell-eo" -> hunspell
+	"hunspell-es"
+	"hunspell-es" -> hunspell
+	"hunspell-et"
+	"hunspell-et" -> hunspell
+	"hunspell-et" -> hyphen
+	"hunspell-eu"
+	"hunspell-eu" -> hunspell
+	"hunspell-fa"
+	"hunspell-fa" -> hunspell
+	"hunspell-fj"
+	"hunspell-fj" -> hunspell
+	"hunspell-fo"
+	"hunspell-fo" -> hunspell
+	"hunspell-fr"
+	"hunspell-fr" -> hunspell
+	"hunspell-fur"
+	"hunspell-fur" -> hunspell
+	"hunspell-fy"
+	"hunspell-fy" -> hunspell
+	"hunspell-ga"
+	"hunspell-ga" -> hunspell
+	"hunspell-gd"
+	"hunspell-gd" -> hunspell
+	"hunspell-gl"
+	"hunspell-gl" -> hunspell
+	"hunspell-grc"
+	"hunspell-grc" -> hunspell
+	"hunspell-gu"
+	"hunspell-gu" -> hunspell
+	"hunspell-gv"
+	"hunspell-gv" -> hunspell
+	"hunspell-haw"
+	"hunspell-haw" -> hunspell
+	"hunspell-hi"
+	"hunspell-hi" -> hunspell
+	"hunspell-hil"
+	"hunspell-hil" -> hunspell
+	"hunspell-hr"
+	"hunspell-hr" -> hunspell
+	"hunspell-hr" -> hyphen
+	"hunspell-hsb"
+	"hunspell-hsb" -> hunspell
+	"hunspell-ht"
+	"hunspell-ht" -> hunspell
+	"hunspell-hu"
+	"hunspell-hu" -> hunspell
+	"hunspell-hy"
+	"hunspell-hy" -> hunspell
+	"hunspell-ia"
+	"hunspell-ia" -> hunspell
+	"hunspell-id"
+	"hunspell-id" -> hunspell
+	"hunspell-is"
+	"hunspell-is" -> hunspell
+	"hunspell-it"
+	"hunspell-it" -> hunspell
+	"hunspell-kk"
+	"hunspell-kk" -> hunspell
+	"hunspell-km"
+	"hunspell-km" -> hunspell
+	"hunspell-kn"
+	"hunspell-kn" -> hunspell
+	"hunspell-ko"
+	"hunspell-ko" -> hunspell
+	"hunspell-ku"
+	"hunspell-ku" -> hunspell
+	"hunspell-ky"
+	"hunspell-ky" -> hunspell
+	"hunspell-la"
+	"hunspell-la" -> hunspell
+	"hunspell-lb"
+	"hunspell-lb" -> hunspell
+	"hunspell-lb" -> mythes
+	"hunspell-ln"
+	"hunspell-ln" -> hunspell
+	"hunspell-lt"
+	"hunspell-lt" -> hunspell
+	"openoffice-lv"
+	"openoffice-lv" -> hunspell
+	"openoffice-lv" -> hyphen
+	"openoffice-lv" -> mythes
+	"hunspell-mai"
+	"hunspell-mai" -> hunspell
+	"hunspell-mg"
+	"hunspell-mg" -> hunspell
+	"hunspell-mi"
+	"hunspell-mi" -> hunspell
+	"hunspell-mk"
+	"hunspell-mk" -> hunspell
+	"hunspell-ml"
+	"hunspell-ml" -> hunspell
+	"hunspell-mn"
+	"hunspell-mn" -> hunspell
+	"hunspell-mos"
+	"hunspell-mos" -> hunspell
+	"hunspell-mr"
+	"hunspell-mr" -> hunspell
+	"hunspell-ms"
+	"hunspell-ms" -> hunspell
+	"hunspell-mt"
+	"hunspell-mt" -> hunspell
+	"hunspell-no"
+	"hunspell-no" -> hunspell
+	"hunspell-no" -> hyphen
+	"hunspell-no" -> mythes
+	"hunspell-nds"
+	"hunspell-nds" -> hunspell
+	"hunspell-ne"
+	"hunspell-ne" -> hunspell
+	"hunspell-nl"
+	"hunspell-nl" -> hunspell
+	"hunspell-nr"
+	"hunspell-nr" -> hunspell
+	"hunspell-nso"
+	"hunspell-nso" -> hunspell
+	"hunspell-ny"
+	"hunspell-ny" -> hunspell
+	"hunspell-oc"
+	"hunspell-oc" -> hunspell
+	"hunspell-om"
+	"hunspell-om" -> hunspell
+	"hunspell-or"
+	"hunspell-or" -> hunspell
+	"hunspell-pa"
+	"hunspell-pa" -> hunspell
+	"hunspell-pl"
+	"hunspell-pl" -> hunspell
+	"hunspell-pt"
+	"hunspell-pt" -> hunspell
+	"hunspell-qu"
+	"hunspell-qu" -> hunspell
+	"hunspell-quh"
+	"hunspell-quh" -> hunspell
+	"hunspell-ro"
+	"hunspell-ro" -> hunspell
+	"hunspell-ru"
+	"hunspell-ru" -> hunspell
+	"hunspell-rw"
+	"hunspell-rw" -> hunspell
+	"hunspell-sc"
+	"hunspell-sc" -> hunspell
+	"hunspell-se"
+	"hunspell-se" -> hunspell
+	"hunspell-shs"
+	"hunspell-shs" -> hunspell
+	"hunspell-si"
+	"hunspell-si" -> hunspell
+	"hunspell-sk"
+	"hunspell-sk" -> hunspell
+	"hunspell-sl"
+	"hunspell-sl" -> hunspell
+	"hunspell-smj"
+	"hunspell-smj" -> hunspell
+	"hunspell-so"
+	"hunspell-so" -> hunspell
+	"hunspell-sq"
+	"hunspell-sq" -> hunspell
+	"hunspell-sr"
+	"hunspell-sr" -> hunspell
+	"hunspell-sr" -> hyphen
+	"hunspell-ss"
+	"hunspell-ss" -> hunspell
+	"hunspell-st"
+	"hunspell-st" -> hunspell
+	"hunspell-sv"
+	"hunspell-sv" -> hunspell
+	"hunspell-sw"
+	"hunspell-sw" -> hunspell
+	"hunspell-ta"
+	"hunspell-ta" -> hunspell
+	"hunspell-te"
+	"hunspell-te" -> hunspell
+	"hunspell-tet"
+	"hunspell-tet" -> hunspell
+	"hunspell-th"
+	"hunspell-th" -> hunspell
+	"hunspell-ti"
+	"hunspell-ti" -> hunspell
+	"hunspell-tk"
+	"hunspell-tk" -> hunspell
+	"hunspell-tl"
+	"hunspell-tl" -> hunspell
+	"hunspell-tn"
+	"hunspell-tn" -> hunspell
+	"hunspell-tpi"
+	"hunspell-tpi" -> hunspell
+	"hunspell-ts"
+	"hunspell-ts" -> hunspell
+	"hunspell-uk"
+	"hunspell-uk" -> hunspell
+	"hunspell-ur"
+	"hunspell-ur" -> hunspell
+	"hunspell-uz"
+	"hunspell-uz" -> hunspell
+	"hunspell-ve"
+	"hunspell-ve" -> hunspell
+	"hunspell-vi"
+	"hunspell-vi" -> hunspell
+	"hunspell-wa"
+	"hunspell-wa" -> hunspell
+	"hunspell-xh"
+	"hunspell-xh" -> hunspell
+	"hunspell-yi"
+	"hunspell-yi" -> hunspell
+	"hunspell-zu"
+	"hunspell-zu" -> hunspell
+	hwloc
+	hwloc -> libX11
+	hwloc -> cairo
+	hwloc -> libXNVCtrl
+	hwloc -> libXext
+	"hyperv-daemons"
+	hyphen
+	zaf
+	zaf -> hyphen
+	"hyphen-as"
+	"hyphen-as" -> hyphen
+	"hyphen-bg"
+	"hyphen-bg" -> hyphen
+	"hyphen-bn"
+	"hyphen-bn" -> hyphen
+	"hyphen-ca"
+	"hyphen-ca" -> hyphen
+	"hyphen-cy"
+	"hyphen-cy" -> hyphen
+	"hyphen-da"
+	"hyphen-da" -> hyphen
+	"hyphen-de"
+	"hyphen-de" -> hyphen
+	"hyphen-el"
+	"hyphen-el" -> hyphen
+	"hyphen-es"
+	"hyphen-es" -> hyphen
+	"hyphen-eu"
+	"hyphen-eu" -> hyphen
+	"hyphen-fa"
+	"hyphen-fa" -> hyphen
+	"hyphen-fo"
+	"hyphen-fo" -> hyphen
+	"hyphen-fr"
+	"hyphen-fr" -> hyphen
+	"hyphen-ga"
+	"hyphen-ga" -> hyphen
+	"hyphen-gl"
+	"hyphen-gl" -> hyphen
+	"hyphen-grc"
+	"hyphen-grc" -> hyphen
+	"hyphen-gu"
+	"hyphen-gu" -> hyphen
+	"hyphen-hi"
+	"hyphen-hi" -> hyphen
+	"hyphen-hsb"
+	"hyphen-hsb" -> hyphen
+	"hyphen-hu"
+	"hyphen-hu" -> hyphen
+	"hyphen-ia"
+	"hyphen-ia" -> hyphen
+	"hyphen-id"
+	"hyphen-id" -> hyphen
+	"hyphen-is"
+	"hyphen-is" -> hyphen
+	"hyphen-it"
+	"hyphen-it" -> hyphen
+	"hyphen-kn"
+	"hyphen-kn" -> hyphen
+	"hyphen-ku"
+	"hyphen-ku" -> hyphen
+	"hyphen-lt"
+	"hyphen-lt" -> hyphen
+	"hyphen-mi"
+	"hyphen-mi" -> hyphen
+	"hyphen-ml"
+	"hyphen-ml" -> hyphen
+	"hyphen-mn"
+	"hyphen-mn" -> hyphen
+	"hyphen-mr"
+	"hyphen-mr" -> hyphen
+	"hyphen-nl"
+	"hyphen-nl" -> hyphen
+	"hyphen-or"
+	"hyphen-or" -> hyphen
+	"hyphen-pa"
+	"hyphen-pa" -> hyphen
+	"hyphen-pl"
+	"hyphen-pl" -> hyphen
+	"hyphen-pt"
+	"hyphen-pt" -> hyphen
+	"hyphen-ro"
+	"hyphen-ro" -> hyphen
+	"hyphen-ru"
+	"hyphen-ru" -> hyphen
+	"hyphen-sa"
+	"hyphen-sa" -> hyphen
+	"hyphen-sk"
+	"hyphen-sk" -> hyphen
+	"hyphen-sl"
+	"hyphen-sl" -> hyphen
+	"hyphen-sv"
+	"hyphen-sv" -> hyphen
+	"hyphen-ta"
+	"hyphen-ta" -> hyphen
+	"hyphen-te"
+	"hyphen-te" -> hyphen
+	"hyphen-tk"
+	"hyphen-tk" -> hyphen
+	"hyphen-uk"
+	"hyphen-uk" -> hyphen
+	"i2c-tools"
+	"i2c-tools" -> "i2c-tools"
+	"i2c-tools" -> perl
+	"i2c-tools" -> "perl-constant"
+	ibus
+	ibus -> dbus
+	ibus -> dconf
+	ibus -> "desktop-file-utils"
+	ibus -> ibus
+	ibus -> "iso-codes"
+	ibus -> libX11
+	ibus -> libXi
+	ibus -> atk
+	ibus -> cairo
+	ibus -> gtk3
+	ibus -> libnotify
+	ibus -> pango
+	ibus -> python2
+	ibus -> pygobject3
+	ibus -> "xorg-x11-xinit"
+	ibus -> "xorg-x11-xkb-utils"
+	ibus -> gtk2
+	ibus -> wayland
+	ibus -> libxkbcommon
+	"ibus-hangul"
+	"ibus-hangul" -> ibus
+	"ibus-hangul" -> libhangul
+	"ibus-hangul" -> pygobject3
+	"ibus-kkc"
+	"ibus-kkc" -> ibus
+	"ibus-kkc" -> atk
+	"ibus-kkc" -> cairo
+	"ibus-kkc" -> gtk3
+	"ibus-kkc" -> libgee
+	"ibus-kkc" -> libkkc
+	"ibus-kkc" -> pango
+	"ibus-libpinyin"
+	"ibus-libpinyin" -> ibus
+	"ibus-libpinyin" -> libpinyin
+	"ibus-libpinyin" -> pygobject3
+	"ibus-libzhuyin"
+	"ibus-libzhuyin" -> ibus
+	"ibus-libzhuyin" -> libpinyin
+	"ibus-m17n"
+	"ibus-m17n" -> ibus
+	"ibus-m17n" -> atk
+	"ibus-m17n" -> cairo
+	"ibus-m17n" -> gtk3
+	"ibus-m17n" -> "m17n-lib"
+	"ibus-m17n" -> pango
+	"ibus-sayura"
+	"ibus-sayura" -> ibus
+	"ibus-table"
+	"ibus-table" -> ibus
+	"ibus-table" -> python2
+	"ibus-table-chinese"
+	"ibus-table-chinese" -> "ibus-table"
+	"icedtea-web"
+	"icedtea-web" -> GConf2
+	"icedtea-web" -> "java-1.8.0-openjdk"
+	"icedtea-web" -> "javapackages-tools"
+	"icedtea-web" -> tagsoup
+	icoutils
+	icoutils -> perl
+	icoutils -> "perl-PathTools"
+	icoutils -> "perl-Getopt-Long"
+	icoutils -> "perl-HTTP-Message"
+	icoutils -> "perl-libwww-perl"
+	libidn2
+	"iio-sensor-proxy"
+	ilmbase
+	"initial-setup"
+	"initial-setup" -> anaconda
+	"initial-setup" -> python2
+	"initial-setup" -> metacity
+	"initial-setup" -> gtk3
+	"initial-setup" -> "xorg-x11-server"
+	"initial-setup" -> "xorg-x11-xinit"
+	"xorg-x11-drv-intel"
+	"xorg-x11-drv-intel" -> libX11
+	"xorg-x11-drv-intel" -> libXcursor
+	"xorg-x11-drv-intel" -> libXdamage
+	"xorg-x11-drv-intel" -> libXext
+	"xorg-x11-drv-intel" -> libXfixes
+	"xorg-x11-drv-intel" -> libXinerama
+	"xorg-x11-drv-intel" -> libXrandr
+	"xorg-x11-drv-intel" -> libXrender
+	"xorg-x11-drv-intel" -> libXScrnSaver
+	"xorg-x11-drv-intel" -> libXtst
+	"xorg-x11-drv-intel" -> libXv
+	"xorg-x11-drv-intel" -> cairo
+	"xorg-x11-drv-intel" -> libdrm
+	"xorg-x11-drv-intel" -> pixman
+	"xorg-x11-drv-intel" -> "xorg-x11-server"
+	"xorg-x11-drv-intel" -> libXvMC
+	"xorg-x11-drv-intel" -> libxcb
+	"xorg-x11-drv-intel" -> "xcb-util"
+	intltool
+	intltool -> perl
+	intltool -> automake
+	intltool -> "perl-PathTools"
+	intltool -> "perl-Encode"
+	intltool -> "perl-Getopt-Long"
+	intltool -> "perl-Text-Tabs+Wrap"
+	intltool -> "perl-XML-Parser"
+	blktrace
+	blktrace -> librsvg2
+	blktrace -> sysstat
+	blktrace -> libtheora
+	iperf3
+	ipvsadm
+	ipxe
+	irssi
+	irssi -> "perl-Carp"
+	irssi -> perl
+	irssi -> "perl-Exporter"
+	isl
+	"iso-codes"
+	isomd5sum
+	"istack-commons"
+	"istack-commons" -> "java-1.8.0-openjdk"
+	"istack-commons" -> "javapackages-tools"
+	"istack-commons" -> ant
+	itstool
+	jansson
+	jasper
+	jasper -> "libjpeg-turbo"
+	"java-1.8.0-openjdk"
+	"java-1.8.0-openjdk" -> "java-1.8.0-openjdk"
+	"java-1.8.0-openjdk" -> libX11
+	"java-1.8.0-openjdk" -> libXcomposite
+	"java-1.8.0-openjdk" -> libXext
+	"java-1.8.0-openjdk" -> libXi
+	"java-1.8.0-openjdk" -> libXrender
+	"java-1.8.0-openjdk" -> libXtst
+	"java-1.8.0-openjdk" -> "alsa-lib"
+	"java-1.8.0-openjdk" -> giflib
+	"java-1.8.0-openjdk" -> "libjpeg-turbo"
+	"java-1.8.0-openjdk" -> "xorg-x11-fonts"
+	"java-1.8.0-openjdk" -> "java-atk-wrapper"
+	"java-1.8.0-openjdk" -> "copy-jdk-configs"
+	"java-1.8.0-openjdk" -> "javapackages-tools"
+	"java-1.8.0-openjdk" -> nspr
+	"java-1.8.0-openjdk" -> nss
+	"java-1.8.0-openjdk" -> tzdata
+	"java-11-openjdk"
+	"java-11-openjdk" -> "java-11-openjdk"
+	"java-11-openjdk" -> libX11
+	"java-11-openjdk" -> libXcomposite
+	"java-11-openjdk" -> libXext
+	"java-11-openjdk" -> libXi
+	"java-11-openjdk" -> libXrender
+	"java-11-openjdk" -> libXtst
+	"java-11-openjdk" -> giflib
+	"java-11-openjdk" -> "libjpeg-turbo"
+	"java-11-openjdk" -> "xorg-x11-fonts"
+	"java-11-openjdk" -> "copy-jdk-configs"
+	"java-11-openjdk" -> "javapackages-tools"
+	"java-11-openjdk" -> "alsa-lib"
+	"java-11-openjdk" -> harfbuzz
+	"java-11-openjdk" -> lcms2
+	"java-11-openjdk" -> nss
+	"java-11-openjdk" -> tzdata
+	"java-17-openjdk"
+	"java-17-openjdk" -> "java-17-openjdk"
+	"java-17-openjdk" -> libX11
+	"java-17-openjdk" -> libXcomposite
+	"java-17-openjdk" -> libXext
+	"java-17-openjdk" -> libXi
+	"java-17-openjdk" -> libXrender
+	"java-17-openjdk" -> libXtst
+	"java-17-openjdk" -> giflib
+	"java-17-openjdk" -> "libjpeg-turbo"
+	"java-17-openjdk" -> "xorg-x11-fonts"
+	"java-17-openjdk" -> "copy-jdk-configs"
+	"java-17-openjdk" -> "javapackages-tools"
+	"java-17-openjdk" -> "alsa-lib"
+	"java-17-openjdk" -> harfbuzz
+	"java-17-openjdk" -> lcms2
+	"java-17-openjdk" -> nss
+	"java-17-openjdk" -> tzdata
+	"java-atk-wrapper"
+	"java-atk-wrapper" -> "java-1.8.0-openjdk"
+	"java-atk-wrapper" -> atk
+	"java-atk-wrapper" -> "at-spi2-atk"
+	"java-atk-wrapper" -> "at-spi2-core"
+	"java-atk-wrapper" -> cairo
+	"java-atk-wrapper" -> gtk3
+	"java-atk-wrapper" -> gtk2
+	"java-atk-wrapper" -> pango
+	"java-atk-wrapper" -> "xorg-x11-utils"
+	jbig2dec
+	jbigkit
+	"jboss-annotations-1.2-api"
+	"jboss-annotations-1.2-api" -> "java-1.8.0-openjdk"
+	"jboss-annotations-1.2-api" -> "javapackages-tools"
+	"jboss-jaxrs-2.0-api"
+	"jboss-jaxrs-2.0-api" -> "java-1.8.0-openjdk"
+	"jboss-jaxrs-2.0-api" -> "javapackages-tools"
+	"jboss-logging"
+	"jboss-logging" -> "java-1.8.0-openjdk"
+	"jboss-logging" -> "javapackages-tools"
+	"jboss-logging-tools"
+	"jboss-logging-tools" -> "java-1.8.0-openjdk"
+	"jboss-logging-tools" -> "javapackages-tools"
+	"jboss-logging-tools" -> jdeparser
+	jdeparser
+	jdeparser -> "java-1.8.0-openjdk"
+	jdeparser -> "javapackages-tools"
+	jigawatts
+	jigawatts -> "java-1.8.0-openjdk"
+	jigawatts -> criu
+	jna
+	jna -> "java-1.8.0-openjdk"
+	jna -> "javapackages-tools"
+	"jolokia-jvm-agent"
+	"jolokia-jvm-agent" -> "java-1.8.0-openjdk"
+	"jolokia-jvm-agent" -> "javapackages-tools"
+	"jomolhari-fonts"
+	jose
+	jq
+	jq -> oniguruma
+	"js-d3-flame-graph"
+	"json-c"
+	"json-glib"
+	"julietaula-montserrat-fonts"
+	"kacst-fonts"
+	"kdump-anaconda-addon"
+	"kdump-anaconda-addon" -> anaconda
+	"kdump-anaconda-addon" -> "hicolor-icon-theme"
+	keepalived
+	keepalived -> "net-snmp"
+	"redhat-rpm-config"
+	"redhat-rpm-config" -> perl
+	"redhat-rpm-config" -> "perl-Getopt-Long"
+	"redhat-rpm-config" -> dwz
+	"redhat-rpm-config" -> "efi-rpm-macros"
+	"redhat-rpm-config" -> "ghc-srpm-macros"
+	"redhat-rpm-config" -> glibc
+	"redhat-rpm-config" -> "go-srpm-macros"
+	"redhat-rpm-config" -> "ocaml-srpm-macros"
+	"redhat-rpm-config" -> "openblas-srpm-macros"
+	"redhat-rpm-config" -> "perl-srpm-macros"
+	"redhat-rpm-config" -> "python-rpm-macros"
+	"redhat-rpm-config" -> qt5
+	"redhat-rpm-config" -> "rust-srpm-macros"
+	"trace-cmd"
+	"trace-cmd" -> atk
+	"trace-cmd" -> cairo
+	"trace-cmd" -> gtk2
+	"trace-cmd" -> pango
+	keybinder3
+	keybinder3 -> libX11
+	keybinder3 -> libXext
+	keybinder3 -> libXrender
+	keybinder3 -> atk
+	keybinder3 -> cairo
+	keybinder3 -> gtk3
+	keybinder3 -> pango
+	"keycloak-httpd-client-install"
+	"keycloak-httpd-client-install" -> "keycloak-httpd-client-install"
+	"keycloak-httpd-client-install" -> python2
+	"keycloak-httpd-client-install" -> "python-jinja2"
+	"khmeros-fonts"
+	ksh
+	"kurdit-unikurd-web-fonts"
+	kyotocabinet
+	lame
+	langpacks
+	langtable
+	langtable -> python2
+	lasso
+	lasso -> xmlsec1
+	"lato-fonts"
+	lcms2
+	ldns
+	sqlite
+	leptonica
+	leptonica -> giflib
+	leptonica -> "libjpeg-turbo"
+	leptonica -> libtiff
+	leptonica -> libwebp
+	lftp
+	lftp -> perl
+	lftp -> lftp
+	lftp -> "perl-DBI"
+	lftp -> "perl-Digest-MD5"
+	lftp -> "perl-String-CRC32"
+	libICE
+	libSM
+	libSM -> libICE
+	libX11
+	libX11 -> libxcb
+	libXNVCtrl
+	libXNVCtrl -> libX11
+	libXNVCtrl -> libXext
+	libXScrnSaver
+	libXScrnSaver -> libX11
+	libXScrnSaver -> libXext
+	libXau
+	libXaw
+	libXaw -> libX11
+	libXaw -> libXext
+	libXaw -> libXmu
+	libXaw -> libXpm
+	libXaw -> libXt
+	libXcomposite
+	libXcomposite -> libX11
+	libXcursor
+	libXcursor -> libX11
+	libXcursor -> libXfixes
+	libXcursor -> libXrender
+	libXdamage
+	libXdamage -> libX11
+	libXdamage -> libXfixes
+	libXdmcp
+	libXext
+	libXext -> libX11
+	libXfixes
+	libXfixes -> libX11
+	libXfont2
+	libXfont2 -> libfontenc
+	libXft
+	libXft -> libX11
+	libXft -> libXrender
+	libXi
+	libXi -> libX11
+	libXi -> libXext
+	libXinerama
+	libXinerama -> libX11
+	libXinerama -> libXext
+	libXmu
+	libXmu -> libX11
+	libXmu -> libXext
+	libXmu -> libXt
+	libXp
+	libXp -> libX11
+	libXp -> libXau
+	libXp -> libXext
+	libXpm
+	libXpm -> libX11
+	libXrandr
+	libXrandr -> libX11
+	libXrandr -> libXext
+	libXrandr -> libXrender
+	libXrender
+	libXrender -> libX11
+	libXres
+	libXres -> libX11
+	libXres -> libXext
+	libXt
+	libXt -> libICE
+	libXt -> libSM
+	libXt -> libX11
+	libXtst
+	libXtst -> libX11
+	libXtst -> libXext
+	libXtst -> libXi
+	libXv
+	libXv -> libX11
+	libXv -> libXext
+	libXvMC
+	libXvMC -> libX11
+	libXvMC -> libXext
+	libXvMC -> libXv
+	libXxf86dga
+	libXxf86dga -> libX11
+	libXxf86dga -> libXext
+	libXxf86misc
+	libXxf86misc -> libX11
+	libXxf86misc -> libXext
+	libXxf86vm
+	libXxf86vm -> libX11
+	libXxf86vm -> libXext
+	a52dec
+	libabw
+	libabw -> librevenge
+	libao
+	libao -> "alsa-lib"
+	libao -> pulseaudio
+	libappindicator
+	libappindicator -> atk
+	libappindicator -> cairo
+	libappindicator -> libdbusmenu
+	libappindicator -> gtk3
+	libappindicator -> libindicator
+	libappindicator -> pango
+	libasyncns
+	libatasmart
+	libatomic_ops
+	libavc1394
+	libavc1394 -> libraw1394
+	libbase
+	libbase -> "apache-commons-logging"
+	libbase -> "java-1.8.0-openjdk"
+	libbase -> "javapackages-tools"
+	libblockdev
+	libblockdev -> nspr
+	libblockdev -> nss
+	libblockdev -> volume_key
+	libblockdev -> libbytesize
+	libblockdev -> python2
+	libbluray
+	libburn
+	libbytesize
+	libbytesize -> python2
+	libcacard
+	libcacard -> nspr
+	libcacard -> nss
+	libcanberra
+	libcanberra -> "alsa-lib"
+	libcanberra -> gstreamer1
+	libcanberra -> pulseaudio
+	libcanberra -> libvorbis
+	libcanberra -> "sound-theme-freedesktop"
+	libcanberra -> libX11
+	libcanberra -> atk
+	libcanberra -> cairo
+	libcanberra -> gtk2
+	libcanberra -> pango
+	libcanberra -> gtk3
+	libcdio
+	"libcdio-paranoia"
+	"libcdio-paranoia" -> libcdio
+	libcdr
+	libcdr -> lcms2
+	libcdr -> librevenge
+	libcmis
+	libcmis -> boost
+	"sblim-cmpi-devel"
+	libdatrie
+	libdazzle
+	libdazzle -> cairo
+	libdazzle -> gtk3
+	libdazzle -> pango
+	libdb
+	libdbusmenu
+	libdbusmenu -> atk
+	libdbusmenu -> cairo
+	libdbusmenu -> libdbusmenu
+	libdbusmenu -> gtk3
+	libdbusmenu -> pango
+	libdc1394
+	libdc1394 -> libraw1394
+	libdmapsharing
+	libdmapsharing -> "gstreamer1-plugins-base"
+	libdmapsharing -> gstreamer1
+	libdmx
+	libdmx -> libX11
+	libdmx -> libXext
+	libdnet
+	libdrm
+	libdv
+	libdvdnav
+	libdvdnav -> libdvdread
+	libdvdread
+	libdwarf
+	libeasyfc
+	libeasyfc -> harfbuzz
+	libeasyfc -> libeasyfc
+	libecpg
+	libecpg -> libpq
+	libepoxy
+	libepubgen
+	libepubgen -> librevenge
+	libestr
+	libetonyek
+	libetonyek -> liblangtag
+	libetonyek -> librevenge
+	libev
+	libevdev
+	libevent
+	libexif
+	libexttextcat
+	libfastjson
+	dtc
+	libfontenc
+	libfonts
+	libfonts -> "java-1.8.0-openjdk"
+	libfonts -> "javapackages-tools"
+	libfonts -> libloader
+	libformula
+	libformula -> "apache-commons-logging"
+	libformula -> "java-1.8.0-openjdk"
+	libformula -> "javapackages-tools"
+	libformula -> libbase
+	libfprint
+	libfprint -> nss
+	libfprint -> pixman
+	libfreehand
+	libfreehand -> lcms2
+	libfreehand -> librevenge
+	libgdata
+	libgdata -> gcr
+	libgdata -> "gnome-online-accounts"
+	libgdata -> liboauth
+	libgdither
+	libgee
+	libgexiv2
+	libgexiv2 -> exiv2
+	libgit2
+	libgit2 -> "http-parser"
+	"libgit2-glib"
+	"libgit2-glib" -> libgit2
+	"libgit2-glib" -> python2
+	"libgit2-glib" -> pygobject3
+	libglvnd
+	libglvnd -> mesa
+	libglvnd -> libX11
+	libglvnd -> libXext
+	libgnomekbd
+	libgnomekbd -> GConf2
+	libgnomekbd -> libX11
+	libgnomekbd -> atk
+	libgnomekbd -> cairo
+	libgnomekbd -> gtk3
+	libgnomekbd -> pango
+	libgnomekbd -> libxklavier
+	libgovirt
+	libgovirt -> rest
+	libgphoto2
+	libgphoto2 -> libexif
+	libgphoto2 -> gd
+	libgphoto2 -> "libjpeg-turbo"
+	libgpod
+	libgpod -> libimobiledevice
+	libgpod -> libplist
+	libgsf
+	libgtop2
+	libgweather
+	libgweather -> "geocode-glib"
+	libgweather -> gtk3
+	libgxps
+	libgxps -> cairo
+	libgxps -> "libjpeg-turbo"
+	libgxps -> lcms2
+	libgxps -> libtiff
+	libhangul
+	libical
+	libidn
+	libiec61883
+	libiec61883 -> libraw1394
+	libieee1284
+	libijs
+	libimobiledevice
+	libimobiledevice -> libplist
+	libimobiledevice -> libusbmuxd
+	libindicator
+	libindicator -> gtk3
+	libinput
+	libinput -> libevdev
+	libinput -> mtdev
+	libinput -> libwacom
+	libinput -> libinput
+	libinput -> "python-evdev"
+	libipt
+	libiptcdata
+	libisoburn
+	libisoburn -> libburn
+	libisoburn -> libisofs
+	libisoburn -> libisoburn
+	libisofs
+	"libjpeg-turbo"
+	"libjpeg-turbo" -> "libjpeg-turbo"
+	libkkc
+	libkkc -> libgee
+	libkkc -> libkkc
+	libkkc -> "libkkc-data"
+	libkkc -> marisa
+	libkkc -> skkdic
+	"libkkc-data"
+	liblangtag
+	liblangtag -> liblangtag
+	liblayout
+	liblayout -> flute
+	liblayout -> "java-1.8.0-openjdk"
+	liblayout -> "javapackages-tools"
+	liblayout -> libbase
+	liblayout -> libfonts
+	liblayout -> libloader
+	liblayout -> librepository
+	liblayout -> "pentaho-libxml"
+	liblayout -> sac
+	libloader
+	libloader -> "java-1.8.0-openjdk"
+	libloader -> "javapackages-tools"
+	libloader -> libbase
+	liblockfile
+	liblognorm
+	liblognorm -> libestr
+	liblognorm -> libfastjson
+	liblouis
+	liblouis -> liblouis
+	liblouis -> python2
+	luksmeta
+	libmad
+	malaga
+	malaga -> atk
+	malaga -> cairo
+	malaga -> gtk2
+	malaga -> pango
+	libmatchbox
+	libmatchbox -> libX11
+	libmatchbox -> libXext
+	libmatchbox -> libXft
+	libmatchbox -> "libjpeg-turbo"
+	libmatchbox -> pango
+	libmaxminddb
+	mcpp
+	mcpp -> mcpp
+	libmediaart
+	libmemcached
+	libmemcached -> libmemcached
+	libmng
+	libmng -> "libjpeg-turbo"
+	libmng -> lcms2
+	libmnl
+	libmpc
+	libmpcdec
+	libmspack
+	libmspub
+	libmspub -> librevenge
+	libmtp
+	libmusicbrainz5
+	libmusicbrainz5 -> neon
+	libmwaw
+	libmwaw -> librevenge
+	libnet
+	libnice
+	libnice -> gupnp
+	libnice -> "gupnp-igd"
+	libnice -> gstreamer1
+	libnma
+	libnma -> cairo
+	libnma -> gcr
+	libnma -> gtk3
+	libnotify
+	libnumbertext
+	liboauth
+	liboauth -> nspr
+	liboauth -> nss
+	libodfgen
+	libodfgen -> librevenge
+	libogg
+	libopenraw
+	libopenraw -> "libjpeg-turbo"
+	liborcus
+	liborcus -> boost
+	libosinfo
+	libosinfo -> "osinfo-db"
+	libosinfo -> "osinfo-db-tools"
+	libotf
+	libotf -> libICE
+	libotf -> libSM
+	libotf -> libX11
+	libotf -> libXaw
+	libotf -> libXmu
+	libotf -> libXt
+	libpagemaker
+	libpagemaker -> librevenge
+	libpaper
+	libpciaccess
+	libpeas
+	libpeas -> atk
+	libpeas -> cairo
+	libpeas -> gtk3
+	libpeas -> pango
+	libpeas -> pygobject3
+	libpfm
+	libpinyin
+	libpinyin -> kyotocabinet
+	libpinyin -> libpinyin
+	libplist
+	"libpmemobj-cpp"
+	libpng12
+	libpng15
+	libpq
+	libproxy
+	libproxy -> webkit2gtk3
+	libpst
+	pidgin
+	pidgin -> farstream02
+	pidgin -> "gstreamer1-plugins-base"
+	pidgin -> gstreamer1
+	pidgin -> libidn
+	pidgin -> meanwhile
+	pidgin -> nspr
+	pidgin -> nss
+	pidgin -> GConf2
+	pidgin -> "gstreamer1-plugins-bad-free"
+	pidgin -> "gstreamer1-plugins-good"
+	pidgin -> libICE
+	pidgin -> libSM
+	pidgin -> libX11
+	pidgin -> libXext
+	pidgin -> libXScrnSaver
+	pidgin -> atk
+	pidgin -> cairo
+	pidgin -> gtk2
+	pidgin -> gtkspell
+	pidgin -> pango
+	pidgin -> "xdg-utils"
+	libquvi
+	libquvi -> "libquvi-scripts"
+	"libquvi-scripts"
+	"libquvi-scripts" -> "lua-expat"
+	"libquvi-scripts" -> "lua-json"
+	"libquvi-scripts" -> "lua-socket"
+	libqxp
+	libqxp -> librevenge
+	ceph
+	ceph -> boost
+	ceph -> nspr
+	ceph -> nss
+	libraw1394
+	librdkafka
+	librelp
+	"libreoffice-voikko"
+	"libreoffice-voikko" -> libreoffice
+	"libreoffice-voikko" -> libvoikko
+	libreport
+	libreport -> satyr
+	libreport -> libtar
+	libreport -> atk
+	libreport -> cairo
+	libreport -> gtk3
+	libreport -> pango
+	libreport -> python2
+	librepository
+	librepository -> "java-1.8.0-openjdk"
+	librepository -> "javapackages-tools"
+	librepository -> libbase
+	libreswan
+	libreswan -> ldns
+	libreswan -> nspr
+	libreswan -> nss
+	libreswan -> unbound
+	librevenge
+	librsvg2
+	librsvg2 -> cairo
+	librsvg2 -> pango
+	librsvg2 -> atk
+	librsvg2 -> gtk3
+	libsamplerate
+	libsamplerate -> "alsa-lib"
+	libsamplerate -> libsndfile
+	libseccomp
+	libselinux
+	libselinux -> ruby
+	libserializer
+	libserializer -> "java-1.8.0-openjdk"
+	libserializer -> "javapackages-tools"
+	libserializer -> libbase
+	libshout
+	libshout -> libogg
+	libshout -> speex
+	libshout -> libtheora
+	libshout -> libvorbis
+	"libsigc++20"
+	libsmi
+	libsmi -> wget
+	libsndfile
+	libsndfile -> flac
+	libsndfile -> gsm
+	libsndfile -> libogg
+	libsndfile -> libvorbis
+	libsoup
+	libspectre
+	libspectre -> ghostscript
+	libspiro
+	libsrtp
+	libssh
+	libstaroffice
+	libstaroffice -> librevenge
+	libtar
+	libtasn1
+	libthai
+	libthai -> libdatrie
+	libtheora
+	libtheora -> libogg
+	libtheora -> SDL
+	libtheora -> libvorbis
+	libtiff
+	libtiff -> jbigkit
+	libtiff -> "libjpeg-turbo"
+	libtimezonemap
+	libtimezonemap -> atk
+	libtimezonemap -> cairo
+	libtimezonemap -> gtk3
+	libtimezonemap -> pango
+	libtimezonemap -> librsvg2
+	libtool
+	libtool -> autoconf
+	libtool -> automake
+	libtool -> gcc
+	libucil
+	libucil -> "alsa-lib"
+	libucil -> libogg
+	libucil -> pango
+	libucil -> libtheora
+	libucil -> libunicap
+	libucil -> libvorbis
+	udisks2
+	udisks2 -> libatasmart
+	udisks2 -> libblockdev
+	libunicap
+	libunicap -> libraw1394
+	libunicap -> "v4l-utils"
+	libusbmuxd
+	libusbmuxd -> libplist
+	libuv
+	"v4l-utils"
+	"v4l-utils" -> "libjpeg-turbo"
+	libva
+	libva -> libglvnd
+	libva -> libX11
+	libva -> libXext
+	libva -> libXfixes
+	libva -> libdrm
+	libva -> wayland
+	libva -> mesa
+	libvdpau
+	libvdpau -> libX11
+	libvdpau -> libXext
+	"libvirt-glib"
+	"libvirt-glib" -> libvirt
+	libvisio
+	libvisio -> librevenge
+	libvisual
+	libvma
+	libvncserver
+	libvncserver -> "libjpeg-turbo"
+	libvoikko
+	libvoikko -> "malaga-suomi-voikko"
+	libvoikko -> libvoikko
+	libvoikko -> python2
+	libvorbis
+	libvorbis -> libogg
+	libvpx
+	libwacom
+	libwacom -> libwacom
+	wayland
+	libwebp
+	libwmf
+	libwmf -> libX11
+	libwmf -> "libjpeg-turbo"
+	libwmf -> libwmf
+	libwmf -> "urw-base35-fonts"
+	libwnck3
+	libwnck3 -> libX11
+	libwnck3 -> libXres
+	libwnck3 -> libXext
+	libwnck3 -> libXrender
+	libwnck3 -> atk
+	libwnck3 -> cairo
+	libwnck3 -> gtk3
+	libwnck3 -> pango
+	libwnck3 -> "startup-notification"
+	libwpd
+	libwpd -> librevenge
+	libwpg
+	libwpg -> librevenge
+	libwpg -> libwpd
+	libwps
+	libwps -> librevenge
+	openwsman
+	openwsman -> openwsman
+	openwsman -> python2
+	openwsman -> "sblim-sfcc"
+	openwsman -> ruby
+	libxcb
+	libxcb -> libXau
+	"xdp-tools"
+	libxkbcommon
+	libxkbcommon -> "xkeyboard-config"
+	libxkbcommon -> libxcb
+	libxkbfile
+	libxkbfile -> libX11
+	libxklavier
+	libxklavier -> "iso-codes"
+	libxklavier -> libX11
+	libxklavier -> libXi
+	libxklavier -> libxkbfile
+	libxml2
+	libxshmfence
+	libxslt
+	libyami
+	libyami -> libX11
+	libyami -> libva
+	libyang
+	libzmf
+	libzmf -> librevenge
+	linuxconsoletools
+	linuxconsoletools -> SDL
+	linuxptp
+	"lklug-fonts"
+	lldpd
+	lldpd -> "net-snmp"
+	lm_sensors
+	lm_sensors -> rrdtool
+	"lohit-assamese-fonts"
+	"lohit-bengali-fonts"
+	"lohit-devanagari-fonts"
+	"lohit-gujarati-fonts"
+	"lohit-gurmukhi-fonts"
+	"lohit-kannada-fonts"
+	"lohit-malayalam-fonts"
+	"lohit-marathi-fonts"
+	"lohit-nepali-fonts"
+	"lohit-odia-fonts"
+	"lohit-tamil-fonts"
+	"lohit-telugu-fonts"
+	"lorax-templates-anolis"
+	"lorax-templates-rhel"
+	lpsolve
+	lshw
+	lshw -> gtk3
+	lshw -> atk
+	lshw -> cairo
+	lshw -> pango
+	ltrace
+	"lttng-ust"
+	lua
+	"lua-expat"
+	"lua-json"
+	"lua-json" -> lua
+	"lua-json" -> "lua-lpeg"
+	"lua-lpeg"
+	"lua-socket"
+	"lua-socket" -> lua
+	"m17n-db"
+	"m17n-lib"
+	"m17n-lib" -> libthai
+	"m17n-lib" -> "m17n-db"
+	"madan-fonts"
+	"malaga-suomi-voikko"
+	"mallard-rng"
+	"man-pages-overrides"
+	"mariadb-connector-c"
+	"mariadb-connector-odbc"
+	"mariadb-connector-odbc" -> "mariadb-connector-c"
+	"mariadb-connector-odbc" -> unixODBC
+	"mariadb-java-client"
+	"mariadb-java-client" -> "java-1.8.0-openjdk"
+	"mariadb-java-client" -> "javapackages-tools"
+	marisa
+	"matchbox-window-manager"
+	"matchbox-window-manager" -> libX11
+	"matchbox-window-manager" -> libXcursor
+	"matchbox-window-manager" -> libXext
+	"matchbox-window-manager" -> libXfixes
+	"matchbox-window-manager" -> libXft
+	"matchbox-window-manager" -> "libjpeg-turbo"
+	"matchbox-window-manager" -> libmatchbox
+	"matchbox-window-manager" -> pango
+	mc
+	mc -> perl
+	mc -> gpm
+	mc -> "perl-File-Temp"
+	mdevctl
+	meanwhile
+	"media-player-info"
+	memcached
+	memcached -> perl
+	memkind
+	mesa
+	mesa -> llvm
+	mesa -> libdrm
+	mesa -> libX11
+	mesa -> libglvnd
+	mesa -> wayland
+	mesa -> libxcb
+	mesa -> libxshmfence
+	mesa -> libXext
+	mesa -> libXfixes
+	mesa -> libXxf86vm
+	mesa -> "vulkan-loader"
+	"mesa-libGLU"
+	"mesa-libGLU" -> libglvnd
+	"mesa-libGLw"
+	"mesa-libGLw" -> libglvnd
+	"mesa-libGLw" -> libX11
+	"mesa-libGLw" -> motif
+	"mesa-libGLw" -> libXt
+	metacity
+	metacity -> libICE
+	metacity -> libSM
+	metacity -> libX11
+	metacity -> libXcomposite
+	metacity -> libXcursor
+	metacity -> libXdamage
+	metacity -> libXext
+	metacity -> libXfixes
+	metacity -> libXinerama
+	metacity -> libXrandr
+	metacity -> libXrender
+	metacity -> atk
+	metacity -> cairo
+	metacity -> libcanberra
+	metacity -> gtk3
+	metacity -> libgtop2
+	metacity -> pango
+	metacity -> "startup-notification"
+	metacity -> zenity
+	micropipenv
+	micropipenv -> python2
+	micropipenv -> "python-pip"
+	micropipenv -> "python-pytoml"
+	mod_auth_gssapi
+	mod_auth_gssapi -> httpd
+	mod_auth_mellon
+	mod_auth_mellon -> httpd
+	mod_auth_mellon -> lasso
+	mod_auth_mellon -> mod_auth_mellon
+	mod_authnz_pam
+	mod_authnz_pam -> httpd
+	mod_fcgid
+	mod_fcgid -> httpd
+	mod_intercept_form_submit
+	mod_intercept_form_submit -> httpd
+	mod_intercept_form_submit -> mod_authnz_pam
+	mod_lookup_identity
+	mod_lookup_identity -> httpd
+	mod_security
+	mod_security -> httpd
+	mod_security -> apr
+	mod_security -> "apr-util"
+	mod_security -> yajl
+	mod_security -> perl
+	mod_security -> "perl-Digest-MD5"
+	mod_security -> "perl-PathTools"
+	mod_security_crs
+	mod_security_crs -> mod_security
+	"modulemd-tools"
+	"modulemd-tools" -> createrepo_c
+	"modulemd-tools" -> python2
+	"modulemd-tools" -> libmodulemd
+	motif
+	motif -> libICE
+	motif -> libSM
+	motif -> libX11
+	motif -> libXext
+	motif -> libXft
+	motif -> libXmu
+	motif -> libXp
+	motif -> libXt
+	motif -> "libjpeg-turbo"
+	motif -> "xorg-x11-xbitmaps"
+	motif -> "xorg-x11-xinit"
+	mousetweaks
+	mousetweaks -> GConf2
+	mousetweaks -> libX11
+	mousetweaks -> libXcursor
+	mousetweaks -> libXfixes
+	mousetweaks -> libXtst
+	mousetweaks -> atk
+	mousetweaks -> cairo
+	mousetweaks -> gtk3
+	mousetweaks -> pango
+	"mozilla-filesystem"
+	mozvoikko
+	mozvoikko -> libvoikko
+	mozvoikko -> "mozilla-filesystem"
+	mpfr
+	mpg123
+	mpg123 -> "alsa-lib"
+	mpg123 -> pulseaudio
+	mpich
+	mpich -> perl
+	mpitests
+	mpitests -> mpich
+	mpitests -> mvapich2
+	mpitests -> openmpi
+	mrtg
+	mrtg -> perl
+	mrtg -> gd
+	mrtg -> "perl-SNMP_Session"
+	mrtg -> "perl-CGI"
+	mrtg -> "perl-Carp"
+	mrtg -> "perl-Exporter"
+	mrtg -> "perl-Getopt-Long"
+	mrtg -> "perl-Math-BigInt"
+	mrtg -> "perl-Pod-Usage"
+	mrtg -> "perl-Socket"
+	mrtg -> "perl-IO-Socket-INET6"
+	mrtg -> "perl-Socket6"
+	mstflint
+	mstflint -> boost
+	mstflint -> python36
+	"mt-st"
+	mtdev
+	mtr
+	mtr -> atk
+	mtr -> cairo
+	mtr -> gtk2
+	mtr -> pango
+	mtx
+	"multilib-rpm-config"
+	"multilib-rpm-config" -> "redhat-rpm-config"
+	munge
+	mutt
+	mutt -> perl
+	mutt -> tokyocabinet
+	mutt -> "perl-File-Temp"
+	mutt -> "perl-Time-Local"
+	mutt -> urlview
+	mutter
+	mutter -> "gnome-control-center"
+	mutter -> gtk3
+	mutter -> libglvnd
+	mutter -> libICE
+	mutter -> libSM
+	mutter -> libX11
+	mutter -> libXau
+	mutter -> libXcomposite
+	mutter -> libXcursor
+	mutter -> libXdamage
+	mutter -> libXext
+	mutter -> libXfixes
+	mutter -> libXi
+	mutter -> libXinerama
+	mutter -> libXrandr
+	mutter -> libXtst
+	mutter -> atk
+	mutter -> cairo
+	mutter -> libcanberra
+	mutter -> libdrm
+	mutter -> mesa
+	mutter -> "gnome-desktop3"
+	mutter -> libinput
+	mutter -> pango
+	mutter -> pipewire
+	mutter -> "startup-notification"
+	mutter -> libwacom
+	mutter -> wayland
+	mutter -> libxcb
+	mutter -> libxkbcommon
+	mutter -> libxkbfile
+	mutter -> zenity
+	mvapich2
+	mvapich2 -> perl
+	"mysql-selinux"
+	mythes
+	"mythes-bg"
+	"mythes-bg" -> mythes
+	"mythes-ca"
+	"mythes-ca" -> mythes
+	"mythes-cs"
+	"mythes-cs" -> mythes
+	"mythes-da"
+	"mythes-da" -> mythes
+	"mythes-de"
+	"mythes-de" -> mythes
+	"mythes-el"
+	"mythes-el" -> mythes
+	"mythes-en"
+	"mythes-en" -> mythes
+	"mythes-es"
+	"mythes-es" -> mythes
+	"mythes-fr"
+	"mythes-fr" -> mythes
+	"mythes-ga"
+	"mythes-ga" -> mythes
+	"mythes-hu"
+	"mythes-hu" -> mythes
+	"mythes-it"
+	"mythes-it" -> mythes
+	"mythes-mi"
+	"mythes-mi" -> mythes
+	"mythes-ne"
+	"mythes-ne" -> mythes
+	"mythes-nl"
+	"mythes-nl" -> mythes
+	"mythes-pl"
+	"mythes-pl" -> mythes
+	"mythes-pt"
+	"mythes-pt" -> mythes
+	"mythes-ro"
+	"mythes-ro" -> mythes
+	"mythes-ru"
+	"mythes-ru" -> mythes
+	"mythes-sk"
+	"mythes-sk" -> mythes
+	"mythes-sl"
+	"mythes-sl" -> mythes
+	"mythes-sv"
+	"mythes-sv" -> mythes
+	"mythes-uk"
+	"mythes-uk" -> mythes
+	"nafees-web-naskh-fonts"
+	nautilus
+	nautilus -> gtk3
+	nautilus -> gvfs
+	nautilus -> atk
+	nautilus -> cairo
+	nautilus -> libexif
+	nautilus -> libgexiv2
+	nautilus -> "gnome-autoar"
+	nautilus -> "gnome-desktop3"
+	nautilus -> nautilus
+	nautilus -> pango
+	nautilus -> tracker
+	"nautilus-sendto"
+	"navilu-fonts"
+	ncompress
+	neon
+	neon -> pakchois
+	"net-snmp"
+	"net-snmp" -> perl
+	"net-snmp" -> "mariadb-connector-c"
+	"net-snmp" -> "net-snmp"
+	"net-snmp" -> "perl-Data-Dumper"
+	"net-snmp" -> "perl-Carp"
+	"net-snmp" -> "perl-PathTools"
+	"net-snmp" -> "perl-Exporter"
+	"net-snmp" -> "perl-File-Path"
+	"net-snmp" -> "perl-Getopt-Long"
+	"net-snmp" -> "perl-JSON"
+	"net-snmp" -> "perl-Mail-Sender"
+	"net-snmp" -> "perl-libnet"
+	netpbm
+	netpbm -> perl
+	netpbm -> ghostscript
+	netpbm -> libX11
+	netpbm -> jasper
+	netpbm -> jbigkit
+	netpbm -> "libjpeg-turbo"
+	netpbm -> libtiff
+	netpbm -> "perl-PathTools"
+	netpbm -> "perl-File-Temp"
+	netpbm -> "perl-Getopt-Long"
+	nettle
+	"network-manager-applet"
+	"network-manager-applet" -> libappindicator
+	"network-manager-applet" -> atk
+	"network-manager-applet" -> cairo
+	"network-manager-applet" -> gtk3
+	"network-manager-applet" -> libnma
+	"network-manager-applet" -> libnotify
+	"network-manager-applet" -> pango
+	newt
+	newt -> python2
+	nispor
+	nispor -> python2
+	nmap
+	nmstate
+	nmstate -> python2
+	nmstate -> nmstate
+	nmstate -> nispor
+	nmstate -> "python-jsonschema"
+	nspr
+	nss
+	nss -> nspr
+	"nss-altfiles"
+	"nss-pam-ldapd"
+	nss_wrapper
+	nss_wrapper -> perl
+	nss_wrapper -> cmake
+	nss_wrapper -> "perl-PathTools"
+	nss_wrapper -> "perl-Getopt-Long"
+	ntpstat
+	"ocaml-srpm-macros"
+	"ocl-icd"
+	oddjob
+	omping
+	"ongres-scram"
+	"ongres-scram" -> "java-1.8.0-openjdk"
+	"ongres-scram" -> "javapackages-tools"
+	oniguruma
+	"open-sans-fonts"
+	"open-vm-tools"
+	"open-vm-tools" -> libdrm
+	"open-vm-tools" -> libmspack
+	"open-vm-tools" -> xmlsec1
+	"open-vm-tools" -> libX11
+	"open-vm-tools" -> libXext
+	"open-vm-tools" -> libXi
+	"open-vm-tools" -> libXinerama
+	"open-vm-tools" -> libXrandr
+	"open-vm-tools" -> libXtst
+	"open-vm-tools" -> atkmm
+	"open-vm-tools" -> cairomm
+	"open-vm-tools" -> gtk3
+	"open-vm-tools" -> gtkmm30
+	"open-vm-tools" -> glibmm24
+	"open-vm-tools" -> "libsigc++20"
+	"openal-soft"
+	openblas
+	"openblas-srpm-macros"
+	openchange
+	"opencl-filesystem"
+	opencv
+	opencv -> "qt5-qtbase"
+	opencv -> harfbuzz
+	opencv -> tesseract
+	opencv -> libglvnd
+	opencv -> libdc1394
+	opencv -> "gstreamer1-plugins-base"
+	opencv -> gstreamer1
+	opencv -> jasper
+	opencv -> "libjpeg-turbo"
+	opencv -> openblas
+	opencv -> protobuf
+	opencv -> tbb
+	opencv -> libtiff
+	opencv -> libucil
+	opencv -> libunicap
+	opencv -> "v4l-utils"
+	opencv -> libva
+	opencv -> libwebp
+	openjpeg2
+	openjpeg2 -> lcms2
+	openjpeg2 -> libtiff
+	openmpi
+	openmpi -> pmix
+	openmpi -> ucx
+	openscap
+	openscap -> GConf2
+	openscap -> xmlsec1
+	openscap -> python2
+	openscap -> rpm
+	openscap -> rpmdevtools
+	openslp
+	openssh
+	openssh -> libX11
+	openssh -> atk
+	openssh -> cairo
+	openssh -> gtk2
+	openssh -> pango
+	opus
+	orc
+	orca
+	orca -> libwnck3
+	orca -> python2
+	orca -> brltty
+	orca -> liblouis
+	orca -> pyatspi
+	orca -> "speech-dispatcher"
+	osbuild
+	osbuild -> python36
+	osbuild -> osbuild
+	osbuild -> "qemu-kvm"
+	osbuild -> ostree
+	osbuild -> "rpm-ostree"
+	osbuild -> python2
+	osbuild -> "python-jsonschema"
+	"osbuild-composer"
+	"osbuild-composer" -> "osbuild-composer"
+	"osbuild-composer" -> osbuild
+	"osbuild-composer" -> "qemu-kvm"
+	"oscap-anaconda-addon"
+	"oscap-anaconda-addon" -> anaconda
+	"oscap-anaconda-addon" -> openscap
+	"oscap-anaconda-addon" -> "python-cpio"
+	"oscap-anaconda-addon" -> pykickstart
+	"oscap-anaconda-addon" -> "python-pycurl"
+	"oscap-anaconda-addon" -> "scap-security-guide"
+	"osinfo-db"
+	"osinfo-db-tools"
+	ostree
+	"overpass-fonts"
+	pacemaker
+	pacemaker -> corosync
+	pacemaker -> pacemaker
+	pakchois
+	"paktype-naqsh-fonts"
+	"paktype-naskh-basic-fonts"
+	"paktype-tehreer-fonts"
+	pango
+	pango -> cairo
+	pango -> fribidi
+	pango -> harfbuzz
+	pango -> libX11
+	pango -> libXft
+	pango -> libXrender
+	pango -> libthai
+	pangomm
+	pangomm -> cairomm
+	pangomm -> glibmm24
+	pangomm -> cairo
+	pangomm -> pango
+	pangomm -> "libsigc++20"
+	papi
+	papi -> papi
+	papi -> libpfm
+	paps
+	paps -> cups
+	paps -> pango
+	paps -> paps
+	"paratype-pt-sans-fonts"
+	patchutils
+	patchutils -> perl
+	pavucontrol
+	pavucontrol -> libX11
+	pavucontrol -> atk
+	pavucontrol -> atkmm
+	pavucontrol -> cairo
+	pavucontrol -> cairomm
+	pavucontrol -> libcanberra
+	pavucontrol -> gtk3
+	pavucontrol -> gtkmm30
+	pavucontrol -> glibmm24
+	pavucontrol -> pango
+	pavucontrol -> pangomm
+	pavucontrol -> pulseaudio
+	pavucontrol -> "libsigc++20"
+	pcaudiolib
+	pcaudiolib -> "alsa-lib"
+	pcaudiolib -> pulseaudio
+	pcm
+	pcp
+	pcp -> libuv
+	pcp -> libglvnd
+	pcp -> "qt5-qtbase"
+	pcp -> "qt5-qtsvg"
+	pcp -> perl
+	pcp -> "perl-TimeDate"
+	pcp -> rrdtool
+	pcp -> "perl-XML-TokeParser"
+	pcp -> nspr
+	pcp -> nss
+	pcp -> "perl-Digest-MD5"
+	pcp -> "perl-JSON"
+	pcp -> "perl-libwww-perl"
+	pcp -> "perl-Time-HiRes"
+	pcp -> bcc
+	pcp -> "perl-File-Slurp"
+	pcp -> "perl-XML-LibXML"
+	pcp -> "perl-autodie"
+	pcp -> bpftrace
+	pcp -> python36
+	pcp -> "perl-DBI"
+	pcp -> "python-jsonpointer"
+	pcp -> "libvirt-python"
+	pcp -> "python-lxml"
+	pcp -> pyodbc
+	pcp -> "perl-DBD-MySQL"
+	pcp -> libpfm
+	pcp -> postfix
+	pcp -> "python-psycopg2"
+	pcp -> "perl-Data-Dumper"
+	pcp -> HdrHistogram_c
+	pcp -> chan
+	pcp -> gcc
+	pcp -> "perl-Getopt-Long"
+	pcp -> "perl-libnet"
+	pcp -> "redhat-rpm-config"
+	pcp -> "perl-Exporter"
+	pcp -> python2
+	"pentaho-libxml"
+	"pentaho-libxml" -> "java-1.8.0-openjdk"
+	"pentaho-libxml" -> "javapackages-tools"
+	"pentaho-libxml" -> libbase
+	"pentaho-libxml" -> libloader
+	"pentaho-reporting-flow-engine"
+	"pentaho-reporting-flow-engine" -> flute
+	"pentaho-reporting-flow-engine" -> "java-1.8.0-openjdk"
+	"pentaho-reporting-flow-engine" -> "javapackages-tools"
+	"pentaho-reporting-flow-engine" -> libbase
+	"pentaho-reporting-flow-engine" -> libfonts
+	"pentaho-reporting-flow-engine" -> libformula
+	"pentaho-reporting-flow-engine" -> liblayout
+	"pentaho-reporting-flow-engine" -> librepository
+	"pentaho-reporting-flow-engine" -> libserializer
+	"pentaho-reporting-flow-engine" -> "pentaho-libxml"
+	"pentaho-reporting-flow-engine" -> sac
+	peripety
+	perl
+	perl -> perl
+	perl -> "perl-Carp"
+	perl -> "perl-PathTools"
+	perl -> "perl-Exporter"
+	perl -> "perl-File-Path"
+	perl -> "perl-Scalar-List-Utils"
+	perl -> "perl-Text-Tabs+Wrap"
+	perl -> "perl-Unicode-Normalize"
+	perl -> "perl-constant"
+	perl -> "perl-parent"
+	perl -> "perl-threads"
+	perl -> "perl-threads-shared"
+	perl -> "perl-Locale-Maketext"
+	perl -> "perl-Storable"
+	perl -> "perl-Socket"
+	perl -> "perl-Time-HiRes"
+	perl -> "perl-Getopt-Long"
+	perl -> "perl-Pod-Simple"
+	perl -> "perl-File-Temp"
+	perl -> "perl-Time-Local"
+	perl -> "perl-ExtUtils-MakeMaker"
+	perl -> "perl-Encode"
+	"perl-Archive-Zip"
+	"perl-Archive-Zip" -> perl
+	"perl-Archive-Zip" -> "perl-Archive-Zip"
+	"perl-Archive-Zip" -> "perl-Carp"
+	"perl-Archive-Zip" -> "perl-Compress-Raw-Zlib"
+	"perl-Archive-Zip" -> "perl-PathTools"
+	"perl-Archive-Zip" -> "perl-Data-Dumper"
+	"perl-Archive-Zip" -> "perl-Encode"
+	"perl-Archive-Zip" -> "perl-Exporter"
+	"perl-Archive-Zip" -> "perl-File-Path"
+	"perl-Archive-Zip" -> "perl-File-Temp"
+	"perl-Archive-Zip" -> "perl-Time-Local"
+	"perl-Archive-Zip" -> "perl-constant"
+	"perl-Authen-SASL"
+	"perl-Authen-SASL" -> "perl-Carp"
+	"perl-Authen-SASL" -> "perl-Digest-HMAC"
+	"perl-Authen-SASL" -> "perl-Digest-MD5"
+	"perl-Authen-SASL" -> "perl-GSSAPI"
+	"perl-Authen-SASL" -> perl
+	"perl-B-Debug"
+	"perl-B-Debug" -> perl
+	"perl-B-Lint"
+	"perl-B-Lint" -> perl
+	"perl-B-Lint" -> "perl-Carp"
+	"perl-B-Lint" -> "perl-Scalar-List-Utils"
+	"perl-B-Lint" -> "perl-Module-Pluggable"
+	"perl-B-Lint" -> "perl-constant"
+	"perl-Bit-Vector"
+	"perl-Bit-Vector" -> "perl-Bit-Vector"
+	"perl-Bit-Vector" -> "perl-Carp-Clan"
+	"perl-Bit-Vector" -> perl
+	"perl-Bit-Vector" -> "perl-Exporter"
+	"perl-Bit-Vector" -> "perl-Storable"
+	"perl-CGI"
+	"perl-CGI" -> perl
+	"perl-CGI" -> "perl-CGI"
+	"perl-CGI" -> "perl-Carp"
+	"perl-CGI" -> "perl-Exporter"
+	"perl-CGI" -> "perl-PathTools"
+	"perl-CGI" -> "perl-File-Temp"
+	"perl-CGI" -> "perl-HTML-Parser"
+	"perl-CGI" -> "perl-Text-ParseWords"
+	"perl-CGI" -> "perl-parent"
+	"perl-CPAN"
+	"perl-CPAN" -> perl
+	"perl-CPAN" -> "perl-CPAN"
+	"perl-CPAN" -> "perl-Archive-Tar"
+	"perl-CPAN" -> "perl-Archive-Zip"
+	"perl-CPAN" -> "perl-CPAN-Meta"
+	"perl-CPAN" -> "perl-CPAN-Meta-Requirements"
+	"perl-CPAN" -> "perl-Carp"
+	"perl-CPAN" -> "perl-Compress-Bzip2"
+	"perl-CPAN" -> "perl-IO-Compress"
+	"perl-CPAN" -> "perl-PathTools"
+	"perl-CPAN" -> "perl-Data-Dumper"
+	"perl-CPAN" -> "perl-Devel-Size"
+	"perl-CPAN" -> "perl-Digest-MD5"
+	"perl-CPAN" -> "perl-Digest-SHA"
+	"perl-CPAN" -> "perl-Exporter"
+	"perl-CPAN" -> "perl-ExtUtils-CBuilder"
+	"perl-CPAN" -> "perl-ExtUtils-MakeMaker"
+	"perl-CPAN" -> "perl-ExtUtils-Manifest"
+	"perl-CPAN" -> "perl-File-HomeDir"
+	"perl-CPAN" -> "perl-File-Path"
+	"perl-CPAN" -> "perl-File-Temp"
+	"perl-CPAN" -> "perl-HTTP-Tiny"
+	"perl-CPAN" -> "perl-Module-Build"
+	"perl-CPAN" -> "perl-libnet"
+	"perl-CPAN" -> "perl-Text-Glob"
+	"perl-CPAN" -> "perl-Text-ParseWords"
+	"perl-CPAN" -> "perl-Text-Tabs+Wrap"
+	"perl-CPAN" -> "perl-Time-Local"
+	"perl-CPAN" -> "perl-URI"
+	"perl-CPAN" -> "perl-constant"
+	"perl-CPAN" -> "perl-local-lib"
+	"perl-CPAN-Meta"
+	"perl-CPAN-Meta" -> perl
+	"perl-CPAN-Meta" -> "perl-CPAN-Meta"
+	"perl-CPAN-Meta" -> "perl-CPAN-Meta-Requirements"
+	"perl-CPAN-Meta" -> "perl-CPAN-Meta-YAML"
+	"perl-CPAN-Meta" -> "perl-Carp"
+	"perl-CPAN-Meta" -> "perl-Encode"
+	"perl-CPAN-Meta" -> "perl-Exporter"
+	"perl-CPAN-Meta" -> "perl-JSON-PP"
+	"perl-CPAN-Meta" -> "perl-Scalar-List-Utils"
+	"perl-CPAN-Meta" -> "perl-version"
+	"perl-CPAN-Meta-Requirements"
+	"perl-CPAN-Meta-Requirements" -> perl
+	"perl-CPAN-Meta-Requirements" -> "perl-Carp"
+	"perl-CPAN-Meta-Requirements" -> "perl-version"
+	"perl-CPAN-Meta-YAML"
+	"perl-CPAN-Meta-YAML" -> perl
+	"perl-CPAN-Meta-YAML" -> "perl-Carp"
+	"perl-CPAN-Meta-YAML" -> "perl-Exporter"
+	"perl-CPAN-Meta-YAML" -> "perl-Scalar-List-Utils"
+	"perl-Carp-Clan"
+	"perl-Carp-Clan" -> perl
+	"perl-Class-ISA"
+	"perl-Class-ISA" -> perl
+	"perl-Class-Inspector"
+	"perl-Class-Inspector" -> perl
+	"perl-Class-Inspector" -> "perl-Class-Inspector"
+	"perl-Class-Inspector" -> "perl-Exporter"
+	"perl-Class-Inspector" -> "perl-PathTools"
+	"perl-Compress-Bzip2"
+	"perl-Compress-Bzip2" -> perl
+	"perl-Compress-Bzip2" -> "perl-Carp"
+	"perl-Compress-Bzip2" -> "perl-Exporter"
+	"perl-Compress-Bzip2" -> "perl-constant"
+	"perl-Config-Perl-V"
+	"perl-Config-Perl-V" -> perl
+	"perl-Config-Perl-V" -> "perl-Exporter"
+	"perl-Convert-ASN1"
+	"perl-Convert-ASN1" -> perl
+	"perl-Convert-ASN1" -> "perl-Carp"
+	"perl-Convert-ASN1" -> "perl-Convert-ASN1"
+	"perl-Convert-ASN1" -> "perl-Encode"
+	"perl-Convert-ASN1" -> "perl-Exporter"
+	"perl-Convert-ASN1" -> "perl-Socket"
+	"perl-Convert-ASN1" -> "perl-Time-Local"
+	"perl-Convert-ASN1" -> "perl-constant"
+	"perl-Crypt-OpenSSL-Bignum"
+	"perl-Crypt-OpenSSL-Bignum" -> perl
+	"perl-Crypt-OpenSSL-Bignum" -> "perl-Carp"
+	"perl-Crypt-OpenSSL-Bignum" -> "perl-Crypt-OpenSSL-Bignum"
+	"perl-Crypt-OpenSSL-RSA"
+	"perl-Crypt-OpenSSL-RSA" -> perl
+	"perl-Crypt-OpenSSL-RSA" -> "perl-Carp"
+	"perl-Crypt-OpenSSL-RSA" -> "perl-Crypt-OpenSSL-Bignum"
+	"perl-Crypt-OpenSSL-RSA" -> "perl-Crypt-OpenSSL-Random"
+	"perl-Crypt-OpenSSL-Random"
+	"perl-Crypt-OpenSSL-Random" -> "perl-Exporter"
+	"perl-Crypt-OpenSSL-Random" -> perl
+	"perl-DB_File"
+	"perl-DB_File" -> perl
+	"perl-DB_File" -> "perl-Carp"
+	"perl-DB_File" -> "perl-Exporter"
+	"perl-DB_File" -> "perl-PathTools"
+	"perl-Data-OptList"
+	"perl-Data-OptList" -> "perl-Scalar-List-Utils"
+	"perl-Data-OptList" -> "perl-Params-Util"
+	"perl-Data-OptList" -> "perl-Sub-Install"
+	"perl-Data-OptList" -> perl
+	"perl-Data-Section"
+	"perl-Data-Section" -> perl
+	"perl-Data-Section" -> "perl-Encode"
+	"perl-Data-Section" -> "perl-MRO-Compat"
+	"perl-Data-Section" -> "perl-Sub-Exporter"
+	"perl-Date-Calc"
+	"perl-Date-Calc" -> "perl-Bit-Vector"
+	"perl-Date-Calc" -> "perl-Carp-Clan"
+	"perl-Date-Calc" -> "perl-Date-Calc"
+	"perl-Date-Calc" -> "perl-Exporter"
+	"perl-Date-Calc" -> perl
+	"perl-Devel-PPPort"
+	"perl-Devel-PPPort" -> perl
+	"perl-Devel-Size"
+	"perl-Devel-Size" -> perl
+	"perl-Devel-Size" -> "perl-Exporter"
+	"perl-Digest"
+	"perl-Digest" -> "perl-Carp"
+	"perl-Digest" -> "perl-Digest"
+	"perl-Digest" -> "perl-Exporter"
+	"perl-Digest" -> "perl-MIME-Base64"
+	"perl-Digest" -> perl
+	"perl-Digest-MD5"
+	"perl-Digest-MD5" -> "perl-Digest"
+	"perl-Digest-MD5" -> "perl-Exporter"
+	"perl-Digest-MD5" -> perl
+	"perl-Digest-SHA"
+	"perl-Digest-SHA" -> perl
+	"perl-Digest-SHA" -> "perl-Carp"
+	"perl-Digest-SHA" -> "perl-Digest-SHA"
+	"perl-Digest-SHA" -> "perl-Digest"
+	"perl-Digest-SHA" -> "perl-Exporter"
+	"perl-Digest-SHA" -> "perl-Getopt-Long"
+	"perl-Encode-Detect"
+	"perl-Encode-Detect" -> perl
+	"perl-Encode-Detect" -> "perl-Encode"
+	"perl-Encode-Detect" -> "perl-Encode-Detect"
+	"perl-Encode"
+	"perl-Encode" -> perl
+	"perl-Encode" -> "perl-Carp"
+	"perl-Encode" -> "perl-Encode"
+	"perl-Encode" -> "perl-Filter"
+	"perl-Encode" -> "perl-constant"
+	"perl-Env"
+	"perl-Env" -> perl
+	"perl-Error"
+	"perl-Error" -> perl
+	"perl-Error" -> "perl-Carp"
+	"perl-Error" -> "perl-Exporter"
+	"perl-Error" -> "perl-Scalar-List-Utils"
+	"perl-ExtUtils-CBuilder"
+	"perl-ExtUtils-CBuilder" -> perl
+	"perl-ExtUtils-CBuilder" -> "perl-PathTools"
+	"perl-ExtUtils-CBuilder" -> "perl-ExtUtils-CBuilder"
+	"perl-ExtUtils-CBuilder" -> "perl-ExtUtils-MakeMaker"
+	"perl-ExtUtils-CBuilder" -> "perl-File-Path"
+	"perl-ExtUtils-CBuilder" -> "perl-File-Temp"
+	"perl-ExtUtils-CBuilder" -> "perl-IPC-Cmd"
+	"perl-ExtUtils-CBuilder" -> "perl-Perl-OSType"
+	"perl-ExtUtils-CBuilder" -> "perl-Text-ParseWords"
+	"perl-ExtUtils-MakeMaker"
+	"perl-ExtUtils-MakeMaker" -> perl
+	"perl-ExtUtils-MakeMaker" -> "perl-Carp"
+	"perl-ExtUtils-MakeMaker" -> "perl-Exporter"
+	"perl-ExtUtils-MakeMaker" -> "perl-File-Path"
+	"perl-ExtUtils-MakeMaker" -> "perl-PathTools"
+	"perl-ExtUtils-MakeMaker" -> "perl-Data-Dumper"
+	"perl-ExtUtils-MakeMaker" -> "perl-Encode"
+	"perl-ExtUtils-MakeMaker" -> "perl-ExtUtils-MakeMaker"
+	"perl-ExtUtils-MakeMaker" -> "perl-ExtUtils-Install"
+	"perl-ExtUtils-MakeMaker" -> "perl-ExtUtils-Manifest"
+	"perl-ExtUtils-MakeMaker" -> "perl-Getopt-Long"
+	"perl-ExtUtils-MakeMaker" -> "perl-podlators"
+	"perl-ExtUtils-MakeMaker" -> "perl-Test-Harness"
+	"perl-ExtUtils-MakeMaker" -> "perl-version"
+	"perl-ExtUtils-MakeMaker" -> "perl-ExtUtils-ParseXS"
+	"perl-ExtUtils-Install"
+	"perl-ExtUtils-Install" -> perl
+	"perl-ExtUtils-Install" -> "perl-Carp"
+	"perl-ExtUtils-Install" -> "perl-PathTools"
+	"perl-ExtUtils-Install" -> "perl-Data-Dumper"
+	"perl-ExtUtils-Install" -> "perl-Exporter"
+	"perl-ExtUtils-Install" -> "perl-ExtUtils-MakeMaker"
+	"perl-ExtUtils-Install" -> "perl-ExtUtils-Install"
+	"perl-ExtUtils-Install" -> "perl-File-Path"
+	"perl-ExtUtils-Manifest"
+	"perl-ExtUtils-Manifest" -> "perl-Carp"
+	"perl-ExtUtils-Manifest" -> perl
+	"perl-ExtUtils-Manifest" -> "perl-Exporter"
+	"perl-ExtUtils-Manifest" -> "perl-File-Path"
+	"perl-ExtUtils-Manifest" -> "perl-PathTools"
+	"perl-ExtUtils-ParseXS"
+	"perl-ExtUtils-ParseXS" -> perl
+	"perl-ExtUtils-ParseXS" -> "perl-PathTools"
+	"perl-ExtUtils-ParseXS" -> "perl-Exporter"
+	"perl-ExtUtils-ParseXS" -> "perl-ExtUtils-ParseXS"
+	"perl-ExtUtils-ParseXS" -> "perl-Getopt-Long"
+	"perl-Fedora-VSP"
+	"perl-Fedora-VSP" -> perl
+	"perl-File-CheckTree"
+	"perl-File-CheckTree" -> perl
+	"perl-File-CheckTree" -> "perl-PathTools"
+	"perl-File-CheckTree" -> "perl-Exporter"
+	"perl-File-Fetch"
+	"perl-File-Fetch" -> "perl-Carp"
+	"perl-File-Fetch" -> "perl-PathTools"
+	"perl-File-Fetch" -> perl
+	"perl-File-Fetch" -> "perl-File-Path"
+	"perl-File-Fetch" -> "perl-File-Temp"
+	"perl-File-Fetch" -> "perl-IPC-Cmd"
+	"perl-File-Fetch" -> "perl-Module-Load-Conditional"
+	"perl-File-Fetch" -> "perl-Params-Check"
+	"perl-File-Fetch" -> "perl-constant"
+	"perl-File-HomeDir"
+	"perl-File-HomeDir" -> perl
+	"perl-File-HomeDir" -> "perl-Carp"
+	"perl-File-HomeDir" -> "perl-PathTools"
+	"perl-File-HomeDir" -> "perl-Exporter"
+	"perl-File-HomeDir" -> "perl-File-HomeDir"
+	"perl-File-HomeDir" -> "perl-File-Path"
+	"perl-File-HomeDir" -> "perl-File-Temp"
+	"perl-File-HomeDir" -> "perl-File-Which"
+	"perl-File-ShareDir"
+	"perl-File-ShareDir" -> perl
+	"perl-File-ShareDir" -> "perl-Carp"
+	"perl-File-ShareDir" -> "perl-Class-Inspector"
+	"perl-File-ShareDir" -> "perl-Exporter"
+	"perl-File-ShareDir" -> "perl-PathTools"
+	"perl-File-ShareDir" -> "perl-constant"
+	"perl-File-Slurp"
+	"perl-File-Slurp" -> perl
+	"perl-File-Slurp" -> "perl-Carp"
+	"perl-File-Slurp" -> "perl-Exporter"
+	"perl-File-Which"
+	"perl-File-Which" -> perl
+	"perl-File-Which" -> "perl-Exporter"
+	"perl-File-Which" -> "perl-PathTools"
+	"perl-File-Which" -> "perl-constant"
+	"perl-Filter"
+	"perl-Filter" -> perl
+	"perl-Filter" -> "perl-Carp"
+	"perl-Filter" -> "perl-Exporter"
+	"perl-Filter" -> "perl-Filter"
+	"perl-Filter-Simple"
+	"perl-Filter-Simple" -> perl
+	"perl-Filter-Simple" -> "perl-Carp"
+	"perl-Filter-Simple" -> "perl-Filter"
+	"perl-Filter-Simple" -> "perl-Text-Balanced"
+	"perl-GSSAPI"
+	"perl-GSSAPI" -> perl
+	"perl-GSSAPI" -> "perl-Carp"
+	"perl-GSSAPI" -> "perl-Exporter"
+	"perl-GSSAPI" -> "perl-constant"
+	"perl-IO-Multiplex"
+	"perl-IO-Multiplex" -> "perl-Carp"
+	"perl-IO-Multiplex" -> perl
+	"perl-IO-Multiplex" -> "perl-Socket"
+	"perl-IO-Multiplex" -> "perl-Time-HiRes"
+	"perl-IO-Multiplex" -> "perl-constant"
+	"perl-IO-Socket-INET6"
+	"perl-IO-Socket-INET6" -> perl
+	"perl-IO-Socket-INET6" -> "perl-Carp"
+	"perl-IO-Socket-INET6" -> "perl-Socket"
+	"perl-IO-Socket-INET6" -> "perl-Socket6"
+	"perl-IO-Socket-IP"
+	"perl-IO-Socket-IP" -> "perl-Carp"
+	"perl-IO-Socket-IP" -> perl
+	"perl-IO-Socket-IP" -> "perl-Socket"
+	"perl-IO-Socket-IP" -> "perl-constant"
+	"perl-IO-String"
+	"perl-IO-String" -> perl
+	"perl-IO-String" -> "perl-Data-Dumper"
+	"perl-IPC-Cmd"
+	"perl-IPC-Cmd" -> perl
+	"perl-IPC-Cmd" -> "perl-Carp"
+	"perl-IPC-Cmd" -> "perl-Exporter"
+	"perl-IPC-Cmd" -> "perl-ExtUtils-MakeMaker"
+	"perl-IPC-Cmd" -> "perl-PathTools"
+	"perl-IPC-Cmd" -> "perl-Module-Load-Conditional"
+	"perl-IPC-Cmd" -> "perl-Params-Check"
+	"perl-IPC-Cmd" -> "perl-Socket"
+	"perl-IPC-Cmd" -> "perl-Text-ParseWords"
+	"perl-IPC-Cmd" -> "perl-Time-HiRes"
+	"perl-IPC-Cmd" -> "perl-constant"
+	"perl-IPC-SysV"
+	"perl-IPC-SysV" -> "perl-Carp"
+	"perl-IPC-SysV" -> perl
+	"perl-IPC-SysV" -> "perl-Exporter"
+	"perl-IPC-SysV" -> "perl-IPC-SysV"
+	"perl-IPC-System-Simple"
+	"perl-IPC-System-Simple" -> perl
+	"perl-IPC-System-Simple" -> "perl-Carp"
+	"perl-IPC-System-Simple" -> "perl-Exporter"
+	"perl-IPC-System-Simple" -> "perl-Scalar-List-Utils"
+	"perl-IPC-System-Simple" -> "perl-constant"
+	"perl-JSON"
+	"perl-JSON" -> perl
+	"perl-JSON" -> "perl-Carp"
+	"perl-JSON" -> "perl-Exporter"
+	"perl-JSON" -> "perl-constant"
+	"perl-JSON-PP"
+	"perl-JSON-PP" -> perl
+	"perl-JSON-PP" -> "perl-Carp"
+	"perl-JSON-PP" -> "perl-Data-Dumper"
+	"perl-JSON-PP" -> "perl-Encode"
+	"perl-JSON-PP" -> "perl-Exporter"
+	"perl-JSON-PP" -> "perl-Getopt-Long"
+	"perl-JSON-PP" -> "perl-JSON-PP"
+	"perl-JSON-PP" -> "perl-Math-BigInt"
+	"perl-JSON-PP" -> "perl-Scalar-List-Utils"
+	"perl-JSON-PP" -> "perl-constant"
+	"perl-LDAP"
+	"perl-LDAP" -> "perl-Authen-SASL"
+	"perl-LDAP" -> "perl-Carp"
+	"perl-LDAP" -> "perl-Convert-ASN1"
+	"perl-LDAP" -> "perl-Encode"
+	"perl-LDAP" -> "perl-Exporter"
+	"perl-LDAP" -> "perl-HTTP-Negotiate"
+	"perl-LDAP" -> "perl-HTTP-Message"
+	"perl-LDAP" -> perl
+	"perl-LDAP" -> "perl-IO-Socket-SSL"
+	"perl-LDAP" -> "perl-JSON"
+	"perl-LDAP" -> "perl-LWP-MediaTypes"
+	"perl-LDAP" -> "perl-libwww-perl"
+	"perl-LDAP" -> "perl-LDAP"
+	"perl-LDAP" -> "perl-MIME-Base64"
+	"perl-LDAP" -> "perl-Socket"
+	"perl-LDAP" -> "perl-Text-Soundex"
+	"perl-LDAP" -> "perl-Time-Local"
+	"perl-LDAP" -> "perl-constant"
+	"perl-Locale-Codes"
+	"perl-Locale-Codes" -> perl
+	"perl-Locale-Codes" -> "perl-Carp"
+	"perl-Locale-Codes" -> "perl-Exporter"
+	"perl-Locale-Codes" -> "perl-Locale-Codes"
+	"perl-Locale-Codes" -> "perl-constant"
+	"perl-Locale-Maketext"
+	"perl-Locale-Maketext" -> "perl-Carp"
+	"perl-Locale-Maketext" -> perl
+	"perl-Locale-Maketext" -> "perl-Locale-Maketext"
+	"perl-MRO-Compat"
+	"perl-MRO-Compat" -> perl
+	"perl-Mail-DKIM"
+	"perl-Mail-DKIM" -> "perl-Carp"
+	"perl-Mail-DKIM" -> "perl-Crypt-OpenSSL-RSA"
+	"perl-Mail-DKIM" -> "perl-Digest-SHA"
+	"perl-Mail-DKIM" -> "perl-MIME-Base64"
+	"perl-Mail-DKIM" -> "perl-MailTools"
+	"perl-Mail-DKIM" -> "perl-Mail-DKIM"
+	"perl-Mail-DKIM" -> "perl-Net-DNS"
+	"perl-Mail-DKIM" -> perl
+	"perl-Mail-SPF"
+	"perl-Mail-SPF" -> perl
+	"perl-Mail-SPF" -> "perl-Error"
+	"perl-Mail-SPF" -> "perl-Getopt-Long"
+	"perl-Mail-SPF" -> "perl-Mail-SPF"
+	"perl-Mail-SPF" -> "perl-Net-DNS"
+	"perl-Mail-SPF" -> "perl-NetAddr-IP"
+	"perl-Mail-SPF" -> "perl-URI"
+	"perl-Mail-SPF" -> "perl-constant"
+	"perl-Mail-SPF" -> "perl-version"
+	"perl-Mail-Sender"
+	"perl-Mail-Sender" -> "perl-Carp"
+	"perl-Mail-Sender" -> "perl-Encode"
+	"perl-Mail-Sender" -> "perl-Exporter"
+	"perl-Mail-Sender" -> perl
+	"perl-Mail-Sender" -> "perl-MIME-Base64"
+	"perl-Mail-Sender" -> "perl-Mail-Sender"
+	"perl-Mail-Sender" -> "perl-Socket"
+	"perl-Mail-Sender" -> "perl-Time-Local"
+	"perl-MailTools"
+	"perl-MailTools" -> "perl-Carp"
+	"perl-MailTools" -> perl
+	"perl-MailTools" -> "perl-TimeDate"
+	"perl-MailTools" -> "perl-Exporter"
+	"perl-MailTools" -> "perl-MailTools"
+	"perl-MailTools" -> "perl-libnet"
+	"perl-MailTools" -> "perl-Net-SMTP-SSL"
+	"perl-Math-BigInt-FastCalc"
+	"perl-Math-BigInt-FastCalc" -> perl
+	"perl-Math-BigInt-FastCalc" -> "perl-Math-BigInt"
+	"perl-Math-BigRat"
+	"perl-Math-BigRat" -> perl
+	"perl-Math-BigRat" -> "perl-Carp"
+	"perl-Math-BigRat" -> "perl-Math-BigInt"
+	"perl-Module-Build"
+	"perl-Module-Build" -> perl
+	"perl-Module-Build" -> "perl-CPAN-Meta"
+	"perl-Module-Build" -> "perl-Carp"
+	"perl-Module-Build" -> "perl-PathTools"
+	"perl-Module-Build" -> "perl-Data-Dumper"
+	"perl-Module-Build" -> "perl-ExtUtils-CBuilder"
+	"perl-Module-Build" -> "perl-ExtUtils-Install"
+	"perl-Module-Build" -> "perl-ExtUtils-Manifest"
+	"perl-Module-Build" -> "perl-ExtUtils-MakeMaker"
+	"perl-Module-Build" -> "perl-ExtUtils-ParseXS"
+	"perl-Module-Build" -> "perl-File-Path"
+	"perl-Module-Build" -> "perl-Getopt-Long"
+	"perl-Module-Build" -> "perl-Module-Build"
+	"perl-Module-Build" -> "perl-Module-Metadata"
+	"perl-Module-Build" -> "perl-Perl-OSType"
+	"perl-Module-Build" -> "perl-podlators"
+	"perl-Module-Build" -> "perl-Software-License"
+	"perl-Module-Build" -> "perl-Test-Harness"
+	"perl-Module-Build" -> "perl-Text-ParseWords"
+	"perl-Module-Build" -> "perl-inc-latest"
+	"perl-Module-Build" -> "perl-version"
+	"perl-Module-CoreList"
+	"perl-Module-CoreList" -> perl
+	"perl-Module-CoreList" -> "perl-Scalar-List-Utils"
+	"perl-Module-CoreList" -> "perl-Module-CoreList"
+	"perl-Module-CoreList" -> "perl-version"
+	"perl-Module-CoreList" -> "perl-Getopt-Long"
+	"perl-Module-CoreList" -> "perl-Pod-Usage"
+	"perl-Module-Load"
+	"perl-Module-Load" -> "perl-PathTools"
+	"perl-Module-Load" -> perl
+	"perl-Module-Load-Conditional"
+	"perl-Module-Load-Conditional" -> "perl-Carp"
+	"perl-Module-Load-Conditional" -> perl
+	"perl-Module-Load-Conditional" -> "perl-Exporter"
+	"perl-Module-Load-Conditional" -> "perl-PathTools"
+	"perl-Module-Load-Conditional" -> "perl-Module-CoreList"
+	"perl-Module-Load-Conditional" -> "perl-Module-Load"
+	"perl-Module-Load-Conditional" -> "perl-Module-Metadata"
+	"perl-Module-Load-Conditional" -> "perl-Params-Check"
+	"perl-Module-Load-Conditional" -> "perl-constant"
+	"perl-Module-Load-Conditional" -> "perl-version"
+	"perl-Module-Metadata"
+	"perl-Module-Metadata" -> "perl-Carp"
+	"perl-Module-Metadata" -> perl
+	"perl-Module-Metadata" -> "perl-PathTools"
+	"perl-Module-Metadata" -> "perl-version"
+	"perl-Module-Pluggable"
+	"perl-Module-Pluggable" -> "perl-Carp"
+	"perl-Module-Pluggable" -> "perl-Module-Pluggable"
+	"perl-Module-Pluggable" -> "perl-Exporter"
+	"perl-Module-Pluggable" -> perl
+	"perl-Module-Pluggable" -> "perl-PathTools"
+	"perl-Module-Runtime"
+	"perl-Mozilla-LDAP"
+	"perl-Mozilla-LDAP" -> nspr
+	"perl-Mozilla-LDAP" -> nss
+	"perl-Mozilla-LDAP" -> perl
+	"perl-Mozilla-LDAP" -> "perl-Carp"
+	"perl-Mozilla-LDAP" -> "perl-Exporter"
+	"perl-Mozilla-LDAP" -> "perl-Mozilla-LDAP"
+	"perl-Net-DNS"
+	"perl-Net-DNS" -> perl
+	"perl-Net-DNS" -> "perl-Carp"
+	"perl-Net-DNS" -> "perl-Data-Dumper"
+	"perl-Net-DNS" -> "perl-Digest-HMAC"
+	"perl-Net-DNS" -> "perl-Digest-MD5"
+	"perl-Net-DNS" -> "perl-Digest-SHA"
+	"perl-Net-DNS" -> "perl-Encode"
+	"perl-Net-DNS" -> "perl-Exporter"
+	"perl-Net-DNS" -> "perl-MIME-Base64"
+	"perl-Net-DNS" -> "perl-Net-DNS"
+	"perl-Net-DNS" -> "perl-Time-Local"
+	"perl-Net-DNS" -> "perl-constant"
+	"perl-Net-SMTP-SSL"
+	"perl-Net-SMTP-SSL" -> "perl-IO-Socket-SSL"
+	"perl-Net-SMTP-SSL" -> "perl-libnet"
+	"perl-Net-SMTP-SSL" -> perl
+	"perl-Net-Server"
+	"perl-Net-Server" -> perl
+	"perl-Net-Server" -> "perl-Carp"
+	"perl-Net-Server" -> "perl-Exporter"
+	"perl-Net-Server" -> "perl-File-Temp"
+	"perl-Net-Server" -> "perl-IO-Multiplex"
+	"perl-Net-Server" -> "perl-IO-Socket-INET6"
+	"perl-Net-Server" -> "perl-Net-Server"
+	"perl-Net-Server" -> "perl-Scalar-List-Utils"
+	"perl-Net-Server" -> "perl-Socket"
+	"perl-Net-Server" -> "perl-Sys-Syslog"
+	"perl-Net-Server" -> "perl-Time-HiRes"
+	"perl-NetAddr-IP"
+	"perl-NetAddr-IP" -> perl
+	"perl-NetAddr-IP" -> "perl-Carp"
+	"perl-NetAddr-IP" -> "perl-Exporter"
+	"perl-NetAddr-IP" -> "perl-Math-BigInt"
+	"perl-NetAddr-IP" -> "perl-NetAddr-IP"
+	"perl-NetAddr-IP" -> "perl-Socket"
+	"perl-NetAddr-IP" -> "perl-Socket6"
+	"perl-Package-Generator"
+	"perl-Package-Generator" -> perl
+	"perl-Package-Generator" -> "perl-Carp"
+	"perl-Package-Generator" -> "perl-Scalar-List-Utils"
+	"perl-Params-Check"
+	"perl-Params-Check" -> "perl-Carp"
+	"perl-Params-Check" -> "perl-Exporter"
+	"perl-Params-Check" -> perl
+	"perl-Params-Util"
+	"perl-Params-Util" -> perl
+	"perl-Params-Util" -> "perl-Exporter"
+	"perl-Params-Util" -> "perl-Scalar-List-Utils"
+	"perl-Perl-OSType"
+	"perl-Perl-OSType" -> "perl-Exporter"
+	"perl-Perl-OSType" -> perl
+	"perl-PerlIO-via-QuotedPrint"
+	"perl-PerlIO-via-QuotedPrint" -> "perl-MIME-Base64"
+	"perl-PerlIO-via-QuotedPrint" -> perl
+	"perl-Pod-Checker"
+	"perl-Pod-Checker" -> perl
+	"perl-Pod-Checker" -> "perl-Carp"
+	"perl-Pod-Checker" -> "perl-Exporter"
+	"perl-Pod-Checker" -> "perl-Getopt-Long"
+	"perl-Pod-Checker" -> "perl-Pod-Checker"
+	"perl-Pod-Checker" -> "perl-Pod-Simple"
+	"perl-Pod-Checker" -> "perl-Pod-Usage"
+	"perl-Pod-LaTeX"
+	"perl-Pod-LaTeX" -> perl
+	"perl-Pod-LaTeX" -> "perl-Carp"
+	"perl-Pod-LaTeX" -> "perl-Getopt-Long"
+	"perl-Pod-LaTeX" -> "perl-Pod-Parser"
+	"perl-Pod-LaTeX" -> "perl-Pod-LaTeX"
+	"perl-Pod-LaTeX" -> "perl-Pod-Usage"
+	"perl-Pod-Parser"
+	"perl-Pod-Parser" -> perl
+	"perl-Pod-Parser" -> "perl-Carp"
+	"perl-Pod-Parser" -> "perl-PathTools"
+	"perl-Pod-Parser" -> "perl-Exporter"
+	"perl-Pod-Parser" -> "perl-Getopt-Long"
+	"perl-Pod-Parser" -> "perl-Pod-Parser"
+	"perl-Pod-Parser" -> "perl-Pod-Usage"
+	"perl-Pod-Plainer"
+	"perl-Pod-Plainer" -> perl
+	"perl-Pod-Plainer" -> "perl-Pod-Parser"
+	"perl-SNMP_Session"
+	"perl-SNMP_Session" -> perl
+	"perl-SNMP_Session" -> "perl-SNMP_Session"
+	"perl-SNMP_Session" -> "perl-Carp"
+	"perl-SNMP_Session" -> "perl-Exporter"
+	"perl-SNMP_Session" -> "perl-Socket"
+	"perl-Socket6"
+	"perl-Socket6" -> "perl-Carp"
+	"perl-Socket6" -> perl
+	"perl-Socket6" -> "perl-Exporter"
+	"perl-Software-License"
+	"perl-Software-License" -> perl
+	"perl-Software-License" -> "perl-Carp"
+	"perl-Software-License" -> "perl-Data-Section"
+	"perl-Software-License" -> "perl-PathTools"
+	"perl-Software-License" -> "perl-Module-Load"
+	"perl-Software-License" -> "perl-Software-License"
+	"perl-Software-License" -> "perl-Text-Template"
+	"perl-Software-License" -> "perl-parent"
+	"perl-String-CRC32"
+	"perl-String-CRC32" -> perl
+	"perl-String-CRC32" -> "perl-Exporter"
+	"perl-Sub-Exporter"
+	"perl-Sub-Exporter" -> perl
+	"perl-Sub-Exporter" -> "perl-Carp"
+	"perl-Sub-Exporter" -> "perl-Data-OptList"
+	"perl-Sub-Exporter" -> "perl-Package-Generator"
+	"perl-Sub-Exporter" -> "perl-Params-Util"
+	"perl-Sub-Exporter" -> "perl-Sub-Exporter"
+	"perl-Sub-Exporter" -> "perl-Sub-Install"
+	"perl-Sub-Install"
+	"perl-Sub-Install" -> perl
+	"perl-Sub-Install" -> "perl-Carp"
+	"perl-Sub-Install" -> "perl-Scalar-List-Utils"
+	"perl-Sys-Syslog"
+	"perl-Sys-Syslog" -> perl
+	"perl-Sys-Syslog" -> "perl-Carp"
+	"perl-Sys-Syslog" -> "perl-Exporter"
+	"perl-Sys-Syslog" -> "perl-Socket"
+	"perl-Sys-Syslog" -> "perl-constant"
+	"perl-TermReadKey"
+	"perl-TermReadKey" -> perl
+	"perl-TermReadKey" -> "perl-Exporter"
+	"perl-Test-Harness"
+	"perl-Test-Harness" -> perl
+	"perl-Test-Harness" -> "perl-Test-Harness"
+	"perl-Test-Harness" -> "perl-Carp"
+	"perl-Test-Harness" -> "perl-Exporter"
+	"perl-Test-Harness" -> "perl-File-Path"
+	"perl-Test-Harness" -> "perl-PathTools"
+	"perl-Test-Harness" -> "perl-Getopt-Long"
+	"perl-Test-Harness" -> "perl-Text-ParseWords"
+	"perl-Test-Harness" -> "perl-constant"
+	"perl-Test-Simple"
+	"perl-Test-Simple" -> perl
+	"perl-Test-Simple" -> "perl-Carp"
+	"perl-Test-Simple" -> "perl-Data-Dumper"
+	"perl-Test-Simple" -> "perl-Exporter"
+	"perl-Test-Simple" -> "perl-PathTools"
+	"perl-Test-Simple" -> "perl-File-Temp"
+	"perl-Test-Simple" -> "perl-Scalar-List-Utils"
+	"perl-Test-Simple" -> "perl-Storable"
+	"perl-Test-Simple" -> "perl-Term-ANSIColor"
+	"perl-Test-Simple" -> "perl-Test-Simple"
+	"perl-Test-Simple" -> "perl-threads-shared"
+	"perl-Text-Balanced"
+	"perl-Text-Balanced" -> perl
+	"perl-Text-Balanced" -> "perl-Carp"
+	"perl-Text-Balanced" -> "perl-Exporter"
+	"perl-Text-Glob"
+	"perl-Text-Glob" -> "perl-Exporter"
+	"perl-Text-Glob" -> "perl-constant"
+	"perl-Text-Glob" -> perl
+	"perl-Text-Soundex"
+	"perl-Text-Soundex" -> perl
+	"perl-Text-Soundex" -> "perl-Carp"
+	"perl-Text-Soundex" -> "perl-Exporter"
+	"perl-Text-Soundex" -> "perl-Text-Unidecode"
+	"perl-Text-Template"
+	"perl-Text-Template" -> perl
+	"perl-Text-Template" -> "perl-Carp"
+	"perl-Text-Template" -> "perl-Exporter"
+	"perl-Text-Template" -> "perl-Text-Template"
+	"perl-Text-Unidecode"
+	"perl-Text-Unidecode" -> perl
+	"perl-Text-Unidecode" -> "perl-Exporter"
+	"perl-Thread-Queue"
+	"perl-Thread-Queue" -> "perl-Carp"
+	"perl-Thread-Queue" -> "perl-Scalar-List-Utils"
+	"perl-Thread-Queue" -> perl
+	"perl-Thread-Queue" -> "perl-threads-shared"
+	"perl-Time-HiRes"
+	"perl-Time-HiRes" -> perl
+	"perl-Time-HiRes" -> "perl-Carp"
+	"perl-Time-HiRes" -> "perl-Exporter"
+	"perl-Tk"
+	"perl-Tk" -> perl
+	"perl-Tk" -> libX11
+	"perl-Tk" -> libXft
+	"perl-Tk" -> "libjpeg-turbo"
+	"perl-Tk" -> "perl-Carp"
+	"perl-Tk" -> "perl-PathTools"
+	"perl-Tk" -> "perl-Encode"
+	"perl-Tk" -> "perl-Exporter"
+	"perl-Tk" -> "perl-Getopt-Long"
+	"perl-Tk" -> "perl-Socket"
+	"perl-Tk" -> "perl-Text-Tabs+Wrap"
+	"perl-Tk" -> "perl-Tk"
+	"perl-URI"
+	"perl-URI" -> perl
+	"perl-URI" -> "perl-Carp"
+	"perl-URI" -> "perl-PathTools"
+	"perl-URI" -> "perl-Data-Dumper"
+	"perl-URI" -> "perl-Encode"
+	"perl-URI" -> "perl-Exporter"
+	"perl-URI" -> "perl-MIME-Base64"
+	"perl-URI" -> "perl-libnet"
+	"perl-URI" -> "perl-Scalar-List-Utils"
+	"perl-URI" -> "perl-URI"
+	"perl-URI" -> "perl-constant"
+	"perl-URI" -> "perl-parent"
+	"perl-Unicode-Collate"
+	"perl-Unicode-Collate" -> perl
+	"perl-Unicode-Collate" -> "perl-Carp"
+	"perl-Unicode-Collate" -> "perl-PathTools"
+	"perl-Unicode-Collate" -> "perl-Unicode-Collate"
+	"perl-Unicode-Collate" -> "perl-Unicode-Normalize"
+	"perl-Unicode-Collate" -> "perl-constant"
+	"perl-Unix-Syslog"
+	"perl-Unix-Syslog" -> perl
+	"perl-Unix-Syslog" -> "perl-Exporter"
+	"perl-Unix-Syslog" -> rsyslog
+	"perl-XML-Catalog"
+	"perl-XML-Catalog" -> "perl-libwww-perl"
+	"perl-XML-Catalog" -> "perl-Text-ParseWords"
+	"perl-XML-Catalog" -> "perl-URI"
+	"perl-XML-Catalog" -> "perl-XML-Parser"
+	"perl-XML-Catalog" -> perl
+	"perl-XML-LibXML"
+	"perl-XML-LibXML" -> perl
+	"perl-XML-LibXML" -> "perl-Carp"
+	"perl-XML-LibXML" -> "perl-Data-Dumper"
+	"perl-XML-LibXML" -> "perl-Encode"
+	"perl-XML-LibXML" -> "perl-Exporter"
+	"perl-XML-LibXML" -> "perl-Scalar-List-Utils"
+	"perl-XML-LibXML" -> "perl-XML-LibXML"
+	"perl-XML-LibXML" -> "perl-XML-NamespaceSupport"
+	"perl-XML-LibXML" -> "perl-XML-SAX-Base"
+	"perl-XML-LibXML" -> "perl-XML-SAX"
+	"perl-XML-LibXML" -> "perl-constant"
+	"perl-XML-LibXML" -> "perl-parent"
+	"perl-XML-NamespaceSupport"
+	"perl-XML-NamespaceSupport" -> "perl-constant"
+	"perl-XML-NamespaceSupport" -> perl
+	"perl-XML-Parser"
+	"perl-XML-Parser" -> perl
+	"perl-XML-Parser" -> "perl-Carp"
+	"perl-XML-SAX"
+	"perl-XML-SAX" -> "perl-Carp"
+	"perl-XML-SAX" -> "perl-Encode"
+	"perl-XML-SAX" -> "perl-Exporter"
+	"perl-XML-SAX" -> perl
+	"perl-XML-SAX" -> "perl-PathTools"
+	"perl-XML-SAX" -> "perl-File-Temp"
+	"perl-XML-SAX" -> "perl-libwww-perl"
+	"perl-XML-SAX" -> "perl-XML-NamespaceSupport"
+	"perl-XML-SAX" -> "perl-XML-SAX"
+	"perl-XML-SAX" -> "perl-XML-SAX-Base"
+	"perl-XML-SAX" -> "perl-constant"
+	"perl-XML-SAX-Base"
+	"perl-XML-SAX-Base" -> "perl-Carp"
+	"perl-XML-SAX-Base" -> perl
+	"perl-XML-Simple"
+	"perl-XML-Simple" -> "perl-Carp"
+	"perl-XML-Simple" -> "perl-Exporter"
+	"perl-XML-Simple" -> perl
+	"perl-XML-Simple" -> "perl-PathTools"
+	"perl-XML-Simple" -> "perl-Scalar-List-Utils"
+	"perl-XML-Simple" -> "perl-Storable"
+	"perl-XML-Simple" -> "perl-XML-NamespaceSupport"
+	"perl-XML-Simple" -> "perl-XML-Parser"
+	"perl-XML-Simple" -> "perl-XML-SAX"
+	"perl-XML-TokeParser"
+	"perl-XML-TokeParser" -> "perl-Carp"
+	"perl-XML-TokeParser" -> perl
+	"perl-XML-TokeParser" -> "perl-XML-Catalog"
+	"perl-XML-TokeParser" -> "perl-XML-Parser"
+	"perl-XML-XPath"
+	"perl-XML-XPath" -> perl
+	"perl-XML-XPath" -> "perl-Carp"
+	"perl-XML-XPath" -> "perl-Data-Dumper"
+	"perl-XML-XPath" -> "perl-Exporter"
+	"perl-XML-XPath" -> "perl-Scalar-List-Utils"
+	"perl-XML-XPath" -> "perl-XML-Parser"
+	"perl-autodie"
+	"perl-autodie" -> perl
+	"perl-autodie" -> "perl-Carp"
+	"perl-autodie" -> "perl-Exporter"
+	"perl-autodie" -> "perl-autodie"
+	"perl-autodie" -> "perl-IPC-System-Simple"
+	"perl-autodie" -> "perl-Scalar-List-Utils"
+	"perl-autodie" -> "perl-constant"
+	"perl-autodie" -> "perl-parent"
+	"perl-bignum"
+	"perl-bignum" -> perl
+	"perl-bignum" -> "perl-Carp"
+	"perl-bignum" -> "perl-Exporter"
+	"perl-bignum" -> "perl-Math-BigInt"
+	"perl-bignum" -> "perl-Math-BigRat"
+	"perl-bignum" -> "perl-bignum"
+	"perl-bignum" -> "perl-constant"
+	"perl-experimental"
+	"perl-experimental" -> "perl-Carp"
+	"perl-experimental" -> perl
+	"perl-experimental" -> "perl-version"
+	"perl-generators"
+	"perl-generators" -> perl
+	"perl-generators" -> "perl-Fedora-VSP"
+	"perl-inc-latest"
+	"perl-inc-latest" -> perl
+	"perl-inc-latest" -> "perl-Carp"
+	"perl-inc-latest" -> "perl-ExtUtils-Install"
+	"perl-inc-latest" -> "perl-File-Path"
+	"perl-inc-latest" -> "perl-PathTools"
+	"perl-libintl-perl"
+	"perl-libintl-perl" -> perl
+	"perl-libintl-perl" -> "perl-Carp"
+	"perl-libintl-perl" -> "perl-PathTools"
+	"perl-libintl-perl" -> "perl-Encode"
+	"perl-libintl-perl" -> "perl-Exporter"
+	"perl-libintl-perl" -> "perl-libintl-perl"
+	"perl-libintl-perl" -> "perl-constant"
+	"perl-libnet"
+	"perl-libnet" -> perl
+	"perl-libnet" -> "perl-Carp"
+	"perl-libnet" -> "perl-Digest-MD5"
+	"perl-libnet" -> "perl-Exporter"
+	"perl-libnet" -> "perl-IO-Socket-IP"
+	"perl-libnet" -> "perl-libnet"
+	"perl-libnet" -> "perl-Socket"
+	"perl-libnet" -> "perl-Time-Local"
+	"perl-libnet" -> "perl-constant"
+	"perl-libxml-perl"
+	"perl-libxml-perl" -> perl
+	"perl-libxml-perl" -> "perl-Carp"
+	"perl-libxml-perl" -> "perl-libxml-perl"
+	"perl-libxml-perl" -> "perl-XML-Parser"
+	"perl-local-lib"
+	"perl-local-lib" -> perl
+	"perl-local-lib" -> "perl-Carp"
+	"perl-local-lib" -> "perl-PathTools"
+	"perl-perlfaq"
+	"perl-perlfaq" -> perl
+	"perl-srpm-macros"
+	"perl-version"
+	"perl-version" -> perl
+	"perl-version" -> "perl-Carp"
+	"perl-version" -> "perl-constant"
+	pesign
+	pesign -> nspr
+	pesign -> nss
+	pesign -> python2
+	"pidgin-sipe"
+	"pidgin-sipe" -> gssntlmssp
+	"pidgin-sipe" -> farstream02
+	"pidgin-sipe" -> gstreamer1
+	"pidgin-sipe" -> "gstreamer1-plugins-base"
+	"pidgin-sipe" -> libnice
+	"pidgin-sipe" -> nspr
+	"pidgin-sipe" -> nss
+	"pidgin-sipe" -> pidgin
+	pinentry
+	pinentry -> atk
+	pinentry -> cairo
+	pinentry -> gcr
+	pinentry -> gtk3
+	pinentry -> pango
+	pinentry -> gtk2
+	pinfo
+	pinfo -> "xdg-utils"
+	pipewire
+	pipewire -> "alsa-lib"
+	pipewire -> rtkit
+	pipewire -> sbc
+	pipewire -> libsndfile
+	"pipewire0.2"
+	"pipewire0.2" -> "alsa-lib"
+	"pipewire0.2" -> sbc
+	pixman
+	"python-coverage"
+	"python-coverage" -> python2
+	"python-coverage" -> python36
+	python3
+	python3 -> libX11
+	python3 -> tk
+	python3 -> python2
+	python3 -> python36
+	plymouth
+	plymouth -> libdrm
+	plymouth -> cairo
+	plymouth -> pango
+	"pmdk-convert"
+	pmix
+	pmix -> munge
+	pnm2ppa
+	policycoreutils
+	policycoreutils -> gtk3
+	policycoreutils -> python2
+	policycoreutils -> pygobject3
+	policycoreutils -> "xorg-x11-server-utils"
+	policycoreutils -> "matchbox-window-manager"
+	policycoreutils -> "xorg-x11-server"
+	poppler
+	poppler -> "libjpeg-turbo"
+	poppler -> lcms2
+	poppler -> nspr
+	poppler -> nss
+	poppler -> openjpeg2
+	poppler -> libtiff
+	poppler -> "poppler-data"
+	poppler -> cairo
+	"poppler-data"
+	postfix
+	postfix -> tinycdb
+	postfix -> "mariadb-connector-c"
+	postfix -> perl
+	postfix -> "perl-Date-Calc"
+	postfix -> "perl-Getopt-Long"
+	postfix -> libpq
+	"postgresql-jdbc"
+	"postgresql-jdbc" -> "java-1.8.0-openjdk"
+	"postgresql-jdbc" -> "javapackages-tools"
+	"postgresql-jdbc" -> "ongres-scram"
+	"postgresql-odbc"
+	"postgresql-odbc" -> unixODBC
+	"postgresql-odbc" -> libpq
+	potrace
+	powertop
+	pptp
+	procmail
+	"prometheus-jmx-exporter"
+	"prometheus-jmx-exporter" -> "javapackages-tools"
+	"prometheus-jmx-exporter" -> "java-11-openjdk"
+	protobuf
+	protobuf -> python2
+	"protobuf-c"
+	"protobuf-c" -> protobuf
+	pulseaudio
+	pulseaudio -> libICE
+	pulseaudio -> libSM
+	pulseaudio -> libX11
+	pulseaudio -> libXtst
+	pulseaudio -> "alsa-lib"
+	pulseaudio -> libasyncns
+	pulseaudio -> orc
+	pulseaudio -> pulseaudio
+	pulseaudio -> libsndfile
+	pulseaudio -> speexdsp
+	pulseaudio -> "webrtc-audio-processing"
+	pulseaudio -> libxcb
+	pulseaudio -> rtkit
+	pulseaudio -> sbc
+	pykickstart
+	pykickstart -> python2
+	pykickstart -> "python-ordered-set"
+	"python-qt5"
+	"python-qt5" -> libglvnd
+	"python-qt5" -> "qt5-qtconnectivity"
+	"python-qt5" -> "qt5-qtbase"
+	"python-qt5" -> "qt5-qttools"
+	"python-qt5" -> "qt5-qtlocation"
+	"python-qt5" -> "qt5-qtmultimedia"
+	"python-qt5" -> "qt5-qtdeclarative"
+	"python-qt5" -> "qt5-qtsensors"
+	"python-qt5" -> "qt5-qtserialport"
+	"python-qt5" -> "qt5-qtsvg"
+	"python-qt5" -> "qt5-qtwebchannel"
+	"python-qt5" -> "qt5-qtwebsockets"
+	"python-qt5" -> "qt5-qtx11extras"
+	"python-qt5" -> "qt5-qtxmlpatterns"
+	"python-qt5" -> python2
+	"python-qt5" -> sip
+	"python-rpm-macros"
+	"python-argcomplete"
+	"python-argcomplete" -> python2
+	"python-argh"
+	"python-argh" -> python2
+	"python-attrs"
+	"python-attrs" -> python2
+	"python-augeas"
+	"python-augeas" -> python2
+	babel
+	babel -> python2
+	babel -> pytz
+	pycairo
+	pycairo -> cairo
+	pycairo -> python2
+	"python-click"
+	"python-click" -> python2
+	"python-cpio"
+	"python-cpio" -> python2
+	"python-cups"
+	"python-cups" -> python2
+	"python-dasbus"
+	"python-dasbus" -> python2
+	"python-dbus-client-gen"
+	"python-dbus-client-gen" -> python2
+	"python-dbus-python-client-gen"
+	"python-dbus-python-client-gen" -> python2
+	"python-dbus-python-client-gen" -> "python-into-dbus-python"
+	"python-dbus-signature-pyparsing"
+	"python-dbus-signature-pyparsing" -> python2
+	"dnf-plugins-core"
+	"dnf-plugins-core" -> createrepo_c
+	"dnf-plugins-core" -> python2
+	"python-enchant"
+	"python-enchant" -> enchant
+	"python-enchant" -> python2
+	"python-evdev"
+	"python-evdev" -> python2
+	"python-flask"
+	"python-flask" -> python2
+	"python-flask" -> "python-click"
+	"python-flask" -> "python-itsdangerous"
+	"python-flask" -> "python-jinja2"
+	"python-flask" -> "python-werkzeug"
+	"python-gevent"
+	"python-gevent" -> libev
+	"python-gevent" -> python2
+	"python-gevent" -> "python-greenlet"
+	pygobject3
+	pygobject3 -> cairo
+	pygobject3 -> python2
+	pygobject3 -> pycairo
+	"python-greenlet"
+	"python-greenlet" -> python2
+	"python-gssapi"
+	"python-gssapi" -> python2
+	"python-html5lib"
+	"python-html5lib" -> python2
+	"python-html5lib" -> "python-webencodings"
+	"python-humanize"
+	"python-humanize" -> python2
+	"python-hwdata"
+	"python-hwdata" -> python2
+	"python-into-dbus-python"
+	"python-into-dbus-python" -> python2
+	"python-into-dbus-python" -> "python-dbus-signature-pyparsing"
+	"python-itsdangerous"
+	"python-itsdangerous" -> python2
+	jabberpy
+	jabberpy -> python2
+	"python-jinja2"
+	"python-jinja2" -> python2
+	"python-jinja2" -> babel
+	"python-jinja2" -> "python-markupsafe"
+	"python-jmespath"
+	"python-jmespath" -> python2
+	"python-jsonpatch"
+	"python-jsonpatch" -> python2
+	"python-jsonpatch" -> "python-jsonpointer"
+	"python-jsonpointer"
+	"python-jsonpointer" -> python2
+	"python-jsonschema"
+	"python-jsonschema" -> python2
+	"python-justbases"
+	"python-justbases" -> python2
+	"python-justbytes"
+	"python-justbytes" -> python2
+	"python-justbytes" -> "python-justbases"
+	"python-ldap"
+	"python-ldap" -> python2
+	"python-ldap" -> "python-pyasn1"
+	libmodulemd
+	libmodulemd -> python2
+	"util-linux"
+	"util-linux" -> python2
+	"python-lxml"
+	"python-lxml" -> python2
+	"python-mako"
+	"python-mako" -> python2
+	"python-mako" -> "python-markupsafe"
+	"python-markupsafe"
+	"python-markupsafe" -> python2
+	"python-meh"
+	"python-meh" -> libreport
+	"python-meh" -> python2
+	"python-meh" -> gtk3
+	"python-meh" -> pygobject3
+	mod_wsgi
+	mod_wsgi -> httpd
+	mod_wsgi -> python2
+	"python-netaddr"
+	"python-netaddr" -> python2
+	"python-netifaces"
+	"python-netifaces" -> python2
+	"python-networkx"
+	"python-networkx" -> python2
+	"python-networkx" -> scipy
+	"python-ntplib"
+	"python-ntplib" -> python2
+	numpy
+	numpy -> openblas
+	numpy -> python2
+	numpy -> python36
+	numpy -> python3
+	"python-ordered-set"
+	"python-ordered-set" -> python2
+	"python-pexpect"
+	"python-pexpect" -> python2
+	"python-pexpect" -> "python-ptyprocess"
+	"python-pid"
+	"python-pid" -> python2
+	"python-pillow"
+	"python-pillow" -> "libjpeg-turbo"
+	"python-pillow" -> lcms2
+	"python-pillow" -> openjpeg2
+	"python-pillow" -> libtiff
+	"python-pillow" -> libwebp
+	"python-pillow" -> python2
+	"python-pip"
+	"python-pip" -> python36
+	"python-pluggy"
+	"python-pluggy" -> python2
+	"python-prettytable"
+	"python-prettytable" -> python2
+	"python-productmd"
+	"python-productmd" -> python2
+	"python-psutil"
+	"python-psutil" -> python2
+	"python-psycopg2"
+	"python-psycopg2" -> libpq
+	"python-psycopg2" -> python2
+	"python-ptyprocess"
+	"python-ptyprocess" -> python2
+	"python-py"
+	"python-py" -> python2
+	pyOpenSSL
+	pyOpenSSL -> python2
+	"python-pyasn1"
+	"python-pyasn1" -> python2
+	pyatspi
+	pyatspi -> "at-spi2-core"
+	pyatspi -> python2
+	pyatspi -> pygobject3
+	"python-pycurl"
+	"python-pycurl" -> python2
+	"python-pydbus"
+	"python-pydbus" -> python2
+	"python-pyghmi"
+	"python-pyghmi" -> python36
+	"python-pyghmi" -> python2
+	pyodbc
+	pyodbc -> unixODBC
+	pyodbc -> python2
+	pyparted
+	pyparted -> python2
+	sip
+	sip -> python2
+	pyserial
+	pyserial -> python2
+	pytest
+	pytest -> python2
+	pytest -> "python-attrs"
+	pytest -> "python-pluggy"
+	pytest -> "python-py"
+	"python-pytoml"
+	"python-pytoml" -> python2
+	pytz
+	pytz -> python2
+	pyxdg
+	pyxdg -> python2
+	"python-reportlab"
+	"python-reportlab" -> python2
+	"python-reportlab" -> "python-pillow"
+	"python-requests-file"
+	"python-requests-file" -> python2
+	"python-requests-ftp"
+	"python-requests-ftp" -> python2
+	"python-rpm-generators"
+	"python-rpmfluff"
+	"python-rpmfluff" -> createrepo_c
+	"python-rpmfluff" -> python2
+	"python-rpmfluff" -> rpm
+	sanlock
+	sanlock -> python2
+	"python-semantic_version"
+	"python-semantic_version" -> python2
+	"python-simpleline"
+	"python-simpleline" -> python2
+	"speech-dispatcher"
+	"speech-dispatcher" -> python2
+	"speech-dispatcher" -> pyxdg
+	"speech-dispatcher" -> libao
+	"speech-dispatcher" -> "alsa-lib"
+	"speech-dispatcher" -> dotconf
+	"speech-dispatcher" -> pulseaudio
+	"speech-dispatcher" -> libsndfile
+	"speech-dispatcher" -> "espeak-ng"
+	"python-suds"
+	"python-suds" -> python2
+	"python-sushy"
+	"python-sushy" -> python2
+	tbb
+	tbb -> python2
+	tracer
+	tracer -> python2
+	tracer -> "python-lxml"
+	tracer -> "python-psutil"
+	unbound
+	unbound -> python2
+	"python-webencodings"
+	"python-webencodings" -> python2
+	"python-werkzeug"
+	"python-werkzeug" -> python2
+	"python-resolvelib"
+	"python-resolvelib" -> python2
+	qatengine
+	qatengine -> qatlib
+	qatlib
+	qatzip
+	qatzip -> qatlib
+	qgnomeplatform
+	qgnomeplatform -> "adwaita-qt"
+	qgnomeplatform -> libglvnd
+	qgnomeplatform -> "qt5-qtbase"
+	qgnomeplatform -> "qt5-qtwayland"
+	qgnomeplatform -> atk
+	qgnomeplatform -> cairo
+	qgnomeplatform -> gtk3
+	qgnomeplatform -> pango
+	qgnomeplatform -> wayland
+	qgnomeplatform -> libxkbcommon
+	gpgme
+	gpgme -> "qt5-qtbase"
+	qpdf
+	qpdf -> perl
+	qpdf -> "libjpeg-turbo"
+	qperf
+	qrencode
+	"qt5-qttools"
+	"qt5-qttools" -> libglvnd
+	"qt5-qttools" -> "qt5-qtbase"
+	"qt5-qttools" -> "qt5-qtdeclarative"
+	"qt5-qttools" -> clang
+	"qt5-qttools" -> cmake
+	"qt5-qt3d"
+	"qt5-qt3d" -> libglvnd
+	"qt5-qt3d" -> "qt5-qtbase"
+	"qt5-qt3d" -> "qt5-qtdeclarative"
+	"qt5-qt3d" -> "qt5-qtimageformats"
+	"qt5-qtbase"
+	"qt5-qtbase" -> libglvnd
+	"qt5-qtbase" -> "mesa-demos"
+	"qt5-qtbase" -> libICE
+	"qt5-qtbase" -> libSM
+	"qt5-qtbase" -> libX11
+	"qt5-qtbase" -> libXext
+	"qt5-qtbase" -> libdrm
+	"qt5-qtbase" -> mesa
+	"qt5-qtbase" -> harfbuzz
+	"qt5-qtbase" -> libinput
+	"qt5-qtbase" -> "libjpeg-turbo"
+	"qt5-qtbase" -> libxcb
+	"qt5-qtbase" -> "xcb-util-wm"
+	"qt5-qtbase" -> "xcb-util-image"
+	"qt5-qtbase" -> "xcb-util-keysyms"
+	"qt5-qtbase" -> "xcb-util-renderutil"
+	"qt5-qtbase" -> "xcb-util"
+	"qt5-qtbase" -> libxkbcommon
+	"qt5-qtbase" -> "mariadb-connector-c"
+	"qt5-qtbase" -> unixODBC
+	"qt5-qtbase" -> libpq
+	"qt5-qtcanvas3d"
+	"qt5-qtcanvas3d" -> libglvnd
+	"qt5-qtcanvas3d" -> "qt5-qtbase"
+	"qt5-qtcanvas3d" -> "qt5-qtdeclarative"
+	"qt5-qtconnectivity"
+	"qt5-qtconnectivity" -> libglvnd
+	"qt5-qtconnectivity" -> "qt5-qtbase"
+	"qt5-qtconnectivity" -> "qt5-qtdeclarative"
+	"qt5-qtdeclarative"
+	"qt5-qtdeclarative" -> libglvnd
+	"qt5-qtdeclarative" -> "qt5-qtbase"
+	"qt5-qtdoc"
+	"qt5-qtgraphicaleffects"
+	"qt5-qtgraphicaleffects" -> libglvnd
+	"qt5-qtgraphicaleffects" -> "qt5-qtbase"
+	"qt5-qtgraphicaleffects" -> "qt5-qtdeclarative"
+	"qt5-qtimageformats"
+	"qt5-qtimageformats" -> libglvnd
+	"qt5-qtimageformats" -> "qt5-qtbase"
+	"qt5-qtimageformats" -> jasper
+	"qt5-qtimageformats" -> libmng
+	"qt5-qtimageformats" -> libtiff
+	"qt5-qtimageformats" -> libwebp
+	"qt5-qtlocation"
+	"qt5-qtlocation" -> libglvnd
+	"qt5-qtlocation" -> "qt5-qtbase"
+	"qt5-qtlocation" -> "qt5-qtdeclarative"
+	"qt5-qtmultimedia"
+	"qt5-qtmultimedia" -> libglvnd
+	"qt5-qtmultimedia" -> "qt5-qtbase"
+	"qt5-qtmultimedia" -> "qt5-qtdeclarative"
+	"qt5-qtmultimedia" -> "alsa-lib"
+	"qt5-qtmultimedia" -> "gstreamer1-plugins-base"
+	"qt5-qtmultimedia" -> gstreamer1
+	"qt5-qtmultimedia" -> "gstreamer1-plugins-bad-free"
+	"qt5-qtmultimedia" -> "openal-soft"
+	"qt5-qtmultimedia" -> pulseaudio
+	"qt5-qtquickcontrols"
+	"qt5-qtquickcontrols" -> libglvnd
+	"qt5-qtquickcontrols" -> "qt5-qtbase"
+	"qt5-qtquickcontrols" -> "qt5-qtdeclarative"
+	"qt5-qtquickcontrols2"
+	"qt5-qtquickcontrols2" -> libglvnd
+	"qt5-qtquickcontrols2" -> "qt5-qtbase"
+	"qt5-qtquickcontrols2" -> "qt5-qtdeclarative"
+	"qt5-qtquickcontrols2" -> "qt5-qtgraphicaleffects"
+	"qt5-qtscript"
+	"qt5-qtscript" -> libglvnd
+	"qt5-qtscript" -> "qt5-qtbase"
+	"qt5-qtsensors"
+	"qt5-qtsensors" -> libglvnd
+	"qt5-qtsensors" -> "qt5-qtbase"
+	"qt5-qtsensors" -> "qt5-qtdeclarative"
+	"qt5-qtserialbus"
+	"qt5-qtserialbus" -> "qt5-qtbase"
+	"qt5-qtserialbus" -> "qt5-qtserialport"
+	"qt5-qtserialbus" -> libglvnd
+	"qt5-qtserialport"
+	"qt5-qtserialport" -> "qt5-qtbase"
+	"qt5-qtserialport" -> libglvnd
+	"qt5-qtsvg"
+	"qt5-qtsvg" -> libglvnd
+	"qt5-qtsvg" -> "qt5-qtbase"
+	"qt5-qttranslations"
+	"qt5-qtwayland"
+	"qt5-qtwayland" -> libglvnd
+	"qt5-qtwayland" -> "qt5-qtbase"
+	"qt5-qtwayland" -> "qt5-qtdeclarative"
+	"qt5-qtwayland" -> libX11
+	"qt5-qtwayland" -> libXcomposite
+	"qt5-qtwayland" -> libXext
+	"qt5-qtwayland" -> wayland
+	"qt5-qtwayland" -> libxkbcommon
+	"qt5-qtwayland" -> "qt5-qtwayland"
+	"qt5-qtwebchannel"
+	"qt5-qtwebchannel" -> libglvnd
+	"qt5-qtwebchannel" -> "qt5-qtbase"
+	"qt5-qtwebchannel" -> "qt5-qtdeclarative"
+	"qt5-qtwebchannel" -> nodejs
+	"qt5-qtwebchannel" -> "qt5-qtwebsockets"
+	"qt5-qtwebsockets"
+	"qt5-qtwebsockets" -> "qt5-qtbase"
+	"qt5-qtwebsockets" -> libglvnd
+	"qt5-qtwebsockets" -> "qt5-qtdeclarative"
+	"qt5-qtx11extras"
+	"qt5-qtx11extras" -> libglvnd
+	"qt5-qtx11extras" -> "qt5-qtbase"
+	"qt5-qtxmlpatterns"
+	"qt5-qtxmlpatterns" -> "qt5-qtbase"
+	"qt5-qtxmlpatterns" -> "qt5-qtdeclarative"
+	"qt5-qtxmlpatterns" -> libglvnd
+	qt5
+	qt5 -> cmake
+	qt5 -> gcc
+	radvd
+	raptor2
+	rarian
+	rarian -> rarian
+	rasqal
+	rasqal -> raptor2
+	rear
+	rear -> libisoburn
+	recode
+	"redfish-finder"
+	"redfish-finder" -> python36
+	"redhat-lsb"
+	"redhat-lsb" -> cups
+	"redhat-lsb" -> sendmail
+	"redhat-lsb" -> atk
+	"redhat-lsb" -> cairo
+	"redhat-lsb" -> gtk2
+	"redhat-lsb" -> libICE
+	"redhat-lsb" -> libSM
+	"redhat-lsb" -> libX11
+	"redhat-lsb" -> libXext
+	"redhat-lsb" -> libXft
+	"redhat-lsb" -> libXi
+	"redhat-lsb" -> libXrender
+	"redhat-lsb" -> libXt
+	"redhat-lsb" -> libXtst
+	"redhat-lsb" -> "libjpeg-turbo"
+	"redhat-lsb" -> libpng12
+	"redhat-lsb" -> mesa
+	"redhat-lsb" -> "mesa-libGLU"
+	"redhat-lsb" -> pango
+	"redhat-lsb" -> "xdg-utils"
+	"redhat-lsb" -> perl
+	"redhat-lsb" -> python36
+	"redhat-lsb" -> "perl-B-Lint"
+	"redhat-lsb" -> "perl-CGI"
+	"redhat-lsb" -> "perl-CPAN"
+	"redhat-lsb" -> "perl-Class-ISA"
+	"redhat-lsb" -> "perl-Env"
+	"redhat-lsb" -> "perl-ExtUtils-MakeMaker"
+	"redhat-lsb" -> "perl-autodie"
+	"redhat-lsb" -> "perl-File-CheckTree"
+	"redhat-lsb" -> "perl-PathTools"
+	"redhat-lsb" -> "perl-Getopt-Long"
+	"redhat-lsb" -> "perl-Locale-Codes"
+	"redhat-lsb" -> "perl-Locale-Maketext"
+	"redhat-lsb" -> "perl-Pod-Checker"
+	"redhat-lsb" -> "perl-Pod-LaTeX"
+	"redhat-lsb" -> "perl-Pod-Plainer"
+	"redhat-lsb" -> "perl-Scalar-List-Utils"
+	"redhat-lsb" -> "perl-Sys-Syslog"
+	"redhat-lsb" -> "perl-Test-Harness"
+	"redhat-lsb" -> "perl-Test-Simple"
+	"redhat-lsb" -> "perl-Text-Soundex"
+	"redhat-lsb" -> "perl-Time-HiRes"
+	"redhat-lsb" -> "perl-XML-LibXML"
+	"redhat-lsb" -> "cups-filters"
+	"redhat-lsb" -> ghostscript
+	"redhat-lsb" -> "alsa-lib"
+	"redhat-lsb" -> nspr
+	"redhat-lsb" -> nss
+	"redhat-menus"
+	"redhat-support-lib-python"
+	"redhat-support-lib-python" -> nmap
+	"redhat-support-lib-python" -> python2
+	"redhat-support-lib-python" -> python36
+	"redhat-support-lib-python" -> "python-lxml"
+	"redhat-support-lib-python" -> "python-pexpect"
+	"redhat-support-tool"
+	"redhat-support-tool" -> nmap
+	"redhat-support-tool" -> python2
+	"redhat-support-tool" -> python36
+	"redhat-support-tool" -> "python-lxml"
+	"redhat-support-tool" -> "python-pexpect"
+	"redhat-support-tool" -> "redhat-support-lib-python"
+	redland
+	redland -> raptor2
+	redland -> rasqal
+	rest
+	rhythmbox
+	rhythmbox -> "gstreamer1-plugins-good"
+	rhythmbox -> gtk3
+	rhythmbox -> gvfs
+	rhythmbox -> libX11
+	rhythmbox -> atk
+	rhythmbox -> brasero
+	rhythmbox -> cairo
+	rhythmbox -> libdmapsharing
+	rhythmbox -> libgpod
+	rhythmbox -> grilo
+	rhythmbox -> "gstreamer1-plugins-base"
+	rhythmbox -> gstreamer1
+	rhythmbox -> libmtp
+	rhythmbox -> libnotify
+	rhythmbox -> pango
+	rhythmbox -> libpeas
+	rhythmbox -> "totem-pl-parser"
+	rhythmbox -> "media-player-info"
+	rhythmbox -> pygobject3
+	rhythmbox -> "python-mako"
+	rig
+	rig -> python2
+	rig -> "python-psutil"
+	rpm
+	rpm -> gdb
+	rpm -> "redhat-rpm-config"
+	rpm -> zstd
+	"rpm-mpi-hooks"
+	"rpm-ostree"
+	"rpm-ostree" -> ostree
+	rpmdevtools
+	rpmdevtools -> perl
+	rpmdevtools -> "perl-PathTools"
+	rpmdevtools -> "perl-File-Temp"
+	rpmdevtools -> "perl-Getopt-Long"
+	rpmdevtools -> rpm
+	rpmlint
+	rpmlint -> "desktop-file-utils"
+	rpmlint -> perl
+	rrdtool
+	rrdtool -> cairo
+	rrdtool -> pango
+	rrdtool -> "perl-Carp"
+	rrdtool -> perl
+	rshim
+	rsyslog
+	rsyslog -> libestr
+	rsyslog -> libfastjson
+	rsyslog -> rsyslog
+	rsyslog -> librdkafka
+	rsyslog -> liblognorm
+	rsyslog -> "mariadb-connector-c"
+	rsyslog -> libpq
+	rsyslog -> librelp
+	rsyslog -> libnet
+	"rt-tests"
+	rtkit
+	"rust-srpm-macros"
+	"saab-fonts"
+	sac
+	sac -> "java-1.8.0-openjdk"
+	sac -> "javapackages-tools"
+	samba
+	"samyak-fonts"
+	"sane-backends"
+	"sane-backends" -> libieee1284
+	"sane-backends" -> "libjpeg-turbo"
+	"sane-backends" -> libgphoto2
+	"sane-backends" -> libtiff
+	"sane-backends" -> "v4l-utils"
+	"sane-frontends"
+	"sane-frontends" -> atk
+	"sane-frontends" -> cairo
+	"sane-frontends" -> gtk2
+	"sane-frontends" -> pango
+	"sane-frontends" -> "sane-backends"
+	sassist
+	satyr
+	sbc
+	sbd
+	sbd -> pacemaker
+	sbd -> corosync
+	"sblim-cmpi-base"
+	"sblim-cmpi-base" -> "sblim-sfcb"
+	"sblim-cmpi-base" -> "sblim-indication_helper"
+	"sblim-gather"
+	"sblim-gather" -> "sblim-sfcb"
+	"sblim-gather" -> libvirt
+	"sblim-indication_helper"
+	"sblim-sfcCommon"
+	"sblim-sfcb"
+	"sblim-sfcb" -> perl
+	"sblim-sfcb" -> "cim-schema"
+	"sblim-sfcb" -> "sblim-sfcCommon"
+	"sblim-sfcb" -> openslp
+	"sblim-sfcb" -> "perl-Getopt-Long"
+	"sblim-sfcb" -> "perl-libwww-perl"
+	"sblim-sfcb" -> "perl-URI"
+	"sblim-sfcc"
+	"sblim-wbemcli"
+	"scap-security-guide"
+	"scap-security-guide" -> openscap
+	"scap-workbench"
+	"scap-workbench" -> "abattis-cantarell-fonts"
+	"scap-workbench" -> "qt5-qtbase"
+	"scap-workbench" -> "qt5-qtxmlpatterns"
+	"scap-workbench" -> openscap
+	"scap-workbench" -> openssh
+	"scap-workbench" -> "scap-security-guide"
+	"scl-utils"
+	"scl-utils" -> "iso-codes"
+	"scl-utils" -> "redhat-rpm-config"
+	scrub
+	seahorse
+	seahorse -> atk
+	seahorse -> cairo
+	seahorse -> gcr
+	seahorse -> gtk3
+	seahorse -> pango
+	seahorse -> pinentry
+	sendmail
+	sendmail -> procmail
+	setools
+	setools -> "python-networkx"
+	setools -> python2
+	setools -> "python-qt5"
+	setroubleshoot
+	setroubleshoot -> "desktop-file-utils"
+	setroubleshoot -> gtk3
+	setroubleshoot -> libnotify
+	setroubleshoot -> libreport
+	setroubleshoot -> python2
+	setroubleshoot -> pygobject3
+	setroubleshoot -> "python-pydbus"
+	setroubleshoot -> "xdg-utils"
+	setroubleshoot -> "setroubleshoot-plugins"
+	"setroubleshoot-plugins"
+	"setroubleshoot-plugins" -> setroubleshoot
+	sevctl
+	"sil-abyssinica-fonts"
+	"sil-nuosu-fonts"
+	"sil-padauk-fonts"
+	"sil-scheherazade-fonts"
+	skkdic
+	slang
+	"smc-fonts"
+	socat
+	"sos-collector"
+	"sos-collector" -> python2
+	"sos-collector" -> "python-pexpect"
+	"sound-theme-freedesktop"
+	soundtouch
+	"source-highlight"
+	"source-highlight" -> ctags
+	"source-highlight" -> boost
+	spamassassin
+	spamassassin -> perl
+	spamassassin -> "perl-Archive-Tar"
+	spamassassin -> "perl-Carp"
+	spamassassin -> "perl-PathTools"
+	spamassassin -> "perl-DB_File"
+	spamassassin -> "perl-Data-Dumper"
+	spamassassin -> "perl-Digest-MD5"
+	spamassassin -> "perl-Digest-SHA"
+	spamassassin -> "perl-Encode-Detect"
+	spamassassin -> "perl-Exporter"
+	spamassassin -> "perl-File-Path"
+	spamassassin -> "perl-Getopt-Long"
+	spamassassin -> "perl-HTML-Parser"
+	spamassassin -> "perl-HTTP-Date"
+	spamassassin -> "perl-IO-Socket-INET6"
+	spamassassin -> "perl-IO-Socket-SSL"
+	spamassassin -> "perl-IO-String"
+	spamassassin -> "perl-libwww-perl"
+	spamassassin -> "perl-Scalar-List-Utils"
+	spamassassin -> "perl-MIME-Base64"
+	spamassassin -> "perl-Mail-DKIM"
+	spamassassin -> "perl-Mail-SPF"
+	spamassassin -> "perl-Net-DNS"
+	spamassassin -> "perl-NetAddr-IP"
+	spamassassin -> "perl-Pod-Usage"
+	spamassassin -> "perl-Socket"
+	spamassassin -> "perl-Sys-Syslog"
+	spamassassin -> "perl-Time-HiRes"
+	spamassassin -> "perl-Time-Local"
+	spamassassin -> "perl-constant"
+	spamassassin -> "perl-version"
+	spamassassin -> procmail
+	speex
+	speexdsp
+	"spice-client-win"
+	"spice-gtk"
+	"spice-gtk" -> libcacard
+	"spice-gtk" -> "gstreamer1-plugins-base"
+	"spice-gtk" -> gstreamer1
+	"spice-gtk" -> "libjpeg-turbo"
+	"spice-gtk" -> opus
+	"spice-gtk" -> pixman
+	"spice-gtk" -> pulseaudio
+	"spice-gtk" -> usbredir
+	"spice-gtk" -> gtk3
+	"spice-gtk" -> libX11
+	"spice-gtk" -> cairo
+	"spice-gtk" -> libepoxy
+	"spice-gtk" -> wayland
+	"spice-protocol"
+	"spice-qxl-wddm-dod"
+	spice
+	spice -> celt051
+	spice -> "gstreamer1-plugins-base"
+	spice -> gstreamer1
+	spice -> "libjpeg-turbo"
+	spice -> opus
+	spice -> orc
+	spice -> pixman
+	"spice-streaming-agent"
+	"spice-streaming-agent" -> libX11
+	"spice-streaming-agent" -> libXfixes
+	"spice-streaming-agent" -> libXrandr
+	"spice-streaming-agent" -> libdrm
+	"spice-streaming-agent" -> "gstreamer1-plugins-base"
+	"spice-streaming-agent" -> gstreamer1
+	"spice-streaming-agent" -> "libjpeg-turbo"
+	"spice-vdagent"
+	"spice-vdagent" -> libX11
+	"spice-vdagent" -> libXfixes
+	"spice-vdagent" -> libXinerama
+	"spice-vdagent" -> libXrandr
+	"spice-vdagent" -> "alsa-lib"
+	"spice-vdagent" -> libdrm
+	"spice-vdagent-win"
+	"spirv-tools"
+	"spirv-tools" -> "spirv-tools"
+	splix
+	splix -> cups
+	splix -> jbigkit
+	sscg
+	sshpass
+	stalld
+	"startup-notification"
+	"startup-notification" -> libX11
+	"startup-notification" -> "xcb-util"
+	"startup-notification" -> libxcb
+	"stix-fonts"
+	"stratis-cli"
+	"stratis-cli" -> python2
+	"stratis-cli" -> "python-dbus-client-gen"
+	"stratis-cli" -> "python-dbus-python-client-gen"
+	"stratis-cli" -> "python-justbytes"
+	"stratis-cli" -> "python-psutil"
+	"stratis-cli" -> stratisd
+	stratisd
+	stratisd -> plymouth
+	stratisd -> stratisd
+	"stress-ng"
+	"stress-ng" -> Judy
+	"subscription-manager-migration-data"
+	suitesparse
+	suitesparse -> tbb
+	sushi
+	sushi -> libglvnd
+	sushi -> libX11
+	sushi -> libXcomposite
+	sushi -> libXdamage
+	sushi -> libXext
+	sushi -> libXfixes
+	sushi -> libXi
+	sushi -> libXrandr
+	sushi -> atk
+	sushi -> cairo
+	sushi -> clutter
+	sushi -> "clutter-gst3"
+	sushi -> "clutter-gtk"
+	sushi -> cogl
+	sushi -> libdrm
+	sushi -> evince
+	sushi -> mesa
+	sushi -> gtk3
+	sushi -> gjs
+	sushi -> "gstreamer1-plugins-base"
+	sushi -> gstreamer1
+	sushi -> gtksourceview3
+	sushi -> harfbuzz
+	sushi -> webkit2gtk3
+	sushi -> libmusicbrainz5
+	sushi -> pango
+	sushi -> wayland
+	sushi -> libxkbcommon
+	"switcheroo-control"
+	sysfsutils
+	sysstat
+	"system-config-printer"
+	"system-config-printer" -> gtk3
+	"system-config-printer" -> python2
+	"system-config-printer" -> "python-cups"
+	"system-config-printer" -> pygobject3
+	"system-config-printer" -> "python-pycurl"
+	"system-config-printer" -> "system-config-printer"
+	"system-lsb"
+	"system-lsb" -> cups
+	"system-lsb" -> sendmail
+	"system-lsb" -> atk
+	"system-lsb" -> cairo
+	"system-lsb" -> gtk2
+	"system-lsb" -> libICE
+	"system-lsb" -> libSM
+	"system-lsb" -> libX11
+	"system-lsb" -> libXext
+	"system-lsb" -> libXft
+	"system-lsb" -> libXi
+	"system-lsb" -> libXrender
+	"system-lsb" -> libXt
+	"system-lsb" -> libXtst
+	"system-lsb" -> "libjpeg-turbo"
+	"system-lsb" -> libpng12
+	"system-lsb" -> mesa
+	"system-lsb" -> "mesa-libGLU"
+	"system-lsb" -> pango
+	"system-lsb" -> "xdg-utils"
+	"system-lsb" -> perl
+	"system-lsb" -> python36
+	"system-lsb" -> "perl-B-Lint"
+	"system-lsb" -> "perl-CGI"
+	"system-lsb" -> "perl-CPAN"
+	"system-lsb" -> "perl-Class-ISA"
+	"system-lsb" -> "perl-Env"
+	"system-lsb" -> "perl-ExtUtils-MakeMaker"
+	"system-lsb" -> "perl-autodie"
+	"system-lsb" -> "perl-File-CheckTree"
+	"system-lsb" -> "perl-PathTools"
+	"system-lsb" -> "perl-Getopt-Long"
+	"system-lsb" -> "perl-Locale-Codes"
+	"system-lsb" -> "perl-Locale-Maketext"
+	"system-lsb" -> "perl-Pod-Checker"
+	"system-lsb" -> "perl-Pod-LaTeX"
+	"system-lsb" -> "perl-Pod-Plainer"
+	"system-lsb" -> "perl-Scalar-List-Utils"
+	"system-lsb" -> "perl-Sys-Syslog"
+	"system-lsb" -> "perl-Test-Harness"
+	"system-lsb" -> "perl-Test-Simple"
+	"system-lsb" -> "perl-Text-Soundex"
+	"system-lsb" -> "perl-Time-HiRes"
+	"system-lsb" -> "perl-XML-LibXML"
+	"system-lsb" -> "cups-filters"
+	"system-lsb" -> ghostscript
+	"system-lsb" -> "alsa-lib"
+	"system-lsb" -> nspr
+	"system-lsb" -> nss
+	systemtap
+	systemtap -> perl
+	systemtap -> boost
+	systemtap -> dyninst
+	systemtap -> nspr
+	systemtap -> nss
+	systemtap -> tbb
+	systemtap -> byteman
+	systemtap -> "java-1.8.0-openjdk"
+	systemtap -> python2
+	systemtap -> libvirt
+	taglib
+	tagsoup
+	tagsoup -> "java-1.8.0-openjdk"
+	tagsoup -> "javapackages-tools"
+	tang
+	tang -> jose
+	tang -> "http-parser"
+	targetcli
+	targetcli -> python2
+	tcpdump
+	tcsh
+	teckit
+	telnet
+	tesseract
+	tesseract -> cairo
+	tesseract -> leptonica
+	tesseract -> pango
+	"tex-fonts-hebrew"
+	"tex-fonts-hebrew" -> texlive
+	"tex-fonts-hebrew" -> "culmus-fonts"
+	texlive
+	texlive -> perl
+	texlive -> "perl-Getopt-Long"
+	texlive -> "perl-Tk"
+	texlive -> gd
+	texlive -> ghostscript
+	texlive -> potrace
+	texlive -> "perl-File-Temp"
+	texlive -> "fontawesome-fonts"
+	texlive -> zziplib
+	texlive -> libICE
+	texlive -> libSM
+	texlive -> libX11
+	texlive -> libXext
+	texlive -> cairo
+	texlive -> pixman
+	texlive -> "perl-Digest-MD5"
+	texlive -> poppler
+	texlive -> "perl-PathTools"
+	texlive -> "perl-Pod-Usage"
+	texlive -> "perl-Exporter"
+	texlive -> "perl-Text-Unidecode"
+	texlive -> "perl-XML-Parser"
+	texlive -> "perl-XML-XPath"
+	texlive -> "perl-constant"
+	texlive -> "perl-Carp"
+	texlive -> "perl-Data-Dumper"
+	texlive -> libXaw
+	texlive -> libXi
+	texlive -> libXmu
+	texlive -> libXpm
+	texlive -> libXt
+	texlive -> teckit
+	texlive -> graphite2
+	texlive -> harfbuzz
+	texlive -> libpaper
+	tftp
+	"thai-scalable-fonts"
+	thermald
+	thermald -> libevdev
+	thermald -> upower
+	thunderbird
+	thunderbird -> libX11
+	thunderbird -> libXcomposite
+	thunderbird -> libXcursor
+	thunderbird -> libXdamage
+	thunderbird -> libXext
+	thunderbird -> libXfixes
+	thunderbird -> libXi
+	thunderbird -> libXrender
+	thunderbird -> libXt
+	thunderbird -> atk
+	thunderbird -> cairo
+	thunderbird -> gtk3
+	thunderbird -> pango
+	thunderbird -> nspr
+	thunderbird -> libxcb
+	thunderbird -> "mozilla-filesystem"
+	"tibetan-machine-uni-fonts"
+	tigervnc
+	tigervnc -> "hicolor-icon-theme"
+	tigervnc -> libICE
+	tigervnc -> libSM
+	tigervnc -> libX11
+	tigervnc -> libXext
+	tigervnc -> libXfixes
+	tigervnc -> libXft
+	tigervnc -> libXi
+	tigervnc -> libXinerama
+	tigervnc -> libXrender
+	tigervnc -> fltk
+	tigervnc -> "libjpeg-turbo"
+	tigervnc -> pixman
+	tigervnc -> perl
+	tigervnc -> libXtst
+	tigervnc -> "xorg-x11-xauth"
+	tigervnc -> "xorg-x11-xinit"
+	tigervnc -> dbus
+	tigervnc -> libglvnd
+	tigervnc -> libXau
+	tigervnc -> libXdmcp
+	tigervnc -> libXfont2
+	tigervnc -> libxshmfence
+	tigervnc -> mesa
+	tigervnc -> "xkeyboard-config"
+	tigervnc -> "xorg-x11-xkb-utils"
+	tigervnc -> "xorg-x11-server"
+	tinycdb
+	tix
+	tix -> libX11
+	tix -> tk
+	tk
+	tk -> libX11
+	tk -> libXft
+	tlog
+	"tog-pegasus"
+	"tog-pegasus" -> "tog-pegasus"
+	"tog-pegasus" -> openslp
+	tokyocabinet
+	torque
+	torque -> munge
+	totem
+	totem -> "grilo-plugins"
+	totem -> gstreamer1
+	totem -> "gstreamer1-plugins-base"
+	totem -> "gstreamer1-plugins-good"
+	totem -> "gstreamer1-plugins-ugly-free"
+	totem -> gtk3
+	totem -> gvfs
+	totem -> "iso-codes"
+	totem -> libX11
+	totem -> atk
+	totem -> cairo
+	totem -> clutter
+	totem -> "clutter-gst3"
+	totem -> "clutter-gtk"
+	totem -> cogl
+	totem -> "gnome-desktop3"
+	totem -> grilo
+	totem -> pango
+	totem -> libpeas
+	totem -> "totem-pl-parser"
+	totem -> wayland
+	totem -> pygobject3
+	totem -> nautilus
+	totem -> totem
+	"totem-pl-parser"
+	"totem-pl-parser" -> libquvi
+	tracker
+	"tracker-miners"
+	"tracker-miners" -> flac
+	"tracker-miners" -> cairo
+	"tracker-miners" -> exempi
+	"tracker-miners" -> libexif
+	"tracker-miners" -> libgexiv2
+	"tracker-miners" -> giflib
+	"tracker-miners" -> libgsf
+	"tracker-miners" -> "gstreamer1-plugins-base"
+	"tracker-miners" -> gstreamer1
+	"tracker-miners" -> libgxps
+	"tracker-miners" -> libiptcdata
+	"tracker-miners" -> "libjpeg-turbo"
+	"tracker-miners" -> libosinfo
+	"tracker-miners" -> poppler
+	"tracker-miners" -> taglib
+	"tracker-miners" -> libtiff
+	"tracker-miners" -> "totem-pl-parser"
+	"tracker-miners" -> tracker
+	"tracker-miners" -> upower
+	"tracker-miners" -> libvorbis
+	ttmkfdir
+	tuned
+	tuned -> powertop
+	tuned -> python2
+	tuned -> systemtap
+	twolame
+	tzdata
+	"ucs-miscfixed-fonts"
+	ucx
+	udftools
+	"unicode-ucd"
+	unixODBC
+	upower
+	upower -> libimobiledevice
+	upower -> libplist
+	urlview
+	"urw-base35-fonts"
+	"urw-base35-fonts" -> "xorg-x11-font-utils"
+	"urw-base35-fonts" -> "xorg-x11-server-utils"
+	usbguard
+	usbguard -> protobuf
+	usbguard -> cairo
+	usbguard -> libnotify
+	usbguard -> librsvg2
+	usbmuxd
+	usbmuxd -> libimobiledevice
+	usbmuxd -> libplist
+	usbredir
+	usermode
+	usermode -> libICE
+	usermode -> libSM
+	usermode -> atk
+	usermode -> cairo
+	usermode -> gtk2
+	usermode -> pango
+	usermode -> "startup-notification"
+	uuid
+	valgrind
+	valgrind -> perl
+	vhostmd
+	vhostmd -> libvirt
+	vim
+	vim -> gtk3
+	vim -> "hicolor-icon-theme"
+	vim -> libICE
+	vim -> libSM
+	vim -> libX11
+	vim -> libXt
+	vim -> cairo
+	vim -> gpm
+	vim -> pango
+	vim -> vim
+	vinagre
+	vinagre -> "desktop-file-utils"
+	vinagre -> libX11
+	vinagre -> atk
+	vinagre -> avahi
+	vinagre -> cairo
+	vinagre -> freerdp
+	vinagre -> gtk3
+	vinagre -> "gtk-vnc"
+	vinagre -> pango
+	vinagre -> "spice-gtk"
+	vinagre -> vte291
+	vino
+	vino -> libICE
+	vino -> libSM
+	vino -> libX11
+	vino -> libXdamage
+	vino -> libXext
+	vino -> libXfixes
+	vino -> libXtst
+	vino -> atk
+	vino -> cairo
+	vino -> gtk3
+	vino -> libnotify
+	vino -> pango
+	"virt-manager"
+	"virt-manager" -> libvirt
+	"virt-manager" -> dconf
+	"virt-manager" -> "gtk-vnc"
+	"virt-manager" -> gtk3
+	"virt-manager" -> gtksourceview3
+	"virt-manager" -> "libvirt-glib"
+	"virt-manager" -> pygobject3
+	"virt-manager" -> "spice-gtk"
+	"virt-manager" -> vte291
+	"virt-manager" -> cdrkit
+	"virt-manager" -> libosinfo
+	"virt-manager" -> "python-argcomplete"
+	"virt-manager" -> "libvirt-python"
+	"virt-p2v"
+	"virt-p2v" -> libguestfs
+	"virt-top"
+	"virt-top" -> libvirt
+	"virt-viewer"
+	"virt-viewer" -> "desktop-file-utils"
+	"virt-viewer" -> atk
+	"virt-viewer" -> cairo
+	"virt-viewer" -> gtk3
+	"virt-viewer" -> libgovirt
+	"virt-viewer" -> "gtk-vnc"
+	"virt-viewer" -> pango
+	"virt-viewer" -> rest
+	"virt-viewer" -> "spice-gtk"
+	"virt-viewer" -> "libvirt-glib"
+	"virt-viewer" -> libvirt
+	"virtio-win"
+	volume_key
+	volume_key -> nspr
+	volume_key -> nss
+	"vorbis-tools"
+	"vorbis-tools" -> flac
+	"vorbis-tools" -> libao
+	"vorbis-tools" -> libogg
+	"vorbis-tools" -> speex
+	"vorbis-tools" -> libvorbis
+	vsftpd
+	vte291
+	vte291 -> atk
+	vte291 -> cairo
+	vte291 -> gtk3
+	vte291 -> pango
+	"vulkan-headers"
+	"vulkan-loader"
+	"vulkan-loader" -> mesa
+	"vulkan-tools"
+	"vulkan-tools" -> libX11
+	"vulkan-tools" -> libXext
+	"vulkan-tools" -> "vulkan-loader"
+	"vulkan-tools" -> wayland
+	"vulkan-tools" -> libxcb
+	"vulkan-validation-layers"
+	"vulkan-validation-layers" -> "spirv-tools"
+	wavpack
+	"wayland-protocols"
+	webkit2gtk3
+	webkit2gtk3 -> libglvnd
+	webkit2gtk3 -> libX11
+	webkit2gtk3 -> libXcomposite
+	webkit2gtk3 -> libXdamage
+	webkit2gtk3 -> libXrender
+	webkit2gtk3 -> libXt
+	webkit2gtk3 -> atk
+	webkit2gtk3 -> cairo
+	webkit2gtk3 -> enchant2
+	webkit2gtk3 -> gtk3
+	webkit2gtk3 -> "gstreamer1-plugins-base"
+	webkit2gtk3 -> gstreamer1
+	webkit2gtk3 -> harfbuzz
+	webkit2gtk3 -> hyphen
+	webkit2gtk3 -> "libjpeg-turbo"
+	webkit2gtk3 -> lcms2
+	webkit2gtk3 -> libnotify
+	webkit2gtk3 -> openjpeg2
+	webkit2gtk3 -> pango
+	webkit2gtk3 -> wayland
+	webkit2gtk3 -> libwebp
+	webkit2gtk3 -> woff2
+	"webrtc-audio-processing"
+	"weldr-client"
+	wget
+	whois
+	wireshark
+	wireshark -> "hicolor-icon-theme"
+	wireshark -> "qt5-qtbase"
+	wireshark -> "qt5-qtmultimedia"
+	wireshark -> libmaxminddb
+	wireshark -> "xdg-utils"
+	wireshark -> libsmi
+	woff2
+	"wqy-microhei-fonts"
+	"wqy-unibit-fonts"
+	wsmancli
+	wsmancli -> openwsman
+	x3270
+	x3270 -> "xorg-x11-font-utils"
+	x3270 -> libX11
+	x3270 -> libXaw
+	x3270 -> libXmu
+	x3270 -> libXt
+	"xapian-core"
+	"xcb-util"
+	"xcb-util" -> libxcb
+	"xcb-util-image"
+	"xcb-util-image" -> libxcb
+	"xcb-util-image" -> "xcb-util"
+	"xcb-util-keysyms"
+	"xcb-util-keysyms" -> libxcb
+	"xcb-util-renderutil"
+	"xcb-util-renderutil" -> libxcb
+	"xcb-util-wm"
+	"xcb-util-wm" -> libxcb
+	"xdg-desktop-portal"
+	"xdg-desktop-portal" -> geoclue2
+	"xdg-desktop-portal" -> pipewire
+	"xdg-desktop-portal-gtk"
+	"xdg-desktop-portal-gtk" -> "gnome-desktop3"
+	"xdg-desktop-portal-gtk" -> atk
+	"xdg-desktop-portal-gtk" -> cairo
+	"xdg-desktop-portal-gtk" -> gtk3
+	"xdg-desktop-portal-gtk" -> pango
+	"xdg-desktop-portal-gtk" -> "xdg-desktop-portal"
+	"xdg-user-dirs"
+	"xdg-user-dirs-gtk"
+	"xdg-user-dirs-gtk" -> atk
+	"xdg-user-dirs-gtk" -> cairo
+	"xdg-user-dirs-gtk" -> gtk3
+	"xdg-user-dirs-gtk" -> pango
+	"xdg-user-dirs-gtk" -> "xdg-user-dirs"
+	"xdg-utils"
+	"xdg-utils" -> "desktop-file-utils"
+	xinetd
+	"xkeyboard-config"
+	xmlsec1
+	xmlsec1 -> nspr
+	xmlsec1 -> nss
+	xmlto
+	xmlto -> "docbook-dtds"
+	xmlto -> "docbook-style-xsl"
+	xmlto -> flex
+	"xorg-sgml-doctools"
+	"xorg-x11-docs"
+	"xorg-x11-drivers"
+	"xorg-x11-drivers" -> "xorg-x11-drv-ati"
+	"xorg-x11-drivers" -> "xorg-x11-drv-dummy"
+	"xorg-x11-drivers" -> "xorg-x11-drv-evdev"
+	"xorg-x11-drivers" -> "xorg-x11-drv-fbdev"
+	"xorg-x11-drivers" -> "xorg-x11-drv-intel"
+	"xorg-x11-drivers" -> "xorg-x11-drv-libinput"
+	"xorg-x11-drivers" -> "xorg-x11-server"
+	"xorg-x11-drivers" -> "xorg-x11-drv-nouveau"
+	"xorg-x11-drivers" -> "xorg-x11-drv-qxl"
+	"xorg-x11-drivers" -> "xorg-x11-drv-v4l"
+	"xorg-x11-drivers" -> "xorg-x11-drv-vesa"
+	"xorg-x11-drivers" -> "xorg-x11-drv-vmware"
+	"xorg-x11-drivers" -> "xorg-x11-drv-wacom"
+	"xorg-x11-drv-ati"
+	"xorg-x11-drv-ati" -> "xorg-x11-server"
+	"xorg-x11-drv-ati" -> libdrm
+	"xorg-x11-drv-ati" -> mesa
+	"xorg-x11-drv-dummy"
+	"xorg-x11-drv-dummy" -> "xorg-x11-server"
+	"xorg-x11-drv-evdev"
+	"xorg-x11-drv-evdev" -> "xorg-x11-server"
+	"xorg-x11-drv-evdev" -> libevdev
+	"xorg-x11-drv-evdev" -> mtdev
+	"xorg-x11-drv-evdev" -> "xkeyboard-config"
+	"xorg-x11-drv-fbdev"
+	"xorg-x11-drv-fbdev" -> "xorg-x11-server"
+	"xorg-x11-drv-libinput"
+	"xorg-x11-drv-libinput" -> "xorg-x11-server"
+	"xorg-x11-drv-libinput" -> libinput
+	"xorg-x11-drv-libinput" -> "xkeyboard-config"
+	"xorg-x11-drv-nouveau"
+	"xorg-x11-drv-nouveau" -> "xorg-x11-server"
+	"xorg-x11-drv-nouveau" -> libdrm
+	"xorg-x11-drv-qxl"
+	"xorg-x11-drv-qxl" -> "xorg-x11-server"
+	"xorg-x11-drv-qxl" -> libXfont2
+	"xorg-x11-drv-qxl" -> spice
+	"xorg-x11-drv-v4l"
+	"xorg-x11-drv-v4l" -> "xorg-x11-server"
+	"xorg-x11-drv-vesa"
+	"xorg-x11-drv-vesa" -> "xorg-x11-server"
+	"xorg-x11-drv-vmware"
+	"xorg-x11-drv-vmware" -> "xorg-x11-server"
+	"xorg-x11-drv-vmware" -> libdrm
+	"xorg-x11-drv-vmware" -> mesa
+	"xorg-x11-drv-wacom"
+	"xorg-x11-drv-wacom" -> "xorg-x11-server"
+	"xorg-x11-drv-wacom" -> libX11
+	"xorg-x11-drv-wacom" -> libXext
+	"xorg-x11-drv-wacom" -> libXi
+	"xorg-x11-drv-wacom" -> libXinerama
+	"xorg-x11-drv-wacom" -> libXrandr
+	"xorg-x11-font-utils"
+	"xorg-x11-font-utils" -> libfontenc
+	"xorg-x11-fonts"
+	"xorg-x11-fonts" -> "xorg-x11-font-utils"
+	"xorg-x11-fonts" -> ttmkfdir
+	"xorg-x11-proto-devel"
+	"xorg-x11-server"
+	"xorg-x11-server" -> libX11
+	"xorg-x11-server" -> libXau
+	"xorg-x11-server" -> libXaw
+	"xorg-x11-server" -> libXdmcp
+	"xorg-x11-server" -> libXext
+	"xorg-x11-server" -> libXfixes
+	"xorg-x11-server" -> libXfont2
+	"xorg-x11-server" -> libXi
+	"xorg-x11-server" -> libXmu
+	"xorg-x11-server" -> libXpm
+	"xorg-x11-server" -> libXrender
+	"xorg-x11-server" -> libXt
+	"xorg-x11-server" -> libdmx
+	"xorg-x11-server" -> pixman
+	"xorg-x11-server" -> libxshmfence
+	"xorg-x11-server" -> "xorg-x11-server"
+	"xorg-x11-server" -> libglvnd
+	"xorg-x11-server" -> libdrm
+	"xorg-x11-server" -> libepoxy
+	"xorg-x11-server" -> libxcb
+	"xorg-x11-server" -> "xcb-util-wm"
+	"xorg-x11-server" -> "xcb-util-image"
+	"xorg-x11-server" -> "xcb-util-keysyms"
+	"xorg-x11-server" -> "xcb-util-renderutil"
+	"xorg-x11-server" -> "xcb-util"
+	"xorg-x11-server" -> mesa
+	"xorg-x11-server" -> "xorg-x11-drv-fbdev"
+	"xorg-x11-server" -> "xorg-x11-drv-libinput"
+	"xorg-x11-server" -> "xorg-x11-drv-vesa"
+	"xorg-x11-server" -> "xorg-x11-xauth"
+	"xorg-x11-server" -> "xorg-x11-xkb-utils"
+	"xorg-x11-server" -> "xkeyboard-config"
+	"xorg-x11-server-Xwayland"
+	"xorg-x11-server-Xwayland" -> libglvnd
+	"xorg-x11-server-Xwayland" -> libXau
+	"xorg-x11-server-Xwayland" -> libXdmcp
+	"xorg-x11-server-Xwayland" -> libXfont2
+	"xorg-x11-server-Xwayland" -> libdrm
+	"xorg-x11-server-Xwayland" -> libepoxy
+	"xorg-x11-server-Xwayland" -> mesa
+	"xorg-x11-server-Xwayland" -> pixman
+	"xorg-x11-server-Xwayland" -> wayland
+	"xorg-x11-server-Xwayland" -> libxshmfence
+	"xorg-x11-server-Xwayland" -> "xorg-x11-server"
+	"xorg-x11-server-utils"
+	"xorg-x11-server-utils" -> libICE
+	"xorg-x11-server-utils" -> libX11
+	"xorg-x11-server-utils" -> libXcursor
+	"xorg-x11-server-utils" -> libXext
+	"xorg-x11-server-utils" -> libXi
+	"xorg-x11-server-utils" -> libXinerama
+	"xorg-x11-server-utils" -> libXmu
+	"xorg-x11-server-utils" -> libXrandr
+	"xorg-x11-server-utils" -> libXrender
+	"xorg-x11-server-utils" -> libXt
+	"xorg-x11-server-utils" -> libXxf86misc
+	"xorg-x11-server-utils" -> libXxf86vm
+	"xorg-x11-server-utils" -> mcpp
+	"xorg-x11-utils"
+	"xorg-x11-utils" -> libX11
+	"xorg-x11-utils" -> libXcomposite
+	"xorg-x11-utils" -> libXext
+	"xorg-x11-utils" -> libXi
+	"xorg-x11-utils" -> libXinerama
+	"xorg-x11-utils" -> libXrandr
+	"xorg-x11-utils" -> libXrender
+	"xorg-x11-utils" -> libXtst
+	"xorg-x11-utils" -> libXv
+	"xorg-x11-utils" -> libXxf86dga
+	"xorg-x11-utils" -> libXxf86misc
+	"xorg-x11-utils" -> libXxf86vm
+	"xorg-x11-utils" -> libdmx
+	"xorg-x11-utils" -> libxcb
+	"xorg-x11-xauth"
+	"xorg-x11-xauth" -> libX11
+	"xorg-x11-xauth" -> libXau
+	"xorg-x11-xauth" -> libXext
+	"xorg-x11-xauth" -> libXmu
+	"xorg-x11-xbitmaps"
+	"xorg-x11-xinit"
+	"xorg-x11-xinit" -> libX11
+	"xorg-x11-xinit" -> "xorg-x11-server-utils"
+	"xorg-x11-xinit" -> "xorg-x11-xauth"
+	"xorg-x11-xkb-utils"
+	"xorg-x11-xkb-utils" -> libX11
+	"xorg-x11-xkb-utils" -> libxkbfile
+	xrestop
+	xrestop -> libX11
+	xrestop -> libXres
+	xrestop -> libXext
+	xsane
+	xsane -> "hicolor-icon-theme"
+	xsane -> atk
+	xsane -> cairo
+	xsane -> gtk2
+	xsane -> "libjpeg-turbo"
+	xsane -> lcms2
+	xsane -> pango
+	xsane -> "sane-backends"
+	xsane -> libtiff
+	xsane -> gimp
+	xterm
+	xterm -> libICE
+	xterm -> libX11
+	xterm -> libXaw
+	xterm -> libXft
+	xterm -> libXmu
+	xterm -> libXpm
+	xterm -> libXt
+	yajl
+	yelp
+	yelp -> atk
+	yelp -> cairo
+	yelp -> gtk3
+	yelp -> webkit2gtk3
+	yelp -> pango
+	yelp -> "yelp-xsl"
+	"yelp-tools"
+	"yelp-tools" -> itstool
+	"yelp-tools" -> "mallard-rng"
+	"yelp-tools" -> "yelp-xsl"
+	"yelp-xsl"
+	"yp-tools"
+	"yp-tools" -> ypbind
+	ypbind
+	ypbind -> "yp-tools"
+	ypserv
+	ypserv -> tokyocabinet
+	zenity
+	zenity -> libX11
+	zenity -> atk
+	zenity -> cairo
+	zenity -> gtk3
+	zenity -> libnotify
+	zenity -> pango
+	zsh
+	zstd
+	zziplib
+}
+

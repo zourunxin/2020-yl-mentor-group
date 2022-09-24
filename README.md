@@ -1,2 +1,14 @@
-# 2020-yl-mentor-group
-北京大学2020级yl导师下三位学生的仓库
+### nlp_resources
+https://github.com/mmihaltz/word2vec-GoogleNews-vectors
+
+### GAT classification
+cd wordbag
+python test.py
+cd ../build_dataset
+python build.py
+cd ../GAT
+python train.py
+
+### textrank cluster
+cd textrank_embedding
+python train.py

@@ -1,0 +1,8 @@
+digraph dep_Picture {
+	graph [rankdir=LR]
+	"anolis-rawhide-release"
+	"epel-aliyuncs-release"
+	"epel-release"
+	"epel-release" -> "epel-aliyuncs-release"
+}
+

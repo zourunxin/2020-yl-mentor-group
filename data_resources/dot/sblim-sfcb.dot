@@ -1,0 +1,871 @@
+digraph MyPicture {
+	graph [rankdir=LR]
+	perl
+	perl -> "perl-Carp"
+	perl -> "perl-Exporter"
+	perl -> glibc
+	perl -> "perl-PathTools"
+	perl -> "perl-Socket"
+	perl -> libxcrypt
+	perl -> gdbm
+	perl -> "perl-File-Path"
+	perl -> "perl-Scalar-List-Utils"
+	perl -> "perl-Text-Tabs+Wrap"
+	perl -> "perl-Unicode-Normalize"
+	perl -> "perl-constant"
+	perl -> "perl-parent"
+	perl -> "perl-threads"
+	perl -> "perl-threads-shared"
+	perl -> "perl-Encode"
+	"perl-Carp"
+	"perl-Carp" -> perl
+	"perl-Carp" -> "perl-Exporter"
+	"perl-Exporter"
+	"perl-Exporter" -> perl
+	"perl-Exporter" -> "perl-Carp"
+	glibc
+	glibc -> basesystem
+	glibc -> bash
+	glibc -> libselinux
+	glibc -> tzdata
+	"perl-PathTools"
+	"perl-PathTools" -> perl
+	"perl-PathTools" -> glibc
+	"perl-PathTools" -> "perl-Carp"
+	"perl-PathTools" -> "perl-Exporter"
+	"perl-PathTools" -> "perl-Scalar-List-Utils"
+	"perl-PathTools" -> "perl-constant"
+	"perl-Socket"
+	"perl-Socket" -> perl
+	"perl-Socket" -> glibc
+	"perl-Socket" -> "perl-Carp"
+	"perl-Socket" -> "perl-Exporter"
+	libxcrypt
+	libxcrypt -> glibc
+	gdbm
+	gdbm -> ncurses
+	gdbm -> readline
+	gdbm -> glibc
+	"perl-File-Path"
+	"perl-File-Path" -> perl
+	"perl-File-Path" -> "perl-Carp"
+	"perl-File-Path" -> "perl-PathTools"
+	"perl-File-Path" -> "perl-Exporter"
+	"perl-Scalar-List-Utils"
+	"perl-Scalar-List-Utils" -> perl
+	"perl-Scalar-List-Utils" -> glibc
+	"perl-Scalar-List-Utils" -> "perl-Carp"
+	"perl-Scalar-List-Utils" -> "perl-Exporter"
+	"perl-Text-Tabs+Wrap"
+	"perl-Text-Tabs+Wrap" -> perl
+	"perl-Text-Tabs+Wrap" -> "perl-Exporter"
+	"perl-Unicode-Normalize"
+	"perl-Unicode-Normalize" -> perl
+	"perl-Unicode-Normalize" -> glibc
+	"perl-Unicode-Normalize" -> "perl-Carp"
+	"perl-Unicode-Normalize" -> "perl-Exporter"
+	"perl-constant"
+	"perl-constant" -> perl
+	"perl-constant" -> "perl-Carp"
+	"perl-parent"
+	"perl-parent" -> perl
+	"perl-threads"
+	"perl-threads" -> perl
+	"perl-threads" -> glibc
+	"perl-threads" -> "perl-Carp"
+	"perl-threads-shared"
+	"perl-threads-shared" -> perl
+	"perl-threads-shared" -> glibc
+	"perl-threads-shared" -> "perl-Carp"
+	"perl-threads-shared" -> "perl-Scalar-List-Utils"
+	"perl-threads-shared" -> "perl-threads"
+	"perl-Encode"
+	"perl-Encode" -> perl
+	"perl-Encode" -> glibc
+	"perl-Encode" -> "perl-Carp"
+	"perl-Encode" -> "perl-Exporter"
+	"perl-Encode" -> "perl-Getopt-Long"
+	"perl-Encode" -> "perl-MIME-Base64"
+	"perl-Encode" -> "perl-Storable"
+	"perl-Encode" -> "perl-constant"
+	"perl-Encode" -> "perl-parent"
+	"perl-Getopt-Long"
+	"perl-Getopt-Long" -> perl
+	"perl-Getopt-Long" -> "perl-Exporter"
+	"perl-Getopt-Long" -> "perl-Pod-Usage"
+	"perl-Getopt-Long" -> "perl-Text-ParseWords"
+	"perl-Getopt-Long" -> "perl-constant"
+	"perl-MIME-Base64"
+	"perl-MIME-Base64" -> perl
+	"perl-MIME-Base64" -> glibc
+	"perl-MIME-Base64" -> "perl-Exporter"
+	"perl-Storable"
+	"perl-Storable" -> perl
+	"perl-Storable" -> glibc
+	"perl-Storable" -> "perl-Carp"
+	"perl-Storable" -> "perl-Exporter"
+	"perl-Pod-Usage"
+	"perl-Pod-Usage" -> perl
+	"perl-Pod-Usage" -> "perl-Carp"
+	"perl-Pod-Usage" -> "perl-Exporter"
+	"perl-Pod-Usage" -> "perl-PathTools"
+	"perl-Pod-Usage" -> "perl-Getopt-Long"
+	"perl-Pod-Usage" -> "perl-podlators"
+	"perl-Pod-Usage" -> "perl-Pod-Perldoc"
+	"perl-Text-ParseWords"
+	"perl-Text-ParseWords" -> perl
+	"perl-Text-ParseWords" -> "perl-Carp"
+	"perl-Text-ParseWords" -> "perl-Exporter"
+	"perl-podlators"
+	"perl-podlators" -> perl
+	"perl-podlators" -> "perl-Carp"
+	"perl-podlators" -> "perl-Encode"
+	"perl-podlators" -> "perl-Exporter"
+	"perl-podlators" -> "perl-PathTools"
+	"perl-podlators" -> "perl-Getopt-Long"
+	"perl-podlators" -> "perl-Pod-Simple"
+	"perl-podlators" -> "perl-Pod-Usage"
+	"perl-podlators" -> "perl-Term-ANSIColor"
+	"perl-podlators" -> "perl-Term-Cap"
+	"perl-Pod-Perldoc"
+	"perl-Pod-Perldoc" -> perl
+	"perl-Pod-Perldoc" -> groff
+	"perl-Pod-Perldoc" -> "perl-Carp"
+	"perl-Pod-Perldoc" -> "perl-Encode"
+	"perl-Pod-Perldoc" -> "perl-PathTools"
+	"perl-Pod-Perldoc" -> "perl-File-Temp"
+	"perl-Pod-Perldoc" -> "perl-HTTP-Tiny"
+	"perl-Pod-Perldoc" -> "perl-podlators"
+	"perl-Pod-Perldoc" -> "perl-Pod-Simple"
+	"perl-Pod-Perldoc" -> "perl-Text-ParseWords"
+	"perl-Pod-Perldoc" -> "perl-parent"
+	groff
+	groff -> bash
+	groff -> sed
+	groff -> gcc
+	groff -> glibc
+	"perl-File-Temp"
+	"perl-File-Temp" -> perl
+	"perl-File-Temp" -> "perl-Carp"
+	"perl-File-Temp" -> "perl-PathTools"
+	"perl-File-Temp" -> "perl-Exporter"
+	"perl-File-Temp" -> "perl-File-Path"
+	"perl-File-Temp" -> "perl-Scalar-List-Utils"
+	"perl-File-Temp" -> "perl-constant"
+	"perl-File-Temp" -> "perl-parent"
+	"perl-HTTP-Tiny"
+	"perl-HTTP-Tiny" -> perl
+	"perl-HTTP-Tiny" -> "perl-Carp"
+	"perl-HTTP-Tiny" -> "perl-MIME-Base64"
+	"perl-HTTP-Tiny" -> "perl-Socket"
+	"perl-HTTP-Tiny" -> "perl-Time-Local"
+	"perl-Pod-Simple"
+	"perl-Pod-Simple" -> perl
+	"perl-Pod-Simple" -> "perl-Carp"
+	"perl-Pod-Simple" -> "perl-PathTools"
+	"perl-Pod-Simple" -> "perl-Encode"
+	"perl-Pod-Simple" -> "perl-Getopt-Long"
+	"perl-Pod-Simple" -> "perl-Pod-Escapes"
+	"perl-Pod-Simple" -> "perl-Text-Tabs+Wrap"
+	"perl-Pod-Escapes"
+	"perl-Pod-Escapes" -> perl
+	"perl-Pod-Escapes" -> "perl-Exporter"
+	"perl-Time-Local"
+	"perl-Time-Local" -> perl
+	"perl-Time-Local" -> "perl-Carp"
+	"perl-Time-Local" -> "perl-Exporter"
+	"perl-Time-Local" -> "perl-constant"
+	"perl-Time-Local" -> "perl-parent"
+	bash
+	bash -> filesystem
+	bash -> glibc
+	bash -> ncurses
+	sed
+	sed -> bash
+	sed -> texinfo
+	sed -> acl
+	sed -> libselinux
+	sed -> glibc
+	gcc
+	gcc -> bash
+	gcc -> texinfo
+	gcc -> glibc
+	texinfo
+	texinfo -> bash
+	texinfo -> ncurses
+	texinfo -> zlib
+	texinfo -> glibc
+	ncurses
+	ncurses -> glibc
+	zlib
+	zlib -> glibc
+	acl
+	acl -> glibc
+	acl -> attr
+	libselinux
+	libselinux -> glibc
+	libselinux -> pcre2
+	libselinux -> libsepol
+	libselinux -> python3
+	pcre2
+	pcre2 -> glibc
+	libsepol
+	libsepol -> bash
+	libsepol -> glibc
+	python3
+	python3 -> bash
+	python3 -> chkconfig
+	python3 -> openssl
+	python3 -> glibc
+	python3 -> "python-setuptools"
+	python3 -> "python-pip"
+	python3 -> gdbm
+	python3 -> bzip2
+	python3 -> libxcrypt
+	python3 -> expat
+	python3 -> libffi
+	python3 -> xz
+	python3 -> ncurses
+	python3 -> libnsl2
+	python3 -> readline
+	python3 -> sqlite
+	python3 -> libtirpc
+	python3 -> zlib
+	chkconfig
+	chkconfig -> popt
+	chkconfig -> libselinux
+	chkconfig -> libsepol
+	chkconfig -> glibc
+	openssl
+	openssl -> bash
+	openssl -> coreutils
+	openssl -> glibc
+	openssl -> zlib
+	openssl -> "ca-certificates"
+	openssl -> "crypto-policies"
+	"python-setuptools"
+	"python-setuptools" -> python3
+	"python-pip"
+	"python-pip" -> "ca-certificates"
+	"python-pip" -> "python-setuptools"
+	"python-pip" -> python3
+	bzip2
+	bzip2 -> glibc
+	expat
+	expat -> glibc
+	libffi
+	libffi -> glibc
+	xz
+	xz -> bash
+	xz -> grep
+	xz -> glibc
+	libnsl2
+	libnsl2 -> glibc
+	libnsl2 -> libtirpc
+	readline
+	readline -> bash
+	readline -> glibc
+	readline -> texinfo
+	readline -> ncurses
+	sqlite
+	sqlite -> glibc
+	sqlite -> zlib
+	libtirpc
+	libtirpc -> glibc
+	libtirpc -> e2fsprogs
+	libtirpc -> krb5
+	e2fsprogs
+	e2fsprogs -> "util-linux"
+	e2fsprogs -> glibc
+	e2fsprogs -> fuse
+	krb5
+	krb5 -> bash
+	krb5 -> coreutils
+	krb5 -> gawk
+	krb5 -> grep
+	krb5 -> keyutils
+	krb5 -> e2fsprogs
+	krb5 -> openssl
+	krb5 -> glibc
+	krb5 -> libselinux
+	krb5 -> libverto
+	krb5 -> sed
+	coreutils
+	coreutils -> acl
+	coreutils -> attr
+	coreutils -> libcap
+	coreutils -> openssl
+	coreutils -> gmp
+	coreutils -> glibc
+	coreutils -> libselinux
+	coreutils -> ncurses
+	coreutils -> bash
+	coreutils -> texinfo
+	gawk
+	gawk -> filesystem
+	gawk -> glibc
+	gawk -> gmp
+	gawk -> mpfr
+	gawk -> readline
+	gawk -> libsigsegv
+	grep
+	grep -> bash
+	grep -> texinfo
+	grep -> pcre
+	grep -> glibc
+	keyutils
+	keyutils -> glibc
+	libverto
+	libverto -> glibc
+	pcre
+	pcre -> glibc
+	filesystem
+	filesystem -> bash
+	filesystem -> setup
+	gmp
+	gmp -> glibc
+	mpfr
+	mpfr -> glibc
+	mpfr -> gmp
+	libsigsegv
+	libsigsegv -> glibc
+	setup
+	setup -> "anolis-release"
+	"anolis-release"
+	attr
+	attr -> glibc
+	libcap
+	libcap -> gcc
+	libcap -> glibc
+	"util-linux"
+	"util-linux" -> bash
+	"util-linux" -> glibc
+	"util-linux" -> coreutils
+	"util-linux" -> libselinux
+	"util-linux" -> pam
+	"util-linux" -> audit
+	"util-linux" -> "libcap-ng"
+	"util-linux" -> libxcrypt
+	"util-linux" -> ncurses
+	"util-linux" -> systemd
+	"util-linux" -> libutempter
+	"util-linux" -> zlib
+	fuse
+	fuse -> glibc
+	fuse -> which
+	which
+	which -> coreutils
+	which -> glibc
+	pam
+	pam -> bash
+	pam -> glibc
+	pam -> audit
+	pam -> coreutils
+	pam -> cracklib
+	pam -> libxcrypt
+	pam -> libdb
+	pam -> libnsl2
+	pam -> libpwquality
+	pam -> libselinux
+	pam -> libtirpc
+	audit
+	audit -> bash
+	audit -> coreutils
+	audit -> glibc
+	audit -> initscripts
+	audit -> "libcap-ng"
+	audit -> krb5
+	audit -> systemd
+	"libcap-ng"
+	"libcap-ng" -> glibc
+	systemd
+	systemd -> bash
+	systemd -> glibc
+	systemd -> "shadow-utils"
+	systemd -> acl
+	systemd -> coreutils
+	systemd -> dbus
+	systemd -> grep
+	systemd -> audit
+	systemd -> "util-linux"
+	systemd -> bzip2
+	systemd -> libcap
+	systemd -> libxcrypt
+	systemd -> cryptsetup
+	systemd -> elfutils
+	systemd -> gcc
+	systemd -> libgcrypt
+	systemd -> gnutls
+	systemd -> "libgpg-error"
+	systemd -> libidn2
+	systemd -> kmod
+	systemd -> lz4
+	systemd -> xz
+	systemd -> pam
+	systemd -> pcre2
+	systemd -> libseccomp
+	systemd -> libselinux
+	systemd -> zlib
+	systemd -> openssl
+	systemd -> sed
+	libutempter
+	libutempter -> bash
+	libutempter -> glibc
+	libutempter -> "shadow-utils"
+	"shadow-utils"
+	"shadow-utils" -> audit
+	"shadow-utils" -> coreutils
+	"shadow-utils" -> glibc
+	"shadow-utils" -> acl
+	"shadow-utils" -> attr
+	"shadow-utils" -> libxcrypt
+	"shadow-utils" -> libselinux
+	"shadow-utils" -> libsemanage
+	"shadow-utils" -> setup
+	libsemanage
+	libsemanage -> audit
+	libsemanage -> bzip2
+	libsemanage -> libselinux
+	libsemanage -> libsepol
+	libsemanage -> glibc
+	dbus
+	dbus -> systemd
+	dbus -> bash
+	dbus -> "shadow-utils"
+	dbus -> audit
+	dbus -> "libcap-ng"
+	dbus -> expat
+	dbus -> glibc
+	dbus -> libselinux
+	cryptsetup
+	cryptsetup -> glibc
+	cryptsetup -> "util-linux"
+	cryptsetup -> openssl
+	cryptsetup -> lvm2
+	cryptsetup -> "json-c"
+	elfutils
+	elfutils -> bash
+	elfutils -> glibc
+	elfutils -> zlib
+	elfutils -> bzip2
+	elfutils -> xz
+	elfutils -> zstd
+	libgcrypt
+	libgcrypt -> glibc
+	libgcrypt -> "libgpg-error"
+	gnutls
+	gnutls -> "crypto-policies"
+	gnutls -> glibc
+	gnutls -> gmp
+	gnutls -> nettle
+	gnutls -> libidn2
+	gnutls -> "p11-kit"
+	gnutls -> libtasn1
+	gnutls -> libunistring
+	"libgpg-error"
+	"libgpg-error" -> glibc
+	libidn2
+	libidn2 -> libunistring
+	libidn2 -> glibc
+	kmod
+	kmod -> bash
+	kmod -> glibc
+	kmod -> openssl
+	kmod -> gcc
+	kmod -> xz
+	kmod -> zlib
+	lz4
+	lz4 -> glibc
+	libseccomp
+	libseccomp -> glibc
+	libunistring
+	libunistring -> texinfo
+	libunistring -> glibc
+	"crypto-policies"
+	"crypto-policies" -> bash
+	"crypto-policies" -> python3
+	nettle
+	nettle -> bash
+	nettle -> glibc
+	nettle -> texinfo
+	nettle -> gmp
+	"p11-kit"
+	"p11-kit" -> glibc
+	"p11-kit" -> libffi
+	"p11-kit" -> bash
+	"p11-kit" -> chkconfig
+	"p11-kit" -> libtasn1
+	libtasn1
+	libtasn1 -> glibc
+	zstd
+	zstd -> glibc
+	lvm2
+	lvm2 -> bash
+	lvm2 -> glibc
+	lvm2 -> libselinux
+	lvm2 -> libsepol
+	lvm2 -> systemd
+	lvm2 -> "util-linux"
+	lvm2 -> gcc
+	lvm2 -> "device-mapper-persistent-data"
+	lvm2 -> libaio
+	lvm2 -> readline
+	lvm2 -> kmod
+	"json-c"
+	"json-c" -> glibc
+	"device-mapper-persistent-data"
+	"device-mapper-persistent-data" -> expat
+	"device-mapper-persistent-data" -> glibc
+	"device-mapper-persistent-data" -> libaio
+	"device-mapper-persistent-data" -> gcc
+	libaio
+	libaio -> glibc
+	initscripts
+	initscripts -> bash
+	initscripts -> coreutils
+	initscripts -> filesystem
+	initscripts -> findutils
+	initscripts -> gawk
+	initscripts -> grep
+	initscripts -> glib2
+	initscripts -> popt
+	initscripts -> "procps-ng"
+	initscripts -> glibc
+	initscripts -> setup
+	initscripts -> "shadow-utils"
+	initscripts -> systemd
+	initscripts -> "util-linux"
+	findutils
+	findutils -> bash
+	findutils -> texinfo
+	findutils -> glibc
+	findutils -> libselinux
+	glib2
+	glib2 -> bash
+	glib2 -> glibc
+	glib2 -> libffi
+	glib2 -> gcc
+	glib2 -> gnutls
+	glib2 -> "util-linux"
+	glib2 -> pcre
+	glib2 -> libselinux
+	glib2 -> zlib
+	popt
+	popt -> glibc
+	"procps-ng"
+	"procps-ng" -> glibc
+	"procps-ng" -> ncurses
+	"procps-ng" -> systemd
+	cracklib
+	cracklib -> bash
+	cracklib -> glibc
+	cracklib -> gzip
+	cracklib -> zlib
+	libdb
+	libdb -> glibc
+	libdb -> openssl
+	libpwquality
+	libpwquality -> cracklib
+	libpwquality -> pam
+	libpwquality -> glibc
+	gzip
+	gzip -> bash
+	gzip -> texinfo
+	gzip -> coreutils
+	gzip -> glibc
+	"ca-certificates"
+	"ca-certificates" -> bash
+	"ca-certificates" -> coreutils
+	"ca-certificates" -> grep
+	"ca-certificates" -> "p11-kit"
+	"ca-certificates" -> sed
+	"perl-Term-ANSIColor"
+	"perl-Term-ANSIColor" -> perl
+	"perl-Term-ANSIColor" -> "perl-Exporter"
+	"perl-Term-Cap"
+	"perl-Term-Cap" -> ncurses
+	"perl-Term-Cap" -> perl
+	"perl-Term-Cap" -> "perl-Carp"
+	basesystem
+	basesystem -> filesystem
+	basesystem -> setup
+	tzdata
+	"cyrus-sasl"
+	"cyrus-sasl" -> glibc
+	"cyrus-sasl" -> e2fsprogs
+	"cyrus-sasl" -> libxcrypt
+	"cyrus-sasl" -> libdb
+	"cyrus-sasl" -> krb5
+	"publicsuffix-list"
+	libssh
+	libssh -> "crypto-policies"
+	libssh -> glibc
+	libssh -> e2fsprogs
+	libssh -> openssl
+	libssh -> krb5
+	libssh -> zlib
+	libpsl
+	libpsl -> libidn2
+	libpsl -> libunistring
+	libpsl -> "publicsuffix-list"
+	libpsl -> glibc
+	nghttp2
+	nghttp2 -> glibc
+	openldap
+	openldap -> openssl
+	openldap -> glibc
+	openldap -> "cyrus-sasl"
+	brotli
+	brotli -> glibc
+	"perl-Digest-SHA"
+	"perl-Digest-SHA" -> perl
+	"perl-Digest-SHA" -> glibc
+	"perl-Digest-SHA" -> "perl-Carp"
+	"perl-Digest-SHA" -> "perl-Digest"
+	"perl-Digest-SHA" -> "perl-Exporter"
+	"perl-Digest-SHA" -> "perl-Getopt-Long"
+	"perl-Digest"
+	"perl-Digest" -> perl
+	"perl-Digest" -> "perl-Carp"
+	"perl-Digest" -> "perl-Exporter"
+	"perl-Digest" -> "perl-MIME-Base64"
+	"perl-Digest-HMAC"
+	"perl-Digest-HMAC" -> perl
+	"perl-Digest-HMAC" -> "perl-Digest-MD5"
+	"perl-Digest-HMAC" -> "perl-Digest-SHA"
+	"perl-Digest-HMAC" -> "perl-Exporter"
+	"perl-Digest-MD5"
+	"perl-Digest-MD5" -> perl
+	"perl-Digest-MD5" -> glibc
+	"perl-Digest-MD5" -> "perl-Digest"
+	"perl-Digest-MD5" -> "perl-Exporter"
+	"perl-HTML-Tagset"
+	"perl-HTML-Tagset" -> perl
+	"perl-IO-HTML"
+	"perl-IO-HTML" -> perl
+	"perl-IO-HTML" -> "perl-Carp"
+	"perl-IO-HTML" -> "perl-Encode"
+	"perl-IO-HTML" -> "perl-Exporter"
+	"perl-TimeDate"
+	"perl-TimeDate" -> perl
+	"perl-TimeDate" -> "perl-Carp"
+	"perl-TimeDate" -> "perl-Exporter"
+	"perl-TimeDate" -> "perl-Time-Local"
+	mailcap
+	"perl-Net-SSLeay"
+	"perl-Net-SSLeay" -> openssl
+	"perl-Net-SSLeay" -> perl
+	"perl-Net-SSLeay" -> glibc
+	"perl-Net-SSLeay" -> "perl-Carp"
+	"perl-Net-SSLeay" -> "perl-Exporter"
+	"perl-Net-SSLeay" -> "perl-MIME-Base64"
+	"perl-Net-SSLeay" -> "perl-Socket"
+	"perl-Compress-Raw-Bzip2"
+	"perl-Compress-Raw-Bzip2" -> bzip2
+	"perl-Compress-Raw-Bzip2" -> perl
+	"perl-Compress-Raw-Bzip2" -> glibc
+	"perl-Compress-Raw-Bzip2" -> "perl-Carp"
+	"perl-Compress-Raw-Bzip2" -> "perl-Exporter"
+	"perl-Compress-Raw-Bzip2" -> "perl-constant"
+	"perl-IO-Compress"
+	"perl-IO-Compress" -> perl
+	"perl-IO-Compress" -> "perl-Carp"
+	"perl-IO-Compress" -> "perl-Compress-Raw-Bzip2"
+	"perl-IO-Compress" -> "perl-Compress-Raw-Zlib"
+	"perl-IO-Compress" -> "perl-Encode"
+	"perl-IO-Compress" -> "perl-Exporter"
+	"perl-IO-Compress" -> "perl-PathTools"
+	"perl-IO-Compress" -> "perl-Scalar-List-Utils"
+	"perl-IO-Compress" -> "perl-constant"
+	"perl-Compress-Raw-Zlib"
+	"perl-Compress-Raw-Zlib" -> perl
+	"perl-Compress-Raw-Zlib" -> glibc
+	"perl-Compress-Raw-Zlib" -> zlib
+	"perl-Compress-Raw-Zlib" -> "perl-Carp"
+	"perl-Compress-Raw-Zlib" -> "perl-Exporter"
+	"perl-Compress-Raw-Zlib" -> "perl-constant"
+	"perl-IO-Socket-SSL"
+	"perl-IO-Socket-SSL" -> openssl
+	"perl-IO-Socket-SSL" -> perl
+	"perl-IO-Socket-SSL" -> "perl-Carp"
+	"perl-IO-Socket-SSL" -> "perl-Exporter"
+	"perl-IO-Socket-SSL" -> "perl-HTTP-Tiny"
+	"perl-IO-Socket-SSL" -> "perl-IO-Socket-IP"
+	"perl-IO-Socket-SSL" -> "perl-Net-SSLeay"
+	"perl-IO-Socket-SSL" -> "perl-Socket"
+	"perl-IO-Socket-SSL" -> "perl-URI"
+	"perl-IO-Socket-SSL" -> "perl-constant"
+	"perl-IO-Socket-IP"
+	"perl-IO-Socket-IP" -> perl
+	"perl-IO-Socket-IP" -> "perl-Carp"
+	"perl-IO-Socket-IP" -> "perl-Socket"
+	"perl-IO-Socket-IP" -> "perl-constant"
+	"perl-URI"
+	"perl-URI" -> perl
+	"perl-URI" -> "perl-Carp"
+	"perl-URI" -> "perl-PathTools"
+	"perl-URI" -> "perl-Data-Dumper"
+	"perl-URI" -> "perl-Encode"
+	"perl-URI" -> "perl-Exporter"
+	"perl-URI" -> "perl-MIME-Base64"
+	"perl-URI" -> "perl-libnet"
+	"perl-URI" -> "perl-Scalar-List-Utils"
+	"perl-URI" -> "perl-constant"
+	"perl-URI" -> "perl-parent"
+	"perl-Data-Dumper"
+	"perl-Data-Dumper" -> perl
+	"perl-Data-Dumper" -> glibc
+	"perl-Data-Dumper" -> "perl-Carp"
+	"perl-Data-Dumper" -> "perl-Exporter"
+	"perl-Data-Dumper" -> "perl-Scalar-List-Utils"
+	"perl-Data-Dumper" -> "perl-constant"
+	"perl-libnet"
+	"perl-libnet" -> perl
+	"perl-libnet" -> "perl-Carp"
+	"perl-libnet" -> "perl-Digest-MD5"
+	"perl-libnet" -> "perl-Exporter"
+	"perl-libnet" -> "perl-IO-Socket-IP"
+	"perl-libnet" -> "perl-Socket"
+	"perl-libnet" -> "perl-Time-Local"
+	"perl-libnet" -> "perl-constant"
+	"perl-WWW-RobotRules"
+	"perl-WWW-RobotRules" -> perl
+	"perl-WWW-RobotRules" -> "perl-Carp"
+	"perl-WWW-RobotRules" -> "perl-URI"
+	"perl-Try-Tiny"
+	"perl-Try-Tiny" -> perl
+	"perl-Try-Tiny" -> "perl-Carp"
+	"perl-Try-Tiny" -> "perl-Exporter"
+	"perl-Try-Tiny" -> "perl-Scalar-List-Utils"
+	"perl-Try-Tiny" -> "perl-constant"
+	"perl-Net-HTTP"
+	"perl-Net-HTTP" -> perl
+	"perl-Net-HTTP" -> "perl-Carp"
+	"perl-Net-HTTP" -> "perl-Compress-Raw-Zlib"
+	"perl-Net-HTTP" -> "perl-IO-Socket-IP"
+	"perl-Net-HTTP" -> "perl-IO-Socket-SSL"
+	"perl-Net-HTTP" -> "perl-IO-Compress"
+	"perl-Net-HTTP" -> "perl-URI"
+	"perl-LWP-MediaTypes"
+	"perl-LWP-MediaTypes" -> mailcap
+	"perl-LWP-MediaTypes" -> perl
+	"perl-LWP-MediaTypes" -> "perl-Exporter"
+	"perl-HTTP-Negotiate"
+	"perl-HTTP-Negotiate" -> perl
+	"perl-HTTP-Negotiate" -> "perl-Exporter"
+	"perl-HTTP-Negotiate" -> "perl-HTTP-Message"
+	"perl-HTTP-Message"
+	"perl-HTTP-Message" -> perl
+	"perl-HTTP-Message" -> "perl-Carp"
+	"perl-HTTP-Message" -> "perl-Compress-Raw-Zlib"
+	"perl-HTTP-Message" -> "perl-Encode"
+	"perl-HTTP-Message" -> "perl-Encode-Locale"
+	"perl-HTTP-Message" -> "perl-Exporter"
+	"perl-HTTP-Message" -> "perl-HTTP-Date"
+	"perl-HTTP-Message" -> "perl-IO-Compress"
+	"perl-HTTP-Message" -> "perl-IO-HTML"
+	"perl-HTTP-Message" -> "perl-LWP-MediaTypes"
+	"perl-HTTP-Message" -> "perl-MIME-Base64"
+	"perl-HTTP-Message" -> "perl-Storable"
+	"perl-HTTP-Message" -> "perl-URI"
+	"perl-Encode-Locale"
+	"perl-Encode-Locale" -> perl
+	"perl-Encode-Locale" -> "perl-Encode"
+	"perl-Encode-Locale" -> "perl-Exporter"
+	"perl-HTTP-Date"
+	"perl-HTTP-Date" -> perl
+	"perl-HTTP-Date" -> "perl-Exporter"
+	"perl-HTTP-Date" -> "perl-Time-Local"
+	"perl-HTTP-Date" -> "perl-TimeDate"
+	"perl-HTTP-Cookies"
+	"perl-HTTP-Cookies" -> perl
+	"perl-HTTP-Cookies" -> "perl-Carp"
+	"perl-HTTP-Cookies" -> "perl-HTTP-Date"
+	"perl-HTTP-Cookies" -> "perl-HTTP-Message"
+	"perl-HTML-Parser"
+	"perl-HTML-Parser" -> perl
+	"perl-HTML-Parser" -> glibc
+	"perl-HTML-Parser" -> "perl-Carp"
+	"perl-HTML-Parser" -> "perl-Exporter"
+	"perl-HTML-Parser" -> "perl-HTML-Tagset"
+	"perl-HTML-Parser" -> "perl-HTTP-Message"
+	"perl-HTML-Parser" -> "perl-URI"
+	"perl-File-Listing"
+	"perl-File-Listing" -> perl
+	"perl-File-Listing" -> "perl-Carp"
+	"perl-File-Listing" -> "perl-Exporter"
+	"perl-File-Listing" -> "perl-HTTP-Date"
+	"perl-File-Listing" -> "perl-Time-Local"
+	"perl-Data-Dump"
+	"perl-Data-Dump" -> perl
+	"perl-Data-Dump" -> "perl-Carp"
+	"perl-Data-Dump" -> "perl-Exporter"
+	"perl-Data-Dump" -> "perl-Term-ANSIColor"
+	"perl-NTLM"
+	"perl-NTLM" -> perl
+	"perl-NTLM" -> "perl-Digest-HMAC"
+	"perl-NTLM" -> "perl-Exporter"
+	"perl-NTLM" -> "perl-MIME-Base64"
+	"perl-NTLM" -> "perl-constant"
+	"perl-libwww-perl"
+	"perl-libwww-perl" -> perl
+	"perl-libwww-perl" -> "perl-NTLM"
+	"perl-libwww-perl" -> "perl-Carp"
+	"perl-libwww-perl" -> "perl-Data-Dump"
+	"perl-libwww-perl" -> "perl-Digest-MD5"
+	"perl-libwww-perl" -> "perl-Encode"
+	"perl-libwww-perl" -> "perl-Encode-Locale"
+	"perl-libwww-perl" -> "perl-Exporter"
+	"perl-libwww-perl" -> "perl-File-Listing"
+	"perl-libwww-perl" -> "perl-PathTools"
+	"perl-libwww-perl" -> "perl-Getopt-Long"
+	"perl-libwww-perl" -> "perl-HTML-Parser"
+	"perl-libwww-perl" -> "perl-HTTP-Message"
+	"perl-libwww-perl" -> "perl-HTTP-Cookies"
+	"perl-libwww-perl" -> "perl-HTTP-Date"
+	"perl-libwww-perl" -> "perl-HTTP-Negotiate"
+	"perl-libwww-perl" -> "perl-LWP-MediaTypes"
+	"perl-libwww-perl" -> "perl-MIME-Base64"
+	"perl-libwww-perl" -> "perl-libnet"
+	"perl-libwww-perl" -> "perl-Net-HTTP"
+	"perl-libwww-perl" -> "perl-Scalar-List-Utils"
+	"perl-libwww-perl" -> "perl-Try-Tiny"
+	"perl-libwww-perl" -> "perl-URI"
+	"perl-libwww-perl" -> "perl-WWW-RobotRules"
+	"perl-libwww-perl" -> "perl-parent"
+	openslp
+	openslp -> glibc
+	openslp -> openssl
+	openslp -> zlib
+	"sblim-sfcCommon"
+	"sblim-sfcCommon" -> glibc
+	curl
+	curl -> glibc
+	curl -> openssl
+	curl -> zlib
+	curl -> brotli
+	curl -> e2fsprogs
+	curl -> krb5
+	curl -> libidn2
+	curl -> openldap
+	curl -> nghttp2
+	curl -> libpsl
+	curl -> libssh
+	"cim-schema"
+	"sblim-sfcb"
+	"sblim-sfcb" -> bash
+	"sblim-sfcb" -> perl
+	"sblim-sfcb" -> "cim-schema"
+	"sblim-sfcb" -> glibc
+	"sblim-sfcb" -> curl
+	"sblim-sfcb" -> pam
+	"sblim-sfcb" -> "sblim-sfcCommon"
+	"sblim-sfcb" -> openslp
+	"sblim-sfcb" -> openssl
+	"sblim-sfcb" -> zlib
+	"sblim-sfcb" -> "perl-Getopt-Long"
+	"sblim-sfcb" -> "perl-libwww-perl"
+	"sblim-sfcb" -> "perl-URI"
+	"sblim-sfcb" -> systemd
+}
+
