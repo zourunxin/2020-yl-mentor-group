@@ -1,0 +1,7 @@
+digraph MyPicture {
+	graph [rankdir=LR]
+	"anolis-release"
+	setup
+	setup -> "anolis-release"
+}
+

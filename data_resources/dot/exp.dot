@@ -1,0 +1,19 @@
+digraph dep_Picture {
+	graph [rankdir=LR]
+	Dragonfly
+	babassl
+	kernel
+	kernel -> kernel
+	"java-1.8.0-alibaba-dragonwell"
+	"java-11-alibaba-dragonwell"
+	"java-11-alibaba-dragonwell" -> "java-1.8.0-alibaba-dragonwell"
+	"kata-containers"
+	"kata-containers" -> kernel
+	libxudp
+	nerdctl
+	"oceanbase-ce"
+	polardb
+	rocketmq
+	ssar
+}
+

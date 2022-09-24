@@ -1,0 +1,1986 @@
+digraph MyPicture {
+	graph [rankdir=LR]
+	libedit
+	libedit -> ncurses
+	libedit -> glibc
+	ncurses
+	ncurses -> glibc
+	glibc
+	glibc -> basesystem
+	glibc -> bash
+	glibc -> libselinux
+	glibc -> tzdata
+	basesystem
+	basesystem -> filesystem
+	basesystem -> setup
+	bash
+	bash -> filesystem
+	bash -> glibc
+	bash -> ncurses
+	libselinux
+	libselinux -> glibc
+	libselinux -> pcre2
+	libselinux -> libsepol
+	libselinux -> python3
+	tzdata
+	pcre2
+	pcre2 -> glibc
+	libsepol
+	libsepol -> bash
+	libsepol -> glibc
+	python3
+	python3 -> bash
+	python3 -> chkconfig
+	python3 -> openssl
+	python3 -> glibc
+	python3 -> "python-setuptools"
+	python3 -> "python-pip"
+	python3 -> gdbm
+	python3 -> bzip2
+	python3 -> libxcrypt
+	python3 -> expat
+	python3 -> libffi
+	python3 -> xz
+	python3 -> ncurses
+	python3 -> libnsl2
+	python3 -> readline
+	python3 -> sqlite
+	python3 -> libtirpc
+	python3 -> zlib
+	chkconfig
+	chkconfig -> popt
+	chkconfig -> libselinux
+	chkconfig -> libsepol
+	chkconfig -> glibc
+	openssl
+	openssl -> bash
+	openssl -> coreutils
+	openssl -> glibc
+	openssl -> zlib
+	openssl -> "ca-certificates"
+	openssl -> "crypto-policies"
+	"python-setuptools"
+	"python-setuptools" -> python3
+	"python-pip"
+	"python-pip" -> "ca-certificates"
+	"python-pip" -> "python-setuptools"
+	"python-pip" -> python3
+	gdbm
+	gdbm -> ncurses
+	gdbm -> readline
+	gdbm -> glibc
+	bzip2
+	bzip2 -> glibc
+	libxcrypt
+	libxcrypt -> glibc
+	expat
+	expat -> glibc
+	libffi
+	libffi -> glibc
+	xz
+	xz -> bash
+	xz -> grep
+	xz -> glibc
+	libnsl2
+	libnsl2 -> glibc
+	libnsl2 -> libtirpc
+	readline
+	readline -> bash
+	readline -> glibc
+	readline -> texinfo
+	readline -> ncurses
+	sqlite
+	sqlite -> glibc
+	sqlite -> zlib
+	libtirpc
+	libtirpc -> glibc
+	libtirpc -> e2fsprogs
+	libtirpc -> krb5
+	zlib
+	zlib -> glibc
+	e2fsprogs
+	e2fsprogs -> "util-linux"
+	e2fsprogs -> glibc
+	e2fsprogs -> fuse
+	krb5
+	krb5 -> bash
+	krb5 -> coreutils
+	krb5 -> gawk
+	krb5 -> grep
+	krb5 -> keyutils
+	krb5 -> e2fsprogs
+	krb5 -> openssl
+	krb5 -> glibc
+	krb5 -> libselinux
+	krb5 -> libverto
+	krb5 -> sed
+	coreutils
+	coreutils -> acl
+	coreutils -> attr
+	coreutils -> libcap
+	coreutils -> openssl
+	coreutils -> gmp
+	coreutils -> glibc
+	coreutils -> libselinux
+	coreutils -> ncurses
+	coreutils -> bash
+	coreutils -> texinfo
+	gawk
+	gawk -> filesystem
+	gawk -> glibc
+	gawk -> gmp
+	gawk -> mpfr
+	gawk -> readline
+	gawk -> libsigsegv
+	grep
+	grep -> bash
+	grep -> texinfo
+	grep -> pcre
+	grep -> glibc
+	keyutils
+	keyutils -> glibc
+	libverto
+	libverto -> glibc
+	sed
+	sed -> bash
+	sed -> texinfo
+	sed -> acl
+	sed -> libselinux
+	sed -> glibc
+	texinfo
+	texinfo -> bash
+	texinfo -> ncurses
+	texinfo -> zlib
+	texinfo -> glibc
+	acl
+	acl -> glibc
+	acl -> attr
+	attr
+	attr -> glibc
+	pcre
+	pcre -> glibc
+	filesystem
+	filesystem -> bash
+	filesystem -> setup
+	gmp
+	gmp -> glibc
+	mpfr
+	mpfr -> glibc
+	mpfr -> gmp
+	libsigsegv
+	libsigsegv -> glibc
+	setup
+	setup -> "anolis-release"
+	"anolis-release"
+	libcap
+	libcap -> gcc
+	libcap -> glibc
+	gcc
+	gcc -> bash
+	gcc -> texinfo
+	gcc -> glibc
+	"util-linux"
+	"util-linux" -> bash
+	"util-linux" -> glibc
+	"util-linux" -> coreutils
+	"util-linux" -> libselinux
+	"util-linux" -> pam
+	"util-linux" -> audit
+	"util-linux" -> "libcap-ng"
+	"util-linux" -> libxcrypt
+	"util-linux" -> ncurses
+	"util-linux" -> systemd
+	"util-linux" -> libutempter
+	"util-linux" -> zlib
+	fuse
+	fuse -> glibc
+	fuse -> which
+	which
+	which -> coreutils
+	which -> glibc
+	pam
+	pam -> bash
+	pam -> glibc
+	pam -> audit
+	pam -> coreutils
+	pam -> cracklib
+	pam -> libxcrypt
+	pam -> libdb
+	pam -> libnsl2
+	pam -> libpwquality
+	pam -> libselinux
+	pam -> libtirpc
+	audit
+	audit -> bash
+	audit -> coreutils
+	audit -> glibc
+	audit -> initscripts
+	audit -> "libcap-ng"
+	audit -> krb5
+	audit -> systemd
+	"libcap-ng"
+	"libcap-ng" -> glibc
+	systemd
+	systemd -> bash
+	systemd -> glibc
+	systemd -> "shadow-utils"
+	systemd -> acl
+	systemd -> coreutils
+	systemd -> dbus
+	systemd -> grep
+	systemd -> audit
+	systemd -> "util-linux"
+	systemd -> bzip2
+	systemd -> libcap
+	systemd -> libxcrypt
+	systemd -> cryptsetup
+	systemd -> elfutils
+	systemd -> gcc
+	systemd -> libgcrypt
+	systemd -> gnutls
+	systemd -> "libgpg-error"
+	systemd -> libidn2
+	systemd -> kmod
+	systemd -> lz4
+	systemd -> xz
+	systemd -> pam
+	systemd -> pcre2
+	systemd -> libseccomp
+	systemd -> libselinux
+	systemd -> zlib
+	systemd -> openssl
+	systemd -> sed
+	libutempter
+	libutempter -> bash
+	libutempter -> glibc
+	libutempter -> "shadow-utils"
+	"shadow-utils"
+	"shadow-utils" -> audit
+	"shadow-utils" -> coreutils
+	"shadow-utils" -> glibc
+	"shadow-utils" -> acl
+	"shadow-utils" -> attr
+	"shadow-utils" -> libxcrypt
+	"shadow-utils" -> libselinux
+	"shadow-utils" -> libsemanage
+	"shadow-utils" -> setup
+	libsemanage
+	libsemanage -> audit
+	libsemanage -> bzip2
+	libsemanage -> libselinux
+	libsemanage -> libsepol
+	libsemanage -> glibc
+	dbus
+	dbus -> systemd
+	dbus -> bash
+	dbus -> "shadow-utils"
+	dbus -> audit
+	dbus -> "libcap-ng"
+	dbus -> expat
+	dbus -> glibc
+	dbus -> libselinux
+	dbus -> glib2
+	dbus -> libX11
+	cryptsetup
+	cryptsetup -> glibc
+	cryptsetup -> "util-linux"
+	cryptsetup -> openssl
+	cryptsetup -> lvm2
+	cryptsetup -> "json-c"
+	elfutils
+	elfutils -> bash
+	elfutils -> glibc
+	elfutils -> zlib
+	elfutils -> bzip2
+	elfutils -> xz
+	elfutils -> zstd
+	libgcrypt
+	libgcrypt -> glibc
+	libgcrypt -> "libgpg-error"
+	gnutls
+	gnutls -> "crypto-policies"
+	gnutls -> glibc
+	gnutls -> gmp
+	gnutls -> nettle
+	gnutls -> libidn2
+	gnutls -> "p11-kit"
+	gnutls -> libtasn1
+	gnutls -> libunistring
+	"libgpg-error"
+	"libgpg-error" -> glibc
+	libidn2
+	libidn2 -> libunistring
+	libidn2 -> glibc
+	kmod
+	kmod -> bash
+	kmod -> glibc
+	kmod -> openssl
+	kmod -> gcc
+	kmod -> xz
+	kmod -> zlib
+	lz4
+	lz4 -> glibc
+	libseccomp
+	libseccomp -> glibc
+	libunistring
+	libunistring -> texinfo
+	libunistring -> glibc
+	"crypto-policies"
+	"crypto-policies" -> bash
+	"crypto-policies" -> python3
+	nettle
+	nettle -> bash
+	nettle -> glibc
+	nettle -> texinfo
+	nettle -> gmp
+	"p11-kit"
+	"p11-kit" -> glibc
+	"p11-kit" -> libffi
+	"p11-kit" -> bash
+	"p11-kit" -> chkconfig
+	"p11-kit" -> libtasn1
+	libtasn1
+	libtasn1 -> glibc
+	zstd
+	zstd -> glibc
+	lvm2
+	lvm2 -> bash
+	lvm2 -> glibc
+	lvm2 -> libselinux
+	lvm2 -> libsepol
+	lvm2 -> systemd
+	lvm2 -> "util-linux"
+	lvm2 -> gcc
+	lvm2 -> "device-mapper-persistent-data"
+	lvm2 -> libaio
+	lvm2 -> readline
+	lvm2 -> kmod
+	"json-c"
+	"json-c" -> glibc
+	"device-mapper-persistent-data"
+	"device-mapper-persistent-data" -> expat
+	"device-mapper-persistent-data" -> glibc
+	"device-mapper-persistent-data" -> libaio
+	"device-mapper-persistent-data" -> gcc
+	libaio
+	libaio -> glibc
+	glib2
+	glib2 -> bash
+	glib2 -> glibc
+	glib2 -> libffi
+	glib2 -> gcc
+	glib2 -> gnutls
+	glib2 -> "util-linux"
+	glib2 -> pcre
+	glib2 -> libselinux
+	glib2 -> zlib
+	libX11
+	libX11 -> glibc
+	libX11 -> libxcb
+	libxcb
+	libxcb -> libXau
+	libxcb -> glibc
+	libXau
+	libXau -> glibc
+	initscripts
+	initscripts -> bash
+	initscripts -> coreutils
+	initscripts -> filesystem
+	initscripts -> findutils
+	initscripts -> gawk
+	initscripts -> grep
+	initscripts -> glib2
+	initscripts -> popt
+	initscripts -> "procps-ng"
+	initscripts -> glibc
+	initscripts -> setup
+	initscripts -> "shadow-utils"
+	initscripts -> systemd
+	initscripts -> "util-linux"
+	findutils
+	findutils -> bash
+	findutils -> texinfo
+	findutils -> glibc
+	findutils -> libselinux
+	popt
+	popt -> glibc
+	"procps-ng"
+	"procps-ng" -> glibc
+	"procps-ng" -> ncurses
+	"procps-ng" -> systemd
+	cracklib
+	cracklib -> bash
+	cracklib -> glibc
+	cracklib -> gzip
+	cracklib -> zlib
+	libdb
+	libdb -> glibc
+	libdb -> openssl
+	libpwquality
+	libpwquality -> cracklib
+	libpwquality -> pam
+	libpwquality -> glibc
+	libpwquality -> python3
+	gzip
+	gzip -> bash
+	gzip -> texinfo
+	gzip -> coreutils
+	gzip -> glibc
+	"ca-certificates"
+	"ca-certificates" -> bash
+	"ca-certificates" -> coreutils
+	"ca-certificates" -> grep
+	"ca-certificates" -> "p11-kit"
+	"ca-certificates" -> sed
+	ostree
+	ostree -> bash
+	ostree -> gnupg2
+	ostree -> dracut
+	ostree -> libarchive
+	ostree -> openssl
+	ostree -> curl
+	ostree -> fuse
+	ostree -> gcc
+	ostree -> glib2
+	ostree -> "libgpg-error"
+	ostree -> gpgme
+	ostree -> xz
+	ostree -> "util-linux"
+	ostree -> glibc
+	ostree -> libselinux
+	ostree -> systemd
+	ostree -> zlib
+	gnupg2
+	gnupg2 -> bash
+	gnupg2 -> libassuan
+	gnupg2 -> bzip2
+	gnupg2 -> glibc
+	gnupg2 -> libgcrypt
+	gnupg2 -> gnutls
+	gnupg2 -> "libgpg-error"
+	gnupg2 -> libksba
+	gnupg2 -> openldap
+	gnupg2 -> npth
+	gnupg2 -> readline
+	gnupg2 -> sqlite
+	gnupg2 -> libusbx
+	gnupg2 -> zlib
+	dracut
+	dracut -> bash
+	dracut -> coreutils
+	dracut -> cpio
+	dracut -> filesystem
+	dracut -> findutils
+	dracut -> grep
+	dracut -> gzip
+	dracut -> kmod
+	dracut -> gcc
+	dracut -> libkcapi
+	dracut -> "procps-ng"
+	dracut -> glibc
+	dracut -> sed
+	dracut -> systemd
+	dracut -> "util-linux"
+	dracut -> xz
+	dracut -> iproute
+	dracut -> iputils
+	dracut -> "squashfs-tools"
+	libarchive
+	libarchive -> acl
+	libarchive -> bzip2
+	libarchive -> openssl
+	libarchive -> lz4
+	libarchive -> xz
+	libarchive -> libxml2
+	libarchive -> zlib
+	libarchive -> zstd
+	libarchive -> glibc
+	curl
+	curl -> glibc
+	curl -> openssl
+	curl -> zlib
+	curl -> brotli
+	curl -> e2fsprogs
+	curl -> krb5
+	curl -> libidn2
+	curl -> openldap
+	curl -> nghttp2
+	curl -> libpsl
+	curl -> libssh
+	gpgme
+	gpgme -> gnupg2
+	gpgme -> glibc
+	gpgme -> libassuan
+	gpgme -> "libgpg-error"
+	gpgme -> python3
+	libassuan
+	libassuan -> "libgpg-error"
+	libassuan -> glibc
+	brotli
+	brotli -> glibc
+	openldap
+	openldap -> openssl
+	openldap -> glibc
+	openldap -> "cyrus-sasl"
+	nghttp2
+	nghttp2 -> glibc
+	libpsl
+	libpsl -> libidn2
+	libpsl -> libunistring
+	libpsl -> "publicsuffix-list"
+	libpsl -> glibc
+	libssh
+	libssh -> "crypto-policies"
+	libssh -> glibc
+	libssh -> e2fsprogs
+	libssh -> openssl
+	libssh -> krb5
+	libssh -> zlib
+	"publicsuffix-list"
+	"cyrus-sasl"
+	"cyrus-sasl" -> glibc
+	"cyrus-sasl" -> e2fsprogs
+	"cyrus-sasl" -> libxcrypt
+	"cyrus-sasl" -> libdb
+	"cyrus-sasl" -> krb5
+	libxml2
+	libxml2 -> glibc
+	libxml2 -> xz
+	libxml2 -> zlib
+	cpio
+	cpio -> glibc
+	libkcapi
+	libkcapi -> glibc
+	libkcapi -> systemd
+	iproute
+	iproute -> bash
+	iproute -> libbpf
+	iproute -> libcap
+	iproute -> libdb
+	iproute -> glibc
+	iproute -> elfutils
+	iproute -> libmnl
+	iproute -> libselinux
+	iproute -> psmisc
+	iputils
+	iputils -> bash
+	iputils -> libcap
+	iputils -> openssl
+	iputils -> libidn2
+	iputils -> glibc
+	iputils -> systemd
+	"squashfs-tools"
+	"squashfs-tools" -> gcc
+	"squashfs-tools" -> lz4
+	"squashfs-tools" -> xz
+	"squashfs-tools" -> lzo
+	"squashfs-tools" -> glibc
+	"squashfs-tools" -> zlib
+	lzo
+	lzo -> glibc
+	libbpf
+	libbpf -> elfutils
+	libbpf -> zlib
+	libbpf -> glibc
+	libmnl
+	libmnl -> glibc
+	psmisc
+	psmisc -> libselinux
+	psmisc -> ncurses
+	psmisc -> glibc
+	libksba
+	libksba -> "libgpg-error"
+	libksba -> glibc
+	npth
+	npth -> glibc
+	libusbx
+	libusbx -> glibc
+	libusbx -> systemd
+	dconf
+	dconf -> bash
+	dconf -> dbus
+	dconf -> glib2
+	dconf -> glibc
+	bubblewrap
+	bubblewrap -> libcap
+	bubblewrap -> gcc
+	bubblewrap -> libselinux
+	bubblewrap -> glibc
+	kbd
+	kbd -> bash
+	kbd -> pam
+	kbd -> glibc
+	libreport
+	libreport -> glib2
+	libreport -> augeas
+	libreport -> dbus
+	libreport -> satyr
+	libreport -> systemd
+	libreport -> libtar
+	libreport -> glibc
+	libreport -> lz4
+	libreport -> xz
+	libreport -> atk
+	libreport -> cairo
+	libreport -> gtk3
+	libreport -> "gdk-pixbuf2"
+	libreport -> pango
+	libreport -> curl
+	libreport -> "json-c"
+	libreport -> libproxy
+	libreport -> libxml2
+	libreport -> "xmlrpc-c"
+	libreport -> python3
+	libreport -> dnf
+	augeas
+	augeas -> glibc
+	augeas -> libselinux
+	augeas -> libxml2
+	satyr
+	satyr -> glibc
+	satyr -> elfutils
+	satyr -> rpm
+	satyr -> gcc
+	satyr -> zlib
+	libtar
+	libtar -> zlib
+	libtar -> glibc
+	atk
+	atk -> glibc
+	atk -> glib2
+	cairo
+	cairo -> libX11
+	cairo -> libXext
+	cairo -> libXrender
+	cairo -> glibc
+	cairo -> fontconfig
+	cairo -> freetype
+	cairo -> glib2
+	cairo -> pixman
+	cairo -> libpng
+	cairo -> libxcb
+	cairo -> zlib
+	gtk3
+	gtk3 -> "gdk-pixbuf2"
+	gtk3 -> glib2
+	gtk3 -> glibc
+	gtk3 -> bash
+	gtk3 -> "adwaita-icon-theme"
+	gtk3 -> atk
+	gtk3 -> cairo
+	gtk3 -> "hicolor-icon-theme"
+	gtk3 -> libX11
+	gtk3 -> libXcomposite
+	gtk3 -> libXcursor
+	gtk3 -> libXdamage
+	gtk3 -> libXext
+	gtk3 -> libXfixes
+	gtk3 -> libXi
+	gtk3 -> libXinerama
+	gtk3 -> libXrandr
+	gtk3 -> "at-spi2-atk"
+	gtk3 -> colord
+	gtk3 -> cups
+	gtk3 -> libepoxy
+	gtk3 -> fontconfig
+	gtk3 -> freetype
+	gtk3 -> "json-glib"
+	gtk3 -> pango
+	gtk3 -> rest
+	gtk3 -> wayland
+	gtk3 -> libxkbcommon
+	"gdk-pixbuf2"
+	"gdk-pixbuf2" -> bash
+	"gdk-pixbuf2" -> glib2
+	"gdk-pixbuf2" -> glibc
+	"gdk-pixbuf2" -> libpng
+	"gdk-pixbuf2" -> zlib
+	"gdk-pixbuf2" -> "shared-mime-info"
+	"gdk-pixbuf2" -> jasper
+	"gdk-pixbuf2" -> "libjpeg-turbo"
+	"gdk-pixbuf2" -> libtiff
+	pango
+	pango -> bash
+	pango -> cairo
+	pango -> fontconfig
+	pango -> freetype
+	pango -> fribidi
+	pango -> glib2
+	pango -> harfbuzz
+	pango -> libX11
+	pango -> libXft
+	pango -> libXrender
+	pango -> glibc
+	pango -> libthai
+	libproxy
+	libproxy -> glibc
+	libproxy -> gcc
+	libproxy -> libmodman
+	"xmlrpc-c"
+	"xmlrpc-c" -> glibc
+	"xmlrpc-c" -> openssl
+	"xmlrpc-c" -> gcc
+	"xmlrpc-c" -> curl
+	dnf
+	dnf -> bash
+	dnf -> libreport
+	dnf -> python3
+	dnf -> libmodulemd
+	dnf -> gpgme
+	dnf -> libdnf
+	dnf -> libcomps
+	dnf -> rpm
+	libmodulemd
+	libmodulemd -> gcc
+	libmodulemd -> glib2
+	libmodulemd -> file
+	libmodulemd -> rpm
+	libmodulemd -> libyaml
+	libmodulemd -> glibc
+	libdnf
+	libdnf -> openssl
+	libdnf -> glibc
+	libdnf -> gcc
+	libdnf -> glib2
+	libdnf -> "libgpg-error"
+	libdnf -> gpgme
+	libdnf -> "json-c"
+	libdnf -> libmodulemd
+	libdnf -> librepo
+	libdnf -> rpm
+	libdnf -> "util-linux"
+	libdnf -> libsolv
+	libdnf -> sqlite
+	libdnf -> python3
+	libcomps
+	libcomps -> expat
+	libcomps -> glibc
+	libcomps -> libxml2
+	libcomps -> zlib
+	libcomps -> python3
+	rpm
+	rpm -> acl
+	rpm -> audit
+	rpm -> bzip2
+	rpm -> libcap
+	rpm -> openssl
+	rpm -> libdb
+	rpm -> glibc
+	rpm -> elfutils
+	rpm -> "ima-evm-utils"
+	rpm -> lua
+	rpm -> xz
+	rpm -> file
+	rpm -> popt
+	rpm -> python3
+	rpm -> sqlite
+	rpm -> zlib
+	rpm -> zstd
+	rpm -> bash
+	rpm -> coreutils
+	rpm -> curl
+	rpm -> libarchive
+	rpm -> gnupg2
+	rpm -> libselinux
+	rpm -> "selinux-policy"
+	rpm -> dbus
+	"ima-evm-utils"
+	"ima-evm-utils" -> openssl
+	"ima-evm-utils" -> keyutils
+	"ima-evm-utils" -> "tpm2-tss"
+	"ima-evm-utils" -> glibc
+	lua
+	lua -> glibc
+	file
+	file -> zlib
+	file -> glibc
+	"selinux-policy"
+	"selinux-policy" -> gawk
+	"selinux-policy" -> bash
+	"selinux-policy" -> coreutils
+	"selinux-policy" -> policycoreutils
+	"selinux-policy" -> rpm
+	policycoreutils
+	policycoreutils -> bash
+	policycoreutils -> coreutils
+	policycoreutils -> diffutils
+	policycoreutils -> gawk
+	policycoreutils -> grep
+	policycoreutils -> audit
+	policycoreutils -> libselinux
+	policycoreutils -> libsemanage
+	policycoreutils -> libsepol
+	policycoreutils -> rpm
+	policycoreutils -> glibc
+	policycoreutils -> sed
+	policycoreutils -> "util-linux"
+	diffutils
+	diffutils -> bash
+	diffutils -> glibc
+	diffutils -> texinfo
+	"tpm2-tss"
+	"tpm2-tss" -> bash
+	"tpm2-tss" -> glibc
+	"tpm2-tss" -> openssl
+	"tpm2-tss" -> "shadow-utils"
+	librepo
+	librepo -> openssl
+	librepo -> curl
+	librepo -> gcc
+	librepo -> glib2
+	librepo -> "libgpg-error"
+	librepo -> gpgme
+	librepo -> libxml2
+	librepo -> glibc
+	libsolv
+	libsolv -> bzip2
+	libsolv -> openssl
+	libsolv -> xz
+	libsolv -> rpm
+	libsolv -> libxml2
+	libsolv -> zlib
+	libsolv -> zstd
+	libsolv -> glibc
+	libyaml
+	libyaml -> glibc
+	libmodman
+	libmodman -> glibc
+	libmodman -> gcc
+	fontconfig
+	fontconfig -> bash
+	fontconfig -> glibc
+	fontconfig -> coreutils
+	fontconfig -> "aajohan-comfortaa-fonts"
+	fontconfig -> fontpackages
+	fontconfig -> freetype
+	fontconfig -> grep
+	fontconfig -> expat
+	fontconfig -> "util-linux"
+	freetype
+	freetype -> bash
+	freetype -> glibc
+	freetype -> bzip2
+	freetype -> libpng
+	freetype -> zlib
+	fribidi
+	fribidi -> glibc
+	harfbuzz
+	harfbuzz -> glibc
+	harfbuzz -> freetype
+	harfbuzz -> glib2
+	harfbuzz -> graphite2
+	harfbuzz -> gcc
+	harfbuzz -> icu
+	libXft
+	libXft -> fontconfig
+	libXft -> libX11
+	libXft -> libXrender
+	libXft -> freetype
+	libXft -> glibc
+	libXrender
+	libXrender -> libX11
+	libXrender -> glibc
+	libthai
+	libthai -> glibc
+	libthai -> libdatrie
+	libdatrie
+	libdatrie -> glibc
+	graphite2
+	graphite2 -> gcc
+	graphite2 -> glibc
+	icu
+	icu -> glibc
+	icu -> gcc
+	libpng
+	libpng -> glibc
+	libpng -> zlib
+	"aajohan-comfortaa-fonts"
+	fontpackages
+	"shared-mime-info"
+	"shared-mime-info" -> bash
+	"shared-mime-info" -> coreutils
+	"shared-mime-info" -> glib2
+	"shared-mime-info" -> glibc
+	"shared-mime-info" -> libxml2
+	jasper
+	jasper -> "libjpeg-turbo"
+	jasper -> glibc
+	"libjpeg-turbo"
+	"libjpeg-turbo" -> glibc
+	libtiff
+	libtiff -> gcc
+	libtiff -> jbigkit
+	libtiff -> "libjpeg-turbo"
+	libtiff -> glibc
+	libtiff -> zlib
+	jbigkit
+	jbigkit -> glibc
+	"adwaita-icon-theme"
+	"adwaita-icon-theme" -> bash
+	"hicolor-icon-theme"
+	"hicolor-icon-theme" -> bash
+	"hicolor-icon-theme" -> coreutils
+	libXcomposite
+	libXcomposite -> libX11
+	libXcomposite -> glibc
+	libXcursor
+	libXcursor -> libX11
+	libXcursor -> libXfixes
+	libXcursor -> libXrender
+	libXcursor -> glibc
+	libXdamage
+	libXdamage -> libX11
+	libXdamage -> libXfixes
+	libXdamage -> glibc
+	libXext
+	libXext -> libX11
+	libXext -> glibc
+	libXfixes
+	libXfixes -> libX11
+	libXfixes -> glibc
+	libXi
+	libXi -> libX11
+	libXi -> libXext
+	libXi -> glibc
+	libXinerama
+	libXinerama -> libX11
+	libXinerama -> libXext
+	libXinerama -> glibc
+	libXrandr
+	libXrandr -> libX11
+	libXrandr -> libXext
+	libXrandr -> libXrender
+	libXrandr -> glibc
+	"at-spi2-atk"
+	"at-spi2-atk" -> glibc
+	"at-spi2-atk" -> "at-spi2-core"
+	"at-spi2-atk" -> atk
+	"at-spi2-atk" -> dbus
+	"at-spi2-atk" -> glib2
+	colord
+	colord -> gcc
+	colord -> glib2
+	colord -> libgusb
+	colord -> lcms2
+	colord -> glibc
+	colord -> systemd
+	cups
+	cups -> avahi
+	cups -> e2fsprogs
+	cups -> libxcrypt
+	cups -> gcc
+	cups -> gnutls
+	cups -> krb5
+	cups -> glibc
+	cups -> zlib
+	libepoxy
+	libepoxy -> glibc
+	"json-glib"
+	"json-glib" -> glib2
+	"json-glib" -> glibc
+	rest
+	rest -> glibc
+	rest -> glib2
+	rest -> libsoup
+	rest -> libxml2
+	wayland
+	wayland -> libffi
+	wayland -> glibc
+	libxkbcommon
+	libxkbcommon -> glibc
+	libxkbcommon -> "xkeyboard-config"
+	"xkeyboard-config"
+	libsoup
+	libsoup -> "glib-networking"
+	libsoup -> glib2
+	libsoup -> krb5
+	libsoup -> sqlite
+	libsoup -> libxml2
+	libsoup -> glibc
+	"glib-networking"
+	"glib-networking" -> "ca-certificates"
+	"glib-networking" -> glib2
+	"glib-networking" -> "gsettings-desktop-schemas"
+	"glib-networking" -> gnutls
+	"glib-networking" -> "p11-kit"
+	"glib-networking" -> libproxy
+	"glib-networking" -> glibc
+	"gsettings-desktop-schemas"
+	"gsettings-desktop-schemas" -> glib2
+	avahi
+	avahi -> dbus
+	avahi -> glibc
+	libgusb
+	libgusb -> glib2
+	libgusb -> libusbx
+	libgusb -> glibc
+	lcms2
+	lcms2 -> glibc
+	"at-spi2-core"
+	"at-spi2-core" -> glibc
+	"at-spi2-core" -> dbus
+	"at-spi2-core" -> libX11
+	"at-spi2-core" -> libXtst
+	"at-spi2-core" -> glib2
+	libXtst
+	libXtst -> libX11
+	libXtst -> libXext
+	libXtst -> libXi
+	libXtst -> glibc
+	pixman
+	pixman -> glibc
+	"python-pyudev"
+	"python-pyudev" -> python3
+	"python-pyudev" -> "python-six"
+	"python-pyudev" -> systemd
+	"python-six"
+	"python-six" -> python3
+	libbytesize
+	libbytesize -> gmp
+	libbytesize -> mpfr
+	libbytesize -> pcre
+	libbytesize -> glibc
+	libbytesize -> python3
+	libbytesize -> "python-six"
+	lsof
+	lsof -> libselinux
+	lsof -> libtirpc
+	lsof -> glibc
+	"python-blivet"
+	"python-blivet" -> python3
+	"python-blivet" -> libselinux
+	"python-blivet" -> lsof
+	"python-blivet" -> parted
+	"python-blivet" -> libblockdev
+	"python-blivet" -> libbytesize
+	"python-blivet" -> pygobject3
+	"python-blivet" -> pyparted
+	"python-blivet" -> "python-pyudev"
+	"python-blivet" -> "python-six"
+	"python-blivet" -> systemd
+	"python-blivet" -> "util-linux"
+	parted
+	parted -> bash
+	parted -> texinfo
+	parted -> glibc
+	parted -> "util-linux"
+	parted -> lvm2
+	parted -> readline
+	parted -> libselinux
+	parted -> libsepol
+	parted -> ncurses
+	libblockdev
+	libblockdev -> glibc
+	libblockdev -> gcc
+	libblockdev -> glib2
+	libblockdev -> kmod
+	libblockdev -> systemd
+	libblockdev -> "util-linux"
+	libblockdev -> cryptsetup
+	libblockdev -> nspr
+	libblockdev -> nss
+	libblockdev -> volume_key
+	libblockdev -> lvm2
+	libblockdev -> parted
+	libblockdev -> libbytesize
+	libblockdev -> "device-mapper-persistent-data"
+	libblockdev -> mdadm
+	libblockdev -> "device-mapper-multipath"
+	libblockdev -> ndctl
+	libblockdev -> gdisk
+	libblockdev -> libyaml
+	libblockdev -> python3
+	libblockdev -> pygobject3
+	pygobject3
+	pygobject3 -> cairo
+	pygobject3 -> "gobject-introspection"
+	pygobject3 -> glib2
+	pygobject3 -> glibc
+	pygobject3 -> python3
+	pygobject3 -> pycairo
+	pygobject3 -> libffi
+	pyparted
+	pyparted -> parted
+	pyparted -> glibc
+	pyparted -> python3
+	"gobject-introspection"
+	"gobject-introspection" -> glib2
+	"gobject-introspection" -> glibc
+	"gobject-introspection" -> libffi
+	pycairo
+	pycairo -> cairo
+	pycairo -> glibc
+	pycairo -> python3
+	nspr
+	nspr -> glibc
+	nss
+	nss -> bash
+	nss -> "crypto-policies"
+	nss -> glibc
+	nss -> nspr
+	nss -> "p11-kit"
+	nss -> sqlite
+	nss -> coreutils
+	nss -> sed
+	volume_key
+	volume_key -> gnupg2
+	volume_key -> "util-linux"
+	volume_key -> cryptsetup
+	volume_key -> glibc
+	volume_key -> glib2
+	volume_key -> gpgme
+	volume_key -> nspr
+	volume_key -> nss
+	mdadm
+	mdadm -> bash
+	mdadm -> chkconfig
+	mdadm -> coreutils
+	mdadm -> glibc
+	mdadm -> libreport
+	mdadm -> systemd
+	"device-mapper-multipath"
+	"device-mapper-multipath" -> bash
+	"device-mapper-multipath" -> lvm2
+	"device-mapper-multipath" -> glibc
+	"device-mapper-multipath" -> gcc
+	"device-mapper-multipath" -> readline
+	"device-mapper-multipath" -> systemd
+	"device-mapper-multipath" -> "userspace-rcu"
+	"device-mapper-multipath" -> libaio
+	ndctl
+	ndctl -> glibc
+	ndctl -> kmod
+	ndctl -> "util-linux"
+	ndctl -> "json-c"
+	ndctl -> keyutils
+	ndctl -> systemd
+	gdisk
+	gdisk -> glibc
+	gdisk -> gcc
+	gdisk -> ncurses
+	gdisk -> popt
+	gdisk -> "util-linux"
+	"userspace-rcu"
+	"userspace-rcu" -> glibc
+	langtable
+	langtable -> python3
+	"python-pysocks"
+	"python-pysocks" -> python3
+	"python-urllib3"
+	"python-urllib3" -> "ca-certificates"
+	"python-urllib3" -> python3
+	"python-urllib3" -> "python-pysocks"
+	"python-urllib3" -> "python-six"
+	"python-idna"
+	"python-idna" -> python3
+	"python-chardet"
+	"python-chardet" -> python3
+	libteam
+	libteam -> glibc
+	libteam -> libnl3
+	libteam -> bash
+	libteam -> libdaemon
+	libteam -> dbus
+	libteam -> jansson
+	libnl3
+	libnl3 -> glibc
+	libnl3 -> gcc
+	libdaemon
+	libdaemon -> glibc
+	jansson
+	jansson -> glibc
+	"python-systemd"
+	"python-systemd" -> gcc
+	"python-systemd" -> glibc
+	"python-systemd" -> python3
+	"python-systemd" -> systemd
+	"python-requests-ftp"
+	"python-requests-ftp" -> python3
+	"python-requests-ftp" -> "python-requests"
+	"python-requests"
+	"python-requests" -> python3
+	"python-requests" -> "python-chardet"
+	"python-requests" -> "python-idna"
+	"python-requests" -> "python-urllib3"
+	"python-requests-file"
+	"python-requests-file" -> python3
+	"python-requests-file" -> "python-requests"
+	"python-requests-file" -> "python-six"
+	pytz
+	pytz -> python3
+	pytz -> tzdata
+	"python-productmd"
+	"python-productmd" -> python3
+	"python-productmd" -> "python-six"
+	"python-pid"
+	"python-pid" -> python3
+	"python-ordered-set"
+	"python-ordered-set" -> python3
+	"python-ntplib"
+	"python-ntplib" -> python3
+	pykickstart
+	pykickstart -> python3
+	pykickstart -> "python-ordered-set"
+	pykickstart -> "python-requests"
+	pykickstart -> "python-six"
+	"python-dasbus"
+	"python-dasbus" -> python3
+	"python-dasbus" -> pygobject3
+	flatpak
+	flatpak -> "shadow-utils"
+	flatpak -> bubblewrap
+	flatpak -> libXau
+	flatpak -> libarchive
+	flatpak -> dconf
+	flatpak -> gcc
+	flatpak -> glib2
+	flatpak -> gpgme
+	flatpak -> "json-glib"
+	flatpak -> ostree
+	flatpak -> polkit
+	flatpak -> glibc
+	flatpak -> libseccomp
+	flatpak -> libsoup
+	flatpak -> systemd
+	flatpak -> libxml2
+	flatpak -> zstd
+	polkit
+	polkit -> bash
+	polkit -> glibc
+	polkit -> dbus
+	polkit -> expat
+	polkit -> gcc
+	polkit -> glib2
+	polkit -> mozjs60
+	polkit -> pam
+	polkit -> systemd
+	polkit -> "polkit-pkla-compat"
+	polkit -> "shadow-utils"
+	mozjs60
+	mozjs60 -> glibc
+	mozjs60 -> gcc
+	mozjs60 -> zlib
+	"polkit-pkla-compat"
+	"polkit-pkla-compat" -> glib2
+	"polkit-pkla-compat" -> polkit
+	"polkit-pkla-compat" -> glibc
+	chrony
+	chrony -> bash
+	chrony -> libcap
+	chrony -> libedit
+	chrony -> gnutls
+	chrony -> glibc
+	chrony -> nettle
+	chrony -> libseccomp
+	chrony -> "shadow-utils"
+	chrony -> systemd
+	NetworkManager
+	NetworkManager -> bash
+	NetworkManager -> chkconfig
+	NetworkManager -> dbus
+	NetworkManager -> glib2
+	NetworkManager -> glibc
+	NetworkManager -> audit
+	NetworkManager -> curl
+	NetworkManager -> gcc
+	NetworkManager -> gnutls
+	NetworkManager -> libndp
+	NetworkManager -> readline
+	NetworkManager -> libselinux
+	NetworkManager -> systemd
+	NetworkManager -> jansson
+	NetworkManager -> libteam
+	NetworkManager -> newt
+	NetworkManager -> crda
+	NetworkManager -> wpa_supplicant
+	libndp
+	libndp -> glibc
+	newt
+	newt -> popt
+	newt -> slang
+	newt -> glibc
+	crda
+	crda -> bash
+	crda -> iw
+	crda -> systemd
+	wpa_supplicant
+	wpa_supplicant -> bash
+	wpa_supplicant -> openssl
+	wpa_supplicant -> dbus
+	wpa_supplicant -> glibc
+	wpa_supplicant -> libnl3
+	wpa_supplicant -> systemd
+	iw
+	iw -> glibc
+	iw -> libnl3
+	slang
+	slang -> glibc
+	GConf2
+	GConf2 -> bash
+	GConf2 -> glibc
+	GConf2 -> psmisc
+	GConf2 -> dbus
+	GConf2 -> "dbus-glib"
+	GConf2 -> glib2
+	GConf2 -> polkit
+	GConf2 -> libxml2
+	"dbus-glib"
+	"dbus-glib" -> glibc
+	"dbus-glib" -> dbus
+	"dbus-glib" -> expat
+	"dbus-glib" -> glib2
+	libcroco
+	libcroco -> glibc
+	libcroco -> glib2
+	libcroco -> libxml2
+	librsvg2
+	librsvg2 -> "gdk-pixbuf2"
+	librsvg2 -> glibc
+	librsvg2 -> cairo
+	librsvg2 -> libcroco
+	librsvg2 -> fontconfig
+	librsvg2 -> freetype
+	librsvg2 -> gcc
+	librsvg2 -> glib2
+	librsvg2 -> pango
+	librsvg2 -> libpng
+	librsvg2 -> libxml2
+	librsvg2 -> zlib
+	"mobile-broadband-provider-info"
+	gcr
+	gcr -> glibc
+	gcr -> atk
+	gcr -> cairo
+	gcr -> libgcrypt
+	gcr -> gtk3
+	gcr -> "gdk-pixbuf2"
+	gcr -> glib2
+	gcr -> "libgpg-error"
+	gcr -> "p11-kit"
+	gcr -> pango
+	libnma
+	libnma -> cairo
+	libnma -> gcc
+	libnma -> gcr
+	libnma -> gtk3
+	libnma -> glib2
+	libnma -> NetworkManager
+	libnma -> glibc
+	libnma -> "mobile-broadband-provider-info"
+	"dbus-python"
+	"dbus-python" -> dbus
+	"dbus-python" -> "dbus-glib"
+	"dbus-python" -> glib2
+	"dbus-python" -> python3
+	"dbus-python" -> glibc
+	"python-meh"
+	"python-meh" -> python3
+	"python-meh" -> libreport
+	"python-meh" -> "dbus-python"
+	"python-meh" -> rpm
+	"python-meh" -> gtk3
+	"python-meh" -> pygobject3
+	libfontenc
+	libfontenc -> zlib
+	libfontenc -> glibc
+	mesa
+	mesa -> glibc
+	mesa -> llvm
+	mesa -> libdrm
+	mesa -> elfutils
+	mesa -> expat
+	mesa -> gcc
+	mesa -> libselinux
+	mesa -> zlib
+	mesa -> libX11
+	mesa -> libglvnd
+	mesa -> wayland
+	mesa -> libxcb
+	mesa -> libxshmfence
+	mesa -> libXext
+	mesa -> libXfixes
+	mesa -> libXxf86vm
+	llvm
+	llvm -> glibc
+	llvm -> libffi
+	llvm -> gcc
+	llvm -> ncurses
+	llvm -> zlib
+	libdrm
+	libdrm -> libpciaccess
+	libdrm -> glibc
+	libglvnd
+	libglvnd -> glibc
+	libglvnd -> mesa
+	libglvnd -> libX11
+	libglvnd -> libXext
+	libxshmfence
+	libxshmfence -> glibc
+	libXxf86vm
+	libXxf86vm -> libX11
+	libXxf86vm -> libXext
+	libXxf86vm -> glibc
+	libpciaccess
+	libpciaccess -> hwdata
+	libpciaccess -> glibc
+	hwdata
+	libxkbfile
+	libxkbfile -> libX11
+	libxkbfile -> glibc
+	"xorg-x11-xkb-utils"
+	"xorg-x11-xkb-utils" -> glibc
+	"xorg-x11-xkb-utils" -> libX11
+	"xorg-x11-xkb-utils" -> libxkbfile
+	tigervnc
+	tigervnc -> chkconfig
+	tigervnc -> dbus
+	tigervnc -> libglvnd
+	tigervnc -> libICE
+	tigervnc -> libSM
+	tigervnc -> libX11
+	tigervnc -> libXau
+	tigervnc -> libXdmcp
+	tigervnc -> libXext
+	tigervnc -> libXfont2
+	tigervnc -> glibc
+	tigervnc -> gcc
+	tigervnc -> gnutls
+	tigervnc -> "libjpeg-turbo"
+	tigervnc -> nettle
+	tigervnc -> pam
+	tigervnc -> pixman
+	tigervnc -> libxshmfence
+	tigervnc -> zlib
+	tigervnc -> mesa
+	tigervnc -> "xkeyboard-config"
+	tigervnc -> "xorg-x11-xkb-utils"
+	libICE
+	libICE -> glibc
+	libSM
+	libSM -> libICE
+	libSM -> "util-linux"
+	libSM -> glibc
+	libXdmcp
+	libXdmcp -> glibc
+	libXfont2
+	libXfont2 -> libfontenc
+	libXfont2 -> freetype
+	libXfont2 -> glibc
+	libXfont2 -> zlib
+	"hunspell-en"
+	"hunspell-en" -> hunspell
+	hunspell
+	hunspell -> glibc
+	hunspell -> "hunspell-en"
+	hunspell -> gcc
+	hunspell -> ncurses
+	aspell
+	aspell -> bash
+	aspell -> texinfo
+	aspell -> glibc
+	aspell -> gcc
+	aspell -> ncurses
+	"abattis-cantarell-fonts"
+	"abattis-cantarell-fonts" -> fontpackages
+	"sgml-common"
+	"sgml-common" -> bash
+	"sgml-common" -> libxml2
+	libvorbis
+	libvorbis -> glibc
+	libvorbis -> libogg
+	libogg
+	libogg -> glibc
+	libvisual
+	libvisual -> glibc
+	libtheora
+	libtheora -> libogg
+	libtheora -> glibc
+	orc
+	orc -> glibc
+	opus
+	opus -> gcc
+	opus -> glibc
+	"alsa-lib"
+	"alsa-lib" -> glibc
+	"alsa-lib" -> coreutils
+	libXv
+	libXv -> libX11
+	libXv -> libXext
+	libXv -> glibc
+	"iso-codes"
+	"iso-codes" -> "sgml-common"
+	woff2
+	woff2 -> brotli
+	woff2 -> gcc
+	woff2 -> glibc
+	libwebp
+	libwebp -> glibc
+	libsecret
+	libsecret -> glibc
+	libsecret -> libgcrypt
+	libsecret -> glib2
+	libsecret -> "libgpg-error"
+	openjpeg2
+	openjpeg2 -> glibc
+	libnotify
+	libnotify -> glibc
+	libnotify -> glib2
+	libnotify -> "gdk-pixbuf2"
+	hyphen
+	hyphen -> glibc
+	gstreamer1
+	gstreamer1 -> bash
+	gstreamer1 -> glibc
+	gstreamer1 -> libcap
+	gstreamer1 -> gcc
+	gstreamer1 -> glib2
+	"gstreamer1-plugins-base"
+	"gstreamer1-plugins-base" -> glibc
+	"gstreamer1-plugins-base" -> "iso-codes"
+	"gstreamer1-plugins-base" -> libglvnd
+	"gstreamer1-plugins-base" -> libX11
+	"gstreamer1-plugins-base" -> libXext
+	"gstreamer1-plugins-base" -> libXv
+	"gstreamer1-plugins-base" -> "alsa-lib"
+	"gstreamer1-plugins-base" -> cairo
+	"gstreamer1-plugins-base" -> glib2
+	"gstreamer1-plugins-base" -> gstreamer1
+	"gstreamer1-plugins-base" -> libogg
+	"gstreamer1-plugins-base" -> opus
+	"gstreamer1-plugins-base" -> orc
+	"gstreamer1-plugins-base" -> pango
+	"gstreamer1-plugins-base" -> libpng
+	"gstreamer1-plugins-base" -> libtheora
+	"gstreamer1-plugins-base" -> libvisual
+	"gstreamer1-plugins-base" -> libvorbis
+	"gstreamer1-plugins-base" -> wayland
+	"gstreamer1-plugins-base" -> libxcb
+	"gstreamer1-plugins-base" -> zlib
+	enchant2
+	enchant2 -> glibc
+	enchant2 -> aspell
+	enchant2 -> gcc
+	enchant2 -> glib2
+	enchant2 -> hunspell
+	libXt
+	libXt -> libICE
+	libXt -> libSM
+	libXt -> libX11
+	libXt -> glibc
+	"yelp-xsl"
+	yelp
+	yelp -> glibc
+	yelp -> atk
+	yelp -> bzip2
+	yelp -> cairo
+	yelp -> libxslt
+	yelp -> libgcrypt
+	yelp -> gtk3
+	yelp -> "gdk-pixbuf2"
+	yelp -> glib2
+	yelp -> "libgpg-error"
+	yelp -> webkit2gtk3
+	yelp -> xz
+	yelp -> pango
+	yelp -> libsoup
+	yelp -> sqlite
+	yelp -> libxml2
+	yelp -> "yelp-xsl"
+	libxslt
+	libxslt -> glibc
+	libxslt -> libgcrypt
+	libxslt -> "libgpg-error"
+	libxslt -> libxml2
+	webkit2gtk3
+	webkit2gtk3 -> glibc
+	webkit2gtk3 -> libglvnd
+	webkit2gtk3 -> libX11
+	webkit2gtk3 -> libXcomposite
+	webkit2gtk3 -> libXdamage
+	webkit2gtk3 -> libXrender
+	webkit2gtk3 -> libXt
+	webkit2gtk3 -> atk
+	webkit2gtk3 -> cairo
+	webkit2gtk3 -> enchant2
+	webkit2gtk3 -> fontconfig
+	webkit2gtk3 -> freetype
+	webkit2gtk3 -> gcc
+	webkit2gtk3 -> libgcrypt
+	webkit2gtk3 -> gtk3
+	webkit2gtk3 -> "gdk-pixbuf2"
+	webkit2gtk3 -> glib2
+	webkit2gtk3 -> "libgpg-error"
+	webkit2gtk3 -> "gstreamer1-plugins-base"
+	webkit2gtk3 -> gstreamer1
+	webkit2gtk3 -> harfbuzz
+	webkit2gtk3 -> hyphen
+	webkit2gtk3 -> icu
+	webkit2gtk3 -> "libjpeg-turbo"
+	webkit2gtk3 -> lcms2
+	webkit2gtk3 -> libnotify
+	webkit2gtk3 -> openjpeg2
+	webkit2gtk3 -> pango
+	webkit2gtk3 -> libpng
+	webkit2gtk3 -> libsecret
+	webkit2gtk3 -> libsoup
+	webkit2gtk3 -> sqlite
+	webkit2gtk3 -> systemd
+	webkit2gtk3 -> libtasn1
+	webkit2gtk3 -> wayland
+	webkit2gtk3 -> libwebp
+	webkit2gtk3 -> woff2
+	webkit2gtk3 -> libxml2
+	webkit2gtk3 -> libxslt
+	webkit2gtk3 -> zlib
+	"anolis-logos"
+	"anolis-logos" -> bash
+	"anolis-logos" -> coreutils
+	"network-manager-applet"
+	"network-manager-applet" -> gcc
+	"network-manager-applet" -> gtk3
+	"network-manager-applet" -> glib2
+	"network-manager-applet" -> jansson
+	"network-manager-applet" -> NetworkManager
+	"network-manager-applet" -> libnma
+	"network-manager-applet" -> glibc
+	"network-manager-applet" -> libselinux
+	libxklavier
+	libxklavier -> "iso-codes"
+	libxklavier -> libX11
+	libxklavier -> libXi
+	libxklavier -> glib2
+	libxklavier -> libxkbfile
+	libxklavier -> libxml2
+	libxklavier -> glibc
+	libtimezonemap
+	libtimezonemap -> glibc
+	libtimezonemap -> atk
+	libtimezonemap -> cairo
+	libtimezonemap -> gtk3
+	libtimezonemap -> "gdk-pixbuf2"
+	libtimezonemap -> glib2
+	libtimezonemap -> "json-glib"
+	libtimezonemap -> pango
+	libtimezonemap -> librsvg2
+	libtimezonemap -> libsoup
+	libgnomekbd
+	libgnomekbd -> bash
+	libgnomekbd -> GConf2
+	libgnomekbd -> libX11
+	libgnomekbd -> atk
+	libgnomekbd -> cairo
+	libgnomekbd -> gtk3
+	libgnomekbd -> "gdk-pixbuf2"
+	libgnomekbd -> glib2
+	libgnomekbd -> glibc
+	libgnomekbd -> pango
+	libgnomekbd -> libxklavier
+	keybinder3
+	keybinder3 -> glibc
+	keybinder3 -> libX11
+	keybinder3 -> libXext
+	keybinder3 -> libXrender
+	keybinder3 -> atk
+	keybinder3 -> cairo
+	keybinder3 -> gtk3
+	keybinder3 -> "gdk-pixbuf2"
+	keybinder3 -> glib2
+	keybinder3 -> pango
+	anaconda
+	anaconda -> bash
+	anaconda -> "crypto-policies"
+	anaconda -> python3
+	anaconda -> NetworkManager
+	anaconda -> chrony
+	anaconda -> cracklib
+	anaconda -> dbus
+	anaconda -> flatpak
+	anaconda -> glibc
+	anaconda -> kbd
+	anaconda -> audit
+	anaconda -> libreport
+	anaconda -> libselinux
+	anaconda -> "python-blivet"
+	anaconda -> libblockdev
+	anaconda -> "python-dasbus"
+	anaconda -> "dbus-python"
+	anaconda -> dnf
+	anaconda -> pygobject3
+	anaconda -> pykickstart
+	anaconda -> langtable
+	anaconda -> "python-meh"
+	anaconda -> "python-ntplib"
+	anaconda -> "python-ordered-set"
+	anaconda -> "python-pid"
+	anaconda -> "python-productmd"
+	anaconda -> libpwquality
+	anaconda -> pyparted
+	anaconda -> pytz
+	anaconda -> "python-requests"
+	anaconda -> "python-requests-file"
+	anaconda -> "python-requests-ftp"
+	anaconda -> "python-systemd"
+	anaconda -> rpm
+	anaconda -> systemd
+	anaconda -> libteam
+	anaconda -> "util-linux"
+	anaconda -> "adwaita-icon-theme"
+	anaconda -> "anaconda-user-help"
+	anaconda -> keybinder3
+	anaconda -> libgnomekbd
+	anaconda -> libtimezonemap
+	anaconda -> libxklavier
+	anaconda -> "network-manager-applet"
+	anaconda -> "anolis-logos"
+	anaconda -> tigervnc
+	anaconda -> yelp
+	anaconda -> createrepo_c
+	anaconda -> "fcoe-utils"
+	anaconda -> gdb
+	anaconda -> isomd5sum
+	anaconda -> "kexec-tools"
+	anaconda -> realmd
+	anaconda -> rsync
+	anaconda -> tmux
+	anaconda -> udisks2
+	anaconda -> "python-simpleline"
+	anaconda -> atk
+	anaconda -> cairo
+	anaconda -> gtk3
+	anaconda -> "gdk-pixbuf2"
+	anaconda -> glib2
+	anaconda -> pango
+	"anaconda-user-help"
+	createrepo_c
+	createrepo_c -> glibc
+	createrepo_c -> bzip2
+	createrepo_c -> openssl
+	createrepo_c -> curl
+	createrepo_c -> drpm
+	createrepo_c -> gcc
+	createrepo_c -> glib2
+	createrepo_c -> xz
+	createrepo_c -> file
+	createrepo_c -> libmodulemd
+	createrepo_c -> rpm
+	createrepo_c -> sqlite
+	createrepo_c -> libxml2
+	createrepo_c -> zlib
+	"fcoe-utils"
+	"fcoe-utils" -> bash
+	"fcoe-utils" -> "device-mapper-multipath"
+	"fcoe-utils" -> iproute
+	"fcoe-utils" -> libpciaccess
+	"fcoe-utils" -> glibc
+	"fcoe-utils" -> lldpad
+	"fcoe-utils" -> systemd
+	gdb
+	gdb -> bash
+	gdb -> babeltrace
+	gdb -> boost
+	gdb -> elfutils
+	gdb -> glibc
+	gdb -> expat
+	gdb -> gcc
+	gdb -> gmp
+	gdb -> guile
+	gdb -> libipt
+	gdb -> xz
+	gdb -> mpfr
+	gdb -> ncurses
+	gdb -> python3
+	gdb -> readline
+	gdb -> libselinux
+	gdb -> "source-highlight"
+	gdb -> zlib
+	isomd5sum
+	isomd5sum -> popt
+	isomd5sum -> glibc
+	"kexec-tools"
+	"kexec-tools" -> bash
+	"kexec-tools" -> coreutils
+	"kexec-tools" -> dracut
+	"kexec-tools" -> ethtool
+	"kexec-tools" -> bzip2
+	"kexec-tools" -> glibc
+	"kexec-tools" -> elfutils
+	"kexec-tools" -> gcc
+	"kexec-tools" -> xz
+	"kexec-tools" -> lzo
+	"kexec-tools" -> snappy
+	"kexec-tools" -> ncurses
+	"kexec-tools" -> zlib
+	"kexec-tools" -> sed
+	"kexec-tools" -> systemd
+	realmd
+	realmd -> bash
+	realmd -> authselect
+	realmd -> glibc
+	realmd -> e2fsprogs
+	realmd -> glib2
+	realmd -> krb5
+	realmd -> openldap
+	realmd -> polkit
+	realmd -> systemd
+	rsync
+	rsync -> acl
+	rsync -> attr
+	rsync -> popt
+	rsync -> glibc
+	tmux
+	tmux -> bash
+	tmux -> libevent
+	tmux -> glibc
+	tmux -> ncurses
+	udisks2
+	udisks2 -> glib2
+	udisks2 -> glibc
+	udisks2 -> bash
+	udisks2 -> dbus
+	udisks2 -> dosfstools
+	udisks2 -> e2fsprogs
+	udisks2 -> "util-linux"
+	udisks2 -> gdisk
+	udisks2 -> acl
+	udisks2 -> libatasmart
+	udisks2 -> libblockdev
+	udisks2 -> gcc
+	udisks2 -> libgudev
+	udisks2 -> polkit
+	udisks2 -> systemd
+	udisks2 -> xfsprogs
+	udisks2 -> "iscsi-initiator-utils"
+	"python-simpleline"
+	"python-simpleline" -> python3
+	"python-simpleline" -> rpm
+	dosfstools
+	dosfstools -> glibc
+	libatasmart
+	libatasmart -> glibc
+	libatasmart -> systemd
+	libgudev
+	libgudev -> glib2
+	libgudev -> glibc
+	libgudev -> systemd
+	xfsprogs
+	xfsprogs -> bash
+	xfsprogs -> glibc
+	xfsprogs -> "util-linux"
+	xfsprogs -> lvm2
+	xfsprogs -> readline
+	"iscsi-initiator-utils"
+	"iscsi-initiator-utils" -> bash
+	"iscsi-initiator-utils" -> openssl
+	"iscsi-initiator-utils" -> "isns-utils"
+	"iscsi-initiator-utils" -> kmod
+	"iscsi-initiator-utils" -> "util-linux"
+	"iscsi-initiator-utils" -> glibc
+	"iscsi-initiator-utils" -> systemd
+	"iscsi-initiator-utils" -> gcc
+	"isns-utils"
+	"isns-utils" -> glibc
+	"isns-utils" -> openssl
+	libevent
+	libevent -> openssl
+	libevent -> glibc
+	authselect
+	authselect -> bash
+	authselect -> popt
+	authselect -> libselinux
+	authselect -> glibc
+	authselect -> coreutils
+	authselect -> findutils
+	authselect -> gawk
+	authselect -> grep
+	authselect -> pam
+	authselect -> sed
+	authselect -> systemd
+	ethtool
+	ethtool -> glibc
+	ethtool -> libmnl
+	snappy
+	snappy -> glibc
+	snappy -> gcc
+	babeltrace
+	babeltrace -> glibc
+	babeltrace -> elfutils
+	babeltrace -> glib2
+	babeltrace -> popt
+	babeltrace -> "util-linux"
+	boost
+	boost -> glibc
+	boost -> gcc
+	boost -> icu
+	guile
+	guile -> bash
+	guile -> texinfo
+	guile -> glibc
+	guile -> coreutils
+	guile -> libxcrypt
+	guile -> libffi
+	guile -> gc
+	guile -> gmp
+	guile -> libtool
+	guile -> ncurses
+	guile -> readline
+	guile -> libunistring
+	libipt
+	libipt -> glibc
+	"source-highlight"
+	"source-highlight" -> bash
+	"source-highlight" -> glibc
+	"source-highlight" -> ctags
+	"source-highlight" -> texinfo
+	"source-highlight" -> boost
+	"source-highlight" -> gcc
+	ctags
+	ctags -> glibc
+	gc
+	gc -> glibc
+	gc -> libatomic_ops
+	gc -> gcc
+	libtool
+	libtool -> glibc
+	libatomic_ops
+	libatomic_ops -> glibc
+	lldpad
+	lldpad -> bash
+	lldpad -> libconfig
+	lldpad -> glibc
+	lldpad -> libnl3
+	lldpad -> readline
+	lldpad -> systemd
+	libconfig
+	libconfig -> gcc
+	libconfig -> glibc
+	drpm
+	drpm -> glibc
+	drpm -> bzip2
+	drpm -> openssl
+	drpm -> xz
+	drpm -> rpm
+	drpm -> zlib
+	drpm -> zstd
+	"python2-setuptools"
+	"python2-pip"
+	python2
+	python2 -> bash
+	python2 -> chkconfig
+	python2 -> glibc
+	python2 -> expat
+	python2 -> gdbm
+	python2 -> bzip2
+	python2 -> libxcrypt
+	python2 -> openssl
+	python2 -> libdb
+	python2 -> libffi
+	python2 -> ncurses
+	python2 -> libnsl2
+	python2 -> readline
+	python2 -> sqlite
+	python2 -> libtirpc
+	python2 -> zlib
+	python2 -> "python2-pip"
+	python2 -> "python2-setuptools"
+}
+

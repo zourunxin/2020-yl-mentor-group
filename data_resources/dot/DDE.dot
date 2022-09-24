@@ -1,0 +1,1113 @@
+digraph dep_Picture {
+	graph [rankdir=LR]
+	GeoIP
+	GeoIP -> "GeoIP-GeoLite-data"
+	"GeoIP-GeoLite-data"
+	aom
+	"blur-effect"
+	"blur-effect" -> libglvnd
+	"plasma-breeze"
+	"plasma-breeze" -> "breeze-icon-theme"
+	"plasma-breeze" -> "kf5-kauth"
+	"plasma-breeze" -> "kf5-kcodecs"
+	"plasma-breeze" -> "kf5-kconfig"
+	"plasma-breeze" -> "kf5-kconfigwidgets"
+	"plasma-breeze" -> "kf5-kcoreaddons"
+	"plasma-breeze" -> "kf5-kguiaddons"
+	"plasma-breeze" -> "kf5-ki18n"
+	"plasma-breeze" -> "kf5-kcmutils"
+	"plasma-breeze" -> "kf5-kservice"
+	"plasma-breeze" -> "kf5-frameworkintegration"
+	"plasma-breeze" -> "kf5-kwayland"
+	"plasma-breeze" -> "kf5-kwidgetsaddons"
+	"plasma-breeze" -> "kf5-kwindowsystem"
+	"plasma-breeze" -> "qt5-qtbase"
+	"plasma-breeze" -> kdecoration
+	"breeze-icon-theme"
+	libarchive
+	byzanz
+	"golang-github-fsnotify-fsnotify"
+	dav1d
+	"dbusmenu-qt"
+	"dbusmenu-qt" -> "qt5-qtbase"
+	dde
+	dde -> "blur-effect"
+	dde -> "dde-account-faces"
+	dde -> "dde-api"
+	dde -> "dde-calendar"
+	dde -> "dde-clipboard"
+	dde -> "dde-control-center"
+	dde -> "dde-daemon"
+	dde -> "dde-file-manager"
+	dde -> "dde-dock"
+	dde -> "dde-kwin"
+	dde -> "dde-launcher"
+	dde -> "dde-network-utils"
+	dde -> "dde-polkit-agent"
+	dde -> "dde-printer"
+	dde -> "dde-qt-dbus-factory"
+	dde -> "dde-qt5integration"
+	dde -> "dde-qt5platform-plugins"
+	dde -> "dde-server-industry-config"
+	dde -> "dde-session-shell"
+	dde -> "dde-session-ui"
+	dde -> "deepin-authenticate"
+	dde -> "deepin-calculator"
+	dde -> "deepin-compressor"
+	dde -> "deepin-default-settings"
+	dde -> "deepin-desktop-base"
+	dde -> "deepin-desktop-schemas"
+	dde -> "deepin-devicemanager"
+	dde -> "deepin-diskmanager"
+	dde -> "deepin-editor"
+	dde -> "deepin-fcitxconfigtool-plugin"
+	dde -> "deepin-font-manager"
+	dde -> "deepin-gettext-tools"
+	dde -> "deepin-gtk-theme"
+	dde -> "deepin-icon-theme"
+	dde -> "deepin-image-viewer"
+	dde -> "deepin-log-viewer"
+	dde -> "deepin-manual"
+	dde -> "deepin-menu"
+	dde -> "deepin-picker"
+	dde -> "deepin-pw-check"
+	dde -> "deepin-reader"
+	dde -> "deepin-screen-recorder"
+	dde -> "deepin-shortcut-viewer"
+	dde -> "deepin-sound-theme"
+	dde -> "deepin-system-monitor"
+	dde -> "deepin-terminal"
+	dde -> "deepin-wallpapers"
+	dde -> dtkcore
+	dde -> dtkgui
+	dde -> dtkwidget
+	dde -> fcitx
+	dde -> "fcitx-configtool"
+	dde -> "fcitx-qt5"
+	dde -> kwin
+	dde -> lightdm
+	dde -> "lightdm-gtk"
+	dde -> qtchooser
+	dde -> startdde
+	"dde-account-faces"
+	"dde-api"
+	"dde-api" -> "deepin-desktop-base"
+	"dde-calendar"
+	"dde-calendar" -> "qt5-qtbase"
+	"dde-calendar" -> "dde-qt-dbus-factory"
+	"dde-calendar" -> dtkcore
+	"dde-calendar" -> dtkgui
+	"dde-calendar" -> dtkwidget
+	"dde-clipboard"
+	"dde-clipboard" -> libglvnd
+	"dde-clipboard" -> "qt5-qtbase"
+	"dde-clipboard" -> "dde-qt-dbus-factory"
+	"dde-clipboard" -> dtkcore
+	"dde-clipboard" -> dtkgui
+	"dde-clipboard" -> dtkwidget
+	"dde-clipboard" -> "gio-qt"
+	"dde-control-center"
+	"dde-control-center" -> "dde-account-faces"
+	"dde-control-center" -> "dde-api"
+	"dde-control-center" -> "dde-daemon"
+	"dde-control-center" -> "dde-network-utils"
+	"dde-control-center" -> "dde-qt5integration"
+	"dde-control-center" -> "dde-qt5platform-plugins"
+	"dde-control-center" -> "dde-server-industry-config"
+	"dde-control-center" -> "deepin-pw-check"
+	"dde-control-center" -> "kf5-networkmanager-qt"
+	"dde-control-center" -> "qt5-qtbase"
+	"dde-control-center" -> "dde-qt-dbus-factory"
+	"dde-control-center" -> dtkcore
+	"dde-control-center" -> dtkgui
+	"dde-control-center" -> dtkwidget
+	"dde-control-center" -> "gsettings-qt"
+	"dde-control-center" -> "polkit-qt-1"
+	"dde-control-center" -> startdde
+	"dde-daemon"
+	"dde-daemon" -> "dde-polkit-agent"
+	"dde-daemon" -> "dde-session-ui"
+	"dde-daemon" -> "deepin-desktop-base"
+	"dde-daemon" -> "deepin-desktop-schemas"
+	"dde-file-manager"
+	"dde-file-manager" -> "dde-dock"
+	"dde-file-manager" -> "dde-launcher"
+	"dde-file-manager" -> "dde-session-ui"
+	"dde-file-manager" -> libglvnd
+	"dde-file-manager" -> "qt5-qtbase"
+	"dde-file-manager" -> "dde-qt-dbus-factory"
+	"dde-file-manager" -> dtkcore
+	"dde-file-manager" -> dtkgui
+	"dde-file-manager" -> dtkwidget
+	"dde-file-manager" -> "gio-qt"
+	"dde-file-manager" -> "udisks2-qt5"
+	"dde-file-manager" -> "deepin-anything"
+	"dde-file-manager" -> "deepin-terminal"
+	"dde-file-manager" -> jemalloc
+	"dde-file-manager" -> "kf5-kcodecs"
+	"dde-file-manager" -> "polkit-qt-1"
+	"dde-file-manager" -> libqtxdg
+	"dde-file-manager" -> disomaster
+	"dde-file-manager" -> htmlcxx
+	"dde-file-manager" -> "lucene++"
+	"dde-file-manager" -> libmediainfo
+	"dde-file-manager" -> mimetic
+	"dde-file-manager" -> libzen
+	"dde-device-formatter"
+	"dde-device-formatter" -> libglvnd
+	"dde-device-formatter" -> "qt5-qtbase"
+	"dde-device-formatter" -> dtkcore
+	"dde-device-formatter" -> dtkgui
+	"dde-device-formatter" -> dtkwidget
+	"dde-device-formatter" -> "udisks2-qt5"
+	"dde-dock"
+	"dde-dock" -> "dbusmenu-qt"
+	"dde-dock" -> "dde-network-utils"
+	"dde-dock" -> "dde-qt-dbus-factory"
+	"dde-dock" -> "qt5-qtbase"
+	"dde-dock" -> dtkcore
+	"dde-dock" -> dtkgui
+	"dde-dock" -> dtkwidget
+	"dde-dock" -> "gsettings-qt"
+	"dde-kwin"
+	"dde-kwin" -> "dde-qt5integration"
+	"dde-kwin" -> kdecoration
+	"dde-kwin" -> "kf5-kconfig"
+	"dde-kwin" -> "kf5-kcoreaddons"
+	"dde-kwin" -> "kf5-kglobalaccel"
+	"dde-kwin" -> "kf5-ki18n"
+	"dde-kwin" -> "kf5-kwindowsystem"
+	"dde-kwin" -> kwin
+	"dde-kwin" -> "qt5-qtbase"
+	"dde-kwin" -> dtkcore
+	"dde-kwin" -> dtkgui
+	"dde-kwin" -> "gsettings-qt"
+	"dde-launcher"
+	"dde-launcher" -> "dde-daemon"
+	"dde-launcher" -> "deepin-menu"
+	"dde-launcher" -> "qt5-qtbase"
+	"dde-launcher" -> "dde-qt-dbus-factory"
+	"dde-launcher" -> dtkcore
+	"dde-launcher" -> dtkgui
+	"dde-launcher" -> dtkwidget
+	"dde-launcher" -> "gsettings-qt"
+	"dde-launcher" -> startdde
+	"dde-network-utils"
+	"dde-network-utils" -> "qt5-qtbase"
+	"dde-network-utils" -> "dde-qt-dbus-factory"
+	"dde-network-utils" -> "gsettings-qt"
+	"dde-polkit-agent"
+	"dde-polkit-agent" -> libglvnd
+	"dde-polkit-agent" -> "qt5-qtbase"
+	"dde-polkit-agent" -> "dde-qt-dbus-factory"
+	"dde-polkit-agent" -> dtkcore
+	"dde-polkit-agent" -> dtkgui
+	"dde-polkit-agent" -> dtkwidget
+	"dde-polkit-agent" -> "gsettings-qt"
+	"dde-polkit-agent" -> "polkit-qt-1"
+	"dde-printer"
+	"dde-printer" -> dtkcore
+	"dde-printer" -> dtkwidget
+	"dde-printer" -> libglvnd
+	"dde-printer" -> "qt5-qtbase"
+	"dde-printer" -> dtkgui
+	"dde-qt-dbus-factory"
+	"dde-qt-dbus-factory" -> libglvnd
+	"dde-qt-dbus-factory" -> "qt5-qtbase"
+	"dde-qt5integration"
+	"dde-qt5integration" -> libglvnd
+	"dde-qt5integration" -> "qt5-qtbase"
+	"dde-qt5integration" -> libqtxdg
+	"dde-qt5integration" -> dtkcore
+	"dde-qt5integration" -> dtkgui
+	"dde-qt5integration" -> dtkwidget
+	"dde-qt5platform-plugins"
+	"dde-qt5platform-plugins" -> libglvnd
+	"dde-qt5platform-plugins" -> "qt5-qtbase"
+	"dde-server-industry-config"
+	"dde-session-shell"
+	"dde-session-shell" -> "dde-daemon"
+	"dde-session-shell" -> "deepin-desktop-schemas"
+	"dde-session-shell" -> "qt5-qtbase"
+	"dde-session-shell" -> "dde-qt-dbus-factory"
+	"dde-session-shell" -> dtkcore
+	"dde-session-shell" -> dtkgui
+	"dde-session-shell" -> dtkwidget
+	"dde-session-shell" -> "gsettings-qt"
+	"dde-session-shell" -> lightdm
+	"dde-session-shell" -> libqtxdg
+	"dde-session-shell" -> startdde
+	"dde-session-shell" -> xsettingsd
+	"dde-session-ui"
+	"dde-session-ui" -> "dde-daemon"
+	"dde-session-ui" -> libglvnd
+	"dde-session-ui" -> "qt5-qtbase"
+	"dde-session-ui" -> "dde-qt-dbus-factory"
+	"dde-session-ui" -> dtkcore
+	"dde-session-ui" -> dtkgui
+	"dde-session-ui" -> dtkwidget
+	"dde-session-ui" -> "gsettings-qt"
+	"dde-session-ui" -> lightdm
+	"dde-session-ui" -> startdde
+	"deepin-anything"
+	"deepin-anything" -> "qt5-qtbase"
+	"deepin-anything" -> dtkcore
+	"deepin-anything" -> "udisks2-qt5"
+	"deepin-authenticate"
+	"deepin-boot-maker"
+	"deepin-boot-maker" -> libglvnd
+	"deepin-boot-maker" -> "qt5-qtbase"
+	"deepin-boot-maker" -> dtkcore
+	"deepin-boot-maker" -> dtkgui
+	"deepin-boot-maker" -> dtkwidget
+	"deepin-boot-maker" -> p7zip
+	"deepin-calculator"
+	"deepin-calculator" -> "dde-qt-dbus-factory"
+	"deepin-calculator" -> dtkcore
+	"deepin-calculator" -> dtkgui
+	"deepin-calculator" -> dtkwidget
+	"deepin-calculator" -> "qt5-qtbase"
+	"deepin-compressor"
+	"deepin-compressor" -> "deepin-shortcut-viewer"
+	"deepin-compressor" -> "kf5-karchive"
+	"deepin-compressor" -> "kf5-kcodecs"
+	"deepin-compressor" -> "qt5-qtbase"
+	"deepin-compressor" -> libarchive
+	"deepin-compressor" -> dtkcore
+	"deepin-compressor" -> dtkgui
+	"deepin-compressor" -> dtkwidget
+	"deepin-compressor" -> minizip
+	"deepin-compressor" -> p7zip
+	"deepin-compressor" -> unrar
+	"deepin-default-settings"
+	"deepin-desktop-schemas"
+	"deepin-desktop-base"
+	"deepin-devicemanager"
+	"deepin-devicemanager" -> "deepin-shortcut-viewer"
+	"deepin-devicemanager" -> hwinfo
+	"deepin-devicemanager" -> "qt5-qtbase"
+	"deepin-devicemanager" -> dtkcore
+	"deepin-devicemanager" -> dtkgui
+	"deepin-devicemanager" -> dtkwidget
+	"deepin-devicemanager" -> zeromq3
+	"deepin-diskmanager"
+	"deepin-diskmanager" -> "qt5-qtbase"
+	"deepin-diskmanager" -> "dde-qt-dbus-factory"
+	"deepin-diskmanager" -> dtkcore
+	"deepin-diskmanager" -> dtkgui
+	"deepin-diskmanager" -> dtkwidget
+	"deepin-diskmanager" -> "polkit-qt-1"
+	"deepin-diskmanager" -> "ntfs-3g"
+	"deepin-editor"
+	"deepin-editor" -> "kf5-kcodecs"
+	"deepin-editor" -> "kf5-syntax-highlighting"
+	"deepin-editor" -> "qt5-qtbase"
+	"deepin-editor" -> "dde-qt-dbus-factory"
+	"deepin-editor" -> dtkcore
+	"deepin-editor" -> dtkgui
+	"deepin-editor" -> dtkwidget
+	"deepin-editor" -> uchardet
+	"deepin-fcitxconfigtool-plugin"
+	"deepin-fcitxconfigtool-plugin" -> "fcitx-qt5"
+	"deepin-fcitxconfigtool-plugin" -> "qt5-qtbase"
+	"deepin-fcitxconfigtool-plugin" -> "dde-qt-dbus-factory"
+	"deepin-fcitxconfigtool-plugin" -> dtkcore
+	"deepin-fcitxconfigtool-plugin" -> dtkgui
+	"deepin-fcitxconfigtool-plugin" -> dtkwidget
+	"deepin-fcitxconfigtool-plugin" -> fcitx
+	"deepin-font-manager"
+	"deepin-font-manager" -> "qt5-qtbase"
+	"deepin-font-manager" -> "dde-file-manager"
+	"deepin-font-manager" -> dtkcore
+	"deepin-font-manager" -> dtkgui
+	"deepin-font-manager" -> dtkwidget
+	"deepin-gettext-tools"
+	"deepin-gettext-tools" -> "perl-Config-Tiny"
+	"deepin-gettext-tools" -> "perl-XML-LibXML-PrettyPrint"
+	"deepin-gettext-tools" -> "qt5-qttools"
+	"deepin-gtk-theme"
+	"deepin-icon-theme"
+	"deepin-icon-theme" -> "papirus-icon-theme"
+	"deepin-image-viewer"
+	"deepin-image-viewer" -> libglvnd
+	"deepin-image-viewer" -> "qt5-qtbase"
+	"deepin-image-viewer" -> dtkcore
+	"deepin-image-viewer" -> dtkgui
+	"deepin-image-viewer" -> dtkwidget
+	"deepin-image-viewer" -> freeimage
+	"deepin-image-viewer" -> "gio-qt"
+	"deepin-image-viewer" -> "libjpeg-turbo"
+	"deepin-image-viewer" -> "udisks2-qt5"
+	"deepin-log-viewer"
+	"deepin-log-viewer" -> "qt5-qtbase"
+	"deepin-log-viewer" -> "dde-qt-dbus-factory"
+	"deepin-log-viewer" -> dtkcore
+	"deepin-log-viewer" -> dtkgui
+	"deepin-log-viewer" -> dtkwidget
+	"deepin-log-viewer" -> "xerces-c"
+	"deepin-manual"
+	"deepin-manual" -> "qt5-qtbase"
+	"deepin-manual" -> "qt5-qtwebengine"
+	"deepin-manual" -> dtkcore
+	"deepin-manual" -> dtkgui
+	"deepin-manual" -> dtkwidget
+	"deepin-menu"
+	"deepin-menu" -> libglvnd
+	"deepin-menu" -> "qt5-qtbase"
+	"deepin-menu" -> dtkcore
+	"deepin-menu" -> dtkgui
+	"deepin-menu" -> dtkwidget
+	"deepin-network-proxy"
+	"deepin-picker"
+	"deepin-picker" -> libglvnd
+	"deepin-picker" -> "qt5-qtbase"
+	"deepin-picker" -> dtkcore
+	"deepin-picker" -> dtkgui
+	"deepin-picker" -> dtkwidget
+	"deepin-pw-check"
+	"deepin-pw-check" -> iniparser
+	"deepin-reader"
+	"deepin-reader" -> libglvnd
+	"deepin-reader" -> "qt5-qtbase"
+	"deepin-reader" -> libchardet
+	"deepin-reader" -> djvulibre
+	"deepin-reader" -> dtkcore
+	"deepin-reader" -> dtkgui
+	"deepin-reader" -> dtkwidget
+	"deepin-screen-recorder"
+	"deepin-screen-recorder" -> byzanz
+	"deepin-screen-recorder" -> "deepin-turbo"
+	"deepin-screen-recorder" -> ffmpeg
+	"deepin-screen-recorder" -> libglvnd
+	"deepin-screen-recorder" -> "qt5-qtbase"
+	"deepin-screen-recorder" -> "dde-qt-dbus-factory"
+	"deepin-screen-recorder" -> dtkcore
+	"deepin-screen-recorder" -> dtkgui
+	"deepin-screen-recorder" -> dtkwidget
+	"deepin-shortcut-viewer"
+	"deepin-shortcut-viewer" -> libglvnd
+	"deepin-shortcut-viewer" -> "qt5-qtbase"
+	"deepin-shortcut-viewer" -> dtkcore
+	"deepin-shortcut-viewer" -> dtkgui
+	"deepin-shortcut-viewer" -> dtkwidget
+	"deepin-sound-theme"
+	"deepin-system-monitor"
+	"deepin-system-monitor" -> "qt5-qtbase"
+	"deepin-system-monitor" -> dtkcore
+	"deepin-system-monitor" -> dtkgui
+	"deepin-system-monitor" -> dtkwidget
+	"deepin-terminal"
+	"deepin-terminal" -> "qt5-qtbase"
+	"deepin-terminal" -> "dde-qt-dbus-factory"
+	"deepin-terminal" -> dtkcore
+	"deepin-terminal" -> dtkgui
+	"deepin-terminal" -> dtkwidget
+	"deepin-terminal" -> zssh
+	"deepin-turbo"
+	"deepin-turbo" -> "qt5-qtbase"
+	"deepin-turbo" -> dtkgui
+	"deepin-turbo" -> dtkwidget
+	"deepin-wallpapers"
+	"desktop-file-utils"
+	disomaster
+	disomaster -> "qt5-qtbase"
+	djvulibre
+	djvulibre -> "libjpeg-turbo"
+	"dpa-ext-gnomekeyring"
+	"dpa-ext-gnomekeyring" -> "qt5-qtbase"
+	dtkcommon
+	dtkcore
+	dtkcore -> libglvnd
+	dtkcore -> "qt5-qtbase"
+	dtkcore -> "gsettings-qt"
+	dtkgui
+	dtkgui -> libglvnd
+	dtkgui -> "qt5-qtbase"
+	dtkgui -> dtkcore
+	dtkwidget
+	dtkwidget -> libglvnd
+	dtkwidget -> "qt5-qtbase"
+	dtkwidget -> dtkcore
+	dtkwidget -> dtkgui
+	dtkwidget -> "gsettings-qt"
+	"epel-rpm-macros"
+	"epel-rpm-macros" -> "fpc-srpm-macros"
+	"epel-rpm-macros" -> "lua-rpm-macros"
+	"exfat-utils"
+	"extra-cmake-modules"
+	"extra-cmake-modules" -> "qt5-qttools"
+	"extra-cmake-modules" -> kf5
+	"f32-backgrounds"
+	"f32-backgrounds" -> "kde-filesystem"
+	faad2
+	fcitx
+	fcitx -> imsettings
+	"fcitx-configtool"
+	"fcitx-configtool" -> fcitx
+	"fcitx-qt5"
+	"fcitx-qt5" -> "qt5-qtbase"
+	"fcitx-qt5" -> fcitx
+	libffado
+	libffado -> "libxml++"
+	ffmpeg
+	ffmpeg -> aom
+	ffmpeg -> libass
+	ffmpeg -> dav1d
+	ffmpeg -> libmfx
+	ffmpeg -> libmodplug
+	ffmpeg -> "opencore-amr"
+	ffmpeg -> soxr
+	ffmpeg -> srt
+	ffmpeg -> vapoursynth
+	ffmpeg -> "vid.stab"
+	ffmpeg -> vmaf
+	ffmpeg -> "vo-amrwbenc"
+	ffmpeg -> x264
+	ffmpeg -> x265
+	ffmpeg -> xvidcore
+	ffmpeg -> zimg
+	ffmpeg -> zvbi
+	ffmpeg -> libglvnd
+	ffmpeg -> "jack-audio-connection-kit"
+	ffmpegthumbnailer
+	ffmpegthumbnailer -> ffmpeg
+	ffmpegthumbnailer -> "libjpeg-turbo"
+	"fpc-srpm-macros"
+	freeimage
+	freeimage -> "libjpeg-turbo"
+	freeimage -> jxrlib
+	"fuse-exfat"
+	"go-gir-generator"
+	"go-lib"
+	"golang-dbus"
+	"golang-github-alecthomas-template"
+	"golang-github-alecthomas-units"
+	"golang-github-axgle-mahonia"
+	"golang-github-cryptix-wav"
+	"golang-github-davecgh-go-spew"
+	"golang-github-disintegration-imaging"
+	"golang-github-fogleman-gg"
+	"golang-github-freetype"
+	"golang-github-gosexy-gettext"
+	"golang-github-kelvins-sunrisesunset"
+	"golang-github-linuxdeepin-go-dbus-factory"
+	"golang-github-linuxdeepin-go-x11-client"
+	"golang-github-lofanmi-pinyin"
+	"golang-github-mattn-go-sqlite3"
+	"golang-github-mozillazg-pinyin"
+	"golang-github-msteinert-pam"
+	"golang-github-nfnt-resize"
+	"golang-github-pmezard-go-difflib"
+	"golang-github-rickb777-date"
+	"golang-github-rickb777-plural"
+	"golang-github-stretchr-objx"
+	"golang-github-stretchr-testify"
+	"golang-gopkg-alecthomas-kingpin"
+	"golang-x-image"
+	"golang-x-sys"
+	"golang-x-text"
+	"golang-x-xerrors"
+	gpac
+	gpac -> ffmpeg
+	gpac -> libglvnd
+	gpac -> faad2
+	gpac -> "libjpeg-turbo"
+	gpac -> xvidcore
+	"gsettings-qt"
+	"gsettings-qt" -> "qt5-qtbase"
+	gstreamer
+	htmlcxx
+	hwinfo
+	hwinfo -> libx86emu
+	imlib2
+	imlib2 -> "libjpeg-turbo"
+	imlib2 -> libid3tag
+	imsettings
+	imsettings -> libgxim
+	iniparser
+	"jack-audio-connection-kit"
+	"jack-audio-connection-kit" -> libffado
+	jemalloc
+	jsoncpp
+	jxrlib
+	"kde-filesystem"
+	"kde-settings"
+	"kde-settings" -> "breeze-icon-theme"
+	"kde-settings" -> "kde-filesystem"
+	"kde-settings" -> "f32-backgrounds"
+	kdecoration
+	kdecoration -> kf5
+	kdecoration -> "kf5-ki18n"
+	kdecoration -> "qt5-qtbase"
+	"kf5-attica"
+	"kf5-attica" -> kf5
+	"kf5-attica" -> "qt5-qtbase"
+	kf5
+	"kf5-frameworkintegration"
+	"kf5-frameworkintegration" -> "kf5-attica"
+	"kf5-frameworkintegration" -> "kf5-kcoreaddons"
+	"kf5-frameworkintegration" -> "kf5-ki18n"
+	"kf5-frameworkintegration" -> "kf5-knewstuff"
+	"kf5-frameworkintegration" -> "kf5-knotifications"
+	"kf5-frameworkintegration" -> "qt5-qtbase"
+	"kf5-frameworkintegration" -> "kf5-kauth"
+	"kf5-frameworkintegration" -> "kf5-kcodecs"
+	"kf5-frameworkintegration" -> "kf5-kconfig"
+	"kf5-frameworkintegration" -> "kf5-kconfigwidgets"
+	"kf5-frameworkintegration" -> "kf5-kiconthemes"
+	"kf5-frameworkintegration" -> "kf5-kwidgetsaddons"
+	"kf5-kactivities"
+	"kf5-kactivities" -> "kf5-kconfig"
+	"kf5-kactivities" -> "kf5-kcoreaddons"
+	"kf5-kactivities" -> "qt5-qtbase"
+	"kf5-karchive"
+	"kf5-karchive" -> kf5
+	"kf5-karchive" -> "qt5-qtbase"
+	"kf5-kauth"
+	"kf5-kauth" -> "kf5-kcoreaddons"
+	"kf5-kauth" -> "qt5-qtbase"
+	"kf5-kauth" -> "polkit-qt-1"
+	"kf5-kbookmarks"
+	"kf5-kbookmarks" -> "kf5-kauth"
+	"kf5-kbookmarks" -> "kf5-kcodecs"
+	"kf5-kbookmarks" -> "kf5-kconfig"
+	"kf5-kbookmarks" -> "kf5-kconfigwidgets"
+	"kf5-kbookmarks" -> "kf5-kcoreaddons"
+	"kf5-kbookmarks" -> "kf5-kwidgetsaddons"
+	"kf5-kbookmarks" -> "kf5-kxmlgui"
+	"kf5-kbookmarks" -> "qt5-qtbase"
+	"kf5-kcmutils"
+	"kf5-kcmutils" -> "kf5-kauth"
+	"kf5-kcmutils" -> "kf5-kcodecs"
+	"kf5-kcmutils" -> "kf5-kconfig"
+	"kf5-kcmutils" -> "kf5-kconfigwidgets"
+	"kf5-kcmutils" -> "kf5-kcoreaddons"
+	"kf5-kcmutils" -> "kf5-kdeclarative"
+	"kf5-kcmutils" -> "kf5-kguiaddons"
+	"kf5-kcmutils" -> "kf5-ki18n"
+	"kf5-kcmutils" -> "kf5-kitemviews"
+	"kf5-kcmutils" -> "kf5-kpackage"
+	"kf5-kcmutils" -> "kf5-kservice"
+	"kf5-kcmutils" -> "kf5-kwidgetsaddons"
+	"kf5-kcmutils" -> "kf5-kxmlgui"
+	"kf5-kcmutils" -> "qt5-qtbase"
+	"kf5-kcodecs"
+	"kf5-kcodecs" -> kf5
+	"kf5-kcodecs" -> "qt5-qtbase"
+	"kf5-kcompletion"
+	"kf5-kcompletion" -> "kf5-kconfig"
+	"kf5-kcompletion" -> "kf5-kwidgetsaddons"
+	"kf5-kcompletion" -> "qt5-qtbase"
+	"kf5-kconfig"
+	"kf5-kconfig" -> kf5
+	"kf5-kconfig" -> "kde-settings"
+	"kf5-kconfig" -> "qt5-qtbase"
+	"kf5-kconfigwidgets"
+	"kf5-kconfigwidgets" -> "kf5-kauth"
+	"kf5-kconfigwidgets" -> "kf5-kcodecs"
+	"kf5-kconfigwidgets" -> "kf5-kconfig"
+	"kf5-kconfigwidgets" -> "kf5-kcoreaddons"
+	"kf5-kconfigwidgets" -> "kf5-kguiaddons"
+	"kf5-kconfigwidgets" -> "kf5-ki18n"
+	"kf5-kconfigwidgets" -> "kf5-kwidgetsaddons"
+	"kf5-kconfigwidgets" -> "qt5-qtbase"
+	"kf5-kcoreaddons"
+	"kf5-kcoreaddons" -> kf5
+	"kf5-kcoreaddons" -> "qt5-qtbase"
+	"kf5-kcrash"
+	"kf5-kcrash" -> "kf5-kcoreaddons"
+	"kf5-kcrash" -> "kf5-kwindowsystem"
+	"kf5-kcrash" -> "qt5-qtbase"
+	"kf5-kdbusaddons"
+	"kf5-kdbusaddons" -> kf5
+	"kf5-kdbusaddons" -> "qt5-qtbase"
+	"kf5-kdeclarative"
+	"kf5-kdeclarative" -> "kf5-kcompletion"
+	"kf5-kdeclarative" -> "kf5-kconfig"
+	"kf5-kdeclarative" -> "kf5-kcoreaddons"
+	"kf5-kdeclarative" -> "kf5-kglobalaccel"
+	"kf5-kdeclarative" -> "kf5-ki18n"
+	"kf5-kdeclarative" -> "kf5-kiconthemes"
+	"kf5-kdeclarative" -> "kf5-kjobwidgets"
+	"kf5-kdeclarative" -> "kf5-kio"
+	"kf5-kdeclarative" -> "kf5-kpackage"
+	"kf5-kdeclarative" -> "kf5-kservice"
+	"kf5-kdeclarative" -> "kf5-kwidgetsaddons"
+	"kf5-kdeclarative" -> "kf5-kwindowsystem"
+	"kf5-kdeclarative" -> "qt5-qtbase"
+	"kf5-kded"
+	"kf5-kded" -> "kf5-kconfig"
+	"kf5-kded" -> "kf5-kcoreaddons"
+	"kf5-kded" -> "kf5-kcrash"
+	"kf5-kded" -> "kf5-kdbusaddons"
+	"kf5-kded" -> "kf5-kservice"
+	"kf5-kded" -> "qt5-qtbase"
+	"kf5-kdelibs4support"
+	"kf5-kdelibs4support" -> "kde-settings"
+	"kf5-kdelibs4support" -> "kf5-kded"
+	"kf5-kdelibs4support" -> "kf5-kauth"
+	"kf5-kdelibs4support" -> "kf5-kbookmarks"
+	"kf5-kdelibs4support" -> "kf5-kcodecs"
+	"kf5-kdelibs4support" -> "kf5-kcompletion"
+	"kf5-kdelibs4support" -> "kf5-kconfig"
+	"kf5-kdelibs4support" -> "kf5-kconfigwidgets"
+	"kf5-kdelibs4support" -> "kf5-kcoreaddons"
+	"kf5-kdelibs4support" -> "kf5-kcrash"
+	"kf5-kdelibs4support" -> "kf5-kguiaddons"
+	"kf5-kdelibs4support" -> "kf5-ki18n"
+	"kf5-kdelibs4support" -> "kf5-kiconthemes"
+	"kf5-kdelibs4support" -> "kf5-kitemviews"
+	"kf5-kdelibs4support" -> "kf5-kjobwidgets"
+	"kf5-kdelibs4support" -> "kf5-kio"
+	"kf5-kdelibs4support" -> "kf5-knotifications"
+	"kf5-kdelibs4support" -> "kf5-kparts"
+	"kf5-kdelibs4support" -> "kf5-kservice"
+	"kf5-kdelibs4support" -> "kf5-solid"
+	"kf5-kdelibs4support" -> "kf5-sonnet"
+	"kf5-kdelibs4support" -> "kf5-ktextwidgets"
+	"kf5-kdelibs4support" -> "kf5-kunitconversion"
+	"kf5-kdelibs4support" -> "kf5-kwidgetsaddons"
+	"kf5-kdelibs4support" -> "kf5-kwindowsystem"
+	"kf5-kdelibs4support" -> "kf5-kxmlgui"
+	"kf5-kdelibs4support" -> "qt5-qtbase"
+	"kf5-kdelibs4support" -> "kf5-kdbusaddons"
+	"kf5-kdelibs4support" -> "kf5-kglobalaccel"
+	"kf5-kdelibs4support" -> "qt5-qttools"
+	"kf5-kdesignerplugin"
+	"kf5-kdesignerplugin" -> "kf5-kconfig"
+	"kf5-kdesignerplugin" -> "kf5-kcoreaddons"
+	"kf5-kdesignerplugin" -> "qt5-qtbase"
+	"kf5-kdesu"
+	"kf5-kdesu" -> "kf5-kconfig"
+	"kf5-kdesu" -> "kf5-kcoreaddons"
+	"kf5-kdesu" -> "kf5-ki18n"
+	"kf5-kdesu" -> "kf5-kpty"
+	"kf5-kdesu" -> "kf5-kservice"
+	"kf5-kdesu" -> "qt5-qtbase"
+	"kf5-kdoctools"
+	"kf5-kdoctools" -> "kf5-karchive"
+	"kf5-kdoctools" -> "qt5-qtbase"
+	"kf5-kemoticons"
+	"kf5-kemoticons" -> "kf5-karchive"
+	"kf5-kemoticons" -> "kf5-kconfig"
+	"kf5-kemoticons" -> "kf5-kcoreaddons"
+	"kf5-kemoticons" -> "kf5-kservice"
+	"kf5-kemoticons" -> "qt5-qtbase"
+	"kf5-kglobalaccel"
+	"kf5-kglobalaccel" -> "kf5-kconfig"
+	"kf5-kglobalaccel" -> "kf5-kcoreaddons"
+	"kf5-kglobalaccel" -> "kf5-kcrash"
+	"kf5-kglobalaccel" -> "kf5-kdbusaddons"
+	"kf5-kglobalaccel" -> "kf5-kwindowsystem"
+	"kf5-kglobalaccel" -> "qt5-qtbase"
+	"kf5-kguiaddons"
+	"kf5-kguiaddons" -> kf5
+	"kf5-kguiaddons" -> "qt5-qtbase"
+	"kf5-ki18n"
+	"kf5-ki18n" -> kf5
+	"kf5-ki18n" -> "qt5-qtbase"
+	"kf5-kiconthemes"
+	"kf5-kiconthemes" -> "kf5-karchive"
+	"kf5-kiconthemes" -> "kf5-kauth"
+	"kf5-kiconthemes" -> "kf5-kcodecs"
+	"kf5-kiconthemes" -> "kf5-kconfig"
+	"kf5-kiconthemes" -> "kf5-kconfigwidgets"
+	"kf5-kiconthemes" -> "kf5-kcoreaddons"
+	"kf5-kiconthemes" -> "kf5-ki18n"
+	"kf5-kiconthemes" -> "kf5-kitemviews"
+	"kf5-kiconthemes" -> "kf5-kwidgetsaddons"
+	"kf5-kiconthemes" -> "qt5-qtbase"
+	"kf5-kidletime"
+	"kf5-kidletime" -> kf5
+	"kf5-kidletime" -> "qt5-qtbase"
+	"kf5-kinit"
+	"kf5-kinit" -> "kf5-kcompletion"
+	"kf5-kinit" -> "kf5-kconfig"
+	"kf5-kinit" -> "kf5-kcoreaddons"
+	"kf5-kinit" -> "kf5-kcrash"
+	"kf5-kinit" -> "kf5-kdbusaddons"
+	"kf5-kinit" -> "kf5-ki18n"
+	"kf5-kinit" -> "kf5-kjobwidgets"
+	"kf5-kinit" -> "kf5-kio"
+	"kf5-kinit" -> "kf5-kservice"
+	"kf5-kinit" -> "kf5-kwidgetsaddons"
+	"kf5-kinit" -> "kf5-kwindowsystem"
+	"kf5-kinit" -> "qt5-qtbase"
+	"kf5-kio"
+	"kf5-kio" -> "kf5-karchive"
+	"kf5-kio" -> "kf5-kauth"
+	"kf5-kio" -> "kf5-kcodecs"
+	"kf5-kio" -> "kf5-kcompletion"
+	"kf5-kio" -> "kf5-kconfig"
+	"kf5-kio" -> "kf5-kconfigwidgets"
+	"kf5-kio" -> "kf5-kcoreaddons"
+	"kf5-kio" -> "kf5-kdbusaddons"
+	"kf5-kio" -> "kf5-kdoctools"
+	"kf5-kio" -> "kf5-ki18n"
+	"kf5-kio" -> "kf5-kiconthemes"
+	"kf5-kio" -> "kf5-kitemviews"
+	"kf5-kio" -> "kf5-kjobwidgets"
+	"kf5-kio" -> "kf5-kservice"
+	"kf5-kio" -> "kf5-solid"
+	"kf5-kio" -> "kf5-sonnet"
+	"kf5-kio" -> "kf5-ktextwidgets"
+	"kf5-kio" -> "kf5-kwallet"
+	"kf5-kio" -> "kf5-kwidgetsaddons"
+	"kf5-kio" -> "kf5-kwindowsystem"
+	"kf5-kio" -> "qt5-qtbase"
+	"kf5-kio" -> "kf5-kcrash"
+	"kf5-kio" -> "kf5-kbookmarks"
+	"kf5-kio" -> "kf5-kxmlgui"
+	"kf5-kirigami2"
+	"kf5-kirigami2" -> "qt5-qtbase"
+	"kf5-kitemmodels"
+	"kf5-kitemmodels" -> kf5
+	"kf5-kitemmodels" -> "qt5-qtbase"
+	"kf5-kitemviews"
+	"kf5-kitemviews" -> kf5
+	"kf5-kitemviews" -> "qt5-qtbase"
+	"kf5-kjobwidgets"
+	"kf5-kjobwidgets" -> "kf5-kcoreaddons"
+	"kf5-kjobwidgets" -> "kf5-kwidgetsaddons"
+	"kf5-kjobwidgets" -> "qt5-qtbase"
+	"kf5-knewstuff"
+	"kf5-knewstuff" -> "kf5-karchive"
+	"kf5-knewstuff" -> "kf5-attica"
+	"kf5-knewstuff" -> "kf5-kauth"
+	"kf5-knewstuff" -> "kf5-kcodecs"
+	"kf5-knewstuff" -> "kf5-kcompletion"
+	"kf5-knewstuff" -> "kf5-kconfig"
+	"kf5-knewstuff" -> "kf5-kconfigwidgets"
+	"kf5-knewstuff" -> "kf5-kcoreaddons"
+	"kf5-knewstuff" -> "kf5-ki18n"
+	"kf5-knewstuff" -> "kf5-kiconthemes"
+	"kf5-knewstuff" -> "kf5-kitemviews"
+	"kf5-knewstuff" -> "kf5-kjobwidgets"
+	"kf5-knewstuff" -> "kf5-kio"
+	"kf5-knewstuff" -> "kf5-kservice"
+	"kf5-knewstuff" -> "kf5-sonnet"
+	"kf5-knewstuff" -> "kf5-ktextwidgets"
+	"kf5-knewstuff" -> "kf5-kwidgetsaddons"
+	"kf5-knewstuff" -> "kf5-kxmlgui"
+	"kf5-knewstuff" -> "qt5-qtbase"
+	"kf5-knotifications"
+	"kf5-knotifications" -> "kf5-kconfig"
+	"kf5-knotifications" -> "kf5-kcoreaddons"
+	"kf5-knotifications" -> "kf5-kwindowsystem"
+	"kf5-knotifications" -> "qt5-qtbase"
+	"kf5-knotifications" -> "dbusmenu-qt"
+	"kf5-kpackage"
+	"kf5-kpackage" -> "kf5-karchive"
+	"kf5-kpackage" -> "kf5-kcoreaddons"
+	"kf5-kpackage" -> "kf5-ki18n"
+	"kf5-kpackage" -> "qt5-qtbase"
+	"kf5-kparts"
+	"kf5-kparts" -> "kf5-kauth"
+	"kf5-kparts" -> "kf5-kcodecs"
+	"kf5-kparts" -> "kf5-kcompletion"
+	"kf5-kparts" -> "kf5-kconfig"
+	"kf5-kparts" -> "kf5-kconfigwidgets"
+	"kf5-kparts" -> "kf5-kcoreaddons"
+	"kf5-kparts" -> "kf5-ki18n"
+	"kf5-kparts" -> "kf5-kiconthemes"
+	"kf5-kparts" -> "kf5-kjobwidgets"
+	"kf5-kparts" -> "kf5-kio"
+	"kf5-kparts" -> "kf5-kservice"
+	"kf5-kparts" -> "kf5-sonnet"
+	"kf5-kparts" -> "kf5-ktextwidgets"
+	"kf5-kparts" -> "kf5-kwidgetsaddons"
+	"kf5-kparts" -> "kf5-kxmlgui"
+	"kf5-kparts" -> "qt5-qtbase"
+	"kf5-kplotting"
+	"kf5-kplotting" -> kf5
+	"kf5-kplotting" -> "qt5-qtbase"
+	"kf5-kpty"
+	"kf5-kpty" -> "kf5-kcoreaddons"
+	"kf5-kpty" -> "kf5-ki18n"
+	"kf5-kpty" -> "qt5-qtbase"
+	"kf5-kservice"
+	"kf5-kservice" -> "kf5-kconfig"
+	"kf5-kservice" -> "kf5-kcoreaddons"
+	"kf5-kservice" -> "kf5-kcrash"
+	"kf5-kservice" -> "kf5-kdbusaddons"
+	"kf5-kservice" -> "kf5-ki18n"
+	"kf5-kservice" -> "qt5-qtbase"
+	"kf5-ktextwidgets"
+	"kf5-ktextwidgets" -> "kf5-kauth"
+	"kf5-ktextwidgets" -> "kf5-kcodecs"
+	"kf5-ktextwidgets" -> "kf5-kcompletion"
+	"kf5-ktextwidgets" -> "kf5-kconfig"
+	"kf5-ktextwidgets" -> "kf5-kconfigwidgets"
+	"kf5-ktextwidgets" -> "kf5-kcoreaddons"
+	"kf5-ktextwidgets" -> "kf5-ki18n"
+	"kf5-ktextwidgets" -> "kf5-sonnet"
+	"kf5-ktextwidgets" -> "kf5-kwidgetsaddons"
+	"kf5-ktextwidgets" -> "qt5-qtbase"
+	"kf5-kunitconversion"
+	"kf5-kunitconversion" -> "kf5-ki18n"
+	"kf5-kunitconversion" -> "qt5-qtbase"
+	"kf5-kwallet"
+	"kf5-kwallet" -> "kf5-kauth"
+	"kf5-kwallet" -> "kf5-kcodecs"
+	"kf5-kwallet" -> "kf5-kconfig"
+	"kf5-kwallet" -> "kf5-kconfigwidgets"
+	"kf5-kwallet" -> "kf5-kcoreaddons"
+	"kf5-kwallet" -> "kf5-kdbusaddons"
+	"kf5-kwallet" -> "kf5-ki18n"
+	"kf5-kwallet" -> "kf5-knotifications"
+	"kf5-kwallet" -> "kf5-kservice"
+	"kf5-kwallet" -> "kf5-kwidgetsaddons"
+	"kf5-kwallet" -> "kf5-kwindowsystem"
+	"kf5-kwallet" -> "qt5-qtbase"
+	"kf5-kwayland"
+	"kf5-kwayland" -> kf5
+	"kf5-kwayland" -> libglvnd
+	"kf5-kwayland" -> "qt5-qtbase"
+	"kf5-kwidgetsaddons"
+	"kf5-kwidgetsaddons" -> kf5
+	"kf5-kwidgetsaddons" -> "qt5-qtbase"
+	"kf5-kwindowsystem"
+	"kf5-kwindowsystem" -> kf5
+	"kf5-kwindowsystem" -> "qt5-qtbase"
+	"kf5-kxmlgui"
+	"kf5-kxmlgui" -> "kf5-attica"
+	"kf5-kxmlgui" -> "kf5-kauth"
+	"kf5-kxmlgui" -> "kf5-kcodecs"
+	"kf5-kxmlgui" -> "kf5-kconfig"
+	"kf5-kxmlgui" -> "kf5-kconfigwidgets"
+	"kf5-kxmlgui" -> "kf5-kcoreaddons"
+	"kf5-kxmlgui" -> "kf5-kglobalaccel"
+	"kf5-kxmlgui" -> "kf5-ki18n"
+	"kf5-kxmlgui" -> "kf5-kiconthemes"
+	"kf5-kxmlgui" -> "kf5-kitemviews"
+	"kf5-kxmlgui" -> "kf5-kwidgetsaddons"
+	"kf5-kxmlgui" -> "kf5-kwindowsystem"
+	"kf5-kxmlgui" -> "qt5-qtbase"
+	"kf5-networkmanager-qt"
+	"kf5-networkmanager-qt" -> kf5
+	"kf5-networkmanager-qt" -> "qt5-qtbase"
+	"kf5-plasma"
+	"kf5-plasma" -> libglvnd
+	"kf5-plasma" -> "kf5-kactivities"
+	"kf5-plasma" -> "kf5-karchive"
+	"kf5-plasma" -> "kf5-kauth"
+	"kf5-plasma" -> "kf5-kdeclarative"
+	"kf5-plasma" -> "kf5-kcodecs"
+	"kf5-plasma" -> "kf5-kcompletion"
+	"kf5-plasma" -> "kf5-kconfig"
+	"kf5-plasma" -> "kf5-kconfigwidgets"
+	"kf5-plasma" -> "kf5-kcoreaddons"
+	"kf5-plasma" -> "kf5-kglobalaccel"
+	"kf5-plasma" -> "kf5-kguiaddons"
+	"kf5-plasma" -> "kf5-ki18n"
+	"kf5-plasma" -> "kf5-kiconthemes"
+	"kf5-plasma" -> "kf5-kjobwidgets"
+	"kf5-plasma" -> "kf5-kio"
+	"kf5-plasma" -> "kf5-knotifications"
+	"kf5-plasma" -> "kf5-kpackage"
+	"kf5-plasma" -> "kf5-kservice"
+	"kf5-plasma" -> "kf5-kwidgetsaddons"
+	"kf5-plasma" -> "kf5-kwindowsystem"
+	"kf5-plasma" -> "kf5-kxmlgui"
+	"kf5-plasma" -> "qt5-qtbase"
+	"kf5-solid"
+	"kf5-solid" -> kf5
+	"kf5-solid" -> "qt5-qtbase"
+	"kf5-sonnet"
+	"kf5-sonnet" -> kf5
+	"kf5-sonnet" -> "qt5-qtbase"
+	"kf5-syntax-highlighting"
+	"kf5-syntax-highlighting" -> kf5
+	"kf5-syntax-highlighting" -> "qt5-qtbase"
+	kscreenlocker
+	kscreenlocker -> "kf5-kauth"
+	kscreenlocker -> "kf5-kcodecs"
+	kscreenlocker -> "kf5-kconfig"
+	kscreenlocker -> "kf5-kconfigwidgets"
+	kscreenlocker -> "kf5-kcoreaddons"
+	kscreenlocker -> "kf5-kcrash"
+	kscreenlocker -> "kf5-kdeclarative"
+	kscreenlocker -> "kf5-kglobalaccel"
+	kscreenlocker -> "kf5-ki18n"
+	kscreenlocker -> "kf5-kidletime"
+	kscreenlocker -> "kf5-knotifications"
+	kscreenlocker -> "kf5-kpackage"
+	kscreenlocker -> "kf5-sonnet"
+	kscreenlocker -> "kf5-ktextwidgets"
+	kscreenlocker -> "kf5-kwayland"
+	kscreenlocker -> "kf5-kwidgetsaddons"
+	kscreenlocker -> "kf5-kwindowsystem"
+	kscreenlocker -> "kf5-kxmlgui"
+	kscreenlocker -> "qt5-qtbase"
+	kwin
+	kwin -> kdecoration
+	kwin -> "kf5-kinit"
+	kwin -> kscreenlocker
+	kwin -> "kf5-kconfig"
+	kwin -> "kf5-kcoreaddons"
+	kwin -> "kf5-kcrash"
+	kwin -> "kf5-ki18n"
+	kwin -> "kf5-kdeclarative"
+	kwin -> "kf5-kwindowsystem"
+	kwin -> "qt5-qtbase"
+	kwin -> "kf5-kwayland"
+	kwin -> "kf5-kactivities"
+	kwin -> "kf5-kauth"
+	kwin -> "kf5-kcompletion"
+	kwin -> "kf5-kconfigwidgets"
+	kwin -> "kf5-kglobalaccel"
+	kwin -> "kf5-kcmutils"
+	kwin -> "kf5-kio"
+	kwin -> "kf5-knewstuff"
+	kwin -> "kf5-kpackage"
+	kwin -> "kf5-plasma"
+	kwin -> "kf5-kservice"
+	kwin -> "kf5-ktextwidgets"
+	kwin -> "kf5-kwidgetsaddons"
+	kwin -> "kf5-kxmlgui"
+	kwin -> "xcb-util-cursor"
+	kwin -> "kf5-kiconthemes"
+	kwin -> "kf5-knotifications"
+	kwin -> "kf5-kidletime"
+	libass
+	libchardet
+	libdvdnav
+	"gio-qt"
+	"gio-qt" -> "qt5-qtbase"
+	libglvnd
+	libgxim
+	libid3tag
+	"libjpeg-turbo"
+	libmediainfo
+	libmediainfo -> libzen
+	libmfx
+	libmodplug
+	libqtxdg
+	libqtxdg -> "qt5-qtbase"
+	libsvm
+	libsvm -> "qt5-qtbase"
+	unrar
+	libupnp
+	vmaf
+	vmaf -> pugixml
+	libx86emu
+	"libxml++"
+	libzen
+	lightdm
+	lightdm -> "qt5-qtbase"
+	"lightdm-gtk"
+	"lightdm-gtk" -> lightdm
+	"lightdm-gtk-greeter-settings"
+	"lightdm-gtk-greeter-settings" -> "lightdm-gtk"
+	"lua-rpm-macros"
+	luajit
+	"lucene++"
+	mimetic
+	minizip
+	"minizip1.2"
+	mpv
+	mpv -> libglvnd
+	mpv -> libarchive
+	mpv -> libass
+	mpv -> ffmpeg
+	mpv -> libdvdnav
+	mpv -> "jack-audio-connection-kit"
+	mpv -> "libjpeg-turbo"
+	mpv -> luajit
+	mpv -> rubberband
+	mpv -> uchardet
+	mpv -> zimg
+	"ntfs-3g"
+	onboard
+	onboard -> "desktop-file-utils"
+	openbox
+	openbox -> imlib2
+	"opencore-amr"
+	openpgm
+	p7zip
+	"papirus-icon-theme"
+	"perl-Any-URI-Escape"
+	"perl-Config-Tiny"
+	"perl-XML-LibXML-PrettyPrint"
+	"perl-XML-Writer"
+	phonon
+	phonon -> "qt5-qtbase"
+	phonon -> "qt5-qttools"
+	"polkit-qt-1"
+	"polkit-qt-1" -> "qt5-qtbase"
+	pugixml
+	vapoursynth
+	vapoursynth -> zimg
+	vapoursynth -> tesseract
+	"qt5-qttools"
+	"qt5-qttools" -> libglvnd
+	"qt5-qttools" -> "qt5-qtbase"
+	"qt5-doc"
+	"qt5-qtbase"
+	"qt5-qtbase" -> libglvnd
+	"qt5-qtbase" -> "libjpeg-turbo"
+	"qt5-qtvirtualkeyboard"
+	"qt5-qtvirtualkeyboard" -> libglvnd
+	"qt5-qtvirtualkeyboard" -> "qt5-qtbase"
+	"qt5-qtwebengine"
+	"qt5-qtwebengine" -> libglvnd
+	"qt5-qtwebengine" -> "qt5-qtbase"
+	"qt5-qtwebengine" -> "qt5-qttools"
+	"qt5-qtwebengine" -> "libjpeg-turbo"
+	qtchooser
+	rar
+	re2
+	rubberband
+	rubberband -> "vamp-plugin-sdk"
+	soxr
+	srt
+	startdde
+	startdde -> "dde-daemon"
+	startdde -> "dde-kwin"
+	startdde -> "deepin-desktop-schemas"
+	startdde -> "golang-dbus"
+	startdde -> "golang-github-axgle-mahonia"
+	startdde -> "golang-github-cryptix-wav"
+	startdde -> "golang-github-davecgh-go-spew"
+	startdde -> "golang-github-disintegration-imaging"
+	startdde -> "golang-github-fogleman-gg"
+	startdde -> "golang-github-fsnotify-fsnotify"
+	startdde -> "golang-github-gosexy-gettext"
+	startdde -> "golang-github-kelvins-sunrisesunset"
+	startdde -> "golang-github-lofanmi-pinyin"
+	startdde -> "golang-github-mattn-go-sqlite3"
+	startdde -> "golang-github-mozillazg-pinyin"
+	startdde -> "golang-github-msteinert-pam"
+	startdde -> "golang-github-nfnt-resize"
+	startdde -> "golang-github-rickb777-date"
+	startdde -> "golang-github-stretchr-testify"
+	startdde -> "golang-gopkg-alecthomas-kingpin"
+	startdde -> "golang-x-image"
+	startdde -> "golang-x-text"
+	startdde -> "golang-x-xerrors"
+	tesseract
+	tesseract -> "tesseract-tessdata"
+	"tesseract-tessdata"
+	"tesseract-tessdata" -> tesseract
+	uchardet
+	"udisks2-qt5"
+	"udisks2-qt5" -> "qt5-qtbase"
+	unique
+	"vamp-plugin-sdk"
+	"vid.stab"
+	"vo-amrwbenc"
+	waf
+	x264
+	x264 -> ffmpeg
+	x265
+	"xcb-util-cursor"
+	"xerces-c"
+	xsettingsd
+	xvidcore
+	zeromq3
+	zeromq3 -> openpgm
+	zimg
+	zssh
+	zvbi
+}
+

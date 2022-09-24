@@ -1,0 +1,27 @@
+digraph dep_Picture {
+	graph [rankdir=LR]
+	kernel
+	kernel -> kernel
+	containerd
+	"cri-tools"
+	"dnf-plugin-releasever-adapter"
+	docker
+	docker -> containerd
+	"erofs-utils"
+	"gcc-python-plugin"
+	helm
+	"java-1.8.0-alibaba-dragonwell"
+	"java-11-alibaba-dragonwell"
+	"java-11-alibaba-dragonwell" -> "java-1.8.0-alibaba-dragonwell"
+	"keentune-bench"
+	"keentune-brain"
+	"keentune-target"
+	"keentune-ui"
+	keentuned
+	kubernetes
+	"nydus-rs"
+	"nydus-snapshotter"
+	tengine
+	"update-motd"
+}
+

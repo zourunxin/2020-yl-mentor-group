@@ -1,0 +1,5 @@
+digraph MyPicture {
+	graph [rankdir=LR]
+	"dotnet-build-reference-packages"
+}
+
