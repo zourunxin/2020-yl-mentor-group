@@ -123,7 +123,7 @@ def cal_precision(statistic_dict: dict):
     for k, v in statistic_dict.items():
         predict_cnt = sum(v.values())
         actual_cnt = v.get(k, 0)
-        res[k] = actual_cnt / predict_cnt
+        res[k] = round(actual_cnt / predict_cnt, 2)
         
     digit_label_map = get_digit_label_map()
     for k, v in digit_label_map.items():
@@ -143,7 +143,7 @@ def cal_recall(statistic_dict: dict):
     for k, v in statistic_dict.items():
         actual_cnt = sum(v.values())
         predict_cnt = v.get(k, 0)
-        res[k] = (predict_cnt / actual_cnt)
+        res[k] = round(predict_cnt / actual_cnt, 2)
     
     digit_label_map = get_digit_label_map()
     for k, v in digit_label_map.items():
@@ -165,7 +165,7 @@ def cal_f1_score(class_precision: dict, class_recall: dict):
     for k, precision in class_precision.items():
         recall = class_recall[k]
         if (precision + recall) != 0:
-            res[k] = 2 * precision * recall / (precision + recall)
+            res[k] = round(2 * precision * recall / (precision + recall), 2)
         else:
             res[k] = None
     return res
