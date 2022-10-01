@@ -248,6 +248,7 @@ def get_splits(y, strategy="all", sample_size = 100):
     idx_train = []
     idx_val = []
     idx_test = []
+    np.random.seed(0)
     
     for s in idx_set:
         np.random.shuffle(s)
@@ -292,7 +293,7 @@ adj = convert_symmetric(adj)
 print('Dataset has {} nodes, {} edges, {} features.'.format(adj.shape[0], edges.shape[0], features.shape[1]))
 
 #分割数据集
-y_train, y_val, y_test, train_mask, val_mask, test_mask = get_splits(onehot_labels, strategy="sample", sample_size=120)
+y_train, y_val, y_test, train_mask, val_mask, test_mask = get_splits(onehot_labels, strategy="sample", sample_size=100)
 
 # ================================ Model =================================
 
@@ -579,7 +580,6 @@ with open("../output/GAT_statistic.csv", "w", newline='', encoding='utf-8-sig') 
     writer = csv.writer(csvfile)
     writer.writerow(["label", "count", "precision", "recall", "f1-score"])
     writer.writerows(metrics)
-    writer.writerow(["样本数量 train: {}, val: {}, test: {}".format(idx_train.count(1), idx_val.count(1), idx_test.count(1))])
 
 digit_label_map = get_digit_label_map()
 result = [[r[0], r[1], digit_label_map[r[2]], digit_label_map[r[3]]] for r in result]

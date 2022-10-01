@@ -1,143 +1,143 @@
 digraph MyPicture {
 	graph [rankdir=LR]
 	GConf2
-	GConf2 -> libxml2
 	GConf2 -> polkit
+	GConf2 -> libxml2
+	GConf2 -> dbus
+	GConf2 -> psmisc
 	GConf2 -> glibc
 	GConf2 -> bash
-	GConf2 -> psmisc
 	GConf2 -> glib2
-	GConf2 -> dbus
 	GeoIP
 	GeoIP-GeoLite-data
 	HdrHistogram_c
 	Judy
 	LibRaw
 	LibRaw -> lcms2
+	LibRaw -> gcc
 	LibRaw -> glibc
 	LibRaw -> jasper
-	LibRaw -> gcc
 	ModemManager
-	ModemManager -> gcc
-	ModemManager -> libmbim
-	ModemManager -> libqmi
-	ModemManager -> polkit
-	ModemManager -> bash
 	ModemManager -> glibc
-	ModemManager -> systemd
-	ModemManager -> glib2
+	ModemManager -> gcc
 	ModemManager -> libgudev
+	ModemManager -> systemd
+	ModemManager -> libmbim
+	ModemManager -> bash
+	ModemManager -> polkit
+	ModemManager -> glib2
+	ModemManager -> libqmi
 	NetworkManager
-	NetworkManager -> wpa_supplicant
 	NetworkManager -> readline
-	NetworkManager -> crda
-	NetworkManager -> dbus
-	NetworkManager -> newt
 	NetworkManager -> glibc
-	NetworkManager -> curl
-	NetworkManager -> bluez
-	NetworkManager -> libselinux
-	NetworkManager -> chkconfig
-	NetworkManager -> audit
-	NetworkManager -> gnutls
-	NetworkManager -> systemd
-	NetworkManager -> ppp
-	NetworkManager -> jansson
 	NetworkManager -> bash
-	NetworkManager -> libndp
+	NetworkManager -> audit
+	NetworkManager -> glib2
 	NetworkManager -> NetworkManager
-	NetworkManager -> ModemManager
+	NetworkManager -> libselinux
+	NetworkManager -> jansson
 	NetworkManager -> gcc
 	NetworkManager -> libteam
-	NetworkManager -> glib2
+	NetworkManager -> libndp
+	NetworkManager -> ModemManager
+	NetworkManager -> crda
+	NetworkManager -> gnutls
+	NetworkManager -> curl
+	NetworkManager -> dbus
+	NetworkManager -> wpa_supplicant
+	NetworkManager -> systemd
+	NetworkManager -> ppp
+	NetworkManager -> bluez
+	NetworkManager -> newt
+	NetworkManager -> chkconfig
 	NetworkManager-libreswan
 	OpenEXR
-	OpenEXR -> ilmbase
-	OpenEXR -> gcc
 	OpenEXR -> zlib
 	OpenEXR -> glibc
+	OpenEXR -> gcc
+	OpenEXR -> ilmbase
 	OpenIPMI
+	OpenIPMI -> bash
+	OpenIPMI -> systemd
 	OpenIPMI -> gdbm
+	OpenIPMI -> openssl
+	OpenIPMI -> perl
+	OpenIPMI -> readline
+	OpenIPMI -> ncurses
 	OpenIPMI -> glibc
 	OpenIPMI -> popt
 	OpenIPMI -> glib2
-	OpenIPMI -> openssl
 	OpenIPMI -> python3
-	OpenIPMI -> ncurses
-	OpenIPMI -> readline
-	OpenIPMI -> bash
-	OpenIPMI -> perl
-	OpenIPMI -> systemd
 	PackageKit
-	PackageKit -> dbus
+	PackageKit -> rpm
+	PackageKit -> libdnf
 	PackageKit -> librepo
-	PackageKit -> gstreamer1
+	PackageKit -> polkit
+	PackageKit -> gtk3
+	PackageKit -> systemd
+	PackageKit -> atk
 	PackageKit -> glibc
 	PackageKit -> gtk2
-	PackageKit -> polkit
-	PackageKit -> bash
-	PackageKit -> gcc
-	PackageKit -> atk
-	PackageKit -> glib2
-	PackageKit -> rpm
-	PackageKit -> gtk3
-	PackageKit -> pango
 	PackageKit -> cairo
-	PackageKit -> libdnf
-	PackageKit -> systemd
+	PackageKit -> gcc
 	PackageKit -> sqlite
+	PackageKit -> dbus
+	PackageKit -> pango
+	PackageKit -> bash
+	PackageKit -> gstreamer1
+	PackageKit -> glib2
 	PyYAML
-	PyYAML -> libyaml
 	PyYAML -> glibc
 	PyYAML -> python3
+	PyYAML -> libyaml
 	SDL
 	SDL -> glibc
 	WALinuxAgent
+	WALinuxAgent -> python2
 	WALinuxAgent -> python36
 	WALinuxAgent -> WALinuxAgent
-	WALinuxAgent -> python2
 	Xaw3d
-	Xaw3d -> libXpm
-	Xaw3d -> libXt
-	Xaw3d -> libXext
-	Xaw3d -> libXmu
 	Xaw3d -> libX11
+	Xaw3d -> libXpm
+	Xaw3d -> libXext
+	Xaw3d -> libXt
+	Xaw3d -> libXmu
 	aajohan-comfortaa-fonts
 	abattis-cantarell-fonts
 	abrt
-	abrt -> glib2
 	abrt -> satyr
-	abrt -> libreport
-	abrt -> glibc
-	abrt -> cairo
-	abrt -> atk
 	abrt -> gdb
 	abrt -> libnotify
+	abrt -> libreport
 	abrt -> python2
+	abrt -> atk
+	abrt -> glib2
+	abrt -> cairo
+	abrt -> glibc
 	abrt -> pango
 	abrt -> gtk3
 	abrt-java-connector
 	accel-config
 	accountsservice
-	accountsservice -> glib2
-	accountsservice -> bash
-	accountsservice -> glibc
 	accountsservice -> polkit
+	accountsservice -> glib2
 	accountsservice -> gcc
-	accountsservice -> systemd
+	accountsservice -> bash
 	accountsservice -> libxcrypt
+	accountsservice -> glibc
+	accountsservice -> systemd
 	acl
-	acl -> glibc
 	acl -> attr
+	acl -> glibc
 	acpica-tools
 	acpid
-	acpid -> glibc
 	acpid -> bash
 	acpid -> systemd
+	acpid -> glibc
 	adcli
+	adcli -> glibc
 	adcli -> krb5
 	adcli -> openldap
-	adcli -> glibc
 	adcli -> e2fsprogs
 	adobe-mappings-cmap
 	adobe-mappings-pdf
@@ -152,48 +152,48 @@ digraph MyPicture {
 	amanda
 	amanda -> perl
 	anaconda
-	anaconda -> bash
-	anaconda -> rpm
-	anaconda -> pykickstart
-	anaconda -> libpwquality
-	anaconda -> python3
-	anaconda -> chrony
-	anaconda -> createrepo_c
 	anaconda -> systemd
-	anaconda -> yelp
-	anaconda -> audit
-	anaconda -> pyparted
-	anaconda -> pytz
-	anaconda -> libselinux
-	anaconda -> langtable
-	anaconda -> flatpak
-	anaconda -> tmux
+	anaconda -> glibc
+	anaconda -> libblockdev
+	anaconda -> isomd5sum
+	anaconda -> dbus
 	anaconda -> gdb
-	anaconda -> tigervnc
-	anaconda -> libteam
-	anaconda -> pygobject3
+	anaconda -> rpm
 	anaconda -> glib2
-	anaconda -> libtimezonemap
-	anaconda -> cairo
 	anaconda -> libgnomekbd
 	anaconda -> rsync
-	anaconda -> python2
-	anaconda -> libxklavier
+	anaconda -> pyparted
+	anaconda -> tigervnc
+	anaconda -> flatpak
 	anaconda -> realmd
-	anaconda -> pango
 	anaconda -> udisks2
-	anaconda -> isomd5sum
-	anaconda -> gtk3
-	anaconda -> libblockdev
-	anaconda -> NetworkManager
-	anaconda -> glibc
+	anaconda -> libpwquality
 	anaconda -> atk
-	anaconda -> keybinder3
-	anaconda -> dbus
+	anaconda -> createrepo_c
+	anaconda -> python3
+	anaconda -> tmux
+	anaconda -> gtk3
+	anaconda -> chrony
+	anaconda -> pytz
+	anaconda -> NetworkManager
+	anaconda -> cairo
+	anaconda -> bash
+	anaconda -> pykickstart
+	anaconda -> libtimezonemap
+	anaconda -> libteam
+	anaconda -> pango
+	anaconda -> libselinux
 	anaconda -> cracklib
-	anaconda -> dnf
 	anaconda -> libreport
+	anaconda -> langtable
 	anaconda -> kbd
+	anaconda -> dnf
+	anaconda -> python2
+	anaconda -> pygobject3
+	anaconda -> libxklavier
+	anaconda -> audit
+	anaconda -> keybinder3
+	anaconda -> yelp
 	anaconda-user-help
 	anolis-logos
 	anolis-release
@@ -214,269 +214,269 @@ digraph MyPicture {
 	apr
 	apr-util
 	arpwatch
-	arpwatch -> postfix
 	arpwatch -> libpcap
+	arpwatch -> postfix
+	arpwatch -> systemd
 	arpwatch -> bash
 	arpwatch -> glibc
-	arpwatch -> systemd
 	asciidoc
 	asciidoc -> vim
 	asciidoc -> python2
 	asciidoc -> graphviz
 	aspell
-	aspell -> bash
-	aspell -> texinfo
-	aspell -> gcc
-	aspell -> ncurses
 	aspell -> glibc
+	aspell -> bash
+	aspell -> gcc
+	aspell -> texinfo
+	aspell -> ncurses
 	aspell-en
 	at
-	at -> pam
 	at -> glibc
-	at -> bash
+	at -> pam
 	at -> libselinux
 	at -> systemd
+	at -> bash
 	at-spi2-atk
 	at-spi2-core
 	atk
-	atk -> glibc
 	atk -> glib2
+	atk -> glibc
 	atkmm
-	atkmm -> glib2
-	atkmm -> glibmm24
 	atkmm -> glibc
 	atkmm -> gcc
 	atkmm -> atk
+	atkmm -> glib2
+	atkmm -> glibmm24
 	atlas
 	atlas -> gcc
 	atlas -> glibc
 	attr
 	attr -> glibc
 	audit
-	audit -> openldap
-	audit -> initscripts
-	audit -> coreutils
-	audit -> systemd
-	audit -> python3
+	audit -> glibc
 	audit -> krb5
 	audit -> bash
-	audit -> glibc
+	audit -> systemd
+	audit -> initscripts
+	audit -> python3
+	audit -> openldap
+	audit -> coreutils
 	augeas
 	augeas -> glibc
 	augeas -> libxml2
+	augeas -> gcc
 	augeas -> readline
 	augeas -> libselinux
-	augeas -> gcc
 	authselect
-	authselect -> popt
-	authselect -> python2
-	authselect -> findutils
-	authselect -> sed
-	authselect -> glibc
-	authselect -> libselinux
-	authselect -> gawk
-	authselect -> coreutils
-	authselect -> systemd
-	authselect -> bash
 	authselect -> pam
+	authselect -> gawk
+	authselect -> sed
 	authselect -> grep
+	authselect -> popt
+	authselect -> bash
+	authselect -> libselinux
+	authselect -> glibc
+	authselect -> python2
+	authselect -> systemd
+	authselect -> coreutils
+	authselect -> findutils
 	autoconf
-	autoconf -> texinfo
-	autoconf -> emacs
-	autoconf -> perl
 	autoconf -> bash
+	autoconf -> emacs
+	autoconf -> texinfo
+	autoconf -> perl
 	autoconf -> m4
 	autoconf-archive
 	autofs
-	autofs -> glibc
-	autofs -> libnsl2
-	autofs -> systemd
-	autofs -> gawk
 	autofs -> sed
-	autofs -> grep
 	autofs -> zlib
+	autofs -> systemd
+	autofs -> bash
+	autofs -> openldap
+	autofs -> grep
+	autofs -> libxml2
 	autofs -> libtirpc
-	autofs -> kmod
+	autofs -> coreutils
+	autofs -> libnsl2
 	autofs -> krb5
 	autofs -> e2fsprogs
+	autofs -> kmod
 	autofs -> gcc
-	autofs -> bash
-	autofs -> coreutils
-	autofs -> libxml2
-	autofs -> openldap
+	autofs -> glibc
 	autofs -> xz
+	autofs -> gawk
 	autogen
 	automake
 	automake -> autoconf
-	automake -> perl
 	automake -> bash
+	automake -> perl
 	autotrace
 	autotrace -> pstoedit
 	avahi
-	avahi -> glibc
-	avahi -> gtk3
 	avahi -> coreutils
-	avahi -> libcap
-	avahi -> cairo
+	avahi -> glibc
 	avahi -> bash
-	avahi -> expat
-	avahi -> pango
-	avahi -> atk
+	avahi -> systemd
 	avahi -> glib2
 	avahi -> dbus
-	avahi -> systemd
-	avahi -> libdaemon
 	avahi -> python3
+	avahi -> pango
+	avahi -> libdaemon
+	avahi -> expat
+	avahi -> gtk3
+	avahi -> cairo
+	avahi -> libcap
+	avahi -> atk
 	awscli
 	babel
+	babel -> python3
 	babel -> pytz
 	babel -> python2
-	babel -> python3
 	babeltrace
+	babeltrace -> glib2
+	babeltrace -> glibc
 	babeltrace -> elfutils
 	babeltrace -> popt
-	babeltrace -> glibc
-	babeltrace -> glib2
 	babl
 	babl -> glibc
 	bacula
 	bacula -> libpq
-	bacula -> perl
 	bacula -> mtx
+	bacula -> perl
 	baobab
-	baobab -> gtk3
 	baobab -> glibc
 	baobab -> cairo
-	baobab -> glib2
 	baobab -> pango
+	baobab -> gtk3
+	baobab -> glib2
 	basesystem
-	basesystem -> filesystem
 	basesystem -> setup
+	basesystem -> filesystem
 	bash
-	bash -> glibc
 	bash -> filesystem
 	bash -> ncurses
+	bash -> glibc
 	bash-completion
 	bc
+	bc -> glibc
+	bc -> bash
 	bc -> readline
 	bc -> texinfo
 	bc -> ncurses
-	bc -> bash
-	bc -> glibc
 	bcc
 	bcc -> python2
-	bcc -> clang
 	bcc -> llvm
+	bcc -> clang
 	bind
 	bind -> glibc
-	bind -> systemd
-	bind -> libxml2
-	bind -> bash
-	bind -> libpq
-	bind -> openssl
-	bind -> zlib
-	bind -> krb5
-	bind -> python2
 	bind -> grep
-	bind -> libmaxminddb
-	bind -> libcap
 	bind -> coreutils
+	bind -> libcap
+	bind -> libxml2
+	bind -> python2
+	bind -> krb5
+	bind -> systemd
 	bind -> e2fsprogs
+	bind -> openssl
+	bind -> libpq
 	bind -> fstrm
+	bind -> bash
+	bind -> libmaxminddb
+	bind -> zlib
 	bind9.16
 	binutils
+	binutils -> coreutils
 	binutils -> gcc
 	binutils -> zlib
 	binutils -> glibc
-	binutils -> bash
 	binutils -> texinfo
 	binutils -> chkconfig
-	binutils -> coreutils
+	binutils -> bash
 	biosdevname
-	biosdevname -> zlib
-	biosdevname -> pciutils
 	biosdevname -> glibc
+	biosdevname -> pciutils
+	biosdevname -> zlib
 	bison
-	bison -> glibc
-	bison -> texinfo
 	bison -> m4
+	bison -> glibc
 	bison -> bash
+	bison -> texinfo
 	bitmap-fonts
 	blktrace
-	blktrace -> glibc
+	blktrace -> bash
 	blktrace -> sysstat
 	blktrace -> python3
 	blktrace -> librsvg2
-	blktrace -> bash
-	blktrace -> libtheora
 	blktrace -> libaio
+	blktrace -> libtheora
+	blktrace -> glibc
 	bluez
-	bluez -> bash
 	bluez -> cups
-	bluez -> glib2
 	bluez -> readline
-	bluez -> libical
+	bluez -> bash
 	bluez -> dbus
 	bluez -> glibc
+	bluez -> libical
 	bluez -> systemd
+	bluez -> glib2
 	blur-effect
 	bogofilter
 	bogofilter -> gsl
 	bolt
 	bolt -> polkit
-	bolt -> systemd
-	bolt -> gcc
-	bolt -> glibc
-	bolt -> glib2
 	bolt -> bash
+	bolt -> gcc
+	bolt -> glib2
+	bolt -> glibc
+	bolt -> systemd
 	boom-boot
 	boost
-	boost -> openmpi
+	boost -> glibc
 	boost -> bzip2
+	boost -> zlib
+	boost -> mpich
+	boost -> openmpi
 	boost -> gcc
 	boost -> icu
-	boost -> mpich
-	boost -> zlib
-	boost -> glibc
 	booth
 	booth -> pacemaker
 	bpftrace
+	bpftrace -> clang
 	bpftrace -> llvm
 	bpftrace -> bcc
-	bpftrace -> clang
 	brasero
-	brasero -> libburn
 	brasero -> gtk3
 	brasero -> libICE
+	brasero -> libisofs
+	brasero -> atk
 	brasero -> libcanberra
-	brasero -> cdrkit
+	brasero -> libSM
 	brasero -> gstreamer1
 	brasero -> libnotify
-	brasero -> tracker
-	brasero -> atk
+	brasero -> cdrkit
 	brasero -> pango
-	brasero -> libX11
+	brasero -> libburn
 	brasero -> nautilus
 	brasero -> cdrdao
-	brasero -> libisofs
 	brasero -> cairo
-	brasero -> libSM
+	brasero -> tracker
+	brasero -> libX11
 	breeze-icon-theme
 	brltty
-	brltty -> libX11
 	brltty -> libXt
-	brltty -> libXaw
-	brltty -> libXext
-	brltty -> python2
 	brltty -> libXtst
+	brltty -> python2
+	brltty -> libXext
+	brltty -> libXaw
+	brltty -> libX11
 	brotli
-	brotli -> glibc
 	brotli -> python2
+	brotli -> glibc
 	bubblewrap
-	bubblewrap -> libselinux
-	bubblewrap -> glibc
 	bubblewrap -> libcap
 	bubblewrap -> gcc
+	bubblewrap -> glibc
+	bubblewrap -> libselinux
 	byteman
 	byzanz
 	bzip2
@@ -488,205 +488,205 @@ digraph MyPicture {
 	c2esp -> jbigkit
 	ca-certificates
 	cachefilesd
-	cachefilesd -> bash
 	cachefilesd -> glibc
+	cachefilesd -> bash
 	cachefilesd -> systemd
 	cairo
 	cairo -> freetype
-	cairo -> pixman
-	cairo -> libXext
 	cairo -> libXrender
-	cairo -> glibc
 	cairo -> zlib
 	cairo -> fontconfig
-	cairo -> libxcb
-	cairo -> libX11
-	cairo -> libpng
 	cairo -> glib2
+	cairo -> libXext
+	cairo -> libX11
+	cairo -> glibc
+	cairo -> libpng
+	cairo -> libxcb
+	cairo -> pixman
 	cairomm
-	cairomm -> libpng
-	cairomm -> libXext
-	cairomm -> libXrender
-	cairomm -> zlib
 	cairomm -> gcc
+	cairomm -> libXrender
 	cairomm -> glibc
+	cairomm -> libXext
 	cairomm -> cairo
+	cairomm -> zlib
 	cairomm -> freetype
+	cairomm -> libpng
 	cairomm -> libX11
 	cdparanoia
 	cdrdao
-	cdrdao -> lame
 	cdrdao -> libao
-	cdrdao -> libmad
 	cdrdao -> libvorbis
+	cdrdao -> libmad
+	cdrdao -> lame
 	cdrkit
-	cdrkit -> perl
 	cdrkit -> cdparanoia
+	cdrkit -> perl
 	celt051
 	celt051 -> libogg
 	ceph
-	ceph -> boost
 	ceph -> nss
 	ceph -> nspr
+	ceph -> boost
 	certmonger
 	certmonger -> nss
 	certmonger -> nspr
 	chan
 	check
-	check -> bash
+	check -> texinfo
 	check -> glibc
 	check -> gcc
-	check -> texinfo
+	check -> bash
 	checkpolicy
 	checkpolicy -> glibc
 	cheese
-	cheese -> cheese
-	cheese -> clutter
-	cheese -> libdrm
-	cheese -> glibc
-	cheese -> libcanberra
-	cheese -> libXrandr
-	cheese -> libglvnd
-	cheese -> pango
-	cheese -> libXdamage
-	cheese -> libXfixes
 	cheese -> cogl
-	cheese -> libXcomposite
-	cheese -> glib2
-	cheese -> libxkbcommon
-	cheese -> libXi
-	cheese -> gtk3
-	cheese -> libXext
-	cheese -> libX11
-	cheese -> gstreamer1
-	cheese -> wayland
+	cheese -> libglvnd
+	cheese -> cheese
 	cheese -> atk
-	cheese -> cairo
+	cheese -> wayland
+	cheese -> libXi
+	cheese -> libX11
+	cheese -> clutter
 	cheese -> mesa
+	cheese -> libXext
+	cheese -> pango
+	cheese -> libcanberra
+	cheese -> gtk3
+	cheese -> cairo
+	cheese -> libXcomposite
+	cheese -> libXdamage
+	cheese -> gstreamer1
+	cheese -> glib2
+	cheese -> libXfixes
+	cheese -> libxkbcommon
+	cheese -> glibc
+	cheese -> libXrandr
+	cheese -> libdrm
 	chkconfig
-	chkconfig -> libsepol
-	chkconfig -> glibc
-	chkconfig -> newt
 	chkconfig -> libselinux
+	chkconfig -> newt
+	chkconfig -> glibc
 	chkconfig -> popt
+	chkconfig -> libsepol
 	chrome-gnome-shell
 	chrony
-	chrony -> systemd
-	chrony -> nettle
-	chrony -> glibc
-	chrony -> gnutls
 	chrony -> libedit
-	chrony -> libseccomp
 	chrony -> bash
 	chrony -> libcap
+	chrony -> libseccomp
+	chrony -> nettle
+	chrony -> systemd
+	chrony -> glibc
+	chrony -> gnutls
 	chrpath
 	chrpath -> glibc
 	cifs-utils
 	cim-schema
 	cjose
-	cjose -> openssl
 	cjose -> jansson
 	cjose -> glibc
+	cjose -> openssl
 	clang
 	cldr-emoji-annotation
 	clevis
-	clevis -> luksmeta
-	clevis -> udisks2
 	clevis -> jose
 	clevis -> jq
+	clevis -> luksmeta
+	clevis -> udisks2
 	cloud-init
 	clucene
 	clufter
 	clutter
 	clutter -> fontconfig
-	clutter -> libXcomposite
-	clutter -> libXi
-	clutter -> wayland
-	clutter -> cairo
-	clutter -> systemd
-	clutter -> libX11
-	clutter -> libXfixes
-	clutter -> libglvnd
+	clutter -> mesa
 	clutter -> atk
-	clutter -> gtk3
+	clutter -> libglvnd
+	clutter -> systemd
+	clutter -> libdrm
 	clutter -> libXext
+	clutter -> libxkbcommon
+	clutter -> libXi
+	clutter -> libXrandr
+	clutter -> libXdamage
+	clutter -> libX11
+	clutter -> gtk3
+	clutter -> cairo
+	clutter -> glib2
+	clutter -> cogl
 	clutter -> libinput
+	clutter -> libXfixes
 	clutter -> glibc
 	clutter -> freetype
-	clutter -> libXrandr
-	clutter -> libxkbcommon
+	clutter -> wayland
+	clutter -> libXcomposite
 	clutter -> pango
-	clutter -> glib2
-	clutter -> libXdamage
-	clutter -> libdrm
-	clutter -> mesa
-	clutter -> cogl
 	clutter-gst2
 	clutter-gst3
 	clutter-gtk
 	cmake
-	cmake -> ncurses
-	cmake -> python3
-	cmake -> zlib
-	cmake -> curl
 	cmake -> make
+	cmake -> python3
+	cmake -> glibc
 	cmake -> expat
 	cmake -> rpm
-	cmake -> glibc
+	cmake -> ncurses
+	cmake -> emacs
 	cmake -> gcc
 	cmake -> libarchive
-	cmake -> emacs
+	cmake -> curl
 	cmake -> vim
+	cmake -> zlib
 	cmake -> libuv
 	cockpit
-	cockpit -> glibc
-	cockpit -> NetworkManager
-	cockpit -> openssl
-	cockpit -> libssh
-	cockpit -> coreutils
-	cockpit -> systemd
-	cockpit -> bash
-	cockpit -> polkit
-	cockpit -> krb5
-	cockpit -> libpwquality
-	cockpit -> grep
-	cockpit -> pam
-	cockpit -> gcc
-	cockpit -> sos
 	cockpit -> glib2
-	cockpit -> gnutls
+	cockpit -> systemd
+	cockpit -> gcc
+	cockpit -> libssh
+	cockpit -> bash
+	cockpit -> NetworkManager
+	cockpit -> grep
+	cockpit -> coreutils
 	cockpit -> libxcrypt
+	cockpit -> openssl
+	cockpit -> sos
+	cockpit -> krb5
+	cockpit -> gnutls
+	cockpit -> polkit
+	cockpit -> pam
+	cockpit -> libpwquality
+	cockpit -> glibc
 	cockpit-appstream
 	cockpit-composer
 	cockpit-session-recording
 	codemodel
 	cogl
-	cogl -> wayland
-	cogl -> libXext
-	cogl -> libX11
-	cogl -> pango
-	cogl -> cairo
-	cogl -> glib2
-	cogl -> glibc
 	cogl -> libdrm
+	cogl -> glib2
 	cogl -> mesa
-	cogl -> libXrandr
-	cogl -> libXfixes
 	cogl -> libglvnd
 	cogl -> libXcomposite
+	cogl -> pango
+	cogl -> cairo
+	cogl -> glibc
+	cogl -> libX11
+	cogl -> libXfixes
 	cogl -> libXdamage
+	cogl -> wayland
+	cogl -> libXrandr
+	cogl -> libXext
 	color-filesystem
 	colord
-	colord -> polkit
-	colord -> sqlite
 	colord -> glibc
+	colord -> sqlite
+	colord -> polkit
+	colord -> bash
+	colord -> systemd
 	colord -> glib2
 	colord -> lcms2
-	colord -> systemd
 	colord -> libgusb
-	colord -> bash
-	colord -> libgudev
 	colord -> gcc
+	colord -> libgudev
 	colord-gtk
 	compat-libtiff3
 	conntrack-tools
@@ -696,171 +696,171 @@ digraph MyPicture {
 	convmv -> perl
 	copy-jdk-configs
 	coreutils
-	coreutils -> bash
-	coreutils -> acl
-	coreutils -> glibc
-	coreutils -> libselinux
-	coreutils -> attr
-	coreutils -> libcap
+	coreutils -> openssl
 	coreutils -> gmp
 	coreutils -> texinfo
+	coreutils -> libcap
 	coreutils -> ncurses
-	coreutils -> openssl
+	coreutils -> glibc
+	coreutils -> bash
+	coreutils -> libselinux
+	coreutils -> attr
+	coreutils -> acl
 	corosync
 	corosync -> kronosnet
 	corosync-qdevice
 	cpio
 	cpio -> glibc
 	cppcheck
-	cppcheck -> glibc
 	cppcheck -> pcre
+	cppcheck -> glibc
 	cppcheck -> gcc
 	cppunit
 	cppunit -> gcc
 	cppunit -> glibc
 	cracklib
-	cracklib -> bash
-	cracklib -> zlib
 	cracklib -> glibc
 	cracklib -> gzip
+	cracklib -> zlib
+	cracklib -> bash
 	crash
-	crash -> zlib
+	crash -> ncurses
 	crash -> glibc
 	crash -> lzo
+	crash -> zlib
 	crash -> zstd
-	crash -> snappy
 	crash -> binutils
-	crash -> ncurses
+	crash -> snappy
 	crash-gcore-command
 	crash-ptdump-command
 	crash-trace-command
 	crda
 	crda -> bash
-	crda -> iw
-	crda -> kernel
 	crda -> systemd
+	crda -> kernel
+	crda -> iw
 	createrepo_c
-	createrepo_c -> rpm
-	createrepo_c -> xz
-	createrepo_c -> bzip2
-	createrepo_c -> python2
-	createrepo_c -> file
-	createrepo_c -> libmodulemd
-	createrepo_c -> drpm
-	createrepo_c -> glib2
-	createrepo_c -> gcc
-	createrepo_c -> glibc
-	createrepo_c -> libxml2
-	createrepo_c -> sqlite
-	createrepo_c -> curl
 	createrepo_c -> openssl
+	createrepo_c -> curl
+	createrepo_c -> rpm
+	createrepo_c -> libmodulemd
 	createrepo_c -> zlib
+	createrepo_c -> sqlite
+	createrepo_c -> drpm
+	createrepo_c -> python2
+	createrepo_c -> xz
+	createrepo_c -> file
+	createrepo_c -> libxml2
+	createrepo_c -> glib2
+	createrepo_c -> glibc
+	createrepo_c -> gcc
+	createrepo_c -> bzip2
 	cronie
-	cronie -> sed
+	cronie -> libselinux
 	cronie -> systemd
+	cronie -> bash
+	cronie -> sed
+	cronie -> pam
 	cronie -> coreutils
 	cronie -> crontabs
-	cronie -> libselinux
-	cronie -> bash
 	cronie -> audit
 	cronie -> glibc
-	cronie -> pam
 	crontabs
 	crontabs -> sed
 	crontabs -> bash
 	crypto-policies
 	cryptsetup
-	cryptsetup -> libpwquality
-	cryptsetup -> glibc
-	cryptsetup -> popt
 	cryptsetup -> lvm2
+	cryptsetup -> glibc
+	cryptsetup -> libpwquality
 	cryptsetup -> openssl
+	cryptsetup -> popt
 	cscope
-	cscope -> emacs
 	cscope -> bash
-	cscope -> ncurses
+	cscope -> emacs
+	cscope -> coreutils
 	cscope -> ed
 	cscope -> glibc
-	cscope -> coreutils
+	cscope -> ncurses
 	ctags
 	ctags -> glibc
 	culmus-fonts
 	cups
-	cups -> gcc
-	cups -> glibc
-	cups -> avahi
-	cups -> sed
-	cups -> pam
-	cups -> bash
-	cups -> libusbx
-	cups -> cups
-	cups -> acl
-	cups -> chkconfig
-	cups -> gnutls
-	cups -> dbus
-	cups -> e2fsprogs
 	cups -> libxcrypt
-	cups -> zlib
-	cups -> systemd
+	cups -> glibc
 	cups -> krb5
+	cups -> acl
+	cups -> dbus
+	cups -> systemd
+	cups -> gnutls
+	cups -> bash
+	cups -> avahi
+	cups -> pam
+	cups -> gcc
+	cups -> libusbx
+	cups -> chkconfig
+	cups -> e2fsprogs
+	cups -> sed
 	cups -> grep
+	cups -> cups
+	cups -> zlib
 	cups-filters
 	cups-pk-helper
 	curl
-	curl -> nghttp2
-	curl -> curl
 	curl -> libssh
-	curl -> glibc
-	curl -> krb5
-	curl -> openssl
-	curl -> libidn2
-	curl -> openldap
-	curl -> e2fsprogs
 	curl -> zlib
+	curl -> libidn2
+	curl -> openssl
+	curl -> e2fsprogs
+	curl -> nghttp2
+	curl -> openldap
+	curl -> curl
+	curl -> glibc
 	curl -> libpsl
 	curl -> brotli
+	curl -> krb5
 	cyrus-imapd
 	cyrus-sasl
 	dav1d
 	dbus
-	dbus -> glibc
-	dbus -> dbus
-	dbus -> libselinux
-	dbus -> bash
-	dbus -> libX11
 	dbus -> expat
-	dbus -> glib2
+	dbus -> dbus
+	dbus -> libX11
+	dbus -> bash
 	dbus -> audit
+	dbus -> glib2
+	dbus -> glibc
 	dbus -> systemd
+	dbus -> libselinux
 	dbus-c++
 	dbus-glib
 	dbus-python
 	dbusmenu-qt
 	dbxtool
+	dbxtool -> glibc
 	dbxtool -> efivar
 	dbxtool -> systemd
 	dbxtool -> popt
 	dbxtool -> bash
-	dbxtool -> glibc
 	dconf
-	dconf -> dbus
 	dconf -> bash
 	dconf -> glibc
+	dconf -> dbus
 	dconf -> glib2
 	dconf-editor
 	dcraw
-	dcraw -> jasper
 	dcraw -> glibc
+	dcraw -> jasper
 	dcraw -> lcms2
 	dde
+	dde -> dtkgui
 	dde -> dtkcore
-	dde -> dtkwidget
-	dde -> startdde
-	dde -> lightdm
+	dde -> kwin
 	dde -> qtchooser
 	dde -> fcitx
-	dde -> kwin
-	dde -> dtkgui
+	dde -> startdde
+	dde -> lightdm
+	dde -> dtkwidget
 	dde-account-faces
 	dde-api
 	dde-calendar
@@ -912,35 +912,35 @@ digraph MyPicture {
 	deepin-turbo
 	deepin-wallpapers
 	dejagnu
-	dejagnu -> expect
 	dejagnu -> bash
+	dejagnu -> expect
 	dejavu-fonts
 	desktop-file-utils
 	devhelp
+	devhelp -> atk
 	devhelp -> pango
 	devhelp -> cairo
-	devhelp -> atk
 	devhelp -> gtk3
 	devhelp -> webkit2gtk3
 	device-mapper-multipath
 	device-mapper-persistent-data
 	dhcp
 	dhcp -> bash
-	dhcp -> ipcalc
-	dhcp -> e2fsprogs
-	dhcp -> libcap
-	dhcp -> glibc
-	dhcp -> gawk
-	dhcp -> krb5
-	dhcp -> systemd
-	dhcp -> iputils
-	dhcp -> openldap
-	dhcp -> openssl
-	dhcp -> bind
-	dhcp -> iproute
-	dhcp -> coreutils
-	dhcp -> sed
 	dhcp -> grep
+	dhcp -> gawk
+	dhcp -> systemd
+	dhcp -> iproute
+	dhcp -> krb5
+	dhcp -> iputils
+	dhcp -> sed
+	dhcp -> glibc
+	dhcp -> e2fsprogs
+	dhcp -> bind
+	dhcp -> coreutils
+	dhcp -> openldap
+	dhcp -> ipcalc
+	dhcp -> openssl
+	dhcp -> libcap
 	dialog
 	dialog -> ncurses
 	dialog -> glibc
@@ -962,14 +962,14 @@ digraph MyPicture {
 	dmidecode
 	dmidecode -> glibc
 	dnf
-	dnf -> libcomps
-	dnf -> python3
-	dnf -> gpgme
-	dnf -> rpm
-	dnf -> libmodulemd
-	dnf -> bash
-	dnf -> libreport
 	dnf -> libdnf
+	dnf -> libreport
+	dnf -> libmodulemd
+	dnf -> libcomps
+	dnf -> bash
+	dnf -> python3
+	dnf -> rpm
+	dnf -> gpgme
 	dnf -> systemd
 	dnf-plugins-core
 	dnssec-trigger
@@ -997,75 +997,75 @@ digraph MyPicture {
 	dovecot -> clucene
 	dovecot -> libpq
 	doxygen
-	doxygen -> gcc
 	doxygen -> perl
 	doxygen -> python3
+	doxygen -> gcc
 	doxygen -> glibc
 	dpa-ext-gnomekeyring
 	dpdk
-	dpdk -> glibc
 	dpdk -> python36
 	dpdk -> numactl
+	dpdk -> glibc
 	dracut
-	dracut -> bash
-	dracut -> tar
-	dracut -> filesystem
-	dracut -> gzip
-	dracut -> systemd
-	dracut -> kmod
-	dracut -> gcc
-	dracut -> dracut
-	dracut -> sed
-	dracut -> cpio
-	dracut -> curl
-	dracut -> xz
-	dracut -> libkcapi
-	dracut -> findutils
-	dracut -> glibc
-	dracut -> iputils
-	dracut -> coreutils
-	dracut -> lvm2
-	dracut -> grep
 	dracut -> iproute
+	dracut -> curl
+	dracut -> filesystem
+	dracut -> xz
+	dracut -> iputils
+	dracut -> lvm2
+	dracut -> findutils
+	dracut -> tar
+	dracut -> bash
+	dracut -> kmod
+	dracut -> systemd
+	dracut -> gzip
 	dracut -> libcap
+	dracut -> cpio
+	dracut -> libkcapi
+	dracut -> glibc
+	dracut -> dracut
+	dracut -> coreutils
+	dracut -> gcc
+	dracut -> sed
+	dracut -> grep
 	drpm
 	drpm -> zstd
-	drpm -> zlib
-	drpm -> openssl
-	drpm -> xz
-	drpm -> rpm
 	drpm -> glibc
 	drpm -> bzip2
+	drpm -> rpm
+	drpm -> xz
+	drpm -> openssl
+	drpm -> zlib
 	dtkcore
 	dtkcore -> libglvnd
 	dtkgui
 	dtkgui -> libglvnd
 	dtkgui -> dtkcore
 	dtkwidget
-	dtkwidget -> libglvnd
 	dtkwidget -> dtkcore
+	dtkwidget -> libglvnd
 	dtkwidget -> dtkgui
 	dump
-	dump -> libselinux
-	dump -> bzip2
-	dump -> zlib
 	dump -> star
+	dump -> e2fsprogs
+	dump -> zlib
+	dump -> bzip2
+	dump -> glibc
+	dump -> libselinux
+	dump -> readline
+	dump -> lzo
 	dump -> setup
 	dump -> ncurses
-	dump -> glibc
-	dump -> readline
-	dump -> e2fsprogs
-	dump -> lzo
 	dvd+rw-tools
 	dwz
 	dwz -> glibc
 	dwz -> elfutils
 	dyninst
-	dyninst -> tbb
 	dyninst -> boost
+	dyninst -> tbb
 	e2fsprogs
-	e2fsprogs -> glibc
 	e2fsprogs -> fuse
+	e2fsprogs -> glibc
 	ed
 	ed -> bash
 	ed -> glibc
@@ -1073,71 +1073,71 @@ digraph MyPicture {
 	edk2
 	efi-rpm-macros
 	efibootmgr
-	efibootmgr -> popt
 	efibootmgr -> glibc
+	efibootmgr -> popt
 	efibootmgr -> efivar
 	efivar
 	efivar -> glibc
 	egl-wayland
 	elfutils
-	elfutils -> zstd
-	elfutils -> xz
+	elfutils -> systemd
+	elfutils -> curl
 	elfutils -> zlib
-	elfutils -> sqlite
+	elfutils -> libarchive
+	elfutils -> bzip2
+	elfutils -> zstd
 	elfutils -> bash
 	elfutils -> libmicrohttpd
-	elfutils -> curl
+	elfutils -> xz
 	elfutils -> gcc
-	elfutils -> bzip2
+	elfutils -> sqlite
 	elfutils -> glibc
-	elfutils -> systemd
-	elfutils -> libarchive
 	elinks
 	emacs
-	emacs -> texinfo
-	emacs -> Xaw3d
-	emacs -> libXpm
-	emacs -> libXft
-	emacs -> libX11
-	emacs -> pkgconf
-	emacs -> libXinerama
-	emacs -> fontconfig
-	emacs -> libXcomposite
-	emacs -> libselinux
-	emacs -> libtiff
-	emacs -> glibc
-	emacs -> librsvg2
-	emacs -> libXmu
-	emacs -> libXext
-	emacs -> libotf
-	emacs -> pango
-	emacs -> gnutls
-	emacs -> bash
-	emacs -> libXt
-	emacs -> webkit2gtk3
-	emacs -> libXfixes
-	emacs -> cairo
-	emacs -> atk
 	emacs -> libsoup
-	emacs -> zlib
-	emacs -> gcc
-	emacs -> libpng
-	emacs -> ncurses
-	emacs -> giflib
-	emacs -> gpm
-	emacs -> libXrender
-	emacs -> libXrandr
-	emacs -> liblockfile
-	emacs -> libxcb
-	emacs -> glib2
-	emacs -> libSM
-	emacs -> chkconfig
-	emacs -> acl
-	emacs -> gtk3
-	emacs -> dbus
-	emacs -> libxml2
+	emacs -> libXft
 	emacs -> libICE
+	emacs -> zlib
 	emacs -> freetype
+	emacs -> libXt
+	emacs -> gtk3
+	emacs -> bash
+	emacs -> cairo
+	emacs -> libXrandr
+	emacs -> libXpm
+	emacs -> gcc
+	emacs -> glib2
+	emacs -> libXfixes
+	emacs -> Xaw3d
+	emacs -> liblockfile
+	emacs -> acl
+	emacs -> fontconfig
+	emacs -> chkconfig
+	emacs -> ncurses
+	emacs -> libSM
+	emacs -> librsvg2
+	emacs -> libXrender
+	emacs -> libselinux
+	emacs -> pango
+	emacs -> atk
+	emacs -> webkit2gtk3
+	emacs -> libXext
+	emacs -> libxml2
+	emacs -> libpng
+	emacs -> gpm
+	emacs -> glibc
+	emacs -> libtiff
+	emacs -> texinfo
+	emacs -> libotf
+	emacs -> libX11
+	emacs -> libxcb
+	emacs -> dbus
+	emacs -> libXinerama
+	emacs -> libXmu
+	emacs -> libXcomposite
+	emacs -> giflib
+	emacs -> pkgconf
+	emacs -> gnutls
 	enchant
 	enchant -> gcc
 	enchant -> glibc
@@ -1145,28 +1145,28 @@ digraph MyPicture {
 	enchant -> glib2
 	enchant2
 	enchant2 -> aspell
+	enchant2 -> glib2
+	enchant2 -> gcc
 	enchant2 -> glibc
 	enchant2 -> hunspell
-	enchant2 -> gcc
-	enchant2 -> glib2
 	enscript
 	enscript -> perl
 	environment-modules
 	eog
-	eog -> libexif
+	eog -> lcms2
 	eog -> librsvg2
 	eog -> cairo
+	eog -> exempi
 	eog -> gtk3
+	eog -> libexif
 	eog -> libpeas
 	eog -> libX11
-	eog -> exempi
-	eog -> lcms2
 	epel-aliyuncs-release
 	epel-release
 	epel-rpm-macros
 	esc
-	esc -> gtk3
 	esc -> nss
+	esc -> gtk3
 	esc -> nspr
 	esc -> gjs
 	espeak-ng
@@ -1177,65 +1177,65 @@ digraph MyPicture {
 	evemu
 	evemu -> libevdev
 	evince
-	evince -> libgxps
-	evince -> libspectre
-	evince -> atk
-	evince -> nautilus
-	evince -> cairo
-	evince -> gtk3
 	evince -> pango
 	evince -> libtiff
+	evince -> gtk3
+	evince -> nautilus
+	evince -> atk
+	evince -> cairo
+	evince -> libspectre
 	evince -> poppler
+	evince -> libgxps
 	evolution
-	evolution -> yelp
-	evolution -> sqlite
-	evolution -> atk
 	evolution -> libarchive
-	evolution -> highlight
-	evolution -> libgweather
-	evolution -> bogofilter
-	evolution -> libsecret
-	evolution -> openldap
-	evolution -> pango
-	evolution -> spamassassin
-	evolution -> libnotify
-	evolution -> nspr
-	evolution -> libxml2
-	evolution -> cairo
 	evolution -> libX11
-	evolution -> glib2
-	evolution -> gcr
-	evolution -> webkit2gtk3
-	evolution -> gtkspell3
-	evolution -> libsoup
-	evolution -> libcanberra
 	evolution -> libical
-	evolution -> glibc
-	evolution -> gvfs
+	evolution -> atk
+	evolution -> gcr
+	evolution -> nspr
+	evolution -> libnotify
+	evolution -> libgweather
+	evolution -> yelp
+	evolution -> openldap
 	evolution -> nss
+	evolution -> bogofilter
+	evolution -> highlight
+	evolution -> libsecret
 	evolution -> libpst
-	evolution -> gtk3
+	evolution -> gvfs
 	evolution -> psmisc
+	evolution -> sqlite
+	evolution -> libcanberra
+	evolution -> cairo
+	evolution -> gtkspell3
 	evolution -> enchant
+	evolution -> glibc
+	evolution -> gtk3
+	evolution -> libxml2
+	evolution -> pango
+	evolution -> webkit2gtk3
+	evolution -> libsoup
+	evolution -> spamassassin
+	evolution -> glib2
 	evolution-data-server
 	evolution-ews
 	evolution-mapi
 	exempi
-	exempi -> expat
-	exempi -> gcc
-	exempi -> glibc
 	exempi -> zlib
+	exempi -> gcc
+	exempi -> expat
+	exempi -> glibc
 	exiv2
-	exiv2 -> gcc
-	exiv2 -> expat
 	exiv2 -> glibc
 	exiv2 -> zlib
+	exiv2 -> gcc
+	exiv2 -> expat
 	expat
 	expat -> glibc
 	expect
 	expect -> tcl
-	expect -> glibc
 	expect -> bash
+	expect -> glibc
 	extra-cmake-modules
 	f32-backgrounds
 	faad2
@@ -1246,9 +1246,9 @@ digraph MyPicture {
 	fapolicyd -> python2
 	fapolicyd -> fapolicyd
 	farstream02
-	farstream02 -> gupnp
 	farstream02 -> gstreamer1
 	farstream02 -> libnice
+	farstream02 -> gupnp
 	fcitx
 	fcitx -> imsettings
 	fcitx-configtool
@@ -1257,132 +1257,132 @@ digraph MyPicture {
 	fence-agents
 	fence-virt
 	ffmpeg
-	ffmpeg -> libass
-	ffmpeg -> soxr
+	ffmpeg -> x264
+	ffmpeg -> dav1d
+	ffmpeg -> vmaf
+	ffmpeg -> libmodplug
+	ffmpeg -> aom
 	ffmpeg -> vapoursynth
 	ffmpeg -> zvbi
-	ffmpeg -> vmaf
-	ffmpeg -> x265
-	ffmpeg -> aom
+	ffmpeg -> soxr
+	ffmpeg -> libass
 	ffmpeg -> libmfx
-	ffmpeg -> zimg
-	ffmpeg -> srt
-	ffmpeg -> libmodplug
-	ffmpeg -> dav1d
-	ffmpeg -> libglvnd
-	ffmpeg -> x264
 	ffmpeg -> xvidcore
+	ffmpeg -> zimg
+	ffmpeg -> libglvnd
+	ffmpeg -> srt
+	ffmpeg -> x265
 	ffmpegthumbnailer
 	ffmpegthumbnailer -> ffmpeg
 	fftw
 	fido-device-onboard
 	file
 	file -> glibc
-	file -> python3
 	file -> zlib
+	file -> python3
 	file-roller
 	filesystem
-	filesystem -> setup
 	filesystem -> bash
+	filesystem -> setup
 	findutils
-	findutils -> glibc
-	findutils -> libselinux
 	findutils -> texinfo
 	findutils -> bash
+	findutils -> libselinux
+	findutils -> glibc
 	fio
-	fio -> pmdk
 	fio -> ceph
+	fio -> pmdk
 	fipscheck
 	fipscheck -> openssl
 	fipscheck -> glibc
 	firefox
-	firefox -> libxcb
-	firefox -> gtk3
-	firefox -> libXcursor
-	firefox -> libXrender
-	firefox -> atk
-	firefox -> pango
-	firefox -> cairo
-	firefox -> libXi
-	firefox -> libXext
+	firefox -> libXfixes
 	firefox -> libXt
-	firefox -> libXdamage
-	firefox -> nspr
+	firefox -> nss
+	firefox -> gtk3
+	firefox -> libXi
+	firefox -> cairo
+	firefox -> pango
+	firefox -> atk
+	firefox -> libXext
 	firefox -> libX11
 	firefox -> libXcomposite
-	firefox -> nss
-	firefox -> libXfixes
+	firefox -> libXcursor
+	firefox -> libXrender
+	firefox -> nspr
+	firefox -> libXdamage
+	firefox -> libxcb
 	firewalld
-	firewalld -> ipset
-	firewalld -> libnotify
-	firewalld -> dbus
-	firewalld -> nftables
-	firewalld -> iptables
-	firewalld -> python3
 	firewalld -> pygobject3
-	firewalld -> gtk3
-	firewalld -> systemd
 	firewalld -> bash
+	firewalld -> iptables
+	firewalld -> libnotify
+	firewalld -> gtk3
+	firewalld -> python3
+	firewalld -> systemd
+	firewalld -> dbus
+	firewalld -> ipset
+	firewalld -> nftables
 	flac
 	flac -> glibc
-	flac -> gcc
 	flac -> libogg
+	flac -> gcc
 	flatpak
-	flatpak -> libsoup
-	flatpak -> gcc
 	flatpak -> bubblewrap
-	flatpak -> libxml2
 	flatpak -> gpgme
-	flatpak -> fuse
-	flatpak -> bash
-	flatpak -> ostree
-	flatpak -> systemd
-	flatpak -> libarchive
-	flatpak -> dconf
+	flatpak -> libxml2
 	flatpak -> glib2
-	flatpak -> librsvg2
-	flatpak -> polkit
-	flatpak -> libXau
 	flatpak -> python3
 	flatpak -> zstd
-	flatpak -> libseccomp
+	flatpak -> bash
+	flatpak -> libsoup
+	flatpak -> ostree
 	flatpak -> glibc
+	flatpak -> librsvg2
+	flatpak -> dconf
+	flatpak -> libseccomp
+	flatpak -> libarchive
+	flatpak -> polkit
+	flatpak -> gcc
+	flatpak -> systemd
+	flatpak -> fuse
+	flatpak -> libXau
 	flatpak-builder
 	flex
-	flex -> m4
 	flex -> bash
-	flex -> glibc
+	flex -> m4
 	flex -> texinfo
+	flex -> glibc
 	fltk
-	fltk -> libX11
-	fltk -> libXft
-	fltk -> libXrender
-	fltk -> libXinerama
 	fltk -> libglvnd
-	fltk -> libXext
+	fltk -> libX11
 	fltk -> libXfixes
+	fltk -> libXrender
+	fltk -> libXext
 	fltk -> libXcursor
+	fltk -> libXft
+	fltk -> libXinerama
 	flute
 	flute -> sac
 	fontawesome-fonts
 	fontconfig
+	fontconfig -> grep
 	fontconfig -> coreutils
+	fontconfig -> glibc
 	fontconfig -> bash
+	fontconfig -> freetype
 	fontconfig -> fontpackages
 	fontconfig -> expat
-	fontconfig -> freetype
-	fontconfig -> grep
-	fontconfig -> glibc
 	fontforge
-	fontforge -> libuninameslist
 	fontforge -> autotrace
+	fontforge -> libuninameslist
 	fontpackages
 	fonts-tweak-tool
 	foomatic
-	foomatic -> colord
-	foomatic -> cups
-	foomatic -> perl
 	foomatic -> ghostscript
+	foomatic -> perl
+	foomatic -> cups
+	foomatic -> colord
 	foomatic-db
 	fpc-srpm-macros
 	fprintd
@@ -1390,40 +1390,40 @@ digraph MyPicture {
 	fprintd -> libfprint
 	freeglut
 	freeglut -> libX11
-	freeglut -> libXxf86vm
 	freeglut -> libXi
 	freeglut -> libICE
-	freeglut -> libglvnd
+	freeglut -> libXxf86vm
 	freeglut -> libXext
+	freeglut -> libglvnd
 	freeimage
 	freeimage -> jxrlib
 	freeipmi
-	freeipmi -> bash
-	freeipmi -> systemd
 	freeipmi -> libgcrypt
+	freeipmi -> systemd
 	freeipmi -> glibc
+	freeipmi -> bash
 	freerdp
-	freerdp -> libxkbfile
-	freerdp -> libXi
-	freerdp -> wayland
-	freerdp -> libXrender
-	freerdp -> libxkbcommon
-	freerdp -> lame
-	freerdp -> libXrandr
-	freerdp -> libX11
-	freerdp -> gsm
-	freerdp -> libXext
-	freerdp -> libXinerama
 	freerdp -> pulseaudio
-	freerdp -> libXv
+	freerdp -> libXi
 	freerdp -> libXfixes
+	freerdp -> lame
+	freerdp -> wayland
+	freerdp -> libXext
+	freerdp -> gsm
+	freerdp -> libXrandr
+	freerdp -> libXinerama
+	freerdp -> libxkbcommon
+	freerdp -> libxkbfile
+	freerdp -> libXv
+	freerdp -> libXrender
+	freerdp -> libX11
 	freerdp -> libXcursor
 	freetype
+	freetype -> libpng
+	freetype -> zlib
+	freetype -> bzip2
 	freetype -> glibc
 	freetype -> bash
-	freetype -> bzip2
-	freetype -> zlib
-	freetype -> libpng
 	frei0r-plugins
 	fribidi
 	fribidi -> glibc
@@ -1432,37 +1432,37 @@ digraph MyPicture {
 	fstrm
 	fstrm -> glibc
 	fuse
-	fuse -> which
 	fuse -> glibc
+	fuse -> which
 	fuse-overlayfs
 	fuse-sshfs
 	fwupd
-	fwupd -> glibc
-	fwupd -> libxmlb
-	fwupd -> libgudev
+	fwupd -> polkit
 	fwupd -> gcab
-	fwupd -> sqlite
+	fwupd -> libxmlb
+	fwupd -> glib2
 	fwupd -> bash
 	fwupd -> bubblewrap
-	fwupd -> libsmbios
-	fwupd -> efivar
 	fwupd -> gnutls
-	fwupd -> glib2
 	fwupd -> systemd
-	fwupd -> polkit
-	fwupd -> libarchive
-	fwupd -> gcc
+	fwupd -> libgudev
 	fwupd -> curl
+	fwupd -> libarchive
 	fwupd -> gpgme
+	fwupd -> libsmbios
+	fwupd -> sqlite
+	fwupd -> efivar
 	fwupd -> libgusb
+	fwupd -> gcc
+	fwupd -> glibc
 	fwupdate
-	fwupdate -> libsmbios
-	fwupdate -> glibc
-	fwupdate -> shim
-	fwupdate -> popt
-	fwupdate -> fwupd
-	fwupdate -> bash
 	fwupdate -> efivar
+	fwupdate -> glibc
+	fwupdate -> bash
+	fwupdate -> popt
+	fwupdate -> shim
+	fwupdate -> fwupd
+	fwupdate -> libsmbios
 	fxload
 	fxload -> glibc
 	fxload -> systemd
@@ -1474,32 +1474,32 @@ digraph MyPicture {
 	gavl -> libgdither
 	gawk
 	gawk -> mpfr
+	gawk -> gmp
+	gawk -> filesystem
+	gawk -> readline
 	gawk -> libsigsegv
 	gawk -> glibc
-	gawk -> readline
-	gawk -> filesystem
-	gawk -> gmp
 	gc
+	gc -> libatomic_ops
 	gc -> gcc
 	gc -> glibc
-	gc -> libatomic_ops
 	gcab
-	gcab -> glib2
-	gcab -> glibc
 	gcab -> gcc
 	gcab -> zlib
+	gcab -> glibc
+	gcab -> glib2
 	gcc
-	gcc -> texinfo
-	gcc -> gmp
-	gcc -> mpfr
 	gcc -> gcc
-	gcc -> zlib
-	gcc -> filesystem
-	gcc -> binutils
 	gcc -> bash
+	gcc -> mpfr
+	gcc -> zlib
+	gcc -> gmp
 	gcc -> libmpc
-	gcc -> isl
 	gcc -> glibc
+	gcc -> texinfo
+	gcc -> filesystem
+	gcc -> isl
+	gcc -> binutils
 	gcc-toolset-10
 	gcc-toolset-10-annobin
 	gcc-toolset-10-binutils
@@ -1541,48 +1541,48 @@ digraph MyPicture {
 	gcc-toolset-9-valgrind
 	gcr
 	gcr -> glib2
-	gcr -> cairo
-	gcr -> libgcrypt
 	gcr -> atk
-	gcr -> glibc
 	gcr -> pango
+	gcr -> cairo
 	gcr -> gtk3
+	gcr -> glibc
+	gcr -> libgcrypt
 	gd
+	gd -> libX11
+	gd -> libpng
 	gd -> libXpm
 	gd -> freetype
-	gd -> fontconfig
-	gd -> zlib
-	gd -> libwebp
-	gd -> libpng
-	gd -> libX11
-	gd -> libtiff
 	gd -> glibc
+	gd -> libwebp
+	gd -> fontconfig
+	gd -> libtiff
+	gd -> zlib
 	gdb
-	gdb -> ncurses
-	gdb -> bash
-	gdb -> mpfr
-	gdb -> libselinux
-	gdb -> elfutils
+	gdb -> zlib
 	gdb -> libipt
-	gdb -> babeltrace
-	gdb -> glibc
-	gdb -> python3
-	gdb -> readline
+	gdb -> ncurses
 	gdb -> guile
+	gdb -> mpfr
 	gdb -> xz
 	gdb -> gmp
-	gdb -> gcc
-	gdb -> expat
-	gdb -> zlib
+	gdb -> readline
 	gdb -> boost
+	gdb -> babeltrace
+	gdb -> glibc
+	gdb -> gcc
+	gdb -> bash
+	gdb -> python3
+	gdb -> expat
+	gdb -> libselinux
+	gdb -> elfutils
 	gdbm
-	gdbm -> readline
 	gdbm -> ncurses
+	gdbm -> readline
 	gdbm -> glibc
 	gdisk
 	gdisk -> gcc
-	gdisk -> ncurses
 	gdisk -> popt
+	gdisk -> ncurses
 	gdisk -> glibc
 	gdk-pixbuf2
 	gdm
@@ -1591,167 +1591,167 @@ digraph MyPicture {
 	gdm -> gtk3
 	gdm -> accountsservice
 	gdm -> libXau
-	gdm -> libxcb
 	gdm -> libX11
+	gdm -> libxcb
 	gedit
-	gedit -> libxml2
-	gedit -> libpeas
-	gedit -> gtksourceview3
-	gedit -> pango
-	gedit -> enchant2
-	gedit -> atk
-	gedit -> pygobject3
-	gedit -> glib2
 	gedit -> python2
-	gedit -> libX11
-	gedit -> bash
-	gedit -> zenity
-	gedit -> glibc
+	gedit -> enchant2
+	gedit -> gtksourceview3
 	gedit -> cairo
 	gedit -> python3
-	gedit -> gvfs
+	gedit -> libxml2
+	gedit -> pygobject3
 	gedit -> gtk3
+	gedit -> libX11
+	gedit -> libpeas
+	gedit -> atk
+	gedit -> pango
+	gedit -> gvfs
+	gedit -> zenity
+	gedit -> glibc
+	gedit -> bash
 	gedit -> gspell
+	gedit -> glib2
 	gedit-plugins
 	gegl
-	gegl -> dcraw
-	gegl -> jasper
-	gegl -> ilmbase
-	gegl -> cairo
-	gegl -> pango
-	gegl -> suitesparse
-	gegl -> libspiro
-	gegl -> babl
-	gegl -> librsvg2
-	gegl -> libopenraw
 	gegl -> SDL
+	gegl -> libspiro
+	gegl -> ilmbase
+	gegl -> libopenraw
+	gegl -> jasper
+	gegl -> babl
 	gegl -> OpenEXR
+	gegl -> pango
+	gegl -> dcraw
+	gegl -> cairo
+	gegl -> suitesparse
+	gegl -> librsvg2
 	gegl04
-	gegl04 -> OpenEXR
-	gegl04 -> libpng
+	gegl04 -> libwebp
 	gegl04 -> lcms2
-	gegl04 -> libtiff
-	gegl04 -> gcc
-	gegl04 -> pango
+	gegl04 -> cairo
 	gegl04 -> ilmbase
-	gegl04 -> LibRaw
-	gegl04 -> glib2
-	gegl04 -> glibc
 	gegl04 -> jasper
 	gegl04 -> SDL
-	gegl04 -> libwebp
-	gegl04 -> cairo
-	gegl04 -> babl
+	gegl04 -> pango
+	gegl04 -> OpenEXR
+	gegl04 -> glibc
 	gegl04 -> zlib
-	gegl04 -> librsvg2
+	gegl04 -> LibRaw
+	gegl04 -> babl
+	gegl04 -> gcc
 	gegl04 -> suitesparse
+	gegl04 -> libtiff
+	gegl04 -> libpng
+	gegl04 -> librsvg2
+	gegl04 -> glib2
 	genwqe-tools
 	geoclue2
+	geoclue2 -> avahi
+	geoclue2 -> glibc
+	geoclue2 -> libsoup
+	geoclue2 -> dbus
+	geoclue2 -> bash
 	geoclue2 -> gcc
 	geoclue2 -> ModemManager
 	geoclue2 -> glib2
-	geoclue2 -> bash
-	geoclue2 -> dbus
-	geoclue2 -> glibc
 	geoclue2 -> libnotify
-	geoclue2 -> libsoup
-	geoclue2 -> avahi
 	geoclue2 -> systemd
 	geocode-glib
 	gettext
-	gettext -> libxml2
 	gettext -> glibc
-	gettext -> bash
-	gettext -> libcroco
-	gettext -> glib2
-	gettext -> texinfo
-	gettext -> gcc
-	gettext -> libunistring
 	gettext -> ncurses
+	gettext -> libxml2
+	gettext -> libcroco
+	gettext -> libunistring
+	gettext -> texinfo
+	gettext -> glib2
+	gettext -> bash
+	gettext -> gcc
 	gfbgraph
-	gfbgraph -> glib2
 	gfbgraph -> glibc
+	gfbgraph -> glib2
 	gfbgraph -> libsoup
 	gfbgraph -> rest
 	gflags
 	gfs2-utils
 	ghc-srpm-macros
 	ghostscript
-	ghostscript -> libSM
-	ghostscript -> e2fsprogs
+	ghostscript -> fontconfig
 	ghostscript -> libtiff
 	ghostscript -> libXext
-	ghostscript -> libpaper
-	ghostscript -> jbig2dec
+	ghostscript -> libidn
 	ghostscript -> bash
-	ghostscript -> libX11
-	ghostscript -> libXt
-	ghostscript -> cups
-	ghostscript -> lcms2
-	ghostscript -> libpng
-	ghostscript -> zlib
-	ghostscript -> libICE
-	ghostscript -> krb5
-	ghostscript -> fontconfig
+	ghostscript -> libSM
+	ghostscript -> openjpeg2
 	ghostscript -> libijs
 	ghostscript -> libxcrypt
+	ghostscript -> libXt
 	ghostscript -> glibc
-	ghostscript -> libidn
 	ghostscript -> freetype
-	ghostscript -> openjpeg2
+	ghostscript -> cups
+	ghostscript -> krb5
+	ghostscript -> e2fsprogs
+	ghostscript -> libX11
+	ghostscript -> jbig2dec
+	ghostscript -> libICE
+	ghostscript -> lcms2
+	ghostscript -> libpng
+	ghostscript -> libpaper
+	ghostscript -> zlib
 	giflib
 	giflib -> glibc
 	gimp
 	gio-qt
 	git
-	git -> tk
 	git -> httpd
 	git -> subversion
+	git -> tk
 	git -> perl
 	git-lfs
 	gjs
-	gjs -> gcc
-	gjs -> pango
-	gjs -> readline
-	gjs -> mozjs60
 	gjs -> libXext
-	gjs -> atk
-	gjs -> glibc
-	gjs -> gtk3
-	gjs -> glib2
 	gjs -> libX11
+	gjs -> gtk3
 	gjs -> cairo
+	gjs -> mozjs60
+	gjs -> gcc
+	gjs -> readline
+	gjs -> glib2
+	gjs -> atk
 	gjs -> libffi
+	gjs -> glibc
+	gjs -> pango
 	glade
-	glade -> cairo
-	glade -> webkit2gtk3
 	glade -> pango
+	glade -> webkit2gtk3
 	glade -> gtk3
+	glade -> cairo
 	glib-networking
 	glib2
-	glib2 -> pcre
-	glib2 -> bash
-	glib2 -> glibc
 	glib2 -> gcc
-	glib2 -> gamin
-	glib2 -> zlib
-	glib2 -> libffi
-	glib2 -> gnutls
 	glib2 -> libselinux
+	glib2 -> libffi
+	glib2 -> gamin
+	glib2 -> glibc
+	glib2 -> zlib
+	glib2 -> bash
+	glib2 -> gnutls
+	glib2 -> pcre
 	glibc
 	glibc -> gd
-	glibc -> perl
-	glibc -> libxcrypt
-	glibc -> coreutils
-	glibc -> systemd
 	glibc -> libcap
-	glibc -> basesystem
-	glibc -> libselinux
 	glibc -> bash
-	glibc -> glibc
-	glibc -> tzdata
+	glibc -> systemd
 	glibc -> audit
+	glibc -> libxcrypt
+	glibc -> libselinux
+	glibc -> coreutils
 	glibc -> kernel
+	glibc -> perl
+	glibc -> glibc
+	glibc -> basesystem
+	glibc -> tzdata
 	glibmm24
 	glibmm24 -> glib2
 	glibmm24 -> glibc
@@ -1759,15 +1759,15 @@ digraph MyPicture {
 	glog
 	glog -> gflags
 	glusterfs
-	glusterfs -> systemd
-	glusterfs -> psmisc
 	glusterfs -> zlib
-	glusterfs -> openssl
-	glusterfs -> attr
-	glusterfs -> glibc
-	glusterfs -> libtirpc
+	glusterfs -> systemd
 	glusterfs -> bash
+	glusterfs -> openssl
+	glusterfs -> libtirpc
+	glusterfs -> glibc
 	glusterfs -> gcc
+	glusterfs -> psmisc
+	glusterfs -> attr
 	gmp
 	gmp -> glibc
 	gmp -> gcc
@@ -1806,44 +1806,44 @@ digraph MyPicture {
 	gnome-video-effects
 	gnu-free-fonts
 	gnupg2
-	gnupg2 -> gnutls
-	gnupg2 -> sqlite
-	gnupg2 -> readline
-	gnupg2 -> openldap
 	gnupg2 -> glibc
-	gnupg2 -> libusbx
-	gnupg2 -> zlib
-	gnupg2 -> bzip2
-	gnupg2 -> npth
-	gnupg2 -> bash
-	gnupg2 -> libksba
 	gnupg2 -> libassuan
+	gnupg2 -> sqlite
+	gnupg2 -> libksba
+	gnupg2 -> npth
+	gnupg2 -> readline
+	gnupg2 -> bash
+	gnupg2 -> libusbx
+	gnupg2 -> bzip2
+	gnupg2 -> openldap
 	gnupg2 -> libgcrypt
+	gnupg2 -> zlib
+	gnupg2 -> gnutls
 	gnuplot
-	gnuplot -> libXpm
-	gnuplot -> pango
-	gnuplot -> gd
-	gnuplot -> libX11
-	gnuplot -> cairo
+	gnuplot -> libwebp
 	gnuplot -> gnuplot
 	gnuplot -> libtiff
-	gnuplot -> libwebp
+	gnuplot -> libXpm
+	gnuplot -> cairo
+	gnuplot -> libX11
+	gnuplot -> gd
+	gnuplot -> pango
 	gnutls
-	gnutls -> glibc
-	gnutls -> libidn2
-	gnutls -> autogen
 	gnutls -> libunistring
 	gnutls -> gmp
-	gnutls -> unbound
 	gnutls -> nettle
+	gnutls -> unbound
 	gnutls -> libtasn1
+	gnutls -> autogen
+	gnutls -> glibc
+	gnutls -> libidn2
 	go-srpm-macros
 	gobject-introspection
 	golang
-	golang -> openssl
-	golang -> glibc
-	golang -> diffutils
 	golang -> gcc
+	golang -> diffutils
+	golang -> glibc
+	golang -> openssl
 	golang-dbus
 	golang-github-axgle-mahonia
 	golang-github-cryptix-wav
@@ -1865,11 +1865,11 @@ digraph MyPicture {
 	golang-x-text
 	golang-x-xerrors
 	gom
-	gom -> sqlite
+	gom -> glibc
 	gom -> python2
 	gom -> python3
+	gom -> sqlite
 	gom -> glib2
-	gom -> glibc
 	google-api-python-client
 	google-crosextra-caladea-fonts
 	google-crosextra-carlito-fonts
@@ -1877,86 +1877,86 @@ digraph MyPicture {
 	google-noto-fonts
 	google-roboto-slab-fonts
 	gpac
-	gpac -> xvidcore
-	gpac -> ffmpeg
-	gpac -> faad2
 	gpac -> libglvnd
+	gpac -> xvidcore
+	gpac -> faad2
+	gpac -> ffmpeg
 	gperf
-	gperf -> bash
 	gperf -> gcc
-	gperf -> texinfo
 	gperf -> glibc
+	gperf -> texinfo
+	gperf -> bash
 	gpgme
-	gpgme -> gcc
 	gpgme -> gnupg2
+	gpgme -> gcc
 	gpgme -> glibc
+	gpgme -> gpgme
 	gpgme -> python3
 	gpgme -> libassuan
-	gpgme -> gpgme
 	gpm
 	gpm -> linuxconsoletools
 	grafana
 	grafana-pcp
 	graphite2
-	graphite2 -> gcc
 	graphite2 -> glibc
+	graphite2 -> gcc
 	graphviz
-	graphviz -> libXt
-	graphviz -> libXrender
-	graphviz -> libXpm
-	graphviz -> libXaw
-	graphviz -> libICE
-	graphviz -> libXext
-	graphviz -> gtk2
-	graphviz -> pango
-	graphviz -> libXmu
-	graphviz -> libSM
-	graphviz -> gd
-	graphviz -> cairo
 	graphviz -> atk
+	graphviz -> cairo
+	graphviz -> libXrender
+	graphviz -> libXaw
+	graphviz -> libXext
 	graphviz -> libX11
+	graphviz -> libXt
+	graphviz -> libICE
 	graphviz -> librsvg2
+	graphviz -> gtk2
+	graphviz -> libSM
+	graphviz -> libXpm
 	graphviz -> ghostscript
+	graphviz -> pango
+	graphviz -> gd
+	graphviz -> libXmu
 	greenboot
 	greenboot -> greenboot
 	greenboot -> jq
 	grep
-	grep -> pcre
-	grep -> bash
-	grep -> texinfo
 	grep -> glibc
+	grep -> bash
+	grep -> pcre
+	grep -> texinfo
 	grilo
-	grilo -> gtk3
 	grilo -> liboauth
-	grilo -> glibc
-	grilo -> libsoup
 	grilo -> glib2
+	grilo -> libsoup
+	grilo -> gtk3
+	grilo -> glibc
 	grilo-plugins
 	groff
-	groff -> texinfo
-	groff -> glibc
+	groff -> bash
 	groff -> gawk
 	groff -> sed
-	groff -> gcc
 	groff -> coreutils
-	groff -> bash
+	groff -> gcc
+	groff -> texinfo
+	groff -> glibc
 	grub2
-	grub2 -> freetype
+	grub2 -> xz
 	grub2 -> grub2
-	grub2 -> gettext
+	grub2 -> rpm
+	grub2 -> which
 	grub2 -> glibc
 	grub2 -> file
-	grub2 -> dracut
-	grub2 -> which
+	grub2 -> gettext
 	grub2 -> bash
-	grub2 -> xz
+	grub2 -> freetype
+	grub2 -> dracut
 	grub2 -> lvm2
-	grub2 -> rpm
 	grubby
 	grubby -> rpm
 	grubby -> bash
-	grubby -> grub2
 	grubby -> glibc
+	grubby -> grub2
 	grubby -> findutils
 	gsettings-desktop-schemas
 	gsettings-qt
@@ -1966,220 +1966,220 @@ digraph MyPicture {
 	gsound
 	gsound -> libcanberra
 	gspell
+	gspell -> enchant2
 	gspell -> cairo
 	gspell -> atk
-	gspell -> glib2
 	gspell -> glibc
+	gspell -> glib2
 	gspell -> pango
-	gspell -> enchant2
 	gspell -> gtk3
 	gssdp
-	gssdp -> libsoup
-	gssdp -> dbus
 	gssdp -> glibc
+	gssdp -> dbus
+	gssdp -> libsoup
 	gssdp -> glib2
 	gssntlmssp
 	gssproxy
-	gssproxy -> popt
-	gssproxy -> e2fsprogs
-	gssproxy -> libselinux
-	gssproxy -> krb5
-	gssproxy -> libverto
+	gssproxy -> bash
 	gssproxy -> systemd
 	gssproxy -> keyutils
 	gssproxy -> glibc
-	gssproxy -> bash
+	gssproxy -> libverto
+	gssproxy -> popt
+	gssproxy -> libselinux
+	gssproxy -> e2fsprogs
+	gssproxy -> krb5
 	gstreamer1
 	gstreamer1 -> bash
-	gstreamer1 -> gcc
-	gstreamer1 -> glibc
 	gstreamer1 -> libcap
+	gstreamer1 -> glibc
 	gstreamer1 -> glib2
+	gstreamer1 -> gcc
 	gstreamer1-plugins-bad-free
 	gstreamer1-plugins-base
 	gstreamer1-plugins-good
 	gstreamer1-plugins-ugly-free
 	gtk-vnc
 	gtk2
-	gtk2 -> libXi
-	gtk2 -> gtk3
 	gtk2 -> bash
-	gtk2 -> cairo
-	gtk2 -> glib2
-	gtk2 -> libXext
-	gtk2 -> libXcomposite
 	gtk2 -> glibc
 	gtk2 -> libXinerama
-	gtk2 -> pango
-	gtk2 -> libXfixes
-	gtk2 -> atk
-	gtk2 -> libXdamage
-	gtk2 -> fontconfig
-	gtk2 -> libXcursor
-	gtk2 -> libtiff
-	gtk2 -> cups
-	gtk2 -> libX11
+	gtk2 -> glib2
 	gtk2 -> freetype
+	gtk2 -> libXfixes
+	gtk2 -> libXext
+	gtk2 -> libX11
+	gtk2 -> libtiff
+	gtk2 -> libXi
+	gtk2 -> pango
+	gtk2 -> libXdamage
+	gtk2 -> atk
+	gtk2 -> gtk3
+	gtk2 -> fontconfig
+	gtk2 -> cups
 	gtk2 -> libXrandr
 	gtk2 -> libXrender
+	gtk2 -> libXcomposite
+	gtk2 -> libXcursor
+	gtk2 -> cairo
 	gtk3
-	gtk3 -> glib2
-	gtk3 -> libXinerama
-	gtk3 -> freetype
-	gtk3 -> libXcursor
-	gtk3 -> cups
-	gtk3 -> colord
-	gtk3 -> libXfixes
-	gtk3 -> libxkbcommon
-	gtk3 -> libXdamage
-	gtk3 -> libepoxy
-	gtk3 -> rest
-	gtk3 -> libXcomposite
-	gtk3 -> libXext
-	gtk3 -> libXrandr
 	gtk3 -> fontconfig
-	gtk3 -> bash
-	gtk3 -> libXi
-	gtk3 -> libX11
-	gtk3 -> cairo
-	gtk3 -> atk
-	gtk3 -> wayland
-	gtk3 -> pango
 	gtk3 -> glibc
+	gtk3 -> libXrandr
+	gtk3 -> atk
+	gtk3 -> rest
+	gtk3 -> wayland
+	gtk3 -> colord
+	gtk3 -> cups
+	gtk3 -> cairo
+	gtk3 -> libXcursor
+	gtk3 -> freetype
+	gtk3 -> libepoxy
+	gtk3 -> libXdamage
+	gtk3 -> libXinerama
+	gtk3 -> libXext
+	gtk3 -> pango
+	gtk3 -> libxkbcommon
+	gtk3 -> libXi
+	gtk3 -> libXfixes
+	gtk3 -> bash
+	gtk3 -> libX11
+	gtk3 -> libXcomposite
+	gtk3 -> glib2
 	gtkmm24
 	gtkmm24 -> glibmm24
 	gtkmm24 -> cairo
-	gtkmm24 -> cairomm
-	gtkmm24 -> pango
 	gtkmm24 -> gtk2
-	gtkmm24 -> atk
-	gtkmm24 -> atkmm
 	gtkmm24 -> pangomm
+	gtkmm24 -> atkmm
+	gtkmm24 -> cairomm
+	gtkmm24 -> atk
+	gtkmm24 -> pango
 	gtkmm30
-	gtkmm30 -> glibmm24
 	gtkmm30 -> glib2
-	gtkmm30 -> gtk3
-	gtkmm30 -> cairomm
+	gtkmm30 -> glibmm24
 	gtkmm30 -> gcc
-	gtkmm30 -> atkmm
-	gtkmm30 -> pangomm
+	gtkmm30 -> cairomm
+	gtkmm30 -> gtk3
 	gtkmm30 -> glibc
+	gtkmm30 -> pangomm
+	gtkmm30 -> atkmm
 	gtksourceview3
 	gtksourceview3 -> libxml2
-	gtksourceview3 -> atk
-	gtksourceview3 -> pango
-	gtksourceview3 -> glib2
-	gtksourceview3 -> cairo
 	gtksourceview3 -> gtk3
+	gtksourceview3 -> atk
 	gtksourceview3 -> glibc
+	gtksourceview3 -> pango
+	gtksourceview3 -> cairo
+	gtksourceview3 -> glib2
 	gtkspell
-	gtkspell -> gtk2
-	gtkspell -> pango
-	gtkspell -> enchant
-	gtkspell -> cairo
 	gtkspell -> atk
+	gtkspell -> enchant
+	gtkspell -> pango
+	gtkspell -> cairo
+	gtkspell -> gtk2
 	gtkspell3
+	gtkspell3 -> cairo
 	gtkspell3 -> gtk3
-	gtkspell3 -> atk
 	gtkspell3 -> pango
 	gtkspell3 -> glib2
 	gtkspell3 -> enchant
-	gtkspell3 -> cairo
+	gtkspell3 -> atk
 	gtkspell3 -> glibc
 	guile
+	guile -> bash
+	guile -> gc
 	guile -> texinfo
+	guile -> libunistring
+	guile -> readline
 	guile -> ncurses
 	guile -> coreutils
-	guile -> gmp
-	guile -> readline
-	guile -> bash
-	guile -> libffi
-	guile -> libtool
-	guile -> libunistring
-	guile -> gc
 	guile -> glibc
 	guile -> libxcrypt
+	guile -> libffi
+	guile -> gmp
+	guile -> libtool
 	gupnp
-	gupnp -> libsoup
 	gupnp -> glibc
-	gupnp -> dbus
 	gupnp -> libxml2
-	gupnp -> gssdp
+	gupnp -> libsoup
+	gupnp -> dbus
 	gupnp -> glib2
+	gupnp -> gssdp
 	gupnp-av
 	gupnp-dlna
 	gupnp-igd
 	gutenprint
 	gutenprint -> gimp
-	gutenprint -> cairo
-	gutenprint -> atk
-	gutenprint -> cups
 	gutenprint -> pango
+	gutenprint -> cups
 	gutenprint -> gtk2
+	gutenprint -> atk
+	gutenprint -> cairo
 	gvfs
-	gvfs -> avahi
-	gvfs -> libcdio
-	gvfs -> udisks2
-	gvfs -> bash
+	gvfs -> libsoup
+	gvfs -> libxml2
+	gvfs -> libcap
 	gvfs -> libsecret
-	gvfs -> usbmuxd
-	gvfs -> glib2
+	gvfs -> bash
 	gvfs -> polkit
 	gvfs -> libgdata
-	gvfs -> systemd
 	gvfs -> libgudev
-	gvfs -> libsoup
-	gvfs -> glibc
-	gvfs -> libmtp
+	gvfs -> udisks2
+	gvfs -> usbmuxd
+	gvfs -> glib2
 	gvfs -> libplist
-	gvfs -> libgphoto2
 	gvfs -> libimobiledevice
-	gvfs -> libcap
-	gvfs -> libxml2
+	gvfs -> avahi
+	gvfs -> glibc
+	gvfs -> libcdio
+	gvfs -> libgphoto2
+	gvfs -> systemd
+	gvfs -> libmtp
 	gvfs -> gcr
 	gzip
-	gzip -> coreutils
-	gzip -> glibc
-	gzip -> bash
 	gzip -> texinfo
+	gzip -> bash
+	gzip -> glibc
+	gzip -> coreutils
 	hardlink
-	hardlink -> pcre2
 	hardlink -> glibc
+	hardlink -> pcre2
 	harfbuzz
-	harfbuzz -> freetype
-	harfbuzz -> glibc
-	harfbuzz -> gcc
-	harfbuzz -> icu
 	harfbuzz -> graphite2
+	harfbuzz -> glibc
 	harfbuzz -> glib2
+	harfbuzz -> icu
+	harfbuzz -> freetype
+	harfbuzz -> gcc
 	hdparm
 	hdparm -> glibc
 	hesiod
 	hesiod -> libidn
 	hexchat
-	hexchat -> pango
-	hexchat -> libnotify
-	hexchat -> gtk2
 	hexchat -> libcanberra
+	hexchat -> pango
+	hexchat -> gtk2
+	hexchat -> libnotify
 	hexchat -> libX11
 	hicolor-icon-theme
 	highlight
-	highlight -> gcc
 	highlight -> libglvnd
+	highlight -> gcc
 	highlight -> lua
 	highlight -> glibc
 	hostname
-	hostname -> bash
 	hostname -> glibc
+	hostname -> bash
 	hplip
-	hplip -> wget
 	hplip -> hplip
 	hplip -> cups
-	hplip -> python2
 	hplip -> pygobject3
+	hplip -> python2
+	hplip -> wget
 	hspell
-	hspell -> perl
 	hspell -> hunspell
+	hspell -> perl
 	htmlcxx
 	http-parser
 	httpd
@@ -2312,16 +2312,16 @@ digraph MyPicture {
 	hwinfo
 	hwinfo -> libx86emu
 	hwloc
-	hwloc -> ncurses
-	hwloc -> libX11
-	hwloc -> libXext
-	hwloc -> glibc
 	hwloc -> numactl
-	hwloc -> systemd
-	hwloc -> bash
-	hwloc -> libXNVCtrl
 	hwloc -> libtool
+	hwloc -> libXNVCtrl
+	hwloc -> libX11
 	hwloc -> cairo
+	hwloc -> libXext
+	hwloc -> bash
+	hwloc -> systemd
+	hwloc -> ncurses
+	hwloc -> glibc
 	hyphen
 	hyphen -> glibc
 	hyphen-as
@@ -2372,23 +2372,23 @@ digraph MyPicture {
 	hyphen-uk
 	i2c-tools
 	ibus
-	ibus -> cairo
+	ibus -> python2
 	ibus -> pygobject3
-	ibus -> glibc
-	ibus -> libnotify
 	ibus -> ibus
 	ibus -> dconf
-	ibus -> dbus
 	ibus -> libxkbcommon
-	ibus -> libXi
-	ibus -> gtk2
-	ibus -> python2
-	ibus -> glib2
-	ibus -> pango
-	ibus -> wayland
 	ibus -> gtk3
+	ibus -> pango
+	ibus -> gtk2
+	ibus -> glib2
+	ibus -> cairo
+	ibus -> wayland
+	ibus -> glibc
+	ibus -> libnotify
+	ibus -> libXi
 	ibus -> atk
 	ibus -> libX11
+	ibus -> dbus
 	ibus-hangul
 	ibus-kkc
 	ibus-libpinyin
@@ -2402,12 +2402,12 @@ digraph MyPicture {
 	icoutils
 	icoutils -> perl
 	icu
-	icu -> gcc
 	icu -> glibc
+	icu -> gcc
 	iio-sensor-proxy
 	ilmbase
-	ilmbase -> gcc
 	ilmbase -> glibc
+	ilmbase -> gcc
 	ima-evm-utils
 	imlib2
 	imlib2 -> libid3tag
@@ -2416,34 +2416,34 @@ digraph MyPicture {
 	iniparser
 	initial-setup
 	initscripts
-	initscripts -> gawk
-	initscripts -> glib2
-	initscripts -> filesystem
-	initscripts -> bc
-	initscripts -> setup
-	initscripts -> cpio
-	initscripts -> hostname
-	initscripts -> popt
-	initscripts -> glibc
-	initscripts -> iputils
-	initscripts -> iproute
-	initscripts -> dbus
-	initscripts -> bash
-	initscripts -> chkconfig
-	initscripts -> ipcalc
-	initscripts -> systemd
-	initscripts -> coreutils
-	initscripts -> sed
-	initscripts -> grep
-	initscripts -> findutils
 	initscripts -> kmod
+	initscripts -> sed
+	initscripts -> dbus
+	initscripts -> setup
+	initscripts -> hostname
+	initscripts -> glib2
+	initscripts -> coreutils
+	initscripts -> ipcalc
+	initscripts -> popt
+	initscripts -> filesystem
+	initscripts -> gawk
+	initscripts -> grep
+	initscripts -> iputils
+	initscripts -> bash
+	initscripts -> systemd
+	initscripts -> glibc
+	initscripts -> findutils
+	initscripts -> bc
+	initscripts -> cpio
+	initscripts -> chkconfig
+	initscripts -> iproute
 	intel-cmt-cat
 	intltool
-	intltool -> gettext
 	intltool -> automake
-	intltool -> perl
-	intltool -> bash
+	intltool -> gettext
 	intltool -> patch
+	intltool -> bash
+	intltool -> perl
 	iotop
 	iotop -> python3
 	ipcalc
@@ -2451,57 +2451,57 @@ digraph MyPicture {
 	ipmitool
 	ipmitool -> ipmitool
 	iproute
-	iproute -> bash
-	iproute -> libmnl
-	iproute -> psmisc
-	iproute -> iptables
-	iproute -> libbpf
-	iproute -> libdb
-	iproute -> libselinux
-	iproute -> libcap
 	iproute -> glibc
+	iproute -> libbpf
+	iproute -> libcap
+	iproute -> psmisc
+	iproute -> libmnl
+	iproute -> libselinux
+	iproute -> iptables
 	iproute -> elfutils
+	iproute -> libdb
+	iproute -> bash
 	iprutils
-	iprutils -> bash
 	iprutils -> ncurses
-	iprutils -> zlib
+	iprutils -> bash
 	iprutils -> glibc
+	iprutils -> zlib
 	ipset
-	ipset -> iptables
 	ipset -> glibc
 	ipset -> systemd
 	ipset -> libmnl
+	ipset -> iptables
 	ipset -> bash
 	iptables
-	iptables -> bash
-	iptables -> libnftnl
-	iptables -> libpcap
-	iptables -> iptables
-	iptables -> libmnl
-	iptables -> libnetfilter_conntrack
-	iptables -> glibc
-	iptables -> libnfnetlink
 	iptables -> systemd
+	iptables -> libnetfilter_conntrack
+	iptables -> iptables
+	iptables -> libnfnetlink
+	iptables -> libpcap
+	iptables -> glibc
+	iptables -> bash
+	iptables -> libmnl
+	iptables -> libnftnl
 	iptraf-ng
 	iptstate
-	iptstate -> gcc
-	iptstate -> glibc
 	iptstate -> ncurses
+	iptstate -> gcc
 	iptstate -> libnetfilter_conntrack
+	iptstate -> glibc
 	iptstate -> iptables
 	iputils
-	iputils -> libidn2
-	iputils -> openssl
 	iputils -> bash
+	iputils -> glibc
+	iputils -> openssl
+	iputils -> libidn2
 	iputils -> libcap
 	iputils -> systemd
-	iputils -> glibc
 	irqbalance
+	irqbalance -> bash
+	irqbalance -> numactl
 	irqbalance -> ncurses
 	irqbalance -> glibc
-	irqbalance -> numactl
 	irqbalance -> glib2
-	irqbalance -> bash
 	irssi
 	irssi -> perl
 	iscsi-initiator-utils
@@ -2515,8 +2515,8 @@ digraph MyPicture {
 	isomd5sum -> glibc
 	istack-commons
 	itstool
-	itstool -> libxml2
 	itstool -> python3
+	itstool -> libxml2
 	iw
 	iw -> libnl3
 	iw -> glibc
@@ -2559,9 +2559,9 @@ digraph MyPicture {
 	kabi-dw
 	kata-containers
 	kbd
-	kbd -> glibc
-	kbd -> bash
 	kbd -> pam
+	kbd -> bash
+	kbd -> glibc
 	kde-filesystem
 	kde-settings
 	kdecoration
@@ -2569,39 +2569,39 @@ digraph MyPicture {
 	kdump-anaconda-addon
 	keepalived
 	kernel
-	kernel -> python3
-	kernel -> openssl
-	kernel -> bzip2
-	kernel -> numactl
-	kernel -> libbpf
-	kernel -> babeltrace
-	kernel -> bash
-	kernel -> zlib
-	kernel -> libxcrypt
-	kernel -> coreutils
-	kernel -> slang
 	kernel -> xz
-	kernel -> pciutils
-	kernel -> zstd
+	kernel -> numactl
+	kernel -> slang
 	kernel -> dracut
-	kernel -> kernel
-	kernel -> ncurses
-	kernel -> glibc
-	kernel -> perl
+	kernel -> zlib
+	kernel -> libbpf
 	kernel -> systemd
+	kernel -> libxcrypt
+	kernel -> zstd
+	kernel -> openssl
+	kernel -> glibc
+	kernel -> ncurses
+	kernel -> perl
+	kernel -> python3
+	kernel -> coreutils
+	kernel -> kernel
 	kernel -> elfutils
+	kernel -> pciutils
 	kernel -> libcap
+	kernel -> bash
+	kernel -> babeltrace
+	kernel -> bzip2
 	kexec-tools
 	keybinder3
-	keybinder3 -> gtk3
-	keybinder3 -> glib2
-	keybinder3 -> libX11
-	keybinder3 -> libXext
 	keybinder3 -> pango
-	keybinder3 -> libXrender
-	keybinder3 -> cairo
-	keybinder3 -> atk
+	keybinder3 -> libXext
+	keybinder3 -> libX11
 	keybinder3 -> glibc
+	keybinder3 -> atk
+	keybinder3 -> cairo
+	keybinder3 -> glib2
+	keybinder3 -> gtk3
+	keybinder3 -> libXrender
 	keycloak-httpd-client-install
 	keyutils
 	keyutils -> bash
@@ -2659,54 +2659,54 @@ digraph MyPicture {
 	kf5-sonnet
 	kf5-syntax-highlighting
 	kmod
-	kmod -> glibc
-	kmod -> xz
-	kmod -> gcc
-	kmod -> zlib
-	kmod -> bash
 	kmod -> openssl
+	kmod -> glibc
+	kmod -> bash
+	kmod -> xz
+	kmod -> zlib
+	kmod -> gcc
 	kmod-kvdo
 	kpatch
-	kpatch -> python3
-	kpatch -> kmod
-	kpatch -> dnf
-	kpatch -> libdnf
 	kpatch -> binutils
 	kpatch -> bash
+	kpatch -> dnf
+	kpatch -> python3
+	kpatch -> libdnf
+	kpatch -> kmod
 	krb5
 	krb5 -> pam
 	krb5 -> libverto
 	krb5 -> openldap
-	krb5 -> coreutils
-	krb5 -> grep
-	krb5 -> sed
 	krb5 -> logrotate
-	krb5 -> openssl
-	krb5 -> words
-	krb5 -> keyutils
-	krb5 -> libselinux
-	krb5 -> gawk
-	krb5 -> bash
-	krb5 -> glibc
-	krb5 -> systemd
+	krb5 -> coreutils
 	krb5 -> krb5
+	krb5 -> openssl
+	krb5 -> keyutils
+	krb5 -> bash
+	krb5 -> systemd
+	krb5 -> sed
+	krb5 -> grep
 	krb5 -> e2fsprogs
+	krb5 -> libselinux
+	krb5 -> glibc
+	krb5 -> gawk
+	krb5 -> words
 	kronosnet
 	ksc
-	ksc -> binutils
+	ksc -> python3
 	ksc -> file
 	ksc -> kernel
 	ksc -> kmod
-	ksc -> python3
+	ksc -> binutils
 	kscreenlocker
 	kwin
-	kwin -> kscreenlocker
 	kwin -> kdecoration
+	kwin -> kscreenlocker
 	kyotocabinet
 	lame
 	langtable
-	langtable -> python3
 	langtable -> python2
+	langtable -> python3
 	lapack
 	lapack -> lapack
 	lasso
@@ -2715,20 +2715,20 @@ digraph MyPicture {
 	lcms2
 	lcms2 -> glibc
 	ldns
-	ldns -> openssl
 	ldns -> glibc
+	ldns -> openssl
 	ledmon
-	ledmon -> systemd
-	ledmon -> pciutils
 	ledmon -> glibc
 	ledmon -> sg3_utils
+	ledmon -> systemd
+	ledmon -> pciutils
 	leptonica
 	leptonica -> libwebp
-	leptonica -> libtiff
 	leptonica -> giflib
+	leptonica -> libtiff
 	less
-	less -> ncurses
 	less -> bash
+	less -> ncurses
 	less -> glibc
 	lftp
 	lftp -> perl
@@ -2737,8 +2737,8 @@ digraph MyPicture {
 	libICE
 	libICE -> glibc
 	libSM
-	libSM -> libICE
 	libSM -> glibc
+	libSM -> libICE
 	libX11
 	libX11 -> libxcb
 	libX11 -> glibc
@@ -2746,112 +2746,112 @@ digraph MyPicture {
 	libXNVCtrl -> libXext
 	libXNVCtrl -> libX11
 	libXScrnSaver
-	libXScrnSaver -> libXext
 	libXScrnSaver -> libX11
+	libXScrnSaver -> libXext
 	libXau
 	libXau -> glibc
 	libXaw
-	libXaw -> libX11
-	libXaw -> libXext
-	libXaw -> libXmu
-	libXaw -> libXt
 	libXaw -> libXpm
+	libXaw -> libXt
+	libXaw -> libXmu
+	libXaw -> libXext
+	libXaw -> libX11
 	libXaw -> glibc
 	libXcomposite
-	libXcomposite -> glibc
 	libXcomposite -> libX11
+	libXcomposite -> glibc
 	libXcursor
 	libXcursor -> libX11
-	libXcursor -> libXrender
-	libXcursor -> glibc
 	libXcursor -> libXfixes
+	libXcursor -> glibc
+	libXcursor -> libXrender
 	libXdamage
+	libXdamage -> glibc
 	libXdamage -> libX11
 	libXdamage -> libXfixes
-	libXdamage -> glibc
 	libXdmcp
 	libXdmcp -> glibc
 	libXext
-	libXext -> libX11
 	libXext -> glibc
+	libXext -> libX11
 	libXfixes
 	libXfixes -> libX11
 	libXfixes -> glibc
 	libXfont2
-	libXfont2 -> freetype
 	libXfont2 -> glibc
 	libXfont2 -> libfontenc
 	libXfont2 -> zlib
+	libXfont2 -> freetype
 	libXft
 	libXft -> libX11
 	libXft -> freetype
-	libXft -> fontconfig
 	libXft -> libXrender
+	libXft -> fontconfig
 	libXft -> glibc
 	libXi
+	libXi -> libX11
 	libXi -> libXext
 	libXi -> glibc
-	libXi -> libX11
 	libXinerama
-	libXinerama -> glibc
-	libXinerama -> libXext
 	libXinerama -> libX11
+	libXinerama -> libXext
+	libXinerama -> glibc
 	libXmu
-	libXmu -> glibc
 	libXmu -> libXt
-	libXmu -> libXext
+	libXmu -> glibc
 	libXmu -> libX11
+	libXmu -> libXext
 	libXp
 	libXp -> glibc
-	libXp -> libX11
-	libXp -> libXext
 	libXp -> libXau
+	libXp -> libXext
+	libXp -> libX11
 	libXpm
 	libXpm -> glibc
 	libXpm -> libX11
 	libXrandr
-	libXrandr -> libXrender
+	libXrandr -> libXext
 	libXrandr -> glibc
 	libXrandr -> libX11
-	libXrandr -> libXext
+	libXrandr -> libXrender
 	libXrender
-	libXrender -> glibc
 	libXrender -> libX11
+	libXrender -> glibc
 	libXres
+	libXres -> libX11
 	libXres -> libXext
 	libXres -> glibc
-	libXres -> libX11
 	libXt
-	libXt -> libX11
-	libXt -> libSM
 	libXt -> libICE
+	libXt -> libSM
+	libXt -> libX11
 	libXt -> glibc
 	libXtst
-	libXtst -> libX11
-	libXtst -> glibc
-	libXtst -> libXext
 	libXtst -> libXi
+	libXtst -> libX11
+	libXtst -> libXext
+	libXtst -> glibc
 	libXv
 	libXv -> glibc
-	libXv -> libX11
 	libXv -> libXext
+	libXv -> libX11
 	libXvMC
-	libXvMC -> glibc
-	libXvMC -> libXv
 	libXvMC -> libXext
 	libXvMC -> libX11
+	libXvMC -> libXv
+	libXvMC -> glibc
 	libXxf86dga
-	libXxf86dga -> libXext
 	libXxf86dga -> glibc
+	libXxf86dga -> libXext
 	libXxf86dga -> libX11
 	libXxf86misc
 	libXxf86misc -> glibc
 	libXxf86misc -> libXext
 	libXxf86misc -> libX11
 	libXxf86vm
+	libXxf86vm -> libXext
 	libXxf86vm -> glibc
 	libXxf86vm -> libX11
-	libXxf86vm -> libXext
 	libabw
 	libabw -> librevenge
 	libaio
@@ -2859,171 +2859,171 @@ digraph MyPicture {
 	libao
 	libao -> pulseaudio
 	libappindicator
-	libappindicator -> gtk3
 	libappindicator -> cairo
-	libappindicator -> atk
-	libappindicator -> libdbusmenu
 	libappindicator -> libindicator
+	libappindicator -> atk
 	libappindicator -> pango
+	libappindicator -> libdbusmenu
+	libappindicator -> gtk3
 	libappstream-glib
 	libarchive
 	libarchive -> openssl
+	libarchive -> zstd
+	libarchive -> glibc
+	libarchive -> bzip2
+	libarchive -> zlib
 	libarchive -> libxml2
 	libarchive -> acl
-	libarchive -> bzip2
-	libarchive -> lz4
-	libarchive -> zlib
-	libarchive -> glibc
-	libarchive -> zstd
 	libarchive -> xz
+	libarchive -> lz4
 	libass
 	libassuan
 	libassuan -> glibc
 	libasyncns
 	libasyncns -> glibc
 	libatasmart
-	libatasmart -> systemd
 	libatasmart -> glibc
+	libatasmart -> systemd
 	libatomic_ops
 	libatomic_ops -> glibc
 	libavc1394
 	libavc1394 -> libraw1394
 	libbase
 	libblockdev
-	libblockdev -> nss
-	libblockdev -> gcc
-	libblockdev -> cryptsetup
-	libblockdev -> nspr
-	libblockdev -> lvm2
-	libblockdev -> python2
-	libblockdev -> pygobject3
-	libblockdev -> mdadm
-	libblockdev -> libyaml
-	libblockdev -> libbytesize
-	libblockdev -> systemd
-	libblockdev -> gdisk
-	libblockdev -> glib2
-	libblockdev -> ndctl
 	libblockdev -> volume_key
-	libblockdev -> parted
+	libblockdev -> systemd
 	libblockdev -> python3
 	libblockdev -> kmod
+	libblockdev -> gdisk
+	libblockdev -> lvm2
+	libblockdev -> libbytesize
+	libblockdev -> mdadm
+	libblockdev -> nspr
+	libblockdev -> nss
+	libblockdev -> libyaml
+	libblockdev -> glib2
+	libblockdev -> gcc
+	libblockdev -> python2
 	libblockdev -> glibc
+	libblockdev -> ndctl
+	libblockdev -> pygobject3
+	libblockdev -> cryptsetup
+	libblockdev -> parted
 	libbpf
-	libbpf -> glibc
 	libbpf -> zlib
 	libbpf -> elfutils
+	libbpf -> glibc
 	libburn
 	libbytesize
+	libbytesize -> mpfr
+	libbytesize -> python2
+	libbytesize -> glibc
+	libbytesize -> python3
 	libbytesize -> gmp
 	libbytesize -> pcre
-	libbytesize -> python3
-	libbytesize -> mpfr
-	libbytesize -> glibc
-	libbytesize -> python2
 	libcacard
-	libcacard -> nss
 	libcacard -> nspr
+	libcacard -> nss
 	libcanberra
-	libcanberra -> gstreamer1
-	libcanberra -> gtk3
-	libcanberra -> pulseaudio
-	libcanberra -> systemd
-	libcanberra -> bash
-	libcanberra -> libvorbis
-	libcanberra -> cairo
 	libcanberra -> pango
-	libcanberra -> glibc
-	libcanberra -> libtool
-	libcanberra -> gtk2
-	libcanberra -> libtdb
 	libcanberra -> libX11
+	libcanberra -> libtool
+	libcanberra -> pulseaudio
+	libcanberra -> libvorbis
+	libcanberra -> gstreamer1
+	libcanberra -> gtk2
+	libcanberra -> glibc
 	libcanberra -> glib2
 	libcanberra -> atk
+	libcanberra -> libtdb
+	libcanberra -> bash
+	libcanberra -> cairo
+	libcanberra -> systemd
+	libcanberra -> gtk3
 	libcap
-	libcap -> gcc
 	libcap -> glibc
+	libcap -> gcc
 	libcap-ng
 	libcdio
+	libcdio -> ncurses
 	libcdio -> texinfo
-	libcdio -> glibc
 	libcdio -> gcc
 	libcdio -> bash
-	libcdio -> ncurses
+	libcdio -> glibc
 	libcdio-paranoia
 	libcdr
 	libcdr -> librevenge
 	libcdr -> lcms2
 	libcgroup
 	libcgroup -> glibc
-	libcgroup -> bash
-	libcgroup -> pam
 	libcgroup -> systemd
+	libcgroup -> pam
+	libcgroup -> bash
 	libchardet
 	libcmis
 	libcmis -> boost
 	libcomps
+	libcomps -> python3
 	libcomps -> libxml2
-	libcomps -> expat
 	libcomps -> zlib
 	libcomps -> glibc
-	libcomps -> python3
+	libcomps -> expat
 	libconfig
 	libconfig -> gcc
 	libconfig -> glibc
 	libcroco
-	libcroco -> libxml2
 	libcroco -> glib2
+	libcroco -> libxml2
 	libcroco -> glibc
 	libdaemon
 	libdaemon -> glibc
 	libdatrie
 	libdatrie -> glibc
 	libdazzle
-	libdazzle -> gtk3
 	libdazzle -> glib2
-	libdazzle -> cairo
-	libdazzle -> gcc
+	libdazzle -> gtk3
 	libdazzle -> pango
+	libdazzle -> gcc
 	libdazzle -> glibc
+	libdazzle -> cairo
 	libdb
 	libdb -> glibc
-	libdb -> openssl
 	libdb -> libdb
+	libdb -> openssl
 	libdbusmenu
 	libdbusmenu -> gtk3
+	libdbusmenu -> pango
 	libdbusmenu -> cairo
 	libdbusmenu -> atk
 	libdbusmenu -> libdbusmenu
-	libdbusmenu -> pango
 	libdc1394
 	libdc1394 -> libraw1394
 	libdmapsharing
-	libdmapsharing -> glib2
 	libdmapsharing -> avahi
-	libdmapsharing -> zlib
-	libdmapsharing -> libsoup
-	libdmapsharing -> glibc
+	libdmapsharing -> glib2
 	libdmapsharing -> gstreamer1
+	libdmapsharing -> zlib
+	libdmapsharing -> glibc
+	libdmapsharing -> libsoup
 	libdmx
 	libdmx -> libXext
 	libdmx -> libX11
 	libdnf
-	libdnf -> python3
 	libdnf -> rpm
-	libdnf -> glib2
-	libdnf -> libsolv
+	libdnf -> python3
 	libdnf -> glibc
 	libdnf -> gpgme
+	libdnf -> librepo
+	libdnf -> libdnf
 	libdnf -> libmodulemd
 	libdnf -> openssl
-	libdnf -> gcc
-	libdnf -> libdnf
-	libdnf -> librepo
+	libdnf -> glib2
+	libdnf -> libsolv
 	libdnf -> sqlite
+	libdnf -> gcc
 	libdrm
-	libdrm -> glibc
 	libdrm -> libpciaccess
+	libdrm -> glibc
 	libdv
 	libdvdnav
 	libdvdnav -> libdvdread
@@ -3037,8 +3037,8 @@ digraph MyPicture {
 	libecpg
 	libecpg -> libpq
 	libedit
-	libedit -> glibc
 	libedit -> ncurses
+	libedit -> glibc
 	libepoxy
 	libepoxy -> glibc
 	libepubgen
@@ -3055,144 +3055,144 @@ digraph MyPicture {
 	libevdev
 	libevdev -> glibc
 	libevent
-	libevent -> glibc
 	libevent -> openssl
+	libevent -> glibc
 	libexif
 	libexif -> glibc
 	libexttextcat
 	libfabric
-	libfabric -> libnl3
-	libfabric -> glibc
-	libfabric -> gcc
-	libfabric -> numactl
 	libfabric -> libpsm2
+	libfabric -> glibc
+	libfabric -> numactl
+	libfabric -> libnl3
+	libfabric -> gcc
 	libfastjson
 	libfastjson -> glibc
 	libffado
 	libffi
 	libffi -> glibc
 	libfontenc
-	libfontenc -> glibc
 	libfontenc -> zlib
+	libfontenc -> glibc
 	libfonts
 	libfonts -> libloader
 	libformula
 	libformula -> libbase
 	libfprint
-	libfprint -> pixman
 	libfprint -> nss
+	libfprint -> pixman
 	libfreehand
-	libfreehand -> lcms2
 	libfreehand -> librevenge
+	libfreehand -> lcms2
 	libgcrypt
 	libgcrypt -> glibc
 	libgdata
-	libgdata -> libsoup
-	libgdata -> libxml2
-	libgdata -> glib2
-	libgdata -> gcc
-	libgdata -> liboauth
 	libgdata -> gcr
+	libgdata -> liboauth
+	libgdata -> glib2
 	libgdata -> glibc
+	libgdata -> libxml2
+	libgdata -> gcc
+	libgdata -> libsoup
 	libgdither
 	libgdither -> glibc
 	libgee
 	libgexiv2
-	libgexiv2 -> glib2
-	libgexiv2 -> exiv2
-	libgexiv2 -> glibc
 	libgexiv2 -> gcc
+	libgexiv2 -> glibc
+	libgexiv2 -> exiv2
+	libgexiv2 -> glib2
 	libgit2
 	libgit2-glib
 	libglvnd
+	libglvnd -> mesa
 	libglvnd -> libX11
 	libglvnd -> glibc
-	libglvnd -> mesa
 	libglvnd -> libXext
 	libgnomekbd
-	libgnomekbd -> cairo
-	libgnomekbd -> libxklavier
-	libgnomekbd -> GConf2
+	libgnomekbd -> glib2
 	libgnomekbd -> pango
 	libgnomekbd -> atk
+	libgnomekbd -> libxklavier
 	libgnomekbd -> glibc
-	libgnomekbd -> glib2
 	libgnomekbd -> bash
-	libgnomekbd -> gtk3
+	libgnomekbd -> GConf2
 	libgnomekbd -> libX11
+	libgnomekbd -> cairo
+	libgnomekbd -> gtk3
 	libgovirt
 	libgovirt -> rest
 	libgpg-error
 	libgphoto2
-	libgphoto2 -> gd
-	libgphoto2 -> libexif
-	libgphoto2 -> bash
-	libgphoto2 -> lockdev
-	libgphoto2 -> glibc
 	libgphoto2 -> libusbx
+	libgphoto2 -> lockdev
+	libgphoto2 -> gd
+	libgphoto2 -> bash
+	libgphoto2 -> glibc
 	libgphoto2 -> libxml2
+	libgphoto2 -> libexif
 	libgphoto2 -> libtool
 	libgpod
-	libgpod -> libimobiledevice
 	libgpod -> libplist
+	libgpod -> libimobiledevice
 	libgsf
-	libgsf -> zlib
 	libgsf -> libxml2
-	libgsf -> glib2
 	libgsf -> glibc
+	libgsf -> zlib
 	libgsf -> bzip2
+	libgsf -> glib2
 	libgtop2
 	libgtop2 -> glibc
 	libgtop2 -> glib2
 	libgudev
-	libgudev -> glib2
 	libgudev -> systemd
 	libgudev -> glibc
+	libgudev -> glib2
 	libguestfs
 	libgusb
 	libgusb -> glib2
-	libgusb -> glibc
 	libgusb -> libusbx
+	libgusb -> glibc
 	libgweather
-	libgweather -> glibc
-	libgweather -> libxml2
-	libgweather -> gtk3
 	libgweather -> glib2
+	libgweather -> libxml2
 	libgweather -> libsoup
+	libgweather -> gtk3
+	libgweather -> glibc
 	libgxim
 	libgxps
 	libgxps -> cairo
-	libgxps -> lcms2
-	libgxps -> glib2
-	libgxps -> libarchive
-	libgxps -> libpng
 	libgxps -> glibc
+	libgxps -> glib2
 	libgxps -> freetype
 	libgxps -> libtiff
+	libgxps -> lcms2
+	libgxps -> libpng
+	libgxps -> libarchive
 	libhangul
 	libhbaapi
 	libhbaapi -> glibc
 	libhbalinux
-	libhbalinux -> systemd
-	libhbalinux -> libhbaapi
-	libhbalinux -> glibc
-	libhbalinux -> libpciaccess
 	libhbalinux -> grep
 	libhbalinux -> bash
+	libhbalinux -> libhbaapi
+	libhbalinux -> systemd
+	libhbalinux -> glibc
+	libhbalinux -> libpciaccess
 	libhugetlbfs
-	libhugetlbfs -> bash
-	libhugetlbfs -> glibc
 	libhugetlbfs -> python3
+	libhugetlbfs -> glibc
+	libhugetlbfs -> bash
 	libical
-	libical -> icu
 	libical -> tzdata
+	libical -> icu
 	libical -> glibc
 	libical -> gcc
 	libid3tag
 	libidn
 	libidn -> emacs
-	libidn -> bash
 	libidn -> glibc
+	libidn -> bash
 	libidn -> texinfo
 	libidn2
 	libidn2 -> glibc
@@ -3204,30 +3204,30 @@ digraph MyPicture {
 	libijs
 	libijs -> glibc
 	libimobiledevice
+	libimobiledevice -> glibc
+	libimobiledevice -> libgcrypt
 	libimobiledevice -> libtasn1
 	libimobiledevice -> libusbmuxd
-	libimobiledevice -> libplist
 	libimobiledevice -> gnutls
-	libimobiledevice -> libgcrypt
-	libimobiledevice -> glibc
+	libimobiledevice -> libplist
 	libindicator
 	libindicator -> gtk3
 	libinput
 	libinput -> glibc
-	libinput -> libevdev
+	libinput -> mtdev
 	libinput -> bash
-	libinput -> libwacom
 	libinput -> libinput
 	libinput -> systemd
-	libinput -> mtdev
+	libinput -> libwacom
+	libinput -> libevdev
 	libipt
 	libipt -> glibc
 	libiptcdata
 	libiptcdata -> glibc
 	libisoburn
-	libisoburn -> libisoburn
-	libisoburn -> libisofs
 	libisoburn -> libburn
+	libisoburn -> libisofs
+	libisoburn -> libisoburn
 	libisofs
 	libjpeg-turbo
 	libkcapi
@@ -3236,10 +3236,10 @@ digraph MyPicture {
 	libkeepalive
 	libkeepalive -> glibc
 	libkkc
-	libkkc -> marisa
-	libkkc -> skkdic
-	libkkc -> libgee
 	libkkc -> libkkc
+	libkkc -> marisa
+	libkkc -> libgee
+	libkkc -> skkdic
 	libkkc-data
 	libksba
 	libksba -> glibc
@@ -3247,21 +3247,21 @@ digraph MyPicture {
 	liblangtag -> liblangtag
 	liblayout
 	liblayout -> libbase
-	liblayout -> libfonts
 	liblayout -> sac
 	liblayout -> flute
-	liblayout -> librepository
 	liblayout -> libloader
+	liblayout -> libfonts
+	liblayout -> librepository
 	libldb
-	libldb -> popt
-	libldb -> libtevent
 	libldb -> lmdb
-	libldb -> python3
 	libldb -> glibc
-	libldb -> openldap
-	libldb -> libldb
+	libldb -> libtevent
 	libldb -> libtalloc
+	libldb -> popt
+	libldb -> libldb
+	libldb -> python3
 	libldb -> libtdb
+	libldb -> openldap
 	libloader
 	libloader -> libbase
 	liblockfile
@@ -3270,57 +3270,57 @@ digraph MyPicture {
 	liblognorm -> libfastjson
 	liblognorm -> libestr
 	liblouis
-	liblouis -> python2
 	liblouis -> liblouis
+	liblouis -> python2
 	libmad
 	libmatchbox
+	libmatchbox -> libXext
+	libmatchbox -> libX11
 	libmatchbox -> pango
 	libmatchbox -> libXft
-	libmatchbox -> libX11
-	libmatchbox -> libXext
 	libmaxminddb
 	libmaxminddb -> glibc
 	libmbim
-	libmbim -> glibc
-	libmbim -> glib2
 	libmbim -> bash
-	libmbim -> gcc
 	libmbim -> libmbim
+	libmbim -> glib2
+	libmbim -> glibc
+	libmbim -> gcc
 	libmediaart
-	libmediaart -> glib2
 	libmediaart -> glibc
+	libmediaart -> glib2
 	libmediainfo
 	libmediainfo -> libzen
 	libmemcached
 	libmemcached -> libmemcached
 	libmetalink
-	libmetalink -> glibc
 	libmetalink -> expat
+	libmetalink -> glibc
 	libmfx
 	libmicrohttpd
-	libmicrohttpd -> texinfo
-	libmicrohttpd -> gnutls
 	libmicrohttpd -> glibc
+	libmicrohttpd -> gnutls
+	libmicrohttpd -> texinfo
 	libmng
 	libmng -> lcms2
 	libmnl
 	libmnl -> glibc
 	libmodman
-	libmodman -> gcc
 	libmodman -> glibc
+	libmodman -> gcc
 	libmodplug
 	libmodulemd
-	libmodulemd -> python2
-	libmodulemd -> file
-	libmodulemd -> gcc
-	libmodulemd -> libyaml
-	libmodulemd -> rpm
 	libmodulemd -> glib2
+	libmodulemd -> gcc
+	libmodulemd -> file
 	libmodulemd -> glibc
+	libmodulemd -> rpm
+	libmodulemd -> libyaml
+	libmodulemd -> python2
 	libmpc
-	libmpc -> mpfr
-	libmpc -> gmp
 	libmpc -> glibc
+	libmpc -> gmp
+	libmpc -> mpfr
 	libmspack
 	libmspack -> glibc
 	libmspub
@@ -3334,51 +3334,51 @@ digraph MyPicture {
 	libndp -> glibc
 	libnet
 	libnetfilter_conntrack
-	libnetfilter_conntrack -> glibc
 	libnetfilter_conntrack -> libnfnetlink
 	libnetfilter_conntrack -> libmnl
+	libnetfilter_conntrack -> glibc
 	libnetfilter_cthelper
-	libnetfilter_cthelper -> glibc
 	libnetfilter_cthelper -> libmnl
+	libnetfilter_cthelper -> glibc
 	libnetfilter_cttimeout
-	libnetfilter_cttimeout -> glibc
 	libnetfilter_cttimeout -> libmnl
+	libnetfilter_cttimeout -> glibc
 	libnetfilter_queue
+	libnetfilter_queue -> glibc
 	libnetfilter_queue -> libmnl
 	libnetfilter_queue -> libnfnetlink
-	libnetfilter_queue -> glibc
 	libnfnetlink
 	libnfnetlink -> glibc
 	libnftnl
-	libnftnl -> glibc
 	libnftnl -> libmnl
+	libnftnl -> glibc
 	libnice
-	libnice -> gupnp
 	libnice -> gstreamer1
+	libnice -> gupnp
 	libnl3
 	libnl3 -> gcc
-	libnl3 -> python3
 	libnl3 -> glibc
+	libnl3 -> python3
 	libnma
-	libnma -> glib2
-	libnma -> cairo
 	libnma -> gtk3
-	libnma -> gcc
 	libnma -> glibc
+	libnma -> glib2
 	libnma -> NetworkManager
+	libnma -> cairo
 	libnma -> gcr
+	libnma -> gcc
 	libnotify
-	libnotify -> glibc
 	libnotify -> glib2
+	libnotify -> glibc
 	libnsl2
 	libnsl2 -> libtirpc
 	libnsl2 -> glibc
 	libnumbertext
 	liboauth
+	liboauth -> nspr
+	liboauth -> nss
 	liboauth -> curl
 	liboauth -> glibc
-	liboauth -> nss
-	liboauth -> nspr
 	libodfgen
 	libodfgen -> librevenge
 	libogg
@@ -3387,266 +3387,266 @@ digraph MyPicture {
 	liborcus
 	liborcus -> boost
 	libosinfo
-	libosinfo -> glib2
+	libosinfo -> libsoup
+	libosinfo -> gcc
 	libosinfo -> libxml2
 	libosinfo -> glibc
-	libosinfo -> libsoup
 	libosinfo -> hwdata
-	libosinfo -> gcc
+	libosinfo -> glib2
 	libosinfo -> libxslt
 	libotf
-	libotf -> libX11
 	libotf -> libXt
-	libotf -> libXmu
 	libotf -> libXaw
-	libotf -> glibc
-	libotf -> libSM
 	libotf -> libICE
 	libotf -> freetype
+	libotf -> libSM
+	libotf -> libXmu
+	libotf -> libX11
+	libotf -> glibc
 	libpagemaker
 	libpagemaker -> librevenge
 	libpaper
-	libpaper -> bash
 	libpaper -> glibc
+	libpaper -> bash
 	libpcap
 	libpcap -> glibc
 	libpciaccess
 	libpciaccess -> glibc
 	libpciaccess -> hwdata
 	libpeas
-	libpeas -> cairo
-	libpeas -> glib2
-	libpeas -> pango
 	libpeas -> glibc
 	libpeas -> gtk3
-	libpeas -> pygobject3
 	libpeas -> python3
 	libpeas -> atk
+	libpeas -> cairo
+	libpeas -> pango
+	libpeas -> pygobject3
+	libpeas -> glib2
 	libpfm
 	libpinyin
-	libpinyin -> kyotocabinet
 	libpinyin -> libpinyin
+	libpinyin -> kyotocabinet
 	libpipeline
 	libpipeline -> glibc
 	libplist
-	libplist -> glibc
 	libplist -> gcc
+	libplist -> glibc
 	libpng
-	libpng -> glibc
 	libpng -> zlib
+	libpng -> glibc
 	libpng12
 	libpq
 	libproxy
-	libproxy -> python3
-	libproxy -> webkit2gtk3
-	libproxy -> glibc
-	libproxy -> gcc
 	libproxy -> libmodman
+	libproxy -> webkit2gtk3
 	libproxy -> libproxy
+	libproxy -> glibc
+	libproxy -> python3
+	libproxy -> gcc
 	libpsl
 	libpsl -> libidn2
-	libpsl -> glibc
 	libpsl -> libunistring
+	libpsl -> glibc
 	libpsm2
-	libpsm2 -> glibc
 	libpsm2 -> numactl
+	libpsm2 -> glibc
 	libpsm2 -> systemd
 	libpsm2 -> bash
 	libpst
 	libpwquality
-	libpwquality -> libpwquality
-	libpwquality -> pam
-	libpwquality -> glibc
-	libpwquality -> cracklib
 	libpwquality -> python3
+	libpwquality -> glibc
+	libpwquality -> pam
+	libpwquality -> libpwquality
+	libpwquality -> cracklib
 	libqb
 	libqb -> glibc
 	libqmi
+	libqmi -> libqmi
+	libqmi -> libgudev
+	libqmi -> bash
 	libqmi -> libmbim
 	libqmi -> glib2
-	libqmi -> libgudev
-	libqmi -> libqmi
-	libqmi -> bash
-	libqmi -> glibc
 	libqmi -> gcc
+	libqmi -> glibc
 	libqrtr-glib
 	libqtxdg
 	libquvi
-	libquvi -> libgcrypt
-	libquvi -> curl
-	libquvi -> glib2
-	libquvi -> glibc
 	libquvi -> libproxy
 	libquvi -> lua
+	libquvi -> glibc
+	libquvi -> libgcrypt
+	libquvi -> glib2
+	libquvi -> curl
 	libquvi-scripts
 	libqxp
 	libqxp -> librevenge
 	librabbitmq
-	librabbitmq -> openssl
 	librabbitmq -> glibc
+	librabbitmq -> openssl
 	libraw1394
 	librdkafka
 	librelp
 	libreoffice
-	libreoffice -> libX11
-	libreoffice -> neon
-	libreoffice -> gtk3
-	libreoffice -> libmwaw
-	libreoffice -> librevenge
-	libreoffice -> dconf
-	libreoffice -> lpsolve
-	libreoffice -> hyphen
-	libreoffice -> hspell
-	libreoffice -> redland
-	libreoffice -> nspr
-	libreoffice -> libodfgen
-	libreoffice -> atk
-	libreoffice -> python2
-	libreoffice -> gdb
-	libreoffice -> libqxp
-	libreoffice -> raptor2
-	libreoffice -> libwpg
 	libreoffice -> poppler
-	libreoffice -> xmlsec1
-	libreoffice -> libepubgen
+	libreoffice -> libnumbertext
+	libreoffice -> redland
+	libreoffice -> clucene
+	libreoffice -> lpsolve
+	libreoffice -> libmwaw
+	libreoffice -> pango
+	libreoffice -> libcdr
+	libreoffice -> libexttextcat
+	libreoffice -> gstreamer1
+	libreoffice -> libXinerama
+	libreoffice -> libvisio
+	libreoffice -> librevenge
+	libreoffice -> libzmf
+	libreoffice -> libwpd
+	libreoffice -> atk
+	libreoffice -> raptor2
 	libreoffice -> libXext
-	libreoffice -> libXrandr
+	libreoffice -> libepoxy
+	libreoffice -> libwpg
+	libreoffice -> dconf
 	libreoffice -> liblangtag
 	libreoffice -> hunspell
-	libreoffice -> libvisio
-	libreoffice -> libICE
-	libreoffice -> libXrender
-	libreoffice -> libwps
-	libreoffice -> libexttextcat
-	libreoffice -> liborcus
-	libreoffice -> clucene
-	libreoffice -> pango
-	libreoffice -> nss
-	libreoffice -> libpagemaker
-	libreoffice -> libmspub
-	libreoffice -> cairo
-	libreoffice -> graphite2
-	libreoffice -> zaf
-	libreoffice -> libnumbertext
-	libreoffice -> harfbuzz
-	libreoffice -> boost
-	libreoffice -> libabw
-	libreoffice -> libSM
-	libreoffice -> libXinerama
-	libreoffice -> libzmf
-	libreoffice -> libcmis
-	libreoffice -> libwpd
-	libreoffice -> gstreamer1
-	libreoffice -> libepoxy
-	libreoffice -> mythes
+	libreoffice -> neon
 	libreoffice -> lcms2
-	libreoffice -> libcdr
+	libreoffice -> libcmis
+	libreoffice -> libX11
+	libreoffice -> xmlsec1
+	libreoffice -> nss
+	libreoffice -> libodfgen
+	libreoffice -> libwps
 	libreoffice -> libfreehand
-	libreoffice -> libstaroffice
+	libreoffice -> mythes
+	libreoffice -> libqxp
+	libreoffice -> libICE
+	libreoffice -> harfbuzz
+	libreoffice -> libpagemaker
+	libreoffice -> liborcus
+	libreoffice -> hspell
+	libreoffice -> gtk3
+	libreoffice -> libepubgen
 	libreoffice -> libetonyek
+	libreoffice -> libXrender
+	libreoffice -> libXrandr
+	libreoffice -> boost
+	libreoffice -> python2
+	libreoffice -> libabw
+	libreoffice -> nspr
+	libreoffice -> libstaroffice
+	libreoffice -> gdb
+	libreoffice -> zaf
+	libreoffice -> hyphen
+	libreoffice -> libmspub
+	libreoffice -> graphite2
+	libreoffice -> cairo
+	libreoffice -> libSM
 	libreoffice-voikko
 	librepo
-	librepo -> glibc
-	librepo -> curl
-	librepo -> gcc
-	librepo -> python3
-	librepo -> gpgme
 	librepo -> openssl
+	librepo -> glibc
+	librepo -> gcc
+	librepo -> curl
+	librepo -> python3
 	librepo -> glib2
+	librepo -> gpgme
 	librepo -> libxml2
 	librepo -> librepo
 	libreport
-	libreport -> systemd
 	libreport -> pango
-	libreport -> dnf
 	libreport -> glibc
-	libreport -> xz
-	libreport -> augeas
-	libreport -> libxml2
 	libreport -> lz4
-	libreport -> gtk3
-	libreport -> curl
-	libreport -> atk
-	libreport -> cairo
-	libreport -> python3
-	libreport -> glib2
-	libreport -> satyr
-	libreport -> libproxy
-	libreport -> python2
 	libreport -> dbus
+	libreport -> dnf
+	libreport -> systemd
+	libreport -> curl
+	libreport -> libproxy
+	libreport -> cairo
+	libreport -> xz
+	libreport -> gtk3
+	libreport -> libxml2
+	libreport -> augeas
+	libreport -> glib2
+	libreport -> atk
 	libreport -> libtar
+	libreport -> python2
+	libreport -> satyr
+	libreport -> python3
 	librepository
 	librepository -> libbase
 	libreswan
+	libreswan -> pam
+	libreswan -> libseccomp
+	libreswan -> libevent
 	libreswan -> libxcrypt
 	libreswan -> iproute
-	libreswan -> nspr
-	libreswan -> glibc
-	libreswan -> unbound
-	libreswan -> curl
-	libreswan -> coreutils
-	libreswan -> python3
-	libreswan -> pam
-	libreswan -> libevent
-	libreswan -> audit
-	libreswan -> nss
-	libreswan -> ldns
-	libreswan -> libselinux
-	libreswan -> libseccomp
 	libreswan -> openldap
-	libreswan -> systemd
+	libreswan -> audit
+	libreswan -> ldns
+	libreswan -> curl
+	libreswan -> python3
 	libreswan -> bash
+	libreswan -> nspr
+	libreswan -> libselinux
+	libreswan -> coreutils
+	libreswan -> nss
+	libreswan -> unbound
+	libreswan -> glibc
+	libreswan -> systemd
 	librevenge
 	librhsm
-	librhsm -> gcc
-	librhsm -> glibc
 	librhsm -> glib2
+	librhsm -> glibc
+	librhsm -> gcc
 	librhsm -> openssl
 	librsvg2
-	librsvg2 -> freetype
-	librsvg2 -> zlib
-	librsvg2 -> gtk3
-	librsvg2 -> cairo
-	librsvg2 -> libxml2
-	librsvg2 -> gcc
-	librsvg2 -> glib2
-	librsvg2 -> libpng
-	librsvg2 -> atk
-	librsvg2 -> pango
-	librsvg2 -> fontconfig
 	librsvg2 -> glibc
+	librsvg2 -> fontconfig
 	librsvg2 -> libcroco
+	librsvg2 -> libpng
+	librsvg2 -> glib2
+	librsvg2 -> freetype
+	librsvg2 -> libxml2
+	librsvg2 -> atk
+	librsvg2 -> zlib
+	librsvg2 -> cairo
+	librsvg2 -> gtk3
+	librsvg2 -> gcc
+	librsvg2 -> pango
 	libsamplerate
 	libsamplerate -> libsndfile
 	libseccomp
 	libseccomp -> glibc
 	libsecret
-	libsecret -> glibc
-	libsecret -> glib2
 	libsecret -> libgcrypt
+	libsecret -> glib2
+	libsecret -> glibc
 	libselinux
-	libselinux -> python3
 	libselinux -> libsepol
+	libselinux -> python3
+	libselinux -> pcre2
 	libselinux -> ruby
 	libselinux -> glibc
-	libselinux -> pcre2
 	libsemanage
-	libsemanage -> libselinux
-	libsemanage -> audit
-	libsemanage -> python3
-	libsemanage -> bzip2
-	libsemanage -> glibc
 	libsemanage -> libsepol
+	libsemanage -> libselinux
+	libsemanage -> python3
+	libsemanage -> audit
+	libsemanage -> glibc
+	libsemanage -> bzip2
 	libsepol
 	libsepol -> bash
 	libsepol -> glibc
 	libserializer
 	libserializer -> libbase
 	libshout
-	libshout -> libtheora
-	libshout -> libogg
-	libshout -> libvorbis
 	libshout -> speex
+	libshout -> libtheora
+	libshout -> libvorbis
+	libshout -> libogg
 	libsigc++20
 	libsigsegv
 	libsigsegv -> glibc
@@ -3656,184 +3656,184 @@ digraph MyPicture {
 	libsmi -> wget
 	libsndfile
 	libsndfile -> glibc
-	libsndfile -> libogg
 	libsndfile -> flac
+	libsndfile -> libogg
 	libsndfile -> gsm
 	libsndfile -> libvorbis
 	libsolv
 	libsolv -> rpm
-	libsolv -> glibc
-	libsolv -> zstd
+	libsolv -> xz
 	libsolv -> python3
 	libsolv -> openssl
-	libsolv -> xz
 	libsolv -> zlib
+	libsolv -> glibc
 	libsolv -> libxml2
+	libsolv -> zstd
 	libsolv -> bzip2
 	libsoup
+	libsoup -> sqlite
 	libsoup -> glibc
 	libsoup -> glib2
 	libsoup -> krb5
 	libsoup -> libxml2
-	libsoup -> sqlite
 	libspectre
 	libspectre -> ghostscript
 	libspiro
 	libsrtp
 	libssh
-	libssh -> openssl
 	libssh -> zlib
-	libssh -> krb5
 	libssh -> glibc
 	libssh -> e2fsprogs
+	libssh -> krb5
+	libssh -> openssl
 	libstaroffice
 	libstaroffice -> librevenge
 	libstemmer
 	libstemmer -> glibc
 	libstoragemgmt
-	libstoragemgmt -> glibc
-	libstoragemgmt -> bash
-	libstoragemgmt -> systemd
-	libstoragemgmt -> glib2
-	libstoragemgmt -> libxml2
-	libstoragemgmt -> sqlite
-	libstoragemgmt -> libconfig
 	libstoragemgmt -> pywbem
 	libstoragemgmt -> gcc
-	libstoragemgmt -> python3
 	libstoragemgmt -> openssl
+	libstoragemgmt -> libxml2
+	libstoragemgmt -> glib2
+	libstoragemgmt -> bash
+	libstoragemgmt -> sqlite
+	libstoragemgmt -> systemd
+	libstoragemgmt -> glibc
+	libstoragemgmt -> python3
+	libstoragemgmt -> libconfig
 	libsvm
 	libtalloc
 	libtalloc -> python3
 	libtalloc -> glibc
 	libtar
-	libtar -> zlib
 	libtar -> glibc
+	libtar -> zlib
 	libtasn1
 	libtasn1 -> glibc
 	libtdb
 	libtdb -> glibc
 	libtdb -> python3
 	libteam
-	libteam -> libnl3
-	libteam -> glibc
-	libteam -> bash
 	libteam -> initscripts
-	libteam -> libdaemon
+	libteam -> bash
 	libteam -> jansson
 	libteam -> dbus
+	libteam -> glibc
+	libteam -> libdaemon
+	libteam -> libnl3
 	libtevent
+	libtevent -> glibc
 	libtevent -> libtalloc
 	libtevent -> python3
-	libtevent -> glibc
 	libthai
 	libthai -> glibc
 	libthai -> libdatrie
 	libtheora
-	libtheora -> libvorbis
 	libtheora -> libogg
-	libtheora -> SDL
+	libtheora -> libvorbis
 	libtheora -> glibc
+	libtheora -> SDL
 	libtiff
-	libtiff -> glibc
-	libtiff -> gcc
 	libtiff -> jbigkit
+	libtiff -> gcc
 	libtiff -> zlib
+	libtiff -> glibc
 	libtimezonemap
-	libtimezonemap -> gtk3
 	libtimezonemap -> cairo
-	libtimezonemap -> glib2
-	libtimezonemap -> librsvg2
 	libtimezonemap -> pango
+	libtimezonemap -> glib2
 	libtimezonemap -> glibc
+	libtimezonemap -> librsvg2
 	libtimezonemap -> atk
 	libtimezonemap -> libsoup
+	libtimezonemap -> gtk3
 	libtirpc
 	libtirpc -> glibc
 	libtirpc -> e2fsprogs
 	libtirpc -> krb5
 	libtool
-	libtool -> automake
-	libtool -> glibc
 	libtool -> texinfo
 	libtool -> sed
-	libtool -> bash
-	libtool -> autoconf
 	libtool -> gcc
-	libtool -> findutils
+	libtool -> autoconf
 	libtool -> tar
+	libtool -> automake
+	libtool -> findutils
+	libtool -> bash
+	libtool -> glibc
 	libucil
 	libucil -> pango
-	libucil -> libtheora
-	libucil -> libvorbis
 	libucil -> libogg
+	libucil -> libvorbis
 	libucil -> libunicap
+	libucil -> libtheora
 	libunicap
 	libunicap -> libraw1394
 	libuninameslist
 	libunistring
-	libunistring -> texinfo
 	libunistring -> glibc
+	libunistring -> texinfo
 	liburing
 	liburing -> glibc
 	libusb
-	libusb -> libusbx
 	libusb -> glibc
+	libusb -> libusbx
 	libusbmuxd
-	libusbmuxd -> libplist
 	libusbmuxd -> gcc
 	libusbmuxd -> glibc
+	libusbmuxd -> libplist
 	libusbx
-	libusbx -> glibc
 	libusbx -> systemd
+	libusbx -> glibc
 	libuser
-	libuser -> pam
+	libuser -> python3
+	libuser -> openldap
 	libuser -> glib2
 	libuser -> popt
-	libuser -> libxcrypt
-	libuser -> openldap
-	libuser -> glibc
-	libuser -> python3
-	libuser -> libselinux
 	libuser -> libuser
+	libuser -> pam
+	libuser -> libselinux
+	libuser -> libxcrypt
+	libuser -> glibc
 	libuser -> audit
 	libutempter
-	libutempter -> bash
 	libutempter -> glibc
+	libutempter -> bash
 	libuv
 	libuv -> glibc
 	libva
 	libva -> mesa
+	libva -> libXfixes
 	libva -> libdrm
-	libva -> wayland
 	libva -> libglvnd
 	libva -> libX11
+	libva -> wayland
 	libva -> libXext
-	libva -> libXfixes
 	libvarlink
-	libvarlink -> gcc
 	libvarlink -> glibc
+	libvarlink -> gcc
 	libvdpau
-	libvdpau -> libXext
 	libvdpau -> libX11
+	libvdpau -> libXext
 	libverto
 	libverto -> glibc
 	libverto -> libevent
 	libvirt
-	libvirt -> yajl
-	libvirt -> audit
 	libvirt -> libssh
-	libvirt -> gcc
-	libvirt -> libtirpc
-	libvirt -> acl
-	libvirt -> libselinux
-	libvirt -> gnutls
-	libvirt -> libnl3
 	libvirt -> libxml2
 	libvirt -> glibc
-	libvirt -> numactl
 	libvirt -> glib2
+	libvirt -> numactl
+	libvirt -> libnl3
+	libvirt -> acl
+	libvirt -> gcc
+	libvirt -> yajl
+	libvirt -> libtirpc
+	libvirt -> libselinux
 	libvirt -> curl
+	libvirt -> audit
+	libvirt -> gnutls
 	libvirt-dbus
 	libvirt-glib
 	libvirt-python
@@ -3843,16 +3843,16 @@ digraph MyPicture {
 	libvisual -> glibc
 	libvncserver
 	libvoikko
-	libvoikko -> libvoikko
 	libvoikko -> python2
+	libvoikko -> libvoikko
 	libvorbis
-	libvorbis -> glibc
 	libvorbis -> libogg
+	libvorbis -> glibc
 	libvorbis -> libvorbis
 	libvpx
 	libwacom
-	libwacom -> glibc
 	libwacom -> glib2
+	libwacom -> glibc
 	libwacom -> libwacom
 	libwacom -> libgudev
 	libwebp
@@ -3861,14 +3861,14 @@ digraph MyPicture {
 	libwmf -> libwmf
 	libwmf -> libX11
 	libwnck3
-	libwnck3 -> libX11
 	libwnck3 -> libXres
 	libwnck3 -> atk
-	libwnck3 -> libXext
+	libwnck3 -> libXrender
 	libwnck3 -> gtk3
 	libwnck3 -> pango
+	libwnck3 -> libX11
+	libwnck3 -> libXext
 	libwnck3 -> cairo
-	libwnck3 -> libXrender
 	libwpd
 	libwpd -> librevenge
 	libwpg
@@ -3878,8 +3878,8 @@ digraph MyPicture {
 	libwps -> librevenge
 	libx86emu
 	libxcb
-	libxcb -> libXau
 	libxcb -> glibc
+	libxcb -> libXau
 	libxcrypt
 	libxcrypt -> glibc
 	libxkbcommon
@@ -3889,29 +3889,29 @@ digraph MyPicture {
 	libxkbfile -> libX11
 	libxkbfile -> glibc
 	libxklavier
-	libxklavier -> libX11
 	libxklavier -> glib2
-	libxklavier -> glibc
-	libxklavier -> libxkbfile
 	libxklavier -> libXi
+	libxklavier -> libxkbfile
 	libxklavier -> libxml2
+	libxklavier -> glibc
+	libxklavier -> libX11
 	libxml++
 	libxml2
 	libxml2 -> glibc
 	libxml2 -> libxml2
-	libxml2 -> zlib
-	libxml2 -> python3
 	libxml2 -> xz
+	libxml2 -> python3
+	libxml2 -> zlib
 	libxmlb
-	libxmlb -> glib2
 	libxmlb -> glibc
+	libxmlb -> glib2
 	libxmlb -> gcc
 	libxshmfence
 	libxshmfence -> glibc
 	libxslt
-	libxslt -> libxml2
-	libxslt -> glibc
 	libxslt -> libgcrypt
+	libxslt -> glibc
+	libxslt -> libxml2
 	libyami
 	libyami -> libva
 	libyami -> libX11
@@ -3930,82 +3930,82 @@ digraph MyPicture {
 	linuxdoc-tools
 	lksctp-tools
 	lldpad
-	lldpad -> libnl3
+	lldpad -> bash
 	lldpad -> libconfig
 	lldpad -> readline
-	lldpad -> bash
 	lldpad -> glibc
 	lldpad -> systemd
+	lldpad -> libnl3
 	lldpd
 	llvm
-	llvm -> gcc
-	llvm -> libffi
 	llvm -> zlib
+	llvm -> libffi
 	llvm -> ncurses
 	llvm -> glibc
+	llvm -> gcc
 	lm_sensors
-	lm_sensors -> bash
 	lm_sensors -> kmod
 	lm_sensors -> dmidecode
+	lm_sensors -> bash
 	lm_sensors -> perl
 	lm_sensors -> glibc
-	lm_sensors -> systemd
 	lm_sensors -> rrdtool
+	lm_sensors -> systemd
 	lmdb
 	lmdb -> glibc
 	lockdev
-	lockdev -> glibc
 	lockdev -> bash
 	lockdev -> systemd
+	lockdev -> glibc
 	log4j
 	logrotate
+	logrotate -> bash
+	logrotate -> acl
+	logrotate -> glibc
 	logrotate -> coreutils
 	logrotate -> libselinux
-	logrotate -> glibc
-	logrotate -> acl
-	logrotate -> bash
 	logrotate -> popt
 	logwatch
 	logwatch -> crontabs
-	logwatch -> mailx
 	logwatch -> bash
-	logwatch -> perl
 	logwatch -> grep
+	logwatch -> mailx
+	logwatch -> perl
 	lorax
+	lorax -> createrepo_c
+	lorax -> isomd5sum
+	lorax -> libgit2
+	lorax -> pykickstart
 	lorax -> GConf2
 	lorax -> git
-	lorax -> edk2
-	lorax -> createrepo_c
 	lorax -> anaconda
-	lorax -> libgit2
 	lorax -> python2
-	lorax -> isomd5sum
-	lorax -> pykickstart
+	lorax -> edk2
 	lorax -> cdrkit
 	lorax-templates-anolis
 	lpsolve
 	lrzsz
 	lrzsz -> glibc
 	lshw
+	lshw -> sqlite
 	lshw -> cairo
 	lshw -> atk
-	lshw -> gcc
 	lshw -> glibc
 	lshw -> gtk3
-	lshw -> sqlite
 	lshw -> hwdata
 	lshw -> pango
+	lshw -> gcc
 	lsof
+	lsof -> libtirpc
 	lsof -> glibc
 	lsof -> libselinux
-	lsof -> libtirpc
 	lsscsi
 	lsscsi -> glibc
 	lttng-ust
 	lua
+	lua -> ncurses
 	lua -> glibc
 	lua -> readline
-	lua -> ncurses
 	lua-expat
 	lua-filesystem
 	lua-json
@@ -4017,21 +4017,21 @@ digraph MyPicture {
 	lucene++
 	luksmeta
 	lvm2
-	lvm2 -> kmod
-	lvm2 -> pygobject3
-	lvm2 -> dbus
-	lvm2 -> libselinux
-	lvm2 -> dlm
-	lvm2 -> bash
-	lvm2 -> libsepol
-	lvm2 -> python3
 	lvm2 -> glibc
-	lvm2 -> libaio
-	lvm2 -> gcc
 	lvm2 -> sanlock
+	lvm2 -> libsepol
+	lvm2 -> libaio
 	lvm2 -> lvm2
-	lvm2 -> readline
 	lvm2 -> systemd
+	lvm2 -> libselinux
+	lvm2 -> python3
+	lvm2 -> gcc
+	lvm2 -> pygobject3
+	lvm2 -> bash
+	lvm2 -> dlm
+	lvm2 -> readline
+	lvm2 -> kmod
+	lvm2 -> dbus
 	lz4
 	lz4 -> glibc
 	lzo
@@ -4043,36 +4043,36 @@ digraph MyPicture {
 	m17n-lib
 	m4
 	m4 -> bash
-	m4 -> glibc
 	m4 -> texinfo
+	m4 -> glibc
 	mailcap
 	mailx
-	mailx -> glibc
-	mailx -> bash
 	mailx -> krb5
 	mailx -> openssl
+	mailx -> glibc
+	mailx -> bash
 	make
 	make -> texinfo
 	make -> glibc
 	make -> bash
 	malaga
 	malaga -> gtk2
-	malaga -> atk
-	malaga -> pango
 	malaga -> cairo
+	malaga -> pango
+	malaga -> atk
 	malaga-suomi-voikko
 	mallard-rng
 	man-db
 	mariadb
-	mariadb -> bash
-	mariadb -> zlib
-	mariadb -> gcc
-	mariadb -> openssl
+	mariadb -> glibc
 	mariadb -> grep
+	mariadb -> zlib
+	mariadb -> bash
+	mariadb -> ncurses
+	mariadb -> gcc
 	mariadb -> coreutils
 	mariadb -> perl
-	mariadb -> ncurses
-	mariadb -> glibc
+	mariadb -> openssl
 	mariadb-connector-c
 	mariadb-connector-odbc
 	mariadb-java-client
@@ -4083,25 +4083,25 @@ digraph MyPicture {
 	mc -> perl
 	mc -> gpm
 	mcelog
-	mcelog -> bash
-	mcelog -> systemd
 	mcelog -> glibc
+	mcelog -> systemd
+	mcelog -> bash
 	mcpp
-	mcpp -> mcpp
 	mcpp -> glibc
+	mcpp -> mcpp
 	mcstrans
-	mcstrans -> libselinux
-	mcstrans -> pcre
 	mcstrans -> systemd
 	mcstrans -> libcap
-	mcstrans -> glibc
+	mcstrans -> pcre
 	mcstrans -> bash
+	mcstrans -> libselinux
+	mcstrans -> glibc
 	mdadm
 	mdadm -> bash
 	mdadm -> chkconfig
 	mdadm -> coreutils
-	mdadm -> glibc
 	mdadm -> libreport
+	mdadm -> glibc
 	mdadm -> systemd
 	meanwhile
 	mecab
@@ -4115,22 +4115,22 @@ digraph MyPicture {
 	memstrack -> glibc
 	memtest86+
 	mesa
-	mesa -> elfutils
-	mesa -> llvm
-	mesa -> gcc
-	mesa -> libXfixes
-	mesa -> glibc
-	mesa -> libdrm
-	mesa -> libxshmfence
-	mesa -> expat
-	mesa -> libglvnd
-	mesa -> libXext
 	mesa -> wayland
-	mesa -> libxcb
 	mesa -> zlib
-	mesa -> libselinux
+	mesa -> libxshmfence
+	mesa -> libXfixes
+	mesa -> libdrm
+	mesa -> libXext
+	mesa -> elfutils
 	mesa -> libX11
+	mesa -> libxcb
 	mesa -> libXxf86vm
+	mesa -> glibc
+	mesa -> gcc
+	mesa -> llvm
+	mesa -> libglvnd
+	mesa -> libselinux
+	mesa -> expat
 	mesa-demos
 	mesa-libGLU
 	mesa-libGLw
@@ -4138,36 +4138,36 @@ digraph MyPicture {
 	meson -> python3
 	meson -> python36
 	metacity
-	metacity -> libSM
-	metacity -> libXinerama
-	metacity -> zenity
-	metacity -> gtk3
-	metacity -> libX11
-	metacity -> libXrender
-	metacity -> libXcomposite
-	metacity -> libXdamage
-	metacity -> libgtop2
-	metacity -> libXfixes
-	metacity -> libXrandr
-	metacity -> libXext
-	metacity -> libICE
 	metacity -> pango
+	metacity -> libXcomposite
+	metacity -> libXcursor
+	metacity -> libXdamage
+	metacity -> libXrender
+	metacity -> libXfixes
+	metacity -> libX11
+	metacity -> libSM
+	metacity -> libICE
+	metacity -> libXinerama
+	metacity -> libXext
 	metacity -> libcanberra
+	metacity -> libgtop2
+	metacity -> libXrandr
+	metacity -> gtk3
+	metacity -> zenity
 	metacity -> atk
 	metacity -> cairo
-	metacity -> libXcursor
 	microcode_ctl
-	microcode_ctl -> bash
 	microcode_ctl -> dracut
-	microcode_ctl -> systemd
 	microcode_ctl -> coreutils
+	microcode_ctl -> systemd
+	microcode_ctl -> bash
 	microdnf
-	microdnf -> rpm
-	microdnf -> glibc
-	microdnf -> gcc
-	microdnf -> libdnf
 	microdnf -> glib2
 	microdnf -> libpeas
+	microdnf -> gcc
+	microdnf -> glibc
+	microdnf -> rpm
+	microdnf -> libdnf
 	micropipenv
 	micropipenv -> python2
 	mimetic
@@ -4201,79 +4201,79 @@ digraph MyPicture {
 	mingw-winpthreads
 	mingw-zlib
 	minicom
-	minicom -> bash
 	minicom -> ncurses
-	minicom -> lrzsz
-	minicom -> glibc
+	minicom -> bash
 	minicom -> lockdev
+	minicom -> glibc
+	minicom -> lrzsz
 	minizip
 	mksh
+	mksh -> grep
+	mksh -> glibc
 	mksh -> chkconfig
 	mksh -> bash
-	mksh -> glibc
-	mksh -> grep
 	mlocate
-	mlocate -> sed
-	mlocate -> grep
 	mlocate -> systemd
 	mlocate -> glibc
+	mlocate -> sed
 	mlocate -> bash
+	mlocate -> grep
 	mobile-broadband-provider-info
 	mod_auth_gssapi
 	mod_auth_gssapi -> httpd
 	mod_auth_mellon
-	mod_auth_mellon -> mod_auth_mellon
 	mod_auth_mellon -> lasso
 	mod_auth_mellon -> httpd
+	mod_auth_mellon -> mod_auth_mellon
 	mod_authnz_pam
 	mod_authnz_pam -> httpd
 	mod_fcgid
 	mod_fcgid -> httpd
 	mod_intercept_form_submit
-	mod_intercept_form_submit -> httpd
 	mod_intercept_form_submit -> mod_authnz_pam
+	mod_intercept_form_submit -> httpd
 	mod_lookup_identity
 	mod_lookup_identity -> httpd
 	mod_security
 	mod_security -> yajl
 	mod_security -> httpd
-	mod_security -> perl
 	mod_security -> apr
+	mod_security -> perl
 	mod_security_crs
 	mod_security_crs -> mod_security
 	mod_wsgi
-	mod_wsgi -> python2
 	mod_wsgi -> httpd
+	mod_wsgi -> python2
 	modulemd-tools
 	mokutil
 	mokutil -> glibc
+	mokutil -> libxcrypt
 	mokutil -> openssl
 	mokutil -> efivar
-	mokutil -> libxcrypt
 	motif
-	motif -> libXft
 	motif -> libICE
-	motif -> libXp
-	motif -> libXmu
+	motif -> libXft
 	motif -> libSM
+	motif -> libXext
+	motif -> libXp
 	motif -> libX11
 	motif -> libXt
-	motif -> libXext
+	motif -> libXmu
 	mousetweaks
-	mousetweaks -> libX11
-	mousetweaks -> gtk3
-	mousetweaks -> atk
-	mousetweaks -> libXtst
-	mousetweaks -> pango
-	mousetweaks -> cairo
 	mousetweaks -> GConf2
+	mousetweaks -> gtk3
+	mousetweaks -> libXtst
+	mousetweaks -> cairo
 	mousetweaks -> libXcursor
+	mousetweaks -> libX11
+	mousetweaks -> atk
+	mousetweaks -> pango
 	mousetweaks -> libXfixes
 	mozilla-filesystem
 	mozjs52
+	mozjs52 -> zlib
 	mozjs52 -> gcc
 	mozjs52 -> glibc
-	mozjs52 -> zlib
 	mozjs60
 	mozjs60 -> glibc
 	mozjs60 -> zlib
@@ -4288,97 +4288,97 @@ digraph MyPicture {
 	mpich
 	mpich -> perl
 	mpitests
-	mpitests -> mpich
 	mpitests -> mvapich2
 	mpitests -> openmpi
+	mpitests -> mpich
 	mpv
-	mpv -> libarchive
-	mpv -> ffmpeg
 	mpv -> rubberband
-	mpv -> zimg
-	mpv -> libass
-	mpv -> luajit
 	mpv -> uchardet
-	mpv -> libdvdnav
+	mpv -> libarchive
+	mpv -> zimg
+	mpv -> luajit
+	mpv -> ffmpeg
 	mpv -> libglvnd
+	mpv -> libass
+	mpv -> libdvdnav
 	mrtg
 	mrtg -> gd
 	mrtg -> perl
 	mstflint
-	mstflint -> boost
 	mstflint -> python36
+	mstflint -> boost
 	mt-st
 	mtdev
 	mtdev -> glibc
 	mtools
-	mtools -> bash
-	mtools -> glibc
 	mtools -> texinfo
+	mtools -> glibc
+	mtools -> bash
 	mtr
-	mtr -> gtk2
-	mtr -> atk
 	mtr -> cairo
-	mtr -> ncurses
-	mtr -> pango
 	mtr -> glibc
+	mtr -> ncurses
+	mtr -> atk
+	mtr -> gtk2
+	mtr -> pango
 	mtx
 	multilib-rpm-config
 	munge
 	mutt
+	mutt -> urlview
 	mutt -> perl
 	mutt -> tokyocabinet
-	mutt -> urlview
 	mutter
-	mutter -> libX11
-	mutter -> libxkbcommon
-	mutter -> libXext
-	mutter -> libXau
-	mutter -> libglvnd
-	mutter -> zenity
-	mutter -> libXcomposite
-	mutter -> libXinerama
-	mutter -> libXdamage
-	mutter -> libxcb
 	mutter -> libICE
-	mutter -> pipewire
-	mutter -> atk
-	mutter -> libXcursor
-	mutter -> gtk3
-	mutter -> libXrandr
-	mutter -> libinput
-	mutter -> pango
-	mutter -> libXi
 	mutter -> wayland
-	mutter -> libxkbfile
-	mutter -> cairo
-	mutter -> libdrm
 	mutter -> libXfixes
-	mutter -> libcanberra
-	mutter -> libSM
 	mutter -> mesa
-	mutter -> libwacom
+	mutter -> libXrandr
+	mutter -> libXcursor
+	mutter -> libXdamage
+	mutter -> libSM
+	mutter -> libxkbcommon
+	mutter -> libdrm
+	mutter -> gtk3
+	mutter -> libXau
 	mutter -> libXtst
+	mutter -> libXinerama
+	mutter -> libcanberra
+	mutter -> libXi
+	mutter -> libxcb
+	mutter -> libxkbfile
+	mutter -> libwacom
+	mutter -> libXcomposite
+	mutter -> libinput
+	mutter -> libX11
+	mutter -> libXext
+	mutter -> libglvnd
+	mutter -> atk
+	mutter -> zenity
+	mutter -> pipewire
+	mutter -> pango
+	mutter -> cairo
 	mvapich2
 	mvapich2 -> perl
 	mysql
-	mysql -> gcc
-	mysql -> numactl
-	mysql -> libevent
-	mysql -> glibc
-	mysql -> libaio
-	mysql -> systemd
-	mysql -> lz4
-	mysql -> bash
-	mysql -> libtirpc
-	mysql -> protobuf
-	mysql -> grep
 	mysql -> coreutils
-	mysql -> libedit
-	mysql -> openssl
-	mysql -> zlib
 	mysql -> perl
 	mysql -> policycoreutils
+	mysql -> systemd
+	mysql -> numactl
+	mysql -> openssl
+	mysql -> gcc
+	mysql -> libedit
+	mysql -> protobuf
+	mysql -> glibc
+	mysql -> grep
+	mysql -> zlib
+	mysql -> libaio
 	mysql -> mecab
+	mysql -> lz4
+	mysql -> bash
+	mysql -> libevent
+	mysql -> libtirpc
 	mythes
 	mythes-bg
 	mythes-ca
@@ -4404,127 +4404,127 @@ digraph MyPicture {
 	mythes-sv
 	mythes-uk
 	nano
+	nano -> bash
+	nano -> ncurses
 	nano -> glibc
 	nano -> file
 	nano -> texinfo
-	nano -> bash
-	nano -> ncurses
 	nasm
 	nasm -> glibc
 	nautilus
+	nautilus -> gvfs
+	nautilus -> gcc
+	nautilus -> gtk3
+	nautilus -> glibc
+	nautilus -> libgexiv2
+	nautilus -> glib2
+	nautilus -> tracker
+	nautilus -> cairo
+	nautilus -> atk
+	nautilus -> nautilus
 	nautilus -> libexif
 	nautilus -> libselinux
-	nautilus -> libgexiv2
-	nautilus -> gtk3
-	nautilus -> atk
 	nautilus -> pango
-	nautilus -> glib2
-	nautilus -> glibc
-	nautilus -> gvfs
-	nautilus -> tracker
-	nautilus -> nautilus
-	nautilus -> gcc
-	nautilus -> cairo
 	ncompress
 	ncurses
-	ncurses -> gcc
 	ncurses -> glibc
+	ncurses -> gcc
 	ndctl
 	ndctl -> systemd
-	ndctl -> keyutils
-	ndctl -> kmod
 	ndctl -> ndctl
+	ndctl -> kmod
 	ndctl -> glibc
+	ndctl -> keyutils
 	neon
 	neon -> pakchois
 	net-snmp
 	net-tools
 	netlabel_tools
-	netlabel_tools -> libnl3
-	netlabel_tools -> glibc
-	netlabel_tools -> systemd
 	netlabel_tools -> bash
+	netlabel_tools -> libnl3
+	netlabel_tools -> systemd
 	netlabel_tools -> kernel
+	netlabel_tools -> glibc
 	netpbm
-	netpbm -> ghostscript
-	netpbm -> libtiff
-	netpbm -> perl
 	netpbm -> jasper
+	netpbm -> ghostscript
+	netpbm -> perl
 	netpbm -> jbigkit
+	netpbm -> libtiff
 	netpbm -> libX11
 	nettle
-	nettle -> bash
-	nettle -> texinfo
 	nettle -> gmp
+	nettle -> bash
 	nettle -> glibc
+	nettle -> texinfo
 	network-manager-applet
 	newt
-	newt -> slang
-	newt -> popt
-	newt -> python2
 	newt -> glibc
+	newt -> slang
+	newt -> python2
+	newt -> popt
 	nfs-utils
 	nfs4-acl-tools
 	nftables
-	nftables -> gmp
-	nftables -> iptables
-	nftables -> glibc
 	nftables -> libmnl
 	nftables -> python3
 	nftables -> libnftnl
+	nftables -> glibc
+	nftables -> gmp
+	nftables -> bash
 	nftables -> jansson
 	nftables -> readline
-	nftables -> bash
+	nftables -> iptables
 	nghttp2
-	nghttp2 -> systemd
-	nghttp2 -> python3
-	nghttp2 -> gcc
-	nghttp2 -> zlib
 	nghttp2 -> openssl
 	nghttp2 -> libev
+	nghttp2 -> gcc
 	nghttp2 -> glibc
+	nghttp2 -> zlib
 	nghttp2 -> bash
+	nghttp2 -> python3
+	nghttp2 -> systemd
 	nginx
-	nginx -> gd
-	nginx -> openssl
-	nginx -> glibc
-	nginx -> zlib
-	nginx -> perl
-	nginx -> pcre
 	nginx -> systemd
-	nginx -> bash
+	nginx -> openssl
 	nginx -> libxml2
-	nginx -> libxcrypt
+	nginx -> bash
+	nginx -> pcre
+	nginx -> zlib
 	nginx -> libxslt
+	nginx -> perl
+	nginx -> libxcrypt
+	nginx -> gd
+	nginx -> glibc
 	ninja-build
 	nispor
-	nispor -> bash
-	nispor -> python2
 	nispor -> gcc
-	nispor -> glibc
+	nispor -> bash
 	nispor -> python3
+	nispor -> glibc
+	nispor -> python2
 	nmap
-	nmap -> openssl
 	nmap -> gcc
 	nmap -> bash
-	nmap -> libpcap
 	nmap -> pcre
+	nmap -> libpcap
 	nmap -> glibc
+	nmap -> openssl
 	nmstate
+	nmstate -> glibc
 	nmstate -> python3
 	nmstate -> pygobject3
-	nmstate -> nispor
-	nmstate -> nmstate
 	nmstate -> python2
-	nmstate -> PyYAML
 	nmstate -> gcc
-	nmstate -> glibc
 	nmstate -> NetworkManager
+	nmstate -> nispor
+	nmstate -> PyYAML
+	nmstate -> nmstate
 	nodejs
-	nodejs -> glibc
-	nodejs -> gcc
-	nodejs -> bash
 	nodejs -> openssl
+	nodejs -> gcc
+	nodejs -> glibc
+	nodejs -> bash
 	nodejs -> zlib
 	nodejs-nodemon
 	nodejs-packaging
@@ -4534,40 +4534,40 @@ digraph MyPicture {
 	nspr -> glibc
 	nss
 	nss -> coreutils
-	nss -> sed
 	nss -> bash
 	nss -> glibc
-	nss -> nspr
-	nss -> zlib
+	nss -> sed
 	nss -> sqlite
+	nss -> zlib
+	nss -> nspr
 	nss_nis
 	nss_nis -> libtirpc
-	nss_nis -> glibc
 	nss_nis -> libnsl2
+	nss_nis -> glibc
 	nss_wrapper
-	nss_wrapper -> perl
 	nss_wrapper -> cmake
+	nss_wrapper -> perl
 	ntfs-3g
 	numactl
 	numactl -> glibc
 	numad
-	numad -> bash
 	numad -> systemd
 	numad -> glibc
+	numad -> bash
 	numatop
-	numatop -> glibc
 	numatop -> numactl
+	numatop -> glibc
 	numatop -> ncurses
 	numpy
 	numpy -> openblas
 	numpy -> python36
-	numpy -> python3
 	numpy -> python2
+	numpy -> python3
 	nvme-cli
 	nvmetcli
-	nvmetcli -> bash
 	nvmetcli -> systemd
 	nvmetcli -> python3
+	nvmetcli -> bash
 	ocaml
 	ocaml-camlp4
 	ocaml-extlib
@@ -4589,115 +4589,115 @@ digraph MyPicture {
 	openchange
 	openchange -> libtalloc
 	openchange -> samba
+	openchange -> glibc
+	openchange -> libldb
 	openchange -> libtevent
 	openchange -> gcc
-	openchange -> libldb
-	openchange -> glibc
 	opencore-amr
 	opencryptoki
 	opencryptoki -> openldap
-	opencryptoki -> openssl
-	opencryptoki -> systemd
-	opencryptoki -> gcc
+	opencryptoki -> coreutils
 	opencryptoki -> glibc
 	opencryptoki -> trousers
-	opencryptoki -> bash
 	opencryptoki -> opencryptoki
-	opencryptoki -> coreutils
+	opencryptoki -> gcc
+	opencryptoki -> systemd
+	opencryptoki -> openssl
+	opencryptoki -> bash
 	opencv
-	opencv -> tesseract
-	opencv -> gstreamer1
-	opencv -> libdc1394
-	opencv -> harfbuzz
-	opencv -> libunicap
-	opencv -> jasper
+	opencv -> libwebp
+	opencv -> openblas
 	opencv -> protobuf
-	opencv -> libucil
+	opencv -> libglvnd
+	opencv -> tesseract
 	opencv -> tbb
 	opencv -> libva
+	opencv -> libucil
 	opencv -> libtiff
-	opencv -> openblas
-	opencv -> libglvnd
-	opencv -> libwebp
+	opencv -> gstreamer1
+	opencv -> harfbuzz
+	opencv -> libdc1394
+	opencv -> libunicap
+	opencv -> jasper
 	openhpi
-	openhpi -> curl
-	openhpi -> glibc
-	openhpi -> systemd
-	openhpi -> openssl
-	openhpi -> librabbitmq
-	openhpi -> libgcrypt
-	openhpi -> libxml2
 	openhpi -> sysfsutils
+	openhpi -> libgcrypt
+	openhpi -> librabbitmq
 	openhpi -> bash
+	openhpi -> systemd
 	openhpi -> gcc
+	openhpi -> openssl
 	openhpi -> glib2
+	openhpi -> glibc
+	openhpi -> libxml2
+	openhpi -> curl
 	openjade
 	openjade -> opensp
 	openjpeg2
-	openjpeg2 -> glibc
 	openjpeg2 -> libtiff
+	openjpeg2 -> glibc
 	openjpeg2 -> lcms2
 	openldap
-	openldap -> openssl
 	openldap -> glibc
+	openldap -> openssl
 	openmpi
-	openmpi -> pmix
 	openmpi -> ucx
+	openmpi -> pmix
 	openoffice-lv
 	openoffice.org-dict-cs_CZ
 	openpgm
 	opensc
-	opensc -> glibc
-	opensc -> pkgconf
-	opensc -> openssl
 	opensc -> readline
-	opensc -> zlib
+	opensc -> openssl
+	opensc -> glibc
 	opensc -> bash
+	opensc -> zlib
+	opensc -> pkgconf
 	openscap
-	openscap -> GConf2
 	openscap -> python2
-	openscap -> rpm
-	openscap -> rpmdevtools
 	openscap -> xmlsec1
+	openscap -> rpm
+	openscap -> GConf2
+	openscap -> rpmdevtools
 	openslp
-	openslp -> openssl
 	openslp -> zlib
+	openslp -> openssl
 	openslp -> glibc
 	opensm
-	opensm -> opensm
-	opensm -> bash
 	opensm -> glibc
-	opensm -> gcc
 	opensm -> logrotate
+	opensm -> bash
 	opensm -> systemd
+	opensm -> opensm
+	opensm -> gcc
 	opensp
 	openssh
-	openssh -> cairo
-	openssh -> zlib
-	openssh -> perl
-	openssh -> bash
-	openssh -> openssl
-	openssh -> pam
-	openssh -> libedit
+	openssh -> systemd
 	openssh -> pango
-	openssh -> glibc
-	openssh -> gtk2
-	openssh -> atk
-	openssh -> audit
-	openssh -> libxcrypt
-	openssh -> e2fsprogs
 	openssh -> libX11
+	openssh -> perl
+	openssh -> audit
+	openssh -> zlib
+	openssh -> krb5
+	openssh -> glibc
+	openssh -> atk
 	openssh -> libselinux
 	openssh -> openldap
-	openssh -> systemd
-	openssh -> krb5
+	openssh -> e2fsprogs
+	openssh -> bash
+	openssh -> openssl
+	openssh -> libedit
+	openssh -> gtk2
+	openssh -> pam
+	openssh -> libxcrypt
+	openssh -> cairo
 	openssl
-	openssl -> coreutils
-	openssl -> bash
-	openssl -> zlib
 	openssl -> perl
+	openssl -> zlib
 	openssl -> openssl
+	openssl -> coreutils
 	openssl -> glibc
+	openssl -> bash
 	openssl-ibmpkcs11
 	openssl-pkcs11
 	openwsman
@@ -4710,144 +4710,144 @@ digraph MyPicture {
 	orc
 	orc -> glibc
 	orca
-	orca -> pyatspi
-	orca -> python2
 	orca -> libwnck3
-	orca -> brltty
+	orca -> pyatspi
 	orca -> liblouis
+	orca -> python2
+	orca -> brltty
 	os-prober
 	osbuild
-	osbuild -> python36
-	osbuild -> osbuild
 	osbuild -> python2
 	osbuild -> ostree
+	osbuild -> python36
+	osbuild -> osbuild
 	osbuild-composer
 	oscap-anaconda-addon
 	osinfo-db
 	osinfo-db-tools
 	ostree
-	ostree -> xz
-	ostree -> openssl
-	ostree -> bash
-	ostree -> glib2
-	ostree -> glibc
-	ostree -> curl
-	ostree -> gcc
-	ostree -> dracut
-	ostree -> gnupg2
-	ostree -> systemd
-	ostree -> fuse
-	ostree -> zlib
-	ostree -> gpgme
 	ostree -> libarchive
 	ostree -> libselinux
+	ostree -> glib2
+	ostree -> gnupg2
+	ostree -> systemd
+	ostree -> openssl
+	ostree -> xz
+	ostree -> dracut
+	ostree -> bash
+	ostree -> curl
+	ostree -> glibc
+	ostree -> fuse
+	ostree -> gpgme
+	ostree -> gcc
+	ostree -> zlib
 	p11-kit
 	p7zip
 	pacemaker
-	pacemaker -> pacemaker
 	pacemaker -> corosync
+	pacemaker -> pacemaker
 	pakchois
 	pam
-	pam -> audit
 	pam -> libselinux
-	pam -> libpwquality
-	pam -> libdb
-	pam -> coreutils
 	pam -> bash
 	pam -> libtirpc
-	pam -> libnsl2
+	pam -> libdb
+	pam -> coreutils
+	pam -> audit
 	pam -> libxcrypt
+	pam -> libpwquality
 	pam -> cracklib
 	pam -> glibc
+	pam -> libnsl2
 	pango
-	pango -> libXrender
-	pango -> glibc
 	pango -> glib2
-	pango -> libX11
-	pango -> fontconfig
-	pango -> libXft
-	pango -> harfbuzz
-	pango -> freetype
-	pango -> libthai
-	pango -> bash
-	pango -> fribidi
 	pango -> cairo
+	pango -> libthai
+	pango -> fribidi
+	pango -> harfbuzz
+	pango -> libXft
+	pango -> freetype
+	pango -> glibc
+	pango -> libX11
+	pango -> libXrender
+	pango -> bash
+	pango -> fontconfig
 	pangomm
-	pangomm -> cairomm
-	pangomm -> gcc
-	pangomm -> glibc
 	pangomm -> glibmm24
 	pangomm -> pango
 	pangomm -> glib2
 	pangomm -> cairo
+	pangomm -> cairomm
+	pangomm -> gcc
+	pangomm -> glibc
 	papi
-	papi -> libpfm
 	papi -> papi
+	papi -> libpfm
 	papirus-icon-theme
 	paps
-	paps -> cups
 	paps -> pango
 	paps -> paps
+	paps -> cups
 	parted
-	parted -> libsepol
-	parted -> glibc
-	parted -> readline
-	parted -> lvm2
 	parted -> ncurses
-	parted -> texinfo
+	parted -> glibc
+	parted -> lvm2
 	parted -> libselinux
 	parted -> bash
+	parted -> libsepol
+	parted -> readline
+	parted -> texinfo
 	passwd
+	passwd -> libselinux
 	passwd -> glib2
 	passwd -> libuser
-	passwd -> glibc
-	passwd -> libselinux
-	passwd -> popt
 	passwd -> pam
 	passwd -> audit
+	passwd -> glibc
+	passwd -> popt
 	patch
 	patch -> glibc
-	patch -> libselinux
 	patch -> attr
+	patch -> libselinux
 	patchutils
 	patchutils -> perl
 	pavucontrol
-	pavucontrol -> gtkmm30
-	pavucontrol -> glibmm24
-	pavucontrol -> cairo
-	pavucontrol -> cairomm
-	pavucontrol -> atkmm
-	pavucontrol -> atk
-	pavucontrol -> pulseaudio
-	pavucontrol -> gtk3
 	pavucontrol -> pangomm
-	pavucontrol -> libX11
+	pavucontrol -> atk
+	pavucontrol -> gtk3
+	pavucontrol -> glibmm24
+	pavucontrol -> pulseaudio
 	pavucontrol -> pango
+	pavucontrol -> atkmm
+	pavucontrol -> gtkmm30
+	pavucontrol -> libX11
+	pavucontrol -> cairo
 	pavucontrol -> libcanberra
+	pavucontrol -> cairomm
 	pcaudiolib
 	pcaudiolib -> pulseaudio
 	pciutils
-	pciutils -> bash
-	pciutils -> kmod
-	pciutils -> glibc
 	pciutils -> hwdata
+	pciutils -> bash
+	pciutils -> glibc
+	pciutils -> kmod
 	pcp
-	pcp -> libglvnd
-	pcp -> libuv
+	pcp -> postfix
+	pcp -> python36
 	pcp -> python2
 	pcp -> perl
-	pcp -> rrdtool
-	pcp -> chan
-	pcp -> python36
-	pcp -> bcc
 	pcp -> gcc
-	pcp -> postfix
-	pcp -> bpftrace
-	pcp -> nss
-	pcp -> libpfm
-	pcp -> HdrHistogram_c
 	pcp -> nspr
+	pcp -> nss
+	pcp -> bcc
+	pcp -> chan
+	pcp -> HdrHistogram_c
 	pcp -> pyodbc
+	pcp -> libuv
+	pcp -> rrdtool
+	pcp -> libglvnd
+	pcp -> bpftrace
+	pcp -> libpfm
 	pcre
 	pcre -> gcc
 	pcre -> glibc
@@ -4855,20 +4855,20 @@ digraph MyPicture {
 	pcre2 -> glibc
 	pcs
 	pcs -> pcs
-	pcs -> clufter
 	pcs -> pacemaker
+	pcs -> clufter
 	pcsc-lite
 	pcsc-lite-ccid
 	pentaho-libxml
 	pentaho-reporting-flow-engine
 	perftest
-	perftest -> glibc
 	perftest -> pciutils
+	perftest -> glibc
 	perl
-	perl -> libxcrypt
-	perl -> glibc
 	perl -> gdbm
+	perl -> glibc
 	perl -> perl
+	perl -> libxcrypt
 	perl-Algorithm-Diff
 	perl-Archive-Tar
 	perl-Archive-Zip
@@ -5161,72 +5161,72 @@ digraph MyPicture {
 	perltidy
 	pesign
 	pesign -> nspr
-	pesign -> python2
 	pesign -> nss
+	pesign -> python2
 	phonon
 	pidgin
-	pidgin -> gtkspell
-	pidgin -> pango
-	pidgin -> farstream02
-	pidgin -> gstreamer1
-	pidgin -> libXScrnSaver
-	pidgin -> libXext
-	pidgin -> libSM
 	pidgin -> libX11
 	pidgin -> nspr
-	pidgin -> libidn
-	pidgin -> gtk2
-	pidgin -> cairo
-	pidgin -> meanwhile
 	pidgin -> nss
-	pidgin -> atk
+	pidgin -> cairo
+	pidgin -> gstreamer1
 	pidgin -> libICE
+	pidgin -> libXScrnSaver
+	pidgin -> pango
+	pidgin -> gtk2
+	pidgin -> libidn
+	pidgin -> meanwhile
+	pidgin -> atk
+	pidgin -> farstream02
 	pidgin -> GConf2
+	pidgin -> libXext
+	pidgin -> gtkspell
+	pidgin -> libSM
 	pidgin-sipe
 	pigz
 	pigz -> gcc
 	pigz -> zlib
 	pigz -> glibc
 	pinentry
-	pinentry -> gtk3
-	pinentry -> gcr
-	pinentry -> chkconfig
-	pinentry -> cairo
-	pinentry -> libassuan
-	pinentry -> texinfo
-	pinentry -> glib2
-	pinentry -> ncurses
-	pinentry -> atk
-	pinentry -> libsecret
-	pinentry -> pango
-	pinentry -> bash
 	pinentry -> glibc
+	pinentry -> texinfo
+	pinentry -> libassuan
+	pinentry -> atk
+	pinentry -> gcr
+	pinentry -> cairo
+	pinentry -> pango
+	pinentry -> ncurses
+	pinentry -> gtk3
+	pinentry -> libsecret
+	pinentry -> bash
+	pinentry -> glib2
 	pinentry -> gtk2
+	pinentry -> chkconfig
 	pinfo
 	pipewire
 	pipewire -> sbc
-	pipewire -> rtkit
 	pipewire -> libsndfile
+	pipewire -> rtkit
 	pipewire0.2
 	pixman
 	pixman -> glibc
 	pkgconf
-	pkgconf -> bash
 	pkgconf -> glibc
+	pkgconf -> bash
 	plasma-breeze
 	plotutils
 	plymouth
-	plymouth -> pango
-	plymouth -> glibc
-	plymouth -> coreutils
-	plymouth -> gzip
-	plymouth -> bash
-	plymouth -> findutils
-	plymouth -> libdrm
-	plymouth -> cairo
-	plymouth -> systemd
-	plymouth -> dracut
 	plymouth -> cpio
+	plymouth -> coreutils
+	plymouth -> systemd
+	plymouth -> gzip
+	plymouth -> cairo
+	plymouth -> pango
+	plymouth -> findutils
+	plymouth -> bash
+	plymouth -> libdrm
+	plymouth -> glibc
+	plymouth -> dracut
 	pmdk
 	pmdk -> pmdk
 	pmix
@@ -5234,100 +5234,100 @@ digraph MyPicture {
 	po4a
 	po4a -> opensp
 	policycoreutils
-	policycoreutils -> audit
+	policycoreutils -> gawk
+	policycoreutils -> diffutils
 	policycoreutils -> checkpolicy
+	policycoreutils -> sed
+	policycoreutils -> pcre
+	policycoreutils -> glib2
+	policycoreutils -> pygobject3
+	policycoreutils -> gtk3
+	policycoreutils -> coreutils
+	policycoreutils -> rpm
+	policycoreutils -> grep
 	policycoreutils -> libsemanage
 	policycoreutils -> setools
-	policycoreutils -> glibc
-	policycoreutils -> python2
-	policycoreutils -> gtk3
-	policycoreutils -> pcre
-	policycoreutils -> libsepol
-	policycoreutils -> sed
-	policycoreutils -> grep
-	policycoreutils -> gawk
-	policycoreutils -> coreutils
-	policycoreutils -> glib2
-	policycoreutils -> libselinux
-	policycoreutils -> rpm
-	policycoreutils -> dbus
-	policycoreutils -> bash
 	policycoreutils -> pam
-	policycoreutils -> diffutils
-	policycoreutils -> pygobject3
+	policycoreutils -> python2
+	policycoreutils -> bash
+	policycoreutils -> libsepol
+	policycoreutils -> audit
+	policycoreutils -> dbus
+	policycoreutils -> glibc
+	policycoreutils -> libselinux
 	policycoreutils -> python3
 	polkit
-	polkit -> glibc
+	polkit -> mozjs60
 	polkit -> dbus
 	polkit -> glib2
-	polkit -> mozjs60
-	polkit -> expat
-	polkit -> systemd
 	polkit -> bash
-	polkit -> gcc
 	polkit -> pam
+	polkit -> gcc
+	polkit -> systemd
+	polkit -> glibc
+	polkit -> expat
 	polkit-pkla-compat
 	polkit-qt-1
 	poppler
-	poppler -> libtiff
 	poppler -> lcms2
-	poppler -> gcc
 	poppler -> libpng
 	poppler -> cairo
-	poppler -> openjpeg2
-	poppler -> nss
-	poppler -> nspr
-	poppler -> fontconfig
 	poppler -> freetype
-	poppler -> glibc
+	poppler -> gcc
+	poppler -> libtiff
 	poppler -> glib2
+	poppler -> fontconfig
+	poppler -> openjpeg2
+	poppler -> nspr
+	poppler -> nss
+	poppler -> glibc
 	poppler-data
 	popt
 	popt -> glibc
 	portreserve
-	portreserve -> bash
 	portreserve -> systemd
+	portreserve -> bash
 	portreserve -> glibc
 	postfix
-	postfix -> systemd
-	postfix -> hostname
-	postfix -> tinycdb
-	postfix -> libpq
-	postfix -> policycoreutils
-	postfix -> chkconfig
-	postfix -> openssl
-	postfix -> glibc
-	postfix -> libnsl2
 	postfix -> bash
-	postfix -> libdb
+	postfix -> libpq
+	postfix -> chkconfig
 	postfix -> perl
-	postfix -> diffutils
+	postfix -> libnsl2
+	postfix -> tinycdb
 	postfix -> icu
+	postfix -> systemd
+	postfix -> policycoreutils
+	postfix -> hostname
+	postfix -> openssl
+	postfix -> libdb
+	postfix -> glibc
 	postfix -> findutils
+	postfix -> diffutils
 	postgresql-jdbc
 	postgresql-odbc
 	potrace
 	powertop
 	ppp
-	ppp -> libpcap
-	ppp -> systemd
+	ppp -> glibc
 	ppp -> glib2
-	ppp -> pam
-	ppp -> openssl
 	ppp -> libxcrypt
 	ppp -> bash
-	ppp -> glibc
+	ppp -> libpcap
+	ppp -> pam
+	ppp -> openssl
+	ppp -> systemd
 	prefixdevname
-	prefixdevname -> bash
-	prefixdevname -> systemd
 	prefixdevname -> glibc
 	prefixdevname -> gcc
+	prefixdevname -> bash
+	prefixdevname -> systemd
 	procmail
 	procps-ng
 	prometheus-jmx-exporter
 	protobuf
-	protobuf -> glibc
 	protobuf -> python2
+	protobuf -> glibc
 	protobuf -> zlib
 	protobuf -> gcc
 	protobuf-c
@@ -5335,11 +5335,11 @@ digraph MyPicture {
 	ps_mem -> python3
 	psacct
 	psacct -> glibc
-	psacct -> bash
 	psacct -> texinfo
-	psacct -> systemd
+	psacct -> bash
 	psacct -> chkconfig
 	psacct -> coreutils
+	psacct -> systemd
 	psmisc
 	psmisc -> ncurses
 	psmisc -> libselinux
@@ -5350,49 +5350,49 @@ digraph MyPicture {
 	publicsuffix-list
 	pugixml
 	pulseaudio
-	pulseaudio -> glibc
-	pulseaudio -> glib2
-	pulseaudio -> libxcb
-	pulseaudio -> libasyncns
-	pulseaudio -> libcap
-	pulseaudio -> gcc
-	pulseaudio -> bash
-	pulseaudio -> speexdsp
 	pulseaudio -> rtkit
-	pulseaudio -> pulseaudio
+	pulseaudio -> bluez
+	pulseaudio -> glibc
+	pulseaudio -> libxcb
+	pulseaudio -> libcap
 	pulseaudio -> libXtst
+	pulseaudio -> libasyncns
+	pulseaudio -> sbc
+	pulseaudio -> speexdsp
+	pulseaudio -> libtdb
+	pulseaudio -> libtool
+	pulseaudio -> bash
+	pulseaudio -> libICE
+	pulseaudio -> orc
 	pulseaudio -> dbus
-	pulseaudio -> systemd
+	pulseaudio -> libSM
 	pulseaudio -> libX11
 	pulseaudio -> libsndfile
-	pulseaudio -> libtool
-	pulseaudio -> libICE
-	pulseaudio -> libtdb
-	pulseaudio -> bluez
-	pulseaudio -> libSM
-	pulseaudio -> orc
-	pulseaudio -> sbc
+	pulseaudio -> gcc
+	pulseaudio -> systemd
+	pulseaudio -> pulseaudio
+	pulseaudio -> glib2
 	pyOpenSSL
 	pyOpenSSL -> python2
 	pyatspi
-	pyatspi -> pygobject3
 	pyatspi -> python2
+	pyatspi -> pygobject3
 	pycairo
+	pycairo -> glibc
 	pycairo -> cairo
 	pycairo -> python2
-	pycairo -> glibc
 	pycairo -> python3
 	pygobject3
-	pygobject3 -> python2
-	pygobject3 -> cairo
-	pygobject3 -> glib2
-	pygobject3 -> python3
-	pygobject3 -> libffi
 	pygobject3 -> pycairo
+	pygobject3 -> python2
+	pygobject3 -> python3
+	pygobject3 -> cairo
+	pygobject3 -> libffi
+	pygobject3 -> glib2
 	pygobject3 -> glibc
 	pykickstart
-	pykickstart -> python3
 	pykickstart -> python2
+	pykickstart -> python3
 	pyodbc
 	pyodbc -> python2
 	pyodbc -> unixODBC
@@ -5400,9 +5400,9 @@ digraph MyPicture {
 	pyparsing -> python3
 	pyparted
 	pyparted -> python3
-	pyparted -> python2
 	pyparted -> glibc
 	pyparted -> parted
+	pyparted -> python2
 	pyserial
 	pyserial -> python2
 	pytest
@@ -5528,56 +5528,56 @@ digraph MyPicture {
 	python-werkzeug
 	python-whoosh
 	python2
-	python2 -> gdbm
-	python2 -> libtirpc
-	python2 -> chkconfig
 	python2 -> readline
-	python2 -> bzip2
-	python2 -> glibc
-	python2 -> libffi
-	python2 -> openssl
+	python2 -> gdbm
+	python2 -> zlib
 	python2 -> libxcrypt
 	python2 -> libnsl2
-	python2 -> ncurses
-	python2 -> expat
-	python2 -> bash
-	python2 -> zlib
-	python2 -> sqlite
+	python2 -> libtirpc
+	python2 -> chkconfig
 	python2 -> libdb
+	python2 -> ncurses
+	python2 -> sqlite
+	python2 -> bash
+	python2 -> openssl
+	python2 -> libffi
+	python2 -> glibc
+	python2 -> bzip2
+	python2 -> expat
 	python2-pip
 	python2-setuptools
 	python3
-	python3 -> sqlite
-	python3 -> readline
-	python3 -> zlib
-	python3 -> libffi
-	python3 -> gdbm
-	python3 -> libxcrypt
-	python3 -> libtirpc
-	python3 -> tk
-	python3 -> glibc
-	python3 -> openssl
-	python3 -> python2
 	python3 -> chkconfig
-	python3 -> expat
-	python3 -> xz
-	python3 -> libX11
 	python3 -> python36
+	python3 -> python2
 	python3 -> bzip2
-	python3 -> ncurses
-	python3 -> bash
 	python3 -> libnsl2
+	python3 -> libxcrypt
+	python3 -> libffi
+	python3 -> expat
+	python3 -> libX11
+	python3 -> xz
+	python3 -> readline
+	python3 -> openssl
+	python3 -> sqlite
+	python3 -> gdbm
+	python3 -> zlib
+	python3 -> tk
+	python3 -> bash
+	python3 -> glibc
+	python3 -> ncurses
+	python3 -> libtirpc
 	python3-azure-sdk
 	python36
 	python38
 	python3x-six
 	pytz
 	pytz -> tzdata
-	pytz -> python3
 	pytz -> python2
+	pytz -> python3
 	pywbem
-	pywbem -> python3
 	pywbem -> PyYAML
+	pywbem -> python3
 	pyxdg
 	pyxdg -> python2
 	qatengine
@@ -5587,22 +5587,22 @@ digraph MyPicture {
 	qatzip -> qatlib
 	qemu-kvm
 	qgnomeplatform
-	qgnomeplatform -> pango
-	qgnomeplatform -> libglvnd
-	qgnomeplatform -> libxkbcommon
-	qgnomeplatform -> atk
 	qgnomeplatform -> wayland
+	qgnomeplatform -> pango
+	qgnomeplatform -> atk
 	qgnomeplatform -> gtk3
+	qgnomeplatform -> libxkbcommon
+	qgnomeplatform -> libglvnd
 	qgnomeplatform -> cairo
 	qpdf
-	qpdf -> gnutls
-	qpdf -> glibc
-	qpdf -> gcc
 	qpdf -> perl
 	qpdf -> zlib
+	qpdf -> glibc
+	qpdf -> gnutls
+	qpdf -> gcc
 	qt5
-	qt5 -> gcc
 	qt5 -> cmake
+	qt5 -> gcc
 	qt5-qt3d
 	qt5-qtbase
 	qt5-qtcanvas3d
@@ -5629,43 +5629,43 @@ digraph MyPicture {
 	qt5-qtxmlpatterns
 	qtchooser
 	quota
-	quota -> glibc
-	quota -> systemd
-	quota -> openldap
 	quota -> dbus
+	quota -> glibc
 	quota -> libtirpc
-	quota -> libnl3
 	quota -> e2fsprogs
+	quota -> systemd
 	quota -> rpcbind
+	quota -> openldap
 	quota -> bash
+	quota -> libnl3
 	raptor2
 	rarian
 	rarian -> rarian
 	rasdaemon
-	rasdaemon -> sqlite
-	rasdaemon -> hwdata
-	rasdaemon -> glibc
-	rasdaemon -> dmidecode
 	rasdaemon -> systemd
 	rasdaemon -> perl
+	rasdaemon -> sqlite
+	rasdaemon -> dmidecode
+	rasdaemon -> hwdata
+	rasdaemon -> glibc
 	rasqal
 	rasqal -> raptor2
 	rdma-core
 	readline
-	readline -> texinfo
 	readline -> glibc
-	readline -> ncurses
 	readline -> bash
+	readline -> ncurses
+	readline -> texinfo
 	realmd
-	realmd -> openldap
+	realmd -> krb5
+	realmd -> polkit
+	realmd -> bash
+	realmd -> glibc
 	realmd -> authselect
 	realmd -> glib2
-	realmd -> e2fsprogs
-	realmd -> bash
 	realmd -> systemd
-	realmd -> glibc
-	realmd -> polkit
-	realmd -> krb5
+	realmd -> openldap
+	realmd -> e2fsprogs
 	rear
 	rear -> libisoburn
 	redfish-finder
@@ -5675,70 +5675,70 @@ digraph MyPicture {
 	redhat-support-lib-python
 	redhat-support-tool
 	redland
-	redland -> raptor2
 	redland -> rasqal
+	redland -> raptor2
 	resource-agents
 	rest
-	rest -> libsoup
-	rest -> libxml2
 	rest -> glibc
+	rest -> libxml2
+	rest -> libsoup
 	rest -> glib2
 	rhythmbox
 	rhythmbox -> gtk3
-	rhythmbox -> libdmapsharing
-	rhythmbox -> pango
-	rhythmbox -> libX11
-	rhythmbox -> pygobject3
 	rhythmbox -> libnotify
-	rhythmbox -> brasero
+	rhythmbox -> pango
+	rhythmbox -> libdmapsharing
 	rhythmbox -> gstreamer1
-	rhythmbox -> libgpod
+	rhythmbox -> libX11
 	rhythmbox -> cairo
-	rhythmbox -> libmtp
-	rhythmbox -> gvfs
-	rhythmbox -> grilo
+	rhythmbox -> libgpod
+	rhythmbox -> brasero
 	rhythmbox -> atk
 	rhythmbox -> libpeas
+	rhythmbox -> gvfs
+	rhythmbox -> grilo
+	rhythmbox -> libmtp
+	rhythmbox -> pygobject3
 	rig
 	rig -> python2
 	rng-tools
 	rootfiles
 	rootfiles -> bash
 	rpcbind
-	rpcbind -> glibc
 	rpcbind -> policycoreutils
-	rpcbind -> chkconfig
 	rpcbind -> libtirpc
+	rpcbind -> systemd
+	rpcbind -> glibc
+	rpcbind -> chkconfig
 	rpcbind -> coreutils
 	rpcbind -> bash
-	rpcbind -> systemd
 	rpm
-	rpm -> libselinux
-	rpm -> popt
-	rpm -> crontabs
-	rpm -> xz
-	rpm -> gdb
-	rpm -> logrotate
 	rpm -> lua
-	rpm -> zlib
-	rpm -> elfutils
-	rpm -> openssl
-	rpm -> bzip2
-	rpm -> audit
-	rpm -> gnupg2
 	rpm -> zstd
-	rpm -> dbus
+	rpm -> file
+	rpm -> acl
+	rpm -> libcap
+	rpm -> sqlite
+	rpm -> libselinux
+	rpm -> audit
+	rpm -> xz
+	rpm -> crontabs
+	rpm -> elfutils
+	rpm -> libarchive
+	rpm -> zlib
+	rpm -> popt
+	rpm -> openssl
+	rpm -> libdb
+	rpm -> gdb
+	rpm -> curl
+	rpm -> bash
+	rpm -> gnupg2
 	rpm -> coreutils
 	rpm -> glibc
-	rpm -> sqlite
-	rpm -> file
+	rpm -> bzip2
+	rpm -> logrotate
 	rpm -> python3
-	rpm -> bash
-	rpm -> acl
-	rpm -> libdb
-	rpm -> curl
-	rpm -> libcap
-	rpm -> libarchive
+	rpm -> dbus
 	rpm-ostree
 	rpmdevtools
 	rpmdevtools -> perl
@@ -5746,102 +5746,102 @@ digraph MyPicture {
 	rpmlint
 	rpmlint -> perl
 	rrdtool
+	rrdtool -> perl
 	rrdtool -> pango
 	rrdtool -> cairo
-	rrdtool -> perl
 	rsync
+	rsync -> attr
 	rsync -> glibc
+	rsync -> bash
 	rsync -> popt
+	rsync -> systemd
 	rsync -> rsync
 	rsync -> acl
-	rsync -> systemd
-	rsync -> attr
-	rsync -> bash
 	rsyslog
+	rsyslog -> zlib
 	rsyslog -> libestr
-	rsyslog -> librdkafka
-	rsyslog -> curl
-	rsyslog -> librelp
 	rsyslog -> logrotate
-	rsyslog -> libfastjson
+	rsyslog -> librdkafka
+	rsyslog -> librelp
+	rsyslog -> systemd
 	rsyslog -> bash
 	rsyslog -> liblognorm
-	rsyslog -> glibc
-	rsyslog -> libpq
-	rsyslog -> zlib
-	rsyslog -> libnet
-	rsyslog -> openssl
-	rsyslog -> systemd
 	rsyslog -> rsyslog
+	rsyslog -> libpq
+	rsyslog -> curl
+	rsyslog -> openssl
+	rsyslog -> libnet
 	rsyslog -> gcc
+	rsyslog -> glibc
+	rsyslog -> libfastjson
 	rtkit
 	rtkit -> systemd
 	rtkit -> libcap
-	rtkit -> polkit
+	rtkit -> glibc
 	rtkit -> bash
 	rtkit -> dbus
-	rtkit -> glibc
+	rtkit -> polkit
 	rubberband
 	ruby
 	rust-srpm-macros
 	saab-fonts
 	sac
 	samba
-	samba -> gnutls
-	samba -> libarchive
-	samba -> acl
-	samba -> coreutils
-	samba -> iproute
-	samba -> iptables
-	samba -> openldap
-	samba -> jansson
-	samba -> libcap
-	samba -> zlib
-	samba -> libtalloc
-	samba -> psmisc
-	samba -> icu
-	samba -> samba
-	samba -> chkconfig
-	samba -> bash
-	samba -> avahi
 	samba -> systemd
-	samba -> python3
-	samba -> ncurses
-	samba -> krb5
-	samba -> libtasn1
-	samba -> popt
-	samba -> libtdb
-	samba -> libtevent
-	samba -> ethtool
-	samba -> glib2
-	samba -> pam
-	samba -> e2fsprogs
-	samba -> libldb
-	samba -> cups
-	samba -> perl
+	samba -> libcap
 	samba -> dbus
-	samba -> glibc
-	samba -> libtirpc
-	samba -> readline
+	samba -> popt
+	samba -> ncurses
 	samba -> sed
+	samba -> psmisc
+	samba -> gnutls
+	samba -> icu
+	samba -> bash
+	samba -> libtasn1
+	samba -> coreutils
+	samba -> libldb
+	samba -> acl
+	samba -> chkconfig
+	samba -> ethtool
+	samba -> glibc
+	samba -> krb5
+	samba -> iptables
+	samba -> samba
+	samba -> libtdb
+	samba -> glib2
+	samba -> readline
+	samba -> cups
+	samba -> pam
+	samba -> python3
+	samba -> openldap
+	samba -> iproute
+	samba -> libtalloc
+	samba -> perl
+	samba -> jansson
+	samba -> libtirpc
+	samba -> libarchive
 	samba -> gawk
+	samba -> zlib
+	samba -> e2fsprogs
+	samba -> libtevent
+	samba -> avahi
 	sane-backends
 	sane-frontends
 	sanlock
-	sanlock -> libaio
 	sanlock -> python2
 	sanlock -> glibc
+	sanlock -> libaio
 	satyr
-	satyr -> rpm
-	satyr -> glibc
-	satyr -> elfutils
-	satyr -> gcc
 	satyr -> zlib
+	satyr -> elfutils
+	satyr -> rpm
+	satyr -> gcc
+	satyr -> glibc
 	sbc
 	sbc -> glibc
 	sbd
-	sbd -> pacemaker
 	sbd -> corosync
+	sbd -> pacemaker
 	sblim-cmpi-base
 	sblim-gather
 	sblim-indication_helper
@@ -5857,55 +5857,55 @@ digraph MyPicture {
 	scrub -> glibc
 	scrub -> libgcrypt
 	seahorse
-	seahorse -> pango
-	seahorse -> gtk3
-	seahorse -> atk
-	seahorse -> libsecret
-	seahorse -> cairo
-	seahorse -> glibc
-	seahorse -> gcr
-	seahorse -> pinentry
 	seahorse -> glib2
+	seahorse -> glibc
+	seahorse -> atk
+	seahorse -> gcr
+	seahorse -> pango
+	seahorse -> cairo
+	seahorse -> pinentry
+	seahorse -> gtk3
+	seahorse -> libsecret
 	sed
-	sed -> texinfo
 	sed -> glibc
 	sed -> acl
 	sed -> bash
+	sed -> texinfo
 	sed -> libselinux
 	selinux-policy
 	sendmail
 	sendmail -> procmail
 	setools
-	setools -> glibc
-	setools -> python2
-	setools -> libselinux
-	setools -> python3
 	setools -> libsepol
+	setools -> libselinux
+	setools -> python2
+	setools -> python3
+	setools -> glibc
 	setroubleshoot
-	setroubleshoot -> policycoreutils
-	setroubleshoot -> dbus
-	setroubleshoot -> libselinux
-	setroubleshoot -> audit
-	setroubleshoot -> bash
+	setroubleshoot -> python2
+	setroubleshoot -> pygobject3
+	setroubleshoot -> python3
+	setroubleshoot -> rpm
 	setroubleshoot -> libxml2
-	setroubleshoot -> gtk3
 	setroubleshoot -> libnotify
 	setroubleshoot -> glibc
-	setroubleshoot -> pygobject3
+	setroubleshoot -> policycoreutils
+	setroubleshoot -> polkit
+	setroubleshoot -> libselinux
+	setroubleshoot -> gtk3
+	setroubleshoot -> audit
+	setroubleshoot -> bash
+	setroubleshoot -> dbus
 	setroubleshoot -> initscripts
 	setroubleshoot -> libreport
-	setroubleshoot -> python2
-	setroubleshoot -> polkit
-	setroubleshoot -> rpm
-	setroubleshoot -> python3
 	setroubleshoot-plugins
 	setserial
 	setserial -> glibc
 	setup
 	sg3_utils
 	sg3_utils -> glibc
-	sg3_utils -> gcc
 	sg3_utils -> bash
+	sg3_utils -> gcc
 	sgml-common
 	sgpio
 	sgpio -> glibc
@@ -5920,40 +5920,40 @@ digraph MyPicture {
 	slang
 	slang -> glibc
 	smartmontools
-	smartmontools -> systemd
 	smartmontools -> gcc
-	smartmontools -> glibc
-	smartmontools -> bash
 	smartmontools -> libselinux
+	smartmontools -> glibc
+	smartmontools -> systemd
+	smartmontools -> bash
 	smc-tools
 	snappy
-	snappy -> glibc
 	snappy -> gcc
+	snappy -> glibc
 	sombok
 	sos
-	sos -> xz
-	sos -> bzip2
 	sos -> python3
-	sos -> libxml2
 	sos -> bash
+	sos -> bzip2
+	sos -> libxml2
+	sos -> xz
 	sos-collector
 	sound-theme-freedesktop
 	soundtouch
 	source-highlight
 	soxr
 	spamassassin
-	spamassassin -> perl
 	spamassassin -> procmail
+	spamassassin -> perl
 	speech-dispatcher
 	speex
 	speexdsp
 	speexdsp -> glibc
 	spice
-	spice -> orc
+	spice -> opus
 	spice -> celt051
 	spice -> pixman
-	spice -> opus
 	spice -> gstreamer1
+	spice -> orc
 	spice-gtk
 	spice-streaming-agent
 	spice-vdagent
@@ -5962,106 +5962,106 @@ digraph MyPicture {
 	splix -> jbigkit
 	splix -> cups
 	sqlite
-	sqlite -> ncurses
+	sqlite -> glibc
 	sqlite -> readline
 	sqlite -> zlib
-	sqlite -> glibc
+	sqlite -> ncurses
 	squashfs-tools
 	srt
 	sscg
 	sshpass
 	sssd
-	sssd -> systemd
+	sssd -> dbus
+	sssd -> libselinux
+	sssd -> libtalloc
 	sssd -> samba
 	sssd -> sssd
-	sssd -> pam
-	sssd -> glibc
-	sssd -> e2fsprogs
-	sssd -> krb5
-	sssd -> libselinux
-	sssd -> polkit
-	sssd -> bash
-	sssd -> openldap
-	sssd -> popt
 	sssd -> keyutils
-	sssd -> chkconfig
-	sssd -> libnl3
-	sssd -> libtdb
-	sssd -> libtalloc
-	sssd -> python3
-	sssd -> libsemanage
-	sssd -> libldb
-	sssd -> pcre2
-	sssd -> libunistring
-	sssd -> dbus
 	sssd -> openssl
+	sssd -> chkconfig
+	sssd -> pcre2
+	sssd -> openldap
+	sssd -> libsemanage
+	sssd -> libunistring
+	sssd -> libtdb
+	sssd -> systemd
+	sssd -> popt
+	sssd -> glibc
+	sssd -> krb5
+	sssd -> bash
+	sssd -> polkit
 	sssd -> libtevent
+	sssd -> libldb
+	sssd -> e2fsprogs
+	sssd -> libnl3
+	sssd -> python3
+	sssd -> pam
 	star
-	star -> libselinux
-	star -> acl
 	star -> attr
+	star -> acl
 	star -> bash
-	star -> glibc
 	star -> chkconfig
+	star -> libselinux
+	star -> glibc
 	startdde
 	startup-notification
 	strace
-	strace -> libselinux
 	strace -> bash
-	strace -> glibc
+	strace -> libselinux
 	strace -> elfutils
+	strace -> glibc
 	stratis-cli
 	stratisd
 	stratisd -> stratisd
 	stratisd -> plymouth
 	stress-ng
 	stunnel
-	stunnel -> glibc
-	stunnel -> openssl
 	stunnel -> systemd
+	stunnel -> glibc
 	stunnel -> bash
+	stunnel -> openssl
 	subversion
 	sudo
-	sudo -> audit
-	sudo -> zlib
-	sudo -> glibc
 	sudo -> bash
-	sudo -> libselinux
-	sudo -> vim
-	sudo -> coreutils
 	sudo -> openldap
+	sudo -> vim
+	sudo -> glibc
 	sudo -> pam
+	sudo -> zlib
+	sudo -> audit
+	sudo -> libselinux
+	sudo -> coreutils
 	suitesparse
 	suitesparse -> atlas
 	suitesparse -> tbb
 	suitesparse -> gcc
 	suitesparse -> glibc
 	sushi
-	sushi -> gjs
-	sushi -> cairo
-	sushi -> harfbuzz
-	sushi -> gtksourceview3
-	sushi -> libXfixes
-	sushi -> pango
-	sushi -> libdrm
-	sushi -> libXrandr
-	sushi -> libmusicbrainz5
-	sushi -> libxkbcommon
-	sushi -> atk
-	sushi -> libXi
-	sushi -> mesa
-	sushi -> wayland
-	sushi -> libglvnd
 	sushi -> libX11
-	sushi -> libXext
-	sushi -> gtk3
-	sushi -> libXcomposite
-	sushi -> cogl
-	sushi -> evince
-	sushi -> gstreamer1
+	sushi -> gtksourceview3
 	sushi -> webkit2gtk3
-	sushi -> libXdamage
+	sushi -> gtk3
+	sushi -> atk
+	sushi -> libXcomposite
+	sushi -> libxkbcommon
+	sushi -> evince
+	sushi -> libXfixes
+	sushi -> libdrm
+	sushi -> libXext
+	sushi -> gstreamer1
+	sushi -> mesa
+	sushi -> pango
+	sushi -> libXi
+	sushi -> libXrandr
+	sushi -> wayland
 	sushi -> clutter
+	sushi -> libglvnd
+	sushi -> gjs
+	sushi -> harfbuzz
+	sushi -> cairo
+	sushi -> cogl
+	sushi -> libmusicbrainz5
+	sushi -> libXdamage
 	switcheroo-control
 	symlinks
 	symlinks -> glibc
@@ -6076,169 +6076,169 @@ digraph MyPicture {
 	system-lsb
 	system-storage-manager
 	systemd
-	systemd -> libseccomp
-	systemd -> sed
-	systemd -> gcc
-	systemd -> elfutils
-	systemd -> libselinux
-	systemd -> openssl
-	systemd -> bzip2
-	systemd -> glibc
-	systemd -> pam
-	systemd -> libmicrohttpd
-	systemd -> systemd
+	systemd -> dbus
 	systemd -> cryptsetup
+	systemd -> coreutils
+	systemd -> libselinux
+	systemd -> audit
+	systemd -> glibc
+	systemd -> libidn2
+	systemd -> libmicrohttpd
+	systemd -> libgcrypt
+	systemd -> bash
+	systemd -> libxcrypt
 	systemd -> libcap
 	systemd -> lz4
-	systemd -> pcre2
-	systemd -> coreutils
-	systemd -> dbus
-	systemd -> acl
-	systemd -> firewalld
-	systemd -> libgcrypt
-	systemd -> grep
-	systemd -> xz
-	systemd -> libidn2
-	systemd -> libxcrypt
-	systemd -> bash
 	systemd -> zlib
-	systemd -> curl
-	systemd -> kmod
-	systemd -> audit
+	systemd -> acl
 	systemd -> gnutls
+	systemd -> xz
+	systemd -> elfutils
+	systemd -> libseccomp
+	systemd -> bzip2
+	systemd -> pcre2
+	systemd -> kmod
+	systemd -> curl
+	systemd -> grep
+	systemd -> pam
+	systemd -> firewalld
+	systemd -> openssl
+	systemd -> systemd
+	systemd -> gcc
+	systemd -> sed
 	systemtap
-	systemtap -> byteman
 	systemtap -> boost
-	systemtap -> python2
-	systemtap -> perl
+	systemtap -> tbb
+	systemtap -> nss
 	systemtap -> dyninst
+	systemtap -> perl
+	systemtap -> python2
+	systemtap -> byteman
 	systemtap -> nspr
 	systemtap -> libvirt
-	systemtap -> nss
-	systemtap -> tbb
 	taglib
+	taglib -> zlib
 	taglib -> glibc
 	taglib -> gcc
-	taglib -> zlib
 	tagsoup
 	tang
 	tang -> jose
 	tar
-	tar -> acl
 	tar -> libselinux
-	tar -> texinfo
-	tar -> glibc
+	tar -> acl
 	tar -> bash
+	tar -> glibc
+	tar -> texinfo
 	targetcli
 	targetcli -> python2
 	tbb
+	tbb -> gcc
 	tbb -> glibc
 	tbb -> python2
-	tbb -> gcc
 	tboot
-	tboot -> glibc
-	tboot -> bash
-	tboot -> zlib
 	tboot -> openssl
+	tboot -> glibc
+	tboot -> zlib
+	tboot -> bash
 	tcl
-	tcl -> zlib
 	tcl -> glibc
+	tcl -> zlib
 	teckit
 	tesseract
+	tesseract -> pango
 	tesseract -> leptonica
 	tesseract -> cairo
-	tesseract -> pango
 	tesseract-tessdata
 	tex-fonts-hebrew
 	texi2html
 	texi2html -> latex2html
 	texinfo
-	texinfo -> texinfo
-	texinfo -> glibc
-	texinfo -> ncurses
 	texinfo -> bash
 	texinfo -> zlib
+	texinfo -> texinfo
 	texinfo -> perl
+	texinfo -> glibc
+	texinfo -> ncurses
 	texlive
-	texlive -> pixman
-	texlive -> teckit
-	texlive -> libXi
-	texlive -> poppler
+	texlive -> harfbuzz
+	texlive -> libXaw
 	texlive -> libX11
 	texlive -> perl
-	texlive -> ghostscript
 	texlive -> zziplib
-	texlive -> libXaw
-	texlive -> libXpm
-	texlive -> libICE
+	texlive -> ghostscript
 	texlive -> gd
+	texlive -> libXi
 	texlive -> cairo
-	texlive -> graphite2
 	texlive -> potrace
-	texlive -> libXt
-	texlive -> harfbuzz
-	texlive -> libSM
 	texlive -> libpaper
+	texlive -> libXpm
+	texlive -> poppler
+	texlive -> graphite2
+	texlive -> libICE
 	texlive -> libXmu
+	texlive -> pixman
 	texlive -> libXext
+	texlive -> teckit
+	texlive -> libSM
+	texlive -> libXt
 	thermald
-	thermald -> libevdev
 	thermald -> upower
+	thermald -> libevdev
 	thunderbird
-	thunderbird -> libXcursor
-	thunderbird -> libXdamage
-	thunderbird -> libxcb
 	thunderbird -> libXi
-	thunderbird -> nspr
-	thunderbird -> libX11
-	thunderbird -> gtk3
-	thunderbird -> libXt
-	thunderbird -> atk
 	thunderbird -> pango
+	thunderbird -> libxcb
 	thunderbird -> libXcomposite
-	thunderbird -> libXrender
-	thunderbird -> libXfixes
-	thunderbird -> cairo
 	thunderbird -> libXext
+	thunderbird -> libX11
+	thunderbird -> libXrender
+	thunderbird -> libXcursor
+	thunderbird -> libXfixes
+	thunderbird -> atk
+	thunderbird -> nspr
+	thunderbird -> libXt
+	thunderbird -> gtk3
+	thunderbird -> libXdamage
+	thunderbird -> cairo
 	tigervnc
-	tigervnc -> gnutls
-	tigervnc -> libXext
-	tigervnc -> libSM
 	tigervnc -> nettle
-	tigervnc -> pixman
-	tigervnc -> chkconfig
-	tigervnc -> libXfont2
-	tigervnc -> libXdmcp
-	tigervnc -> glibc
-	tigervnc -> dbus
-	tigervnc -> libXtst
-	tigervnc -> fltk
-	tigervnc -> libXau
-	tigervnc -> libICE
-	tigervnc -> libX11
-	tigervnc -> libXi
-	tigervnc -> gcc
-	tigervnc -> pam
-	tigervnc -> libxshmfence
-	tigervnc -> libglvnd
-	tigervnc -> zlib
 	tigervnc -> libXrender
+	tigervnc -> gnutls
 	tigervnc -> mesa
-	tigervnc -> libXft
-	tigervnc -> libXinerama
-	tigervnc -> perl
+	tigervnc -> chkconfig
+	tigervnc -> libSM
 	tigervnc -> libXfixes
+	tigervnc -> libXi
+	tigervnc -> libXfont2
+	tigervnc -> libglvnd
+	tigervnc -> libXinerama
+	tigervnc -> libICE
+	tigervnc -> pam
+	tigervnc -> fltk
+	tigervnc -> libXtst
+	tigervnc -> glibc
+	tigervnc -> libXdmcp
+	tigervnc -> libXft
+	tigervnc -> perl
+	tigervnc -> libxshmfence
+	tigervnc -> dbus
+	tigervnc -> pixman
+	tigervnc -> zlib
+	tigervnc -> libXext
+	tigervnc -> gcc
+	tigervnc -> libX11
+	tigervnc -> libXau
 	time
+	time -> bash
 	time -> glibc
 	time -> texinfo
-	time -> bash
 	timedatex
 	timedatex -> systemd
 	timedatex -> bash
+	timedatex -> polkit
 	timedatex -> glibc
 	timedatex -> libselinux
 	timedatex -> glib2
-	timedatex -> polkit
 	tinycdb
 	tix
 	tix -> libX11
@@ -6248,32 +6248,32 @@ digraph MyPicture {
 	tk -> libXft
 	tlog
 	tmpwatch
-	tmpwatch -> glibc
 	tmpwatch -> psmisc
+	tmpwatch -> glibc
 	tmux
 	tmux -> glibc
+	tmux -> libevent
 	tmux -> ncurses
 	tmux -> bash
-	tmux -> libevent
 	tog-pegasus
 	tokyocabinet
 	torque
 	torque -> munge
 	totem
-	totem -> pygobject3
 	totem -> wayland
-	totem -> libX11
-	totem -> gtk3
-	totem -> clutter
-	totem -> totem
+	totem -> atk
+	totem -> cogl
+	totem -> cairo
+	totem -> pango
 	totem -> gstreamer1
 	totem -> grilo
-	totem -> pango
-	totem -> atk
-	totem -> nautilus
-	totem -> cairo
 	totem -> libpeas
-	totem -> cogl
+	totem -> gtk3
+	totem -> nautilus
+	totem -> pygobject3
+	totem -> totem
+	totem -> libX11
+	totem -> clutter
 	totem -> gvfs
 	totem-pl-parser
 	tpm-quote-tools
@@ -6286,50 +6286,50 @@ digraph MyPicture {
 	tracer
 	tracer -> python2
 	traceroute
-	traceroute -> glibc
 	traceroute -> bash
+	traceroute -> glibc
 	tracker
-	tracker -> zlib
-	tracker -> icu
-	tracker -> NetworkManager
-	tracker -> glibc
 	tracker -> bash
 	tracker -> sqlite
-	tracker -> libxml2
 	tracker -> glib2
 	tracker -> libsoup
+	tracker -> libxml2
 	tracker -> systemd
+	tracker -> icu
+	tracker -> zlib
+	tracker -> glibc
+	tracker -> NetworkManager
 	tracker-miners
 	tree
 	tree -> glibc
 	trousers
-	trousers -> bash
-	trousers -> glibc
 	trousers -> systemd
 	trousers -> openssl
+	trousers -> bash
+	trousers -> glibc
 	tss2
-	tss2 -> openssl
 	tss2 -> glibc
+	tss2 -> openssl
 	ttmkfdir
+	ttmkfdir -> glibc
 	ttmkfdir -> freetype
 	ttmkfdir -> gcc
 	ttmkfdir -> zlib
-	ttmkfdir -> glibc
 	tuna
 	tuna -> python3
 	tuned
+	tuned -> ethtool
+	tuned -> systemd
+	tuned -> powertop
 	tuned -> pygobject3
+	tuned -> kernel
+	tuned -> python3
+	tuned -> gawk
+	tuned -> systemtap
 	tuned -> tuned
 	tuned -> bash
 	tuned -> polkit
-	tuned -> systemd
-	tuned -> gawk
-	tuned -> ethtool
 	tuned -> dbus
-	tuned -> systemtap
-	tuned -> kernel
-	tuned -> python3
-	tuned -> powertop
 	tuned -> python2
 	twolame
 	tzdata
@@ -6337,154 +6337,154 @@ digraph MyPicture {
 	ucs-miscfixed-fonts
 	ucx
 	udisks2
-	udisks2 -> systemd
+	udisks2 -> gcc
 	udisks2 -> xfsprogs
-	udisks2 -> acl
-	udisks2 -> glibc
-	udisks2 -> bash
+	udisks2 -> e2fsprogs
 	udisks2 -> glib2
+	udisks2 -> libatasmart
+	udisks2 -> glibc
 	udisks2 -> gdisk
+	udisks2 -> dosfstools
+	udisks2 -> systemd
+	udisks2 -> dbus
+	udisks2 -> libgudev
 	udisks2 -> polkit
 	udisks2 -> libblockdev
-	udisks2 -> dbus
-	udisks2 -> gcc
-	udisks2 -> e2fsprogs
-	udisks2 -> libatasmart
-	udisks2 -> libgudev
-	udisks2 -> dosfstools
+	udisks2 -> bash
+	udisks2 -> acl
 	udisks2-qt5
 	uglify-js
 	unbound
-	unbound -> python3
-	unbound -> glibc
-	unbound -> bash
-	unbound -> python2
-	unbound -> systemd
 	unbound -> libevent
+	unbound -> bash
 	unbound -> expat
+	unbound -> glibc
+	unbound -> python3
+	unbound -> systemd
 	unbound -> openssl
+	unbound -> python2
 	unicode-ucd
 	units
-	units -> python3
 	units -> readline
 	units -> texinfo
-	units -> glibc
 	units -> bash
+	units -> python3
+	units -> glibc
 	unixODBC
-	unixODBC -> libtool
-	unixODBC -> readline
 	unixODBC -> glibc
+	unixODBC -> readline
+	unixODBC -> libtool
 	unrar
 	unzip
-	unzip -> bash
-	unzip -> glibc
 	unzip -> bzip2
+	unzip -> glibc
+	unzip -> bash
 	upower
 	upower -> libusbx
-	upower -> glib2
-	upower -> glibc
 	upower -> libgudev
 	upower -> libplist
 	upower -> systemd
+	upower -> glibc
+	upower -> glib2
 	upower -> libimobiledevice
 	urlview
 	urw-base35-fonts
 	usb_modeswitch
+	usb_modeswitch -> bash
+	usb_modeswitch -> jimtcl
+	usb_modeswitch -> libusbx
 	usb_modeswitch -> glibc
 	usb_modeswitch -> systemd
-	usb_modeswitch -> jimtcl
-	usb_modeswitch -> bash
-	usb_modeswitch -> libusbx
 	usb_modeswitch-data
 	usbguard
 	usbguard -> librsvg2
-	usbguard -> cairo
 	usbguard -> libnotify
 	usbguard -> protobuf
+	usbguard -> cairo
 	usbmuxd
-	usbmuxd -> libimobiledevice
 	usbmuxd -> libplist
+	usbmuxd -> libimobiledevice
 	usbredir
 	usbutils
-	usbutils -> libusbx
-	usbutils -> glibc
 	usbutils -> python3
 	usbutils -> bash
-	usbutils -> hwdata
+	usbutils -> libusbx
+	usbutils -> glibc
 	usbutils -> systemd
+	usbutils -> hwdata
 	usermode
-	usermode -> pam
-	usermode -> glibc
-	usermode -> gtk2
-	usermode -> libselinux
-	usermode -> atk
-	usermode -> libICE
-	usermode -> libSM
 	usermode -> libuser
+	usermode -> libICE
+	usermode -> libselinux
+	usermode -> pam
+	usermode -> atk
+	usermode -> libSM
+	usermode -> gtk2
+	usermode -> glibc
 	usermode -> passwd
+	usermode -> glib2
 	usermode -> pango
 	usermode -> cairo
-	usermode -> glib2
 	userspace-rcu
 	util-linux
 	v4l-utils
 	valgrind
-	valgrind -> glibc
-	valgrind -> perl
 	valgrind -> gcc
+	valgrind -> perl
+	valgrind -> glibc
 	vamp-plugin-sdk
 	vapoursynth
-	vapoursynth -> zimg
 	vapoursynth -> tesseract
+	vapoursynth -> zimg
 	vdo
-	vdo -> PyYAML
-	vdo -> bash
-	vdo -> systemd
-	vdo -> lvm2
-	vdo -> python3
 	vdo -> zlib
 	vdo -> glibc
+	vdo -> lvm2
+	vdo -> PyYAML
+	vdo -> systemd
+	vdo -> bash
+	vdo -> python3
 	vhostmd
 	vhostmd -> glibc
 	vhostmd -> libxml2
 	vhostmd -> libvirt
 	vid.stab
 	vim
-	vim -> cairo
-	vim -> ncurses
 	vim -> pango
-	vim -> libSM
-	vim -> glibc
-	vim -> gpm
-	vim -> vim
-	vim -> libselinux
-	vim -> libXt
-	vim -> libICE
-	vim -> gtk3
-	vim -> libX11
 	vim -> acl
+	vim -> libICE
+	vim -> ncurses
+	vim -> gpm
+	vim -> libSM
+	vim -> libselinux
+	vim -> vim
+	vim -> gtk3
+	vim -> glibc
+	vim -> libXt
+	vim -> libX11
+	vim -> cairo
 	vinagre
-	vinagre -> gtk3
 	vinagre -> cairo
-	vinagre -> pango
+	vinagre -> gtk3
 	vinagre -> libX11
-	vinagre -> vte291
-	vinagre -> freerdp
 	vinagre -> avahi
+	vinagre -> freerdp
+	vinagre -> pango
 	vinagre -> atk
+	vinagre -> vte291
 	vino
-	vino -> libXext
-	vino -> libICE
 	vino -> atk
-	vino -> libX11
-	vino -> cairo
-	vino -> libXdamage
-	vino -> gtk3
-	vino -> pango
-	vino -> libXtst
-	vino -> libSM
 	vino -> libXfixes
 	vino -> libnotify
+	vino -> libSM
+	vino -> gtk3
+	vino -> libXdamage
+	vino -> cairo
+	vino -> libXtst
+	vino -> libX11
+	vino -> libXext
+	vino -> pango
+	vino -> libICE
 	virt-manager
 	virt-p2v
 	virt-top
@@ -6494,109 +6494,109 @@ digraph MyPicture {
 	vmaf -> pugixml
 	vo-amrwbenc
 	volume_key
-	volume_key -> gpgme
-	volume_key -> glib2
 	volume_key -> cryptsetup
+	volume_key -> glibc
 	volume_key -> gnupg2
 	volume_key -> nss
-	volume_key -> glibc
+	volume_key -> gpgme
 	volume_key -> nspr
+	volume_key -> glib2
 	vorbis-tools
 	vte291
+	vte291 -> zlib
 	vte291 -> atk
 	vte291 -> cairo
-	vte291 -> zlib
-	vte291 -> gtk3
-	vte291 -> gcc
 	vte291 -> glibc
 	vte291 -> gnutls
-	vte291 -> pcre2
 	vte291 -> glib2
 	vte291 -> pango
+	vte291 -> pcre2
+	vte291 -> gcc
+	vte291 -> gtk3
 	vulkan-loader
 	vulkan-tools
 	vulkan-validation-layers
 	watchdog
-	watchdog -> glibc
-	watchdog -> libtirpc
-	watchdog -> bash
 	watchdog -> systemd
+	watchdog -> glibc
+	watchdog -> bash
+	watchdog -> libtirpc
 	wavpack
 	wayland
 	wayland -> libffi
 	wayland -> glibc
 	web-assets
 	webkit2gtk3
-	webkit2gtk3 -> gcc
-	webkit2gtk3 -> libX11
-	webkit2gtk3 -> wayland
-	webkit2gtk3 -> libtasn1
-	webkit2gtk3 -> libpng
-	webkit2gtk3 -> enchant2
-	webkit2gtk3 -> systemd
-	webkit2gtk3 -> libXt
-	webkit2gtk3 -> libglvnd
-	webkit2gtk3 -> libgcrypt
-	webkit2gtk3 -> libxslt
-	webkit2gtk3 -> gtk3
-	webkit2gtk3 -> atk
-	webkit2gtk3 -> libXcomposite
-	webkit2gtk3 -> libsoup
-	webkit2gtk3 -> sqlite
-	webkit2gtk3 -> harfbuzz
-	webkit2gtk3 -> woff2
-	webkit2gtk3 -> libsecret
-	webkit2gtk3 -> zlib
-	webkit2gtk3 -> hyphen
-	webkit2gtk3 -> libwebp
-	webkit2gtk3 -> fontconfig
 	webkit2gtk3 -> glib2
-	webkit2gtk3 -> pango
-	webkit2gtk3 -> libnotify
-	webkit2gtk3 -> openjpeg2
-	webkit2gtk3 -> gstreamer1
-	webkit2gtk3 -> libXrender
-	webkit2gtk3 -> cairo
-	webkit2gtk3 -> freetype
-	webkit2gtk3 -> glibc
-	webkit2gtk3 -> libXdamage
-	webkit2gtk3 -> icu
-	webkit2gtk3 -> lcms2
 	webkit2gtk3 -> libxml2
+	webkit2gtk3 -> hyphen
+	webkit2gtk3 -> libXdamage
+	webkit2gtk3 -> freetype
+	webkit2gtk3 -> sqlite
+	webkit2gtk3 -> fontconfig
+	webkit2gtk3 -> woff2
+	webkit2gtk3 -> zlib
+	webkit2gtk3 -> enchant2
+	webkit2gtk3 -> openjpeg2
+	webkit2gtk3 -> libX11
+	webkit2gtk3 -> libpng
+	webkit2gtk3 -> icu
+	webkit2gtk3 -> libXrender
+	webkit2gtk3 -> libxslt
+	webkit2gtk3 -> libwebp
+	webkit2gtk3 -> libsecret
+	webkit2gtk3 -> libXcomposite
+	webkit2gtk3 -> libXt
+	webkit2gtk3 -> glibc
+	webkit2gtk3 -> gstreamer1
+	webkit2gtk3 -> harfbuzz
+	webkit2gtk3 -> lcms2
+	webkit2gtk3 -> libgcrypt
+	webkit2gtk3 -> wayland
+	webkit2gtk3 -> libglvnd
+	webkit2gtk3 -> gtk3
+	webkit2gtk3 -> libnotify
+	webkit2gtk3 -> libsoup
+	webkit2gtk3 -> gcc
+	webkit2gtk3 -> pango
+	webkit2gtk3 -> atk
+	webkit2gtk3 -> libtasn1
+	webkit2gtk3 -> systemd
+	webkit2gtk3 -> cairo
 	webrtc-audio-processing
 	wget
 	which
 	which -> glibc
 	which -> coreutils
 	wireshark
-	wireshark -> libsmi
 	wireshark -> libmaxminddb
+	wireshark -> libsmi
 	woff2
 	woff2 -> gcc
-	woff2 -> glibc
 	woff2 -> brotli
+	woff2 -> glibc
 	words
 	wpa_supplicant
+	wpa_supplicant -> bash
+	wpa_supplicant -> systemd
+	wpa_supplicant -> openssl
+	wpa_supplicant -> glibc
 	wpa_supplicant -> dbus
 	wpa_supplicant -> libnl3
-	wpa_supplicant -> bash
-	wpa_supplicant -> glibc
-	wpa_supplicant -> openssl
-	wpa_supplicant -> systemd
 	wsmancli
 	wsmancli -> openwsman
 	x264
 	x264 -> ffmpeg
 	x265
 	x3270
-	x3270 -> ncurses
-	x3270 -> libXaw
-	x3270 -> readline
 	x3270 -> glibc
+	x3270 -> readline
 	x3270 -> libXt
-	x3270 -> libX11
 	x3270 -> libXmu
+	x3270 -> libX11
+	x3270 -> libXaw
 	x3270 -> openssl
+	x3270 -> ncurses
 	xapian-core
 	xcb-util
 	xcb-util-cursor
@@ -6605,8 +6605,8 @@ digraph MyPicture {
 	xcb-util-renderutil
 	xcb-util-wm
 	xdelta
-	xdelta -> glibc
 	xdelta -> xz
+	xdelta -> glibc
 	xdg-desktop-portal
 	xdg-desktop-portal-gtk
 	xdg-user-dirs
@@ -6615,20 +6615,20 @@ digraph MyPicture {
 	xerces-c
 	xfsdump
 	xfsdump -> attr
-	xfsdump -> ncurses
 	xfsdump -> gcc
+	xfsdump -> ncurses
 	xfsdump -> xfsprogs
 	xfsdump -> glibc
 	xfsprogs
+	xfsprogs -> lvm2
+	xfsprogs -> readline
 	xfsprogs -> glibc
 	xfsprogs -> bash
-	xfsprogs -> readline
-	xfsprogs -> lvm2
 	xkeyboard-config
 	xmlrpc-c
 	xmlsec1
-	xmlsec1 -> nspr
 	xmlsec1 -> nss
+	xmlsec1 -> nspr
 	xmlto
 	xmlto -> flex
 	xorg-x11-drivers
@@ -6656,26 +6656,26 @@ digraph MyPicture {
 	xorg-x11-xinit
 	xorg-x11-xkb-utils
 	xrestop
-	xrestop -> libXext
 	xrestop -> libXres
+	xrestop -> libXext
 	xrestop -> libX11
 	xsane
 	xsane -> cairo
-	xsane -> atk
-	xsane -> libtiff
 	xsane -> lcms2
-	xsane -> gimp
-	xsane -> gtk2
 	xsane -> pango
+	xsane -> gtk2
+	xsane -> libtiff
+	xsane -> atk
+	xsane -> gimp
 	xsettingsd
 	xterm
-	xterm -> libXpm
-	xterm -> libXaw
-	xterm -> libX11
-	xterm -> libICE
-	xterm -> libXmu
 	xterm -> libXt
+	xterm -> libICE
 	xterm -> libXft
+	xterm -> libXpm
+	xterm -> libXmu
+	xterm -> libX11
+	xterm -> libXaw
 	xvidcore
 	xz
 	xz -> bash
@@ -6687,20 +6687,20 @@ digraph MyPicture {
 	yasm
 	yasm -> glibc
 	yelp
-	yelp -> libxml2
-	yelp -> glibc
 	yelp -> bzip2
-	yelp -> glib2
-	yelp -> xz
-	yelp -> sqlite
-	yelp -> cairo
-	yelp -> libgcrypt
-	yelp -> libxslt
-	yelp -> gtk3
-	yelp -> webkit2gtk3
-	yelp -> pango
 	yelp -> atk
+	yelp -> gtk3
+	yelp -> glibc
+	yelp -> libxslt
+	yelp -> libxml2
+	yelp -> pango
+	yelp -> glib2
 	yelp -> libsoup
+	yelp -> sqlite
+	yelp -> xz
+	yelp -> webkit2gtk3
+	yelp -> libgcrypt
+	yelp -> cairo
 	yelp-tools
 	yelp-xsl
 	yp-tools
@@ -6710,37 +6710,37 @@ digraph MyPicture {
 	zaf
 	zaf -> hyphen
 	zenity
-	zenity -> libX11
-	zenity -> gtk3
 	zenity -> pango
-	zenity -> glib2
-	zenity -> cairo
-	zenity -> glibc
+	zenity -> libX11
 	zenity -> atk
+	zenity -> glibc
+	zenity -> cairo
 	zenity -> libnotify
+	zenity -> glib2
+	zenity -> gtk3
 	zeromq3
 	zeromq3 -> openpgm
 	zimg
 	zip
+	zip -> unzip
 	zip -> bzip2
 	zip -> glibc
-	zip -> unzip
 	zlib
 	zlib -> glibc
 	zsh
 	zsh -> coreutils
-	zsh -> grep
-	zsh -> bash
 	zsh -> glibc
-	zsh -> gdbm
-	zsh -> pcre
 	zsh -> texinfo
+	zsh -> bash
+	zsh -> pcre
+	zsh -> grep
 	zsh -> ncurses
+	zsh -> gdbm
 	zssh
 	zstd
+	zstd -> gcc
 	zstd -> glibc
 	zstd -> bash
-	zstd -> gcc
 	zvbi
 	zziplib
 }
