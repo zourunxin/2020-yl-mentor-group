@@ -1,0 +1,989 @@
+﻿idx,name,y_true,y_predict,feature
+0,GConf2,库,服务,administration backends configuration database feature pluggable process store support transparent user
+1,GeoIP,库,工具,address base basis country cron database enable file hostname instal ipv4 ipv6 library mapping optionally organization package update user
+3,HdrHistogram_c,工具,库,dynamic high port range
+4,Judy,其它,库,advantage array available benefit consume core declare design dynamic dynamically efficiency element extensible general high implement large library machine memory number performance pre provide purpose scalability scale simply size sparse state technology
+6,ModemManager,工具,服务,application broadband client consistent contain device easy functionality glib interact libraries library make management mobile modem package provide service support
+8,NetworkManager-libreswan,库,其它,capability contain desktop file gnome integrate networkmanager package plug plugin server software
+10,OpenIPMI,库,工具,access allow application base binary binding code contain develop information intelligent interface ipmi language library libs management network open package perl platform project python runtime share tool
+11,PackageKit,库,服务,abstraction access allow application architecture automatically bus codecs command configured cron cross font glib gstreamer gtk3 helper install layer library line manage management module offer package pango plugin program related repository secure service session simple user utility
+12,PyYAML,库,工具,allow applicable arbitrary capable complete complex configuration data design error extension feature file format human interaction language message object parser provide python range readability represent script serialization specific standard support task unicode yaml
+20,accel-config,工具,服务,config configuration configure device libraries library subsystem utility
+21,accountsservice,库,服务,account application base bus client command contain daemon implementation information interact interface library libs manipulate package project provide query talk user want
+22,acl,工具,服务,access contain control draft dynamic function library list manipulate need package posix standard support utility
+23,acpica-tools,工具,服务,advanced architecture assist basic binary code codes command comparison compiles complete component configuration contain contains content current data debug definition develop development directly display environment execution extract extraction file firmware following format help host implementation inclusion independent input instal integrate interface kernel language license machine manipulate message method need operation order os output package performs portion power project provide purpose reference release resident small source space specific specification subsystem suitable table tool tree user version write
+28,adwaita-icon-theme,服务,其它,contain cursor design desktop gnome icon modern originally package theme
+29,adwaita-qt,库,其它,application library theme variant
+31,alsa-lib,库,服务,advanced allow alsa application architecture audio binary case compatibility configuration functionality high include input level library linux manager operating output package program programming provide runtime simplify sound support universal
+32,alsa-plugins,工具,库,access allow alsa application apps backend channel control convert converter daemon determine device driver easy expand explicitly expose external gateway http input kind like mono native network node number option output play plugin plugins pre process processing program protocol provide public pulseaudio rate record signal simple sound specific speex stream suite task type use using virtual word www
+34,alsa-tools,工具,服务,alsa available card certain contain firmware flash following loader package second sound tool upload
+35,alsa-utils,工具,库,advanced alsa architecture audio basic command contain fast framework library line linux package sound test tool transform utility
+40,anolis-release,服务,其它,anolis file package release repository signature
+41,ansible-core,工具,服务,automatically based configuration daemon deployment driven execution extension instal language machine manage management model module multi node remote require simple software task transfer work write
+43,ant,其它,工具,allow apache application build built command compile core dependent drive extension file generally instance java known library line main mission number pilot point process supply target task term test tool type usage
+44,aom,库,工具,alliance bandwidth capable commercial consistent contain content decoder deliver device encoder file flexible focus footprint format free generated generation hardware include internet library media modern non open optimize optimized package quality real reference scalable time user video
+45,apache-commons-cli,其它,工具,argument command easy interface java library line option provide simple work
+46,apache-commons-codec,其它,库,attempt codec common commonly commons decoder encoders examples implementation include provide urls
+47,apache-commons-collections,其它,库,access adapter apis array certain class closure collection commons component container core create custom data development easy fast feature implementation interface java leave method need object package powerful programming property provides purpose quick ready reduce set special structure style test typical union utility
+49,apache-commons-io,其它,库,assist class commons contains develop file filter functionality implementation io library stream utilities utility
+50,apache-commons-jxpath,其它,库,context defines expression graph include interpreter kind language object servlet simple xpath
+52,apache-commons-logging,其它,服务,abstraction addition allow apache basic choose commons component developer difference heavily implementation interface log logging mean minimize number org orient package particular provide runtime simple small standalone user want wrapper
+54,appstream-data,库,其它,center distribution gnome metadata package provide require software specific
+55,apr,库,服务,apache data form free include layer library mission operate os portability portable possible provide routine runtime structure win32
+57,arpwatch,工具,服务,address automatically build certain change contain database device email ethernet install ip monitor monitoring need network package pair report tool track traffic utility
+60,aspell-en,工具,库,dictionary english following list provides word
+61,at,工具,服务,allows batch command control drop execute file input install instead level load need note oriented package particular read shell specify standard time tool user utility
+64,atk,库,工具,alternative application device graphical input interface interfaces library provide reader screen support tool toolkit user
+66,atlas,工具,库,apply architecture automatically base binary bridge build compile configuration contain cpus documentation efficient effort good hardware implementation improvement information interface libraries library linear make necessary obtain optimal optimization order package performance portable present project provide routine software source specific technique time variety
+68,audit,工具,服务,application audit binding configure contain database directory dispatcher dynamic event facility forward framework generate incoming interface kernel later library libs like linux machine management need os package plugin plugins provide python3 real record relay remote search server service space store subsystem thing time tool user utility
+70,authselect,工具,服务,administrator approach authentication build case command common configuration configure design different feature file identity instead library line package potential potentially profile replacement ship solve source stack support test time tool use utility
+72,autoconf-archive,库,其它,archive autoconf cause collection contribute free friendly internet macro software
+74,autogen,工具,库,automated base command consist document eliminate library line nearly option parser parsing powerful process template time
+78,awscli,工具,服务,amazon command environment interface line package provide services unified universal
+80,babeltrace,工具,服务,allow common conversion converter create format library plugin project provide read trace write
+88,bcc,工具,其它,analysis berkeley binding collection command compiler control create easy ebpf efficient example extend feature include instrumentation kernel know line linux llvm make manipulation network packet performance program python python3 suit task tool toolkit trace traffic useful wrapper write
+91,binutils,工具,库,address archive assembler binary binutils collection content convert copying create data detailed discard display extract family file generate graph include index information line linker list modify objdump object printable profile readelf section size string strip symbol translate utility
+92,biosdevname,工具,服务,argument bios device directly form helper kernel label necessary return simple udev
+93,bison,库,工具,able available binary calculator change compatible complex contain context convert correctly depend description develop development ensure file free general generate generated generator grammar information install internationalization know lalr language manual need package packages parse parser program programming purpose range runtime section simple support wide work write yacc
+94,bitmap-fonts,其它,服务,anaconda bitmap compatibility contain convert design encode family file font fonts instal intend location meta native number package provide select terminal xorg
+95,blktrace,工具,库,block collect data detailed event format gather include information install kernel layer linux mechanism need operation package pattern perform provide queue request space trace user utilities utility
+96,bluez,工具,服务,adapter application automatically bluetooth button configuration connect contact contain content daemon device example exchange file function include instal install keyboard libraries like make manual mobile mode mouse need note object package pair phone regular require rule script share ship start support switch udev utilities utility want work
+98,bogofilter,工具,库,algorithm analysis berkeley check code design directly email fast filter filtering good include indicate input list mail message mode normal operation process production return site speed standard status text tune word
+100,boom-boot,工具,服务,boot bootloader compatible configuration entry file function integration library linux loader manage manager module package patch project provide python3 require script specification support systemd tool
+101,boost,库,工具,11 additional advanced allow application atomic base buffer callback class code command compiler comply component concept configurable configuration constraint container context coordinate copy core data date define developer diagnostics directory draft easy emphasis entry establish execution exist expression extend extension facility feature file filesystem filter flexible framework free function functionality future generic graph handling highly implement implementation include inclusion individual interface known language late library line little locale localization log logging long make manage manipulate math memory method micro multiple obtain offer operate operation option order pair path persistence point portable portion preprocessor present program programming provide public query random range reference regular require run runtime schedule separate serialization signal single slot sort source specific standard standards stream style subroutine suitable support switch synchronize template thread time tool type unicode useful user userland utility value variable wide work
+102,booth,工具,服务,cluster core distribute executables facilitate file locate location manage manager multi pacemaker resource site support
+103,bpftrace,工具,其它,available backend berkeley bytecode capability compile dynamic ebpf enhance exist filter high inspire interact kernel language level linux llvm make packet recent script systemtap trace tracer user
+104,brasero,工具,库,application cd contain desktop dvd easy extension gnome libraries library libs nautilus package runtime share simple
+107,brotli,库,工具,algorithm available best combination compress compression context currently data general generic lossless method modern offer order purpose ratio similar speed variant
+108,bubblewrap,库,服务,bin binary container core engine execution kernel namespaces tool user usr work
+113,c2esp,库,服务,cups driver filter printer
+114,ca-certificates,工具,其它,bundle certificate choose contain foundation internet mozilla package root
+116,cairo,库,工具,acceleration advantage available binding buffer cairo consistent contain currently design display file functionality gnome gobject graphic hardware high image include integrate library make medium memory object output package postscript print produce provide quality support target window
+119,cdrdao,工具,库,allow area audio base cd complete content control description disc disk lead length mode pre record recording rs single step textual track write
+122,ceph,服务,工具,access allow application block client cluster develop device distribute distributed file interface library like manage multiple object reliable shared simple storage store strip
+123,certmonger,工具,服务,certificate client concern enrollment monitor primarily service status
+124,chan,工具,库,available buffer channel implementation pure
+126,checkpolicy,工具,库,access architectural base based building compiler component concept contain control design develop enforcement enhanced feature flask functionality general improve include kernel kind level linux mandatory multi number operating originally package policy provide require role security selinux support type utility
+127,cheese,工具,其它,application apply capture contain display effect fancy gnome graphical interface library need package picture video want widget
+128,chkconfig,工具,服务,administrator basic command configure current directly edit hierarchy information instead interface line link maintain manipulate manually numerous page provide query service simple specify start stop symbolic tool unless update utility various
+129,chrome-gnome-shell,工具,其它,browser capable connector extension extensions firefox gnome google host http integration manage messaging native org provide repository shell support
+131,chrpath,工具,服务,allow compile compiled currently dynamic library load modify path program remove support
+132,cifs-utils,工具,服务,able allow authentication automatically cifs client conjunction contain credential deploy establish file filesystem kernel keyring linux login machine manage microsoft module mount need ntlm option package password protocol provide purpose session share standard support tool user utilities widely windows work
+138,cloud-init,其它,服务,cloud init initialization install instance need retrieve script special user various
+140,clufter,工具,服务,additional built capable cluster command common compiled configuration contain conversion corosync data experimental extra file filter format framework generic include interface internal library line offer overall pacemaker package plugin plugins primarily process product python3 reusable serve specific stack step target tool underlying usable variety xslt
+141,clutter,库,工具,application center clutter create example fast graphical interface library medium open potential rich software source type usage user visually
+142,clutter-gst2,库,其它,clutter create enable fast graphical gstreamer integration interface library open rich software source user visually
+143,clutter-gst3,库,其它,clutter create enable fast graphical gstreamer integration interface library open rich software source user visually
+144,clutter-gtk,库,工具,allow application basic clutter embed gtk inside library stage widget
+146,cockpit,库,服务,administer authenticate authentication base behalf bridge browser card certificate client cockpit command component configuration configure console contain dbus diagnostic enable freeipa gnu inspection instal interactive interface line linux listen network offer package report selinux server service session shell smart troubleshoot user
+147,cockpit-appstream,库,工具,archive cockpit component create instal install integration interface load machine manage metric package read storage support update user virt virtual
+148,cockpit-composer,库,工具,cloud cockpit composer custom deploy frontend generate image integrate suitable upload
+149,cockpit-session-recording,库,工具,allow cockpit component configuration generate journal module playback provide record recording session terminal view
+150,codemodel,库,其它,code compiler file generate generator java jaxb library program project provide schema source spin
+151,cogl,库,工具,able advantage apis backends component design developer different draw easy extension future good graphic hardware help implement implementation library like machine make mean need nice open opengl option paper picture place position pretty provide render single small software source specification state step style think utility write
+152,color-filesystem,库,其它,color directory filesystem layout package provide required store used
+155,compat-libtiff3,库,工具,compatibility current file format image library manipulate package provide tiff version
+156,conntrack-tools,工具,服务,addition availability available cluster collect command connection contain currently daemon delete deploy dump establish event firewall gnu high highly inspect interact interface kernel line linux list maintain manipulate message monitor multiple netfilter package program search selection setup state statistic subsystem synchronize table tools track userspace using
+161,coreutils,工具,库,basic binary combination common commonly component core documentation include optional package script shell single tool translation utility utils
+162,corosync,库,服务,cluster contain corosync engine libraries library package
+164,cpio,工具,服务,access archive ascii automatically binary byte collection compatible contain copy create creates default different disk extract file following format information install kind machine manage need order permission pipe plus posix program read recognize support tape
+165,cppcheck,工具,库,analysis code compiler detect error goal normally primarily real static syntax tool type unlike zero
+166,cppunit,工具,库,automatic base framework junit output port test testing unit
+167,cracklib,库,工具,actually appropriate certain characteristic check checking choose conjunction contain creation determine dictionary easy entry exist function generate guess include instal install library match necessary need normally oriented package particular passwd password pattern perform program purpose replacement secure security share standard stop test user users usr utility want word
+168,crash,工具,库,analysis core create dump kernel linux live mission offer package patch self suite tool utility
+169,crash-gcore-command,工具,其它,command core crash create dump extension file kernel module space task user utility
+170,crash-ptdump-command,工具,库,buffer crash decode extension facility generate intel module processor retrieve trace utility
+171,crash-trace-command,工具,库,command crash data extension module read trace utility
+177,cryptsetup,工具,服务,contain crypt disk encrypt encrypted encryption integrity kernel library module package protection share utility verification volume
+179,ctags,工具,库,code construct contain cross definition easy editor emacs enumerate external file form function generate header human improve include index information inside install item language likely list locate macro make method object output preprocessor print programming prototype readable reference select source style support text tool type union utility value variable various
+183,cups-pk-helper,库,其它,application available config configuration control cups helper interface make policykit printer
+185,cyrus-imapd,库,工具,access administration administrative advantage allow base calendar compatible concurrent connection contact contain contains control convert database design differ efficiency email enterprise environment file filesystem hierarchy high imap implementation instal internal internet large list mail message multiple node normally open package performance permit pop3 private program protocol provide read scalability scalable seamless server small software specification standards storage store support technology timezone tool user utilities utility utils version wide write
+187,dav1d,库,工具,correctness cross decoder file focus library open platform source speed
+188,dbus,其它,服务,access application bus common configuration contain dbus facility file implementation interact libraries library login message messaging package provide reference send service session setup tools user utilities utility wide
+191,dbus-python,库,服务,binding bus python3
+193,dbxtool,工具,服务,boot contain package secure uefi update
+194,dconf,工具,服务,backend configuration glib gsettings level low main provide purpose
+195,dconf-editor,工具,服务,configuration database edit editor graphical tool
+196,dcraw,工具,库,camera command contain data decode digital download image line package tool
+199,dde-api,库,其它,daemon
+204,dde-device-formatter,其它,工具,block create device file graphical interface simple
+214,dde-qt5platform-plugins,其它,库,platform plugins
+218,deepin-anything,其它,库,like really
+226,deepin-devicemanager,其它,服务,device hardware information manage manager tool view
+227,deepin-diskmanager,其它,工具,disk management tool utility
+229,deepin-fcitxconfigtool-plugin,其它,库,core currently customize desktop easily extension fcitx framework freebsd input light like linux method native provide requirement support unix weight
+235,deepin-log-viewer,其它,工具,tool useful view viewer
+236,deepin-manual,其它,库,application description design function help instruction learn manual operating provide specific summary user
+245,deepin-terminal,其它,工具,application built console deepin default embeddable emulation emulator enabled library share terminal unicode widget
+248,dejagnu,工具,服务,allow base development easy expect format framework host integrate make output portable program purpose software target tcl test write
+250,desktop-file-utils,工具,其它,application check contain desktop directory file freedesktop gnome http inclusion install manipulate menu optionally org package process specification standard standards utilities validate www
+253,device-mapper-persistent-data,库,服务,cache check contains data device dump include manage mapper metadata persistent provisioning repair restore target tool tools
+255,dialog,库,工具,allow contain create dialog following implement info input install interface like menu message mode script shell text utility
+256,diffstat,工具,服务,base change command commonly compare complex diff display file insertion install large line modification need output patch program provide read statistic summary utility
+259,disomaster,工具,其它,class disc library manipulate package provide wrapper
+265,dlm,库,服务,application contain lib library need package userland
+266,dmidecode,工具,服务,accord bios data depend expansion hardware include information level list memory model module number parallel port reliability report serial slot socket standard status tool typically usage version
+267,dnf,工具,服务,allow apply automate common configuration data download environment file group interface manage manager module package python rpms support systemd unit upgrade user utility
+268,dnf-plugins-core,工具,其它,action additionally allow command compatibility complete config core debug define download enhance file implementation install interface layer lock manager package plugin plugins post protect provide python shell supply transaction update utils version
+269,dnssec-trigger,工具,服务,able applet base case change configuration create current daemon dialog dynamic input interaction local need network networkmanager package panel perform performs probe provide resolver result script server state test tool user validate validation window
+271,docbook-style-dsssl,库,工具,allow convert customizable docbook document example format highly html modular online postscript print stylesheets
+272,docbook-style-xsl,库,工具,allow customizable docbook document format highly html stylesheets transform
+275,docker,其它,服务,application apps backend binary block build building client cloud compute container daemon database depend deploy docker engine framework great hardware instance language large lightweight make mean open packaging particular platform product provider related require scale service ship source stack utility
+276,dos2unix,工具,服务,convert converter file format line text unix versa vice
+277,dosfstools,工具,服务,check drive filesystems floppy hard include linux make ms package utilities utility
+278,dotconf,库,服务,configuration file handle libraries library parse
+284,dovecot,库,工具,authentication contain driver format imap like linux mail mind mysql package plug pop3 primarily provide secure security server small subpackages support unix write
+286,dpa-ext-gnomekeyring,工具,其它,agent automatically extension gnome keyring polkit thing
+288,dracut,工具,服务,based bootable build capability codes configuration contain create default dracut drive drop event file generate generation generator generic hard host image implementation iscsi kernel like linux little live local memory module need network package possible previous provide purpose reduce require result root runtime size small specific store support tool turn udev unlike usage various
+289,drpm,库,工具,apply compatible library make original package provide reading
+290,dtkcore,工具,其它,core deepin module tool
+291,dtkgui,工具,其它,deepin feel look module
+292,dtkwidget,工具,其它,deepin desktop development graphical interface module tool user widget
+294,dvd+rw-tools,工具,其它,collection dvd http information linux master medium tool toolchain
+295,dwz,工具,服务,appendix attempt compilation contain create debug duplicate dwarf equivalent executables import information library need optimization optimize package possible program reduce removal replace representation share size small standard technique tool unit
+297,e2fsprogs,工具,服务,access attempt case check command common compile contain contains core correct create description directly error examine extend file generate handling include inspire install interface internal library libs line manage manually mechanism modify modifying need number originally package parameter parse parser partition performance present repair second share simple space specific structure subsystem table test tool user utilities utility
+299,edk2,库,工具,contain enable firmware machine machines open package project qemu sample support uefi virtual
+300,efi-rpm-macros,库,服务,basic contain directory filesystem layout machine package tool
+304,elfutils,工具,服务,access address allow archive associate attach base binary build check client collection command communication compiled compress contain contains control data debug decompress default demand depend devel discard download dwarf dynamically enable enables file formed frontend function generate handle handling high http implement include internals introspection level libraries library libs like line list load look machine object package party process profile program provide query read readelf reading remote scope search section server service setting share signal size specific stack strip structure symbol trace utility write
+307,enchant,库,工具,backends check checking library spell wrap
+308,enchant2,库,工具,backends check checking library spell wrap
+310,environment-modules,库,工具,access application bash basis bundle clean collection command configure contain different dynamic dynamically entire environment fashion include information instal interpret language load manage modification modify module modules need note package path perl popular provide provides replace script share shell suite support typically useful user variable version
+314,epel-rpm-macros,库,服务,build contain enterprise extra linux macro package packages
+316,espeak-ng,工具,库,base configure create default engine generation language natural open program sound source speech support text
+318,ethtool,工具,服务,allow auto change checksum device especially ethernet location network offload port query setting settings speed tool utility
+319,evemu,库,服务,base capture device emulation event input library program query simple stream tool utility virtual
+322,evolution-data-server,工具,其它,backend calendar contact contain data develop information originally package program provide server task translation unified work
+326,exiv2,工具,库,access accord adjust allow class command comment data delete extract file image include info insert interpreted jpeg library line manipulation metadata method plain print read rename start summary support utility value write
+327,expat,工具,库,associated clark discover document example handler james kind library mean orient parse parser register start stream structure write
+328,expect,工具,服务,application automate contain control easy expect interact interaction interactive make package passwd program script telnet test utility
+329,extra-cmake-modules,库,其它,additional build frameworks module need
+333,fapolicyd,服务,其它,access allow application applications contain daemon determine file implement interface kernel know make package policy right selinux source unknown
+335,fcitx,工具,其它,chinese contain core currently customize data desktop easily engine extension fcitx file framework freebsd gtk2 gtk3 input library libs light like linux method module native package pinyin provide requirement share shared support table unix weight
+336,fcitx-configtool,工具,其它,base based config fcitx gtk gtk3 tool
+337,fcitx-qt5,库,其它,context fcitx input module package provide
+341,ffmpeg,库,工具,audio capture complete contain device digital encode flash format free include internet libraries library linux live package platform playback provide real server solution special specific stream time unix various video
+344,fido-device-onboard,工具,服务,client device dracut implementation initialization module server tool
+348,findutils,工具,服务,argument build certain command contains directory file generate help hierarchy include input install line list locate look match package pattern program search standard thing tool useful usually utility version
+349,fio,工具,服务,action file generation global inherit load match number override parameter particular process specify thread tool type typical unless user want write
+357,fltk,库,工具,built cross emulation functionality graphic interface modern opengl platform pronounce provide support toolkit user
+364,foomatic,服务,工具,account base capable command comprehensive configure contain cups database description driver file files generate generation http independent interface line manipulate option org package print printer queue read separately site tools utility www
+365,foomatic-db,库,其它,base database directory driver http layout option org package printer site www
+368,freeglut,库,工具,allow alternative application available completely contain context create edition free freely function highly keyboard library license licensed manage mark mouse open opengl originally platform portable program range read sample second simple software source support toolkit universally user utility variety wide window write
+370,freeipmi,库,服务,base console daemon detection intelligent interface ipmi management monitoring node platform project provide provides recovery remote software specification syslog tool
+371,freerdp,库,工具,application channel client code compatibility connect convenient core desktop embed environment equivalent extend free handle implement implementation instead library machine microsoft modify native non original plugins portable project protocol provide remote runtime server target windows
+372,freetype,库,工具,advanced complete develop efficiently engine environment file font free glyph individual library load manage open platform portable provide render rendering server support text variety
+376,fstrm,库,服务,allow binary buffers byte clean data encode encoding format frame implementation json light minimal overhead produce protocol sequence serialization specify transport weight yaml
+377,fuse,工具,服务,common contain devel file filesystem fully functional fuse implement library mount package possible program tool userspace utility
+378,fuse-overlayfs,工具,其它,nannan
+379,fuse-sshfs,工具,服务,access base client easy file filesystem filesystems fuse mount protocol remote server support transfer
+381,fwupdate,工具,服务,allow binary command firmware interface library line manage manipulation provide simple tools uefi update
+382,fxload,工具,服务,able appear device download firmware helper intend invoke original program script udev
+383,gamin,库,服务,compatible daemon dependent file library mechanism monitor provide wide
+387,gcab,库,服务,archive create gobject library manipulate
+388,gcc,工具,库,address atomic behavior compliant contain dynamically exception fortran handle hardware instal instrument library link math memory need offload operation package plugin program real runtime separately share standard static support thread version
+391,gcc-toolset-10-binutils,工具,服务,address archive assembler binary binutils collection content convert copying create data detailed discard display extract family file generate graph include index information line linker list modify objdump object printable profile readelf section size string strip symbol translate utility
+394,gcc-toolset-10-elfutils,工具,服务,allow archive associate build check client collection command compiled compress contains data decompress depend devel discard dwarf dynamically enables file formed frontend generate handle handling high http implement include internals introspection level libraries library libs line list load look machine object package party process program provide read readelf reading section server service share size specific stack strip structure symbol utility write
+395,gcc-toolset-10-gcc,工具,其它,collection compile compiler contain current documentation evaluation expression fortran frequently gcc generate include information library manual package plugin program provide specification standard support toolset version
+404,gcc-toolset-11-binutils,工具,服务,address archive assembler binary binutils collection content convert copying create data detailed discard display extract family file generate graph include index information line linker list modify objdump object printable profile readelf section size string strip symbol translate utility
+407,gcc-toolset-11-elfutils,工具,服务,allow archive associate build check client collection command compiled compress contains data decompress depend devel discard dwarf dynamically enables file formed frontend generate handle handling high http implement include internals introspection level libraries library libs line list load look machine object package party process program provide read readelf reading section server service share size specific stack strip structure symbol utility write
+417,gcc-toolset-9-binutils,工具,服务,address archive assembler binary binutils collection content convert copying create data detailed discard display extract family file generate graph include index information line linker list modify objdump object printable profile readelf section size string strip symbol translate utility
+420,gcc-toolset-9-elfutils,工具,库,allow archive build check collection compiled compress contains data decompress depend devel discard dwarf enables file formed generate handle handling high implement include internals level libraries library libs list machine object package party program provide read readelf reading section size specific stack strip structure symbol utility write
+421,gcc-toolset-9-gcc,工具,其它,collection compile compiler contain current documentation evaluation expression fortran frequently gcc generate include information library manual package plugin program provide specification standard support toolset version
+428,gcr,库,工具,access card certificate crypto desktop display file gnome library like module parsing pkcs provide smart store viewer
+431,gdbm,库,工具,access application build database devel developer efficient extensible file hashing include index install libraries library need program routine similar simple standard unix useful work write
+432,gdisk,工具,服务,ability command convert deal direct disk fairly feature format help interface like line manipulation partition partitioning recovery structure table tool
+434,gdm,其它,服务,authentication backend behalf case display functionality gnome graphical handle local lock manager protocol provide related remote server session start time user
+436,gedit-plugins,工具,库,bookmark collection common data file plugin plugins require terminal translate
+439,genwqe-tools,工具,服务,adapter card configure contain hardware manage package provide suite test tool userspace utilities utility
+440,geoclue2,库,服务,access application aware bus client contain convenience create demo demos ensure explicit goal information interact library libs location make package permission possible primary project provide service simple user
+443,gfbgraph,库,服务,glib gnome gobject graph integrate online wrapper
+445,gfs2-utils,工具,服务,check contain correct create file global manage modifying number package utilities utility utils
+446,ghc-srpm-macros,库,其它,building generate macro macros package source
+449,gimp,其它,工具,build channel commercial contain contains conversion create devel development edit effect expect extension extra extremely filter graphic helper image imaging include large layer level library libs manipulation multi need operation package pixel plug plugin powerful program provide share similar sub tool tools useful
+452,git-lfs,库,工具,audio content extension file graphic inside large remote replace sample server storage store text video
+453,gjs,库,工具,allow base bindings engine framework gnome gobject introspection javascript library mozilla
+457,glibc,库,服务,access application available backwards based basis binary build cache caching code common compatibility contain create custom daemon data develop development disk easy executables file function gain glibc group hash header help host important improve include install instead ipv6 language ldap legacy library likely linux locale lookup make math memory module multiple nearly necessary need order pack package particular performance place program provide save service share source space speed standard support switch user version
+464,gnome-bluetooth,其它,服务,application bluetooth contain device display gnome graphical gtk library monitor need package selection setup utility want widget
+479,gnome-online-accounts,其它,工具,access account application exchange framework gnome google imap interface kerberos library microsoft online provide provider sign single smtp user
+490,gnome-terminal,其它,库,ability click context emulator extension feature gnome menu multiple nautilus open option package profile provide right single support terminal window
+497,gnuplot,工具,库,base command common contain data different driven especially expression format function graphics install interactive line mathematical need package point program provide representation scientific suit terminal version
+498,gnutls,库,服务,509 access apis application communication gnutls implement implementation interface language library parse pkcs program protocol provide required secure simple structure technology write
+499,go-srpm-macros,库,其它,architecture build building golang macro package project provide various
+500,gobject-introspection,库,工具,based binding create examine file generate gobject header introspection language library order provide scan source thing useful
+501,golang,其它,库,compiler core enable golang language library miscellaneous programming source tool tree
+502,golang-dbus,其它,服务,binding bus client
+522,gom,其它,工具,application complex data gobject help library make mapper need object provide query sqlite store structured write
+523,google-api-python-client,其它,库,access apis client flexible google library powerful provide python small
+529,gpac,库,工具,alternative ansi base clean contain content converter description develop development distribution encoders feature file flexible framework goal integration library libs mpeg multimedia original package provide publishing recent reference scratch single small software standard static tool
+532,gpm,库,工具,allow appear application based button click console contain dynamic editor emacs file function include library like linux management menu mouse operation package program provide server support text
+533,grafana,工具,其它,editor feature graph graphite metric open rich source
+534,grafana-pcp,库,其它,include live metric performance pilot plugin scalable script series time
+535,graphite2,服务,工具,aspect behavior capability capable complex create development display encoding font graphite group handle implementation initiative language model non project provide render rendering respect roman script smart software text various write
+537,greenboot,工具,库,check framework generic health optional series systemd
+541,groff,工具,服务,base contain default device display format formatting manual necessary package page postscript require
+543,grubby,工具,服务,command compatibility exist file legacy line manage mean package provide script tool update user
+545,gsettings-qt,库,其它,binding gsettings qt
+549,gspell,库,工具,application checking flexible gtk implement library provide spell
+552,gssproxy,库,服务,credential gssapi handling proxy
+559,gtk2,库,工具,application complete contain create developer documentation graphical gtk gtk2 input interface library method multi package platform project range ship small standalone suitable suite support tool toolkit user widget
+560,gtk3,库,工具,allow application avoid cache complete contain create disk file format graphical gtk gtk3 icon interface library memory multi multiple overall overhead package platform project range reduce seek share small start suitable suite support theme tool toolkit update user utility version widget
+566,guile,库,工具,application building develop execution extensibility extensible extension implementation independent install intelligent language library like link machine package platform program programming provide scheme write
+567,gupnp,库,服务,control create device easy efficient flexible framework gobject gupnp intend libsoup object open oriented point source upnp write
+571,gutenprint,库,工具,compatible contain cups dialog driver gtk high include irix library linux native necessary operate package plug print printer quality range support unix wide widget
+572,gvfs,工具,服务,access apple application archive backend backends base camera cifs client device file filesystems framework fuse glib gnome image implementation include inside integration media medium mobile module music network online original package phone picture player protocol provide read reading seamless service share support transfer window windows write
+574,hardlink,工具,服务,create disk hard instal installation kernel link package reduce space tree
+575,harfbuzz,库,工具,contain engine implementation layout library opentype package support text
+576,hdparm,工具,服务,disk display drive example hard parameter performance power spin tweak useful utility
+579,hicolor-icon-theme,工具,库,basic contains directory file icon need requirement support theme
+581,hostname,工具,服务,command display domain host hostname package provide set utility
+582,hplip,工具,服务,device driver files function graphical imaging libraries library linux multi need printer printing project provide sane scanner tool
+586,httpd,其它,服务,abstract access apache associated authentication backends basic complete contain contains content correct cryptography data directory docs documentation efficient extensible filesystem filter guide html http httpd include information interface layer layout ldap manual modify module org package permission powerful protocol provide reference secure security server session ssl store strong support tls tool tools transform transport user
+587,hunspell,库,工具,analyzer character checker complex design encoding hunspell interface language library libreoffice like module morphological pipe program rich spell terminal word
+661,hunspell-no,库,工具,dictionary hunspell hyphenation rule thesaurus
+711,hwloc,库,服务,11 abstraction application architecture attribute bind cache compute contain convenient core display efficiently format gather hardware help hierarchical include information interface library logical memory modern multiple node numa offer package portable powerful primarily process processor programming provide share socket software thread time topology unit various version
+712,hyphen,库,工具,english high hyphenation library quality rule text
+759,i2c-tools,工具,库,access application chip collection connect contain decode device helper interact level library linux offer package perl probe register script tool write
+770,icedtea-web,库,工具,additional base browser component contain deployment documentation implementation java javadocs manage openjdk originally package plug plugin project provide setting settings start tool
+772,icu,库,服务,character components compute current customize develop environment extend featured flexibility great important international libraries library need offer performance platform portability produce provide result robust service software standard supplementary support tools unicode utility variety various version wide
+773,iio-sensor-proxy,工具,服务,device input proxy sensor
+776,imlib2,工具,库,apps arbitrary architecture capable complete condition contain easily fast file flexible highly image intelligent late library link load loader loading make manipulation modular operation option package parse plugin program render rendering rewrite save separately series simple speed support version write
+777,imsettings,工具,库,application apply change configuration contain core daemon dbus deliver desktop effect framework general gnome gsettings input libraries library method module need package require service setting shared support utility work
+778,iniparser,工具,库,ansi application configuration file hold information library parse style
+781,intel-cmt-cat,工具,服务,access allocation bandwidth basic cache class code command configure data execute file interface level line linux logical manage measure memory model monitoring obtain package privilege provide provides read register require root service software space specific standard support technology thread user virtual write
+784,ipcalc,工具,服务,address calculate calculator check depending format generate host human information network option parse private provide random readable resolve script simple specify suitable
+785,ipmitool,工具,服务,capture command communicate communication configuration contain content control daemon data define device display driver enabled encrypted event exchange field functionality health host hostname info information intelligent interface interfacing ipmi kernel listen machine management message open package pass platform power print protocol provide read reading remote repository send sensor serial specification standard support syslog unit utility value
+786,iproute,库,服务,action advanced capability class configuration configure contain control design device example filter kernel linux manage network networking package queue routing standard tool traffic utility
+788,ipset,工具,服务,active address administer base benefit collection complex contain currently default depending dynamically ensure entry express framework functionality inside kernel library linux manage match multiple number package performance port proper provide rule service shared single speed split store tcp tool type update utility version want
+792,iputils,工具,服务,basic command contain daemon discover host include information ipv6 machine monitor monitoring network node package ping protocol query receive send series specify target tool traffic utility
+795,iscsi-initiator-utils,工具,服务,access binding command configuration contain daemon disk distributed hardware help interact interface internet iscsi manage network offload package program protocol provide python python3 require scsi send server userspace utility utils
+798,iso-codes,工具,库,code format gettext language list package provide sub translation
+800,istack-commons,库,其它,commons contain package runtime tool
+802,iw,工具,服务,base configuration configure currently device driver tool utility write
+803,jabberpy,库,工具,application base binding code contain deal develop leave libs messaging module parsing programmer protocol py python python3 quality socket
+804,jack-audio-connection-kit,库,服务,allow application area audio bus client connect connection design device different effort example execution focus ground latency launcher linux low mean normal number operating operation plugin primarily process server share small start suitable synchronous work write
+805,jansson,库,服务,data decode document encode json library manipulate parse small write
+808,java-1.8.0-openjdk,其它,工具,allow archive audio base based bundle class code compatible complete compress connector contain debugger demo demos documentation enables environment feature headless indexer install issue java know library need note openjdk package program really runtime single source sub support tune unless video work wrapper
+812,java-atk-wrapper,其它,库,access affect bridge change communication convert event implementation java mechanism project replace send talk wrapper
+813,javapackages-tools,其它,服务,basic content directory filesystem install java layout macro macros package packaging provide script support
+819,jboss-logging-tools,其它,工具,annotation contain i18n jboss logging processor
+823,jimtcl,工具,服务,array built class closure collection command embeddable feature footprint functional implement implementation interpreter language large like object oriented programming reference small subset support utf
+825,jolokia-jvm-agent,服务,其它,agent
+826,jose,库,服务,command contain crypto encryption generation implement include json library line object operation package perform provide sign signing stack task tools utility various
+827,jq,工具,库,command data dependency ease effort expect filter flexible format json lightweight like line little play portable processor program runtime short simple structure text transform want write zero
+832,kabi-dw,工具,库,build change compare detect dump dwarf file information kernel later linux section specific symbol text type
+833,kata-containers,工具,服务,advantage build community container containers feel gopkg http implementation io lightweight like machines open perform project provide repository security source standard version virtual work
+834,kbd,工具,服务,behavior configure console contain data file font helpful include keyboard legacy linux manage note original package screen terminal tool tools virtual
+838,kdump-anaconda-addon,工具,其它,addon anaconda configuration
+839,keepalived,工具,服务,accord achieve addition availability balance base build checker dynamically facility framework fundamental health high hook implement independently infrastructure interaction kernel known level linux load low machine maintain manage module monitor pool protocol provide robust router server service simple speed state virtual widely
+840,kernel,其它,服务,additional allocation allow application apps base basic binding block build change come commonly compatibility compile component components constant contain core cross debug define device directory documentation driver ebpf enable enforcement enhancement enterprise event external extra feature file filesystems function gather glibc handle hardware header heavily include information input inspection instal interface kernel language layer libraries library like linux list maintain major management manipulate manipulation match mean memory meta modify module monitoring need numerous operating option output package performance permit plugin process program programming provide pull python python3 release security simple source specify stable standard structure support symbol test tool tools update upstream userspace variant version write
+843,keycloak-httpd-client-install,工具,服务,apache authentication automate client configure contain httpd identity invoke library module package perform program provider rest server simplify support tool tools utilize variety
+844,keyutils,工具,服务,control facility instantiate kernel library linux management mechanism package provide space user utilities utility wrapper
+874,kf5-kirigami2,其它,库,base build interface plugins user
+897,kmod,工具,服务,application automatic device driver example filesystems handle kernel later libraries library libs linux load loading management module need package program provide runtime utility various wish
+899,kpatch,工具,服务,allow automatically binary collection correspond dynamic dynamically enable kernel live manage manager module package patch plugin update user
+900,krb5,服务,工具,administrative allow authentication basic center certificate client consider contain credential data directory distribution initial instal install interface kerberos ldap library libs module need network non object obtain package people plugin private program related server share shared stable storage store wish word workstation
+901,kronosnet,库,服务,abstraction application availability case core design fail fast high implement implementation information layer library network org protocol refer requirement security switch
+902,ksc,工具,库,checker code kernel module source symbol usage
+903,kscreenlocker,库,其它,architecture component library lock screen secure
+905,kyotocabinet,库,工具,application client essential interface libraries library libs package program provide shared
+909,lasso,库,工具,alliance allow base binding cycle handle implement include language library multiple provide sign single specification standard
+913,ledmon,库,服务,activity application associate control design drive fail locate privilege root slot space status type user utilities
+917,libEMF,库,工具,device driver enhanced generate graphic graphics implement intend interface library limited program subset support
+918,libICE,库,工具,client exchange inter library org runtime
+919,libSM,库,工具,library management org runtime session
+920,libX11,库,工具,client common core data library libxcb protocol
+921,libXNVCtrl,库,工具,application communicate contain control driver include library package proprietary provide settings tool xorg
+922,libXScrnSaver,库,工具,library org runtime
+923,libXau,库,服务,access authorization block client connection cookie core data display exist hook individual know library mechanism protocol provide sample server setup simple specific specify window
+924,libXaw,库,工具,base library toolkit widget
+925,libXcomposite,库,工具,extension library
+926,libXcursor,库,工具,automatically best common cursor design exist file help library load locate management memory names simple size standard
+927,libXdamage,库,工具,extension library org runtime
+928,libXdmcp,库,服务,control display library manager protocol
+929,libXext,库,工具,library org runtime
+930,libXfixes,库,工具,library
+932,libXft,库,工具,library org runtime
+933,libXi,库,工具,library org runtime
+934,libXinerama,库,工具,library org runtime
+935,libXmu,库,工具,library org runtime
+936,libXp,库,工具,library org runtime
+937,libXpm,库,工具,library org runtime
+938,libXrandr,库,工具,library org runtime
+939,libXrender,库,工具,library org runtime
+940,libXres,库,工具,allow client extension library query resource server usage various
+941,libXt,库,工具,library org runtime
+942,libXtst,库,工具,library org runtime
+945,libXxf86dga,库,工具,library org runtime
+946,libXxf86misc,库,工具,library org runtime
+947,libXxf86vm,库,工具,library org runtime
+948,libabw,库,工具,file import library
+949,libaio,库,服务,access application asynchronous capability facility kernel library linux native order posix provide require rich simple
+950,libao,库,服务,audio cross currently irix library output platform support
+951,libappindicator,库,工具,allow application available based contain export generic indicator library menu package support version work
+953,libarchive,库,工具,archive contain create different format handle image include library manipulate package popular program read regular split standalone stream tape utility variant write
+954,libass,库,工具,library portable render
+956,libasyncns,库,服务,asynchronous easy function implement library lightweight relate service small wrapper
+957,libatasmart,库,服务,disk hard health library lightweight monitoring parser small
+958,libatomic_ops,库,服务,allow architecture atomic code consider construction direct early explicitly implementation involve memory minimum number operation overhead package portable provides semantics similar unlike update variety
+961,libblockdev,库,服务,binding block configuration contain core create crypto dbus dependency device encrypt enhancement file function functionality gobject information introspection kernel level library like loop low manipulation mapper meta operation package partition partitioning plugin plugins provide providing pull python3 raid relate related serve standalone storage support swap time utility utilize utils wrapper
+962,libbpf,库,服务,directory file header lib library linux mirror package plus support tools tree version
+965,libcacard,库,服务,access card certificate common compatible container emulation guest implement library machine provide read reader separate smart standard virtual
+966,libcanberra,库,工具,binding bindings event gtk html http implementation library lightweight portable public small sound spec specification theme
+968,libcap-ng,库,工具,analyze application base binding capability contain file library make ng package posix program python3 utilities utils
+969,libcdio,库,工具,access application cd control device independent input interface library need provide
+971,libcdr,库,工具,ability application drawing import interpret library libreoffice provide various
+972,libcgroup,库,服务,administrator allow associated authentication command configured contain control controller daemon group help infrastructure library line linux login manipulate module monitor package pluggable pre process program service user utility
+973,libchardet,库,其它,character charset data detect detector encode interface mozilla provide universal
+974,libcmis,库,工具,allow application client connect content drive example google interface library management open primary server source support work
+975,libcomps,库,工具,binding content file library like manipulation modification python python3 read structure write
+976,libconfig,库,服务,application aware code compact configuration file format library manipulate necessary parse readable simple string structure type unlike
+977,libcroco,库,工具,gnome library manipulation parsing
+978,libdaemon,库,服务,compatible consist correct daemon ease file following fork library lightweight output pipe procedure process redirect select serialize signal simpler stdout syslog unix usage wrapper write writing
+981,libdb,库,工具,access apis application berkeley caching client command database embedded extended fixed hashing include instal java length library line linear lock manage memory method perl provide python record recovery server share support tool toolkit traditional transaction tree variable
+985,libdmx,库,工具,distributed library org runtime
+987,libdrm,库,工具,direct library manager rendering runtime
+992,libeasyfc,库,其它,configuration contain demand easy generate generator gobject interface package provide
+993,libecpg,库,工具,basic build calculation case code command compiler consist convert database embedded equivalent function help language library offer ordinary pass postgresql preprocessor process program programming section server source type write
+994,libedit,库,工具,editing function generic history library line port provide readline similar
+995,libepoxy,库,工具,function handle library management opengl runtime
+996,libepubgen,库,工具,base directly document filter generate generator import library pluggable
+999,libestr,库,服务,compile daemon essential handle handling library package string
+1001,libev,库,服务,code contain correct event faster feature good high loop model module package performance perl scale small source
+1002,libevdev,库,服务,device interact kernel library proper provide wrap wrapper
+1003,libevent,库,工具,abstract application asynchronous callback change descriptor drive dynamically event execute file function library loop mean mechanism need network notification occur provide reach remove replace server specific
+1005,libexttextcat,库,工具,based intend language library primarily text
+1006,libfabric,库,服务,application best collection communication component conjunction core daemon deal define directly export fabric focus framework integrate interface interfaces kernel library open provider service software space test typically user work
+1009,libffi,库,工具,allow argument bridge certain code compilation compile compiler conversion dependent description entry exist feature follow foreign fully function generate handle high instance interface interpreter know language layer level library machine make necessary number pass popular portable program programmer provide really return run separate specify stand tell time type value various work write
+1013,libfprint,库,工具,consumer device fingerprint offer reader scanner support toolkit
+1014,libfreehand,库,工具,ability adobe application document import interpret library provide various
+1015,libgcrypt,库,服务,base code crypto cryptography development general library purpose version
+1016,libgdata,库,服务,access apis asynchronous based common glib google library online protocol provide service support
+1020,libgit2,库,工具,allow application binding core custom implementation language library method native portable provide pure solid speed write
+1022,libglvnd,库,服务,basis common implementation interface layer library multiple neutral opengl screen support vendor workstation
+1023,libgnomekbd,库,工具,configuration contain gnome keyboard library manage offer package relate various widget
+1026,libgphoto2,库,服务,access application camera digital example frontends library various
+1028,libgsf,库,工具,file gnome library reading structure structured write
+1029,libgtop2,库,服务,information library memory obtain process usage version
+1030,libgudev,库,服务,based easily gobject introspection javascript language library make possible program simpler support wrapper
+1031,libguestfs,其它,工具,able access additional administration administrator alternative application archive avoid backup bash basic batch binding block build builder capable change clone code collection com command compatible completion configuration contain contains content convert copy core customize debug depend dependency determine devel develop developer device diff difference different directly directory disk display documentation download driver edit editor element enhanced enterprise examine exist extract feature file filesystem filesystems follow format free fully fuse global gobject guest header host hostname http icon image include info inside inspect instal install intelligent interactive introspection japanese java javadoc kernel language library like limited line linux list log look machine make miscellaneous modify mount need network non note ocaml operate org package page pages partition perform perl physical popular problem process program provide pull python python3 qemu really reason redhat reduce registry replace replacement require resize ruby safe scan scheme scratch script secure separate shell software space sparse split statistic subpackages subset support tool tools type ukrainian unlike upload used utility various version virt virtual want windows work write
+1032,libgusb,库,服务,asynchronous bulk control easy glib gobject integration interrupt make proper transfer wrapper
+1033,libgweather,库,工具,access information library location numerous online service
+1035,libgxps,库,工具,base document gobject handle library render
+1036,libhangul,库,工具,common feature input library method program provide
+1037,libhbaapi,库,服务,channel host level library manage project
+1038,libhbalinux,库,服务,build implementation interface library vendor
+1039,libhugetlbfs,库,服务,access application applications available behavior binary configure contain control data default easy environment file help large ld_preload library link list load machine malloc memory modification number package page pool program provide request size source target text userspace utility variable wrapper
+1040,libical,库,服务,calendar data format implementation product reference schedule serialization type
+1042,libidn,库,工具,define domain group ietf implementation internationalized library names specification support work
+1043,libidn2,库,服务,dependency domain implementation internationalized library specification standalone support
+1045,libieee1284,库,服务,communicate device ieee interfacing library parallel port
+1046,libijs,库,工具,able alternative application connect develop ghostscript image instead library longer print printer protocol server transport useful
+1047,libimobiledevice,库,服务,connect device include library mobile music phone player
+1048,libindicator,库,工具,apps build convenience function gtk indicator likely symbol
+1049,libinput,库,服务,abstraction analyze application code common contain custom deal debug detection device directly display event expect functionality handle handling hardware input library minimize need package processing provide server tool user utilities utils
+1050,libipt,库,工具,decode decoder fully implementation integrate intel library processor reference standalone tool trace
+1051,libiptcdata,库,服务,command data edit encode file header image include inside library line location metadata modify parsing save standard store title utility
+1054,libjpeg-turbo,库,工具,access client comment compress contain decompress display file format function image include insert jpeg library manipulate package perform program regular share simple text transformation useful utilities utils various
+1055,libkcapi,库,服务,access algorithm allow apis consider consumer crypto developer drop easy export handling implement interface kernel level library linux low need netlink package process processing provide provides replacement request return send space tool user
+1056,libkeepalive,库,服务,base binary change dynamic enable executables feature glibc library original program
+1062,libldb,库,服务,access binding database extensible file implement ldap library like local manage python remote schema server tools
+1065,liblognorm,库,服务,based come common data database dependency different entry fast firewall format hard library look machine need normalization people pretty problem read sample tool type usually vendor want
+1066,liblouis,库,工具,application approach assistive base binding commercial computer dictionary easily example feature hyphenation language lead library linux math open package program provide python reader reading routine rule screen source support table technology translation translator
+1068,libmatchbox,库,工具,base desktop embedded environment input libraries limit mechanism non platform resource screen set space window
+1069,libmaxminddb,库,工具,contain file format library package
+1070,libmbim,库,服务,application broadband command contain easy functionality glib interface library line make mobile model package protocol support utilities utility
+1071,libmediaart,库,服务,cache extract handle library manage medium task
+1073,libmemcached,库,工具,access available check checking client cluster code command compatibility contain content copy data design dump error generate http implement library light line load memory method option org output package parse provide remove server standard stats string test testing tool translate usage value version
+1075,libmfx,库,工具,acceleration application appropriate dispatcher function hardware implementation initialization intel layer library locate media platform redirect select software specific subsequent video
+1076,libmicrohttpd,库,服务,application binary compliant creates data different easy embed fast feature fully http implementation incremental ipv6 library lightweight listen make model multiple port post processing project server simple small support thread
+1080,libmodplug,库,工具,file format library music
+1081,libmodulemd,库,工具,com compatibility fedora file github http library manipulate manipulation master metadata module package readme
+1083,libmspack,库,服务,compression decompression file format library microsoft provide purpose relate related
+1084,libmspub,库,工具,ability application content document import interpret library libreoffice microsoft provide various
+1086,libmusicbrainz5,库,工具,access allow application audio client create data disk generate index library lookup make metadata server signature
+1087,libmwaw,库,工具,available bitmap create database document example format home http image import kind library list microsoft net spreadsheet support supported text vector wiki word
+1088,libndp,库,服务,contain discovery ipv6 library message package protocol provide receive send tool wrapper
+1089,libnet,库,服务,conjunction construction creation framework functionality handling help host include injection layer level library link low network packet portable provide really stuff supplementary write writing
+1090,libnetfilter_conntrack,库,工具,connection interface kernel library netfilter programming provide state table track userspace
+1094,libnfnetlink,库,工具,foundation function handle level library low netfilter netlink provide specific subsystem userspace
+1095,libnftnl,库,工具,interaction level library low netlink
+1097,libnl3,库,服务,additional bind binding command contain convenience depend interface kernel library line linux manipulation netlink network package python simplify socket utils various
+1098,libnma,库,服务,contain integrate library networkmanager package tool
+1099,libnotify,库,服务,daemon define desktop display event form freedesktop information library notification org send spec user
+1101,libnumbertext,库,工具,conversion function language library libreoffice neutral number text
+1102,liboauth,库,工具,accord collection core encode escape function functionality high http implement level library oauth offer parameter perform posix provide request sign signature specification standard verify
+1103,libodfgen,库,工具,base directly document example filter generate generator input library libreoffice pluggable
+1106,liborcus,库,工具,currently development document file filter import library spreadsheet standalone
+1107,libosinfo,库,服务,allow combination determine device hypervisor information library manage operating optimal provisioning setting tool virtualization
+1108,libotf,库,工具,character code combination complex convert currently develop facility file following font free glyph good handle layout library open opentype provide read release sequence similar support table tables text type unicode
+1109,libpagemaker,库,工具,ability adobe application document import interpret library provide various
+1110,libpaper,库,工具,action application base basic file function handle integrate intend kind library minimal obtain paper provide purpose quite really release simple size specified tool user width
+1111,libpcap,库,工具,application author capture collection create debugging dependent different ease framework independent install interface level low module monitoring need network packet port portable provide security statistic traffic user vendor
+1112,libpciaccess,库,服务,access library multiple operate portable routine
+1113,libpeas,库,工具,application based convenience glib implementation library make plug support
+1115,libpinyin,库,工具,algorithm based chinese compatibility contain core data deal file input intelligent library method package pinyin project provide
+1116,libpipeline,库,服务,command construct error fork involve level library line manipulation need parsing primitive process programmer shell
+1117,libplist,库,服务,apple binary library manipulate property
+1118,libpng,库,工具,algorithm compression contain create data file format function graphic graphics image instal library manipulate mapped need network package portable replace similar
+1120,libpq,库,工具,client connect essential install interface library need package postgresql program provide server share
+1122,libpsl,库,工具,access allow avoid built certificate check client cookie data directly domain fast file handle highlighting interface international internet library list load long private provide public register safe short site super thread user utf verification work
+1123,libpsm2,库,服务,communication enable environment family high implement intel interface level libraries library link low mechanism messaging necessary parallel product support user version
+1124,libpst,库,工具,contain library libs package shared utility
+1126,libqb,库,服务,architecture client communication feature high inter library logging performance process provide reusable server trace
+1127,libqmi,库,工具,application command contain easy functionality glib interface library line make package protocol support utilities utility
+1128,libqrtr-glib,库,其它,contain easy library make manage package router support
+1130,libquvi,库,工具,cross flash library medium parse platform stream urls
+1131,libquvi-scripts,库,工具,additional contain embedded include medium parse script scripts utility
+1132,libqxp,库,工具,ability application currently document format import interpret library provide support various
+1135,librdkafka,库,服务,apache consumer contain current design high implementation library message mind performance protocol reliability second support
+1136,librelp,库,服务,easy event extensible general library logging protocol purpose reliable stand
+1137,libreoffice,库,工具,access adapter addition additional afrikaans allows application appropriate arabic architecture assamese auto basic basque bengali best binding bridge bulgarian card catalan chinese common component contain contains conversion core correction create creation croatian czech danish data database debug docbook document draw drawing dutch editing editor email enable enables end english environment error estonian exist experience experimental export external extra farsi file filter finnish flash font framework french functionality galician generic german good graphic greek gtk gujarati hardware hebrew help hindi hungarian icelandic implement implementation import independent indonesian install integration internal internet irish italian japanese kannada know korean language latvian layout library libreoffice lithuanian mail malayalam management marathi markup mathematical merge model module mongolian need odia offer opengl optional pack package page platform plug polish portuguese preserve pretty printer process processor program programming provide provides providing publish pull punjabi python quality render requires resource romanian rule rules runtime russian script serbian server share simplified slovak slovenian spanish spreadsheet subpackages suitable support swedish symbol syntax tamil telugu thai traditional translation turkish type ukrainian vietnamese welsh wiki word write writer xhtml
+1138,libreoffice-voikko,库,工具,actual checking component contain extension finnish functionality hyphenation library libreoffice package provide spell
+1140,libreport,库,其它,filesystem layout
+1142,libreswan,库,服务,allow authentication base build contain cryptography daemon encrypt encryption free gateway implementation internet linux machine network package pass private protocol provide secure security service strong support tool turn userland virtual
+1143,librevenge,库,工具,application base contain debug devel document filter graphic help import interface library package pretty printer spreadsheet text vector write
+1145,librsvg2,库,工具,base cairo extra library package provide tool utility
+1147,libseccomp,库,服务,allow application argument easy enhanced execute filtering interface kernel library linux mechanism optionally provide specify
+1150,libsemanage,库,服务,access application architectural base based binary binding compiler component concept contain control design develop enforcement enhanced feature flask functionality general improve include kernel kind level library like linux management mandatory manipulation multi need number operating originally package perform policy program provide python python3 role security selinux setting similar specific support tool transformation type utility
+1151,libsepol,库,服务,access architectural base based binary compiler component concept contain control design develop enforcement enhanced feature flask functionality general improve include kernel kind level library like linux mandatory manipulation multi need number operating originally perform policy program provide role security selinux setting similar specific support tool transformation type utility
+1156,libsmbios,库,服务,based bios client information interface library package program provide share standard table utility
+1157,libsmi,库,工具,access archive check contain convert define definition dump ietf information library maintain module package parse standard tool
+1159,libsolv,库,工具,algorithm approach base binding block dependency dictionary free independent information know library major package python resolve retrieve store using version
+1160,libsoup,库,工具,access application asynchronous completely design enable fashion glib gnome gtk http implementation library libsoup loop main mode model network non object operation originally package programming protocol separate server similar simple split support synchronous want work
+1161,libspectre,库,工具,convenient document easy handle library postscript provide render small
+1164,libssh,库,工具,client complete config configuration control default design easily execute file implement implementation library make mean need openssl package party play program programmer protocol provide remote secure transfer transparent work
+1165,libstaroffice,库,工具,binary document import library
+1167,libstoragemgmt,库,服务,allow application array auto client command contain controller daemon execute family file files framework generate generic helper include interactive interface kernel library line local locally manage management open package plug plugin process program provide pseudo python raid rule scripting selection separate smart source storage support udev utility vendor write
+1168,libsvm,库,工具,class develop display distribution gui install integrated interface java javadoc library machines multi package program python3 qt software support tool vector version want
+1169,libtalloc,库,服务,binding create hierarchical implement library python
+1171,libtasn1,库,服务,abstract decode encoding function gnutls library management notation parsing provide recommendation rules specify structure syntax
+1172,libtdb,库,服务,binding database developer file implement library manage python3 tool tools trivial
+1173,libteam,库,服务,contain control daemon device driver legacy library network package provide script service space support team user
+1174,libtevent,库,服务,asynchronous base binding classic code deal descriptor event file function helper include library management memory provide python request signal support type
+1178,libtimezonemap,库,工具,center change click code control datetime display fork gnome gtk library location panel region represent select time timezone widget world zone
+1179,libtirpc,库,服务,available base code compatible computing contain derive directly documentation enhanced equivalent form implementation independent interface internet layer library major network open operate package piece remain require rpc site source support transport unix vendor version
+1183,libuninameslist,库,工具,access annotation application character data database library official provide providing unicode
+1184,libunistring,库,工具,16 32 break case character expression format function implement library line normalization output portable processing property regular string type unicode utf width word
+1185,liburing,库,服务,access buffer efficient fast kernel library linux manner native provides
+1186,libusb,库,服务,access allow application compatibility content device layer legacy library longer package provide replace support upstream userspace work write
+1187,libusbmuxd,库,服务,access allow apple client communicate daemon device library multiple service
+1188,libusbx,库,服务,access application compatibility compatible developer device drop fork fully install library need note original package produce project provide release series start
+1189,libuser,库,工具,account administer administration application binding contain data group implement include interface library manipulate model package password pluggable provide python python3 sample source standardized suite user
+1190,libutempter,库,服务,emulator file helper interface library provide record screen session terminal update user
+1192,libva,库,工具,acceleration library linux provide video
+1194,libvdpau,库,工具,acceleration decode hardware interface library modern present provide unix video wrapper
+1195,libverto,库,工具,abstraction application asynchronous base choose consume currently depend ensure event expose functionality future glib implementation instal integration interface library loop main module offload package particular provide signal specific support virtual
+1196,libvirt,其它,服务,access address analysis apis backend backends base binary block bridge capability clean client complete configuration connection copy daemon default device direct disk documentation domain driver export file filter firewall good guest host hypervisor implementation include includes interact interface iscsi library libvirt linux local lock main manage manager mapper need network networking node org package plugin protocol provide qemu recent reference require requires rpm scsi secret server service shared simple specific stack storage sub support switch toolkit traffic transaction translate udev utility version virtual virtualization volume
+1198,libvirt-glib,库,服务,apis configuration data event glib host integration libvirt loop manage object package process provide virtualization
+1200,libvisio,库,工具,ability application import interpret library libreoffice microsoft provide various
+1209,libwnck3,库,工具,allow application construction implement information monitor names open pronounce thing window workspace
+1210,libwpd,库,工具,document import library
+1211,libwpg,库,工具,format graphics image import library software
+1212,libwps,库,工具,available document format home http import library limited list microsoft net spreadsheet supported text wiki
+1213,libx86emu,库,工具,architecture create easy emulation execution extended feature focus function library object small usage
+1214,libxcb,库,服务,access binding direct extensibility feature footprint improve language latency protocol replacement small support
+1216,libxkbcommon,库,工具,compile create creation display format library org parse query server usable
+1218,libxklavier,库,工具,commercial create extension high indicator intend keyboard layout level library provide related server software support useful
+1220,libxml2,库,工具,allow application available binding built case combine complex contain document exist file flexible html http implementation include input interface language later library libxml2 like manipulate mechanism memory modify module node output package parse parsing permit programming provide python python3 range read representation select simple stream supply support time validation version write xpath
+1221,libxmlb,库,服务,actual actually allocation allow application binary compressed convert copying data document entire file include inside library memory metadata parse query representation return slow source string structured table xpath zero
+1222,libxshmfence,库,服务,memory share shared
+1223,libxslt,库,工具,allow command engine file gnome html instal interface library libxml2 line mechanism need provide standard text transform transformation version xslt
+1226,libyang,库,服务,data language library model parser provide toolkit write
+1228,libzmf,库,工具,ability application currently document draw format import interpret library provide support various
+1230,lightdm-gtk,库,其它,gtk3 toolkit
+1231,lightdm-gtk-greeter-settings,库,工具,dialog easy editor gtk make modify setting settings small user
+1232,linux-firmware,工具,服务,adapter condition contain device driver file firmware hardware include inside intel kernel license link linux network operate package read require series support term usage
+1233,linuxconsoletools,工具,库,configure connect contain device event input kernel layer legacy mouse package provide serial subsystem support test tools utility
+1235,lksctp-tools,工具,服务,access available base command contain control documentation file follow implementation information intend kernel library line linux package protocol readme reference run section source space stream time title tool tools transmission tree user version
+1238,llvm,其它,库,arbitrary compile compiler design equivalent functionality idle include infrastructure language level library link llvm machine mirror modified optimization program programming runtime share shared source static time tool virtual
+1239,lm_sensors,库,服务,access application collection core general hardware include library module monitoring package tool
+1240,lmdb,工具,服务,application contains library libs necessary package share shared
+1241,lockdev,库,服务,device library lock method provide reliable
+1242,log4j,库,其它,nannan
+1246,lorax-templates-anolis,服务,工具,anolis boot build create creator iso live place share specific template usr
+1248,lrzsz,工具,库,build communication consist create domain linux modem modify package program provide public solution version working
+1250,lsof,工具,服务,file files information linux list open process stand unix utility
+1251,lsscsi,库,服务,associate author classic device file host includes information kernel linux list option output provide pseudo scsi series widely
+1252,lttng-ust,库,其它,application generate library space trace tracer user userspace
+1262,lucene++,库,工具,date engine featured high java library performance popular port search text write
+1264,lvm2,工具,服务,access application bus command contain coordinate create daemon device disk event functionality group handle hard include interface kernel kind library lock logical loop management mapper monitor multiple operation package partition physical raid read share shared state storage support tool userland userspace utility virtual volume write
+1265,lz4,工具,服务,algorithm compression contain core decoder extremely fast feature limit loss multi multiple package provide reach scalable speed typically
+1267,lzop,工具,库,advantage base compatibility compression compressor data decompression design drop file goal gzip high library main portability ratio real reasonable reliability speed time utility
+1268,m17n-db,库,工具,contain data encode font input language layout lib opentype package render text
+1269,m17n-lib,库,工具,allow backend core input language lib library method package primarily provide table text
+1275,malaga-suomi-voikko,工具,库,build description edition finnish indexer package support text write
+1276,mallard-rng,工具,其它,extension final mark relax schema version
+1278,mariadb,其它,工具,nannan
+1279,mariadb-connector-c,其它,服务,application client configuration connect database deliver develop directory driver file include library mariadb mysql native package present require ship
+1280,mariadb-connector-odbc,其它,库,ansi client connectivity connector database driver drop lgpl library license mariadb mode mysql native odbc open replacement standard standardized support unicode
+1283,matchbox-window-manager,工具,其它,base contain desktop embedded environment input limit manager mechanism non package platform resource screen set space window
+1286,mcelog,工具,服务,32 check collect data decode exception machine tool translate utility
+1287,mcpp,库,工具,alternative build check debug defines especially expand high include independent install library link macro multiple package portability preprocessor process program provide replacement resident share source stand standard support useful
+1289,mdadm,工具,服务,array common configuration control create device file function functionality help linux manage monitor package perform program provide raid similar single software task
+1291,mecab,其它,库,analyzer dictionary install make morphological note open parameter random source speech
+1292,media-player-info,库,服务,capability contain data device directory file format identify info information install layout media medium music package player repository rule storage supported udev
+1296,mesa,库,工具,based driver filesystem library render runtime share state support tracker vulkan
+1299,mesa-libGLw,库,工具,library opengl runtime widget
+1300,meson,工具,库,build coverage design development high like modern optimize programmer provide report simple software support test tool unit valgrind
+1301,metacity,其它,工具,desktop gnome integrate manager small stable window
+1302,microcode_ctl,工具,服务,binary boot cpus file intel longer need package processor provide result store update upload
+1306,mingw-binutils,工具,服务,binutils compile compiled cross environment executables like need objdump strip understand utilities utility version win32 win64 windows
+1307,mingw-bzip2,工具,库,approximately available balance benefit best bzip2 capability compress compression compressor contain cross data decompression development fast faster file free freely high library package patent quality software speed static technique time tool utility version windows
+1308,mingw-cairo,工具,库,cairo library mingw windows
+1309,mingw-crt,工具,库,base compiler cross library mingw runtime target win32 win64 windows
+1310,mingw-expat,工具,库,associated clark discover document example handler james kind library mean mingw orient parse parser port register start stream structure windows write
+1311,mingw-filesystem,工具,其它,base compiler contain cross environment file filesystem generic layout macro mingw need package target win32 win64
+1312,mingw-fontconfig,工具,库,library mingw windows
+1313,mingw-freetype,工具,库,engine font free library mingw portable render static version windows
+1314,mingw-gcc,工具,库,compiler cross mingw preprocessor target win32 win64 windows
+1315,mingw-gettext,工具,库,gettext library message mingw multi produce static utility version windows
+1317,mingw-gstreamer1,工具,库,applications architecture base based capability data filter framework graph gstreamer instal library mean media medium mingw operate play plug process processing real related runtime sound streaming time type video windows
+1318,mingw-harfbuzz,工具,库,engine implementation layout library mingw opentype static version windows
+1319,mingw-headers,库,其它,compiler cross file header mingw win32 win64 windows
+1325,mingw-openssl,库,工具,algorithm certificate communication contain cryptographic development include library machine management mingw openssl package port protocol provide secure share support tool toolkit various windows
+1328,mingw-pkg-config,工具,其它,compilation compiler configuration determine determines file flag library linker necessary option output read required target tool win32 win64
+1331,mingw-termcap,工具,库,arbitrary compiled contain control cross database development enable entry feature function independent library limit mingw package place program send size string terminal tool type unlike version
+1335,minicom,工具,服务,ansi based control directory emulation external feature include language modem program script similar simple somewhat terminal text
+1336,minizip,工具,其它,advanced buffer disk encryption feature include internet late split zlib
+1337,mksh,工具,服务,alternative compatible domain enhance especially feature good improvement include interactive modern order original produce public replacement robust script shell similar successor version
+1338,mlocate,工具,服务,allow avoid cache database exist faster file implementation locate lookup make merge stand traditional utility
+1339,mobile-broadband-provider-info,库,服务,associate broadband contain database info information mobile network package plan provider
+1340,mod_auth_gssapi,库,服务,apache authentication base define gssapi http implement module protocol service
+1341,mod_auth_mellon,库,服务,access apache assertion attribute authentication base build diagnostic diagnostics directory generate httpd implement instruction logging module protocol readme receive redhat server service
+1342,mod_authnz_pam,库,服务,authentication authorization basic checker example login module password provider stack
+1350,mokutil,工具,服务,boot machine manage mechanism provide secure tool uefi
+1351,motif,库,工具,application contain dynamically environment include library link manager need package program run share static time window
+1352,mousetweaks,其它,工具,access button center click command control desktop enhancement gnome hardware line mouse option package perform provide support various
+1358,mpg123,库,服务,audio commonly decoder layer library mpeg output player plug pulseaudio real time usable
+1359,mpich,库,工具,allow architecture automatically base binary build channel cluster communication computation compute configure default desktop device different easy efficiently enable end environment ethernet extend framework goal high implementation include infiniband instal install interface ip load manager memory message modular module mpich multiple need network package performance platform portable process proprietary provide select shared socket speed standard support tcp want widely
+1360,mpitests,工具,库,compile mpich package suite test
+1363,mstflint,工具,库,adapter base chip contain dump firmware network package register tool update
+1365,mtdev,库,服务,contact device event kernel library protocol slot specifically stand transform translation type variant
+1372,mutter,其它,工具,base behavior clutter combine core desktop display effect engine environment extensible fancy gnome inherit intend large logic manage management manager need opengl plugins primarily reason shell solid sophisticated stand toolkit visual window
+1373,mvapich2,库,工具,adapter base develop implementation interface message mpich package path state transport university version
+1374,mysql,其它,服务,base client common connect contain daemon database different directory error essential file generic implementation install interface library libs message multi mysql need package program provide related require server share shared standard threaded user
+1375,mythes,库,工具,binary data file index information library look return search simple speech structured text thesaurus word
+1376,mythes-bg,库,其它,bulgarian thesaurus
+1377,mythes-ca,库,其它,catalan thesaurus
+1378,mythes-cs,库,其它,czech thesaurus
+1379,mythes-da,库,其它,danish thesaurus
+1380,mythes-de,库,其它,german thesaurus
+1381,mythes-el,库,其它,greek thesaurus
+1382,mythes-en,库,其它,english thesaurus
+1383,mythes-es,库,其它,spanish thesaurus
+1384,mythes-fr,库,其它,french thesaurus
+1385,mythes-ga,库,其它,irish thesaurus
+1386,mythes-hu,库,其它,hungarian thesaurus
+1387,mythes-it,库,其它,italian thesaurus
+1388,mythes-mi,库,其它,thesaurus
+1389,mythes-ne,库,其它,nepali thesaurus
+1390,mythes-nl,库,其它,dutch thesaurus
+1391,mythes-pl,库,其它,polish thesaurus
+1392,mythes-pt,库,其它,portuguese thesaurus
+1394,mythes-ru,库,其它,russian thesaurus
+1395,mythes-sk,库,其它,slovak thesaurus
+1396,mythes-sl,库,其它,slovenian thesaurus
+1397,mythes-sv,库,其它,swedish thesaurus
+1398,mythes-uk,库,其它,thesaurus ukrainian
+1400,nasm,工具,服务,assembler free instruction intel like portable primarily series syntax traditional
+1402,ncompress,工具,库,compatible compress compressed compression contain decompression extension fast file gzip handle install need original package unix utility
+1403,ncurses,库,工具,additional base binding character classic common compatibility compiler contain conversion description freely include independent library method optimization package reasonable replacement routine screen support term terminal tool update utility version
+1404,ndctl,工具,服务,command control define device enable establish facility feature filesystem firmware instance interface kernel libraries library libs like linux manage management mapping memory message model need non performance platform provide resource subsystem table utility
+1406,net-snmp,库,其它,application binary client contain library libs net package runtime share snmp
+1407,net-tools,工具,服务,basic check contain include net networking package replacement route tool tools
+1408,netlabel_tools,工具,服务,attribute configure contain data explicit implement kernel label linux manage mark necessary network package packet protocol provide query secure security space subsystem tool tools user
+1409,netpbm,库,工具,bitmap contain contains conversion convert different example file format function graphic group handle include install library manipulate need package portable program script support tools various
+1410,nettle,库,服务,application context crypto cryptographic design easily gnupg kernel language level library like low object oriented python space
+1411,network-manager-applet,其它,服务,applet area bluetooth configuration connection contain control editor modem network networkmanager notification package status utility
+1412,newt,库,服务,base bin build button color contain dialog entry field interface label library mode need package plain program programming radio replacement share text user usr widget window
+1413,nfs-utils,工具,服务,client daemon group handle kernel library mapping package provide server support user utility utils various
+1415,nftables,工具,服务,interface module netfilter provide python tables userspace utility
+1418,ninja-build,工具,库,build design differ fast file focus generate input level major possible respect small speed
+1419,nispor,库,服务,binding contain interface linux network package python3 state status unified
+1420,nmap,工具,库,addition analysis application characteristic classic command communication compare connectivity data debug design determine end executable feature flexible generation host include ip ipv4 ipv6 line network networking number offer operating pack packet ping port post potential provide read reliable remote replacement requires response result reverse scan scanner security sequence service specification suite support target tcp technique tool transfer update user usr utility work write
+1421,nmstate,库,服务,binding command contain database enterprise host library line manage manager manipulation manner multi need network networking package plugin provider python satisfy setting support tool
+1422,nodejs,其它,库,nannan
+1426,nspr,库,工具,basic calendar facility file free gui include library malloc management memory network non normal operating platform portable provide runtime share synchronization thread time
+1427,nss,库,工具,509 application applications build certificate chain client command configure cross cryptographic database default define design development enabled initialization install library line load manage manipulate mime module need network operating package pkcs platform security server services standard support tool tools user utilities
+1428,nss_nis,库,服务,data group host information module network obtain service switch user
+1429,nss_wrapper,库,工具,able address allow cause client correctly create daemon define delete devel development environment file following function group host interact ld_preload modify need network normally package passwd path possible privilege project provide resolution resolve server setup software space switch test testing unix user variable versa vice wrapper
+1431,numactl,库,服务,access allocation application consist library libs machine memory numa policy program provide simple specific support tune uniform
+1433,numatop,工具,库,access analysis behavior help identify intel memory numa performance process processor related runtime support thread tool user
+1435,nvme-cli,工具,服务,command express interface line linux management provide space user
+1436,nvmetcli,工具,服务,allow command configuration configure contain file interactively interface json kernel line linux package restore save shell storage target
+1437,ocaml,库,工具,application batch bytecode code compiler comprehensive contain debugger development documentation environment expose family fast functional generator high interactive internal language level library module native need note object ocaml optimize oriented package parse portable programming runtime strongly tool useful version yacc
+1440,ocaml-findlib,库,其它,build helper manager objective package
+1441,ocaml-labltk,库,工具,interface interfacing language library ocaml script tcl tk version
+1442,ocaml-ocamlbuild,库,工具,build library ocaml program tool
+1444,onboard,工具,服务,away configuration data design example hardware keyboard layout mind need read right screen server simplicity useful user xorg
+1445,ongres-scram,库,服务,authentication client contain family implementation java layer mechanism package response security simple
+1447,opa-ff,库,服务,access address application basic build compute contain contains database distribute export fabric interface level library manage management manager memory necessary node package path platform provider resolution script share tool
+1448,opa-fm,工具,其它,application contains fabric include intel management manager path performance software tool
+1449,open-vm-tools,工具,服务,administration component contain core discovery driver essential experience functionality host implementation improve improved library machine management open pack package perform program project script service source space suite tools user utility virtual virtualization vmware
+1453,openbox,工具,库,action binding compliance compliant configurable configuration contain contains customizable data design documentation dynamically editor fast feature file freedesktop generate graphical heavily highly included inside install integration library libs lightweight list make manager menu mouse multi need org package pipe session share shared speed standard standards support unique window
+1454,openchange,库,服务,access exchange library microsoft native protocol provide provides server
+1458,openhpi,库,服务,abstract access associate base center computer control create data device easily event exist export hardware implementation include interface ipmi libraries library limit machine manage mechanism modular open platform plug project provide resource sensor server source support swap tool tree type typically various
+1460,openjpeg2,库,工具,application class codec command compliance compliant component contain devel develop developer docs documentation extended file handling jpeg library line manipulation multiple open order package profile source standard tool
+1461,openldap,工具,服务,access application book client clients configuration contain development directory documentation domain file information internet ldap library lightweight modify need open package phone possible program protocol service similar source style suite support tool usually utility
+1466,opensc,库,工具,application applications authentication card compatible cryptographic digital encryption facilitate firefox focus implement library mail main mozilla operation pkcs provide security signature smart software standard support utility work
+1467,openscap,库,工具,allow author avoid bash binding build capable check command compliance computer configuration contain content easy enable engine expression extension goal include information integration language library line manage network non open package path perform perl plug protocol provide python python3 related ruby scanner script scripting separate source standard sub tool utilities utils write
+1469,opensm,库,服务,access contain daemon diagnose fabric include infiniband libraries library machine manage management manager need network package project shared space state test tool user utility various
+1471,openssh,工具,服务,agent allow application arbitrary authenticate authentication backend binary bring channel client clients command communication connect connection contain core daemon date distribute driver encrypt encrypted execute feature file forward forwarding free host implementation include install instance intend ip ldap machine make mode module necessary network open package port program protocol provide remote replace script secure security server service shell source stack store support tcp term test token useful user validation version
+1472,openssl,工具,库,algorithm application certificate communication contain convert cryptographic cryptography format general implementation include library libs machine management openssl package perl protocol provide purpose script secure share support tool toolkit utilities various
+1474,openssl-pkcs11,库,服务,application available card command configuration enables engine file hardware line load make module openssl optional pkcs register security smart support
+1477,orc,工具,服务,addition architecture arithmetic array available code compile compiler data execute feature generic include language library operate operation optimized produce program represent run simple time tool
+1478,orca,库,工具,access application assistive combination customizable desktop gnome graphical interface people provide provider reader screen service speech support technology user visual work
+1480,osbuild,库,服务,allow artifact assembler base build container contains device encrypted host image inside label necessary policy selinux service source stage support unknown
+1483,osinfo-db,工具,服务,automated configuration database facilitate file hypervisor information machine operating platform provide provisioning virtual
+1484,osinfo-db-tools,工具,服务,database information manage operating package provide tool tools virtualization
+1486,p11-kit,工具,服务,certificate client command configuration contain contains domain enable enumerate experimental export feature instal library line list load module note package pkcs provide server setup share socket standard tool trust unix
+1487,p7zip,工具,库,ability additional archiver compression contain extend file high http org original package plugins port ratio unix version virtual www
+1488,pacemaker,工具,服务,advanced availability aware cluster contain contains core form high libraries library libs manager need node pacemaker package resource scalable share stylesheets tool upgrade
+1491,pango,库,工具,backends cairo complete context core design different emphasis engine font form graphic gtk handling high integration internationalization internationalized layout library modular need pango provide quality render rendering solution text toolkit widget work
+1493,papi,库,工具,application client contain interface libraries library monitor package performance program programmer programming provide run time wish
+1495,paps,库,工具,contain converter file libraries library package pango plain postscript text
+1497,passwd,工具,服务,authentication change contain library modules package passwd password pluggable utility
+1498,patch,工具,服务,application change command common compare diff file instal list make modifying original patch program utility
+1501,pcaudiolib,库,服务,audio device different library portable provide
+1502,pciutils,工具,服务,connect contain device inspect library linux package related utility various
+1505,pcre2,库,服务,16 32 access base byte compatible contain distribution encoding entirely expression facility follow function install interface library note original package page perl posix process provide regular semantics string support syntax utf value variant work working wrapper write
+1507,pcsc-lite,库,服务,application card command communicate communication connect coordinate daemon form framework include interface library line manager package provide purpose reader resource small smart tool windows
+1508,pcsc-lite-ccid,库,其它,card chip daemon devices driver generic interface reader smart
+1510,pentaho-reporting-flow-engine,库,工具,engine free java know library report reporting
+1511,perftest,工具,服务,collection communication connection design ip network normal number performance program provide rdma simple tcp test utilize work
+1513,perl-Algorithm-Diff,工具,其它,algorithm compute diff difference file files guarantee intelligent list module possible program similar small string thing unix
+1514,perl-Archive-Tar,库,其它,allow archive class compress creation custom easy file handle instal manipulation mechanism method module object orient perl provide quick support
+1518,perl-B-Hooks-EndOfScope,库,其它,allow code compilation compile execute module perl scope
+1519,perl-B-Lint,库,其它,equivalent extended module option perl process program similar version
+1544,perl-Crypt-OpenSSL-RSA,库,其它,crypt encoding interface library openssl perl
+1550,perl-Data-Dump,其它,库,argument code contain copy data deep dump easy format function list module original perl pretty printing produce provide reading result single string structure value
+1560,perl-DateTime-Format-ISO8601,库,其它,date format late release support time
+1564,perl-DateTime-TimeZone,库,其它,base class factory object offset period represent time zone
+1566,perl-DateTime-TimeZone-Tzfile,库,其它,arbitrary change class datetime encode express file format implement instance interface limit object offset pattern represent resolution second time timezone universal
+1568,perl-Devel-Caller,库,其它,caller devel version
+1570,perl-Devel-LexAlias,库,其它,ability devel lexical provide scope subroutine variable
+1576,perl-Digest-HMAC,其它,库,algorithm argument authentication check combination common constructor digest follow hashing integrity interface mechanism message party secret sha share simple usually work
+1579,perl-Dist-CheckConflicts,库,工具,allow attempt automatically backwards break cause change client compatible cpan currently deal declare depend dependency dist exist express fixed instance issue manually module non properly separately solution specify update user version work
+1581,perl-Encode,库,其它,character encode encoding interface module perl provide rest sequence string
+1582,perl-Encode-Detect,库,其它,charset data decode detect determine encode encoder encoding input module perl
+1584,perl-Env,库,其它,access allow array environment hash import maintain method module perl scalar special variable
+1587,perl-Exception-Class,库,其它,allow class declare exception hierarchy java manner module perl real
+1589,perl-Exporter-Tiny,库,其它,alternative behavior code configuration core dependency explicit export exporter external feature function import include installation installer interface internal line mean method non option override package performs pm provide rename resolution support target variable write zero
+1592,perl-ExtUtils-MakeMaker,库,工具,argument base case collection command common create deal dependency design easy extension extutils featured file function header issue make makefile makefiles method model module need perl perl5 pl provide pull replace routine small subroutine unix utility work write
+1593,perl-ExtUtils-Manifest,库,服务,check file utilities write
+1596,perl-File-BaseDir,库,其它,application base cache configuration data desktop directory file follow freedesktop gnome gui layout locate mechanism module non org platform specification specify
+1599,perl-File-Fetch,库,其它,allow different fetch file generic http mean mechanism number point
+1601,perl-File-Find-Rule,库,工具,allow alternative build desired directory file friendly implement interface module perl rule specify
+1602,perl-File-HomeDir,库,服务,directory file home issue locate module platform solve typically user variety various wide
+1603,perl-File-Listing,其它,库,directory export function module parse single
+1604,perl-File-MimeInfo,库,其它,application database determine file freedesktop implement mime module open share specification type
+1605,perl-File-Path,库,其它,arbitrary convenient create delete depth directory entire file module provide remove tree
+1607,perl-File-Remove,库,其它,convenience directory file module remove
+1608,perl-File-ShareDir,库,其它,advanced available class community developer dist file known large little locate make module modules perl process provide share
+1611,perl-File-Which,库,工具,check executable file filename implementation instal path perl portable program utility
+1612,perl-Filter,库,其它,compiler filter module perl preprocessor program source text
+1616,perl-HTML-Parser,其它,库,document extract html include information module parse parser perl
+1617,perl-HTML-Tagset,其它,库,contain data entity html kind module operation parse table useful various
+1620,perl-HTTP-Date,其它,库,conversion date deal default export format function http module protocol provide routine
+1621,perl-HTTP-Message,其它,库,class communication contain distribution header http message pass represent request response style useful
+1622,perl-HTTP-Negotiate,其它,库,accept algorithm allow attribute base choose complete content draft field header http ietf implementation module preferred provide representation request selection serve spec specify value variant various
+1625,perl-IO-Compress,库,其它,allow base buffers bzip2 compress create data distribute distribution files following gzip include interface io library module perl provide read reading separately support write writing zlib
+1627,perl-IO-Multiplex,库,工具,accept addition buffer connection design effort essentially fancy file handle incoming input listen loop maintain manage multiple output really select socket
+1629,perl-IO-Socket-IP,库,工具,argument backward compatible constructor drop independent ipv4 ipv6 method module protocol provide replacement socket support
+1634,perl-IPC-Cmd,库,工具,allow command easy independently interactively make platform work
+1635,perl-IPC-Run,库,工具,allow command common file functional interact line module perl pipe process provide pseudo script style support supported unix usage various
+1638,perl-Importer,库,其它,alternative compatible consume export exporter extra feature follow import inherit interface layer module modules need perl plus specification symbol variable
+1640,perl-JSON-PP,库,其它,compatible compile cpan environment fast instal json module perl proper pure used write
+1643,perl-LWP-MediaTypes,其它,库,backwards compatibility define encoding extension file function guess handle instead know look mapping media medium mime module provide type
+1647,perl-Locale-Maketext,库,工具,access application code common directly english feature framework german interface languages locale localization need organize present processing produce program provide software text tool
+1648,perl-MIME-Base64,库,其它,contain decoder encode encoder encoding extensions internet mail method mime package printable specify string
+1649,perl-MIME-Charset,库,其它,character charset information internet message mime provide
+1653,perl-Mail-Sender,库,其它,mail module send server smtp
+1657,perl-Math-BigRat,库,其它,arbitrary complement math number provide support
+1665,perl-Module-Load-Conditional,库,工具,information instal load loading module possibly provide query run simple time
+1669,perl-Mozilla-LDAP,库,其它,ldap module perl wrap
+1673,perl-Net-SMTP-SSL,库,其它,implements network operation support
+1674,perl-Net-SSLeay,其它,库,access application client convenience extension function high http level module offer openssl package page perl server write
+1678,perl-Package-DeprecationManager,库,其它,allow deprecate distribution feature hash import manage module package provide value version warning
+1682,perl-PadWalker,库,其它,allow change inspect lexical module people play point scope subroutine variable
+1689,perl-Path-Tiny,库,工具,access appropriate attempt break clean core easy fast featured file force forward friendly function handle input like method mode module object operate output particularly path platform provide reading small style translation unix utility win32 work writing
+1690,perl-PathTools,工具,库,distribution file module perl
+1691,perl-Perl-OSType,库,服务,base behavior current example extutils freebsd generic initial know linux mapping match microsoft module modules need operate operating os perl provide specific type unix version win32 windows
+1693,perl-Pod-Checker,库,工具,check compliance content document documentation error format module plain specification syntax tool verify
+1694,perl-Pod-Coverage,库,其它,comprehensive computer determine developers documentation long mechanism module provide tell write
+1695,perl-Pod-Escapes,库,其它,decode escape module provide resolve sequence thing useful
+1696,perl-Pod-LaTeX,库,工具,command convert data documentation format latex module provide replacement
+1697,perl-Pod-Markdown,库,其它,convert module
+1699,perl-Pod-Perldoc,库,工具,display documentation embed format installation library look module perl piece primarily script tree
+1702,perl-Pod-Usage,库,工具,argument command description desired documentation embedded entire exit level line manual message option page present print script status usage
+1705,perl-Role-Tiny,库,工具,portion role size tool
+1712,perl-Socket6,库,其它,defines enable environment include independent intend ipv6 module programming protocol relate related socket structure support
+1717,perl-Sub-Exporter,库,工具,allow alternative built custom export exporter familiar generation pm provide read rename routine sophisticated stuff sub
+1718,perl-Sub-Exporter-Progressive,库,其它,additionally advanced come directly export exporter feature great like module need note package power powerful rename runtime user variable work wrapper
+1720,perl-Sub-Info,库,工具,allow inspect perl subroutine tool
+1722,perl-Sub-Name,库,工具,allow debug deep include mainly module note rename subroutine
+1725,perl-Sys-MemInfo,库,其它,byte free information memory module perl physical return used variable
+1727,perl-Term-ANSIColor,库,其它,ansi color constant escape explicitly function import interface module offer output screen sequence utility
+1739,perl-Text-Balanced,库,其它,extract perl possibly prefix sequence skip specified string subroutine text
+1741,perl-Text-Diff,库,工具,available basic complete diff executable faster feature file generally integrate large perform perl platform provide record service shell slow small text utility
+1745,perl-Text-Tabs+Wrap,库,工具,break command document expand join line long perform remove short simple text unix
+1747,perl-Text-Unidecode,库,工具,ascii attempt character data express function letter provide represent representation roman text unicode universally writing
+1748,perl-Text-WrapI18N,库,工具,11 appear byte character chinese combine encoding include intend internationalized iso japanese language like line locale mark module multi setup space support text utf width word wrap
+1752,perl-TimeDate,其它,库,date display format include interface manipulation module number particular perl point provide read reliable representation small string suit textual time various
+1758,perl-Unicode-EastAsianWidth,库,其它,character deal defined http module org property provide specify status unicode user width www
+1759,perl-Unicode-LineBreak,库,工具,algorithm break breaking concern define determine line performs position property standards unicode
+1761,perl-Unicode-UTF8,库,其它,decode encode encoding form function iec iso module provide specify unicode utf
+1763,perl-Variable-Magic,库,服务,access apply associate data defined enhance extra hook mechanism module object operation perl user variable
+1764,perl-WWW-RobotRules,其它,服务,access conform database file html http module org parse permission site specify standard www
+1771,perl-XML-RegExp,库,服务,contain digit expression following letter module package reference regular token utility
+1776,perl-XML-Twig,库,工具,actual allow build completely document interface memory minimal mode module need offer option output perl process processing provide resource tree usage
+1779,perl-YAML-Tiny,库,其它,class code file little load memory overhead perl possible read reading reduce style time write yaml
+1782,perl-common-sense,库,工具,close closure common debug default define deprecate digit feature implement internal layer malloc memory module pack perl pipe portable program prototype sane state switch thread typical unpack usage warning
+1783,perl-constant,库,工具,allow away block code compile constant correctly declare digit easy expression likely machine maintain method optimize particular perl pragma probe program read replace script send space time value write wrong
+1784,perl-experimental,库,其它,convenient disable easy enable experimental feature make pragma provide
+1786,perl-gettext,工具,库,access construct database family function gettext interface internationalize message module perl permit retrieve software string
+1789,perl-libnet,库,其它,client collection community consistent interface internet module network perl programming protocol provide simple various
+1790,perl-libwww-perl,其它,库,allow application class client collection consistent contain focus function general help http implement interface library main module perl program provide server simple wide world write
+1792,perl-local-lib,库,工具,allow app application apply appropriate case collection configuration construct contain convenient copy create current directly directory easy environment file generally home lib library like list local locate make module need outside patch perl print provide quick shell ship specific specify suitable syntax upstream usage useful user variable
+1795,perl-parent,库,其它,allows base class compile effect establish inheritance load module package require similar time
+1797,perl-podlators,库,工具,capability classes contain convert format include input module output package page plain source sub suitable terminal text various
+1799,perl-threads,库,工具,available based data default deprecate information interpreter model perl pm programming provide remove result share state thread
+1804,phonon,库,其它,framework multimedia
+1805,pidgin,库,工具,account allow base client common contain core design easy editor feature gtk implement include library like message messaging microsoft modular online perl plugins protocol scripting simple support talk unique variety
+1807,pigz,工具,库,compress core data fully functional gzip implementation multiple parallel processor replacement stand
+1812,pixman,库,工具,cairo library manipulation pixel
+1813,pkgconf,库,服务,application automatically autotools backend bin compiler config configure development ensure file flag framework freedesktop functionality handle help include library link linker macro manner metadata org package place program provide provider similar support toolkit usr
+1817,pmdk,库,服务,access administration administrator allocation allow analysis apis application array backup base block capable change check checker collection command consistent convert copy create data database design device diagnostics dump dynamic environment execute facilitate facility failure file frequently general heap implement instruction ld_preload level library like line load low malloc management mapped memory modify node object operation option parse particular perform performs persistent pool power process program programming protocol provide python rdma read region remote repair resident respect restore routine script separate sequence similar size standalone standard state store style support target tool transaction transfer translation troubleshoot turn typical update usage useful user utilities utility utilize variable write zero
+1819,po4a,工具,库,area documentation ease expect gettext goal like maintain maintenance project tool translation
+1820,policycoreutils,库,服务,access application architectural base based basic change component concept contain control core dbus design develop enforcement enhanced environment feature filesystems flask functionality general improve include interface kernel kind label level linux load machine manage management mandatory multi number operating operation originally package policy provide python python3 require role security selinux service support switch tool type user utility utils
+1822,polkit-pkla-compat,库,工具,associate compatibility file format helper javascript late polkit provide release rule rules support user
+1823,polkit-qt-1,库,其它,binding developer library nice policykit polkit qt
+1825,poppler-data,库,工具,automatically character consist correctly enable encode encoding file instal optional package present properly read render
+1826,popt,库,服务,allow arbitrary argument array automatically base command configuration expansion file function heavily improve include library like line parameter parse powerful rule shell string style utility variable
+1827,portreserve,工具,服务,generally help init known port prevent program range real release script service tell utility
+1828,postfix,工具,服务,agent mail transport
+1830,postgresql-odbc,其它,库,access application connectivity database driver include need odbc open package postgresql
+1834,prefixdevname,工具,服务,built configuration define determine ethernet file helper interface link net network package prefix produce provide rule systemd udev user utility write
+1837,prometheus-jmx-exporter,库,服务,agent bind binding collector configure exporter expose http intend java local metric openjdk package serve server target
+1841,psacct,工具,服务,activity command contain display execute executed include information long monitor package previous previously process statistic turn user utilities utility
+1842,psmisc,工具,服务,command contain display file filesystems identify manage package path process running send signal specified specify structure tree utilities utility
+1847,pyOpenSSL,库,工具,code connection error extensive handling high include level library mechanism method mirror module object openssl portable python socket ssl subset wrap wrapper write
+1848,pyatspi,库,工具,access allows application assistive based binding client control essentially expose gtk include interact interface internals library package python3 query reader screen script technology tools
+1849,pycairo,库,工具,binding cairo library python
+1850,pygobject3,库,工具,base binding cairo gobject introspection library non package provide python specific
+1853,pyparsing,库,工具,application approach configure definition directly easily module number object oriented package parsing processing python syntax text version
+1854,pyparted,库,工具,binding library manipulate module package partition provide python table
+1855,pyserial,库,工具,access appropriate backend backends encapsulate library linux module port posix possibly provide python select serial standard windows
+1856,pytest,库,工具,powerful provide py python simple test
+1857,python-argcomplete,库,工具,argument bash browse command completion dynamically easy example extensible line make manage network option particularly program provide python resource script shell useful user value version
+1858,python-argh,库,工具,building command complexity easy interface line make natural need power powerful provide python syntax tool want wrapper
+1861,python-augeas,库,其它,binding python python3
+1864,python-botocore,库,其它,amazon core data driven foundation interface level low number package services
+1866,python-chardet,库,其它,auto browser character detection encode open python smart source version
+1867,python-click,库,工具,beautiful click code come command configurable create creation default good highly interface line little necessary package powerful python simple utility version wrapper
+1868,python-configobj,库,其它,config configuration easy feature file interface main powerful programmer python reader reading simple straightforward syntax validation writer writing
+1871,python-cpio,库,其它,access archive module python
+1873,python-cups,库,其它,binding config cups know package printer provide python python3 write
+1879,python-decorator,库,其它,average core example factory lock module programmer python3 simplify trace usage useful
+1883,python-ethtool,库,工具,allow auto binding card change ethernet interface kernel location module port python query setting speed
+1885,python-fasteners,库,其它,lock package provide python useful
+1892,python-httplib2,库,其它,client comprehensive feature http leave library support
+1898,python-inotify,库,其它,change driven event export feature filesystem filesystems kernel kind linux merge module monitor monitoring notification python recent space user various
+1909,python-kmod,库,其它,allow kernel linux loading module python work
+1911,python-linux-procfs,库,其它,abstraction class extract file information kernel linux
+1923,python-ordered-set,库,其它,custom entry index look order
+1926,python-pid,库,其它,class context custom default detection exception feature file library lock manage management manager provide
+1929,python-pluggy,工具,其它,manager plugin specific strip
+1935,python-ptyprocess,库,其它,interact launch process pseudo terminal
+1939,python-pycurl,库,其它,fast feature fetch identify interface module object program python similar support version
+1942,python-pysocks,库,其它,client drop extra feature fork handler http include interface module proxy python replacement request socket support
+1946,python-reportlab,库,工具,allow bitmap creation document format generate graphic library rich toolkit variety vector
+1948,python-requests-file,库,工具,access adapter allow file library local module python python3 transport urls version
+1955,python-s3transfer,库,其它,amazon library manage manager python transfer
+1958,python-setuptools,工具,其它,allow build collection component contain dependency distribute easily enhancement especially execute necessary package py python require runtime software venv wheel
+1959,python-simpleline,库,工具,based console create design library line machine python3 rewrite screen serial text tool
+1962,python-snowballstemmer,库,其它,algorithm available danish dutch english finnish following french generate german hungarian include italian language library module portuguese provides pure python romanian russian spanish standard swedish
+1964,python-sphinx-theme-alabaster,库,其它,base configurable enabled especially flask modified originally project related theme
+1965,python-sphinx_rtd_theme,库,其它,check currently development friendly include mobile org outside project prototype site theme variable
+1966,python-sphinxcontrib-websupport,库,其它,application apps documentation easily integrate provide python
+1972,python-urwid,库,工具,application attribute console control custom developer dynamic encoding feature flexible handle include interface layout leave library list make markup mode modular powerful python simple standard support text type user utf widget
+1975,python-werkzeug,库,工具,adapter addon advanced application aware cache collection community contribute control cookie database date debugger developer development engine entity environment feature file handle handling header http include leave module object possible powerful python request response routing server simple specific start template unicode useful user utility various work
+1977,python2,其它,工具,actual advanced application build built change collection color compatible compile contain debug debugging deprecate developer development dictionary directory docs documentation edit editor embed enable especially executable extension facility feature file gain gettext graphical help idle implementation include install installation interactive interface interpreted issue language library libs like line load manual mean memory module note numerous object oriented package page program programming provide py python python2 reference regular release remove runtime script share slow standard string tool track unversioned useful user version work
+1978,python2-pip,其它,工具,acronym index instal install installs manage management package packages python recursive software stand tool venv wheel write
+1982,python36,其它,库,accessible additional advanced alternative application build bytecode code command compatible compiled config configurable contain debug debugging design devel developer directory dynamically emphasis enable executable exist extension extensive feature file filename flag format generally helpful high include install installation interpret interpreter issue language level library macro macros manual mean memory module need numerous package packages page party prefix programming provide python python3 reference regular rpm rpms runtime separately share slow special standard track type unversioned useful user version want
+1983,python38,其它,工具,accessible additional additionally advanced api application auto automatically basic break browser build bytecode code compatible completion configuration contain debug debugger design developer development dialog directory docs documentation dynamically editor embed emphasis enable environment error executable extension extensive feature file flag following generally global graphical high idle include input instal installation integrated interactive interface interpret interpreter issue language level library libs link local macro macros main majority manual memory message module multi multiple namespaces need numerous output package packages page party persistent prefix programming provide python python3 readability reference regular remain replace rpm rpms runtime scripting search separately share shell slow smart source standard step support test text toolkit track type unversioned useful user version viewing want window
+1985,pytz,库,工具,accurate allow bring calculation cross database datetime high issue library platform python read reference solve support time timezone world
+1986,pywbem,库,工具,allow client define http information infrastructure interface issue management operation protocol provider python3 server standard standards support task variety wide xml
+1987,pyxdg,库,工具,access contain freedesktop library org package python python3 standard version
+1991,qemu-kvm,服务,其它,nannan
+1992,qgnomeplatform,库,工具,application environment gnome make modify platform possible setting theme utilize
+1994,qt5,工具,库,building frameworks macro package source
+1995,qt5-qt3d,库,工具,apis application binding example functionality programming provide qt5 quick realtime rendering support
+1996,qt5-qtbase,库,工具,application base class common component contain develop draw driver example file gui handling item library like mysql network odbc opengl package postgresql programming qt5 related software string tool toolkit widget
+1997,qt5-qtcanvas3d,库,其它,component example programming qt5
+1998,qt5-qtconnectivity,库,其它,component connectivity example programming qt5
+1999,qt5-qtdeclarative,库,其它,component example programming qt5
+2000,qt5-qtgraphicaleffects,库,其它,component configurable effect graphical interface item module provide quick type user visual visually
+2002,qt5-qtlocation,库,工具,ability apis component determine developer example file include location position possible programming qt5 source text variety
+2004,qt5-qtquickcontrols,库,工具,build complete control example interface module programming provide qt5 quick
+2006,qt5-qtscript,库,其它,component example programming qt5
+2008,qt5-qtserialbus,库,其它,access class component example function programming protocol provide qt5 serial various
+2009,qt5-qtserialport,库,工具,basic component control example functionality include operation port programming provide qt5 rs serial signal
+2010,qt5-qtsvg,库,工具,based class device dimensional display drawing example graphic graphics language programming provide qt5 render scalable support vector widget xml
+2011,qt5-qttools,库,工具,application browser bus common component components debugger design designer documentation example file help inspect invoke library method object package program programming qt5 runtime tool tools translation viewer
+2012,qt5-qtvirtualkeyboard,库,工具,alternative arabic audio automatic character chinese common component customizable different dynamic easily example extend feature framework frontend hardware hindi include input insertion japanese keyboard korean language latin layout programming project provide qt5 reference resolution right scalability selection simplified space style support text traditional view virtual word
+2013,qt5-qtwayland,库,工具,example module platform programming qt5 support wayland
+2015,qt5-qtwebengine,库,其它,component debugging example file qt5 remote support
+2016,qt5-qtwebsockets,库,其它,component depend dependency example external implement module programming protocol qt5 specify
+2018,qt5-qtxmlpatterns,库,工具,component example module programming provide qt5 schema support validation xpath xslt
+2019,qtchooser,工具,其它,binary build development instal like local multiple provide select switch version wrapper
+2020,quota,工具,服务,access administration allow bus catalog check client contain cron daemon desktop dialog different disk display enable file filesystems forward gettext group kernel language limit listen local mail manage manager menu message monitor monitoring natural netlink network note package process query reach receive send server socket support terminal tool translate typically usage user utility warn warning write
+2024,rasqal,库,工具,construct currently data description execute format framework handle include language library parse providing query resource result return support syntax
+2025,rdma-core,工具,服务,access adapter alliance allow amazon application architecture background based basic bring cache cluster communication configure conjunction connect connection core daemon data device diagnose diagnostic direct directly discover display documentation dracut driver easy ethernet example examples fabric fast function handle hardware help implementation include infiniband information infrastructure intel interface kernel know large layer library load long lookup manage management manager mapper module need network normally object operation oriented override package packet path plug port process program properly protocol provide python python3 rdma record reduce retrieve rule script scsi service similar socket software space specific specification standard start talk test tool tools useful user userspace utility vmware
+2027,realmd,工具,服务,active automatically center configure control correctly dbus directory discovery domain enrollment join kerberos like manage service simply thing
+2028,rear,工具,库,allow assist available backup benefit boot bootable cifs common currently design different easy frame hardware http image implement lead linux maintenance medium modular network open produce protocol ready recovery relax remove require restore service setup situation solution source storage support tape tool variety various work
+2029,redfish-finder,工具,库,access accessible appropriate configure controller host information interface management network parse type utility
+2030,redhat-lsb,工具,库,application applications attempt base binary build compatibility compatible compliant component construct contain core define depend design desktop develop distribution ensure environment fundamental implement implementation increase independent instal interface language languages level library linux low module multimedia need package present printing produce programming provide require requirement runtime security software specification stable standard support utility vendor
+2031,redhat-menus,工具,其它,configuration contain data define desktop file gnome icon layout menu package
+2032,redhat-rpm-config,工具,服务,building configuration file kernel macros module package script specific
+2033,redhat-support-lib-python,库,服务,abstraction attach authorization automatic base case contain create creation credential development diagnostic easily file help include infrastructure instance integrate interact interaction knowledge layer library limit necessary object package provide service simplify simply software solution status support view viewing
+2035,redland,库,工具,application based description design developer different element framework high implement interface level library mechanism modular object parser provide resource storage support technology xml
+2037,rest,库,服务,access actually apis attempt compare definition design easy instance instead kind library majority make method object point remote represent restful rpc service simpler support type usually xml
+2038,rhythmbox,工具,库,application audio base browser comprehensive easy extensible feature format framework gstreamer include integrated internet management medium music number plugin powerful radio search sort support
+2040,rng-tools,工具,服务,daemon dev generator kernel like monitor number pool present random related source supply tool utility
+2042,rpcbind,库,服务,able address convert host machine make mapper number program server universal utility
+2044,rpm-ostree,库,工具,additional additionally approach atomic best build client compose image include layer library libs package provide pure repository rpm server shared support unlike upgrade world
+2052,ruby,其它,库,access accord accurate acronym addition algorithm allow alternative arbitrary arithmetic automated base binary built calculation capability check class client close color command complete condition console conversion correct creator cryptography data default dependency design development directly disk display documentation easy enable engine error example expect experience expression extensible extension extract facility family fast feature file float format forward framework functionality general generate high host html http implement implementation include instead integer interactive interpreted interpreter introduce io json know language large layer leverage libraries library lightweight like line make manage management manner markup mean mechanism message method mock mode necessary network normal note number object online openssl option org oriented originally output package parser parsing party pass people performance perl point portable power precision probably procedure process produce program programming project protocol provide provides proxy publishing purpose quick read readline remote result right ruby satisfy scripting sequence serialize session similar simple small socket software spec specification specify standard store suite support syntax task tell telnet terminal test testing text think tool transmit unit useful utility value variable want wiki wrap wrapper write yaml
+2053,rust-srpm-macros,库,其它,building macro package source
+2057,sane-backends,工具,服务,access allow application available backend camera client contain daemon device digital driver easy frame hand hardware host image interface library local need network package program provide remote sane scanner software standardized universal video want
+2059,sanlock,库,服务,access common connect contain disk lib library lock manager package runtime share storage synchronize
+2060,satyr,库,服务,analyze automated basic consist contain create data design eliminate friendly fully included information library machine manner need operation perform potentially problem process report sensitive structure suitable tool tools underlying
+2061,sbc,库,服务,adaptive advanced algorithm allocation audio block bluetooth codec combination complexity distribution low profile standalone standard
+2062,sbd,库,服务,based contain functionality package storage
+2063,sblim-cmpi-base,库,工具,base based class common information instrumentation interface linux model programming related standards
+2066,sblim-sfcCommon,库,工具,client common footprint function library package provide share small
+2067,sblim-sfcb,库,其它,common conform embedded environment footprint http interface programming protocol provider resource robust server small specifically suit support write
+2068,sblim-sfcc,库,工具,client footprint libraries library runtime small
+2069,sblim-wbemcli,库,工具,basic client command interface line management script standalone suit task
+2072,scipy,其它,库,array build convenient core depend dimensional easy efficient fast free friendly install integration library manipulation numerical open operate optimization popular powerful provide python quick routine science scientific software source tools user work world
+2073,scl-utils,工具,其它,alternative build essential macro packaging run time utilities utility
+2074,scrub,工具,库,correspond create data destroy device directory disk entire entry expand file make mode operate optionally pattern program regular retrieve special write
+2076,sed,工具,服务,batch command editor file input insertion interactive line modified non operation output perform performs script specify stream text
+2077,selinux-policy,工具,服务,base based configuration minimum modular module package policy reference revision selinux target
+2080,setroubleshoot,工具,服务,allow application configure diagnose exist file generate help information message problem provides resolution selinux server tool track troubleshoot user view
+2081,setroubleshoot-plugins,工具,库,analysis analyze data friendly interpret package plugin plugins provide report selinux user
+2082,setserial,工具,服务,allow basic configure device display information particular port serial utility
+2084,sg3_utils,工具,服务,access base check collection command contain copy coverage data dev device disk file function generic includes internals kernel later library linux mode package page readme render requires scsi self semantics series shared spin syntax test tool usage utilities utility various warning
+2085,sgml-common,工具,库,catalog collection common contain date entity file include main multiple need open package process sgml useful xml
+2086,sgpio,工具,服务,intel management tool utility
+2088,shared-mime-info,库,工具,content correct database desktop examine file freedesktop frequently generally info information look mime necessary org program represent share shared type work
+2092,slang,工具,服务,design easily easy embed extension interpreted language library make need package powerful procedure program programming provide share syntax
+2093,smartmontools,工具,服务,advanced analysis build capable case contain control disk failure hard modern monitor monitoring package program provide reporting scsi self smart storage technology tools utility warning
+2094,smc-tools,工具,服务,communication enable linux memory package shared socket tools usage
+2099,sound-theme-freedesktop,库,其它,default follow freedesktop html http org public sound spec specification theme
+2101,source-highlight,库,工具,ansi color document escape file format handle highlighting html java javascript language output package perl produce program python ruby sequence source syntax xhtml
+2102,soxr,库,工具,audio conversion dimensional example library performs rate sample
+2103,spamassassin,库,工具,agent algorithm commercial completely component create default distribution eliminate email enable file filter header identify include incoming invoke line locally look mail message necessary processing provide reading receive reduce script server simply software speed user
+2106,speexdsp,库,服务,application archive audio book codec communication compression data design especially format free include internet mail package patent possible range speech speex streaming
+2108,spice-gtk,库,工具,allow binding capture client communicate desktop glib gobject gtk gtk3 interact library module screen server simple spice tool widget
+2110,spice-vdagent,库,其它,active agent automatic client copy daemon determine event feature features following guest handle image kernel linux mode mouse need offer process resolution session spice support text work
+2111,spirv-tools,工具,库,assembler binary command file include library module package parser process tools
+2112,splix,库,服务,cover description device driver know language page printer quick support understand usable
+2114,squashfs-tools,工具,服务,compress contain creation filesystem filesystems highly linux manipulate package read utility
+2119,star,工具,服务,access archive backup certain copy define device directory disk dump exchange file filesystem hierarchy ieee individual like list member portable program provide provides read remote restore save single support tape tool utility write
+2121,startup-notification,库,其它,application contain cursor desktop environment feature implement launch library notification package protocol provide startup track using
+2122,strace,工具,服务,argument associate debug diagnose display install intercept make need print problem process program purpose receive record return running tool track tracks useful value
+2123,stratis-cli,工具,服务,bus command daemon interact interface line provide tool
+2125,stress-ng,工具,库,computer design interface kernel operate physical subsystem test various
+2126,stunnel,库,服务,application conjunction create example imap layer ordinary provide secure security server socket ssl support tls transport wrapper
+2128,sudo,工具,服务,ability access administrator allow allows argument audit basis certain command configurable configuration different features file group host include logging machine operate provide replacement root shell specified user
+2132,symlinks,工具,服务,automatically check convert file include install link maintain maintenance need package performs point problem program symbolic utility
+2133,sysfsutils,工具,服务,file handle interfacing kernel library linux mount shared various
+2134,syslinux,库,服务,available binary boot bootloader cd currently directly directory filesystem filesystems firmware host include kernel legacy linux load loader local medium module network operate simple suite support tool
+2135,sysstat,工具,库,activity binary cifs collect collection command concern connect contain data disk display file format fully future global information inspection interrupt kernel linux machine memory monitoring network package page performance process processor rate related report save space statistic support swap tape task tool transfer various
+2137,system-lsb,服务,库,application applications attempt base binary build compatibility compatible compliant component construct contain core define depend design desktop develop distribution ensure environment fundamental implement implementation increase independent instal interface language languages level library linux low module multimedia need package present printing produce programming provide require requirement runtime security software specification stable standard support utility vendor
+2144,tar,工具,服务,ability archive automatic backup compression decompression file include incremental individual install list need package perform program remote restore save support update want
+2146,tbb,库,工具,abstract achieve application available building code common core eliminate implementation level library line low maintenance model module multi necessary optimal performance platform portable processor python require runtime scalable style template thread work write
+2149,teckit,库,工具,application available based binary compiler component conversion create data description documentation encode engine file format human import intend legacy level library low mapping need package perform primary readable simple specific table text toolkit unicode
+2150,tesseract,工具,库,commercial develop engine open originally quality
+2151,tesseract-tessdata,库,工具,afrikaans ancient arabic assamese basque bengali bulgarian catalan chinese contain croatian cyrillic czech danish data detection dutch engine english estonian farsi fast finnish french galician german greek gujarati hebrew hindi hungarian icelandic indonesian integer irish italian japanese kannada korean language latin latvian lithuanian malayalam marathi model mongolian nepali open package persian polish portuguese romanian russian script serbian simplified sinhala slovenian source spanish standard swedish tamil telugu thai tibetan traditional turkish ukrainian urdu version vietnamese welsh
+2152,tex-fonts-hebrew,库,其它,font hebrew latex support
+2161,tinycdb,库,工具,constant contain create database fast library manipulate package read reading reliable share small structure subroutine tune utility
+2164,tlog,工具,库,execute format forward json place program real record recording script server shell similar start terminal user
+2165,tmpwatch,工具,服务,access base clean directory example file filesystems hold normally period recursively regular remove search specified specify switch time utility
+2166,tmux,工具,服务,access alternative control enable intend licensed modern number program screen simple single terminal windows
+2167,tog-pegasus,库,服务,common communication control define deliver enables enterprise increase independent information libraries library linux management model monitoring platform protocol resource services solution source standard
+2168,tokyocabinet,库,服务,database example fast great hash implementation library manage modern record require routine scalability second size small store successor time tree
+2169,torque,库,工具,base batch compute control distribute extension feature include lead library libs manager necessary node open organization package patch program provide queue resource run scalability scale shared source time version
+2170,totem,工具,其它,audio complete control desktop dialog extensible extension feature file gnome keyboard mode nautilus package player plugin pretty property provide screen seek simple video volume
+2173,tpm-tools,工具,服务,certificate computing contain create cryptographic data expose group hardware hash import list manage management memory object pkcs platform protect software state store token tool tools trusted utilize verify
+2174,tpm2-abrmd,服务,其它,access daemon implement manager resource spec
+2175,tpm2-abrmd-selinux,库,其它,module policy selinux
+2176,tpm2-tools,工具,库,base batch build test tool tools
+2178,trace-cmd,工具,其它,data directly file handle instead interface need option record setting trace tracer user
+2180,traceroute,工具,服务,come connectivity debug diagnose display host install internet ipv4 ipv6 machine need network number packet possible problem route specify tool utility
+2181,tracker,工具,服务,additional allow audit base class common comprehensive consist context database desktop embedded entity feature file include indexer infinite link metadata neutral number object package powerful property provide search tool tracker user
+2183,tree,工具,服务,basically content directory display file format like port recursively tree unix utility viewer
+2184,trousers,库,服务,application computing create cryptographic enable expose group hardware hash implementation library make memory platform software specification stack state store trusted v1 verify write
+2186,ttmkfdir,工具,库,create directory file font fonts order prepare scale server truetype utility
+2188,tuned,库,工具,adapt adaptive additional atomic backward based compatibility component contain current currently daemon device dynamic dynamically ethernet fine guest high host implement information load mainly mode monitor network optimize package partitioning power profile save scenario server setting specific target tune usage
+2192,ucs-miscfixed-fonts,其它,工具,bitmap fixed font fonts location package provide terminal
+2194,udisks2,工具,服务,access configuration contain daemon device disk dynamic iscsi library manager manipulate module package project provide storage technology tool
+2195,udisks2-qt5,库,其它,bind binding package provide
+2196,uglify-js,库,工具,command compressor core javascript js library line node package parser runtime ship suitable tool toolkit
+2197,unbound,工具,服务,application base cache client component contains design develop easily extension idea implementation java libraries library link maintain modular module net possible prototype python recursive resolver secure server stub validating validation
+2200,unixODBC,其它,库,access complete connector database driver install linux manager mariadb mysql need odbc package postgresql want
+2202,unzip,工具,服务,archive behavior commonly compatible create default differ extract file include install list ms need option package program respect test unpack utility
+2206,usb_modeswitch,库,服务,bring broadband build card communication compatible device enable file identify installation linux mobile mode non option plug present real support tool
+2207,usb_modeswitch-data,库,工具,bring broadband build card communication compatible contain data device devices enable file function identify installation linux mobile mode need non option package plug present real support tool
+2208,usbguard,服务,库,attribute base basic bus capability change component computer contain daemon dbus detect device display framework help implement interface modification notification optional package policy protect provide selinux service software tool tools usage
+2211,usbutils,工具,服务,connect contain device inspect linux package utility
+2213,userspace-rcu,工具,库,access allow copy core data detect implementation library live memory monitor multiple number period possible provide read scale space structure synchronization time update user
+2214,util-linux,工具,库,base based basic block collection configuration contain daemon device extremely formatting function generates generation guarantee helper high identifier identify implementation large level library like linux login low mount multiple necessary network object package parse partitioning persistent program purpose rate respect separate short space terminal time tool unique universally userspace util utility variety
+2216,valgrind,工具,库,analysis automatically branch build cache currently default detect detector distribution dynamic error framework generating graph heap include instrumentation management memory prediction production profile profiler program quality thread tool valgrind
+2219,vdo,工具,服务,block compression data deliver device level management mapper package provide provisioning space support target tool user virtual
+2220,vhostmd,工具,服务,available dump executable file host metric stdout virtualization
+2225,virt-manager,工具,服务,administer backend build clone command common connect console desktop device different exist file graphical include instal install interface libvirt line local machine manage management manager package provide related remote remove resource serial start statistic stop tool usage utilities utility virt virtual
+2228,virt-viewer,工具,服务,client connect console display graphical gtk libvirt look machine provide server spice viewer virtual widget
+2229,virt-what,工具,服务,alibaba amazon cloud code compute container current derive detect direct docker domain emulator enterprise error exit fact freebsd fully guest hardware hypervisor inside instance kernel know line linux list logical machine manager mean microsoft mode node parallel partition platform power print program qemu script server service services shell type user virt virtual virtualization vmware
+2233,vorbis-tools,工具,库,audio channel codec comment compressed compression contain decoder editor encoder format free fully general music non open package patent playback proprietary purpose tool variable vorbis
+2234,vte291,库,工具,console contain editor embed emulator gnome gtk ides implement library mainly package profile script terminal widget
+2235,vulkan-loader,库,其它,desktop linux loader macos official project provide vulkan windows
+2236,vulkan-tools,库,其它,tool vulkan
+2237,vulkan-validation-layers,库,其它,layer validation vulkan
+2240,wayland,服务,工具,client cursor library server wayland
+2241,web-assets,库,其它,basic directory layout
+2242,webkit2gtk3,库,工具,base contain content engine javascript library package platform port portable render
+2245,which,工具,服务,command locate particular path program specified
+2249,wpa_supplicant,工具,服务,authentication client component control driver ieee implement linux support windows
+2250,wsmancli,工具,服务,command interface line manage management protocol services
+2251,x264,库,工具,contain encode encoder free frontend library package scratch stream video write
+2252,x265,库,工具,available best command compression contain efficiency encoder hardware high library line objective offer package performance platform primary shared variety wide
+2255,xcb-util,工具,库,client code convenience core experimental extension function interface library libxcb make module number protocol provide usable util
+2256,xcb-util-cursor,库,工具,cursor following library libxcb module port provide util
+2260,xcb-util-wm,库,其它,client following helper library libxcb manager module provide util window
+2262,xdg-desktop-portal,库,服务,access apis bus desktop expose file flatpak freedesktop frontend include interface know known object open org path printing series service work xdg
+2263,xdg-desktop-portal-gtk,库,其它,backend bus desktop gnome gtk implementation infrastructure interface org piece shell various xdg
+2265,xdg-user-dirs-gtk,库,其它,bookmark change contains create default desktop detect directory gnome include integration locale special user xdg
+2266,xdg-utils,工具,库,application basic composer control custom description desktop developer developers distribution email environment file following free function handling icon information install integration intend item linux mail make mean menu mime need open package party preferred provide query resource script send setting settings simple software standard support sure time type user utility utils various vendor version xdg
+2269,xfsprogs,库,服务,attribute base block command compatible completely directory disk extend extensive file filesystem filesystems free high implementation include irix large make manage multi performance platform scalability size space support threaded utilities variable version
+2270,xkeyboard-config,库,其它,allow configuration contain data extension graphical interface keyboard layout package selection
+2272,xmlsec1,库,工具,base create crypto digital encryption goal library libxml2 major openssl plugin provide security service signature standard support
+2274,xorg-x11-drivers,库,工具,allow architecture driver force individual instal install installation org package present purpose require software track
+2281,xorg-x11-drv-nouveau,库,服务,driver graphic org video xorg
+2288,xorg-x11-fonts,其它,工具,arabic bitmap central chinese collection contain contains core cyrillic distribution encoding european font iso japanese korean language package provide resolution support turkish welsh window
+2290,xorg-x11-server-Xwayland,服务,其它,client server wayland
+2297,xorg-x11-xkb-utils,工具,其它,core org utility
+2299,xsane,库,工具,access base camera capture common contain control device digital easy end file frontend gtk image instal interface library manipulate need package perform plug provide regular sane scan scanner window work write
+2300,xsettingsd,服务,其它,alternative application client configure daemon dependent desktop effect environment fast font gnome gtk implement intend library provides serve setting settings small sound specification theme thing user want
+2302,xvidcore,库,工具,advanced application bandwidth codec compress computer data decompress digital efficient gain great implement like mpeg network order permit profile quality reduce required simple standard storage transmission video
+2304,yajl,库,服务,ansi driven event generator json library parser small style validating write
+2305,yasm,工具,服务,addition allow assembler complete copying design format ground instruction license modular module multiple object output overall portion primary rewrite support syntax
+2306,yelp,库,工具,browse browser central contain design desktop docbook documentation gnome help include info libraries library package page tool traditional write
+2307,yelp-tools,工具,服务,build collection create developer documentation friendly help like manage package publish script thing tools utility wrap
+2309,yp-tools,工具,服务,base client database directory enable freebsd glibc home implementation information install know later login long machine need network order package pages passwd password port program provide record server service special tools user version
+2315,zimg,库,工具,adapt allocation allow basic color commonly conversion correctness depth design enable flexibility format ground image implement knowledge library minimal operate priority processing programmer required routine scenario separate simple space supported thread
+2317,zlib,库,工具,compression data decompression different free general library lossless patent program purpose zlib
+2319,zssh,工具,其它,capability client file telnet transfer
+2320,zstd,工具,服务,compression library share
+2322,zziplib,库,工具,ability access actually algorithm applications archive base bundle come compression contain data easily extract file free implementation library lightweight offer package single subset tool utilities utility zlib

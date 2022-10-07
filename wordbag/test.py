@@ -24,12 +24,19 @@ print("Loading data finished, load {} records".format(len(pkg_data_list)))
 
 name_list = [d['pkg'] for d in pkg_data_list]
 label_list = [d['label'] if isinstance(d['label'], str) else "none" for d in pkg_data_list]
-text_list = [d['text'] if isinstance(d['label'], str) else "" for d in pkg_data_list]
+text_list = [textrank.preprocess_text(d['text']) if isinstance(d['text'], str) else "" for d in pkg_data_list]
+
+# for i, data in enumerate(pkg_data_list):
+#     if data["pkg"] == "apache-commons-compress":
+#         print("get!!!!")
+#         print(textrank.preprocess_text(data["text"]))
 
 # 建立词袋模型
-cv = CountVectorizer(min_df= 5, binary=True)
+cv = CountVectorizer(min_df= 5, binary=True, stop_words="english")
 cv_matrix = cv.fit_transform(text_list)
 word_vecs = cv_matrix.toarray()
+bag = cv.get_feature_names_out()
+print("词袋大小： {}".format(len(bag)))
 
 # 建立关键词特征
 key_list = []
@@ -46,9 +53,13 @@ with open("../output/name_label_feature.csv", "w", newline='', encoding='utf-8-s
     for i, pkg in enumerate(name_list):
         x_str = ' '.join(str(x) for x in word_vecs[i])
         key_str = ' '.join(str(x) for x in key_list[i])
-        lines.append("{} {} {} {}".format(pkg, label_list[i], x_str, key_str))
+        lines.append("{} {} {}".format(pkg, label_list[i], x_str))
     lines = [line.split(" ") for line in lines]
     writer.writerows(lines)
+
+with open("../output/wordbag.csv", "w", newline='', encoding='utf-8-sig') as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerow(bag)
 
 count_list = [list(vec).count(1) for vec in word_vecs]
 
