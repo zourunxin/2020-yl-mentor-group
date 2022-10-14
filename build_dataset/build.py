@@ -5,9 +5,25 @@ import csv
 import pandas as pd
 from preprocess import gen_feature, gen_idx_label, util3
 from random import shuffle
+from utils.utils import get_label_list
 
-def merge_label(src_pkg_list):
-    label_map = {
+def merge_label(src_pkg_list, merge_mode="class", label_map = None):
+
+    layer_map = {
+        "基础环境": "核心",
+        "核心库": "核心",
+        "核心工具": "核心",
+        "系统服务": "系统",
+        "系统库": "系统",
+        "系统工具": "系统",
+        "应用服务": "应用",
+        "应用库": "应用",
+        "应用工具": "应用",
+        "编程语言": "应用",
+        "内核": "核心"
+    }
+
+    class_map = {
         "基础环境": "服务",
         "核心库": "库",
         "核心工具": "工具",
@@ -16,21 +32,32 @@ def merge_label(src_pkg_list):
         "系统工具": "工具",
         "应用服务": "服务",
         "应用库": "库",
-        "应用工具": "工具"
+        "应用工具": "工具",
+        "编程语言": "编程语言"
     }
 
+    label_list = []
+    _label_map = class_map if merge_mode == "class" else layer_map
+    if label_map is not None:
+        _label_map = label_map
+
     def _convert_label(x):
-        if x[1] in label_map:
-            x[1] = label_map[x[1]]
+        if x[1] in _label_map:
+            x[1] = _label_map[x[1]]
         else:
            x[1] = "其它"
-
+        if x[1] not in label_list:
+            label_list.append(x[1])
         return x
-
+    
     merged_list = []
     for pkg in src_pkg_list:
         merged_list.append(_convert_label(pkg))
 
+    with open("../output/label_list.csv", "w", newline='', encoding='utf-8-sig') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(label_list)  # 先写入columns_name
+    
     return merged_list
 
 
@@ -68,7 +95,6 @@ def merge_deps(deps, src_pkg_list):
 
     # data 文件里的所有出现的包的集合
     pkg_name_list = []
-    
     for pkg in src_pkg_list:
         pkg_name_list.append(pkg[0])
 
@@ -116,15 +142,17 @@ for path, dir_list, file_list in g:
         dot_dirs.append(os.path.join(path, file_name))
 
 
+label_mode = "class"
+
 dots_deps = []
 for dir in dot_dirs:
     dots_deps += resolve_dep(dir)
 
 src_pkg_list = pd.read_csv("../output/name_label_feature.csv", header=None).values.tolist()
 print("读取数据样本 {} 个".format(len(src_pkg_list)))
-src_pkg_list = merge_label(src_pkg_list)
-src_pkg_list = sample_pkg(src_pkg_list)
-print("抽样数据样本 {} 个".format(len(src_pkg_list)))
+src_pkg_list = merge_label(src_pkg_list, label_mode)
+# src_pkg_list = sample_pkg(src_pkg_list)
+# print("抽样数据样本 {} 个".format(len(src_pkg_list)))
 pkg_names, deps = merge_deps(dots_deps, src_pkg_list)
 
 write_dot(pkg_names, deps)
@@ -156,6 +184,7 @@ with open("../output/edges.csv", "w", newline='') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(["idx1", "idx2"])  # 先写入columns_name
     writer.writerows(idx1_idx2)  # 写入多行用writerows
+
 
 gen_feature()
 gen_idx_label(src_pkg_list)

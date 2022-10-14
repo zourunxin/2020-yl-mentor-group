@@ -6,18 +6,18 @@ import csv
 import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
 
-data_dir = "../data_resources/data_0915.csv"
+data_dir = "../data_resources/data_1008.csv"
 
 # load data
 print("Loading data from {}".format(data_dir))
-src_data = pd.read_csv(data_dir)
+src_data = pd.read_csv(data_dir, header=None)
 
 src_list = src_data.values.tolist()
 
 pkg_data_list = []
 
 for data in src_list:
-    pkg_data = {"pkg": data[1], "label": data[0], "text":str(data[2]) + str(data[3])}
+    pkg_data = {"pkg": data[3], "label": data[1] if data[1] == "编程语言" else data[2], "text":str(data[4]) + str(data[5]) + str(data[6]) + str(data[7])}
     pkg_data_list.append(pkg_data)
 
 print("Loading data finished, load {} records".format(len(pkg_data_list)))

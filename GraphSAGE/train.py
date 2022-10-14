@@ -1,3 +1,5 @@
+import sys
+sys.path.append("../")
 from types import NoneType
 import tensorflow as tf
 import numpy as np
@@ -18,6 +20,7 @@ from tensorflow.python.keras.initializers import glorot_uniform, Zeros
 from tensorflow.python.keras.callbacks import Callback
 from tensorflow.python.keras.metrics import Metric
 import csv
+from utils.utils import get_label_list
 
 from sklearn.metrics import confusion_matrix, f1_score, precision_score, recall_score
 
@@ -200,8 +203,8 @@ def get_digit_label_map():
     获取 数字 - label 之间的映射
     :return: <idx: str, label: str>
     """
-    # label_list = ['基础环境', '核心库', '核心工具', '系统服务', '系统库', '系统工具', '应用服务', '应用库', '应用工具', '编程语言', '其它']
-    label_list = ['库', '工具', '服务', '其它']
+
+    label_list = get_label_list()
     label_dict = dict()
     for i, enum in enumerate(label_list):
         label_dict[i] = enum
@@ -299,7 +302,7 @@ adj = convert_symmetric(adj)
 print('Dataset has {} nodes, {} edges, {} features.'.format(adj.shape[0], edges.shape[0], features.shape[1]))
 
 #分割数据集
-y_train, y_val, y_test, train_mask, val_mask, test_mask = get_splits(onehot_labels, strategy="sample", sample_size=400)
+y_train, y_val, y_test, train_mask, val_mask, test_mask = get_splits(onehot_labels, strategy="sample", sample_size=50)
 
 # ============================ sample neighs =============================
 
@@ -563,7 +566,7 @@ model.compile(adam_v2.Adam(0.01), 'categorical_crossentropy', weighted_metrics=[
 val_data = (model_input, y_val, val_mask)
 
 print("start training")
-history = model.fit(model_input, y_train, sample_weight=train_mask, validation_data=val_data, batch_size=A.shape[0], epochs=2400,
+history = model.fit(model_input, y_train, sample_weight=train_mask, validation_data=val_data, batch_size=A.shape[0], epochs=400,
                     shuffle=False, verbose=1)
 
 eval_results = model.evaluate(model_input, y_test, sample_weight=test_mask, batch_size=A.shape[0])
