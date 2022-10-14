@@ -1,8 +1,9 @@
 import csv
 import re
+import sys
 
 from utils.FileUtil import txt_reader, csv_reader, write_csv
-from utils.utils import class_cnt
+from utils.utils import class_cnt, get_label_list
 
 
 def get_pkg_idx(file):
@@ -18,24 +19,24 @@ def get_pkg_idx(file):
     return pkg_idx
 
 
-def get_label_digit_map(label_list):
+def get_label_digit_map():
     """
     获取 label - 数字 之间的映射
     :return: <label: str, idx, str>
     """
-
+    label_list = get_label_list()
     label_dict = dict()
     for i, enum in enumerate(label_list):
         label_dict[enum] = str(i)
     return label_dict
 
 
-def get_digit_label_map(label_list):
+def get_digit_label_map():
     """
     获取 数字 - label 之间的映射
     :return: <idx: str, label: str>
     """
-
+    label_list = get_label_list()
     label_dict = dict()
     for i, enum in enumerate(label_list):
         label_dict[str(i)] = enum
@@ -89,9 +90,7 @@ def gen_idx_label(
     """
     pkg_idx_map = get_pkg_idx(pkg_idx_file)
 
-    label_digit_map = {'库':0, '工具':1, '服务':2, '其它': 3}
-
-    # label_digit_map = get_label_digit_map(label_list, label_map)
+    label_digit_map = get_label_digit_map()
     res = list()
     tmp = set()
     for line in src_pkg_list:
@@ -127,9 +126,8 @@ def util3(file='../output/idx_label.csv'):
     :param file: row<pkg_idx, label>
     :return:
     """
-    label_list = ['库', '工具', '服务', '其它']
 
-    digit_label_map = get_digit_label_map(label_list)
+    digit_label_map = get_digit_label_map()
     reader = csv_reader(file)
     labels = list()
     for line in reader:

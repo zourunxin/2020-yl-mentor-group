@@ -124,7 +124,6 @@ def preprocess_text(text):
         tagged_sent = pos_tag(tokens)  # 获取单词词性
 
         wnl = WordNetLemmatizer()
-        lemmas_sent = []
         for tag in tagged_sent:
             wordnet_pos = get_wordnet_pos(tag[1]) or wordnet.NOUN
             word = wnl.lemmatize(tag[0], pos=wordnet_pos)

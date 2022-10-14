@@ -9,3 +9,11 @@ def class_cnt(class_list: list):
         cnt = res.get(i, 0) + 1
         res[i] = cnt
     return res
+
+
+def get_label_list():
+    f = open('../output/label_list.csv', 'r', encoding='utf-8-sig')
+    result = f.readlines()[0]
+    result = result.strip().split(",")
+    f.close()
+    return result

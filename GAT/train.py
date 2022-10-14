@@ -1,3 +1,5 @@
+import sys
+sys.path.append("../")
 from random import sample
 import tensorflow as tf
 import numpy as np
@@ -14,7 +16,7 @@ from keras.callbacks import EarlyStopping, TensorBoard, ModelCheckpoint
 from keras.models import Model
 from keras.regularizers import l2
 from keras.optimizers import Adam
-
+from utils.utils import get_label_list
 
 
 # =================================== load data =====================================
@@ -194,8 +196,7 @@ def get_digit_label_map():
     获取 数字 - label 之间的映射
     :return: <idx: str, label: str>
     """
-    # label_list = ['基础环境', '核心库', '核心工具', '系统服务', '系统库', '系统工具', '应用服务', '应用库', '应用工具', '编程语言', '其它']
-    label_list = ['库', '工具', '服务', '其它']
+    label_list = get_label_list()
     label_dict = dict()
     for i, enum in enumerate(label_list):
         label_dict[i] = enum
@@ -465,7 +466,7 @@ n_attn_heads = 8              # Number of attention heads in first GAT layer
 dropout_rate = 0.6            # Dropout rate (between and inside GAT layers)
 l2_reg = 5e-4/2               # Factor for l2 regularization
 learning_rate = 1e-3          # Learning rate for Adam
-epochs = 2400                # Number of training epochs
+epochs = 800                  # Number of training epochs
 es_patience = 100             # Patience fot early stopping
 
 # Model definition (as per Section 3.3 of the paper)
