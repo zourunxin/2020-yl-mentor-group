@@ -561,7 +561,7 @@ plt.show()
 predictions = model.predict([X, A], batch_size = N)
 predictions = np.argmax(predictions, axis = 1)
 
-df_node =  pd.read_csv("../output/nodes.csv")
+df_node = pd.read_csv("../output/nodes.csv")
 nodes = np.array(df_node)
 labels = idx_feat_lables[:, 1]
 nodes_true_prediction = np.hstack((nodes, labels[:,np.newaxis].astype(np.int32), predictions[:,np.newaxis]))
