@@ -232,7 +232,7 @@ def cal_metrics(predict_map: dict, actual_map: dict):
 
 # =============================== preprocess ==================================
 
-def get_splits(y, strategy="all", sample_size = 100):
+def get_splits(y, strategy="all", sample_size = 50):
     idx_list = np.arange(len(y))
     idx_neg = []
     idx_pos = []
@@ -260,7 +260,7 @@ def get_splits(y, strategy="all", sample_size = 100):
         elif strategy == "sample":
             idx_train = idx_train + s[0:sample_size]
             idx_val = idx_val + s[int(len(s) * 0.8):]
-            idx_test = idx_test + s[:]
+            idx_test = idx_test + s[sample_size:]
     
     print("样本数量 train: {}, val: {}, test: {}".format(len(idx_train), len(idx_val), len(idx_test)))
 
@@ -294,7 +294,7 @@ adj = convert_symmetric(adj)
 print('Dataset has {} nodes, {} edges, {} features.'.format(adj.shape[0], edges.shape[0], features.shape[1]))
 
 #分割数据集
-y_train, y_val, y_test, train_mask, val_mask, test_mask = get_splits(onehot_labels, strategy="sample", sample_size=400)
+y_train, y_val, y_test, train_mask, val_mask, test_mask = get_splits(onehot_labels, strategy="sample", sample_size=50)
 
 # ================================ Model =================================
 
@@ -465,8 +465,8 @@ F_ = 8                        # Output size of first GraphAttention layer
 n_attn_heads = 8              # Number of attention heads in first GAT layer
 dropout_rate = 0.6            # Dropout rate (between and inside GAT layers)
 l2_reg = 5e-4/2               # Factor for l2 regularization
-learning_rate = 1e-3          # Learning rate for Adam
-epochs = 800                  # Number of training epochs
+learning_rate = 2.5e-3          # Learning rate for Adam
+epochs = 800                 # Number of training epochs
 es_patience = 100             # Patience fot early stopping
 
 # Model definition (as per Section 3.3 of the paper)
@@ -495,15 +495,15 @@ model = Model(inputs=[X_in, A_in], outputs=graph_attention_2)
 
 model.compile(optimizer=Adam(learning_rate),
               loss='categorical_crossentropy',
-              weighted_metrics=['acc'])
+              weighted_metrics=['categorical_crossentropy', 'acc'])
 
 model.summary()
 
 # Callbacks
-mc_callback = ModelCheckpoint('./best_model.h5',
-                              monitor='categorical_crossentropy',
-                              save_best_only=True,
-                              save_weights_only=True)
+# mc_callback = ModelCheckpoint('./best_model.h5',
+#                               monitor='categorical_crossentropy',
+#                               save_best_only=True,
+#                               save_weights_only=True)
 
 
 # ======================= Train =======================
@@ -518,7 +518,7 @@ history = model.fit([X, A],
           batch_size=N,
           validation_data=validation_data,
           shuffle=False,  # Shuffling data means shuffling the whole graph
-          callbacks=[mc_callback])
+          verbose=1)
 
 
 # =================== Evaluate =======================
@@ -570,9 +570,12 @@ result = nodes_true_prediction.tolist()
 predict_map = {}
 actual_map = {}
 
+
+
 for res in result:
-    predict_map[res[0]] = res[3]
-    actual_map[res[0]] = res[2]
+    if idx_test[res[0]] == 1:
+        predict_map[res[0]] = res[3]
+        actual_map[res[0]] = res[2]
 
 metrics = cal_metrics(predict_map, actual_map)
 
