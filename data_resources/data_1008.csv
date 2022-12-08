@@ -18569,7 +18569,8 @@ Python 3 bindings for the cairo library.",,,,,,,,,,,
 系统库,编程语言,python语言,pygobject3,,,"
 This package provides the non-cairo specific bits of the GObject Introspection
 library.","
-Python 3 bindings for GObject Introspection base package.",,,,,,,,,
+
+ 3 bindings for GObject Introspection base package.",,,,,,,,,
 系统库,编程语言,python语言,pykickstart,"
 Python utilities for manipulating kickstart files.  The Python 2 and 3 libraries
 can be found in the packages python-kickstart and python3-kickstart

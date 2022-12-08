@@ -58,6 +58,8 @@ def build_words_from_windows(win):
 def is_valid(word):
     if re.match("[()\-:;,.0-9]+", word) or word in invalid_word:
         return False
+    elif not re.match("^[A-Za-z]+$", word):
+        return False
     elif len(word) < 4:
         return False
     else:

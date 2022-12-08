@@ -6,18 +6,18 @@ import csv
 import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
 
-data_dir = "../data_resources/data_1008.csv"
+data_dir = "../output/datasource_1128.csv"
 
 # load data
 print("Loading data from {}".format(data_dir))
-src_data = pd.read_csv(data_dir, header=None)
+src_data = pd.read_csv(data_dir)
 
 src_list = src_data.values.tolist()
 
 pkg_data_list = []
 
 for data in src_list:
-    pkg_data = {"pkg": data[3], "label": data[1] if data[1] == "编程语言" else data[2], "text":str(data[4]) + str(data[5]) + str(data[6]) + str(data[7])}
+    pkg_data = {"pkg": data[0], "label": data[1], "text":data[2]}
     pkg_data_list.append(pkg_data)
 
 print("Loading data finished, load {} records".format(len(pkg_data_list)))
@@ -38,21 +38,21 @@ word_vecs = cv_matrix.toarray()
 bag = cv.get_feature_names_out()
 print("词袋大小： {}".format(len(bag)))
 
-# 建立关键词特征
-key_list = []
-key_words = ["library", "language", "service", "tool", "util"]
-for text in text_list:
-    keys = []
-    for key in key_words:
-        keys.append(0 if text.find(key) == -1 else 1)
-    key_list.append(keys)
+# # 建立关键词特征
+# key_list = []
+# key_words = ["library", "language", "service", "tool", "util"]
+# for text in text_list:
+#     keys = []
+#     for key in key_words:
+#         keys.append(0 if text.find(key) == -1 else 1)
+#     key_list.append(keys)
 
 with open("../output/name_label_feature.csv", "w", newline='', encoding='utf-8-sig') as csvfile:
     writer = csv.writer(csvfile)
     lines = []
     for i, pkg in enumerate(name_list):
         x_str = ' '.join(str(x) for x in word_vecs[i])
-        key_str = ' '.join(str(x) for x in key_list[i])
+        # key_str = ' '.join(str(x) for x in key_list[i])
         lines.append("{} {} {}".format(pkg, label_list[i], x_str))
     lines = [line.split(" ") for line in lines]
     writer.writerows(lines)

@@ -1,6 +1,5 @@
 import sys
 sys.path.append("../")
-from types import NoneType
 import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
@@ -240,7 +239,7 @@ def cal_metrics(predict_map: dict, actual_map: dict):
 
 # =============================== preprocess ==================================
 
-def get_splits(y, strategy="all", sample_size = 100):
+def get_splits(y, strategy="all", sample_size = 50):
     idx_list = np.arange(len(y))
     idx_neg = []
     idx_pos = []
@@ -268,7 +267,7 @@ def get_splits(y, strategy="all", sample_size = 100):
         elif strategy == "sample":
             idx_train = idx_train + s[0:sample_size]
             idx_val = idx_val + s[int(len(s) * 0.8):]
-            idx_test = idx_test + s[:]
+            idx_test = idx_test + s[sample_size:]
     
     print("样本数量 train: {}, val: {}, test: {}".format(len(idx_train), len(idx_val), len(idx_test)))
 
@@ -297,7 +296,7 @@ idx_map = {j: i for i, j in enumerate(idx)}
 edges = np.array(list(map(idx_map.get, unordered_edges.flatten())),dtype=np.int32).reshape(unordered_edges.shape)
 adj = sp.coo_matrix((np.ones(edges.shape[0]), (edges[:, 0], edges[:, 1])),
                         shape=(onehot_labels.shape[0], onehot_labels.shape[0]), dtype=np.float32)
-adj = convert_symmetric(adj)
+# adj = convert_symmetric(adj)
 
 print('Dataset has {} nodes, {} edges, {} features.'.format(adj.shape[0], edges.shape[0], features.shape[1]))
 
@@ -561,12 +560,12 @@ model = GraphSAGE(feature_dim=features.shape[1],
                   aggregator_type='pooling',
                   dropout_rate=0.5, l2_reg=2.5e-4)
 
-model.compile(adam_v2.Adam(0.01), 'categorical_crossentropy', weighted_metrics=['categorical_crossentropy', 'acc'])
+model.compile(adam_v2.Adam(0.002), 'categorical_crossentropy', weighted_metrics=['categorical_crossentropy', 'acc'])
 
 val_data = (model_input, y_val, val_mask)
 
 print("start training")
-history = model.fit(model_input, y_train, sample_weight=train_mask, validation_data=val_data, batch_size=A.shape[0], epochs=400,
+history = model.fit(model_input, y_train, sample_weight=train_mask, validation_data=val_data, batch_size=A.shape[0], epochs=800,
                     shuffle=False, verbose=1)
 
 eval_results = model.evaluate(model_input, y_test, sample_weight=test_mask, batch_size=A.shape[0])
@@ -589,9 +588,9 @@ predict_map = {}
 actual_map = {}
 
 for res in result:
+    # if test_mask[res[0]] == 1:
     predict_map[res[0]] = res[3]
     actual_map[res[0]] = res[2]
-
 metrics = cal_metrics(predict_map, actual_map)
 
 
