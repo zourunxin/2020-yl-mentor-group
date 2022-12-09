@@ -1,8 +1,9 @@
 import csv
 import xlrd
-import openpyxl
 from itertools import zip_longest
 from preprocess import get_label
+from pandas import DataFrame, ExcelWriter
+import os
 
 
 def dot_reader(file):
@@ -27,6 +28,25 @@ def csv_reader(file):
 def xlrd_reader(file):
     sheet = xlrd.open_workbook(file).sheet_by_name("Sheet1")
     return sheet
+
+
+def write_excel(file: str, sheet_name: str, first_row: list, res: list):
+    """
+    追加模式写 xlsx，在已有的 xlsx 文件下追加 sheet 文件。若没有该 xlsx 文件，则新建并写入指定 sheet
+    :param file:
+    :param sheet_name:
+    :param first_row:
+    :param res:
+    :return:
+    """
+    res = DataFrame(res)
+    if os.path.exists(file) is False:
+        with ExcelWriter(file) as writer:
+            res.to_excel(writer, sheet_name, header=first_row, index=False, engine="openpyxl")
+        return
+    with ExcelWriter(file, mode='a', if_sheet_exists="replace") as writer:
+        res.to_excel(writer, sheet_name, header=first_row, index=False, engine="openpyxl")
+    return
 
 
 def csv_writer(file: str, row: list):
