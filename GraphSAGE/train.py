@@ -261,9 +261,9 @@ def get_splits(y, strategy="all", sample_size = 50):
     for s in idx_set:
         np.random.shuffle(s)
         if strategy == "all":
-            idx_train = idx_train + s[0:int(len(s)*0.6)]
-            idx_val = idx_val + s[int(len(s) * 0.6):int(len(s) * 0.8)]
-            idx_test = idx_test + s[:]
+            idx_train = idx_train + s[0:int(len(s)*0.5)]
+            idx_val = idx_val + s[int(len(s) * 0.5):int(len(s) * 0.7)]
+            idx_test = idx_test + s[int(len(s) * 0.5):]
         elif strategy == "sample":
             idx_train = idx_train + s[0:sample_size]
             idx_val = idx_val + s[int(len(s) * 0.8):]
@@ -301,7 +301,7 @@ adj = sp.coo_matrix((np.ones(edges.shape[0]), (edges[:, 0], edges[:, 1])),
 print('Dataset has {} nodes, {} edges, {} features.'.format(adj.shape[0], edges.shape[0], features.shape[1]))
 
 #分割数据集
-y_train, y_val, y_test, train_mask, val_mask, test_mask = get_splits(onehot_labels, strategy="sample", sample_size=50)
+y_train, y_val, y_test, train_mask, val_mask, test_mask = get_splits(onehot_labels, strategy="sample", sample_size=100)
 
 # ============================ sample neighs =============================
 
@@ -560,7 +560,7 @@ model = GraphSAGE(feature_dim=features.shape[1],
                   aggregator_type='pooling',
                   dropout_rate=0.5, l2_reg=2.5e-4)
 
-model.compile(adam_v2.Adam(0.002), 'categorical_crossentropy', weighted_metrics=['categorical_crossentropy', 'acc'])
+model.compile(adam_v2.Adam(0.0001), 'categorical_crossentropy', weighted_metrics=['categorical_crossentropy', 'acc'])
 
 val_data = (model_input, y_val, val_mask)
 
@@ -588,9 +588,9 @@ predict_map = {}
 actual_map = {}
 
 for res in result:
-    # if test_mask[res[0]] == 1:
-    predict_map[res[0]] = res[3]
-    actual_map[res[0]] = res[2]
+    if test_mask[res[0]] == 1:
+        predict_map[res[0]] = res[3]
+        actual_map[res[0]] = res[2]
 metrics = cal_metrics(predict_map, actual_map)
 
 

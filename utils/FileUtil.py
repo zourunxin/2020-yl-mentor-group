@@ -1,7 +1,7 @@
 import csv
 import xlrd
 from itertools import zip_longest
-from preprocess import get_label
+# from preprocess import get_label
 from pandas import DataFrame, ExcelWriter
 import os
 
@@ -19,9 +19,10 @@ def txt_reader(file):
     return reader
 
 
-def csv_reader(file):
+def csv_reader(file, header=True):
     reader = csv.reader(open(file, encoding='utf-8-sig'))
-    next(reader)
+    if header:
+        next(reader)
     return reader
 
 
@@ -57,7 +58,8 @@ def csv_writer(file: str, row: list):
     :return:
     """
     writer = csv.writer(open(file, 'w', encoding='utf-8-sig', newline=''))
-    writer.writerow(row)
+    if (row and len(row) > 0):
+        writer.writerow(row)
     return writer
 
 
