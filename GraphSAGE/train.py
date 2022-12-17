@@ -301,10 +301,9 @@ adj = sp.coo_matrix((np.ones(edges.shape[0]), (edges[:, 0], edges[:, 1])),
 print('Dataset has {} nodes, {} edges, {} features.'.format(adj.shape[0], edges.shape[0], features.shape[1]))
 
 #分割数据集
-y_train, y_val, y_test, train_mask, val_mask, test_mask = get_splits(onehot_labels, strategy="sample", sample_size=100)
+y_train, y_val, y_test, train_mask, val_mask, test_mask = get_splits(onehot_labels, strategy="sample", sample_size=50)
 
-# ============================ sample neighs =============================
-
+# ============================ sample neighs ============
 def sample_neighs(G, nodes, sample_num=None, self_loop=False, shuffle=True):  # 抽样邻居节点
     np.random.seed(0)
     _sample = np.random.choice
@@ -565,7 +564,7 @@ model.compile(adam_v2.Adam(0.0001), 'categorical_crossentropy', weighted_metrics
 val_data = (model_input, y_val, val_mask)
 
 print("start training")
-history = model.fit(model_input, y_train, sample_weight=train_mask, validation_data=val_data, batch_size=A.shape[0], epochs=800,
+history = model.fit(model_input, y_train, sample_weight=train_mask, validation_data=val_data, batch_size=A.shape[0], epochs=1600,
                     shuffle=False, verbose=1)
 
 eval_results = model.evaluate(model_input, y_test, sample_weight=test_mask, batch_size=A.shape[0])
