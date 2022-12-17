@@ -34,11 +34,11 @@ bow_feats = []
 tfidf_feats = []
 
 # 配置特征提取器 ["name", "keyword", "bow", "tfidf"]
-extractors = ["name", "keyword", "bow"]
+extractors = ["name", "keyword"]
 feats = []
 
 for extractor in extractors:    
-    if extractor == "label":
+    if extractor == "name":
         feats.append(ext.name_feat_extractor(name_list))
     elif extractor == "keyword":
         feats.append(ext.keyword_feat_extractor(text_list))
