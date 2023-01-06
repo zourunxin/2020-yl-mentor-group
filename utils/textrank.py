@@ -133,4 +133,7 @@ def preprocess_text(text):
                 filtered_words.append(word)
     return " ".join(list(set(filtered_words)))
 
+def remove_seperator(text):
+    return text.replace('\n', '').replace('\r', '').replace('\t', '')
+
 words = {}

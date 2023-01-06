@@ -301,7 +301,7 @@ adj = sp.coo_matrix((np.ones(edges.shape[0]), (edges[:, 0], edges[:, 1])),
 print('Dataset has {} nodes, {} edges, {} features.'.format(adj.shape[0], edges.shape[0], features.shape[1]))
 
 #分割数据集
-y_train, y_val, y_test, train_mask, val_mask, test_mask = get_splits(onehot_labels, strategy="sample", sample_size=50)
+y_train, y_val, y_test, train_mask, val_mask, test_mask = get_splits(onehot_labels, strategy="sample", sample_size=100)
 
 # ============================ sample neighs ============
 def sample_neighs(G, nodes, sample_num=None, self_loop=False, shuffle=True):  # 抽样邻居节点
@@ -559,7 +559,7 @@ model = GraphSAGE(feature_dim=features.shape[1],
                   aggregator_type='pooling',
                   dropout_rate=0.5, l2_reg=2.5e-4)
 
-model.compile(adam_v2.Adam(0.0001), 'categorical_crossentropy', weighted_metrics=['categorical_crossentropy', 'acc'])
+model.compile(adam_v2.Adam(0.00005), 'categorical_crossentropy', weighted_metrics=['categorical_crossentropy', 'acc'])
 
 val_data = (model_input, y_val, val_mask)
 
