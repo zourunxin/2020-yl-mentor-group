@@ -4,6 +4,7 @@ from itertools import zip_longest
 # from preprocess import get_label
 from pandas import DataFrame, ExcelWriter
 import os
+import pandas as pd
 
 
 def dot_reader(file):
@@ -178,6 +179,27 @@ def generate_nodes_edges2(file='/Users/zourunxin/Mine/Seminar/20Data/1008/1008�
     write_csv('/Users/zourunxin/Mine/Seminar/20Data/1008/edges.csv', ['pkg1', 'pkg2'], edges)
     write_csv('/Users/zourunxin/Mine/Seminar/20Data/1008/edges_idx.csv', ['idx1', 'idx2'], edges_idx)
 
+
+
+def many_csv_2_one_xlsx(path, save_path, save_file_name):
+    """
+    copy from: https://blog.csdn.net/GX1415926535/article/details/124869712
+    """
+    namelist = os.listdir(path)
+    xlsx_file = save_path + "/" + save_file_name
+    writer = pd.ExcelWriter(xlsx_file)
+
+    for file_name in namelist:
+        print(path + "/" + file_name)
+        data = pd.read_csv(path + "/" + file_name, encoding='utf-8-sig')
+        print(data)
+        data.to_excel(writer, sheet_name=file_name[:-4])
+
+    writer.save()
+    writer.close()
+
+    # 保存，并关闭当前文件
+    print('数据输出成功')
 
 if __name__ == '__main__':
     generate_nodes_edges2()
