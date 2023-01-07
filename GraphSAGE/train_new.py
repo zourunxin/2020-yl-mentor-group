@@ -83,7 +83,10 @@ num_label_map, label_num_map = CommonUtils.get_num_label_map(df_data["label"])
 names = list(df_data["name"])
 onehot_labels = encode_onehot(label_num_map, list(df_data["label"]))
 texts = list(df_data["text"].apply(lambda x: NLPUtils.preprocess_text(x)))
-features = Extractors.tfidf_feat_extractor(texts)
+name_features = Extractors.name_feat_extractor(texts)
+keyword_features = Extractors.keyword_feat_extractor(texts)
+tfidf_features = Extractors.tfidf_feat_extractor(texts)
+features = np.hstack((name_features, keyword_features, tfidf_features))
 
 # 构建邻接矩阵
 adj = sp.coo_matrix((np.ones(len(df_edges)), 
@@ -144,7 +147,7 @@ model = GraphSAGE(feature_dim=features.shape[1],
                   aggregator_type='pooling',
                   dropout_rate=0.5, l2_reg=2.5e-4)
 
-model.compile(adam_v2.Adam(0.00005), 'categorical_crossentropy', weighted_metrics=['categorical_crossentropy', 'acc'])
+model.compile(adam_v2.Adam(0.0001), 'categorical_crossentropy', weighted_metrics=['categorical_crossentropy', 'acc'])
 
 val_data = (model_input, y_val, val_mask)
 

@@ -135,6 +135,6 @@ def preprocess_text(text):
 
 def remove_seperator(text):
     "去换行符"
-    return text.replace('\n', '').replace('\r', '').replace('\t', '')
+    return text.replace('\n', ' ').replace('\r', ' ').replace('\t', ' ')
 
 words = {}
