@@ -30,5 +30,5 @@ for data in old_list:
                     unique.append([data[0], data[1], new_data[2], old_predict, new_predict])
 
 df_unique = pd.DataFrame(unique, columns=["name", "old_label", "new_label", "old_predict", "new_predict"])
-df_unique.to_csv("unique_error.csv")
+df_unique.to_csv("unique_error.csv", index=False)
 

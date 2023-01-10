@@ -1,9 +1,13 @@
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.feature_extraction.text import TfidfTransformer
+import sys
+sys.path.append("../")
 import csv
 import numpy as np
+import utils.NLPUtils as NLPUtils
 
-def extract_name_feat(label):
+from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer, TfidfTransformer
+from gensim.models.word2vec import Word2Vec
+
+def _extract_name_feat(label):
     label = str(label)
     feat = []
     # 以lib开头的软件包，如libXXX
@@ -61,7 +65,7 @@ def extract_name_feat(label):
 
     return feat
 
-def extract_key_feat(text):
+def _extract_key_feat(text):
     text = str(text)
     feat = []
     # 这里不一定都是用 find, 所以不用 key_list 做循环
@@ -89,12 +93,11 @@ def extract_key_feat(text):
     return feat
 
 
-
 def name_feat_extractor(label_list):
     print("提取包名特征")
     feats = []
     for label in label_list:
-        feats.append(extract_name_feat(label))
+        feats.append(_extract_name_feat(label))
 
     return feats
 
@@ -102,36 +105,103 @@ def keyword_feat_extractor(text_list):
     print("提取描述关键词特征")
     feats = []
     for text in text_list:
-        feats.append(extract_key_feat(text))
+        feats.append(_extract_key_feat(text))
 
     return feats
 
 def bow_feat_extractor(text_list):
     # 建立词袋模型
     print("建立词袋模型")
-    cv = CountVectorizer(min_df=5, binary=True, stop_words="english")
+    cv = CountVectorizer(max_features=1000, binary=False, stop_words="english")
     cv_matrix = cv.fit_transform(text_list)
     word_vecs = cv_matrix.toarray()
     bag = cv.get_feature_names_out()
     print("词袋大小： {}".format(len(bag)))
-
     with open("../output/wordbag.csv", "w", newline='', encoding='utf-8-sig') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(bag)
-
     count_list = [list(vec).count(1) for vec in word_vecs]
-
     print("词袋模型建立完毕，词袋大小为: {}, 单词出现平均占比: {}".format(len(word_vecs[0]), np.mean(count_list) / len(word_vecs[0])))
 
     return word_vecs
 
 def tfidf_feat_extractor(text_list):
     # 建立词袋模型
-    print("开始提取 TF-IDF 特征")
-    cv = CountVectorizer(min_df= 5, binary=False, stop_words="english")
-    cv_matrix = cv.fit_transform(text_list)
-    transformer=TfidfTransformer()
-    tfidf=transformer.fit_transform(cv_matrix)
+    print("开始提取 TF-IDF 特征(每个包的预料为一个文档)")
+    tv = TfidfVectorizer(max_features=1000, stop_words="english")
+    tfidf = tv.fit_transform(text_list)
     weights=tfidf.toarray() # 将tf-idf矩阵抽取出来，元素a[i][j]表示j词在i类文本中的tf-idf权重 
 
     return weights
+
+def tfidf_class_feat_extractor(label_list, text_list):
+    '''
+    每个类型的语料为一个文档, 传入顺序一致的标签列表和text列表
+    '''
+    # 建立词袋模型
+    print("开始提取 TF-IDF 特征（每个类型的语料为一个文档")
+    print("data len: {}".format(len(label_list)))
+    corpus_map = {}
+    for i, label in enumerate(label_list):
+        if not label in corpus_map:
+            corpus_map[label] = ""
+        corpus_map[label] = corpus_map[label] + " " + text_list[i]
+
+
+    label_id_map = {}
+    corpus = []
+
+    for i, key in enumerate(corpus_map.keys()):
+        label_id_map[key] = i
+        corpus.append(corpus_map[key])
+
+    vectorizer = CountVectorizer(max_features=1000, stop_words="english")
+    label_matrix = vectorizer.fit_transform(corpus)
+    word_list = vectorizer.get_feature_names_out()
+    label_matrix = label_matrix.toarray()
+
+    print(label_matrix.shape)
+    features = []
+
+    for i, text in enumerate(text_list):
+        words = text.split(" ")
+        feature = []
+        for j, word in enumerate(word_list):
+            if word in words:
+                feature.append(label_matrix[label_id_map[label_list[i]]][j])
+            else:
+                feature.append(0)
+        features.append(feature)
+    
+    return np.array(features, dtype=np.float32)
+
+
+def word2vec_2d_extractor(model_dir, texts, padding=False, max_length=128):
+    '''
+    model_dir: 预训练好的 model
+    texts: 文本 list of list 形式, 需要做分词处理
+    padding: 是否为固定长度矩阵，多截断，少补齐
+    max_length: 在 padding 为 True 使设置句子的截断长度
+    '''
+    print("通过word2vec进行向量化, 模型路径: {}".format(model_dir))
+    model = Word2Vec.load(model_dir)
+
+    def embedding_text(text):
+        feat_matrix = []
+        for word in text:
+            if word in model.wv:
+                feat_matrix.append(model.wv[word])
+            else:
+                feat_matrix.append(np.zeros((model.vector_size)))
+
+        if padding:
+            if len(feat_matrix) > max_length:
+                feat_matrix = feat_matrix[0: max_length]
+            else:
+                for i in range(max_length - len(feat_matrix)):
+                    feat_matrix.append(np.zeros((model.vector_size)))
+        return feat_matrix
+
+    features = [embedding_text(text) for text in texts]
+
+    return np.array(features)
