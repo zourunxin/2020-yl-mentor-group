@@ -123,4 +123,4 @@ print(t)
 
 test_data["y_predict"] = predictions
 
-test_data.to_csv('../output/bert_result.csv')
+test_data.to_csv('../output/bert_result.csv', index=False)

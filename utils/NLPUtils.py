@@ -131,7 +131,7 @@ def preprocess_text(text):
             word = wnl.lemmatize(tag[0], pos=wordnet_pos)
             if (is_valid(word)):
                 filtered_words.append(word)
-    return " ".join(list(set(filtered_words)))
+    return " ".join(filtered_words)
 
 def remove_seperator(text):
     "去换行符"

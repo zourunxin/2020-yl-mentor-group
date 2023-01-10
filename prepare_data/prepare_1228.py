@@ -31,7 +31,7 @@ df["text"] = df.text.apply(NLPUtils.remove_seperator)
 df["label"] = df["分层分类"].apply(lambda x: CommonUtils.convert_label(x.split("/")[0].strip(), mode=args.type))
 
 df_output = df[["name", "label", "text", "summary", "description"]]
-df_output.to_csv('../output/datasource_1228.csv')
+df_output.to_csv('../output/datasource_1228.csv', index=False)
 print("数据预处理完毕，软件包个数：{}".format(len(df_output)))
 
 # 依赖关系预处理
@@ -60,14 +60,9 @@ def write_dot(pkgs, deps):
 
 print("正在预处理依赖关系")
 g = os.walk(r"../data_resources/dot")
-dot_dirs = []
-for path, dir_list, file_list in g:
-    for file_name in file_list:
-        dot_dirs.append(os.path.join(path, file_name))
+dot_dir = "../data_resources/dot/{}".format("src_all.dot" if args.source == "src" else "rpm_all.dot")
 
-dots_deps = []
-for dir in dot_dirs:
-    dots_deps += resolve_dep(dir)
+dots_deps = resolve_dep(dot_dir)
 dots_deps = list(set(dots_deps))
 print("dot 文件中读取依赖 {} 个".format(len(dots_deps)))
 # dot 文件里的所有出现的包的集合
@@ -87,5 +82,5 @@ for dep in dots_deps:
 
 
 df_deps = pd.DataFrame(filtered_deps,columns=['out','in'])
-df_deps.to_csv('../output/edges.csv')
+df_deps.to_csv('../output/edges.csv',index=False)
 print("依赖关系处理完成，依赖数：{}".format(len(filtered_deps)))
