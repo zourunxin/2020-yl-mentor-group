@@ -1,1 +1,4 @@
 /nlp_resources
+.gitignore
+FeatureExtractor/*
+build_dataset/*
