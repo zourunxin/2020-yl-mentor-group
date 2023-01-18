@@ -40,11 +40,12 @@ class Citation(InMemoryDataset):
             being saved to disk. (default: :obj:`None`)
     """
 
-    def __init__(self, root, name, feat, alpha, adj_type=None, transform=None, pre_transform=None):
+    def __init__(self, root, name, feat, alpha, adj_type=None, transform=None, pre_transform=None, train_num=20):
         self.name = name
         self.feat = feat
         self.alpha = alpha
         self.adj_type = adj_type
+        self.train_num = train_num
         super(Citation, self).__init__(root, transform, pre_transform)
         self.data, self.slices = torch.load(self.processed_paths[0])
 
@@ -68,7 +69,7 @@ class Citation(InMemoryDataset):
     #     return
 
     def process(self):
-        data = citation_datasets(self.raw_dir, self.feat, self.alpha, self.adj_type)
+        data = citation_datasets(self.raw_dir, self.feat, self.alpha, self.adj_type, self.train_num)
         # data = read_planetoid_data(self.raw_dir, self.name)
         data = data if self.pre_transform is None else self.pre_transform(data)
         torch.save(self.collate([data]), self.processed_paths[0])
@@ -76,7 +77,7 @@ class Citation(InMemoryDataset):
     def __repr__(self):
         return '{}()'.format(self.name)
 
-def citation_datasets(path="./data", dataset='cora_ml', alpha=0.1, adj_type=None):
+def citation_datasets(path="./data", dataset='cora_ml', alpha=0.1, adj_type=None, train_num=20):
     # path = os.path.join(save_path, dataset)
     os.makedirs(path, exist_ok=True)
     dataset_path = os.path.join(path, '{}.npz'.format(dataset))
@@ -88,7 +89,7 @@ def citation_datasets(path="./data", dataset='cora_ml', alpha=0.1, adj_type=None
     # * 500 labels for validation
     # * the rest for testing
 
-    mask = train_test_split(labels, seed=1020, train_examples_per_class=20, val_examples_per_class=20, test_size=None)
+    mask = train_test_split(labels, seed=1020, train_examples_per_class=train_num, val_size=500, test_size=None)
 
     mask['train'] = torch.from_numpy(mask['train']).bool()
     mask['val'] = torch.from_numpy(mask['val']).bool()

@@ -15,8 +15,8 @@ from torch_geometric.utils import to_undirected, is_undirected
 from torch_geometric.data import InMemoryDataset
 
 
-def get_citation_dataset(name, feat, alpha=0.1, recache=False, normalize_features=False, adj_type=None, transform=None):
-    path = osp.join('/Users/zourunxin/Mine/Seminar/20Data/1228/DiGCN','data')
+def get_citation_dataset(name, feat, train_num, alpha=0.1, recache=False, normalize_features=False, adj_type=None, transform=None):
+    path = osp.join('../output/DGCN','data')
     file_path = osp.join(path, name, 'processed')
     if recache == True:
         print("Delete old processed data cache...")
@@ -24,7 +24,7 @@ def get_citation_dataset(name, feat, alpha=0.1, recache=False, normalize_feature
             shutil.rmtree(file_path)
         os.mkdir(file_path)
         print('Finish cleaning.')
-    dataset = Citation(path, name, feat, alpha, adj_type=adj_type)
+    dataset = Citation(path, name, feat, alpha, adj_type=adj_type, train_num=train_num)
     print('Finish dataset preprocessing.')
     if transform is not None and normalize_features:
         dataset.transform = T.Compose([T.NormalizeFeatures(), transform])

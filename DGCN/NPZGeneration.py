@@ -1,9 +1,9 @@
 import networkx as nx
 import numpy as np
-from utils.FileUtil import csv_reader, write_csv
-from utils.CommonUtils import get_num_label_map
-import csv
 import scipy.sparse as sp
+import pandas as pd
+import utils.NLPUtils as NLPUtils
+import FeatureExtractor.extractors as Extractors
 
 
 def generate_npz():
@@ -12,52 +12,43 @@ def generate_npz():
         g = nx.DiGraph()
     else:
         g = nx.Graph()
+
+    df_data = pd.read_csv('/Users/zourunxin/Mine/Seminar/20Data/1228/datasource_1228_rpm.csv')
+    df_edges = pd.read_csv('/Users/zourunxin/Mine/Seminar/20Data/1228/rpm/edges.csv')
     # 准备 nodes
-    reader = csv_reader('/Users/zourunxin/Mine/Seminar/20Data/{}/{}/nodes.csv'.format(version, dataset))
-    node_num = 0
-    for _ in reader:
-        node_num += 1
-    g.add_nodes_from(range(0, node_num))
+    nodes = list(df_data["name"])
     # 准备 edges
-    reader = csv_reader('/Users/zourunxin/Mine/Seminar/20Data/{}/{}/edges.csv'.format(version, dataset))
-    edges = list()
-    edge_num = 0
-    for line in reader:
-        edges.append([int(line[0]), int(line[1])])
-        edge_num += 1
+    edges = []
+    for edge1, edge2 in zip(df_edges['out'], df_edges['in']):
+        edges.append([edge1, edge2])
+    # 构造图
+    g.add_nodes_from(nodes)
     g.add_edges_from(edges)
-    adj = nx.adjacency_matrix(g)  # 构造稀疏矩阵
+    adj = nx.adjacency_matrix(g)
 
-    # 准备 feature
-    reader = csv.reader(open('/Users/zourunxin/Mine/Seminar/20Data/{}/{}/{}feat_name_label_feature_{}.csv'
-                             .format(version, dataset, feat_num, feat_extr), encoding='utf-8-sig'))
-    features = list()
-    for line in reader:
-        line = line[2:]
-        tmp = [float(i) for i in line]
-        features.append(tmp)
-    attr = sp.csr_matrix(np.array(features))   # 获取 data、indices、indptr
-
-    # 准备 label
-    reader = csv.reader(open('/Users/zourunxin/Mine/Seminar/20Data/{}/{}/{}feat_name_label_feature_{}.csv'
-                             .format(version, dataset, feat_num, feat_extr), encoding='utf-8-sig'))
-    label = list()
-    for line in reader:
-        label.append(label_num.get(line[1], default_num))
-    label = np.array(label)
+    # 准备 features
+    texts = list(df_data["text"].apply(lambda x: NLPUtils.preprocess_text(x)))
+    name_features = Extractors.name_feat_extractor(texts)
+    keyword_features = Extractors.keyword_feat_extractor(texts)
+    tfidf_features = Extractors.tfidf_feat_extractor(texts, max_features=2000)
+    features = np.hstack((name_features, keyword_features, tfidf_features))
+    # 构造图结点特征
+    attr = sp.csr_matrix(np.array(features))
+    # 准备 labels
+    labels = list(df_data["label"].apply(lambda x: label_num.get(x, default_num)))
 
     # 写 npz
-    np.savez("/Users/zourunxin/Mine/Seminar/20Data/1228/DiGCN/data/{}/raw/{}{}{}{}.npz"
-             .format(dataset, version, di, feat_extr, feat_num),
-             adj_data=adj.data, adj_indices=adj.indices, adj_indptr=adj.indptr, adj_shape=adj.shape, labels=label,
+    np.savez("../output/DGCN/data/{}/raw/{}{}{}{}{}.npz"
+             .format(rpm, version, mode, di, feat_extr, backup),
+             adj_data=adj.data, adj_indices=adj.indices, adj_indptr=adj.indptr, adj_shape=adj.shape, labels=labels,
              attr_data=attr.data, attr_indices=attr.indices, attr_indptr=attr.indptr, attr_shape=attr.shape)
 
     print_npz()
     return
 
 
-def print_npz(file="/Users/zourunxin/Mine/Seminar/20Data/1228/DiGCN/data/{}/raw/{}{}{}{}.npz"):
-    file = file.format(dataset, version, di, feat_extr, feat_num)
+def print_npz(file="../output/DGCN/data/{}/raw/{}{}{}{}{}.npz"):
+    file = file.format(rpm, version, mode, di, feat_extr, backup)
     reader = np.load(file, allow_pickle=True)
     cla = sorted(reader.files)
     print(cla)
@@ -68,12 +59,12 @@ def print_npz(file="/Users/zourunxin/Mine/Seminar/20Data/1228/DiGCN/data/{}/raw/
 
 
 if __name__ == '__main__':
+    rpm = 'rpm'
     version = '1228'
     mode = 'layer'
     di = 'di'
-    dataset = 'rpm'
     feat_extr = 'tfidf'
-    feat_num = 1500
+    backup = '2000feature'
 
     if mode == 'layer':
         label_num = {'基础环境': 0, '核心库': 0, '核心服务': 0, '核心工具': 0, '系统库': 1, '系统服务': 1, '系统工具': 1, '应用库': 2,

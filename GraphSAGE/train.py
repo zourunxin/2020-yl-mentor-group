@@ -73,7 +73,7 @@ def get_splits(y, strategy="all", sample_size = 100):
 
 
 print("开始读取数据")
-df_data = pd.read_csv('../output/datasource_1228_new.csv')
+df_data = pd.read_csv('../output/datasource_1228.csv')
 df_edges = pd.read_csv('../output/edges.csv')
 
 idx_name_map, name_idx_map = CommonUtils.get_idx_name_map(df_data["name"])
@@ -96,7 +96,7 @@ adj = sp.coo_matrix((np.ones(len(df_edges)),
 print('数据集含有 {} 个结点, {} 条边, {} 个特征.'.format(adj.shape[0], len(df_edges), features.shape[1]))
 
 #分割数据集
-y_train, y_val, y_test, train_mask, val_mask, test_mask = get_splits(onehot_labels, strategy="sample", sample_size=200)
+y_train, y_val, y_test, train_mask, val_mask, test_mask = get_splits(onehot_labels, strategy="all", sample_size=200)
 
 def sample_neighs(G, nodes, sample_num=None, self_loop=False, shuffle=True):  # 抽样邻居节点
     np.random.seed(0)

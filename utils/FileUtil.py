@@ -27,8 +27,8 @@ def csv_reader(file, header=True):
     return reader
 
 
-def xlrd_reader(file):
-    sheet = xlrd.open_workbook(file).sheet_by_name("Sheet1")
+def xlrd_reader(file, sheet="Sheet1"):
+    sheet = xlrd.open_workbook(file).sheet_by_name(sheet)
     return sheet
 
 

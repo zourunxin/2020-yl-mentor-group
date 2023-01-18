@@ -32,9 +32,11 @@ parser.add_argument('--adj-type', type=str, default='ib')
 
 parser.add_argument('--version', type=str, default='1228')
 parser.add_argument('--feat', type=str, default='ditfidf')
-parser.add_argument('--feat_num', type=str, default='2000')
 parser.add_argument('--mname', type=str, default=os.path.basename(__file__))
 parser.add_argument('--backUp', type=str, default='')
+parser.add_argument('--npz', type=str)
+parser.add_argument('--sheet', type=str, default='')
+parser.add_argument('--train_num', type=int, default=20)
 args = parser.parse_args()
 
 
@@ -149,10 +151,10 @@ class Sparse_Three_Concat(torch.nn.Module):
         return F.log_softmax(x, dim=1)
 
 def run_digcn(dataset,gpu_no):
-    dataset = get_citation_dataset(dataset, args.version + args.feat + args.feat_num, args.alpha, args.recache, args.normalize_features, args.adj_type)
+    dataset = get_citation_dataset(dataset, args.npz, args.train_num, args.alpha, args.recache, args.normalize_features, args.adj_type)
     # Replace Sparse_Three_Sum with Sparse_Three_Concat to test concat
     val_loss, test_acc, test_std, time = run(dataset, gpu_no, Sparse_Three_Sum(dataset), args.runs, args.epochs, args.lr, args.weight_decay,
-        args.early_stopping, args.dataset, args.version, [args.backUp, args.feat_num + 'feat', str(args.lr), str(args.weight_decay), str(args.hidden), str(args.dropout), str(args.alpha)])
+        args.early_stopping, args.dataset, args.npz, args.sheet)
     return val_loss, test_acc, test_std, time
 
 if __name__ == '__main__':
