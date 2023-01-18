@@ -21,7 +21,7 @@ logging.basicConfig(level=logging.DEBUG,  # 控制台打印的日志级别
                     format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s')  # 日志格式
 
 def run(dataset, gpu_no, model, runs, epochs, lr, weight_decay, early_stopping,
-        rpm, version, sheet: list, logger=None):
+        rpm, npz, sheet, logger=None):
     
     torch.cuda.set_device(gpu_no)
     # print(torch.cuda.is_available())
@@ -29,7 +29,6 @@ def run(dataset, gpu_no, model, runs, epochs, lr, weight_decay, early_stopping,
 
     valacc, val_losses, accs, durations = [], [], [], []
     # epoch_time = []
-    pre_list = []
     for _ in range(runs):
         data = dataset[0]
         data = data.to(device)
@@ -59,7 +58,7 @@ def run(dataset, gpu_no, model, runs, epochs, lr, weight_decay, early_stopping,
                 best_val_loss = eval_info['val_loss']
                 val_acc = eval_info['val_acc']
                 test_acc = eval_info['test_acc']
-                output_model_res(data, pre_list, rpm, version, sheet)
+                output_model_res(data, pre_list, rpm, npz, sheet)
                 print('update test_acc------------------------------------------------------')
             # print(epoch)
             print(best_val_loss, test_acc)
@@ -91,8 +90,8 @@ def run(dataset, gpu_no, model, runs, epochs, lr, weight_decay, early_stopping,
                  acc.std().item(),
                  duration.mean().item()))
 
-    write_excel('/Users/zourunxin/Mine/Seminar/20Data/{}/DiGCN/main_result.xlsx'.format(version),
-                '_'.join(sheet), ['Val Acc', 'Val Loss', 'Test Accuracy', 'Duration'],
+    write_excel('../output/DGCN/result/model_result_{}.xlsx'.format(npz),
+                sheet, ['Val Acc', 'Val Loss', 'Test Accuracy', 'Duration'],
                 [['{:.4f}'.format(vacc.mean().item()), '{:.4f}'.format(loss.mean().item()), '{:.4f}'.format(acc.mean().item()), '{:.4f}'.format(duration.mean().item())]])
     return loss.mean().item(), acc.mean().item(), acc.std().item(), duration.mean().item()
 
@@ -113,25 +112,26 @@ def evaluate(model, data):
         logits = model(data)     # 喂入模型获得每个样本在每一分类下的预测值
 
     outs = {}
-    eval_list = []
     for key in ['train', 'val', 'test']:
         mask = data['{}_mask'.format(key)]
         loss = F.nll_loss(logits[mask], data.y[mask]).item()
         pred = logits[mask].max(1)[1]     # mask 即为抽样样本的索引，max(1) 按行取最大值，[1] 是每行最大值的索引。即为该样本的分类结果
         acc = pred.eq(data.y[mask]).sum().item() / mask.sum().item()
 
-        if key == 'test':
-            eval_list = pred.numpy().tolist()
-
         outs['{}_loss'.format(key)] = loss
         outs['{}_acc'.format(key)] = acc
 
-    return outs, eval_list
+    return outs, logits
 
 
-def output_model_res(data, predict, rpm, version, sheet: list):
-    actual = data.y[data['test_mask']].numpy().tolist()
-    eva = classification_report(actual, predict, output_dict=True)
+def output_model_res(data, predict, rpm, npz, sheet):
+    # 输出 pre、act
+    write_excel('../output/DGCN/result/pre_act_{}.xlsx'.format(npz), sheet, ['predict', 'actual'], list(zip(predict.max(1)[1].numpy().tolist(), data.y.numpy().tolist())))
+
+    # 准备 classification_report
+    test_pre = predict[data['test_mask']].max(1)[1]
+    test_act = data.y[data['test_mask']].numpy().tolist()
+    eva = classification_report(test_act, test_pre, output_dict=True)
     res = []
     for key, value in eva.items():
         if key == '-1':
@@ -145,11 +145,12 @@ def output_model_res(data, predict, rpm, version, sheet: list):
     res.insert(0, ['label', 'precision', 'recall', 'f1-score', '该层的包个数'])
     res.extend([[' '], [' '], [' ']])
 
-    if len(set(actual)) > 4:
+    # 准备 confusion_matrix
+    if len(set(test_act)) > 4:
         header = ['基础环境', '核心库、核心服务', '核心工具', '系统库', '系统服务', '系统工具', '应用库', '应用服务', '应用工具', '其它']
     else:
         header = ['核心', '系统', '应用', '其它']
-    matrix = confusion_matrix(actual, predict, labels=list(sorted(set(actual))))
+    matrix = confusion_matrix(test_act, test_pre, labels=list(sorted(set(test_act))))
     matrix = np.insert(matrix, len(matrix[0]), matrix.sum(axis=1), axis=1)
     tmp = matrix.tobytes()
     matrix = np.fromstring(tmp, dtype=int).reshape(len(matrix), len(matrix[0])).astype(str)
@@ -157,8 +158,8 @@ def output_model_res(data, predict, rpm, version, sheet: list):
     matrix = np.insert(matrix, 0, ['confusion_matrix'] + header + ['sum'], axis=0)
     # 将 classification_report、confusion_matrix 拼接一起写到同一个 sheet
     res.extend(matrix)
-    write_excel('/Users/zourunxin/Mine/Seminar/20Data/{}/DiGCN/result_{}.xlsx'.format(version, rpm),
-                '_'.join(sheet), ['']*(len(set(actual))+2), res)
+    write_excel('../output/DGCN/result/det_res_{}_{}.xlsx'.format(rpm, npz),
+                sheet, ['']*(len(set(test_act))+2), res)
     # write_excel('/Users/zourunxin/Mine/Seminar/20Data/{}/DiGCN/result_{}.xlsx'.format(version, rpm),
     #             '_'.join(sheet), ['label', 'precision', 'recall', 'f1-score', '该层的包个数'], res)
     # write_excel('/Users/zourunxin/Mine/Seminar/20Data/{}/DiGCN/confusion_matrix_{}.xlsx'.format(version, rpm),
