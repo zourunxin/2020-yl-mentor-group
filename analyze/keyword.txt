@@ -1,0 +1,12 @@
+库："library", "interface", "api", "static", "runtime", "dynamic", "java", "python", "encode"
+服务："daemon", "task", "network", "request", "monitor", "container", "virtualize", "authentic", "service"
+工具："tool", "util", "utility", "command", "graphical", "processor", "gnu", "compile", "debug"
+其它："font"
+
+
+keyword_map = {
+    "库":["library", "interface", "api", "static", "runtime", "dynamic", "java", "python", "encode",],
+    "服务":["daemon", "task", "network", "request", "monitor", "container", "virtualize", "authentic", "service",],
+    "工具":["tool", "util", "utility", "command", "graphical", "processor", "gnu", "compile", "debug",],
+    "其它":["font"],
+}

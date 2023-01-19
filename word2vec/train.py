@@ -26,7 +26,7 @@ wv_model_dir = "../saved_models/word2vec_model_128d.model"
 
 max_length = 128    # 文本最大长度
 learning_rate = 0.0001
-epochs = 200
+epochs = 300
 
 idx_name_map, name_idx_map = CommonUtils.get_idx_name_map(df_data["name"])
 num_label_map, label_num_map = CommonUtils.get_num_label_map(df_data["label"])
@@ -38,7 +38,7 @@ texts = [text.split(" ") for text in texts]
 features = Extractors.word2vec_2d_extractor(wv_model_dir, texts, padding=True, max_length=max_length)
 
 print(features.shape)
-x_train, x_val, x_test, y_train, y_val, y_test, idx_test = CommonUtils.get_sample_splits(features, onehot_labels, sample_size=100)
+x_train, x_val, x_test, y_train, y_val, y_test, idx_train, idx_test = CommonUtils.get_sample_splits(features, onehot_labels, sample_size=100)
 
 model = TextCNN(max_length, num_features=x_train.shape[2], class_num=4).get_model()
 

@@ -76,7 +76,7 @@ def get_num_label_map(labels):
     
     return num_label_map, label_num_map
 
-def get_sample_splits(x, y,sample_size=100):
+def get_sample_splits(x, y, sample_size=100):
     '''
     分割数据集 (图算法可能需要使用 mask 形式， 参考 GraphSAGE 代码)
     y: one_hot 形式的标签
@@ -95,9 +95,9 @@ def get_sample_splits(x, y,sample_size=100):
 
     for s in idx_set:
         np.random.shuffle(s)
-        idx_train = idx_train + s[0:sample_size]
-        idx_val = idx_val + s[int(len(s) * 0.8):]
-        idx_test = idx_test + s[sample_size:]
+        idx_train = idx_train + s[0:int(len(s) * 0.7)]
+        idx_val = idx_val + s[int(len(s) * 0.6):int(len(s) * 0.8)]
+        idx_test = idx_test + s[int(len(s) * 0.7):]
 
     print("样本数量 train: {}, val: {}, test: {}".format(len(idx_train), len(idx_val), len(idx_test)))
 
@@ -105,7 +105,7 @@ def get_sample_splits(x, y,sample_size=100):
     y_val = np.zeros(y.shape, dtype=np.int32)
     y_test = np.zeros(y.shape, dtype=np.int32)
     nd_y = np.array(y, dtype=np.int32)
-    nd_x = np.array(x, dtype=np.float32)
+    nd_x = np.array(x)
     y_train = nd_y[idx_train]
     y_val = nd_y[idx_val]
     y_test = nd_y[idx_test]
@@ -114,7 +114,7 @@ def get_sample_splits(x, y,sample_size=100):
     x_test = nd_x[idx_test]
 
     print(x_train.shape)
-    return x_train, x_val, x_test, y_train, y_val, y_test, idx_test
+    return x_train, x_val, x_test, y_train, y_val, y_test, idx_train, idx_test
 
 def show_learning_curves(history):
     acc = history.history['acc']

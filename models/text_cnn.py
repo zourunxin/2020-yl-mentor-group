@@ -1,4 +1,3 @@
-
 from keras import Input, Model
 from keras.layers import Embedding, Dense, Conv1D, GlobalMaxPooling1D, Concatenate, Dropout
 
@@ -24,6 +23,10 @@ class TextCNN(object):
             c = GlobalMaxPooling1D()(c)
             convs.append(c)
         x = Concatenate()(convs)
+
+
+
+
 
         output = Dense(self.class_num, activation=self.last_activation)(x)
         model = Model(inputs=input, outputs=output)

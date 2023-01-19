@@ -1,0 +1,85 @@
+name,label,predict,summary,description
+maven-plugin-annotations,工具,库, Maven Plugin Java 5 Annotations, This package contains Java 5 annotations to use in Mojos.
+samba,服务,工具, Server and Client software to interoperate with Windows machines," Samba is the standard Windows interoperability suite of programs for Linux and
+Unix."
+xorg-x11-server-Xnest,服务,工具, A nested server," Xnest is an X server which has been implemented as an ordinary
+X application.  It runs in a window just like other X applications,
+but it is an X server itself in which you can run other software.  It
+is a very useful tool for developers who wish to test their
+applications without running them on their real X server."
+xorg-x11-server-Xephyr,服务,工具, A nested server," Xephyr is an X server which has been implemented as an ordinary
+X application.  It runs in a window just like other X applications,
+but it is an X server itself in which you can run other software.  It
+is a very useful tool for developers who wish to test their
+applications without running them on their real X server.  Unlike
+Xnest, Xephyr renders to an X image rather than relaying the
+X protocol, and therefore supports the newer X extensions like
+Render and Composite."
+gcc-toolset-11-systemtap-server,服务,工具, Instrumentation System Server," This is the remote script compilation server component of systemtap.
+It announces itself to nearby clients with avahi (if available), and
+compiles systemtap scripts to kernel objects on their demand."
+postgresql-server,服务,工具, The programs needed to create and run a PostgreSQL server," PostgreSQL is an advanced Object-Relational database management system (DBMS).
+The postgresql-server package contains the programs needed to create
+and run a PostgreSQL server, which will in turn allow you to create
+and maintain PostgreSQL databases."
+custodia,服务,库," A service to manage, retrieve and store secrets for other processes"," A service to manage, retrieve and store secrets for other processes
+
+
+Custodia is a Secrets Service Provider, it stores or proxies access to
+keys, password, and secret material in general. Custodia is built to
+use the HTTP protocol and a RESTful API as an IPC mechanism over a local
+Unix Socket. It can also be exposed to a network via a Reverse Proxy
+service assuming proper authentication and header validation is
+implemented in the Proxy.
+
+Custodia is modular, the configuration file controls how authentication,
+authorization, storage and API plugins are combined and exposed."
+java-11-alibaba-dragonwell-static-libs-slowdebug,库,工具, Alibaba Dragonwell11 Runtime Environment static libs slowdebug, Alibaba Dragonwell11 Runtime Environment static libs slowdebug
+nmstate,库,工具, Declarative network manager API," Nmstate is a library with an accompanying command line tool that manages host
+networking settings in a declarative manner and aimed to satisfy enterprise
+needs to manage host networking through a northbound declarative API and multi
+provider support on the southbound."
+xz-java,库,工具, Java implementation of XZ data compression," A complete implementation of XZ data compression in Java.
+
+It features full support for the .xz file format specification version 1.0.4,
+single-threaded streamed compression and decompression, single-threaded
+decompression with limited random access support, raw streams (no .xz headers)
+for advanced users, including LZMA2 with preset dictionary."
+rust-toolset,库,工具, Package that installs rust-toolset, This is the main package for rust-toolset.
+javapackages-local,库,工具, Non-essential macros and scripts for Java packaging support, This package provides non-essential macros and scripts to support Java packaging.
+java-1.8.0-alibaba-dragonwell-slowdebug,库,工具, Alibaba Dragonwell 1.8.0 Runtime Environment slowdebug, Alibaba Dragonwell 1.8.0 Runtime Environment slowdebug
+libtiff-tools,库,工具, Command-line utility programs for manipulating TIFF files," This package contains command-line programs for manipulating TIFF format
+image files using the libtiff library."
+java-11-alibaba-dragonwell-devel-slowdebug,库,工具, Alibaba Dragonwell11 Runtime Environment devel slowdebug, Alibaba Dragonwell11 Runtime Environment devel slowdebug
+xml-commons-apis,库,工具," APIs for DOM, SAX, and JAXP"," xml-commons-apis is designed to organize and have common packaging for
+the various externally-defined standard interfaces for XML. This
+includes the DOM, SAX, and JAXP."
+java-1.8.0-alibaba-dragonwell-headless,库,工具, Alibaba Dragonwell 1.8.0 headless, Alibaba Dragonwell 1.8.0 headless
+python3-sphinx,库,工具, Python documentation generator," Sphinx is a tool that makes it easy to create intelligent and
+beautiful documentation for Python projects (or other documents
+consisting of multiple reStructuredText sources), written by Georg
+Brandl. It was originally created to translate the new Python
+documentation, but has now been cleaned up in the hope that it will be
+useful to many other projects.
+
+Sphinx uses reStructuredText as its markup language, and many of its
+strengths come from the power and straightforwardness of
+reStructuredText and its parsing and translating suite, the Docutils.
+
+Although it is still under constant development, the following
+features are already present, work fine and can be seen ""in action"" in
+the Python docs:
+
+    * Output formats: HTML (including Windows HTML Help) and LaTeX,
+      for printable PDF versions
+    * Extensive cross-references: semantic markup and automatic links
+      for functions, classes, glossary terms and similar pieces of
+      information
+    * Hierarchical structure: easy definition of a document tree, with
+      automatic links to siblings, parents and children
+    * Automatic indices: general index as well as a module index
+    * Code handling: automatic highlighting using the Pygments highlighter
+    * Various extensions are available, e.g. for automatic testing of
+      snippets and inclusion of appropriately formatted docstrings."
+maven-resolver-connector-basic,库,工具, Maven Artifact Resolver Connector Basic, A repository connector implementation for repositories using URI-based layouts.
+java-1.8.0-alibaba-dragonwell-headless-slowdebug,库,工具, Alibaba Dragonwell 1.8.0 Runtime Environment headless slowdebug, Alibaba Dragonwell 1.8.0 Runtime Environment headless slowdebug
