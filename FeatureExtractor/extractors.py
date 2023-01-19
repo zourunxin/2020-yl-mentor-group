@@ -4,6 +4,8 @@ import csv
 import numpy as np
 import utils.NLPUtils as NLPUtils
 
+from sklearn.feature_selection import SelectKBest
+from sklearn.feature_selection import chi2
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer, TfidfTransformer
 from gensim.models.word2vec import Word2Vec
 
@@ -112,7 +114,7 @@ def keyword_feat_extractor(text_list):
 def bow_feat_extractor(text_list):
     # 建立词袋模型
     print("建立词袋模型")
-    cv = CountVectorizer(max_features=1000, binary=False, stop_words="english")
+    cv = CountVectorizer(max_features=9999, binary=False, stop_words="english")
     cv_matrix = cv.fit_transform(text_list)
     word_vecs = cv_matrix.toarray()
     bag = cv.get_feature_names_out()
@@ -125,14 +127,18 @@ def bow_feat_extractor(text_list):
 
     return word_vecs
 
-def tfidf_feat_extractor(text_list):
-    # 建立词袋模型
-    print("开始提取 TF-IDF 特征(每个包的预料为一个文档)")
-    tv = TfidfVectorizer(max_features=1000, stop_words="english")
+def tfidf_feat_extractor(text_list, label_list):
+    '''
+     传入顺序一致的text列表 和 one-hot 形式的标签列表
+    '''
+    # 建立 tf-idf 特征
+    print("开始提取 TF-IDF 特征(每个包的语料为一个文档)")
+    tv = TfidfVectorizer(max_features=9999, stop_words="english")
     tfidf = tv.fit_transform(text_list)
-    weights=tfidf.toarray() # 将tf-idf矩阵抽取出来，元素a[i][j]表示j词在i类文本中的tf-idf权重 
+    skb = SelectKBest(chi2, k=1000)#选择k个最佳特征
+    tfidf = skb.fit_transform(tfidf, np.argmax(label_list, axis=1))
 
-    return weights
+    return tfidf.toarray()
 
 def tfidf_class_feat_extractor(label_list, text_list):
     '''

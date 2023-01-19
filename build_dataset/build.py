@@ -112,10 +112,8 @@ def merge_deps(deps, src_pkg_list):
         pkg_name_list.append(pkg[0])
 
     # dot 文件里的所有出现的包的集合
-    pkg_names = list(
-        set([dep.split(' -> ')[0].replace('"', '') for dep in dots_deps]))
-    pkg_names += list(set([dep.split(' -> ')[1].replace('"', '')
-                      for dep in dots_deps]))
+    pkg_names = list(set([dep.split(' -> ')[0].replace('"', '') for dep in dots_deps]))
+    pkg_names += list(set([dep.split(' -> ')[1].replace('"', '')for dep in dots_deps]))
 
 
     # 取交集

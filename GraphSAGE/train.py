@@ -29,7 +29,7 @@ def sample_mask(idx, l):
     mask[idx] = 1
     return np.array(mask, dtype=bool)
 
-def get_splits(y, strategy="all", sample_size = 100):
+def get_splits(y, strategy="all", sample_size = 200):
     '''
     分割数据集
     '''
@@ -48,9 +48,9 @@ def get_splits(y, strategy="all", sample_size = 100):
     for s in idx_set:
         np.random.shuffle(s)
         if strategy == "all":
-            idx_train = idx_train + s[0:int(len(s)*0.5)]
-            idx_val = idx_val + s[int(len(s) * 0.5):int(len(s) * 0.7)]
-            idx_test = idx_test + s[int(len(s) * 0.5):]
+            idx_train = idx_train + s[0:int(len(s)*0.7)]
+            idx_val = idx_val + s[int(len(s) * 0.8):]
+            idx_test = idx_test + s[int(len(s) * 0.7):]
         elif strategy == "sample":
             idx_train = idx_train + s[0:sample_size]
             idx_val = idx_val + s[int(len(s) * 0.8):]
@@ -81,12 +81,13 @@ num_label_map, label_num_map = CommonUtils.get_num_label_map(df_data["label"])
 names = list(df_data["name"])
 onehot_labels = encode_onehot(label_num_map, list(df_data["label"]))
 texts = list(df_data["text"].apply(lambda x: NLPUtils.preprocess_text(x)))
-name_features = Extractors.name_feat_extractor(texts)
+name_features = Extractors.name_feat_extractor(names)
 keyword_features = Extractors.keyword_feat_extractor(texts)
 # tfidf_features = Extractors.tfidf_class_feat_extractor(list(df_data["label"]), texts)
-tfidf_features = Extractors.tfidf_feat_extractor(texts)
+tfidf_features = Extractors.tfidf_feat_extractor(texts, onehot_labels)
 # bow_features = Extractors.bow_feat_extractor(texts)
 features = np.hstack((name_features, keyword_features, tfidf_features))
+# features = tfidf_features
 
 # 构建邻接矩阵
 adj = sp.coo_matrix((np.ones(len(df_edges)), 
@@ -152,7 +153,7 @@ model.compile(adam_v2.Adam(0.0001), 'categorical_crossentropy', weighted_metrics
 val_data = (model_input, y_val, val_mask)
 
 print("start training")
-history = model.fit(model_input, y_train, sample_weight=train_mask, validation_data=val_data, batch_size=A.shape[0], epochs=800,
+history = model.fit(model_input, y_train, sample_weight=train_mask, validation_data=val_data, batch_size=A.shape[0], epochs=1000,
                     shuffle=False, verbose=1)
 
 eval_results = model.evaluate(model_input, y_test, sample_weight=test_mask, batch_size=A.shape[0])
@@ -168,7 +169,7 @@ df_result["predict"] = [num_label_map[pred] for pred in predictions]
 df_result = df_result[df_result["name"].map(lambda x: test_mask[name_idx_map[x]]) == 1]
 df_error = df_result.loc[df_result["predict"] != df_result["label"]]
 df_error = df_error.loc[:,["name", "label", "predict", "summary", "description"]]
-df_error.to_csv("../output/GraphSAGE_result.csv", index=False)
+df_error.to_csv("GraphSAGE_result.csv", index=False)
 report = classification_report(df_result["label"], df_result["predict"])
 print(report)
 

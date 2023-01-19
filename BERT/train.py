@@ -57,9 +57,9 @@ def split_dataset(df, sample_size=100):
     grouped_df = df.groupby('label')
     for group in grouped_df:
         g_data = shuffle(group[1])
-        train_data = train_data.append(g_data[0:sample_size])
-        val_data = val_data.append(g_data[sample_size:sample_size + 100])
-        test_data = test_data.append(g_data[sample_size:])
+        train_data = train_data.append(g_data[0:int(len(g_data)*0.7)])
+        val_data = val_data.append(g_data[int(len(g_data)*0.7):])
+        test_data = test_data.append(g_data[int(len(g_data)*0.7):])
 
     train_data = shuffle(train_data)
     val_data = shuffle(val_data)
@@ -70,13 +70,13 @@ def split_dataset(df, sample_size=100):
     return train_data, val_data, test_data
 
 # parameters
-data_path = "../output/datasource_1228.csv" # 数据路径
+data_path = "../output/datasource_0117_class.csv" # 数据路径
 model_path = "bert-base-uncased" #模型路径，建议预先下载(https://huggingface.co/bert-base-chinese#)
 
 max_length = 128
 batch_size = 32
-learning_rate = 2e-5
-number_of_epochs = 1
+learning_rate = 1e-5
+number_of_epochs = 4
 num_classes = 4
 
 # read data

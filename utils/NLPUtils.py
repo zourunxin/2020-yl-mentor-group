@@ -130,11 +130,20 @@ def preprocess_text(text):
             wordnet_pos = get_wordnet_pos(tag[1]) or wordnet.NOUN
             word = wnl.lemmatize(tag[0], pos=wordnet_pos)
             if (is_valid(word)):
-                filtered_words.append(word)
+                filtered_words.append(word.lower())
     return " ".join(filtered_words)
 
 def remove_seperator(text):
-    "去换行符"
+    '''去换行符'''
     return text.replace('\n', ' ').replace('\r', ' ').replace('\t', ' ')
+
+def mask_words(text, words_list):
+    '''
+    去除 text 中所有在 word_list 中的单词
+    '''
+    words_set = set(words_list)
+    words = text.split(" ")
+    new_words = list(filter(lambda word: not word in words_set, words))
+    return " ".join(new_words)
 
 words = {}

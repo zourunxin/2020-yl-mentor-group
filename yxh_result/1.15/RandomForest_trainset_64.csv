@@ -1,0 +1,1370 @@
+name,label,summary,description
+texlive-bibtex,工具," Process bibliographies for LaTeX, etc"," BibTeX allows the user to store his citation data in generic
+form, while printing citations in a document in the form
+specified by a BibTeX style, to be specified in the document
+itself (one often needs a LaTeX citation-style package, such as
+natbib as well). BibTeX itself is an ASCII-only program; there
+is, however, a version that copes with 8-bit character sets.
+However, BibTeX's facilities rapidly run out as one moves away
+from simple ASCII (for example, in the various national sorting
+rules for languages expressed in different parts of ISO-8859 --
+the ""ISO Latin"" series). For more flexibility, the user is
+urged to consider using biber with biblatex to typeset its
+output. In particular, it is best to avoid BibTeX in favour of
+biblatex, if at all possible."
+tesseract-script-oriya,工具, Oriya script data for tesseract-tessdata," This package contains the fast integer version of the Oriya script
+trained models for the Tesseract Open Source OCR Engine."
+gcc-toolset-11-libgccjit,工具, Library for embedding GCC inside programs and libraries, This package contains shared library with GCC 11 JIT front-end.
+tpm-quote-tools,工具,TPM-based attestation using the TPM quote operation (tools) ,"TPM Quote Tools is a collection of programs that provide support
+for TPM based attestation using the TPM quote operation. "
+tesseract-script-kannada,工具, Kannada script data for tesseract-tessdata," This package contains the fast integer version of the Kannada script
+trained models for the Tesseract Open Source OCR Engine."
+texlive-pst-arrow,工具, special arrows for PSTricks," This package has all the code from the package pstricks-add
+which was related to arrows, like multiple arrows and so on."
+kf5-kitemviews,工具, KDE Frameworks 5 Tier 1 addon with item views, KDE Frameworks 5 Tier 1 addon with item views.
+efibootmgr,工具,EFI Boot Manager ,"efibootmgr displays and allows the user to edit the Intel Extensible
+Firmware Interface (EFI) Boot Manager variables.  Additional
+information about EFI can be found at
+http://developer.intel.com/technology/efi/efi.htm and http://uefi.org/. "
+conntrack-tools,工具,Manipulate netfilter connection tracking table and run High Availability ,"With conntrack-tools you can setup a High Availability cluster and
+synchronize conntrack state between multiple firewalls.
+
+The conntrack-tools package contains two programs:
+- conntrack: the command line interface to interact with the connection
+             tracking system.
+- conntrackd: the connection tracking userspace daemon that can be used to
+              deploy highly available GNU/Linux firewalls and collect
+              statistics of the firewall use.
+
+conntrack is used to search, list, inspect and maintain the netfilter
+connection tracking subsystem of the Linux kernel.
+Using conntrack, you can dump a list of all (or a filtered selection  of)
+currently tracked connections, delete connections from the state table,
+and even add new ones.
+In addition, you can also monitor connection tracking events, e.g.
+show an event message (one line) per newly established connection. "
+tesseract-langpack-que,工具, Quechuan language data for tesseract-tessdata," This package contains the fast integer version of the Quechuan language
+trained models for the Tesseract Open Source OCR Engine."
+kf5-knewstuff,工具, KDE Frameworks 5 Tier 3 module for downloading application assets," KDE Frameworks 5 Tier 3 module for downloading and sharing additional
+application data like plugins, themes, motives, etc."
+gcc-toolset-11-systemtap-runtime,工具, Programmable system-wide instrumentation system - runtime," SystemTap runtime contains the components needed to execute
+a systemtap script that was already compiled into a module
+using a local or remote systemtap-devel installation."
+vulkan-tools,工具, Vulkan tools, Vulkan tools
+ipa-selinux,工具, FreeIPA SELinux policy, Custom SELinux policy module for FreeIPA
+fonts-tweak-tool,工具, Tool for customizing fonts per language," fonts-tweak-tool is a GUI tool for customizing fonts per language on desktops
+using fontconfig."
+pigz,工具,Parallel implementation of gzip ,"pigz, which stands for parallel implementation of gzip,
+is a fully functional replacement for gzip that exploits
+multiple processors and multiple cores to the hilt when compressing data. "
+maven-plugin-testing-harness,工具, Maven Plugin Testing Mechanism, The Maven Plugin Testing Harness provides mechanisms to manage tests on Mojo.
+hunspell-ar,工具, Arabic hunspell dictionaries," Arabic (Egypt, Algeria, etc.) hunspell dictionaries."
+tesseract-langpack-ori,工具, Oriya language data for tesseract-tessdata," This package contains the fast integer version of the Oriya language
+trained models for the Tesseract Open Source OCR Engine."
+dconf,工具, A configuration system," dconf is a low-level configuration system. Its main purpose is to provide a
+backend to the GSettings API in GLib."
+tesseract-langpack-bos,工具, Bosnian language data for tesseract-tessdata," This package contains the fast integer version of the Bosnian language
+trained models for the Tesseract Open Source OCR Engine."
+gnuplot,工具, A program for plotting mathematical expressions and data," Gnuplot is a command-line driven, interactive function plotting
+program especially suited for scientific data representation.  Gnuplot
+can be used to plot functions and data points in both two and three
+dimensions and in many different formats.
+
+Install gnuplot if you need a graphics package for scientific data
+representation.
+
+This package provides a Qt based terminal version of gnuplot."
+tesseract-langpack-tel,工具, Telugu language data for tesseract-tessdata," This package contains the fast integer version of the Telugu language
+trained models for the Tesseract Open Source OCR Engine."
+annobin-annocheck,工具, A tool for checking the security hardening status of binaries," Installs the annocheck program which uses the notes generated by annobin to
+check that the specified files were compiled with the correct security
+hardening options."
+wireshark-cli,工具, Network traffic analyzer," This package contains command-line utilities, plugins, and documentation for
+Wireshark."
+uuid,工具, Universally Unique Identifier library," OSSP uuid is a ISO-C:1999 application programming interface (API)
+and corresponding command line interface (CLI) for the generation
+of DCE 1.1, ISO/IEC 11578:1996 and RFC 4122 compliant Universally
+Unique Identifier (UUID). It supports DCE 1.1 variant UUIDs of version
+1 (time and node based), version 3 (name based, MD5), version 4
+(random number based) and version 5 (name based, SHA-1). Additional
+API bindings are provided for the languages ISO-C++:1998 and Perl:5
+Optional backward compatibility exists for the ISO-C DCE-1.1 and Perl
+Data::UUID APIs."
+tesseract-langpack-chi_tra,工具, Chinese (Traditional) language data for tesseract-tessdata," This package contains the fast integer version of the Chinese (Traditional) language
+trained models for the Tesseract Open Source OCR Engine."
+sos,工具,A set of tools to gather troubleshooting information from a system ,"Sos is a set of tools that gathers information about system
+hardware and configuration. The information can then be used for
+diagnostic purposes and debugging. Sos is commonly used to help
+support technicians and developers. "
+libfdisk,工具, Partitioning library for fdisk-like programs.," This is library for fdisk-like programs, part of util-linux."
+python36-rpm-macros,工具, RPM macros for building RPMs with Python 3.6," RPM macros for building RPMs with Python 3.6 from the python36 module.
+If you want to build an RPM against the python36 module, you need to
+BuildRequire: python36-rpm-macros."
+tigervnc,工具, A TigerVNC remote display system," Virtual Network Computing (VNC) is a remote display system which
+allows you to view a computing 'desktop' environment not only on the
+machine where it is running, but from anywhere on the Internet and
+from a wide variety of machine architectures.  This package contains a
+client which will allow you to connect to other desktops running a VNC
+server."
+gcc-toolset-9-systemtap-client,工具, Programmable system-wide instrumentation system - client," This package contains/requires the components needed to develop
+systemtap scripts, and compile them using a local systemtap-devel
+or a remote systemtap-server installation, then run them using a
+local or remote systemtap-runtime.  It includes script samples and
+documentation, and a copy of the tapset library for reference."
+gcc-toolset-10-build,工具, Package shipping basic build configuration, Package shipping essential configuration macros to build gcc-toolset-10 Software Collection.
+supermin,工具, Tool for creating supermin appliances," Supermin is a tool for building supermin appliances.  These are tiny
+appliances (similar to virtual machines), usually around 100KB in
+size, which get fully instantiated on-the-fly in a fraction of a
+second when you need to boot one of them."
+texlive-zapfding,工具," URW ""Base 35"" font pack for LaTeX"," A set of fonts for use as ""drop-in"" replacements for Adobe's
+basic set, comprising: - Century Schoolbook (substituting for
+Adobe's New Century Schoolbook); - Dingbats (substituting for
+Adobe's Zapf Dingbats); - Nimbus Mono L (substituting for
+Abobe's Courier); - Nimbus Roman No9 L (substituting for
+Adobe's Times); - Nimbus Sans L (substituting for Adobe's
+Helvetica); - Standard Symbols L (substituting for Adobe's
+Symbol); - URW Bookman; - URW Chancery L Medium Italic
+(substituting for Adobe's Zapf Chancery); - URW Gothic L Book
+(substituting for Adobe's Avant Garde); and - URW Palladio L
+(substituting for Adobe's Palatino)."
+hunspell-nl,工具, Dutch hunspell dictionaries, Dutch hunspell dictionaries.
+gcc-toolset-10-gcc,工具, GCC version 10, The gcc-toolset-10-gcc package contains the GNU Compiler Collection version 10.
+erofs-utils,工具, Utilities for working with EROFS," EROFS stands for Enhanced Read-Only File System.  Different from other
+read-only file systems, it is designed for flexibility, scalability, and
+simplicity for high performance.
+
+The erofs-utils package includes mkfs.erofs to create EROFS images."
+zenity,工具, Display dialog boxes from shell scripts," Zenity lets you display Gtk+ dialog boxes from the command line and through
+shell scripts. It is similar to gdialog, but is intended to be saner. It comes
+from the same family as dialog, Xdialog, and cdialog."
+libsmartcols,工具, Formatting library for ls-like programs.," This is library for ls-like terminal programs, part of util-linux."
+texlive-ulem,工具, Package for underlining," The package provides an \ul (underline) command which will
+break over line ends; this technique may be used to replace \em
+(both in that form and as the \emph command), so as to make
+output look as if it comes from a typewriter. The package also
+offers double and wavy underlining, and striking out (line
+through words) and crossing out (/// over words). The package
+works with both Plain TeX and LaTeX."
+qemu-kvm-docs,工具, qemu-kvm documentation, qemu-kvm-docs provides documentation files regarding qemu-kvm.
+tesseract-langpack-urd,工具, Urdu language data for tesseract-tessdata," This package contains the fast integer version of the Urdu language
+trained models for the Tesseract Open Source OCR Engine."
+hunspell-tk,工具, Turkmen hunspell dictionaries, Turkmen hunspell dictionaries.
+postfix-perl-scripts,工具, Postfix utilities written in perl," This package contains perl scripts pflogsumm and qshape.
+
+Pflogsumm is a log analyzer/summarizer for the Postfix MTA. It is
+designed to provide an over-view of Postfix activity. Pflogsumm
+generates summaries and, in some cases, detailed reports of mail
+server traffic volumes, rejected and bounced email, and server
+warnings, errors and panics.
+
+qshape prints Postfix queue domain and age distribution."
+grub2-efi-x64,工具,GRUB for EFI systems. ,"
+The GRand Unified Bootloader (GRUB) is a highly configurable and
+customizable bootloader with modular architecture.  It supports a rich
+variety of kernel formats, file systems, computer architectures and
+hardware devices.
+
+This subpackage provides support for efi-x64 systems. "
+texlive-l3kernel,工具, LaTeX3 programming conventions," The l3kernel bundle provides an implementation of the LaTeX3
+programmers' interface, as a set of packages that run under
+LaTeX 2e. The interface provides the foundation on which the
+LaTeX3 kernel and other future code are built: it is an API for
+TeX programmers. The packages are set up so that the LaTeX3
+conventions can be used with regular LaTeX 2e packages. All the
+files of the bundle are also available in the Subversion (SVN)
+repository of the LaTeX3 Project."
+clevis-systemd,工具, systemd integration for clevis, Automatically unlocks clevis-bound LUKS block devices during boot.
+cmake-gui,工具, Qt GUI for cmake, The cmake-gui package contains the Qt based GUI for cmake.
+gcc-toolset-10-dwz,工具, DWARF optimization and duplicate removal tool," The dwz package contains a program that attempts to optimize DWARF
+debugging information contained in ELF shared libraries and ELF executables
+for size, by replacing DWARF information representation with equivalent
+smaller representation where possible and by reducing the amount of
+duplication using techniques from DWARF standard appendix E - creating
+DW_TAG_partial_unit compilation units (CUs) for duplicated information
+and using DW_TAG_imported_unit to import it into each CU that needs it."
+kf5-kinit,工具, KDE Frameworks 5 tier 3 solution for process launching," kdeinit is a process launcher somewhat similar to the famous init used for
+booting UNIX.
+
+It launches processes by forking and then loading a dynamic library which should
+contain a 'kdemain(...)' function."
+kf5-kio,工具, KDE Frameworks 5 Tier 3 solution for filesystem abstraction, KDE Frameworks 5 Tier 3 solution for filesystem abstraction
+grub2-tools-extra,工具, Support tools for GRUB.," 
+The GRand Unified Bootloader (GRUB) is a highly configurable and
+customizable bootloader with modular architecture.  It supports a rich
+variety of kernel formats, file systems, computer architectures and
+hardware devices.
+
+This subpackage provides tools for support of all platforms."
+python38-setuptools,工具, Easily build and distribute Python 3 packages," Setuptools is a collection of enhancements to the Python 3 distutils that allow
+you to more easily build and distribute Python 3 packages, especially ones that
+have dependencies on other packages.
+
+This package also contains the runtime components of setuptools, necessary to
+execute the software that requires pkg_resources.py."
+ibus-libzhuyin,工具, New Zhuyin engine based on libzhuyin for IBus," It includes a Chinese Zhuyin (Bopomofo) input method
+based on libzhuyin for IBus."
+apr-util-ldap,工具, APR utility library LDAP support, This package provides the LDAP support for the apr-util.
+coreos-installer-bootinfra,工具, coreos-installer boot-time infrastructure for use on Fedora/RHEL CoreOS," This subpackage contains boot-time infrastructure for Fedora CoreOS and
+RHEL CoreOS.  It is not needed on other platforms."
+python2-pip-wheel,工具, The pip wheel, A Python wheel of pip to use with venv.
+sscg,工具, Simple SSL certificate generator," A utility to aid in the creation of more secure ""self-signed""
+certificates. The certificates created by this tool are generated in a
+way so as to create a CA certificate that can be safely imported into a
+client machine to trust the service certificate without needing to set
+up a full PKI environment and without exposing the machine to a risk of
+false signatures from the service certificate."
+virt-viewer,工具, Virtual Machine Viewer," Virtual Machine Viewer provides a graphical console client for connecting
+to virtual machines. It uses the GTK-VNC or SPICE-GTK widgets to provide
+the display, and libvirt for looking up VNC/SPICE server details."
+exfat-utils,工具, Utilities for exFAT file system," A set of utilities for creating, checking, dumping and labeling exFAT file
+system."
+helm-fish-completion,工具, Fish Completion for helm, Fish command line completion support for helm.
+rpcgen,工具, RPC protocol compiler," rpcgen is a tool that generates C code to implement an RPC protocol.
+The input to rpcgen is a language similar to C known as RPC Language
+(Remote Procedure Call Language)."
+tesseract-langpack-mon,工具, Mongolian language data for tesseract-tessdata," This package contains the fast integer version of the Mongolian language
+trained models for the Tesseract Open Source OCR Engine."
+tesseract-langpack-kan,工具, Kannada language data for tesseract-tessdata," This package contains the fast integer version of the Kannada language
+trained models for the Tesseract Open Source OCR Engine."
+maven-artifact,工具, Compatibility Maven artifact artifact, Maven artifact manager artifact
+tesseract-langpack-est,工具, Estonian language data for tesseract-tessdata," This package contains the fast integer version of the Estonian language
+trained models for the Tesseract Open Source OCR Engine."
+hyphen-hr,工具, Croatian hyphenation rules, Croatian hyphenation rules.
+qtchooser,工具, Wrapper to select between Qt development binary versions," Qt Chooser provides a wrapper to switch between versions of Qt development
+binaries when multiple versions like 4 and 5 are installed or local Qt builds
+are to be used."
+texlive-epsf,工具, Simple macros for EPS inclusion," The original graphics inclusion macros for use with dvips;
+still widely used by Plain TeX users (in particular). For LaTeX
+users, the package is nowadays deprecated in favour of the more
+sophisticated standard LaTeX graphics bundle of packages (which
+are also available to Plain TeX users, either via its Plain TeX
+version, or through the support offered by etex)."
+libzip-tools,工具, Command line tools from libzip," The libzip-tools package provides command line tools split off libzip:
+- zipcmp
+- zipmerge
+- ziptool"
+dracut-caps,工具,dracut modules to build a dracut initramfs which drops capabilities ,"This package requires everything which is needed to build an
+initramfs with dracut, which drops capabilities. "
+rpm-build-libs,工具, Libraries for building and signing RPM packages," This package contains the RPM shared libraries for building and signing
+packages."
+ruby,工具, An interpreter of object-oriented scripting language," Ruby is the interpreted scripting language for quick and easy
+object-oriented programming.  It has many features to process text
+files and to do system management tasks (as in Perl).  It is simple,
+straight-forward, and extensible."
+texlive-texlive-msg-translations,工具, translations of the TeX Live installer and TeX Live Manager," This package contains the translated messages of the TeX Live
+installer and TeX Live Manager.  For information on creating or
+updating translations, see
+http://tug.org/texlive/doc.html#install-tl-xlate."
+npm,工具, Node.js Package Manager," npm is a package manager for node.js. You can use it to install and publish
+your node programs. It manages dependencies and does other cool stuff."
+hwloc-gui,工具, The gui-based hwloc program(s), GUI-based tool for displaying system topology information.
+grub2-efi-ia32-cdboot,工具,Files used to boot removeable media with EFI ,"
+The GRand Unified Bootloader (GRUB) is a highly configurable and
+customizable bootloader with modular architecture.  It supports a rich
+variety of kernel formats, file systems, computer architectures and
+hardware devices.
+
+This subpackage provides optional components of grub used with removeable media on efi-ia32 systems. "
+texlive-breqn,工具, Automatic line breaking of displayed equations," The package provides solutions to a number of common
+difficulties in writing displayed equations and getting high-
+quality output. For example, it is a well-known inconvenience
+that if an equation must be broken into more than one line,
+'left...right' constructs cannot span lines. The breqn package
+makes them work as one would expect whether or not there is an
+intervening line break. The single most ambitious goal of the
+package, however, is to support automatic linebreaking of
+displayed equations. Such linebreaking cannot be done without
+substantial changes under the hood in the way formulae are
+processed; the code must be watched carefully, keeping an eye
+on possible glitches. The bundle also contains the flexisym and
+mathstyle packages, which are both designated as support for
+breqn."
+texlive-tex-gyre-math,工具, Maths fonts to match tex-gyre text fonts," TeX-Gyre-Math is to be a collection of maths fonts to match the
+text fonts of the TeX-Gyre collection. The collection will be
+made available in OpenType format, only; fonts will conform to
+the developing standards for OpenType maths fonts. TeX-Gyre-
+Math-Pagella (to match Tex-Gyre-Pagella) and TeX-Gyre-Math-
+Termes (to match Tex-Gyre-Termes) fonts are provided."
+cdparanoia,工具, Compact Disc Digital Audio (CDDA) extraction tool (or ripper)," Cdparanoia (Paranoia III) reads digital audio directly from a CD, then
+writes the data to a file or pipe in WAV, AIFC or raw 16 bit linear
+PCM format.  Cdparanoia doesn't contain any extra features (like the ones
+included in the cdda2wav sampling utility).  Instead, cdparanoia's strength
+lies in its ability to handle a variety of hardware, including inexpensive
+drives prone to misalignment, frame jitter and loss of streaming during
+atomic reads.  Cdparanoia is also good at reading and repairing data from
+damaged CDs."
+texlive-xetex-pstricks,工具, Running PStricks under XeTeX," The package provides an indirection scheme for XeTeX to use the
+pstricks xdvipdfmx.cfg configuration file, so that XeTeX
+documents will load it in preference to the standard
+pstricks.con configuration file. With this configuration, many
+PSTricks features can be used in xelatex or plain xetex
+documents."
+file-roller,工具, Tool for viewing and creating archives," File Roller is an application for creating and viewing archives files,
+such as tar or zip files."
+python3-libmount,工具, Python bindings for the libmount library," The libmount-python package contains a module that permits applications
+written in the Python programming language to use the interface
+supplied by the libmount library to work with mount tables (fstab,
+mountinfo, etc) and mount filesystems."
+zziplib-utils,工具, Utilities for the zziplib library," The zziplib library is intentionally lightweight, it offers the ability to
+easily extract data from files archived in a single zip file. Applications
+can bundle files into a single zip archive and access them. The implementation
+is based only on the (free) subset of compression with the zlib algorithm
+which is actually used by the zip/unzip tools.
+
+This packages contains all the utilities that come with the zziplib library."
+jq,工具, Command-line JSON processor," lightweight and flexible command-line JSON processor
+
+ jq is like sed for JSON data _ you can use it to slice
+ and filter and map and transform structured data with
+ the same ease that sed, awk, grep and friends let you
+ play with text.
+
+ It is written in portable C, and it has zero runtime
+ dependencies.
+
+ jq can mangle the data format that you have into the
+ one that you want with very little effort, and the
+ program to do so is often shorter and simpler than
+ you'd expect."
+texlive-anysize,工具, A simple package to set up document margins," This package is considered obsolete; alternatives are the
+typearea package from the koma-script bundle, or the geometry
+package."
+abrt-addon-coredump-helper,工具, abrt's /proc/sys/kernel/core_pattern helper, This package contains hook for C/C++ crashed programs.
+yp-tools,工具, NIS (or YP) client programs," The Network Information Service (NIS) is a system which provides
+network information (login names, passwords, home directories, groupinformation) to all of the machines on a network.  NIS can enable
+information) to all of the machines on a network.  NIS can enable
+users to login on any machine on the network, as long as the machine
+has the NIS client programs running and the user's password is
+recorded in the NIS passwd database.  NIS was formerly known as Sun
+Yellow Pages (YP).
+
+This package's NIS implementation is based on FreeBSD's YP and is a
+special port for glibc 2.x and libc versions 5.4.21 and later.  This
+package only provides the NIS client programs.  In order to use the
+clients, you'll need to already have an NIS server running on your
+network. An NIS server is provided in the ypserv package.
+
+Install the yp-tools package if you need NIS client programs for machines
+on your network.  You will also need to install the ypbind package on
+every machine running NIS client programs.  If you need an NIS server,
+you'll need to install the ypserv package on one machine on the network."
+spirv-tools-libs,工具, Library files for spirv-tools, library files for spirv-tools
+texlive-ae,工具, Virtual fonts for T1 encoded CMR-fonts," A set of virtual fonts which emulates T1 coded fonts using the
+standard CM fonts. The package name, AE fonts, supposedly
+stands for ""Almost European"". The main use of the package was
+to produce PDF files using Adobe Type 1 versions of the CM
+fonts instead of bitmapped EC fonts. Note that direct
+substitutes for the bitmapped EC fonts are now available, via
+the CM-super, Latin Modern and (in a restricted way) CM-LGC
+font sets."
+biosdevname,工具,Udev helper for naming devices per BIOS names ,"biosdevname in its simplest form takes a kernel device name as an
+argument, and returns the BIOS-given name it ""should"" be.  This is necessary
+on systems where the BIOS name for a given device (e.g. the label on
+the chassis is ""Gb1"") doesn't map directly and obviously to the kernel
+name (e.g. eth0). "
+autogen,工具, Automated text file generator," AutoGen is a tool designed to simplify the creation and maintenance of
+programs that contain large amounts of repetitious text. It is especially
+valuable in programs that have several blocks of text that must be kept
+synchronised."
+evolution-mapi-langpacks,工具, Translations for evolution-mapi, This package contains translations for evolution-mapi.
+hunspell-yi,工具, Yiddish hunspell dictionaries, Yiddish hunspell dictionaries.
+ncompress,工具, Fast compression and decompression utilities," The ncompress package contains the compress and uncompress file
+compression and decompression utilities, which are compatible with the
+original UNIX compress utility (.Z file extensions).  These utilities
+can't handle gzipped (.gz file extensions) files, but gzip can handle
+compressed files.
+
+Install ncompress if you need compression/decompression utilities
+which are compatible with the original UNIX compress utility."
+mailman,工具, Mailing list manager with built in Web access," Mailman is software to help manage email discussion lists, much like
+Majordomo and Smartmail. Unlike most similar products, Mailman gives
+each mailing list a webpage, and allows users to subscribe,
+unsubscribe, etc. over the Web. Even the list manager can administer
+his or her list entirely from the Web. Mailman also integrates most
+things people want to do with mailing lists, including archiving, mail
+<-> news gateways, and so on.
+
+Documentation can be found in: /usr/share/doc/mailman
+
+When the package has finished installing, you will need to perform some
+additional installation steps, these are described in:
+/usr/share/doc/mailman/INSTALL.REDHAT"
+pkgconf-m4,工具, m4 macros for pkgconf," This package includes m4 macros used to support PKG_CHECK_MODULES
+when using pkgconf with autotools."
+composer-cli,工具, A command line tool for use with the lorax-composer API server," A command line tool for use with the lorax-composer API server. Examine recipes,
+build images, etc. from the command line."
+seavgabios-bin,工具, Seavgabios for x86, SeaVGABIOS is an open-source VGABIOS implementation.
+avahi,服务, Local network service discovery," Avahi is a system which facilitates service discovery on
+a local network -- this means that you can plug your laptop or
+computer into a network and instantly be able to view other people who
+you can chat with, find printers to print to or find files being
+shared. This kind of technology is already found in MacOS X (branded
+'Rendezvous', 'Bonjour' and sometimes 'ZeroConf') and is very
+convenient."
+pcp-pmda-lio,服务, Performance Co-Pilot (PCP) metrics for the LIO subsystem," This package provides a PMDA to gather performance metrics from the kernels
+iSCSI target interface (LIO). The metrics are stored by LIO within the Linux
+kernels configfs filesystem. The PMDA provides per LUN level stats, and a
+summary instance per iSCSI target, which aggregates all LUN metrics within the
+target."
+fdo-owner-onboarding-server,服务, FDO Owner Onboarding Server implementation, FDO Owner Onboarding Server implementation
+pacemaker-schemas,服务, Schemas and upgrade stylesheets for Pacemaker," Schemas and upgrade stylesheets for Pacemaker
+
+Pacemaker is an advanced, scalable High-Availability cluster resource
+manager."
+krb5-server-ldap,服务,The LDAP storage plugin for the Kerberos 5 KDC ,"Kerberos is a network authentication system. The krb5-server package
+contains the programs that must be installed on a Kerberos 5 key
+distribution center (KDC).  If you are installing a Kerberos 5 KDC,
+and you wish to use a directory server to store the data for your
+realm, you need to install this package. "
+freeradius-unixODBC,服务, Unix ODBC support for freeradius, This plugin provides the unixODBC support for the FreeRADIUS server project.
+pcp-export-pcp2zabbix,服务, Performance Co-Pilot tools for exporting PCP metrics to Zabbix," Performance Co-Pilot (PCP) front-end tools for exporting metric values
+to the Zabbix (https://www.zabbix.org/) monitoring software."
+cronie,服务, Cron daemon for executing programs at set times," Cronie contains the standard UNIX daemon crond that runs specified programs at
+scheduled times and related tools. It is a fork of the original vixie-cron and
+has security and configuration enhancements like the ability to use pam and
+SELinux."
+epel-aliyuncs-next-release,服务, Extra Packages for Enterprise Linux Next repository configuration," This package contains the Extra Packages for Enterprise Linux (EPEL) Next
+configuration for yum."
+sssd,服务,System Security Services Daemon ,"Provides a set of daemons to manage access to remote directories and
+authentication mechanisms. It provides an NSS and PAM interface toward
+the system and a plug-gable back-end system to connect to multiple different
+account sources. It is also the basis to provide client auditing and policy
+services for projects like FreeIPA.
+
+The sssd sub-package is a meta-package that contains the daemon as well as all
+the existing back ends. "
+xsettingsd,服务, Provides settings to X11 clients via the XSETTINGS specification," xsettingsd is a daemon that implements the XSETTINGS specification.
+
+It is intended to be small, fast, and minimally dependent on other libraries.
+It can serve as an alternative to gnome-settings-daemon for users who are not
+using the GNOME desktop environment but who still run GTK+ applications and
+want to configure things such as themes, font anti-aliasing/hinting, and UI
+sound effects."
+usbguard-selinux,服务, USBGuard selinux," The usbguard-selinux package contains selinux policy for the USBGuard
+daemon."
+rsyslog-mysql,服务, MySQL support for rsyslog," The rsyslog-mysql package contains a dynamic shared object that will add
+MySQL database support to rsyslog."
+bind9.16-utils,服务, Utilities for querying DNS name servers," Bind-utils contains a collection of utilities for querying DNS (Domain
+Name System) name servers to find out information about Internet
+hosts. These tools will provide you with the IP addresses for given
+host names, as well as other information about registered domains and
+network addresses.
+
+You should install bind9.16-utils if you need to get information from DNS name
+servers."
+cyrus-imapd,服务," A high-performance email, contacts and calendar server"," The Cyrus IMAP (Internet Message Access Protocol) server provides access to
+personal mail, system-wide bulletin boards, news-feeds, calendar and contacts
+through the IMAP, JMAP, NNTP, CalDAV and CardDAV protocols. The Cyrus IMAP
+server is a scalable enterprise groupware system designed for use from small to
+large enterprise environments using technologies based on well-established Open
+Standards.
+
+A full Cyrus IMAP implementation allows a seamless mail and bulletin board
+environment to be set up across one or more nodes. It differs from other IMAP
+server implementations in that it is run on sealed nodes, where users are not
+normally permitted to log in. The mailbox database is stored in parts of the
+filesystem that are private to the Cyrus IMAP system. All user access to mail
+is through software using the IMAP, IMAPS, JMAP, POP3, POP3S, KPOP, CalDAV
+and/or CardDAV protocols.
+
+The private mailbox database design gives the Cyrus IMAP server large
+advantages in efficiency, scalability, and administratability. Multiple
+concurrent read/write connections to the same mailbox are permitted. The server
+supports access control lists on mailboxes and storage quotas on mailbox
+hierarchies."
+pcp-pmda-infiniband,服务, Performance Co-Pilot (PCP) metrics for Infiniband HCAs and switches," This package contains the PCP Performance Metrics Domain Agent (PMDA) for
+collecting Infiniband statistics.  By default, it monitors the local HCAs
+but can also be configured to monitor remote GUIDs such as IB switches."
+langpacks-fi,服务, Finnish langpacks meta-package, This package provides Finnish langpacks meta-package.
+lorax-templates-anolis,服务, Anolis OS build templates for lorax and livemedia-creator," Anolis OS specific Lorax templates for creating the boot.iso and live isos are
+placed in /usr/share/lorax/templates.d/80-anolis"
+lldpad,服务,Intel LLDP Agent ,"This package contains the Linux user space daemon and configuration tool for
+Intel LLDP Agent with Enhanced Ethernet support for the Data Center. "
+uuidd,服务,Helper daemon to guarantee uniqueness of time-based UUIDs ,"The uuidd package contains a userspace daemon (uuidd) which guarantees
+uniqueness of time-based UUID generation even at very high rates on
+SMP systems. "
+langpacks-ar,服务, Arabic langpacks meta-package, This package provides Arabic langpacks meta-package.
+dde-api,服务, Go-lang bingding for dde-daemon, Go-lang bingding for dde-daemon.
+langpacks-nl,服务, Dutch langpacks meta-package, This package provides Dutch langpacks meta-package.
+kubernetes-kubeadm,服务, Kubernetes tool for standing up clusters, Kubernetes tool for standing up clusters
+NetworkManager-bluetooth,服务,Bluetooth device plugin for NetworkManager ,This package contains NetworkManager support for Bluetooth devices. 
+NetworkManager-initscripts-updown,服务,Legacy ifup/ifdown scripts for NetworkManager that replace initscripts (network-scripts) ,"Installs alternative ifup/ifdown scripts that talk to NetworkManager.
+This is only for backward compatibility with initscripts (network-scripts).
+Preferably use nmcli instead. "
+langpacks-gl,服务, Galician langpacks meta-package, This package provides Galician langpacks meta-package.
+pcp-pmda-mysql,服务, Performance Co-Pilot (PCP) metrics for MySQL," This package contains the PCP Performance Metrics Domain Agent (PMDA) for
+collecting metrics about the MySQL database."
+pcp-pmda-openvswitch,服务, Performance Co-Pilot (PCP) metrics for Open vSwitch," This package contains the PCP Performance Metrics Domain Agent (PMDA) for
+collecting metrics from Open vSwitch."
+kwin-common,服务, Common files for KWin X11 and KWin Wayland, Common files for KWin X11 and KWin Wayland.
+xdg-desktop-portal-gtk,服务, Backend implementation for xdg-desktop-portal using GTK+," A backend implementation for xdg-desktop-portal that is using GTK+ and various
+pieces of GNOME infrastructure, such as the org.gnome.Shell.Screenshot or
+org.gnome.SessionManager D-Bus interfaces."
+Dragonfly-supernode,服务, Dragonfly Cluster Manager(Supernode)," Dragonfly Cluster Manager(Supernode) is the P2P server, which is mainly
+responsible for scheduling P2P task and making CDN cache."
+bind-dyndb-ldap,服务, LDAP back-end plug-in for BIND," This package provides an LDAP back-end plug-in for BIND. It features
+support for dynamic updates and internal caching, to lift the load
+off of your LDAP server."
+foomatic-db-ppds,服务, PPDs from printer manufacturers, PPDs from printer manufacturers.
+samba-common,服务, Files used by both Samba servers and clients," samba-common provides files necessary for both the server and client
+packages of Samba."
+dleyna-renderer,服务, Service for interacting with Digital Media Renderers," D-Bus service for clients to discover and manipulate DLNA Digital Media
+Renderers (DMRs)."
+initscripts,服务, Basic support for legacy System V init scripts," This package provides basic support for legacy System V init scripts, and some
+other legacy tools & utilities."
+anolis-gpg-keys,服务, Anolis OS RPM keys, Anolis OS RPM signature keys
+gnome-settings-daemon,服务, The daemon sharing settings from GNOME to GTK+/KDE applications," A daemon to share settings from GNOME to other applications. It also
+handles global keybindings, as well as a number of desktop-wide settings."
+usbmuxd,服务, Daemon for communicating with Apple's iOS devices," usbmuxd is a daemon used for communicating with Apple's iPod Touch, iPhone,
+iPad and Apple TV devices. It allows multiple services on the device to be
+accessed simultaneously."
+pki-server,服务, PKI Server Package," The PKI Server Package contains libraries and utilities needed by other
+PKI subsystems."
+tigervnc-server-minimal,服务, A minimal installation of TigerVNC server," The VNC system allows you to access the same desktop from a wide
+variety of platforms. This package contains minimal installation
+of TigerVNC server, allowing others to access the desktop on your
+machine."
+bind-sdb-chroot,服务," A chroot runtime environment for the ISC BIND DNS server, named-sdb(8)"," This package contains a tree of files which can be used as a
+chroot(2) jail for the named-sdb(8) program from the BIND package.
+Based on the code from Jan ""Yenya"" Kasprzak <kas@fi.muni.cz>"
+ipa-server-dns,服务, IPA integrated DNS server with support for automatic DNSSEC signing," IPA integrated DNS server with support for automatic DNSSEC signing.
+Integrated DNS server is BIND 9. OpenDNSSEC provides key management."
+pcp-pmda-zimbra,服务, Performance Co-Pilot (PCP) metrics for Zimbra," This package contains the PCP Performance Metrics Domain Agent (PMDA) for
+collecting metrics about Zimbra."
+gnome-shell-extension-updates-dialog,服务, Show a modal dialog when there are software updates, This GNOME Shell extension shows a modal dialog when there are software updates
+pcp-pmda-shping,服务, Performance Co-Pilot (PCP) metrics for shell command responses," This package contains the PCP Performance Metrics Domain Agent (PMDA) for
+collecting metrics about quality of service and response time measurements of
+arbitrary shell commands."
+xorg-x11-server-source,服务, Xserver source code required to build VNC server (Xvnc), Xserver source code needed to build VNC server (Xvnc)
+cups-lpd,服务, CUPS printing system - lpd emulation," CUPS printing system provides a portable printing layer for
+UNIX庐 operating systems. This is the package that provides standard
+lpd emulation."
+gvfs,服务, Backends for the gio framework in GLib," The gvfs package provides backend implementations for the gio
+framework in GLib. It includes ftp, sftp, cifs."
+rpcbind,服务, Universal Addresses to RPC Program Number Mapper," The rpcbind utility is a server that converts RPC program numbers into
+universal addresses.  It must be running on the host to be able to make
+RPC calls on a server on that machine."
+greenboot,服务, Generic Health Check Framework for systemd, Generic Health Check Framework for systemd.
+fence-agents-lpar,服务, Fence agent for IBM LPAR, Fence agent for IBM LPAR devices that are accessed via telnet or SSH.
+libsss_idmap,服务, FreeIPA Idmap library, Utility library to convert SIDs to Unix uids and gids
+pcp-pmda-denki,服务, Performance Co-Pilot (PCP) metrics dealing with electrical power," This package contains the PCP Performance Metrics Domain Agent (PMDA) for
+collecting metrics related to the electrical power consumed by and inside
+the system."
+systemd,服务, System and Service Manager," systemd is a system and service manager that runs as PID 1 and starts
+the rest of the system. It provides aggressive parallelization
+capabilities, uses socket and D-Bus activation for starting services,
+offers on-demand starting of daemons, keeps track of processes using
+Linux control groups, maintains mount and automount points, and
+implements an elaborate transactional dependency-based service control
+logic. systemd supports SysV and LSB init scripts and works as a
+replacement for sysvinit. Other parts of this package are a logging daemon,
+utilities to control basic system configuration like the hostname,
+date, locale, maintain a list of logged-in users, system accounts,
+runtime directories and settings, and daemons to manage simple network
+configuration, network time synchronization, log forwarding, and name
+resolution."
+pacemaker-remote,服务, Pacemaker remote executor daemon for non-cluster nodes," Pacemaker is an advanced, scalable High-Availability cluster resource
+manager.
+
+The pacemaker-remote package contains the Pacemaker Remote daemon
+which is capable of extending pacemaker functionality to remote
+nodes not running the full corosync/cluster stack."
+thermald,服务, Thermal Management daemon," thermald monitors and controls platform temperature.
+
+Thermal issues are important to handle proactively to reduce performance
+impact.  thermald uses the existing Linux kernel infrastructure and can
+be easily enhanced."
+langpacks-lt,服务, Lithuanian langpacks meta-package, This package provides Lithuanian langpacks meta-package.
+tang,服务, Network Presence Binding Daemon, Tang is a small daemon for binding data to the presence of a third party.
+irqbalance,服务,IRQ balancing daemon ,"irqbalance is a daemon that evenly distributes IRQ load across
+multiple CPUs for enhanced performance. "
+langpacks-ga,服务, Irish langpacks meta-package, This package provides Irish langpacks meta-package.
+tuned-gtk,服务, GTK GUI for tuned, GTK GUI that can control tuned and provides simple profile editor.
+certmonger,服务, Certificate status monitor and PKI enrollment client," Certmonger is a service which is primarily concerned with getting your
+system enrolled with a certificate authority (CA) and keeping it enrolled."
+plymouth-plugin-label,服务, Plymouth label plugin," This package contains the label control plugin for
+Plymouth. It provides the ability to render text on
+graphical boot splashes using pango and cairo."
+gnome-shell-extension-native-window-placement,服务, Native window placement for GNOME Shell," This GNOME Shell extension provides additional configurability for the window
+layout in the overview, including a mechanism similar to KDE4."
+freeradius-ldap,服务, LDAP support for freeradius, This plugin provides the LDAP support for the FreeRADIUS server project.
+langpacks-tr,服务, Turkish langpacks meta-package, This package provides Turkish langpacks meta-package.
+xorg-x11-drivers,服务, X.Org X11 driver installation package," The purpose of this package is to require all of the individual X.Org
+driver rpms, to allow the OS installation software to install all drivers
+all at once, without having to track which individual drivers are present
+on each architecture.  By installing this package, it forces all of the
+individual driver packages to be installed."
+pcp-pmda-memcache,服务, Performance Co-Pilot (PCP) metrics for Memcached," This package contains the PCP Performance Metrics Domain Agent (PMDA) for
+collecting metrics about Memcached."
+libipa_hbac,服务, FreeIPA HBAC Evaluator library, Utility library to validate FreeIPA HBAC rules for authorization requests
+tigervnc-server-module,服务, TigerVNC module to Xorg," This package contains libvnc.so module to X server, allowing others
+to access the desktop on your machine."
+containerd-stress,服务, containerd stress test for containerd daemon, stress test a containerd daemon
+dde-daemon,服务, Daemon handling the DDE session settings, Daemon handling the DDE session settings
+pki-acme,服务, PKI ACME Package," The PKI ACME responder is a service that provides an automatic certificate
+management via ACME v2 protocol defined in RFC 8555."
+subversion,服务, A Modern Concurrent Version Control System," Subversion is a concurrent version control system which enables one
+or more users to collaborate in developing and maintaining a
+hierarchy of files and directories while keeping a history of all
+changes.  Subversion only stores the differences between versions,
+instead of every complete file.  Subversion is intended to be a
+compelling replacement for CVS."
+gnome-logs,服务, Log viewer for the systemd journal, A log viewer for the systemd journal.
+systemtap-server,服务, Instrumentation System Server," This is the remote script compilation server component of systemtap.
+It announces itself to nearby clients with avahi (if available), and
+compiles systemtap scripts to kernel objects on their demand."
+fuse-overlayfs,服务, FUSE overlay+shiftfs implementation for rootless containers, FUSE overlay+shiftfs implementation for rootless containers.
+langpacks-he,服务, Hebrew langpacks meta-package, This package provides Hebrew langpacks meta-package.
+WALinuxAgent-udev,服务, Udev rules for Microsoft Azure, Udev rules specific to Microsoft Azure Virtual Machines.
+pcp-pmda-netcheck,服务, Performance Co-Pilot (PCP) metrics for simple network checks," This package contains the PCP Performance Metrics Domain Agent (PMDA) for
+collecting metrics from simple network checks."
+containernetworking-plugins,服务, CNI network plugins," The CNI (Container Network Interface) project consists of a specification
+and libraries for writing plugins to configure network interfaces in Linux
+containers, along with a number of supported plugins. CNI concerns itself
+only with network connectivity of containers and removing allocated resources
+when the container is deleted."
+gnome-shell-extension-no-hot-corner,服务, Disable the hot corner in GNOME Shell, This GNOME Shell extension disables the hot corner in the top bar.
+qemu-kvm-block-gluster,服务, QEMU Gluster block driver," This package provides the additional Gluster block driver for QEMU.
+
+Install this package if you want to access remote Gluster storage."
+langpacks-th,服务, Thai langpacks meta-package, This package provides Thai langpacks meta-package.
+fprintd-pam,服务, PAM module for fingerprint authentication," PAM module that uses the fprintd D-Bus service for fingerprint
+authentication."
+alsa-sof-firmware,服务,Firmware and topology files for Sound Open Firmware project ,This package contains the firmware binaries for the Sound Open Firmware project. 
+startdde,服务, Starter of deepin desktop environment, Starter of deepin desktop environment.
+gnome-control-center-filesystem,服务, GNOME Control Center directories," The GNOME control-center provides a number of extension points
+for applications. This package contains directories where applications
+can install configuration files that are picked up by the control-center
+utilities."
+python3-sss-murmur,服务,Python3 bindings for murmur hash function ,Provides python3 module for calculating the murmur hash version 3 
+pcp-pmda-netfilter,服务, Performance Co-Pilot (PCP) metrics for Netfilter framework," This package contains the PCP Performance Metrics Domain Agent (PMDA) for
+collecting metrics about the Netfilter packet filtering framework."
+dde-qt5wayland-plugin,服务, Qt platform plugins for DDE, Qt platform plugins for DDE.
+conmon,服务, OCI container runtime monitor, OCI container runtime monitor.
+pcp-pmda-mssql,服务, Performance Co-Pilot (PCP) metrics for Microsoft SQL Server," This package contains the PCP Performance Metrics Domain Agent (PMDA) for
+collecting metrics from Microsoft SQL Server."
+pcp-pmda-perfevent,服务, Performance Co-Pilot (PCP) metrics for hardware counters," This package contains the PCP Performance Metrics Domain Agent (PMDA) for
+collecting hardware counters statistics through libpfm."
+system-lsb-languages,服务, LSB Languages module support," The Linux Standard Base (LSB) Languages module supports components for runtime
+languages which are found on an LSB conforming system."
+dde-clipboard,服务, Qt platform theme integration plugins for DDE," Qt platform theme integration plugins for DDE
+ Multiple Qt plugins to provide better Qt5 integration for DDE is included."
+pcp-export-pcp2influxdb,服务, Performance Co-Pilot tools for exporting PCP metrics to InfluxDB," Performance Co-Pilot (PCP) front-end tools for exporting metric values
+to InfluxDB (https://influxdata.com/time-series-platform/influxdb)."
+gnome-shell-extension-apps-menu,服务, Application menu for GNOME Shell, This GNOME Shell extension adds a GNOME 2.x style menu for applications.
+php-gmp,库, A module for PHP applications for using the GNU MP library," These functions allow you to work with arbitrary-length integers
+using the GNU MP library."
+libisoburn,库, Library to enable creation and expansion of ISO-9660 filesystems," Libisoburn is a front-end for libraries libburn and libisofs which
+enables creation and expansion of ISO-9660 filesystems on all CD/
+DVD/BD media supported by libburn. This includes media like DVD+RW,
+which do not support multi-session management on media level and
+even plain disk files or block devices. Price for that is thorough
+specialization on data files in ISO-9660 filesystem images. And so
+libisoburn is not suitable for audio (CD-DA) or any other CD layout
+which does not entirely consist of ISO-9660 sessions."
+postgresql-plpython3,库, The Python3 procedural language for PostgreSQL," The postgresql-plpython3 package contains the PL/Python3 procedural language,
+which is an extension to the PostgreSQL database server.
+Install this if you want to write database functions in Python 3."
+libreoffice-langpack-tr,库, Turkish language pack for LibreOffice, Provides additional Turkish translations and resources for LibreOffice.
+lasso,库, Liberty Alliance Single Sign On," Lasso is a library that implements the Liberty Alliance Single Sign On
+standards, including the SAML and SAML2 specifications. It allows to handle
+the whole life-cycle of SAML based Federations, and provides bindings
+for multiple languages."
+glassfish-el-api,库, Expression Language 3.0 API, Expression Language 3.0 API.
+perl-Data-Dump,库, Pretty printing of data structures," This module provides a single function called dump() that takes a list of
+values as its argument and produces a string as its result. The string
+contains Perl code that, when evaled, produces a deep copy of the original
+arguments. The string is formatted for easy reading."
+java-17-openjdk-devel-slowdebug,库, OpenJDK 17 Development Environment unoptimised with full debugging on," The OpenJDK 17 development tools.
+This package is unoptimised with full debugging. Install only as needed and remove ASAP."
+libdwarf-static,库, Static libdwarf library, Static libdwarf library.
+python2-backports-ssl_match_hostname,库, The ssl.match_hostname() function from Python 3," The Secure Sockets layer is only actually secure if you check the hostname in
+the certificate returned by the server to which you are connecting, and verify
+that it matches to hostname that you are trying to reach.
+
+But the matching logic, defined in RFC2818, can be a bit tricky to implement on
+your own. So the ssl package in the Standard Library of Python 3.2 now includes
+a match_hostname() function for performing this check instead of requiring
+every application to implement the check separately.
+
+This backport brings match_hostname() to users of earlier versions of Python.
+The actual code is only slightly modified from Python 3.5."
+vte291,库, Terminal emulator library," VTE is a library implementing a terminal emulator widget for GTK+. VTE
+is mainly used in gnome-terminal, but can also be used to embed a
+console/terminal in games, editors, IDEs, etc."
+nbdkit-curl-plugin,库, HTTP/FTP (cURL) plugin for nbdkit, This package contains cURL (HTTP/FTP) support for nbdkit.
+perl-Text-Tabs+Wrap,库, Expand tabs and do simple line wrapping," Text::Tabs performs the same job that the UNIX expand(1) and unexpand(1)
+commands do: adding or removing tabs from a document.
+
+Text::Wrap::wrap() will reformat lines into paragraphs. All it does is break
+up long lines, it will not join short lines together."
+libgnomekbd,库, A keyboard configuration library," The libgnomekbd package contains a GNOME library which manages
+keyboard configuration and offers various widgets related to
+keyboard configuration."
+libbpf,库, Libbpf library," A mirror of bpf-next linux tree bpf-next/tools/lib/bpf directory plus its
+supporting header files. The version of the package reflects the version of
+ABI."
+python3-cryptography,库,PyCA's cryptography library ,"cryptography is a package designed to expose cryptographic primitives and
+recipes to Python developers. "
+libblockdev-utils,库, A library with utility functions for the libblockdev library," The libblockdev-utils is a library providing utility functions used by the
+libblockdev library and its plugins."
+libreoffice-help-ja,库, Japanese help for LibreOffice, Provides Japanese help for LibreOffice.
+python3-libselinux,库, SELinux python 3 bindings for libselinux," The libselinux-python3 package contains python 3 bindings for developing
+SELinux applications."
+java-1.8.0-openjdk-accessibility-fastdebug,库, OpenJDK 8 accessibility connector for packages with debugging on and optimisation, See normal java-1.8.0.342.b07-openjdk-accessibility description.
+python3-speechd,库, Python 3 Client API for speech-dispatcher, Python 3 module for speech-dispatcher
+qt5-qtscript-examples,库, Programming examples for qt5-qtscript, Programming examples for qt5-qtscript.
+sonatype-oss-parent,库, Sonatype OSS Parent, Sonatype OSS parent pom used by other sonatype packages.
+ghc-srpm-macros,库, RPM macros for building Haskell source packages, Macros used when generating Haskell source RPM packages.
+mod_security,库, Security module for the Apache HTTP Server," ModSecurity is an open source intrusion detection and prevention engine
+for web applications. It operates embedded into the web server, acting
+as a powerful umbrella - shielding web applications from attacks."
+Judy,库, General purpose dynamic array," Judy is a C library that provides a state-of-the-art core technology
+that implements a sparse dynamic array. Judy arrays are declared
+simply with a null pointer. A Judy array consumes memory only when it
+is populated, yet can grow to take advantage of all available memory
+if desired. Judy's key benefits are scalability, high performance, and
+memory efficiency. A Judy array is extensible and can scale up to a
+very large number of elements, bounded only by machine memory. Since
+Judy is designed as an unbounded array, the size of a Judy array is
+not pre-allocated but grows and shrinks dynamically with the array
+population."
+libreoffice-filters,库, All import / export filters," Metapackage to pull in all subpackages that contain import or export
+filters."
+perl-Sys-Hostname,库, Try every conceivable way to get a hostname," It attempts several methods of getting the system hostname and then caches the
+result."
+plexus-containers-component-metadata,库, Component metadata from plexus-containers, Component metadata from plexus-containers.
+lua-posix,库, A POSIX library for Lua," This is a POSIX library for Lua which provides access to many POSIX features
+to Lua programs."
+dyninst-static,库, Static libraries for the compiling programs with Dyninst," dyninst-static includes the static versions of the library files for
+the dyninst user-space libraries and interfaces."
+perl-MRO-Compat,库, Mro::* interface compatibility for Perls < 5.9.5," The ""mro"" namespace provides several utilities for dealing with method
+resolution order and method caching in general in Perl 5.9.5 and higher.
+This module provides those interfaces for earlier versions of Perl (back
+to 5.6.0 anyways).
+
+It is a harmless no-op to use this module on 5.9.5+. That is to say,
+code which properly uses MRO::Compat will work unmodified on both older
+Perls and 5.9.5+.
+
+If you're writing a piece of software that would like to use the parts
+of 5.9.5+'s mro:: interfaces that are supported here, and you want
+compatibility with older Perls, this is the module for you."
+dbus-libs,库, Libraries for accessing D-BUS, This package contains lowlevel libraries for accessing D-BUS.
+mingw32-gettext,库, GNU libraries and utilities for producing multi-lingual messages, MinGW Windows Gettext library
+perl-Tie-File,库, Access the lines of a disk file via a Perl array," Tie::File represents a regular text file as a Perl array. Each element in the
+array corresponds to a record in the file. The first line of the file is
+element 0 of the array; the second line is element 1, and so on.  The file is
+not loaded into memory, so this will work even for gigantic files.  Changes to
+the array are reflected in the file immediately."
+libreoffice-help-uk,库, Ukrainian help for LibreOffice, Provides Ukrainian help for LibreOffice.
+slf4j-log4j12,库, SLF4J LOG4J-12 Binding, SLF4J LOG4J-12 Binding.
+libstoragemgmt-udev,库,Udev files for libstoragemgmt ,"The libstoragemgmt-udev package contains udev rules and helper utilities for
+uevents generated by the kernel. "
+python38-requests,库," HTTP library, written in Python, for human beings"," Most existing Python modules for sending HTTP requests are extremely verbose and
+cumbersome. Python__ built-in urllib2 module provides most of the HTTP
+capabilities you should need, but the API is thoroughly broken. This library is
+designed to make HTTP requests easy for developers."
+rubygem-rspec-expectations,库, RSpec expectations (should and matchers)," rspec-expectations adds `should` and `should_not` to every object and includes
+RSpec::Matchers, a library of standard matchers."
+python39-psycopg2,库, A PostgreSQL database adapter for Python 3," Psycopg is the most popular PostgreSQL adapter for the Python
+programming language. At its core it fully implements the Python DB
+API 2.0 specifications. Several extensions allow access to many of the
+features offered by PostgreSQL."
+netcf-libs,库, Libraries for netcf, The libraries for netcf.
+libblockdev-part,库, The partitioning plugin for the libblockdev library," The libblockdev library plugin (and in the same time a standalone library)
+providing the functionality related to partitioning."
+pcp-testsuite,库, Performance Co-Pilot (PCP) test suite, Quality assurance test suite for Performance Co-Pilot (PCP).
+libmad,库, MPEG audio decoder library," MAD is a high-quality MPEG audio decoder. It currently supports MPEG-1
+and the MPEG-2 extension to Lower Sampling Frequencies, as well as the
+so-called MPEG 2.5 format. All three audio layers (Layer I, Layer II,
+and Layer III a.k.a. MP3) are fully implemented."
+kwin-libs,库, KWin runtime libraries, KWin runtime libraries.
+slf4j-jcl,库, SLF4J JCL Binding, SLF4J JCL Binding.
+mingw32-zlib-static,库, Static libraries for mingw32-zlib development., The mingw32-zlib-static package contains static library for mingw32-zlib development.
+python3-rpmfluff,库," Lightweight way of building RPMs, and sabotaging them"," rpmfluff provides a python library for building RPM packages, and
+sabotaging them so they are broken in controlled ways.
+
+It is intended for use when validating package analysis tools such as RPM lint.
+It can also be used to construct test cases for package management software
+such as rpm and yum.
+
+Python 3 version."
+libuninameslist,库, A library providing Unicode character names and annotations," libuninameslist provides applications with access to Unicode name and
+annotation data from the official Unicode Character Database."
+libpng15,库," Old version of libpng, needed to run old binaries"," The libpng15 package provides libpng 1.5, an older version of the libpng.
+library for manipulating PNG (Portable Network Graphics) image format files.
+This version should be used only if you are unable to use the current
+version of libpng."
+cyrus-sasl-ntlm,库,NTLM authentication support for Cyrus SASL ,"The cyrus-sasl-ntlm package contains the Cyrus SASL plugin which supports
+the NTLM authentication scheme. "
+maven-reporting-api-javadoc,库, Javadoc for maven-reporting-api, API documentation for maven-reporting-api.
+java-11-openjdk-slowdebug,库, OpenJDK 11 Runtime Environment unoptimised with full debugging on," The OpenJDK 11 runtime environment.
+This package is unoptimised with full debugging. Install only as needed and remove ASAP."
+python3-httplib2,库, A comprehensive HTTP client library," A comprehensive HTTP client library that supports many features left out of
+other HTTP libraries."
+hyphen-nl,库, Dutch hyphenation rules, Dutch hyphenation rules.
+mingw64-openssl,库, MinGW port of the OpenSSL toolkit," The OpenSSL toolkit provides support for secure communications between
+machines. OpenSSL includes a certificate management tool and shared
+libraries which provide various cryptographic algorithms and
+protocols.
+
+This package contains Windows (MinGW) libraries and development tools."
+libtdb,库, The tdb library, A library that implements a trivial database.
+dotnet-runtime-6.0,库, NET 6.0 runtime," The .NET runtime contains everything needed to run .NET applications.
+It includes a high performance Virtual Machine as well as the framework
+libraries used by .NET applications.
+
+.NET is a fast, lightweight and modular platform for creating
+cross platform applications that work on Linux, Mac and Windows.
+
+It particularly focuses on creating console applications, web
+applications and micro-services."
+apache-commons-jxpath-javadoc,库, API documentation for apache-commons-jxpath, This package contains the API documentation for apache-commons-jxpath.
+pygtk2,库, Python bindings for GTK+," PyGTK is an extension module for Python that gives you access to the GTK+
+widget set.  Just about anything you can write in C with GTK+ you can write
+in Python with PyGTK (within reason), but with all the benefits of using a
+high-level scripting language."
+autocorr-es,库, Spanish auto-correction rules, Rules for auto-correcting common Spanish typing errors.
+hplip-libs,库, HPLIP libraries, Libraries needed by HPLIP.
+lpsolve,库, A Mixed Integer Linear Programming (MILP) solver," Mixed Integer Linear Programming (MILP) solver lpsolve solves pure linear,
+(mixed) integer/binary, semi-continuous and special ordered sets (SOS) models."
+java-17-openjdk,库, OpenJDK 17 Runtime Environment, The OpenJDK 17 runtime environment.
+boost-math,库, Math functions for boost TR1 library," 
+Run-time support for C99 and C++ TR1 C-style Functions from the math
+portion of Boost.TR1."
+perl-I18N-Collate,库, Compare 8-bit scalar data according to the current locale," This module provides you with objects that will collate according to your
+national character set. This module is deprecated. See the perllocale manual
+page for further information."
+mingw32-libffi,库, A portable foreign function interface library for MinGW, Foreign function interface library for MinGW.
+compat-libpthread-nonshared,库, Compatibility support for linking against libpthread_nonshared.a.," This package provides compatibility support for applications that expect
+libpthread_nonshared.a to exist. The support provided is in the form of
+an empty libpthread_nonshared.a that allows dynamic links to succeed.
+Such applications should be adjusted to avoid linking against
+libpthread_nonshared.a which is no longer used. The static library
+libpthread_nonshared.a is an internal implementation detail of the C
+runtime and should not be expected to exist."
+mingw32-sqlite,库, MinGW Windows port of sqlite embeddable SQL database engine," SQLite is a C library that implements an SQL database engine. A large
+subset of SQL92 is supported. A complete database is stored in a
+single disk file. The API is designed for convenience and ease of use.
+Applications that link against SQLite can enjoy the power and
+flexibility of an SQL database without the administrative hassles of
+supporting a separate database server.  Version 2 and version 3 binaries
+are named to permit each to be installed on a single host
+
+This package contains cross-compiled libraries and development tools
+for Windows."
+python39-lxml,库, XML processing library combining libxml2/libxslt with the ElementTree API," lxml is a Pythonic, mature binding for the libxml2 and libxslt libraries. It
+provides safe and convenient access to these libraries using the ElementTree It
+extends the ElementTree API significantly to offer support for XPath, RelaxNG,
+XML Schema, XSLT, C14N and much more.To contact the project, go to the project
+home page < or see our bug tracker at case you want to use the current ...
+
+Python 3 version."
+libpmemblk,库, Persistent Memory Resident Array of Blocks library," The libpmemblk implements a pmem-resident array of blocks, all the same
+size, where a block is updated atomically with respect to power
+failure or program interruption (no torn blocks)."
+regexp,库, Simple regular expressions API," Regexp is a 100% Pure Java Regular Expression package that was
+graciously donated to the Apache Software Foundation by Jonathan Locke.
+He originally wrote this software back in 1996 and it has stood up quite
+well to the test of time.
+It includes complete Javadoc documentation as well as a simple Applet
+for visual debugging and testing suite for compatibility."
+gssntlmssp,库, GSSAPI NTLMSSP Mechanism, A GSSAPI Mechanism that implements NTLMSSP
+libpmempool,库, Persistent Memory pool management library," The libpmempool library provides a set of utilities for off-line
+administration, analysis, diagnostics and repair of persistent memory
+pools created by libpmemlog, libpemblk and libpmemobj libraries."
+perl-Locale-Codes,库, Distribution of modules to handle locale codes," Locale-Codes is a distribution containing a set of modules. The modules
+each deal with different types of codes which identify parts of the locale
+including languages, countries, currency, etc."
+perl-FCGI,库, FastCGI Perl bindings, FastCGI Perl bindings.
+python3-blockdev,库, Python3 gobject-introspection bindings for libblockdev," This package contains enhancements to the gobject-introspection bindings for
+libblockdev in Python3."
+luajit,库, Just-In-Time Compiler for Lua," LuaJIT implements the full set of language features defined by Lua 5.1.
+The virtual machine (VM) is API- and ABI-compatible to the standard
+Lua interpreter and can be deployed as a drop-in replacement."
+python2-Cython,库, Language for writing Python extension modules," This is a development version of Pyrex, a language
+for writing Python extension modules.
+
+Python 2 version."
+python3-pyghmi,库, Python General Hardware Management Initiative (IPMI and others)," This is a pure Python implementation of IPMI protocol.
+
+The included pyghmicons and pyghmiutil scripts demonstrate how one may
+incorporate the pyghmi library into a Python application."
+perl-File-Compare,库, Compare files or file handles," A File::Compare Perl module provides functions for comparing a content of two
+files specified by a file name or a file handle."
+python2-pytest,库, Simple powerful testing with Python," py.test provides simple, yet powerful testing for Python."
+python3-osbuild,库, A build system for OS images, A build system for OS images
+jaxen,库, An XPath engine written in Java," Jaxen is an open source XPath library written in Java. It is adaptable
+to many different object models, including DOM, XOM, dom4j, and JDOM.
+Is it also possible to write adapters that treat non-XML trees such as compiled
+Java byte code or Java beans as XML, thus enabling you to query these trees
+with XPath too."
+xml-commons-apis-javadoc,库, Javadoc for xml-commons-apis, Javadoc for xml-commons-apis.
+jakarta-oro-javadoc,库, Javadoc for jakarta-oro, Javadoc for jakarta-oro.
+postgresql-contrib,库, Extension modules distributed with PostgreSQL," The postgresql-contrib package contains various extension modules that are
+included in the PostgreSQL distribution."
+gegl04,库, Graph based image processing framework," GEGL (Generic Graphics Library) is a graph based image processing framework.
+GEGLs original design was made to scratch GIMP's itches for a new
+compositing and processing core. This core is being designed to have
+minimal dependencies and a simple well defined API."
+libreoffice-langpack-af,库, Afrikaans language pack for LibreOffice, Provides additional Afrikaans translations and resources for LibreOffice.
+libreoffice-langpack-fa,库, Farsi language pack for LibreOffice, Provides additional Farsi translations and resources for LibreOffice.
+perl-Term-Size-Perl,库, Perl extension for retrieving terminal size (Perl version)," Yet another implementation of Term::Size. Now in pure Perl, with the
+exception of a C probe run on build time."
+libreoffice-langpack-da,库, Danish language pack for LibreOffice, Provides additional Danish translations and resources for LibreOffice.
+mojo-parent,库, Codehaus MOJO parent project pom file, Codehaus MOJO parent project pom file
+rrdtool-ruby,库, Ruby RRDtool bindings, The rrdtool-ruby package includes RRDtool bindings for Ruby.
+mariadb-connector-odbc,库, The MariaDB Native Client library (ODBC driver)," MariaDB Connector/ODBC is a standardized, LGPL licensed database driver using
+the industry standard Open Database Connectivity (ODBC) API. It supports ODBC
+Standard 3.5, can be used as a drop-in replacement for MySQL Connector/ODBC,
+and it supports both Unicode and ANSI modes."
+python3-qt5,库, Python 3 bindings for Qt5, Python 3 bindings for Qt5.
+perl-Path-Tiny,库, File path utility," This module attempts to provide a small, fast utility for working with file
+paths. It is friendlier to use than File::Spec and provides easy access to
+functions from several other core file handling modules.
+
+It doesn't attempt to be as full-featured as IO::All or Path::Class, nor does
+it try to work for anything except Unix-like and Win32 platforms. Even then, it
+might break if you try something particularly obscure or tortuous.
+
+All paths are forced to have Unix-style forward slashes. Stringifying the
+object gives you back the path (after some clean up).
+
+File input/output methods flock handles before reading or writing, as
+appropriate.
+
+The *_utf8 methods (slurp_utf8, lines_utf8, etc.) operate in raw mode without
+CRLF translation."
+upower-devel-docs,库, Developer documentation for for libupower-glib, Developer documentation for for libupower-glib.
+libreoffice-langpack-ru,库, Russian language pack for LibreOffice, Provides additional Russian translations and resources for LibreOffice.
+iwl4965-firmware,其它,Firmware for Intel庐 PRO/Wireless 4965 A/G/N network adaptors ,"This package contains the firmware required by the iwl4965 driver
+for Linux.  Usage of the firmware is subject to the terms and conditions
+contained inside the provided LICENSE file. Please read it carefully. "
+google-noto-sans-thai-ui-fonts,其它, Sans Thai UI font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Sans font for Thai UI."
+iwl6050-firmware,其它,Firmware for Intel(R) Wireless WiFi Link 6050 Series Adapters ,"This package contains the firmware required by the Intel wireless drivers
+for Linux.  Usage of the firmware is subject to the terms and conditions
+contained inside the provided LICENSE file. Please read it carefully. "
+kacst-office-fonts,其它, Fonts for arabic from arabeyes project, This package contains office type fonts for the display of Arabic
+gnu-free-serif-fonts,其它, GNU FreeFont Serif Font," 
+Gnu FreeFont is a free family of scalable outline fonts, suitable for general
+use on computers and for desktop publishing. It is Unicode-encoded for
+compatibility with all modern operating systems.
+
+Besides a full set of characters for writing systems based on the Latin
+alphabet, FreeFont contains large selection of characters from other writing
+systems some of which are hard to find elsewhere.
+
+FreeFont also contains a large set of symbol characters, both technical and
+decorative. We are especially pleased with the Mathematical Operators range,
+with which most of the glyphs used in LaTeX can be displayed.
+
+This package contains the GNU FreeFont serif font."
+f32-backgrounds,其它, Fedora 32 default desktop background," This package contains desktop backgrounds for the Fedora 32 default
+theme.  Pulls in themes for GNOME, KDE, Mate and Xfce desktops."
+google-noto-sans-tibetan-fonts,其它, Sans Tibetan font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Sans font for Tibetan."
+kurdit-unikurd-web-fonts,其它, A widely used Kurdish font for Arabic-like scripts and Latin," A widely used Kurdish font which supports various Arabic-like scripts
+(Arabic, Kurdish, Persian) and also Latin."
+xorg-x11-fonts-ethiopic,其它, Ethiopic fonts, Ethiopic fonts which are part of the core X Window System distribution.
+urw-base35-d050000l-fonts,其它, D050000L font family [part of Level 2 Core Font Set]," This package contains D050000L font family,
+which is part of Level 2 Core Font Set.
+
+
+The Level 2 Core Font Set is a PostScript specification of 35 base fonts that
+can be used with any PostScript file. In Fedora, these fonts are provided freely
+by (URW)++ company, and are mainly utilized by applications using Ghostscript."
+iwl5150-firmware,其它,Firmware for Intel庐 PRO/Wireless 5150 A/G/N network adaptors ,"This package contains the firmware required by the iwl5150 driver
+for Linux.  Usage of the firmware is subject to the terms and conditions
+contained inside the provided LICENSE file. Please read it carefully. "
+google-noto-sans-kannada-ui-fonts,其它, Sans Kannada UI font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Sans font for Kannada UI."
+google-noto-sans-tamil-fonts,其它, Sans Tamil font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Sans font for Tamil."
+urw-base35-fonts-common,其它, Common files of the (URW)++ Level 2 Core Font Set," 
+The Level 2 Core Font Set is a PostScript specification of 35 base fonts that
+can be used with any PostScript file. In Fedora, these fonts are provided freely
+by (URW)++ company, and are mainly utilized by applications using Ghostscript.
+
+This package contains the necessary license files for this font set."
+adwaita-qt5,其它, Adwaita Qt5 theme, Adwaita theme variant for applications utilizing Qt5.
+google-droid-kufi-fonts,其它, A kufi Arabic titling typeface designed to complement Droid Sans," 
+The Droid typeface family was designed in the fall of 2006 by Ascender's
+Steve Matteson, as a commission from Google to create a set of system fonts
+for its Android platform. The goal was to provide optimal quality and comfort
+on a mobile handset when rendered in application menus, web browsers and for
+other screen text.
+The family was later extended in collaboration with other designers such as
+Pascal Zoghbi of 29ArabicLetters.
+
+Droid Kufi is a stylized display font suitable for titles and short runs of
+text, and designed to complement Droid Sans. It was initialy designed by
+Steve Matteson of Ascender with consulting by Pascal Zoghbi of 29ArabicLetters
+to finalize the font family."
+systemd-udev,其它,Rule-based device node and kernel event manager ,"This package contains systemd-udev and the rules and hardware database
+needed to manage device nodes. This package is necessary on physical
+machines and in virtual machines, but not in containers. "
+bpg-sans-regular-fonts,其它, Sans Regular family of BPG Georgian fonts," BPG Fonts are a set of GPL licensed Georgian Unicode fonts.
+
+This package contains the Sans Regular font family."
+bpg-sans-modern-fonts,其它, Sans Modern family of BPG Georgian fonts," BPG Fonts are a set of GPL licensed Georgian Unicode fonts.
+
+This package contains the Sans Modern font family."
+google-noto-sans-mongolian-fonts,其它, Sans Mongolian font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Sans font for Mongolian."
+google-noto-sans-buginese-fonts,其它, Sans Buginese font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Sans font for Buginese."
+f32-backgrounds-extras-xfce,其它, Extra F32 Wallpapers for XFCE, This package contains F32 supplemental wallpapers for XFCE
+saab-fonts,其它, Free Punjabi Unicode OpenType Serif Font," This package provides a free OpenType Punjabi (Gurmukhi) Serif font.
+Developed by Bhupinder Singh."
+google-noto-sans-inscriptional-parthian-fonts,其它, Sans Inscriptional Parthian font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Sans font for Inscriptional Parthian."
+wqy-unibit-fonts,其它, WenQuanYi Unibit Bitmap Font," The Wen Quan Yi Unibit is designed as a dual-width (16x16,16x8)
+bitmap font to provide the most complete international symbol
+coverage, serving as the system-wide fall-back font. This font
+has covered over 46000 Unicode code points in BMP.
+It is intended to supersede the outdated GNU Unifont.
+This font was created by merging the latest update of GNU
+Unifont [GPL] (by Roman Czyborra and David Starner et al., the
+font was last updated in 2004), WenQuanYi Bitmap Song [GPL]
+0.8.1 (by Qianqian Fang and WenQuanYi contributors) and
+Fixed-16x8 [public domain] bitmap fonts from X11 core fonts.
+The entire CJK Unified Ideographics (U4E00-U9FA5) and CJK Unified
+Ideographics Extension A(U3400-U4DB5) blocks were replaced by
+high-quality glyphs from China National Standard GB19966-2005
+(public domain). Near a thousand of non-CJK characters were improved by
+WenQuanYi contributors via their collaborative font editing website at
+http://wenq.org/eindex.cgi?Unicode_Chart_EN"
+google-noto-naskh-arabic-ui-fonts,其它, Naskh Arabic UI font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Naskh font for Arabic UI."
+google-noto-sans-lao-fonts,其它, Sans Lao font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Sans font for Lao."
+google-noto-sans-egyptian-hieroglyphs-fonts,其它, Sans Egyptian Hieroglyphs font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Sans font for Egyptian Hieroglyphs."
+gnu-free-mono-fonts,其它, GNU FreeFont Monospaced Font," 
+Gnu FreeFont is a free family of scalable outline fonts, suitable for general
+use on computers and for desktop publishing. It is Unicode-encoded for
+compatibility with all modern operating systems.
+
+Besides a full set of characters for writing systems based on the Latin
+alphabet, FreeFont contains large selection of characters from other writing
+systems some of which are hard to find elsewhere.
+
+FreeFont also contains a large set of symbol characters, both technical and
+decorative. We are especially pleased with the Mathematical Operators range,
+with which most of the glyphs used in LaTeX can be displayed.
+
+This package contains the GNU FreeFont monospaced font."
+bpg-ingiri-fonts,其它, Ingiri family of BPG Georgian fonts," BPG Fonts are a set of GPL licensed Georgian Unicode fonts.
+
+This package contains the Ingiri font family."
+xorg-x11-fonts-ISO8859-15-75dpi,其它, ISO8859-15-75dpi fonts," Contains a set of 75dpi fonts in the ISO8859-15 encoding which provide Euro
+support."
+wqy-microhei-fonts,其它, Compact Chinese fonts derived from Droid," A new Sans Serif CJK font derived from Google's ""Droid Sans Fallback""
+and covers the entire GBK code points (20932 Han glyphs)."
+bpg-excelsior-caps-fonts,其它, Excelsior Caps family of BPG Georgian fonts," BPG Fonts are a set of GPL licensed Georgian Unicode fonts.
+
+This package contains the Excelsior Caps font family."
+overpass-fonts,其它, Typeface based on the U.S. interstate highway road signage type system," Free and open source typeface based on the U.S. interstate highway road signage
+type system; it is sans-serif and suitable for both body and titling text."
+xorg-x11-fonts-ISO8859-9-100dpi,其它, ISO8859-9-100dpi fonts, Contains a set of 100dpi fonts for the Turkish language.
+samyak-devanagari-fonts,其它, Open Type Fonts for Devanagari script," This package contains truetype/opentype font for the display of \
+Scripts Devanagari."
+bpg-irubaqidze-fonts,其它, Irubaqidze family of BPG Georgian fonts," BPG Fonts are a set of GPL licensed Georgian Unicode fonts.
+
+This package contains the Irubaqidze font family. In 1628 Georgian printing
+types were produced for the first time, in Rome. The ""Georgian-Italian
+Dictionary""  and ""Georgian Prayers"" were printed in Rome, 1629, by Stephano
+Paolini and Nikiphore Irbach (Irubakhidze-Cholokashvili). In 1643, in Rome,
+""Georgian Grammar"" by Francisco-Maria Majio was printed, using Nuskhuri,
+Asomtavruli and Mkhedruli. Majio spent 7 years in Georgia studying Georgian
+language, scripture and grammar. Font ""BPG Irubaqidze"" is a modernized
+replica of this casted type."
+google-noto-sans-malayalam-fonts,其它, Sans Malayalam font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Sans font for Malayalam."
+kernel-abi-stablelists,其它,The Red Hat Enterprise Linux kernel ABI symbol stablelists ,"The kABI package contains information pertaining to the Red Hat Enterprise
+Linux kernel ABI, including lists of kernel symbols that are needed by
+external Linux kernel modules, and a yum plugin to aid enforcement. "
+culmus-shofar-fonts,其它, Fonts for Hebrew from Culmus project," 
+The culmus-fonts package contains fonts for the display of
+Hebrew from the Culmus project."
+culmus-stamsefarad-clm-fonts,其它, Fonts for Hebrew from Culmus project," 
+The culmus-fonts package contains fonts for the display of
+Hebrew from the Culmus project."
+google-crosextra-carlito-fonts,其它, Sans-serif font metric-compatible with Calibri font," Carlito is metric-compatible with Calibri font. Carlito comes in regular, bold,
+italic, and bold italic. The family covers Latin-Greek-Cyrillic (not a
+complete set, though) with about 2,000 glyphs. It has the same character
+coverage as Calibri. This font is sans-serif typeface family based on Lato."
+thai-scalable-laksaman-fonts,其它, Thai Laksaman fonts," 
+fonts-tlwg provides a collection of free scalable Thai fonts.
+
+This package provides the Laksaman family of Thai fonts."
+xorg-x11-fonts-cyrillic,其它, Cyrillic fonts for X, Contains a set of Cyrillic fonts.
+libertas-sd8686-firmware,其它,Firmware for Marvell Libertas SD 8686 Network Adapter ,Firmware for Marvell Libertas SD 8686 Network Adapter 
+xorg-x11-fonts-misc,其它, misc bitmap fonts for the X Window System," This package contains misc bitmap Chinese, Japanese, Korean, Indic, and Arabic
+fonts for use with X Window System."
+sil-padauk-fonts,其它, A font for Burmese and the Myanmar script," 
+Padauk is a pan Burma font designed to support all Myanmar script based
+languages. It covers all of the Unicode Myanmar script blocks and works
+on all OpenType and Graphite based systems."
+xorg-x11-fonts-75dpi,其它, A set of 75dpi resolution fonts for the X Window System, A set of 75 dpi fonts used by the X window system.
+google-noto-sans-ethiopic-fonts,其它, Sans Ethiopic font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Sans font for Ethiopic."
+bpg-algeti-fonts,其它, Algeti Family of BPG Georgian Fonts," BPG Fonts are a set of GPL licensed Georgian Unicode fonts.
+
+This package contains the Algeti font family."
+google-noto-sans-coptic-fonts,其它, Sans Coptic font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Sans font for Coptic."
+google-noto-sans-ui-fonts,其它, Sans UI font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Sans font for UI."
+lohit-telugu-fonts,其它, Free Telugu font, This package provides a free Telugu truetype/opentype font.
+liberation-narrow-fonts,其它,Sans-serif Narrow fonts to replace commonly used Microsoft Arial Narrow ,"The Liberation Sans Narrow Fonts are intended to be replacements for \
+the Arial Narrow. "
+kacst-decorative-fonts,其它, Fonts for arabic from arabeyes project, This package contains decorative type fonts for the display of Arabic
+iwl105-firmware,其它,Firmware for Intel(R) Centrino Wireless-N 105 Series Adapters ,"This package contains the firmware required by the Intel wireless drivers
+for Linux to support the iwl105 hardware.  Usage of the firmware
+is subject to the terms and conditions contained inside the provided
+LICENSE file. Please read it carefully. "
+google-noto-sans-devanagari-fonts,其它, Sans Devanagari font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Sans font for Devanagari."
+thai-scalable-garuda-fonts,其它, Thai Garuda fonts," 
+fonts-tlwg provides a collection of free scalable Thai fonts.
+
+This package provides the Garuda family of Thai fonts."
+google-noto-sans-tagalog-fonts,其它, Sans Tagalog font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Sans font for Tagalog."
+khmeros-base-fonts,其它, Base KhmerOS font," 
+The Khmer OS fonts include Khmer and Latin alphabets, and they have equivalent
+sizes for Khmer and English alphabets, so that when texts mix both it is not
+necessary to have different point sizes for the text in each language.
+
+They were created by Danh Hong of the Cambodian Open Institute.
+
+Base KhmerOS fonts."
+google-noto-sans-telugu-ui-fonts,其它, Sans Telugu UI font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Sans font for Telugu UI."
+kacst-farsi-fonts,其它, Fonts for arabic from arabeyes project, This package contains farsi type fonts for the display of Arabic
+smc-dyuthi-fonts,其它, Open Type Fonts for Malayalam script," The Dyuthi font package contains fonts for the display of
+traditional Malayalam Scripts."
+xorg-x11-fonts-ISO8859-14-75dpi,其它, ISO8859-14-75dpi fonts," Contains a set of 75dpi fonts in the ISO8859-14 encoding which provide Welsh
+support."
+zvbi,其它," Raw VBI, Teletext and Closed Caption decoding library"," ZVBI provides functions to capture and decode VBI data. The vertical blanking
+interval (VBI) is an interval in a television signal that temporarily suspends
+transmission of the signal for the electron gun to move back up to the first
+line of the television screen to trace the next screen field. The vertical
+blanking interval can be used to carry data, since anything sent during the VBI
+would naturally not be displayed; various test signals, closed captioning, and
+other digital data can be sent during this time period."
+f32-backgrounds-mate,其它, Fedora 32 default wallpaper for Mate," This package contains Mate desktop wallpaper for the Fedora 32
+default theme."
+bpg-dejavu-sans-fonts,其它, DejaVu Sans with BPG Georgian changes," BPG Fonts are a set of GPL licensed Georgian Unicode fonts.
+
+This package contains an improved version of DejaVu Sans with BPG Georgian
+changes."
+google-noto-sans-gujarati-ui-fonts,其它, Sans Gujarati UI font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Sans font for Gujarati UI."
+lohit-assamese-fonts,其它, Free Assamese font, This package provides a free Assamese TrueType/OpenType font.
+google-noto-sans-kaithi-fonts,其它, Sans Kaithi font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Sans font for Kaithi."
+xorg-x11-fonts-ISO8859-2-100dpi,其它, A set of 100dpi Central European language fonts for X, Contains a set of 100dpi fonts for Central European languages.
+abattis-cantarell-fonts,其它," Cantarell, a Humanist sans-serif font family"," Cantarell is a set of fonts designed by Dave Crossland.
+It is a sans-serif humanist typeface family."
+bpg-serif-fonts,其它, Serif family of BPG Georgian fonts," BPG Fonts are a set of GPL licensed Georgian Unicode fonts.
+
+This package contains the Serif font family."
+google-noto-sans-kayah-li-fonts,其它, Sans Kayah Li font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Sans font for Kayah Li."
+smc-kalyani-fonts,其它, Open Type Fonts for Malayalam script," The Kalyani font package contains fonts for the display of
+new Malayalam Scripts."
+google-noto-sans-cham-fonts,其它, Sans Cham font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Sans font for Cham."
+bpg-classic-fonts,其它, Classic family of BPG Georgian fonts," BPG Fonts are a set of GPL licensed Georgian Unicode fonts.
+
+This package contains the Classic font family."
+sil-abyssinica-fonts,其它, SIL Abyssinica fonts," SIL Abyssinica is a Unicode typeface family containing glyphs for the
+Ethiopic script.
+
+The Ethiopic script is used for writing many of the languages of Ethiopia and
+Eritrea. Abyssinica SIL supports all Ethiopic characters which are in Unicode
+including the Unicode 4.1 extensions. Some languages of Ethiopia are not yet
+able to be fully represented in Unicode and, where necessary, we have included
+non-Unicode characters in the Private Use Area (see Private-use (PUA)
+characters supported by Abyssinica SIL).
+
+Abyssinica SIL is based on Ethiopic calligraphic traditions. This release is
+a regular typeface, with no bold or italic version available or planned."
+liberation-fonts,其它,Fonts to replace commonly used Microsoft Windows fonts ,"The Liberation Fonts are intended to be replacements for the 3 most commonly
+used fonts on Microsoft systems: Times New Roman, Arial, and Courier New.
+
+Meta-package of Liberation fonts which installs Sans, Serif, and Monospace
+families. "
+google-noto-sans-gurmukhi-fonts,其它, Sans Gurmukhi font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Sans font for Gurmukhi."
+google-crosextra-caladea-fonts,其它, Serif font metric-compatible with Cambria font," Caladea is metric-compatible with Cambria font. This font is a serif
+typeface family based on Lato."
+bpg-nateli-caps-fonts,其它, Nateli Caps family of BPG Georgian fonts," BPG Fonts are a set of GPL licensed Georgian Unicode fonts.
+
+This package contains the Nateli Caps font family."
+lohit-odia-fonts,其它, Free truetype font for Odia language, This package provides a free truetype font for Odia language.
+google-noto-sans-oriya-ui-fonts,其它, Sans Oriya UI font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Sans font for Oriya UI."
+bitmap-lucida-typewriter-fonts,其它, Selected CJK bitmap fonts for Anaconda," 
+The bitmap-fonts package provides a number of bitmap fonts selected
+from the xorg package designed for use locations such as
+terminals."
+bpg-nino-medium-fonts,其它, Nino Medium family of BPG Georgian fonts," BPG Fonts are a set of GPL licensed Georgian Unicode fonts.
+
+This package contains the Nino Medium font family."
+kernel-cross-headers,其它,Header files for the Linux kernel for use by cross-glibc ,"Kernel-cross-headers includes the C header files that specify the interface
+between the Linux kernel and userspace libraries and programs.  The
+header files define structures and constants that are needed for
+building most standard programs and are also needed for rebuilding the
+cross-glibc package. "
+thai-scalable-fonts-common,其它, Common files of thai-scalable-fonts," 
+fonts-tlwg provides a collection of free scalable Thai fonts.
+
+This package consists of files used by other thai-scalable-fonts packages."
+lohit-devanagari-fonts,其它, Free Devanagari Script Font, This package provides a free Devanagari Script TrueType/OpenType font.
+fontawesome-fonts-web,其它," Iconic font set, web files"," Font Awesome gives you scalable vector icons that can instantly be
+customized _ size, color, drop shadow, and anything that can be done with the
+power of CSS.
+
+This package contains CSS, SCSS and LESS style files as well as Web Open Font
+Format versions 1 and 2, Embedded OpenType and SVG font files which are
+typically used on the web."
+kacst-titlel-fonts,其它, Fonts for arabic from arabeyes project, This package contains title large type fonts for the display of Arabic
+google-noto-sans-syriac-eastern-fonts,其它, Sans Syriac Eastern font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Sans font for Syriac Eastern."
+culmus-keteryg-fonts,其它, Fonts for Hebrew from Culmus project," 
+The culmus-fonts package contains fonts for the display of
+Hebrew from the Culmus project."
+f32-backgrounds-xfce,其它, Fedora 32 default background for XFCE4," This package contains XFCE4 desktop background for the Fedora 32
+default theme."
+google-noto-serif-lao-fonts,其它, Serif Lao font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Serif font for Lao."
+urw-base35-standard-symbols-ps-fonts,其它, Standard Symbols PS font family [part of Level 2 Core Font Set]," This package contains Standard Symbols PS font family,
+which is part of Level 2 Core Font Set.
+
+
+The Level 2 Core Font Set is a PostScript specification of 35 base fonts that
+can be used with any PostScript file. In Fedora, these fonts are provided freely
+by (URW)++ company, and are mainly utilized by applications using Ghostscript."
+google-noto-sans-bamum-fonts,其它, Sans Bamum font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Sans font for Bamum."
+iwl2000-firmware,其它,Firmware for Intel(R) Centrino Wireless-N 2000 Series Adapters ,"This package contains the firmware required by the Intel wireless drivers
+for Linux to support the iwl2000 hardware.  Usage of the firmware
+is subject to the terms and conditions contained inside the provided
+LICENSE file. Please read it carefully. "
+thai-scalable-norasi-fonts,其它, Thai Norasi fonts," 
+fonts-tlwg provides a collection of free scalable Thai fonts.
+
+This package provides the Norasi family of Thai fonts."
+lklug-fonts,其它, Fonts for Sinhala language," The lklug-fonts package contains fonts for the display of
+Sinhala. The original font for TeX/LaTeX is developed by Yannis
+Haralambous and are in GPL. OTF tables are added by Anuradha
+Ratnaweera and Harshani Devadithya."
