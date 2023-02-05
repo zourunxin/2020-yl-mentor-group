@@ -1,0 +1,75 @@
+class:
+bert_lcm:
+              precision    recall  f1-score   support
+
+          其它       0.97      0.92      0.94       142
+          工具       0.83      0.80      0.81       623
+           库       0.90      0.92      0.91      1026
+          服务       0.75      0.76      0.76       237
+
+    accuracy                           0.86      2028
+   macro avg       0.86      0.85      0.85      2028
+weighted avg       0.86      0.86      0.86      2028
+
+
+tf_graphsage:
+              precision    recall  f1-score   support
+
+          其它       1.00      0.96      0.98       142
+          工具       0.81      0.81      0.81       624
+           库       0.87      0.91      0.89      1026
+          服务       0.83      0.72      0.77       237
+
+    accuracy                           0.86      2029
+   macro avg       0.88      0.85      0.86      2029
+weighted avg       0.86      0.86      0.86      2029
+
+tf_randomforest:
+              precision    recall  f1-score   support
+
+          其它       0.94      0.95      0.94       142
+          工具       0.81      0.77      0.79       624
+           库       0.84      0.91      0.88      1026
+          服务       0.84      0.61      0.71       237
+
+    accuracy                           0.84      2029
+   macro avg       0.86      0.81      0.83      2029
+weighted avg       0.84      0.84      0.83      2029
+
+
+layer:
+bert_lcm:
+              precision    recall  f1-score   support
+
+          其它       0.94      0.98      0.96       109
+          应用       0.91      0.90      0.90      1237
+          核心       0.64      0.66      0.65        93
+          系统       0.79      0.78      0.79       589
+
+    accuracy                           0.86      2028
+   macro avg       0.82      0.83      0.83      2028
+weighted avg       0.86      0.86      0.86      2028
+
+tf_graphsage:
+              precision    recall  f1-score   support
+
+          其它       0.98      0.98      0.98       110
+          应用       0.89      0.95      0.92      1237
+          核心       0.87      0.55      0.68        94
+          系统       0.84      0.78      0.81       589
+
+    accuracy                           0.88      2030
+   macro avg       0.89      0.82      0.85      2030
+weighted avg       0.88      0.88      0.88      2030
+
+tf_randomforest:
+              precision    recall  f1-score   support
+
+          其它       0.98      0.95      0.97       110
+          应用       0.83      0.93      0.88      1237
+          核心       0.93      0.45      0.60        94
+          系统       0.80      0.66      0.73       589
+
+    accuracy                           0.83      2030
+   macro avg       0.89      0.75      0.79      2030
+weighted avg       0.84      0.83      0.83      2030

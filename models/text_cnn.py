@@ -24,10 +24,6 @@ class TextCNN(object):
             convs.append(c)
         x = Concatenate()(convs)
 
-
-
-
-
         output = Dense(self.class_num, activation=self.last_activation)(x)
         model = Model(inputs=input, outputs=output)
 

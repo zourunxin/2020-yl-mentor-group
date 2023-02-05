@@ -1,0 +1,397 @@
+name,label,predict,summary,description
+php-cli,工具,库, Command-line interface for PHP," The php-cli package contains the command-line interface
+executing PHP scripts, /usr/bin/php, and the CGI interface."
+GConf2,工具,库, A process-transparent configuration system," GConf is a process-transparent configuration database API used to
+store user preferences. It has pluggable backends and features to
+support workgroup administration."
+texlive-ec,工具,其它, Computer modern fonts in T1 and TS1 encodings," The EC fonts are European Computer Modern Fonts, supporting the
+complete LaTeX T1 encoding defined at the 1990 TUG conference
+hold at Cork/Ireland. These fonts are intended to be stable
+with no changes being made to the tfm files. The set also
+contains a Text Companion Symbol font, called tc, featuring
+many useful characters needed in text typesetting, for example
+oldstyle digits, currency symbols (including the newly created
+Euro symbol), the permille sign, copyright, trade mark and
+servicemark as well as a copyleft sign, and many others. Recent
+releases of LaTeX2e support the EC fonts. The EC fonts
+supersede the preliminary version released as the DC fonts. The
+fonts are available in (traced) Adobe Type 1 format, as part of
+the cm-super bundle. The other Computer Modern-style T1-encoded
+Type 1 set, Latin Modern, is not actually a direct development
+of the EC set, and differs from the EC in a number of
+particulars."
+maven-reporting-impl,工具,库, Abstract classes to manage report generation," Abstract classes to manage report generation, which can be run both:
+
+* as part of a site generation (as a maven-reporting-api's MavenReport),
+* or as a direct standalone invocation (as a maven-plugin-api's Mojo).
+
+This is a replacement package for maven-shared-reporting-impl"
+texlive-arphic,工具,其它, Arphic (Chinese) font packages," These are font bundles for the Chinese Arphic fonts which work
+with the CJK package. Arphic is actually the name of the
+company that which created the fonts (and put them under a GPL-
+like licence)."
+policycoreutils-newrole,工具,服务,The newrole application for RBAC/MLS ,"RBAC/MLS policy machines require newrole as a way of changing the role
+or level of a logged in user. "
+crontabs,工具,服务, Root crontab files used to schedule the execution of programs," This package is used mainly for executing files by cron.
+
+The crontabs package contains root crontab files and directories.
+You will need to install cron daemon to run the jobs from the crontabs.
+The cron daemon such as cronie or fcron checks the crontab files to
+see when particular commands are scheduled to be executed.  If commands
+are scheduled, it executes them.
+
+Crontabs handles a basic system function, so it should be installed on
+your system."
+nbdkit-server,工具,服务, The nbdkit server, This package contains the nbdkit server with no plugins or filters.
+pinentry-gtk,工具,库, Passphrase/PIN entry dialog based on GTK+," Pinentry is a collection of simple PIN or passphrase entry dialogs which
+utilize the Assuan protocol as described by the aegypten project; see
+http://www.gnupg.org/aegypten/ for details.
+This package contains the GTK GUI based version of the PIN entry dialog."
+pnm2ppa,工具,库, Drivers for printing to HP PPA printers," Pnm2ppa is a color driver for HP PPA host-based printers such as the
+HP710C, 712C, 720C, 722C, 820Cse, 820Cxi, 1000Cse, and 1000Cxi.
+Pnm2ppa accepts Ghostscript output in PPM format and sends it to the
+printer in PPA format.
+
+Install pnm2ppa if you need to print to a PPA printer."
+texlive-fontware,工具,其它, fontware package, fontware package
+ksh,工具,库, The Original ATT Korn Shell," KSH-93 is the most recent version of the KornShell by David Korn of
+AT&T Bell Laboratories.
+KornShell is a shell programming language, which is upward compatible
+with ""sh"" (the Bourne Shell)."
+pcp-import-iostat2pcp,工具,服务, Performance Co-Pilot tools for importing iostat data into PCP archive logs," Performance Co-Pilot (PCP) front-end tools for importing iostat data
+into standard PCP archive logs for replay with any PCP monitoring tool."
+texlive-hyphen-base,工具,库, hyphen-base package, hyphen-base package
+perl-Git,工具,库, Perl interface to Git, Perl interface to Git.
+socat,工具,库, Bidirectional data relay between two data channels ('netcat++')," Socat is a relay for bidirectional data transfer between two independent data
+channels. Each of these data channels may be a file, pipe, device (serial line
+etc. or a pseudo terminal), a socket (UNIX, IP4, IP6 - raw, UDP, TCP), an
+SSL socket, proxy CONNECT connection, a file descriptor (stdin etc.), the GNU
+line editor (readline), a program, or a combination of two of these."
+nbdkit-python-plugin,工具,库, Python 3 plugin for nbdkit, This package lets you write Python 3 plugins for nbdkit.
+byaccj,工具,库, Parser Generator with Java Extension," BYACC/J is an extension of the Berkeley v 1.8 YACC-compatible
+parser generator. Standard YACC takes a YACC source file, and
+generates one or more C files from it, which if compiled properly,
+will produce a LALR-grammar parser. This is useful for expression
+parsing, interactive command parsing, and file reading. Many
+megabytes of YACC code have been written over the years.
+This is the standard YACC tool that is in use every day to produce
+C/C++ parsers. I have added a ""-J"" flag which will cause BYACC to
+generate Java source code, instead. So there finally is a YACC for
+Java now!"
+bsdtar,工具,库, Manipulate tape archives," The bsdtar package contains standalone bsdtar utility split off regular
+libarchive packages."
+geoipupdate,工具,服务, Update GeoIP2 and GeoIP Legacy binary databases from MaxMind," The GeoIP Update program performs automatic updates of GeoIP2 and GeoIP
+Legacy binary databases."
+sane-backends-drivers-cameras,工具,服务, Scanner backend drivers for digital cameras, This package contains backend drivers to access digital cameras through SANE.
+texlive-parskip,工具,库," Layout with zero \parindent, non-zero \parskip"," Simply changing \parskip and \parindent leaves a layout that is
+untidy; this package (though it is no substitute for a
+properly-designed class) helps alleviate this untidiness"
+qrencode,工具,库, Generate QR 2D barcodes," Qrencode is a utility software using libqrencode to encode string data in
+a QR Code and save as a PNG image."
+xml-common,工具,库,Common XML catalog and DTD files ,"The xml-common is a subpackage of sgml-common which contains
+a collection XML catalogs that are useful for processing XML,
+but that don't need to be included in main package. "
+isns-utils,工具,服务,The iSNS daemon and utility programs ,"The iSNS package contains the daemon and tools to setup a iSNS server,
+and iSNS client tools. The Internet Storage Name Service (iSNS) protocol
+allows automated discovery, management and configuration of iSCSI and
+Fibre Channel devices (using iFCP gateways) on a TCP/IP network. "
+cmake-data,工具,库, Common data-files for cmake, This package contains common data-files for cmake.
+eclipse-p2-discovery,工具,服务, Eclipse p2 Discovery," The p2 Discovery mechanism provides a simplified and branded front-end for the
+p2 provisioning platform. Discovery can be used as a tool to display and
+install from existing P2 repositories or as a framework to build branded
+installer UIs."
+npm,工具,服务, Node.js Package Manager," npm is a package manager for node.js. You can use it to install and publish
+your node programs. It manages dependencies and does other cool stuff."
+gnome-color-manager,工具,服务, Color management tools for GNOME," gnome-color-manager is a session framework that makes it easy to manage, install
+and generate color profiles in the GNOME desktop."
+mrtg,工具,库, Multi Router Traffic Grapher," The Multi Router Traffic Grapher (MRTG) is a tool to monitor the traffic
+load on network-links. MRTG generates HTML pages containing PNG
+images which provide a LIVE visual representation of this traffic."
+babl-devel-docs,库,工具, Documentation for developing programs that will use babl, This package contains documentation needed for developing with babl.
+HdrHistogram,库,工具, A High Dynamic Range (HDR) Histogram," HdrHistogram supports the recording and analyzing sampled data value
+counts across a configurable integer value range with configurable value
+precision within the range. Value precision is expressed as the number of
+significant digits in the value recording, and provides control over value
+quantization behavior across the value range and the subsequent value
+resolution at any given level."
+perl-Sub-Uplevel,库,工具, Apparently run a function in a higher stack frame," Like Tcl's uplevel() function, but not quite so dangerous. The idea is
+just to fool caller(). All the really naughty bits of Tcl's uplevel()
+are avoided."
+kf5-kwayland,库,工具, KDE Frameworks 5 library that wraps Client and Server Wayland libraries, KDE Frameworks 5 library that wraps Client and Server Wayland libraries.
+abrt-gui-libs,库,工具, Libraries for abrt-gui, Libraries for abrt-gui.
+libreport-newt,库,工具, libreport's newt interface," This package contains a simple newt application for reporting
+bugs"
+glibc-gconv-extra,库,工具, All iconv converter modules for glibc., This package contains all iconv converter modules built in glibc.
+libwayland-cursor,库,工具, Wayland cursor library, Wayland cursor library
+elfutils-libelf-devel-static,库,工具, Static archive of libelf," The elfutils-libelf-static package contains the static archive
+for libelf."
+python2-scour,库,工具, An SVG scrubber, An SVG scrubber.
+ffmpeg,库,服务, Digital VCR and streaming server," FFmpeg is a complete and free Internet live audio and video
+broadcasting solution for Linux/Unix. It also includes a digital
+VCR. It can encode in real time in many formats including MPEG1 audio
+and video, MPEG4, h263, ac3, asf, avi, real, mjpeg, and flash."
+mod_auth_mellon-diagnostics,库,工具, Build of mod_auth_mellon with diagnostic logging," Build of mod_auth_mellon with diagnostic logging. See README.redhat.rst
+in the doc directory for instructions on using the diagnostics build."
+perl-Sys-Hostname,库,工具, Try every conceivable way to get a hostname," It attempts several methods of getting the system hostname and then caches the
+result."
+qt5-rpm-macros,库,工具, RPM macros for building Qt5 and KDE Frameworks 5 packages, RPM macros for building Qt5 and KDE Frameworks 5 packages.
+jigawatts,库,工具, Java CRIU helper," CRIU is a Linux utility that allows the checkpointing and restoring
+of processes.You can read more about CRIU at criu.org. CRIU for
+Java is a package which makes it more convenient to use CRIU from
+Java."
+rust-gdb,库,工具, GDB pretty printers for Rust," This package includes the rust-gdb script, which allows easier debugging of Rust
+programs."
+ocaml-runtime,库,工具, OCaml runtime environment," OCaml is a high-level, strongly-typed, functional and object-oriented
+programming language from the ML family of languages.
+
+This package contains the runtime environment needed to run OCaml
+bytecode."
+libradosstriper1,库,工具, RADOS striping interface," Striping interface built on top of the rados library, allowing
+to stripe bigger objects onto several standard rados objects using
+an interface very similar to the rados one."
+libreport-plugin-bugzilla,库,工具, libreport's bugzilla plugin, Plugin to report bugs into the bugzilla.
+mingw32-openssl,库,工具, MinGW port of the OpenSSL toolkit," The OpenSSL toolkit provides support for secure communications between
+machines. OpenSSL includes a certificate management tool and shared
+libraries which provide various cryptographic algorithms and
+protocols.
+
+This package contains Windows (MinGW) libraries and development tools."
+polkit-pkla-compat,库,工具, Rules for polkit to add compatibility with pklocalauthority," A polkit JavaScript rule and associated helpers that mostly provide
+compatibility with the .pkla file format supported in polkit <= 0.105 for users
+of later polkit releases."
+lightdm-gtk,库,服务, LightDM GTK Greeter, A LightDM greeter that uses the GTK3 toolkit.
+xkeyboard-config,库,工具, X Keyboard Extension configuration data," This package contains configuration data used by the X Keyboard Extension (XKB),
+which allows selection of keyboard layouts when using a graphical interface."
+mojo-parent,库,工具, Codehaus MOJO parent project pom file, Codehaus MOJO parent project pom file
+geoclue2-demos,库,工具, Demo applications for geoclue2, The geoclue2-demos package contains demo applications that use geoclue2.
+python2-nose,库,工具, Nose Documentation," nose extends the test loading and running features of unit test, making
+it easier to write, find and run tests.
+
+By default, nose will run tests in files or directories under the
+current working directory whose names include ""test"" or ""Test"" at a
+word boundary (like ""test_this"" or ""functional_test"" or ""TestClass""
+but not ""libtest""). Test output is similar to that of unit test, but
+also includes captured stdout output from failing tests, for easy
+print-style debugging.
+
+These features, and many more, are customizable through the use of
+plugins. Plugins included with nose provide support for doctest, code
+coverage and profiling, flexible attribute-based test selection,
+output capture and more."
+maven-resolver-transport-file,库,工具, Maven Artifact Resolver Transport File, A transport implementation for repositories using file:// URLs.
+crun,库,工具, OCI runtime written in C, crun is a runtime for running OCI containers
+minizip,库,工具, Minizip contrib in zlib with the latest bug fixes and advanced features," Minizip zlib contribution that includes:
+* AES encryption
+* I/O buffering
+* PKWARE disk splitting
+It also has the latest bug fixes that having been found all over the internet."
+papirus-icon-theme,库,工具, Free and open source SVG icon theme based on Paper Icon Set," Papirus is a free and open source SVG icon theme for Linux, based on Paper
+Icon Set with a lot of new icons and a few extras, like Hardcode-Tray support,
+KDE colorscheme support, Folder Color support, and others.
+
+Papirus icon theme is available in six variants:
+
+ - Papirus (for Arc / Arc Darker)
+ - Papirus Dark (for Arc Dark)
+ - Papirus Light (light theme with Breeze colors)
+ - Papirus Adapta (for Adapta)
+ - Papirus Adapta Nokto (for Adapta Nokto)
+ - ePapirus (for elementary OS and Pantheon Desktop)"
+libreoffice-filters,库,工具, All import / export filters," Metapackage to pull in all subpackages that contain import or export
+filters."
+postgresql-odbc,库,服务, PostgreSQL ODBC driver," This package includes the driver needed for applications to access a
+PostgreSQL system via ODBC (Open Database Connectivity)."
+glibc-locale-source,库,工具,The sources for the locales ,"The sources for all locales provided in the language packs.
+If you are building custom locales you will most likely use
+these sources as the basis for your new locale. "
+python3-setuptools_scm,库,工具, Blessed package to manage your versions by scm tags," Setuptools_scm handles managing your python package versions in scm metadata.
+It also handles file finders for the suppertes scms."
+xmvn-connector-aether,库,工具, XMvn Connector for Maven Resolver," This package provides XMvn Connector for Maven Resolver, which
+provides integration of Maven Resolver with XMvn.  It provides an
+adapter which allows XMvn resolver to be used as Maven workspace
+reader."
+sssd-winbind-idmap,库,服务,SSSD's idmap_sss Backend for Winbind ,"The idmap_sss module provides a way for Winbind to call SSSD to map UIDs/GIDs
+and SIDs. "
+python2-setuptools_scm,库,工具, Blessed package to manage your versions by scm tags," Setuptools_scm handles managing your python package versions in scm metadata.
+It also handles file finders for the suppertes scms."
+breeze-cursor-theme,库,服务, Breeze cursor theme, Breeze cursor theme.
+guile,库,工具, A GNU implementation of Scheme for application extensibility," GUILE (GNU's Ubiquitous Intelligent Language for Extension) is a library
+implementation of the Scheme programming language, written in C.  GUILE
+provides a machine-independent execution platform that can be linked in
+as a library during the building of extensible programs.
+
+Install the guile package if you'd like to add extensibility to programs
+that you are developing."
+java-1.8.0-alibaba-dragonwell-javadoc-zip,库,工具, Alibaba Dragonwell 1.8.0 javadoc zip, Alibaba Dragonwell 1.8.0 javadoc zip
+mingw64-openssl,库,工具, MinGW port of the OpenSSL toolkit," The OpenSSL toolkit provides support for secure communications between
+machines. OpenSSL includes a certificate management tool and shared
+libraries which provide various cryptographic algorithms and
+protocols.
+
+This package contains Windows (MinGW) libraries and development tools."
+ucx-ib,库,工具, UCX RDMA support," Provides support for IBTA-compliant transports for UCX. This includes RoCE,
+InfiniBand, OmniPath, and any other transport supported by IB Verbs API.
+Typically these transports provide RDMA support, which enables a fast and
+hardware-offloaded data transfer."
+liboggz,库,工具, Simple programming interface for Ogg files and streams," Oggz provides a simple programming interface for reading and writing
+Ogg files and streams. Ogg is an interleaving data container developed
+by Monty at Xiph.Org, originally to support the Ogg Vorbis audio
+format."
+appstream-data,库,工具, Cached AppStream metadata," This package provides the distribution specific AppStream metadata required
+for the GNOME and KDE software centers."
+vulkan-headers,库,工具, Vulkan Header files and API registry, Vulkan Header files and API registry
+Xaw3d,库,工具, A version of the MIT Athena widget set for X," Xaw3d is an enhanced version of the MIT Athena Widget set for
+the X Window System.  Xaw3d adds a three-dimensional look to applications
+with minimal or no source code changes.
+
+You should install Xaw3d if you are using applications which incorporate
+the MIT Athena widget set and you'd like to incorporate a 3D look into
+those applications."
+fltk,库,工具, C++ user interface toolkit," FLTK (pronounced ""fulltick"") is a cross-platform C++ GUI toolkit.
+It provides modern GUI functionality without the bloat, and supports
+3D graphics via OpenGL and its built-in GLUT emulation."
+ucx-rdmacm,库,工具, UCX RDMA connection manager support," Provides RDMA connection-manager support to UCX, which enables client/server
+based connection establishment for RDMA-capable transports."
+xmvn-tools-pom,库,工具, XMvn Tools POM, This package provides XMvn Tools parent POM.
+xmvn-resolve,库,工具, XMvn Resolver," This package provides XMvn Resolver, which is a very simple
+commald-line tool to resolve Maven artifacts from system repositories.
+Basically it's just an interface to artifact resolution mechanism
+implemented by XMvn Core.  The primary intended use case of XMvn
+Resolver is debugging local artifact repositories."
+varnish-docs,库,工具, Documentation files for varnish, Documentation files for varnish
+adobe-mappings-pdf,库,工具, PDF mapping resources from Adobe," Mapping resources for PDF have a variety of functions, such as mapping CIDs
+(Character IDs) to character codes, or mapping character codes to other
+character codes.
+
+These mapping resources for PDF should not be confused with CMap resources.
+While both types of resources share the same file structure and syntax, they
+have very different functions.
+
+These PDF mapping resources are useful for some applications (e.g. Ghostscript)
+to function properly."
+pmempool,库,工具, Utilities for Persistent Memory," The pmempool is a standalone utility for management and off-line analysis
+of Persistent Memory pools created by PMDK libraries. It provides a set
+of utilities for administration and diagnostics of Persistent Memory pools.
+The pmempool may be useful for troubleshooting by system administrators
+and users of the applications based on PMDK libraries."
+man-pages,库,工具,Linux kernel and C library user-space interface documentation ,A large collection of manual pages from the Linux Documentation Project (LDP). 
+libtasn1-tools,库,工具, Some ASN.1 tools," This package contains simple tools that can decode and encode ASN.1
+data."
+hawtjni,库,工具, Code generator that produces the JNI code," HawtJNI is a code generator that produces the JNI code needed to
+implement java native methods. It is based on the jnigen code generator
+that is part of the SWT Tools project which is used to generate all the
+JNI code which powers the eclipse platform."
+unicode-ucd-unihan,库,工具, Unicode Han Database," This package contains Unihan.zip which contains the data files for the Unified
+Han database of Hanzi/Kanji/Hanja Chinese characters."
+python3-pygments,库,工具, Syntax highlighting engine written in Python," Pygments is a generic syntax highlighter for general use in all kinds
+of software such as forum systems, wikis or other applications that
+need to prettify source code. Highlights are:
+
+  * a wide range of common languages and markup formats is supported
+  * special attention is paid to details that increase highlighting
+    quality
+  * support for new languages and formats are added easily; most
+    languages use a simple regex-based lexing mechanism
+  * a number of output formats is available, among them HTML, RTF,
+    LaTeX and ANSI sequences
+  * it is usable as a command-line tool and as a library
+  * ... and it highlights even Brainf*ck!"
+cups-filters,库,工具, OpenPrinting CUPS filters and backends," Contains backends, filters, and other software that was
+once part of the core CUPS distribution but is no longer maintained by
+Apple Inc. In addition it contains additional filters developed
+independently of Apple, especially filters for the PDF-centric printing
+workflow introduced by OpenPrinting."
+lzo-minilzo,库,工具,Mini version of lzo for apps which don't need the full version ,"A small (mini) version of lzo for embedding into applications which don't need
+full blown lzo compression support. "
+rubygem-minitest,库,工具, Minitest provides a complete suite of testing facilities," minitest/unit is a small and incredibly fast unit testing framework.
+
+minitest/spec is a functionally complete spec engine.
+
+minitest/benchmark is an awesome way to assert the performance of your
+algorithms in a repeatable manner.
+
+minitest/mock by Steven Baker, is a beautifully tiny mock object
+framework.
+
+minitest/pride shows pride in testing and adds coloring to your test
+output."
+perltidy,库,工具, Tool for indenting and re-formatting Perl scripts," Perltidy is a Perl script that indents and re-formats Perl scripts to
+make them easier to read. If you write Perl scripts, or spend much
+time reading them, you will probably find it useful. The formatting
+can be controlled with command line parameters. The default parameter
+settings approximately follow the suggestions in the Perl Style Guide.
+Perltidy can also output HTML of both POD and source code. Besides
+re-formatting scripts, Perltidy can be a great help in tracking down
+errors with missing or extra braces, parentheses, and square brackets
+because it is very good at localizing errors."
+gl-manpages,库,工具, OpenGL manpages, OpenGL manpages
+libwayland-egl,库,工具, Wayland egl library, Wayland egl library
+python2-pygments,库,工具, Syntax highlighting engine written in Python," Pygments is a generic syntax highlighter for general use in all kinds
+of software such as forum systems, wikis or other applications that
+need to prettify source code. Highlights are:
+
+  * a wide range of common languages and markup formats is supported
+  * special attention is paid to details that increase highlighting
+    quality
+  * support for new languages and formats are added easily; most
+    languages use a simple regex-based lexing mechanism
+  * a number of output formats is available, among them HTML, RTF,
+    LaTeX and ANSI sequences
+  * it is usable as a command-line tool and as a library
+  * ... and it highlights even Brainf*ck!"
+libreport-plugin-mailx,库,工具, libreport's mailx reporter plugin," The simple reporter plugin which sends a report via mailx to a specified
+email address."
+golang-misc,库,工具, Golang compiler miscellaneous sources, Golang compiler miscellaneous sources.
+librsvg2-tools,库,工具, Extra tools for librsvg, This package provides extra utilities based on the librsvg library.
+bitmap-fonts-compat,其它,库, Compatibility files of bitmap-font families," 
+The bitmap-fonts package provides a number of bitmap fonts selected
+from the xorg package designed for use locations such as
+terminals.
+Meta-package for installing all font families of bitmap."
+google-roboto-slab-fonts,其它,库, Google Roboto Slab fonts," Roboto has a dual nature. It has a mechanical skeleton and the forms are
+largely geometric. At the same time, the font features friendly and open
+curves. While some grotesks distort their letterforms to force a rigid
+rhythm, Roboto doesn't compromise, allowing letters to be settled into
+their natural width. This makes for a more natural reading rhythm more
+commonly found in humanist and serif types.
+
+This is the Roboto Slab family, which can be used alongside the normal
+Roboto family and the Roboto Condensed family."
+tuned-profiles-compat,服务,工具,Additional tuned profiles mainly for backward compatibility with tuned 1.0 ,"Additional tuned profiles mainly for backward compatibility with tuned 1.0.
+It can be also used to fine tune your system for specific scenarios. "
+flatpak,服务,工具, Application deployment framework for desktop apps," flatpak is a system for building, distributing and running sandboxed desktop
+applications on Linux. See https://wiki.gnome.org/Projects/SandboxedApps for
+more information."
+gnome-terminal,服务,工具, Terminal emulator for GNOME," gnome-terminal is a terminal emulator for GNOME. It features the ability to use
+multiple terminals in a single window (tabs) and profiles support."
+gnome-software,服务,工具, A software center for GNOME," gnome-software is an application that makes it easy to add, remove
+and update software in the GNOME desktop."
+bind-dyndb-ldap,服务,库, LDAP back-end plug-in for BIND," This package provides an LDAP back-end plug-in for BIND. It features
+support for dynamic updates and internal caching, to lift the load
+off of your LDAP server."
+certmonger,服务,工具, Certificate status monitor and PKI enrollment client," Certmonger is a service which is primarily concerned with getting your
+system enrolled with a certificate authority (CA) and keeping it enrolled."
+gnome-getting-started-docs,服务,工具, Help a new user get started in GNOME," This package contains a 'Getting Started' guide that can be viewed
+with yelp. It is normally used together with gnome-initial-setup."
+grafana,服务,工具, Metrics dashboard and graph editor," Grafana is an open source, feature rich metrics dashboard and graph editor for
+Graphite, InfluxDB & OpenTSDB."
+selinux-policy-sandbox,服务,工具,SELinux policy sandbox ,SELinux sandbox policy used for the policycoreutils-sandbox package 
+gnome-initial-setup,服务,工具, Bootstrapping your OS," GNOME Initial Setup is an alternative to firstboot, providing
+a good setup experience to welcome you to your system, and walks
+you through configuring it. It is integrated with gdm."
+tigervnc-server-module,服务,库, TigerVNC module to Xorg," This package contains libvnc.so module to X server, allowing others
+to access the desktop on your machine."
+fuse-sshfs,服务,工具, FUSE-Filesystem to access remote filesystems via SSH," This is a FUSE-filesystem client based on the SSH File Transfer Protocol.
+Since most SSH servers already support this protocol it is very easy to set
+up: i.e. on the server side there's nothing to do.  On the client side
+mounting the filesystem is as easy as logging into the server with ssh."
+fence-agents-all,服务,工具," Set of unified programs capable of host isolation (""fencing"")"," A collection of executables to handle isolation (""fencing"") of possibly
+misbehaving hosts by the means of remote power management, blocking
+network, storage, or similar.
+
+This package serves as a catch-all for all supported fence agents."
+fence-virtd-libvirt,服务,库, Libvirt backend for fence-virtd," Provides fence_virtd with a connection to libvirt to fence
+virtual machines.  Useful for running a cluster of virtual
+machines on a desktop."
+vulkan-loader,服务,工具, Vulkan ICD desktop loader," This project provides the Khronos official Vulkan ICD desktop
+loader for Windows, Linux, and MacOS."

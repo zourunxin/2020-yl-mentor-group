@@ -1,0 +1,495 @@
+name,label,bert_pred,graph_pred,summary,description
+anaconda-tui,工具,库,库, Textual user interface for the Anaconda installer, This package contains textual user interface for the Anaconda installer.
+python2-markupsafe,库,库,库, Implements a XML/HTML/XHTML Markup safe string for Python 2, A library for safe markup escaping.
+clevis-udisks2,工具,库,库, UDisks2/Storaged integration for clevis," Automatically unlocks LUKS block devices in desktop environments that
+use UDisks2 or storaged (like GNOME)."
+uom-lib,库,库,库, Java Unit of Measurement Libraries (JSR 363), Units of Measurement Libraries - extending and complementing JSR 363.
+libgomp-offload-nvptx,库,库,库,GCC OpenMP v4.5 plugin for offloading to NVPTX ,"This package contains libgomp plugin for offloading to NVidia
+PTX.  The plugin needs libcuda.so.1 shared library that has to be
+installed separately. "
+imake,工具,库,库, imake source code configuration and build system," Imake is a deprecated source code configuration and build system which
+has traditionally been supplied by and used to build the X Window System
+in X11R6 and previous releases.  As of the X Window System X11R7 release,
+the X Window system has switched to using GNU autotools as the primary
+build system, and the Imake system is now deprecated, and should not be
+used by new software projects.  Software developers are encouraged to
+migrate software to the GNU autotools system."
+pcp-pmda-json,服务,库,库, Performance Co-Pilot (PCP) metrics for JSON data," This package contains the PCP Performance Metrics Domain Agent (PMDA) for
+collecting metrics output in JSON."
+qdox,库,库,库, Extract class/interface/method definitions from sources," QDox is a high speed, small footprint parser
+for extracting class/interface/method definitions
+from source files complete with JavaDoc @tags.
+It is designed to be used by active code
+generators or documentation tools."
+fftw-static,库,库,库, Static versions of the FFTW libraries," The fftw-static package contains the statically linkable version of
+the FFTW fast Fourier transform library."
+cockpit-machines,服务,库,库, Cockpit user interface for virtual machines," The Cockpit components for managing virtual machines.
+
+If ""virt-install"" is installed, you can also create new virtual machines."
+kacst-title-fonts,其它,库,库, Fonts for arabic from arabeyes project, This package contains title type fonts for the display of Arabic
+java-1.8.0-openjdk-headless,库,库,库, OpenJDK 8 Headless Runtime Environment, The OpenJDK 8 runtime environment without audio and video support.
+ghostscript-tools-fonts,工具,库,库, Ghostscript's font utilities," This package provides utilities which are useful when you are working with AFM,
+PFB or PFA files, mostly for conversion purposes."
+python38-numpy-f2py,库,库,库, f2py for numpy, This package includes a version of f2py that works properly with NumPy.
+sgml-common,工具,库,库,Common SGML catalog and DTD files ,"The sgml-common package contains a collection of entities and DTDs
+that are useful for processing SGML, but that don't need to be
+included in multiple packages.  Sgml-common also includes an
+up-to-date Open Catalog file. "
+perl-File-CheckTree,库,其它,库, Run many file-test checks on a tree," File::CheckTree::validate() routine takes a single multi-line string
+consisting of directives, each containing a file name plus a file test to try
+on it. (The file test may also be a ""cd"", causing subsequent relative file
+names to be interpreted relative to that directory.) After the file test you
+may put || die to make it a fatal error if the file test fails. The default is
+|| warn.  The file test may optionally have a ""!' prepended to test for the
+opposite condition. If you do a cd and then list some relative file names, you
+may want to indent them slightly for readability. If you supply your own die()
+or warn() message, you can use $file to interpolate the file name."
+bpg-algeti-fonts,其它,库,库, Algeti Family of BPG Georgian Fonts," BPG Fonts are a set of GPL licensed Georgian Unicode fonts.
+
+This package contains the Algeti font family."
+python3-itsdangerous,库,库,库, Python 3 library for passing trusted data to untrusted environments," Itsdangerous is a Python 3 library for passing data through untrusted
+environments (for example, HTTP cookies) while ensuring the data is not
+tampered with.
+
+Internally itsdangerous uses HMAC and SHA1 for signing by default and bases the
+implementation on the Django signing module. It also however supports JSON Web
+Signatures (JWS)."
+texlive-collection-latexrecommended,工具,库,库, LaTeX recommended packages," A collection of recommended add-on packages for LaTeX which
+have widespread use."
+colord-devel-docs,库,库,库, Developer documentation package for colord, Documentation for development with colord.
+gfs2-utils,工具,库,库,Utilities for managing the global file system (GFS2) ,"The gfs2-utils package contains a number of utilities for creating, checking,
+modifying, and correcting inconsistencies in GFS2 file systems. "
+grub2-tools-extra,工具,库,库, Support tools for GRUB.," 
+The GRand Unified Bootloader (GRUB) is a highly configurable and
+customizable bootloader with modular architecture.  It supports a rich
+variety of kernel formats, file systems, computer architectures and
+hardware devices.
+
+This subpackage provides tools for support of all platforms."
+emacs-filesystem,工具,库,库,Emacs filesystem layout ,"This package provides some directories which are required by other
+packages that add functionality to Emacs. "
+libnghttp2,库,库,库, A library implementing the HTTP/2 protocol," libnghttp2 is a library implementing the Hypertext Transfer Protocol
+version 2 (HTTP/2) protocol in C."
+qatlib,库,库,库, Intel QuickAssist user space library," Intel QuickAssist Technology (Intel QAT) provides hardware acceleration
+for offloading security, authentication and compression services from the
+CPU, thus significantly increasing the performance and efficiency of
+standard platform solutions.
+
+Its services include symmetric encryption and authentication,
+asymmetric encryption, digital signatures, RSA, DH and ECC, and
+lossless data compression.
+
+This package provides user space libraries that allow access to
+Intel QuickAssist devices and expose the Intel QuickAssist APIs."
+tesseract-langpack-kat_old,工具,库,库, Georgian (Old) language data for tesseract-tessdata," This package contains the fast integer version of the Georgian (Old) language
+trained models for the Tesseract Open Source OCR Engine."
+brltty-docs,服务,库,库, Documentation for BRLTTY, This package provides the documentation for BRLTTY.
+kernel-abi-stablelists,其它,库,库,The Red Hat Enterprise Linux kernel ABI symbol stablelists ,"The kABI package contains information pertaining to the Red Hat Enterprise
+Linux kernel ABI, including lists of kernel symbols that are needed by
+external Linux kernel modules, and a yum plugin to aid enforcement. "
+gcc-toolset-11-libgccjit,库,库,库, Library for embedding GCC inside programs and libraries, This package contains shared library with GCC 11 JIT front-end.
+CUnit,库,库,库, Unit testing framework for C," CUnit is a lightweight system for writing, administering,
+and running unit tests in C.  It provides C programmers a basic
+testing functionality with a flexible variety of user interfaces."
+man-pages-overrides,库,库,库, Complementary and updated manual pages," A collection of manual (""man"") pages to complement other packages or update
+those contained therein. Always have the latest version of this package
+installed."
+evolution-data-server,工具,库,库, Backend data server for Evolution," The evolution-data-server package provides a unified backend for programs that work
+with contacts, tasks, and calendar information.
+
+It was originally developed for Evolution (hence the name), but is now used
+by other packages."
+liboggz,库,库,库, Simple programming interface for Ogg files and streams," Oggz provides a simple programming interface for reading and writing
+Ogg files and streams. Ogg is an interleaving data container developed
+by Monty at Xiph.Org, originally to support the Ogg Vorbis audio
+format."
+postgresql-test-rpm-macros,库,库,库, Convenience RPM macros for build-time testing against PostgreSQL server," This package is meant to be added as BuildRequires: dependency of other packages
+that want to run build-time testsuite against running PostgreSQL server."
+libgweather,库,库,库, A library for weather information," libgweather is a library to access weather information from online
+services for numerous locations."
+WALinuxAgent,服务,库,库, Microsoft Azure Linux Agent," The Azure Linux Agent supports the provisioning and running of Linux
+VMs in the Azure cloud. This package should be installed on Linux disk
+images that are built to run in the Azure environment."
+rubygem-rexml,库,库,库, An XML toolkit for Ruby," REXML was inspired by the Electric XML library for Java, which features an
+easy-to-use API, small size, and speed. Hopefully, REXML, designed with the same
+philosophy, has these same features. I've tried to keep the API as intuitive as
+possible, and have followed the Ruby methodology for method naming and code
+flow, rather than mirroring the Java API.
+
+REXML supports both tree and stream document parsing. Stream parsing is faster
+(about 1.5 times as fast). However, with stream parsing, you don't get access to
+features such as XPath."
+sac,库,库,库, Java standard interface for CSS parser," SAC is a standard interface for CSS parsers, intended to work with CSS1, CSS2,
+CSS3 and other CSS derived languages."
+texlive-ms,工具,库,库, Various LaTeX packages by Martin Schroder," A bundle of LaTeX packages by Martin Schroder; the collection
+comprises: - count1to, make use of fixed TeX counters; -
+everysel, set commands to execute every time a font is
+selected; - everyshi, set commands to execute whenever a page
+is shipped out; - multitoc, typeset the table of contents in
+multiple columns; - prelim2e, mark typeset pages as
+preliminary; and - ragged2e, typeset ragged text and allow
+hyphenation."
+tesseract-langpack-nep,工具,库,库, Nepali language data for tesseract-tessdata," This package contains the fast integer version of the Nepali language
+trained models for the Tesseract Open Source OCR Engine."
+perl-libs,库,库,库, The libraries for the perl run-time," The is a perl run-time (interpreter as a shared library and include
+directories)."
+ffado,库,库,库, Free firewire audio driver library applications and utilities, Applications and utilities for use with libffado.
+maven-wagon-http-shared,工具,库,库, http-shared module for maven-wagon, http-shared module for maven-wagon.
+google-noto-sans-yi-fonts,其它,库,库, Sans Yi font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Sans font for Yi."
+osbuild-ostree,工具,库,库, OSTree support," Contains the necessary stages, assembler and source
+to build OSTree based images."
+apr-util-openssl,库,库,库, APR utility library OpenSSL crypto support, This package provides the OpenSSL crypto support for the apr-util.
+perl-Devel-Caller,库,库,库, Meatier versions of caller, Devel::Caller - Meatier versions of caller.
+gupnp-dlna,库,库,库, A collection of helpers for building UPnP AV applications," GUPnP is an object-oriented open source framework for creating UPnP
+devices and control points, written in C using GObject and libsoup.
+The GUPnP API is intended to be easy to use, efficient and flexible.
+
+GUPnP-dlna is a collection of helpers for building DLNA (Digital
+Living Network Alliance) compliant applications using GUPnP."
+ant-junit,库,库,库, Optional junit tasks for ant, Optional junit tasks for ant.
+perl-Memoize,库,库,库, Transparently speed up functions by caching return values," Memoizing a function makes it faster by trading space for time. It does
+this by caching the return values of the function in a table. If you call
+the function again with the same arguments, memoize jumps in and gives
+you the value out of the table, instead of letting the function compute
+the value all over again."
+docker-engine,服务,库,库, Docker daemon binary and related utilities, Docker daemon binary and related utilities
+boost-openmpi,库,库,库, Run-time component of Boost.MPI library," 
+Run-time support for Boost.MPI-OpenMPI, a library providing a clean C++
+API over the OpenMPI implementation of MPI."
+texlive-gsftopk,工具,库,库," Convert ""ghostscript fonts"" to PK files"," Designed for use with xdvi and dvips this utility converts
+Adobe Type 1 fonts to PK bitmap format. It should not
+ordinarily be much used nowadays, since both its target
+applications are now capable of dealing with Type 1 fonts,
+direct."
+junit5,库,库,库, Java regression testing framework, JUnit is a popular regression testing framework for Java platform.
+glassfish-servlet-api,库,库,库, Java Servlet API," The javax.servlet package contains a number of classes
+and interfaces that describe and define the contracts between
+a servlet class and the runtime environment provided for
+an instance of such a class by a conforming servlet container."
+php-fpm,库,库,库, PHP FastCGI Process Manager," PHP-FPM (FastCGI Process Manager) is an alternative PHP FastCGI
+implementation with some additional features useful for sites of
+any size, especially busier sites."
+perl-Module-Load,库,其它,库, Run-time require of both modules and files," If you consult ""perldoc -f require"" you will see that ""require"" will behave
+differently when given a bare-word or a string. In the case of a string,
+""require"" assumes you are wanting to load a file. But in the case of
+a bare-word, it assumes you mean a module.
+
+This gives nasty overhead when you are trying to dynamically require modules
+at run-time, since you will need to change the module notation to a file
+notation fitting the particular platform you are on.
+
+""load"" eliminates the need for this overhead and will just DWYM."
+dhcp-relay,服务,其它,库,Provides the ISC DHCP relay agent ,"DHCP (Dynamic Host Configuration Protocol) is a protocol which allows
+individual devices on an IP network to get their own network
+configuration information (IP address, subnetmask, broadcast address,
+etc.) from a DHCP server. The overall purpose of DHCP is to make it
+easier to administer a large network.
+
+This package provides the ISC DHCP relay agent. "
+enchant2,库,库,库, An Enchanting Spell Checking Library, A library that wraps other spell checking backends.
+hunspell-mt,工具,库,库, Maltese hunspell dictionaries, Maltese hunspell dictionaries.
+python2-nose,库,库,库, Nose Documentation," nose extends the test loading and running features of unit test, making
+it easier to write, find and run tests.
+
+By default, nose will run tests in files or directories under the
+current working directory whose names include ""test"" or ""Test"" at a
+word boundary (like ""test_this"" or ""functional_test"" or ""TestClass""
+but not ""libtest""). Test output is similar to that of unit test, but
+also includes captured stdout output from failing tests, for easy
+print-style debugging.
+
+These features, and many more, are customizable through the use of
+plugins. Plugins included with nose provide support for doctest, code
+coverage and profiling, flexible attribute-based test selection,
+output capture and more."
+perl-Term-Cap,库,库,库, Perl termcap interface," These are low-level functions to extract and use capabilities from a terminal
+capability (termcap) database."
+perl-NEXT,库,库,库, Pseudo-class that allows method redispatch," The NEXT module adds a pseudo-class named ""NEXT"" to any program that uses it.
+If a method ""m"" calls ""$self->NEXT::m()"", the call to ""m"" is redispatched as
+if the calling method had not originally been found."
+libndp,库,库,库,Library for Neighbor Discovery Protocol ,"This package contains a library which provides a wrapper
+for IPv6 Neighbor Discovery Protocol.  It also provides a tool
+named ndptool for sending and receiving NDP messages. "
+bind-pkcs11,服务,库,库, Bind with native PKCS#11 functionality for crypto," This is a version of BIND server built with native PKCS#11 functionality.
+It is important to have SoftHSM v2+ installed and some token initialized.
+For other supported HSM modules please check the BIND documentation."
+nmstate-plugin-ovsdb,库,库,库, nmstate plugin for OVS database manipulation, This package contains the nmstate plugin for OVS database manipulation.
+fdo-admin-cli,工具,库,库, FDO admin tools implementation, FDO admin tools implementation
+perl-libnetcfg,库,库,库, Configure libnet, The libnetcfg utility can be used to configure the libnet.
+langpacks-ts,其它,库,库, Tsonga langpacks meta-package, This package provides Tsonga langpacks meta-package.
+xmvn-bisect,工具,库,库, XMvn Bisect," This package provides XMvn Bisect, which is a debugging tool that can
+diagnose build failures by using bisection method."
+libvirt-daemon-driver-storage-iscsi-direct,服务,库,库, Storage driver plugin for iscsi-direct," The storage driver backend adding implementation of the storage APIs for iscsi
+volumes using libiscsi direct connection."
+texlive-fontawesome,库,库,库, Font containing web-related icons," The package offers access to the large number of web-related
+icons provided by the included font. The package requires the
+package, fontspec, if run with XeTeX or LuaTeX."
+ant-jsch,库,库,库, Optional jsch tasks for ant, Optional jsch tasks for ant.
+SDL2,库,库,库, Cross-platform multimedia library," Simple DirectMedia Layer (SDL) is a cross-platform multimedia library designed
+to provide fast access to the graphics frame buffer and audio device."
+libdvdnav,库,库,库, A library contains functions to display DVD video menus.," Libdvdnav is a library that allows easy use of sophisticated DVD navigation
+features such as DVD menus, multiangle playback and even interactive DVD games."
+rarian,库,库,库, Documentation meta-data library," Rarian is a documentation meta-data library that allows access to documents,
+man pages and info pages.  It was designed as a replacement for scrollkeeper."
+setroubleshoot,工具,库,库, Helps troubleshoot SELinux problems," setroubleshoot GUI. Application that allows you to view setroubleshoot-server
+messages.
+Provides tools to help diagnose SELinux problems. When AVC messages
+are generated an alert can be generated that will give information
+about the problem and help track its resolution. Alerts can be configured
+to user preference. The same tools can be run on existing log files."
+evince-libs,库,库,库, Libraries for the evince document viewer, This package contains shared libraries needed for evince
+libblockdev,库,其它,库, A library for low-level manipulation with block devices," The libblockdev is a C library with GObject introspection support that can be
+used for doing low-level operations with block devices like setting up LVM,
+BTRFS, LUKS or MD RAID. The library uses plugins (LVM, BTRFS,...) and serves as
+a thin wrapper around its plugins' functionality. All the plugins, however, can
+be used as standalone libraries. One of the core principles of libblockdev is
+that it is stateless from the storage configuration's perspective (e.g. it has
+no information about VGs when creating an LV)."
+libdnf,库,库,库, Library providing simplified C and Python API to libsolv, A Library providing simplified C and Python API to libsolv.
+emoji-picker,工具,库,库, An emoji selection tool," A simple application to find and insert emoji and other
+Unicode symbols."
+felix-osgi-compendium,库,库,库, Felix OSGi R4 Compendium Bundle, OSGi Service Platform Release 4 Compendium Interfaces and Classes.
+hyphen-ml,库,库,库, Malayalam hyphenation rules, Malayalam hyphenation rules.
+python3-dbus-client-gen,库,库,库, Library for Generating D-Bus Client Code," This library contains a few methods that consume an XML specification
+of a D-Bus interface and return classes or functions that may be useful
+in constructing a python D-Bus client. The XML specification has the format
+of the data returned by the Introspect() method
+of the Introspectable interface.
+
+Python 3 version."
+crypto-policies-scripts,工具,库,库,Tool to switch between crypto policies ,"This package provides a tool update-crypto-policies, which applies
+the policies provided by the crypto-policies package. These can be
+either the pre-built policies from the base package or custom policies
+defined in simple policy definition files.
+
+The package also provides a tool fips-mode-setup, which can be used
+to enable or disable the system FIPS mode. "
+hunspell-tk,工具,库,库, Turkmen hunspell dictionaries, Turkmen hunspell dictionaries.
+lucene++,库,库,库," A high-performance, full-featured text search engine written in C++"," An up to date C++ port of the popular Java Lucene library, a high-performance, full-featured text search engine."
+mingw64-freetype,库,库,库, Free and portable font rendering engine, MinGW Windows Freetype library.
+kf5-kirigami2,工具,库,库, QtQuick plugins to build user interfaces based on the KDE UX guidelines, QtQuick plugins to build user interfaces based on the KDE UX guidelines.
+orca,工具,库,库, Assistive technology for people with visual impairments," Orca is a screen reader that provides access to the graphical desktop via
+user-customizable combinations of speech and/or braille. Orca works with
+applications and toolkits that support the assistive technology service
+provider interface (AT-SPI), e.g. the GNOME desktop."
+libconfig,库,库,库, C/C++ configuration file library," Libconfig is a simple library for manipulating structured configuration
+files. This file format is more compact and more readable than XML. And
+unlike XML, it is type-aware, so it is not necessary to do string parsing
+in application code."
+texlive-index,工具,其它,库, Extended index for LaTeX including multiple indexes," This is a reimplementation of LaTeX's indexing macros to
+provide better support for indexing. For example, it supports
+multiple indexes in a single document and provides a more
+robust \index command. It supplies short hand notations for the
+\index command (^{word}) and a * variation of \index
+(abbreviated _{word}) that prints the word being indexed, as
+well as creating an index entry for it."
+libreoffice-help-pt-PT,库,库,库, Portuguese help for LibreOffice, Provides Portuguese help for LibreOffice.
+khmeros-muol-fonts,其它,库,库," Muol fonts - normal, light and Pali"," 
+The Khmer OS fonts include Khmer and Latin alphabets, and they have equivalent
+sizes for Khmer and English alphabets, so that when texts mix both it is not
+necessary to have different point sizes for the text in each language.
+
+They were created by Danh Hong of the Cambodian Open Institute.
+
+Muol fonts - normal, light and Pali."
+ansible-core,工具,库,库," SSH-based configuration management, deployment, and task execution system"," Ansible is a radically simple model-driven configuration management,
+multi-node deployment, and remote task execution system. Ansible works
+over SSH and does not require any software or daemons to be installed
+on remote nodes. Extension modules can be written in any language and
+are transferred to managed machines automatically."
+gstreamer1-plugins-base,库,库,库, GStreamer streaming media framework base plugins," GStreamer is a streaming media framework, based on graphs of filters which
+operate on media data. Applications using this library can do anything
+from real-time sound processing to playing videos, and just about anything
+else media-related.  Its plugin-based architecture means that new data
+types or processing capabilities can be added simply by installing new
+plug-ins.
+
+This package contains a set of well-maintained base plug-ins."
+prometheus-jmx-exporter,库,库,库, Prometheus JMX Exporter," JMX to Prometheus exporter: a collector that can be configured to scrape
+and expose MBeans of a JMX target. This exporter is intended to be run as
+a Java Agent, exposing a HTTP server and serving metrics of the local JVM."
+python3-chardet,库,库,库, Character encoding auto-detection in Python 3," Character encoding auto-detection in Python. As
+smart as your browser. Open source.
+
+Python 3 version."
+xcb-util-cursor,库,库,库, Cursor library on top of libxcb," XCB util-cursor module provides the following libraries:
+
+  - cursor: port of libxcursor"
+google-noto-sans-mandaic-fonts,其它,库,库, Sans Mandaic font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Sans font for Mandaic."
+perl-XML-SAX,库,库,库, SAX parser access API for Perl," XML::SAX consists of several framework classes for using and building
+Perl SAX2 XML parsers, filters, and drivers. It is designed around the
+need to be able to ""plug in"" different SAX parsers to an application
+without requiring programmer intervention. Those of you familiar with
+the DBI will be right at home. Some of the designs come from the Java
+JAXP specification (SAX part), only without the javaness."
+hostname,工具,库,库,Utility to set/show the host name or domain name ,"This package provides commands which can be used to display the system's
+DNS name, and to display or set its hostname or NIS domain name. "
+libreoffice-help-en,库,库,库, English help for LibreOffice, Provides English help for LibreOffice.
+perl-Text-Template,库,库,库, Expand template text with embedded Perl," This is a library for generating form letters, building HTML pages, or
+filling in templates generally.  A 'template' is a piece of text that
+has little Perl programs embedded in it here and there.  When you
+'fill in' a template, you evaluate the little programs and replace
+them with their values."
+gnome-font-viewer,工具,库,库, Utility for previewing fonts for GNOME," Use gnome-font-viewer, the Font Viewer, to preview fonts and display
+information about a specified font. You can use the Font Viewer to display the
+name, style, type, size, version and copyright of the font."
+boost-regex,库,库,库, Run-time component of boost regular expression library," 
+Run-time support for boost regular expression library."
+icoutils,工具,库,库, Utility for extracting and converting Microsoft icon and cursor files," The icoutils are a set of programs for extracting and converting images in
+Microsoft Windows icon and cursor files. These files usually have the
+extension .ico or .cur, but they can also be embedded in executables or
+libraries."
+luajit,库,库,库, Just-In-Time Compiler for Lua," LuaJIT implements the full set of language features defined by Lua 5.1.
+The virtual machine (VM) is API- and ABI-compatible to the standard
+Lua interpreter and can be deployed as a drop-in replacement."
+libkkc,库,库,库, Japanese Kana Kanji conversion library," libkkc provides a converter from Kana-string to
+Kana-Kanji-mixed-string.  It was named after kkc.el in GNU Emacs, a
+simple Kana Kanji converter, while libkkc tries to convert sentences
+in a bit more complex way using N-gram language models."
+python3-meh,库,库,库, A python 3 library for handling exceptions," The python3-meh package is a python 3 library for handling, saving, and reporting
+exceptions."
+tesseract-langpack-tgk,工具,库,库, Tajik language data for tesseract-tessdata," This package contains the fast integer version of the Tajik language
+trained models for the Tesseract Open Source OCR Engine."
+maven-settings,库,库,库, Compatibility Maven settings artifact, Maven settings artifact
+perl-Module-Metadata,库,库,库, Gather package and POD information from perl module files," This module provides a standard way to gather metadata about a .pm file
+without executing unsafe code."
+maven-plugin-tools-javadocs,库,库,库, Javadoc for maven-plugin-tools, API documentation for maven-plugin-tools.
+bsdtar,工具,库,库, Manipulate tape archives," The bsdtar package contains standalone bsdtar utility split off regular
+libarchive packages."
+perl-File-Remove,库,库,库, Convenience module for removing files and directories, Convenience module for removing files and directories
+urw-base35-d050000l-fonts,其它,库,库, D050000L font family [part of Level 2 Core Font Set]," This package contains D050000L font family,
+which is part of Level 2 Core Font Set.
+
+
+The Level 2 Core Font Set is a PostScript specification of 35 base fonts that
+can be used with any PostScript file. In Fedora, these fonts are provided freely
+by (URW)++ company, and are mainly utilized by applications using Ghostscript."
+stratis-cli,工具,库,库, Command-line tool for interacting with the Stratis daemon," stratis provides a command-line interface (CLI) for
+interacting with the Stratis daemon, stratisd. stratis
+interacts with stratisd via D-Bus."
+pki-servlet-engine,服务,库,库," Apache Servlet/JSP Engine, RI for Servlet 4.0/JSP 2.3 API"," Tomcat is the servlet engine that is used in the official Reference
+Implementation for the Java Servlet and JavaServer Pages technologies.
+The Java Servlet and JavaServer Pages specifications are developed by
+Sun under the Java Community Process.
+
+Tomcat is developed in an open and participatory environment and
+released under the Apache Software License version 2.0. Tomcat is intended
+to be a collaboration of the best-of-breed developers from around the world."
+maven-compiler-plugin,工具,库,库, Maven Compiler Plugin, The Compiler Plugin is used to compile the sources of your project.
+go-toolset,工具,库,库, Package that installs go-toolset, This is the main package for go-toolset.
+python3-pymongo-gridfs,库,库,库, Python GridFS driver for MongoDB," GridFS is a storage specification for large objects in MongoDB.  This package
+contains the python3 version of this module."
+dleyna-renderer,服务,库,库, Service for interacting with Digital Media Renderers," D-Bus service for clients to discover and manipulate DLNA Digital Media
+Renderers (DMRs)."
+python3-pygments,库,其它,库, Syntax highlighting engine written in Python," Pygments is a generic syntax highlighter for general use in all kinds
+of software such as forum systems, wikis or other applications that
+need to prettify source code. Highlights are:
+
+  * a wide range of common languages and markup formats is supported
+  * special attention is paid to details that increase highlighting
+    quality
+  * support for new languages and formats are added easily; most
+    languages use a simple regex-based lexing mechanism
+  * a number of output formats is available, among them HTML, RTF,
+    LaTeX and ANSI sequences
+  * it is usable as a command-line tool and as a library
+  * ... and it highlights even Brainf*ck!"
+greenboot-default-health-checks,服务,库,库, Series of optional and curated health checks, Series of optional and curated health checks.
+texlive-currfile,工具,库,库, Provide file name and path of input files," The package provides macros holding file name information
+(directory, base name, extension, full name and full path) for
+files read by LaTeX \input and \include macros; it uses the
+file hooks provided by the author's filehook. In particular, it
+restores the parent file name after the trailing \clearpage of
+an \included file; as a result, the macros may be usefully
+employed in the page header and footer of the last printed page
+of such a file. The depth of inclusion is made available,
+together with the ""parent"" (including file) and ""parents"" (all
+including files to the root of the tree). The package
+supersedes FiNK."
+bacula-logwatch,工具,库,库, Bacula Director logwatch scripts," Bacula is a set of programs that allow you to manage the backup, recovery, and
+verification of computer data across a network of different computers. It is
+based on a client/server architecture.
+
+This package contains logwatch scripts for Bacula Director."
+kf5-syntax-highlighting,工具,库,库, KDE Frameworks 5 Syntax highlighting engine for Kate syntax definitions, KDE Frameworks 5 Syntax highlighting engine for Kate syntax definitions.
+libosinfo,库,库,库, A library for managing OS information for virtualization," libosinfo is a library that allows virtualization provisioning tools to
+determine the optimal device settings for a hypervisor/operating system
+combination."
+perl-Module-Implementation,库,库,库, Loads one of several alternate underlying implementations for a module," This module abstracts out the process of choosing one of several underlying
+implementations for a module. This can be used to provide XS and pure Perl
+implementations of a module, or it could be used to load an implementation
+for a given OS or any other case of needing to provide multiple
+implementations.
+
+This module is only useful when you know all the implementations ahead of
+time. If you want to load arbitrary implementations then you probably want
+something like a plugin system, not this module."
+smc-suruma-fonts,其它,库,库, Open Type Fonts for Malayalam script," The Suruma font package contains fonts for the display of
+traditional Malayalam Scripts."
+keentune-target,服务,库,库," Parameters setting, reading and backup models for KeenTune"," Parameters setting, reading and backup models for KeenTune"
+mariadb-server,服务,库,库, The MariaDB server and related files," MariaDB is a multi-user, multi-threaded SQL database server. It is a
+client/server implementation consisting of a server daemon (mysqld)
+and many different client programs and libraries. This package contains
+the MariaDB server and some accompanying files and directories.
+MariaDB is a community developed branch of MySQL."
+fence-agents-aws,服务,库,库, Fence agent for Amazon AWS, Fence agent for Amazon AWS instances.
+maven-resources-plugin-javadoc,库,库,库, Javadoc for maven-resources-plugin, API documentation for maven-resources-plugin.
+samba-test-libs,库,库,库,Libraries need by the testing tools for Samba servers and clients ,samba-test-libs provides libraries required by the testing tools. 
+python38-babel,库,库,库, Library for internationalizing Python applications," Babel is composed of two major parts:
+
+* tools to build and work with gettext message catalogs
+
+* a Python interface to the CLDR (Common Locale Data Repository),
+  providing access to various locale display names, localized number
+  and date formatting, etc."
+openscap-scanner,工具,库,库, OpenSCAP Scanner Tool (oscap)," The openscap-scanner package contains oscap command-line tool. The oscap
+is configuration and vulnerability scanner, capable of performing
+compliance checking using SCAP content."
+hunspell-ur,工具,库,库, Urdu hunspell dictionaries, Urdu hunspell dictionaries.
+maven-shared,工具,库,库, Maven Shared Components, Maven Shared Components
+NetworkManager-ppp,服务,库,库,PPP plugin for NetworkManager ,This package contains NetworkManager support for PPP. 
+perl-DynaLoader,库,库,库, Dynamically load C libraries into Perl code," The DynaLoader module defines a standard generic interface to the dynamic
+linking mechanisms available on many platforms. Its primary purpose is to
+implement automatic dynamic loading of Perl modules. For a simpler interface,
+see XSLoader module."
+httpd-manual,服务,库,库, Documentation for the Apache HTTP server," The httpd-manual package contains the complete manual and
+reference guide for the Apache HTTP server. The information can
+also be found at http://httpd.apache.org/docs/2.2/."
+libXinerama,库,库,库, X.Org X11 libXinerama runtime library, X.Org X11 libXinerama runtime library
+boost-filesystem,库,库,库, Run-time component of boost filesystem library," 
+Run-time support for the Boost Filesystem Library, which provides
+portable facilities to query and manipulate paths, files, and
+directories."
+velocity-manual,库,库,库, Manual for velocity, Documentation for velocity.
+perl-DateTime-Format-ISO8601,库,库,库, Parses ISO8601 formats," Parses almost all ISO8601 date and time formats. ISO8601 time-intervals
+will be supported in a later release."
+texlive-mflogo-font,库,库,库, Metafont logo font," These fonts were created in Metafont by Knuth, for his own
+publications. At some stage, the letters 'P' and 'S' were
+added, so that the MetaPost logo could also be expressed. The
+fonts were originally issued (of course) as Metafont source;
+they have since been autotraced and reissued in Adobe Type 1
+format by Taco Hoekwater."
+perl-Class-Tiny,库,其它,库, Minimalist class construction," This module offers a minimalist class construction kit in around 120 lines
+of code. Here is a list of features:
+
+* defines attributes via import arguments
+* generates read-write accessors
+* supports lazy attribute defaults
+* supports custom accessors
+* superclass provides a standard new constructor
+* new takes a hash reference or list of key/value pairs
+* new has heuristics to catch constructor attribute typos
+* new calls BUILD for each class from parent to child
+* superclass provides a DESTROY method
+* DESTROY calls DEMOLISH for each class from child to parent"
+slf4j-javadoc,库,库,库, API documentation for slf4j, This package provides API documentation for slf4j.
