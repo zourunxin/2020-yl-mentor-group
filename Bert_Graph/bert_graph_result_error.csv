@@ -1,0 +1,213 @@
+name,label,bert_pred,graph_pred,summary,description
+anaconda-tui,工具,库,库, Textual user interface for the Anaconda installer, This package contains textual user interface for the Anaconda installer.
+clevis-udisks2,工具,库,库, UDisks2/Storaged integration for clevis," Automatically unlocks LUKS block devices in desktop environments that
+use UDisks2 or storaged (like GNOME)."
+imake,工具,库,库, imake source code configuration and build system," Imake is a deprecated source code configuration and build system which
+has traditionally been supplied by and used to build the X Window System
+in X11R6 and previous releases.  As of the X Window System X11R7 release,
+the X Window system has switched to using GNU autotools as the primary
+build system, and the Imake system is now deprecated, and should not be
+used by new software projects.  Software developers are encouraged to
+migrate software to the GNU autotools system."
+pcp-pmda-json,服务,库,库, Performance Co-Pilot (PCP) metrics for JSON data," This package contains the PCP Performance Metrics Domain Agent (PMDA) for
+collecting metrics output in JSON."
+cockpit-machines,服务,库,库, Cockpit user interface for virtual machines," The Cockpit components for managing virtual machines.
+
+If ""virt-install"" is installed, you can also create new virtual machines."
+kacst-title-fonts,其它,库,库, Fonts for arabic from arabeyes project, This package contains title type fonts for the display of Arabic
+ghostscript-tools-fonts,工具,库,库, Ghostscript's font utilities," This package provides utilities which are useful when you are working with AFM,
+PFB or PFA files, mostly for conversion purposes."
+sgml-common,工具,库,库,Common SGML catalog and DTD files ,"The sgml-common package contains a collection of entities and DTDs
+that are useful for processing SGML, but that don't need to be
+included in multiple packages.  Sgml-common also includes an
+up-to-date Open Catalog file. "
+bpg-algeti-fonts,其它,库,库, Algeti Family of BPG Georgian Fonts," BPG Fonts are a set of GPL licensed Georgian Unicode fonts.
+
+This package contains the Algeti font family."
+texlive-collection-latexrecommended,工具,库,库, LaTeX recommended packages," A collection of recommended add-on packages for LaTeX which
+have widespread use."
+gfs2-utils,工具,库,库,Utilities for managing the global file system (GFS2) ,"The gfs2-utils package contains a number of utilities for creating, checking,
+modifying, and correcting inconsistencies in GFS2 file systems. "
+grub2-tools-extra,工具,库,库, Support tools for GRUB.," 
+The GRand Unified Bootloader (GRUB) is a highly configurable and
+customizable bootloader with modular architecture.  It supports a rich
+variety of kernel formats, file systems, computer architectures and
+hardware devices.
+
+This subpackage provides tools for support of all platforms."
+emacs-filesystem,工具,库,库,Emacs filesystem layout ,"This package provides some directories which are required by other
+packages that add functionality to Emacs. "
+tesseract-langpack-kat_old,工具,库,库, Georgian (Old) language data for tesseract-tessdata," This package contains the fast integer version of the Georgian (Old) language
+trained models for the Tesseract Open Source OCR Engine."
+brltty-docs,服务,库,库, Documentation for BRLTTY, This package provides the documentation for BRLTTY.
+kernel-abi-stablelists,其它,库,库,The Red Hat Enterprise Linux kernel ABI symbol stablelists ,"The kABI package contains information pertaining to the Red Hat Enterprise
+Linux kernel ABI, including lists of kernel symbols that are needed by
+external Linux kernel modules, and a yum plugin to aid enforcement. "
+evolution-data-server,工具,库,库, Backend data server for Evolution," The evolution-data-server package provides a unified backend for programs that work
+with contacts, tasks, and calendar information.
+
+It was originally developed for Evolution (hence the name), but is now used
+by other packages."
+WALinuxAgent,服务,库,库, Microsoft Azure Linux Agent," The Azure Linux Agent supports the provisioning and running of Linux
+VMs in the Azure cloud. This package should be installed on Linux disk
+images that are built to run in the Azure environment."
+texlive-ms,工具,库,库, Various LaTeX packages by Martin Schroder," A bundle of LaTeX packages by Martin Schroder; the collection
+comprises: - count1to, make use of fixed TeX counters; -
+everysel, set commands to execute every time a font is
+selected; - everyshi, set commands to execute whenever a page
+is shipped out; - multitoc, typeset the table of contents in
+multiple columns; - prelim2e, mark typeset pages as
+preliminary; and - ragged2e, typeset ragged text and allow
+hyphenation."
+tesseract-langpack-nep,工具,库,库, Nepali language data for tesseract-tessdata," This package contains the fast integer version of the Nepali language
+trained models for the Tesseract Open Source OCR Engine."
+maven-wagon-http-shared,工具,库,库, http-shared module for maven-wagon, http-shared module for maven-wagon.
+google-noto-sans-yi-fonts,其它,库,库, Sans Yi font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Sans font for Yi."
+osbuild-ostree,工具,库,库, OSTree support," Contains the necessary stages, assembler and source
+to build OSTree based images."
+docker-engine,服务,库,库, Docker daemon binary and related utilities, Docker daemon binary and related utilities
+texlive-gsftopk,工具,库,库," Convert ""ghostscript fonts"" to PK files"," Designed for use with xdvi and dvips this utility converts
+Adobe Type 1 fonts to PK bitmap format. It should not
+ordinarily be much used nowadays, since both its target
+applications are now capable of dealing with Type 1 fonts,
+direct."
+dhcp-relay,服务,其它,库,Provides the ISC DHCP relay agent ,"DHCP (Dynamic Host Configuration Protocol) is a protocol which allows
+individual devices on an IP network to get their own network
+configuration information (IP address, subnetmask, broadcast address,
+etc.) from a DHCP server. The overall purpose of DHCP is to make it
+easier to administer a large network.
+
+This package provides the ISC DHCP relay agent. "
+hunspell-mt,工具,库,库, Maltese hunspell dictionaries, Maltese hunspell dictionaries.
+bind-pkcs11,服务,库,库, Bind with native PKCS#11 functionality for crypto," This is a version of BIND server built with native PKCS#11 functionality.
+It is important to have SoftHSM v2+ installed and some token initialized.
+For other supported HSM modules please check the BIND documentation."
+fdo-admin-cli,工具,库,库, FDO admin tools implementation, FDO admin tools implementation
+langpacks-ts,其它,库,库, Tsonga langpacks meta-package, This package provides Tsonga langpacks meta-package.
+xmvn-bisect,工具,库,库, XMvn Bisect," This package provides XMvn Bisect, which is a debugging tool that can
+diagnose build failures by using bisection method."
+libvirt-daemon-driver-storage-iscsi-direct,服务,库,库, Storage driver plugin for iscsi-direct," The storage driver backend adding implementation of the storage APIs for iscsi
+volumes using libiscsi direct connection."
+setroubleshoot,工具,库,库, Helps troubleshoot SELinux problems," setroubleshoot GUI. Application that allows you to view setroubleshoot-server
+messages.
+Provides tools to help diagnose SELinux problems. When AVC messages
+are generated an alert can be generated that will give information
+about the problem and help track its resolution. Alerts can be configured
+to user preference. The same tools can be run on existing log files."
+emoji-picker,工具,库,库, An emoji selection tool," A simple application to find and insert emoji and other
+Unicode symbols."
+crypto-policies-scripts,工具,库,库,Tool to switch between crypto policies ,"This package provides a tool update-crypto-policies, which applies
+the policies provided by the crypto-policies package. These can be
+either the pre-built policies from the base package or custom policies
+defined in simple policy definition files.
+
+The package also provides a tool fips-mode-setup, which can be used
+to enable or disable the system FIPS mode. "
+hunspell-tk,工具,库,库, Turkmen hunspell dictionaries, Turkmen hunspell dictionaries.
+kf5-kirigami2,工具,库,库, QtQuick plugins to build user interfaces based on the KDE UX guidelines, QtQuick plugins to build user interfaces based on the KDE UX guidelines.
+orca,工具,库,库, Assistive technology for people with visual impairments," Orca is a screen reader that provides access to the graphical desktop via
+user-customizable combinations of speech and/or braille. Orca works with
+applications and toolkits that support the assistive technology service
+provider interface (AT-SPI), e.g. the GNOME desktop."
+texlive-index,工具,其它,库, Extended index for LaTeX including multiple indexes," This is a reimplementation of LaTeX's indexing macros to
+provide better support for indexing. For example, it supports
+multiple indexes in a single document and provides a more
+robust \index command. It supplies short hand notations for the
+\index command (^{word}) and a * variation of \index
+(abbreviated _{word}) that prints the word being indexed, as
+well as creating an index entry for it."
+khmeros-muol-fonts,其它,库,库," Muol fonts - normal, light and Pali"," 
+The Khmer OS fonts include Khmer and Latin alphabets, and they have equivalent
+sizes for Khmer and English alphabets, so that when texts mix both it is not
+necessary to have different point sizes for the text in each language.
+
+They were created by Danh Hong of the Cambodian Open Institute.
+
+Muol fonts - normal, light and Pali."
+ansible-core,工具,库,库," SSH-based configuration management, deployment, and task execution system"," Ansible is a radically simple model-driven configuration management,
+multi-node deployment, and remote task execution system. Ansible works
+over SSH and does not require any software or daemons to be installed
+on remote nodes. Extension modules can be written in any language and
+are transferred to managed machines automatically."
+google-noto-sans-mandaic-fonts,其它,库,库, Sans Mandaic font," Noto fonts aims to remove tofu from web by providing fonts for all
+Unicode supported scripts. Its design goal is to achieve visual harmonization
+between multiple scripts. Noto family supports almost all scripts available
+in Unicode.
+
+Noto Sans font for Mandaic."
+hostname,工具,库,库,Utility to set/show the host name or domain name ,"This package provides commands which can be used to display the system's
+DNS name, and to display or set its hostname or NIS domain name. "
+gnome-font-viewer,工具,库,库, Utility for previewing fonts for GNOME," Use gnome-font-viewer, the Font Viewer, to preview fonts and display
+information about a specified font. You can use the Font Viewer to display the
+name, style, type, size, version and copyright of the font."
+icoutils,工具,库,库, Utility for extracting and converting Microsoft icon and cursor files," The icoutils are a set of programs for extracting and converting images in
+Microsoft Windows icon and cursor files. These files usually have the
+extension .ico or .cur, but they can also be embedded in executables or
+libraries."
+tesseract-langpack-tgk,工具,库,库, Tajik language data for tesseract-tessdata," This package contains the fast integer version of the Tajik language
+trained models for the Tesseract Open Source OCR Engine."
+bsdtar,工具,库,库, Manipulate tape archives," The bsdtar package contains standalone bsdtar utility split off regular
+libarchive packages."
+urw-base35-d050000l-fonts,其它,库,库, D050000L font family [part of Level 2 Core Font Set]," This package contains D050000L font family,
+which is part of Level 2 Core Font Set.
+
+
+The Level 2 Core Font Set is a PostScript specification of 35 base fonts that
+can be used with any PostScript file. In Fedora, these fonts are provided freely
+by (URW)++ company, and are mainly utilized by applications using Ghostscript."
+stratis-cli,工具,库,库, Command-line tool for interacting with the Stratis daemon," stratis provides a command-line interface (CLI) for
+interacting with the Stratis daemon, stratisd. stratis
+interacts with stratisd via D-Bus."
+pki-servlet-engine,服务,库,库," Apache Servlet/JSP Engine, RI for Servlet 4.0/JSP 2.3 API"," Tomcat is the servlet engine that is used in the official Reference
+Implementation for the Java Servlet and JavaServer Pages technologies.
+The Java Servlet and JavaServer Pages specifications are developed by
+Sun under the Java Community Process.
+
+Tomcat is developed in an open and participatory environment and
+released under the Apache Software License version 2.0. Tomcat is intended
+to be a collaboration of the best-of-breed developers from around the world."
+maven-compiler-plugin,工具,库,库, Maven Compiler Plugin, The Compiler Plugin is used to compile the sources of your project.
+go-toolset,工具,库,库, Package that installs go-toolset, This is the main package for go-toolset.
+dleyna-renderer,服务,库,库, Service for interacting with Digital Media Renderers," D-Bus service for clients to discover and manipulate DLNA Digital Media
+Renderers (DMRs)."
+greenboot-default-health-checks,服务,库,库, Series of optional and curated health checks, Series of optional and curated health checks.
+texlive-currfile,工具,库,库, Provide file name and path of input files," The package provides macros holding file name information
+(directory, base name, extension, full name and full path) for
+files read by LaTeX \input and \include macros; it uses the
+file hooks provided by the author's filehook. In particular, it
+restores the parent file name after the trailing \clearpage of
+an \included file; as a result, the macros may be usefully
+employed in the page header and footer of the last printed page
+of such a file. The depth of inclusion is made available,
+together with the ""parent"" (including file) and ""parents"" (all
+including files to the root of the tree). The package
+supersedes FiNK."
+bacula-logwatch,工具,库,库, Bacula Director logwatch scripts," Bacula is a set of programs that allow you to manage the backup, recovery, and
+verification of computer data across a network of different computers. It is
+based on a client/server architecture.
+
+This package contains logwatch scripts for Bacula Director."
+kf5-syntax-highlighting,工具,库,库, KDE Frameworks 5 Syntax highlighting engine for Kate syntax definitions, KDE Frameworks 5 Syntax highlighting engine for Kate syntax definitions.
+smc-suruma-fonts,其它,库,库, Open Type Fonts for Malayalam script," The Suruma font package contains fonts for the display of
+traditional Malayalam Scripts."
+keentune-target,服务,库,库," Parameters setting, reading and backup models for KeenTune"," Parameters setting, reading and backup models for KeenTune"
+mariadb-server,服务,库,库, The MariaDB server and related files," MariaDB is a multi-user, multi-threaded SQL database server. It is a
+client/server implementation consisting of a server daemon (mysqld)
+and many different client programs and libraries. This package contains
+the MariaDB server and some accompanying files and directories.
+MariaDB is a community developed branch of MySQL."
+fence-agents-aws,服务,库,库, Fence agent for Amazon AWS, Fence agent for Amazon AWS instances.
+openscap-scanner,工具,库,库, OpenSCAP Scanner Tool (oscap)," The openscap-scanner package contains oscap command-line tool. The oscap
+is configuration and vulnerability scanner, capable of performing
+compliance checking using SCAP content."
+hunspell-ur,工具,库,库, Urdu hunspell dictionaries, Urdu hunspell dictionaries.
+maven-shared,工具,库,库, Maven Shared Components, Maven Shared Components
+NetworkManager-ppp,服务,库,库,PPP plugin for NetworkManager ,This package contains NetworkManager support for PPP. 
+httpd-manual,服务,库,库, Documentation for the Apache HTTP server," The httpd-manual package contains the complete manual and
+reference guide for the Apache HTTP server. The information can
+also be found at http://httpd.apache.org/docs/2.2/."

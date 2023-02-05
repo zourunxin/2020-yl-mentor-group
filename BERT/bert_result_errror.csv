@@ -1,0 +1,45 @@
+name,label,pred,summary,description
+kernel-debug-modules,其它,库, kernel modules to match the debug-core kernel, This package provides commonly used kernel modules for the debug-core kernel package.
+device-mapper-event-libs,库,工具, Device-mapper event daemon shared library," This package contains the device-mapper event daemon shared library,
+libdevmapper-event."
+thai-scalable-laksaman-fonts,其它,库, Thai Laksaman fonts," 
+fonts-tlwg provides a collection of free scalable Thai fonts.
+
+This package provides the Laksaman family of Thai fonts."
+kwin-wayland,服务,库, KDE Window Manager with experimental Wayland support, KDE Window Manager with experimental Wayland support.
+tpm-quote-tools,工具,库,TPM-based attestation using the TPM quote operation (tools) ,"TPM Quote Tools is a collection of programs that provide support
+for TPM based attestation using the TPM quote operation. "
+libreoffice-help-ja,库,其它, Japanese help for LibreOffice, Provides Japanese help for LibreOffice.
+fence-virt,服务,库, A pluggable fencing framework for virtual machines, Fencing agent for virtual machines.
+texlive-ptext,工具,服务, A 'lipsum' for Persian," The package provides lipsum-like facilities for the Persian
+language. The source of the filling text is the Persian epic
+""the Shanameh"" (100 paragraphs are used.)"
+perl-ExtUtils-Miniperl,库,工具, Write the C code for perlmain.c," writemain() takes an argument list of directories containing archive libraries
+that relate to perl modules and should be linked into a new perl binary. It
+writes a corresponding perlmain.c file that is a plain C file containing all
+the bootstrap code to make the If the first argument to writemain() is a
+reference to a scalar it is used as the file name to open for output. Any other
+reference is used as the file handle to write to. Otherwise output defaults to
+STDOUT."
+qt5-qtwebsockets,库,其它, Qt5 - WebSockets component," The QtWebSockets module implements the WebSocket protocol as specified in RFC
+6455. It solely depends on Qt (no external dependencies)."
+jansson,库,工具," C library for encoding, decoding and manipulating JSON data", Small library for parsing and writing JSON documents.
+coreutils-single,工具,其它,coreutils multicall binary ,"These are the GNU core utilities,
+packaged as a single multicall binary. "
+libao,库,服务, Cross Platform Audio Output Library," Libao is a cross platform audio output library. It currently supports
+ESD, OSS, Solaris, and IRIX."
+libreoffice-langpack-ru,库,其它, Russian language pack for LibreOffice, Provides additional Russian translations and resources for LibreOffice.
+alsa-lib,库,其它, The Advanced Linux Sound Architecture (ALSA) library," The Advanced Linux Sound Architecture (ALSA) provides audio and MIDI
+functionality to the Linux operating system.
+
+This package includes the ALSA runtime libraries to simplify application
+programming and provide higher level functionality as well as support for
+the older OSS API, providing binary compatibility for most OSS programs."
+mariadb-gssapi-server,服务,库, GSSAPI authentication plugin for server," GSSAPI authentication server-side plugin for MariaDB for passwordless login.
+This plugin includes support for Kerberos on Unix."
+hunspell-ku,工具,服务, Kurdish hunspell dictionaries, Kurdish hunspell dictionaries.
+SDL,库,服务, A cross-platform multimedia library," Simple DirectMedia Layer (SDL) is a cross-platform multimedia library designed
+to provide fast access to the graphics frame buffer and audio device."
+hunspell-ca,工具,其它, Catalan hunspell dictionaries, Catalan hunspell dictionaries.
+perl-HTML-Tagset,库,其它, HTML::Tagset - data tables useful in parsing HTML," This module contains several data tables useful in various kinds of
+HTML parsing operations, such as tag and entity names."

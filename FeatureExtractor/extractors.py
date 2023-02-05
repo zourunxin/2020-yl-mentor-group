@@ -127,7 +127,7 @@ def bow_feat_extractor(text_list):
 
     return word_vecs
 
-def tfidf_feat_extractor(text_list, label_list):
+def tfidf_feat_extractor(text_list, label_list, feature_num=1000):
     '''
      传入顺序一致的text列表 和 one-hot 形式的标签列表
     '''
@@ -135,7 +135,7 @@ def tfidf_feat_extractor(text_list, label_list):
     print("开始提取 TF-IDF 特征(每个包的语料为一个文档)")
     tv = TfidfVectorizer(max_features=9999, stop_words="english")
     tfidf = tv.fit_transform(text_list)
-    skb = SelectKBest(chi2, k=1000)#选择k个最佳特征
+    skb = SelectKBest(chi2, k=feature_num)# 选择 k 个最佳特征
     tfidf = skb.fit_transform(tfidf, np.argmax(label_list, axis=1))
 
     return tfidf.toarray()

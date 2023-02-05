@@ -67,7 +67,12 @@ def get_num_label_map(labels):
     """
     输入标签列表，输出 name_idx, idx_name Map
     """
-    label_list = list(set(list(labels)))
+    label_list = []
+    # 为了保持每次的顺序（有无更好的方法）
+    for label in list(labels):
+        if not label in label_list:
+            label_list.append(label)
+    # label_list = list(set(list(labels)))
     label_num_map = {}
     num_label_map = {}
     for i, label in enumerate(label_list):
@@ -94,9 +99,10 @@ def get_sample_splits(x, y, sample_size=100):
     idx_test = []
 
     for s in idx_set:
+        np.random.seed(666)
         np.random.shuffle(s)
         idx_train = idx_train + s[0:int(len(s) * 0.7)]
-        idx_val = idx_val + s[int(len(s) * 0.6):int(len(s) * 0.8)]
+        idx_val = idx_val + s[int(len(s) * 0.7):]
         idx_test = idx_test + s[int(len(s) * 0.7):]
 
     print("样本数量 train: {}, val: {}, test: {}".format(len(idx_train), len(idx_val), len(idx_test)))

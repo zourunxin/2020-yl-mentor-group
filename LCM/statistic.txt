@@ -1,0 +1,50 @@
+0117:
+bert result:
+              precision    recall  f1-score   support
+
+          其它       0.93      0.96      0.94       142
+          工具       0.82      0.82      0.82       623
+           库       0.89      0.91      0.90      1026
+          服务       0.76      0.69      0.73       237
+
+    accuracy                           0.86      2028
+   macro avg       0.85      0.84      0.85      2028
+weighted avg       0.86      0.86      0.86      2028
+
+bert_graph result:
+              precision    recall  f1-score   support
+
+          其它       0.95      0.91      0.93       142
+          工具       0.75      0.68      0.71       623
+           库       0.80      0.88      0.84      1026
+          服务       0.71      0.59      0.65       237
+
+    accuracy                           0.79      2028
+   macro avg       0.80      0.77      0.78      2028
+weighted avg       0.79      0.79      0.78      2028
+
+0228:
+
+bert result:
+              precision    recall  f1-score   support
+
+          其它       0.96      0.94      0.95       139
+          工具       0.81      0.87      0.84       591
+           库       0.93      0.90      0.92      1079
+          服务       0.80      0.76      0.78       219
+
+    accuracy                           0.88      2028
+   macro avg       0.87      0.87      0.87      2028
+weighted avg       0.88      0.88      0.88      2028
+
+bert_graph result:
+              precision    recall  f1-score   support
+
+          其它       0.99      0.96      0.97       139
+          工具       0.79      0.69      0.74       591
+           库       0.83      0.90      0.86      1079
+          服务       0.73      0.68      0.70       219
+
+    accuracy                           0.82      2028
+   macro avg       0.84      0.81      0.82      2028
+weighted avg       0.82      0.82      0.82      2028

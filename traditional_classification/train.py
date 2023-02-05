@@ -28,11 +28,8 @@ def sample_mask(idx, l):
 
 
 print("开始读取数据")
-df_data = pd.read_csv('../output/datasource_0117_class.csv')
+df_data = pd.read_csv('../output/datasource_0205_class.csv')
 
-max_length = 128    # 文本最大长度
-learning_rate = 0.0001
-epochs = 300
 
 idx_name_map, name_idx_map = CommonUtils.get_idx_name_map(df_data["name"])
 num_label_map, label_num_map = CommonUtils.get_num_label_map(df_data["label"])

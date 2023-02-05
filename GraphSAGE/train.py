@@ -73,9 +73,10 @@ def get_splits(y, strategy="all", sample_size = 200):
 
 
 print("开始读取数据")
-df_data = pd.read_csv('../output/datasource_1228.csv')
+df_data = pd.read_csv('../output/datasource_0205_class.csv')
+# df_data = df_data.sample(3000)
 df_edges = pd.read_csv('../output/edges.csv')
-
+# df_edges = df_edges.loc[lambda df : (df['out'].isin(df_data["name"])) & (df['in'].isin(df_data["name"]))]
 idx_name_map, name_idx_map = CommonUtils.get_idx_name_map(df_data["name"])
 num_label_map, label_num_map = CommonUtils.get_num_label_map(df_data["label"])
 names = list(df_data["name"])
@@ -84,10 +85,10 @@ texts = list(df_data["text"].apply(lambda x: NLPUtils.preprocess_text(x)))
 name_features = Extractors.name_feat_extractor(names)
 keyword_features = Extractors.keyword_feat_extractor(texts)
 # tfidf_features = Extractors.tfidf_class_feat_extractor(list(df_data["label"]), texts)
-tfidf_features = Extractors.tfidf_feat_extractor(texts, onehot_labels)
+tfidf_features = Extractors.tfidf_feat_extractor(texts, onehot_labels, feature_num=1000)
 # bow_features = Extractors.bow_feat_extractor(texts)
-features = np.hstack((name_features, keyword_features, tfidf_features))
-# features = tfidf_features
+# features = np.hstack((name_features, keyword_features, tfidf_features))
+features = tfidf_features
 
 # 构建邻接矩阵
 adj = sp.coo_matrix((np.ones(len(df_edges)), 

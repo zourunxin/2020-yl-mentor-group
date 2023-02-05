@@ -1,0 +1,159 @@
+name,label,bert_pred,rf_pred,summary,description
+podman-plugins,工具,服务,库, Plugins for podman," This plugin sets up the use of dnsmasq on a given CNI network so
+that Pods can resolve each other by name.  When configured,
+the pod and its IP address are added to a network specific hosts file
+that dnsmasq will read in.  Similarly, when a pod
+is removed from the network, it will remove the entry from the hosts
+file.  Each CNI network will have its own dnsmasq instance."
+wpa_supplicant,工具,服务,库,WPA/WPA2/IEEE 802.1X Supplicant ,"wpa_supplicant is a WPA Supplicant for Linux, BSD and Windows with support
+for WPA and WPA2 (IEEE 802.11i / RSN). Supplicant is the IEEE 802.1X/WPA
+component that is used in the client stations. It implements key negotiation
+with a WPA Authenticator and it controls the roaming and IEEE 802.11
+authentication/association of the wlan driver. "
+syslinux-tftpboot,工具,服务,库,"SYSLINUX modules in /tftpboot, available for network booting ","All the SYSLINUX/PXELINUX modules directly available for network
+booting in the /tftpboot directory. "
+sendmail-cf,工具,服务,库, The files needed to reconfigure Sendmail," This package includes the configuration files you need to generate the
+sendmail.cf file distributed with the sendmail package. You will need
+the sendmail-cf package if you ever need to reconfigure and rebuild
+your sendmail.cf file."
+pcp-system-tools,工具,服务,库, Performance Co-Pilot (PCP) System and Monitoring Tools," This PCP module contains additional system monitoring tools written
+in the Python language."
+texlive-wasy2-ps,工具,库,其它, Type 1 versions of wasy2 fonts, Converted (Adobe Type 1) outlines of (some of) the wasy2 fonts.
+crypto-policies,工具,服务,库, System-wide crypto policies," This package provides pre-built configuration files with
+cryptographic policies for various cryptographic back-ends,
+such as SSL/TLS libraries."
+nss_wrapper,工具,库,服务," A wrapper for the user, group and hosts NSS API"," There are projects which provide daemons needing to be able to create, modify
+and delete Unix users. Or just switch user ids to interact with the system e.g.
+a user space file server. To be able to test that you need the privilege to
+modify the passwd and groups file. With nss_wrapper it is possible to define
+your own passwd and groups file which will be used by software to act correctly
+while under test.
+
+If you have a client and server under test they normally use functions to
+resolve network names to addresses (dns) or vice versa. The nss_wrappers allow
+you to create a hosts file to setup name resolution for the addresses you use
+with socket_wrapper.
+
+To use it set the following environment variables:
+
+LD_PRELOAD=libuid_wrapper.so
+NSS_WRAPPER_PASSWD=/path/to/passwd
+NSS_WRAPPER_GROUP=/path/to/group
+NSS_WRAPPER_HOSTS=/path/to/host
+
+This package doesn't have a devel package cause this project is for
+development/testing."
+lorax-composer,工具,库,服务, Lorax Image Composer API Server, lorax-composer provides a REST API for building images using lorax.
+clevis-luks,工具,服务,库, LUKS integration for clevis," LUKS integration for clevis. This package allows you to bind a LUKS
+volume to a clevis unlocking policy. For automated unlocking, an unlocker
+will also be required. See, for example, clevis-dracut and clevis-udisks2."
+evince-browser-plugin,工具,服务,库, Evince web browser plugin, This package contains the evince web browser plugin.
+breeze-icon-theme,工具,服务,库, Breeze icon theme, Breeze icon theme.
+mod_dav_svn,工具,服务,库, Apache httpd module for Subversion server," The mod_dav_svn package allows access to a Subversion repository
+using HTTP, via the Apache httpd server."
+edk2-ovmf,库,其它,服务, UEFI firmware for x86_64 virtual machines," OVMF (Open Virtual Machine Firmware) is a project to enable UEFI support for
+Virtual Machines. This package contains a sample 64-bit UEFI firmware for QEMU
+and KVM."
+jolokia-jvm-agent,库,工具,服务, Jolokia JVM Agent, Jolokia JVM Agent.
+gutenprint,库,服务,工具, Printer Drivers Package," Gutenprint is a package of high quality printer drivers for Linux, BSD,
+Solaris, IRIX, and other UNIX-alike operating systems.
+Gutenprint was formerly called Gimp-Print."
+texlive-marvosym,库,其它,工具, Martin Vogel's Symbols (marvosym) font," Martin Vogel's Symbol font (marvosym) contains the Euro
+currency symbol as defined by the European commission, along
+with symbols for structural engineering; symbols for steel
+cross-sections; astronomy signs (sun, moon, planets); the 12
+signs of the zodiac; scissor symbols; CE sign and others. The
+package contains both the original TrueType font and the
+derived Type 1 font, together with support files for TeX
+(LaTeX)."
+vmaf,库,服务,工具, Video Multi-Method Assessment Fusion," VMAF is a perceptual video quality assessment algorithm developed by
+Netflix. VMAF Development Kit (VDK) is a software package that contains
+the VMAF algorithm implementation, as well as a set of tools that allows
+a user to train and test a custom VMAF model. For an overview, read this
+tech blog post, or this slide deck.
+
+https://github.com/Netflix/vmaf/blob/master/resource/doc/VMAF_ICIP17.pdf"
+sblim-gather,库,服务,工具, SBLIM Gatherer," Standards Based Linux Instrumentation for Manageability
+Performance Data Gatherer Base.
+This package contains the agents and control programs for gathering
+and providing performance data."
+anolis-gpg-keys,其它,工具,库, Anolis OS RPM keys, Anolis OS RPM signature keys
+kernel-abi-stablelists,其它,工具,库,The Red Hat Enterprise Linux kernel ABI symbol stablelists ,"The kABI package contains information pertaining to the Red Hat Enterprise
+Linux kernel ABI, including lists of kernel symbols that are needed by
+external Linux kernel modules, and a yum plugin to aid enforcement. "
+hwdata,其它,工具,库,Hardware identification and configuration data ,"hwdata contains various hardware identification and configuration data,
+such as the pci.ids and usb.ids databases. "
+system-lsb-core,其它,服务,工具, LSB Core module support," The Linux Standard Base (LSB) Core module support provides the fundamental
+system interfaces, libraries, and runtime environment upon which all conforming
+applications and libraries depend."
+kwin-wayland,服务,工具,库, KDE Window Manager with experimental Wayland support, KDE Window Manager with experimental Wayland support.
+cups,服务,工具,库, CUPS printing system," CUPS printing system provides a portable printing layer for
+UNIX庐 operating systems. It has been developed by Apple Inc.
+to promote a standard printing solution for all UNIX vendors and users.
+CUPS provides the System V and Berkeley command-line interfaces."
+polkit-docs,服务,工具,库,Development documentation for polkit ,Development documentation for polkit. 
+kwin,服务,工具,库, KDE Window manager, KDE Window manager.
+cups-filesystem,服务,工具,库, CUPS printing system - directory layout," CUPS printing system provides a portable printing layer for
+UNIX庐 operating systems. This package provides some directories which are
+required by other packages that add CUPS drivers (i.e. filters, backends etc.)."
+stratisd-dracut,服务,工具,库, Dracut modules for use with stratisd," 
+This package contains dracut modules to be used with stratisd
+to enable using Stratis filesystems as the root filesystem for
+a Linux install."
+cups-lpd,服务,工具,库, CUPS printing system - lpd emulation," CUPS printing system provides a portable printing layer for
+UNIX庐 operating systems. This is the package that provides standard
+lpd emulation."
+containers-common,服务,工具,库, Configuration files for working with image signatures," This package installs a default signature store configuration and a default
+policy under `/etc/containers/`."
+update-motd,服务,工具,库, Framework for dynamically generating MOTD," Framework and scripts for producing a dynamically generated Message Of The Day.
+Based on and compatible with the framework implemented Ubuntu."
+polkit,服务,工具,库, An authorization framework," polkit is a toolkit for defining and handling authorizations.  It is
+used for allowing unprivileged processes to speak to privileged
+processes."
+opencryptoki,服务,工具,库,Implementation of the PKCS#11 (Cryptoki) specification v3.0 ,"Opencryptoki implements the PKCS#11 specification v2.20 for a set of
+cryptographic hardware, such as IBM 4764 and 4765 crypto cards, and the
+Trusted Platform Module (TPM) chip. Opencryptoki also brings a software
+token implementation that can be used without any cryptographic
+hardware.
+This package contains the Slot Daemon (pkcsslotd) and general utilities. "
+NetworkManager-tui,服务,工具,库,NetworkManager curses-based UI ,"This adds a curses-based ""TUI"" (Text User Interface) to
+NetworkManager, to allow performing some of the operations supported
+by nm-connection-editor and nm-applet in a non-graphical environment. "
+setup,服务,工具,库, A set of system configuration and setup files," The setup package contains a set of important system configuration and
+setup files, such as passwd, group, and profile."
+accountsservice,服务,库,工具, D-Bus interfaces for querying and manipulating user account information," The accountsservice project provides a set of D-Bus interfaces for
+querying and manipulating user account information and an implementation
+of these interfaces, based on the useradd, usermod and userdel commands."
+netconsole-service,服务,工具,库,Service for initializing of network console logging ,"This packages provides a 'netconsole' service for loading of netconsole kernel
+module with the configured parameters. The netconsole kernel module itself then
+allows logging of kernel messages over the network. "
+deepin-reader,服务,工具,库," A simple PDF reader, supporting bookmarks, highlights and annotations"," A simple PDF reader, supporting bookmarks, highlights and annotations."
+unbound,服务,工具,库," Validating, recursive, and caching DNS(SEC) resolver"," Unbound is a validating, recursive, and caching DNS(SEC) resolver.
+
+The C implementation of Unbound is developed and maintained by NLnet
+Labs. It is based on ideas and algorithms taken from a java prototype
+developed by Verisign labs, Nominet, Kirei and ep.net.
+
+Unbound is designed as a set of modular components, so that also
+DNSSEC (secure DNS) validation and stub-resolvers (that do not run
+as a server, but are linked into an application) are easily possible."
+cockpit-composer,服务,工具,库, Composer GUI for use with Cockpit," Composer generates custom images suitable for deploying systems or uploading to
+the cloud. It integrates into Cockpit as a frontend for osbuild."
+netavark,服务,工具,库, OCI network stack," OCI network stack
+
+Netavark is a rust based network stack for containers. It is being
+designed to work with Podman but is also applicable for other OCI
+container management applications.
+
+Netavark is a tool for configuring networking for Linux containers.
+Its features include:
+* Configuration of container networks via JSON configuration file
+* Creation and management of required network interfaces,
+    including MACVLAN networks
+* All required firewall configuration to perform NAT and port
+    forwarding as required for containers
+* Support for iptables and firewalld at present, with support
+    for nftables planned in a future release
+* Support for rootless containers
+* Support for IPv4 and IPv6
+* Support for container DNS resolution via aardvark-dns."
