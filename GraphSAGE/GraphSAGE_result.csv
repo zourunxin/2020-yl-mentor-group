@@ -1,158 +1,133 @@
 name,label,predict,summary,description
+389-ds-base,服务,库, 389 Directory Server (base)," 389 Directory Server is an LDAPv3 compliant server.  The base package includes
+the LDAP server and command line utilities for server administration."
 abrt-desktop,服务,工具, Virtual package to make easy default installation on desktop environments," Virtual package to install all necessary packages for usage from desktop
 environment."
-python3-abrt-addon,库,工具, abrt's addon for catching and analyzing Python 3 exceptions," This package contains python 3 hook and python analyzer plugin for handling
-uncaught exception in python 3 programs."
-adwaita-cursor-theme,其它,库, Adwaita cursor theme," The adwaita-cursor-theme package contains a modern set of cursors originally
-designed for the GNOME desktop."
-adwaita-icon-theme,其它,服务, Adwaita icon theme, This package contains the Adwaita icon theme used by the GNOME desktop.
+python3-abrt-container-addon,库,工具, abrt's container addon for catching Python 3 exceptions," This package contains python 3 hook and handling uncaught exception in python 3
+programs in container."
+adcli,工具,服务,Active Directory enrollment ,"adcli is a tool for joining an Active Directory domain using
+standard LDAP and Kerberos calls. "
 alsa-lib,库,工具, The Advanced Linux Sound Architecture (ALSA) library," The Advanced Linux Sound Architecture (ALSA) provides audio and MIDI
 functionality to the Linux operating system.
 
 This package includes the ALSA runtime libraries to simplify application
 programming and provide higher level functionality as well as support for
 the older OSS API, providing binary compatibility for most OSS programs."
-amanda,服务,工具, A network-capable tape backup solution," AMANDA, the Advanced Maryland Automatic Network Disk Archiver, is a
-backup system that allows the administrator of a LAN to set up a
-single master backup server to back up multiple hosts to one or more
-tape drives or disk files.  AMANDA uses native dump and/or GNU tar
-facilities and can back up a large number of workstations running
-multiple versions of Unix.  Newer versions of AMANDA (including this
-version) can use SAMBA to back up Microsoft(TM) Windows95/NT hosts.
-The amanda package contains the core AMANDA programs and will need to
-be installed on both AMANDA clients and AMANDA servers.  Note that you
-will have to install the amanda-client and/or amanda-server packages as
-well."
-anolis-backgrounds,工具,服务, Anolis OS related desktop backgrounds," Licensed only for approved usage, see COPYING for details."
-anolis-logos-httpd,库,其它,Anolis OS related icons and pictures used by httpd ,"Licensed only for approved usage, see COPYING for details. "
-anolis-logos-ipa,库,其它, Anolis OS related icons and pictures used by ipa," Licensed only for approved usage, see COPYING for details."
-ansible-core,工具,库," SSH-based configuration management, deployment, and task execution system"," Ansible is a radically simple model-driven configuration management,
-multi-node deployment, and remote task execution system. Ansible works
-over SSH and does not require any software or daemons to be installed
-on remote nodes. Extension modules can be written in any language and
-are transferred to managed machines automatically."
-apache-commons-parent,库,工具, Apache Commons Parent Pom, The Project Object Model files for the apache-commons packages.
-aqute-bnd,库,工具, BND Tool," The bnd tool helps you create and diagnose OSGi bundles.
-The key functions are:
-- Show the manifest and JAR contents of a bundle
-- Wrap a JAR so that it becomes a bundle
-- Create a Bundle from a specification and a class path
-- Verify the validity of the manifest entries
-The tool is capable of acting as:
-- Command line tool
-- File format
-- Directives
-- Use of macros"
-aspell,工具,库, Spell checker," GNU Aspell is a spell checker designed to eventually replace Ispell. It can
-either be used as a library or as an independent spell checker. Its main
-feature is that it does a much better job of coming up with possible
-suggestions than just about any other spell checker out there for the
-English language, including Ispell and Microsoft Word. It also has many
-other technical enhancements over Ispell such as using shared memory for
-dictionaries and intelligently handling personal dictionaries when more
-than one Aspell process is open at once."
-basesystem,服务,库, The skeleton package which defines a simple  system," Basesystem defines the components of a basic  system
-(for example, the package installation order to use during bootstrapping).
-Basesystem should be in every installation of a system, and it
-should never be removed."
+anaconda-widgets,库,工具, A set of custom GTK+ widgets for use with anaconda, This package contains a set of custom GTK+ widgets used by the anaconda installer.
+babel,工具,库, Tools for internationalizing Python applications," Babel is composed of two major parts:
+
+* tools to build and work with gettext message catalogs
+
+* a Python interface to the CLDR (Common Locale Data Repository),
+  providing access to various locale display names, localized number
+  and date formatting, etc."
 bash-completion,工具,库,Programmable completion for Bash ,"bash-completion is a collection of shell functions that take advantage
 of the programmable completion feature of bash. "
 bluez-cups,工具,库, CUPS printer backend for Bluetooth printers, This package contains the CUPS backend
-cheese,工具,库, Application for taking pictures and movies from a webcam," Cheese is a Photobooth-inspired GNOME application for taking pictures and
-videos from a webcam. It can also apply fancy graphical effects."
-cim-schema,服务,工具, Common Information Model (CIM) Schema," Common Information Model (CIM) is a model for describing overall
-management information in a network or enterprise environment. CIM
-consists of a specification and a schema. The specification defines the
-details for integration with other management models. The schema
-provides the actual model descriptions.
+boost-build,库,工具, Cross platform build system for C++ projects," Boost.Build is an easy way to build C++ projects, everywhere. You name
+your pieces of executable and libraries and list their sources.  Boost.Build
+takes care about compiling your sources with the right options,
+creating static and shared libraries, making pieces of executable, and other
+chores -- whether you're using GCC, MSVC, or a dozen more supported
+C++ compilers -- on Windows, OSX, Linux and commercial UNIX systems."
+booth,服务,工具, Ticket Manager for Multi-site Clusters," Booth manages tickets which authorize cluster sites located
+in geographically dispersed locations to run resources.
+It facilitates support of geographically distributed
+clustering in Pacemaker."
+booth-arbitrator,工具,服务, Booth support for running as an arbitrator," Support for running Booth, ticket manager for multi-site clusters,
+as an arbitrator."
+brasero,工具,库, Gnome CD/DVD burning application," Simple and easy to use CD/DVD burning application for the Gnome
+desktop."
+brasero-nautilus,工具,库, Nautilus extension for brasero, The brasero-nautilus package contains the brasero nautilus extension.
+cloud-init,服务,工具, Cloud instance init scripts," Cloud-init is a set of init scripts for cloud instances.  Cloud instances
+need special scripts to run during initialization to retrieve and install
+ssh keys and to let the user run various scripts."
+containerd,服务,工具, Open and reliable container runtime," 
+Containerd is an industry-standard container runtime with an emphasis on
+simplicity, robustness and portability. It is available as a daemon for Linux
+and Windows, which can manage the complete container lifecycle of its host
+system: image transfer and storage, container execution and supervision,
+low-level storage and network attachments, etc.
 
-
-
-Authors:
---------
-    DTMF <http://www.dmtf.org/about/contact>"
-clang,工具,库, A C language family front-end for LLVM," clang: noun
-    1. A loud, resonant, metallic sound.
-    2. The strident call of a crane or goose.
-    3. C-language family front-end toolkit.
-
-The goal of the Clang project is to create a new C, C++, Objective C
-and Objective C++ front-end for the LLVM compiler. Its tools are built
-as libraries and designed to be loosely-coupled and extensible.
-
-Install compiler-rt if you want the Blocks C language extension or to
-enable sanitization and profiling options when building, and
-libomp-devel to enable -fopenmp."
-clufter-common,工具,库, Common internal data files for clufter," While primarily aimed at (CMAN,rgmanager)->(Corosync/CMAN,Pacemaker) cluster
-stacks configuration conversion (as per RHEL trend), the command-filter-format
-framework (capable of XSLT) offers also other uses through its plugin library.
-
-This package contains internal, arch-agnostic files for clufter."
-cockpit-storaged,服务,库," Cockpit user interface for storage, using udisks", The Cockpit component for managing storage.  This package uses udisks.
-color-filesystem,库,工具, Color filesystem layout, This package provides some directories that are required/used to store color.
-compat-guile18,工具,库, A GNU implementation of Scheme for application extensibility," GUILE (GNU's Ubiquitous Intelligent Language for Extension) is a library
-implementation of the Scheme programming language, written in C.  GUILE
-provides a machine-independent execution platform that can be linked in
-as a library during the building of extensible programs.
-
-Install the compat-guile18 package if you'd like to add extensibility to
-programs that you are developing."
+%gopkg"
+containerd-stress,服务,工具, containerd stress test for containerd daemon, stress test a containerd daemon
 aardvark-dns,服务,工具, Authoritative DNS server for A/AAAA container records," Authoritative DNS server for A/AAAA container records
 
 Forwards other request to configured resolvers.
 Read more about configuration in `src/backend/mod.rs`."
+coreutils-common,工具,库, coreutils common optional components," Optional though recommended components,
+including documentation and translations."
 corosync-vqsim,工具,库, The Corosync Cluster Engine - Votequorum Simulator," A command-line simulator for the corosync votequorum subsystem.
 It uses the same code as the corosync quorum system but forks
 them into subprocesses to simulate nodes.
 Nodes can be added and removed as well as partitioned (to simulate
 network splits)"
-cronie-noanacron,服务,工具,Utility for running simple regular jobs in old cron style ,"Old style of running {hourly,daily,weekly,monthly}.jobs without anacron. No
-extra features. "
-crypto-policies-scripts,工具,库,Tool to switch between crypto policies ,"This package provides a tool update-crypto-policies, which applies
-the policies provided by the crypto-policies package. These can be
-either the pre-built policies from the base package or custom policies
-defined in simple policy definition files.
+cronie-anacron,服务,工具, Utility for running regular jobs," Anacron is part of cronie that is used for running jobs with regular
+periodicity which do not have exact time of day of execution.
 
-The package also provides a tool fips-mode-setup, which can be used
-to enable or disable the system FIPS mode. "
-cyrus-sasl,库,服务,The Cyrus SASL library ,"The cyrus-sasl package contains the Cyrus implementation of SASL.
-SASL is the Simple Authentication and Security Layer, a method for
-adding authentication support to connection-based protocols. "
+The default settings of anacron execute the daily, weekly, and monthly
+jobs, but anacron allows setting arbitrary periodicity of jobs.
+
+Using anacron allows running the periodic jobs even if the system is often
+powered off and it also allows randomizing the time of the job execution
+for better utilization of resources shared among multiple systems."
+crun,库,工具, OCI runtime written in C, crun is a runtime for running OCI containers
+cups-filesystem,服务,库, CUPS printing system - directory layout," CUPS printing system provides a portable printing layer for
+UNIX庐 operating systems. This package provides some directories which are
+required by other packages that add CUPS drivers (i.e. filters, backends etc.)."
+cups-lpd,服务,库, CUPS printing system - lpd emulation," CUPS printing system provides a portable printing layer for
+UNIX庐 operating systems. This is the package that provides standard
+lpd emulation."
+cups-pk-helper,工具,库, A helper that makes system-config-printer use PolicyKit," cups-pk-helper is an application which makes cups configuration
+interfaces available under control of PolicyKit."
 dbus-common,服务,库, D-BUS message bus configuration," The dbus-common package provides the configuration and setup files for D-Bus
 implementations to provide a System and User Message Bus."
-dde-launcher,服务,工具, dde desktop-environment - Launcher module, dde desktop-environment - Launcher module.
-dde-qt5xcb-plugin,服务,库, Qt platform plugins for DDE, Qt platform plugins for DDE.
-dde-server-industry-config,服务,库, DDE desktop-server industry version special configuration file., DDE desktop-server industry version special configuration file.
-deepin-authenticate,服务,库," Used to adapt fingerprint, face and other authentication methods"," In order to unify the authentication interface,
-this interface is designed to adapt to fingerprint, face and other authentication methods."
-deepin-calculator,服务,工具, An easy to use calculator for ordinary users, An easy to use calculator for ordinary users.
-deepin-default-settings,服务,工具, default settings for deepin destkop environment, default settings for deepin destkop environment.
-deepin-reader,服务,工具," A simple PDF reader, supporting bookmarks, highlights and annotations"," A simple PDF reader, supporting bookmarks, highlights and annotations."
-deepin-terminal,工具,服务, Default terminal emulation application for Deepin, Default terminal emulation application for Deepin.
-dleyna-renderer,服务,库, Service for interacting with Digital Media Renderers," D-Bus service for clients to discover and manipulate DLNA Digital Media
-Renderers (DMRs)."
-dnssec-trigger-panel,工具,库, Applet for interaction between the user and dnssec-trigger," This package provides the GTK panel for interaction between the user
+dconf,工具,服务, A configuration system," dconf is a low-level configuration system. Its main purpose is to provide a
+backend to the GSettings API in GLib."
+dde-dock,服务,工具, Deepin desktop-environment - Dock module, Deepin desktop-environment - Dock module.
+dde-qt5wayland-plugin,服务,工具, Qt platform plugins for DDE, Qt platform plugins for DDE.
+deepin-network-proxy,服务,库, Most simple RPM package," This is my first RPM package, which does nothing."
+deepin-reader,服务,库," A simple PDF reader, supporting bookmarks, highlights and annotations"," A simple PDF reader, supporting bookmarks, highlights and annotations."
+deepin-turbo,服务,工具, deepin-trubo is a deepin project that derives from Applauncherd., deepin-trubo is a deepin project that derives from Applauncherd.
+dleyna-connector-dbus,库,服务, D-Bus connector for dLeyna services, D-Bus connector for dLeyna services.
+dnssec-trigger-panel,工具,服务, Applet for interaction between the user and dnssec-trigger," This package provides the GTK panel for interaction between the user
 and dnssec-trigger daemon. It is able to show the current state and
 results of probing performed by dnssec-trigger daemon. Also in case
 some user input is needed, the panel creates a dialog window."
+docbook5-schemas,工具,库," Norman Walsh's schemas (DTD, Relax NG, W3C schema) for Docbook 5.X"," Docbook 5.X is a complete rewrite of Docbook in RELAX NG and not compatible
+with previous Docbook versions. This package contains Relax NG , DTD and W3C
+schema for Docbook 5.X. Syntax of those schemas is XML-compliant and is
+developed by the OASIS consortium."
 docbook-dtds,库,工具, SGML and XML document type definitions for DocBook," The DocBook Document Type Definition (DTD) describes the syntax of
 technical documentation texts (articles, books and manual pages).
 This syntax is XML-compliant and is developed by the OASIS consortium.
 This package contains SGML and XML versions of the DocBook DTD."
+docker-engine,服务,工具, Docker daemon binary and related utilities, Docker daemon binary and related utilities
+dotnet5.0-build-reference-packages,库,工具, Reference packages needed by the .NET 5.0 SDK build," This contains references packages used for building .NET 5.
+
+This is not meant to be used by end-users."
 dracut-squash,库,工具,dracut module to build an initramfs with most files in a squashfs image ,"This package provides a dracut module to build an initramfs, but store most files
 in a squashfs image, result in a smaller initramfs size and reduce runtime memory
 usage. "
-dtc,库,工具, Device Tree Compiler," Devicetree is a data structure for describing hardware. Rather than hard coding
-every detail of a device into an operating system, many aspects of the hardware
-can be described in a data structure that is passed to the operating system at
-boot time. The devicetree is used by OpenFirmware, OpenPOWER Abstraction Layer
-(OPAL), Power Architecture Platform Requirements (PAPR) and in the standalone
-Flattened Device Tree (FDT) form."
-edk2-ovmf,库,服务, UEFI firmware for x86_64 virtual machines," OVMF (Open Virtual Machine Firmware) is a project to enable UEFI support for
-Virtual Machines. This package contains a sample 64-bit UEFI firmware for QEMU
-and KVM."
-fence-virtd-serial,服务,库, Serial VMChannel listener for fence-virtd, Provides serial VMChannel listener capability for fence-virtd.
-fence-virtd-tcp,库,服务, TCP listener for fence-virtd, Provides TCP listener capability for fence-virtd.
+dwz,工具,库, DWARF optimization and duplicate removal tool," The dwz package contains a program that attempts to optimize DWARF
+debugging information contained in ELF shared libraries and ELF executables
+for size, by replacing DWARF information representation with equivalent
+smaller representation where possible and by reducing the amount of
+duplication using techniques from DWARF standard appendix E - creating
+DW_TAG_partial_unit compilation units (CUs) for duplicated information
+and using DW_TAG_imported_unit to import it into each CU that needs it."
+eclipse-emf-core,工具,库, Eclipse EMF Core Bundles, Core EMF bundles required by the Eclipse platform.
+epel-rpm-macros,服务,库, Extra Packages for Enterprise Linux RPM macros," This package contains the Extra Packages for Enterprise Linux (EPEL) RPM
+macros for building EPEL packages."
+f32-backgrounds-kde,其它,库, Fedora 32 default wallpaper for KDE," This package contains KDE desktop wallpaper for the Fedora 32
+default theme"
+fence-virtd-libvirt,服务,库, Libvirt backend for fence-virtd," Provides fence_virtd with a connection to libvirt to fence
+virtual machines.  Useful for running a cluster of virtual
+machines on a desktop."
+libavdevice,库,服务, Special devices muxing/demuxing library," Libavdevice is a complementary library to libavf ""libavformat"". It provides
+various ""special"" platform-specific muxers and demuxers, e.g. for grabbing
+devices, audio capture and playback etc."
+fdo-init,工具,库, dracut module for device initialization, dracut module for device initialization
 file,工具,库, A utility for determining file types," The file command is used to identify a particular file according to the
 type of data contained by the file.  File can identify many different
 file types, including ELF binaries, system libraries, RPM packages, and
@@ -161,244 +136,256 @@ filesystem,服务,库, The basic directory layout for a Linux system," The files
 on a Linux system. Filesystem contains the basic directory layout
 for a Linux operating system, including the correct permissions for
 the directories."
-firewall-config,服务,工具, Firewall configuration application," The firewall configuration application provides an configuration interface for
-firewalld."
-firewalld,服务,工具,A firewall daemon with D-Bus interface providing a dynamic firewall ,"firewalld is a firewall service daemon that provides a dynamic customizable
-firewall with a D-Bus interface. "
-foomatic-db,服务,库, Database of printers and printer drivers," This is the database of printers, printer drivers, and driver options
-for Foomatic.
-
-The site http://www.openprinting.org/ is based on this database."
-freeradius-rest,服务,库, REST support for freeradius, This plugin provides the REST support for the FreeRADIUS server project.
-freeradius-sqlite,服务,库, SQLite support for freeradius, This plugin provides the SQLite support for the FreeRADIUS server project.
-freeradius-unixODBC,服务,库, Unix ODBC support for freeradius, This plugin provides the unixODBC support for the FreeRADIUS server project.
-fuse3,工具,库,File System in Userspace (FUSE) v3 utilitie ,"With FUSE it is possible to implement a fully functional filesystem in a
-userspace program. This package contains the FUSE v3 userspace tools to
-mount a FUSE filesystem. "
-fuse-common,工具,库,Common files for File System in Userspace (FUSE) v2 and v3 ,Common files for FUSE v2 and FUSE v3. 
-fuse-exfat,工具,库, Free exFAT file system implementation," This driver is the first free exFAT file system implementation with write
-support. exFAT is a simple file system created by Microsoft. It is intended
-to replace FAT32 removing some of it's limitations. exFAT is a standard FS
-for SDXC memory cards."
-gcc-toolset-10-systemtap-server,服务,工具, Instrumentation System Server," This is the remote script compilation server component of systemtap.
-It announces itself to nearby clients with avahi (if available), and
-compiles systemtap scripts to kernel objects on their demand."
-gcc-toolset-11-elfutils-libelf,库,工具, Library to read and write ELF files," The elfutils-libelf package provides a DSO which allows reading and
-writing ELF files on a high level.  Third party programs depend on
-this package to read internals of ELF files.  The programs of the
-elfutils package use it also to generate new ELF files."
-gcc-toolset-9-elfutils-libelf,库,工具, Library to read and write ELF files," The elfutils-libelf package provides a DSO which allows reading and
-writing ELF files on a high level.  Third party programs depend on
-this package to read internals of ELF files.  The programs of the
-elfutils package use it also to generate new ELF files."
-gedit-plugin-codecomment,服务,库, gedit codecomment plugin, The gedit codecomment plugin.
-gedit-plugin-multiedit,服务,库, gedit multiedit plugin, The gedit multiedit plugin.
-gimp,工具,库, GNU Image Manipulation Program," GIMP (GNU Image Manipulation Program) is a powerful image composition and
-editing program, which can be extremely useful for creating logos and other
-graphics for webpages. GIMP has many of the tools and filters you would expect
-to find in similar commercial offerings, and some interesting extras as well.
-GIMP provides a large image manipulation toolbox, including channel operations
-and layers, effects, sub-pixel imaging and anti-aliasing, and conversions, all
-with multi-level undo."
-gitweb,工具,库, Simple web interface to git repositories, Simple web interface to git repositories.
-glibc,库,工具, The GNU libc libraries," The glibc package contains standard libraries which are used by
-multiple programs on the system. In order to save disk space and
-memory, as well as to make upgrading easier, common system code is
-kept in one place and shared between programs. This particular package
-contains the most important sets of shared libraries: the standard C
-library and the standard math library. Without these two libraries, a
-Linux system will not function."
+firewalld-filesystem,服务,库, Firewalld directory layout and rpm macros," This package provides directories and rpm macros which
+are required by other packages that add firewalld configuration files."
+gcc-gdb-plugin,工具,库, GCC plugin for GDB, This package contains GCC plugin for GDB C expression evaluation.
+GConf2,工具,服务, A process-transparent configuration system," GConf is a process-transparent configuration database API used to
+store user preferences. It has pluggable backends and features to
+support workgroup administration."
+gedit-plugin-commander,服务,库, gedit commander plugin, The gedit commander plugin.
+gedit-plugin-drawspaces,服务,库, gedit drawspaces plugin, The gedit drawspaces plugin.
+gedit-plugin-joinlines,服务,库, gedit joinlines plugin, The gedit joinlines plugin.
+gedit-plugin-smartspaces,服务,库, gedit smartspaces plugin, The gedit smartspaces plugin.
+gedit-plugin-wordcompletion,工具,库, gedit wordcompletion plugin, The gedit wordcompletion plugin.
 gnome-abrt,工具,库, A utility for viewing problems that have occurred with the system," A GNOME application allows users to browse through detected problems and
 provides them with convenient way for managing these problems."
-gnome-characters,工具,库, Character map application for GNOME," Characters is a simple utility application to find and insert unusual
-characters."
+gnome-calculator,工具,库, A desktop calculator," gnome-calculator is a powerful graphical calculator with financial,
+logical and scientific modes. It uses a multiple precision package
+to do its arithmetic to give a high degree of accuracy."
+gnome-disk-utility,工具,库, Disks," This package contains the Disks and Disk Image Mounter applications.
+Disks supports partitioning, file system creation, encryption,
+fstab/crypttab editing, ATA SMART and other features"
 gnome-initial-setup,服务,工具, Bootstrapping your OS," GNOME Initial Setup is an alternative to firstboot, providing
 a good setup experience to welcome you to your system, and walks
 you through configuring it. It is integrated with gdm."
+gnome-online-accounts,工具,库, Single sign-on framework for GNOME," GNOME Online Accounts provides interfaces so that applications and libraries
+in GNOME can access the user's online accounts. It has providers for Google,
+ownCloud, Facebook, Flickr, Foursquare, Microsoft Account, Pocket, Microsoft
+Exchange, IMAP/SMTP and Kerberos."
+gnome-online-miners,服务,工具, Crawls through your online content," GNOME Online Miners provides a set of crawlers that go through your online
+content and index them locally in Tracker. It has miners for Facebook, Flickr,
+Google, OneDrive and Nextcloud."
 gnome-session-kiosk-session,工具,服务, Desktop file for mutter based kiosk session, Desktop file to add basic session used for setting up kiosk applications.
-gnome-shell-extension-dash-to-panel,库,服务, Show the dash in the top bar, This GNOME Shell extension makes the dash available in the top bar
 adwaita-gtk2-theme,其它,库, Adwaita gtk2 theme," The adwaita-gtk2-theme package contains a gtk2 theme for presenting widgets
 with a GNOME look and feel."
-gnupg2,工具,库, Utility for secure communication and data storage," GnuPG is GNU's tool for secure communication and data storage.  It can
-be used to encrypt data and to create digital signatures.  It includes
-an advanced key management facility and is compliant with the proposed
-OpenPGP Internet standard as described in RFC2440 and the S/MIME
-standard as described by several RFCs.
+golang-bin,工具,库, Golang core compiler tools, Golang core compiler tools
+gpac,库,工具, MPEG-4 multimedia framework," GPAC is a multimedia framework based on the MPEG-4 Systems standard developed
+from scratch in ANSI C.  The original development goal is to provide a clean,
+small and flexible alternative to the MPEG-4 Systems reference software.
 
-GnuPG 2.0 is a newer version of GnuPG with additional support for
-S/MIME.  It has a different design philosophy that splits
-functionality up into several modules. The S/MIME and smartcard functionality
-is provided by the gnupg2-smime package."
-gnupg2-smime,工具,库,CMS encryption and signing tool and smart card support for GnuPG ,"GnuPG is GNU's tool for secure communication and data storage. This
-package adds support for smart cards and S/MIME encryption and signing
-to the base GnuPG package "
-gnutls-utils,工具,库, Command line tools for TLS protocol," GnuTLS is a secure communications library implementing the SSL, TLS and DTLS
-protocols and technologies around them. It provides a simple C language
-application programming interface (API) to access the secure communications
-protocols as well as APIs to parse and write X.509, PKCS #12, OpenPGP and
-other required structures.
-This package contains command line TLS client and server and certificate
-manipulation tools."
-golang,库,工具, The Go Programming Language, The Go Programming Language.
-google-roboto-slab-fonts,其它,库, Google Roboto Slab fonts," Roboto has a dual nature. It has a mechanical skeleton and the forms are
-largely geometric. At the same time, the font features friendly and open
-curves. While some grotesks distort their letterforms to force a rigid
-rhythm, Roboto doesn't compromise, allowing letters to be settled into
-their natural width. This makes for a more natural reading rhythm more
-commonly found in humanist and serif types.
+GPAC features the integration of recent multimedia standards (SVG/SMIL, VRML,
+X3D, SWF, 3GPP(2) tools and more) into a single framework. GPAC also features
+MPEG-4 Systems encoders/multiplexers, publishing tools for content distribution
+for MP4 and 3GPP(2) files and many tools for scene descriptions
+(MPEG4 <-> VRML <-> X3D converters, SWF -> MPEG-4, etc)."
+graphviz-gd,工具,服务, Graphviz plugin for renderers based on gd," Graphviz plugin for renderers based on gd.  (Unless you absolutely have to use
+GIF, you are recommended to use the PNG format instead because of the better
+quality anti-aliased lines provided by the cairo+pango based renderer.)"
+grilo-plugins,库,服务, Plugins for the Grilo framework," Grilo is a framework that provides access to different sources of
+multimedia content, using a pluggable system.
+This package contains plugins to get information from theses sources:
+- Apple Trailers
+- Bookmarks
+- Euronews
+- Filesystem
+- Flickr
+- Freebox
+- Gravatar
+- iTunes Music Sharing
+- Jamendo
+- Last.fm (for album arts)
+- Local metadata (album arts and thumbnails)
+- Metadata Store
+- Pocket
+- Podcasts
+- Radio France
+- Shoutcast
+- The Guardian Videos
+- Tracker
+- Vimeo
+- Youtube"
+grub2-common,工具,库, grub2 common layout," This package provides some directories which are required by various grub2
+subpackages."
+guile,库,工具, A GNU implementation of Scheme for application extensibility," GUILE (GNU's Ubiquitous Intelligent Language for Extension) is a library
+implementation of the Scheme programming language, written in C.  GUILE
+provides a machine-independent execution platform that can be linked in
+as a library during the building of extensible programs.
 
-This is the Roboto Slab family, which can be used alongside the normal
-Roboto family and the Roboto Condensed family."
-gtk-update-icon-cache,工具,库, Icon theme caching utility," GTK+ can use the cache files created by gtk-update-icon-cache to avoid a lot of
-system call and disk seek overhead when the application starts. Since the
-format of the cache files allows them to be mmap()ed shared between multiple
-applications, the overall memory consumption is reduced as well."
-gtkspell,工具,库, On-the-fly spell checking for GtkTextView widgets," GtkSpell provides word-processor-style highlighting and replacement of
-misspelled words in a GtkTextView widget as you type. Right-clicking a
-misspelled word pops up a menu of suggested replacements."
-gvfs-gphoto2,服务,库, gphoto2 support for gvfs," This package provides support for reading and writing files on
+Install the guile package if you'd like to add extensibility to programs
+that you are developing."
+gvfs,服务,工具, Backends for the gio framework in GLib," The gvfs package provides backend implementations for the gio
+framework in GLib. It includes ftp, sftp, cifs."
+gvfs-client,库,工具, Client modules of backends for the gio framework in GLib," The gvfs package provides client modules of backend implementations for the gio
+framework in GLib."
+gvfs-gphoto2,服务,工具, gphoto2 support for gvfs," This package provides support for reading and writing files on
 PTP based cameras (Picture Transfer Protocol) and MTP based
 media players (Media Transfer Protocol) to applications using gvfs."
-hardlink,工具,库,Create a tree of hardlinks ,"hardlink is used to create a tree of hard links. It's used by kernel
-installation to dramatically reduce the amount of disk space used by each
-kernel package installed. "
-hawtjni,库,工具, Code generator that produces the JNI code," HawtJNI is a code generator that produces the JNI code needed to
-implement java native methods. It is based on the jnigen code generator
-that is part of the SWT Tools project which is used to generate all the
-JNI code which powers the eclipse platform."
-maven-hawtjni-plugin,库,工具, Use HawtJNI from a maven plugin, This package allows to use HawtJNI from a maven plugin.
-hostname,工具,服务,Utility to set/show the host name or domain name ,"This package provides commands which can be used to display the system's
-DNS name, and to display or set its hostname or NIS domain name. "
-hplip,工具,服务, HP Linux Imaging and Printing Project," The Hewlett-Packard Linux Imaging and Printing Project provides
-drivers for HP printers and multi-function peripherals."
-hplip-common,工具,库, Files needed by the HPLIP printer and scanner drivers, Files needed by the HPLIP printer and scanner drivers.
-hwdata,其它,库,Hardware identification and configuration data ,"hwdata contains various hardware identification and configuration data,
-such as the pci.ids and usb.ids databases. "
-ibus-hangul,工具,库, The Hangul engine for IBus input platform," The Hangul engine for IBus platform. It provides Korean input method from
-libhangul."
-ibus-libpinyin,工具,库, Intelligent Pinyin engine based on libpinyin for IBus," It includes a Chinese Pinyin input method and a Chinese ZhuYin (Bopomofo)
-input method based on libpinyin for IBus."
-ibus-m17n,工具,库, The M17N engine for IBus platform," M17N engine for IBus input platform. It allows input of many languages using
-the input table maps from m17n-db."
-ibus-table-chinese,工具,库, Chinese input tables for IBus," ibus-table-chinese is provides the infrastructure for Chinese input methods.
-Input tables themselves are in subpackages."
-ibus-table-chinese-cangjie,库,工具, Cangjie based input methods," Cangjie based input methods, includes:
-Cangjie3, Canjie5, and Cangjie big tables."
-ima-evm-utils,工具,库, IMA/EVM support utilities," The Trusted Computing Group(TCG) run-time Integrity Measurement Architecture
-(IMA) maintains a list of hash values of executables and other sensitive
-system files, as they are read or executed. These are stored in the file
-systems extended attributes. The Extended Verification Module (EVM) prevents
-unauthorized changes to these extended attributes on the file system.
-ima-evm-utils is used to prepare the file system for these extended attributes."
-inkscape,工具,库, Vector-based drawing program using SVG," Inkscape is a vector graphics editor, with capabilities similar to
-Illustrator, CorelDraw, or Xara X, using the W3C standard Scalable Vector
-Graphics (SVG) file format.  It is therefore a very useful tool for web
-designers and as an interchange format for desktop publishing.
+gvfs-mtp,服务,工具, MTP support for gvfs," This package provides support for reading and writing files on
+MTP based devices (Media Transfer Protocol) to applications using gvfs."
+highlight-gui,工具,库, GUI for the hihghlight source code formatter, A Qt-based GUI for the highlight source code formatter source.
+hplip-libs,库,工具, HPLIP libraries, Libraries needed by HPLIP.
+hunspell,工具,库, A spell checker and morphological analyzer library," Hunspell is a spell checker and morphological analyzer library and program
+designed for languages with rich morphology and complex word compounding or
+character encoding. Hunspell interfaces: Ispell-like terminal interface using
+Curses library, Ispell pipe interface, LibreOffice UNO module."
+mythes-nn,工具,库, Nynorsk thesaurus, Nynorsk thesaurus.
+hwloc,工具,服务,Portable Hardware Locality - portable abstraction of hierarchical architectures ,"The Portable Hardware Locality (hwloc) software package provides
+a portable abstraction (across OS, versions, architectures, ...)
+of the hierarchical topology of modern architectures, including
+NUMA memory nodes,  shared caches, processor sockets, processor cores
+and processing units (logical processors or ""threads""). It also gathers
+various system attributes such as cache and memory information. It primarily
+aims at helping applications with gathering information about modern
+computing hardware so as to exploit it accordingly and efficiently.
 
-Inkscape supports many advanced SVG features (markers, clones, alpha
-blending, etc.) and great care is taken in designing a streamlined
-interface. It is very easy to edit nodes, perform complex path operations,
-trace bitmaps and much more."
-ipa-selinux,库,服务, FreeIPA SELinux policy, Custom SELinux policy module for FreeIPA
-ipa-server,服务,工具, The IPA authentication server," IPA is an integrated solution to provide centrally managed Identity (users,
+hwloc may display the topology in multiple convenient formats.
+It also offers a powerful programming interface (C API) to gather information
+about the hardware, bind processes, and much more. "
+ibus-kkc,工具,库, Japanese Kana Kanji input method for ibus, A Japanese Kana Kanji Input Method Engine for ibus.
+ibus-table-chinese-quick,库,工具, Quick-to-learn input methods," Quick-to-learn is based on Cangjie input method,
+but only need Canjie's first and last word-root
+to form a character.
+
+Includes:
+Quick3, Quick5 and Quick-Classic,
+and Smart Cangjie 6."
+iio-sensor-proxy,服务,库, IIO accelerometer sensor to input device proxy, IIO accelerometer sensor to input device proxy.
+imsettings,工具,服务, Delivery framework for general Input Method configuration," IMSettings is a framework that delivers Input Method
+settings and applies the changes so they take effect
+immediately without any need to restart applications
+or the desktop.
+
+This package contains the core DBus services and some utilities."
+ipa-client,工具,服务, IPA authentication for use on clients," IPA is an integrated solution to provide centrally managed Identity (users,
 hosts, services), Authentication (SSO, 2FA), and Authorization
 (host access control, SELinux user roles, services). The solution provides
 features for further integration with Linux based clients (SUDO, automount)
 and integration with Active Directory based infrastructures (Trusts).
-If you are installing an IPA server, you need to install this package."
+If your network uses IPA for authentication, this package should be
+installed on every client machine.
+This package provides command-line tools for IPA administrators."
+ipa-server-trust-ad,服务,工具, Virtual package to install packages required for Active Directory trusts," Cross-realm trusts with Active Directory in IPA require working Samba 4
+installation. This package is provided for convenience to install all required
+dependencies at once."
+jack-audio-connection-kit,工具,服务, The Jack Audio Connection Kit," JACK is a low-latency audio server, written primarily for the Linux operating
+system. It can connect a number of different applications to an audio device, as
+well as allowing them to share audio between themselves. Its clients can run in
+their own processes (i.e. as a normal application), or can they can run within a
+JACK server (i.e. a ""plugin"").
+
+JACK is different from other audio server efforts in that it has been designed
+from the ground up to be suitable for professional audio work. This means that
+it focuses on two key areas: synchronous execution of all clients, and low
+latency operation."
 java-1.8.0-alibaba-dragonwell-headless-slowdebug,工具,库, Alibaba Dragonwell 1.8.0 Runtime Environment headless slowdebug, Alibaba Dragonwell 1.8.0 Runtime Environment headless slowdebug
-java-1.8.0-openjdk-headless-slowdebug,工具,库, OpenJDK 8 Runtime Environment unoptimised with full debugging on," The OpenJDK 8 runtime environment without audio and video support.
-This package is unoptimised with full debugging. Install only as needed and remove ASAP."
 java-11-alibaba-dragonwell-headless-slowdebug,工具,库, Alibaba Dragonwell11 Runtime Environment headless slowdebug, Alibaba Dragonwell11 Runtime Environment headless slowdebug
+java-11-alibaba-dragonwell-jmods,工具,库, Alibaba Dragonwell11 jmods, Alibaba Dragonwell11 jmods
 java-11-alibaba-dragonwell-slowdebug,工具,库, Alibaba Dragonwell11 Runtime Environment slowdebug, Alibaba Dragonwell11 Runtime Environment slowdebug
 java-11-alibaba-dragonwell-src-slowdebug,工具,库, Alibaba Dragonwell11 Runtime Environment src slowdebug, Alibaba Dragonwell11 Runtime Environment src slowdebug
-jctools,工具,库, Java Concurrency Tools for the JVM," This project aims to offer some concurrent data structures
-currently missing from the JDK:
-
-掳 SPSC/MPSC/SPMC/MPMC Bounded lock free queues
-掳 SPSC/MPSC Unbounded lock free queues
-掳 Alternative interfaces for queues
-掳 Offheap concurrent ring buffer for ITC/IPC purposes
-掳 Single Writer Map/Set implementations
-掳 Low contention stats counters
-掳 Executor"
-kata-containers,服务,工具, Kata Containers version 3.x repository," 
-Kata Containers version 3.x repository. Kata Containers is an open source
-project and community working to build a standard implementation of lightweight
-Virtual Machines (VMs) that feel and perform like containers, but provide the
-workload isolation and security advantages of VMs. https://katacontainers.io/.
-
-%gopkg"
-kernel,其它,库," The Linux kernel, based on version 5.10.112, heavily modified with backports"," This is the package which provides the Linux kernel for Alibaba Cloud Linux.
-It is based on upstream Linux at version 5.10.112 and maintains kABI
-compatibility of a set of approved symbols, however it is heavily modified with
-backports and fixes pulled from newer upstream Linux kernel releases. This means
-this is not a 5.10.112 kernel anymore: it includes several components which come
-from newer upstream linux versions, while maintaining a well tested and stable
-core. Some of the components/backports that may be pulled in are: changes like
-updates to the core kernel (eg.: scheduler, cgroups, memory management, security
-fixes and features), updates to block layer, supported filesystems, major driver
-updates for supported hardware in Alibaba Cloud Linux, enhancements for
-enterprise customers, etc."
-kf5-frameworkintegration,工具,库, KDE Frameworks 5 Tier 4 workspace and cross-framework integration plugins," Framework Integration is a set of plugins responsible for better integration of
-Qt applications when running on a KDE Plasma workspace.
-
-Applications do not need to link to this directly."
-kf5-kio-file-widgets,库,工具, Widgets for file-handling for KIO Framework," The KIOFileWidgets library provides the file selection dialog and
-its components."
-kf5-kpackage,库,工具, KDE Frameworks 5 Tier 2 library to load and install packages as plugins," KDE Frameworks 5 Tier 2 library to load and install non-binary packages as
-if they were plugins."
-kmod-kvdo,库,工具,Kernel Modules for Virtual Data Optimizer ,"Virtual Data Optimizer (VDO) is a device mapper target that delivers
-block-level deduplication, compression, and thin provisioning.
-
-This package provides the kernel modules for VDO. "
-krb5-workstation,工具,库,Kerberos 5 programs for use on workstations ,"Kerberos is a network authentication system. The krb5-workstation
-package contains the basic Kerberos programs (kinit, klist, kdestroy,
-kpasswd). If your network uses Kerberos, this package should be
-installed on every workstation. "
-kubernetes-kubeadm,工具,服务, Kubernetes tool for standing up clusters, Kubernetes tool for standing up clusters
+java-11-alibaba-dragonwell-static-libs-slowdebug,库,工具, Alibaba Dragonwell11 Runtime Environment static libs slowdebug, Alibaba Dragonwell11 Runtime Environment static libs slowdebug
+kde-filesystem,工具,库, KDE filesystem layout, This package provides some directories that are required/used by KDE.
+keentuned,服务,工具, KeenTune tuning tools, KeenTune tuning tools rpm package
+kf5-frameworkintegration-libs,库,工具, Runtime libraries for kf5-frameworkintegration., Runtime libraries for kf5-frameworkintegration..
+kf5-kauth,工具,库, KDE Frameworks 5 Tier 2 integration module to perform actions as privileged user, KAuth is a framework to let applications perform actions as a privileged user.
+kf5-kidletime,工具,库, KDE Frameworks 5 Tier 1 integration module for idle time detection, KDE Frameworks 5 Tier 1 integration module for idle time detection.
+kf5-knewstuff,工具,库, KDE Frameworks 5 Tier 3 module for downloading application assets," KDE Frameworks 5 Tier 3 module for downloading and sharing additional
+application data like plugins, themes, motives, etc."
+kf5-solid,工具,库, KDE Frameworks 5 Tier 1 integration module that provides hardware information," Solid provides the following features for application developers:
+ - Hardware Discovery
+ - Power Management
+ - Network Management"
+kpatch,服务,工具,Dynamic kernel patch manager ,"kpatch is a live kernel patch module manager.  It allows the user to manage
+a collection of binary kernel patch modules which can be used to dynamically
+patch the kernel without rebooting. "
+kubernetes-master,服务,工具, Kubernetes services for master host, Kubernetes services for master host
 kwin-common,服务,库, Common files for KWin X11 and KWin Wayland, Common files for KWin X11 and KWin Wayland.
 langtable,工具,库," Guessing reasonable defaults for locale, keyboard layout, territory, and language."," langtable is used to guess reasonable defaults for locale, keyboard layout,
 territory, and language, if part of that information is already known. For
 example, guess the territory and the keyboard layout if the language
 is known or guess the language and keyboard layout if the territory is
 already known."
-lcms2,工具,库, Color Management Engine," LittleCMS intends to be a small-footprint, speed optimized color management
-engine in open source form. LCMS2 is the current version of LCMS, and can be
-parallel installed with the original (deprecated) lcms."
-ledmon,工具,库,Enclosure LED Utilities ,"The ledmon and ledctl are user space applications design to control LED
-associated with each slot in an enclosure or a drive bay. There are two
-types of system: 2-LED system (Activity LED, Status LED) and 3-LED system
-(Activity LED, Locate LED, Fail LED). User must have root privileges to
-use this application. "
-libguestfs-appliance,库,工具, Appliance for libguestfs, libguestfs-appliance provides the appliance used by libguestfs.
-libguestfs-rescue,库,工具, Additional tools for virt-rescue," This adds additional tools to use inside the virt-rescue shell,
-such as ssh, network utilities, editors and debugging utilities."
-libisoburn,库,工具, Library to enable creation and expansion of ISO-9660 filesystems," Libisoburn is a front-end for libraries libburn and libisofs which
-enables creation and expansion of ISO-9660 filesystems on all CD/
-DVD/BD media supported by libburn. This includes media like DVD+RW,
-which do not support multi-session management on media level and
-even plain disk files or block devices. Price for that is thorough
-specialization on data files in ISO-9660 filesystem images. And so
-libisoburn is not suitable for audio (CD-DA) or any other CD layout
-which does not entirely consist of ISO-9660 sessions."
-libkcapi-hmaccalc,工具,库, Drop-in replacements for hmaccalc provided by the libkcapi package," Provides drop-in replacements for sha*hmac tools (from package
-hmaccalc) using libkcapi."
-libkkc-data,库,工具, Language model data for libkkc," The libkkc-data package contains the language model data that libkkc uses
-at run time."
-liblouis,库,工具, Braille translation and back-translation library," Liblouis is an open-source braille translator and back-translator named in
-honor of Louis Braille. It features support for computer and literary braille,
-supports contracted and uncontracted translation for many languages and has
-support for hyphenation. New languages can easily be added through tables that
-support a rule- or dictionary based approach. Liblouis also supports math
-braille (Nemeth and Marburg).
+libcanberra,库,服务, Portable Sound Event Library," A small and lightweight implementation of the XDG Sound Theme Specification
+(http://0pointer.de/public/sound-theme-spec.html)."
+libcgroup-tools,工具,库,"Command-line utility programs, services and daemons for libcgroup ","This package contains command-line programs, services and a daemon for
+manipulating control groups using the libcgroup library. "
+libguestfs-tools,工具,库, System administration tools for virtual machines," This package contains miscellaneous system administrator command line
+tools for virtual machines.
 
-Liblouis has features to support screen-reading programs. This has led to its
-use in two open-source screen readers, NVDA and Orca. It is also used in some
-commercial assistive technology applications for example by ViewPlus.
+Guestfish is the Filesystem Interactive SHell, for accessing and
+modifying virtual machine disk images from the command line and shell
+scripts.
 
-Liblouis is based on the translation routines in the BRLTTY screen reader for
-Linux. It has, however, gone far beyond these routines."
+The guestmount command lets you mount guest filesystems on the host
+using FUSE and libguestfs.
+
+Virt-alignment-scan scans virtual machines looking for partition
+alignment problems.
+
+Virt-builder is a command line tool for rapidly making disk images
+of popular free operating systems.
+
+Virt-cat is a command line tool to display the contents of a file in a
+virtual machine.
+
+Virt-copy-in and virt-copy-out are command line tools for uploading
+and downloading files and directories to and from virtual machines.
+
+Virt-customize is a command line tool for customizing virtual machine
+disk images.
+
+Virt-df is a command line tool to display free space on virtual
+machine filesystems.  Unlike other tools, it doesn__ just display the
+amount of space allocated to a virtual machine, but can look inside
+the virtual machine to see how much space is really being used.  It is
+like the df(1) command, but for virtual machines, except that it also
+works for Windows virtual machines.
+
+Virt-diff shows the differences between virtual machines.
+
+Virt-edit is a command line tool to edit the contents of a file in a
+virtual machine.
+
+Virt-filesystems is a command line tool to display the filesystems,
+partitions, block devices, LVs, VGs and PVs found in a disk image
+or virtual machine.  It replaces the deprecated programs
+virt-list-filesystems and virt-list-partitions with a much more
+capable tool.
+
+Virt-format is a command line tool to erase and make blank disks.
+
+Virt-get-kernel extracts a kernel/initrd from a disk image.
+
+Virt-inspector examines a virtual machine and tries to determine the
+version of the OS, the kernel version, what drivers are installed,
+whether the virtual machine is fully virtualized (FV) or
+para-virtualized (PV), what applications are installed and more.
+
+Virt-log is a command line tool to display the log files from a
+virtual machine.
+
+Virt-ls is a command line tool to list out files in a virtual machine.
+
+Virt-make-fs is a command line tool to build a filesystem out of
+a collection of files or a tarball.
+
+Virt-rescue provides a rescue shell for making interactive,
+unstructured fixes to virtual machines.
+
+Virt-resize can resize existing virtual machine disk images.
+
+Virt-sparsify makes virtual machine disk images sparse (thin-provisioned).
+
+Virt-sysprep lets you reset or unconfigure virtual machines in
+preparation for cloning them.
+
+Virt-tail follows (tails) a log file within a guest, like 'tail -f'.
+
+Virt-tar-in and virt-tar-out are archive, backup and upload tools
+for virtual machines.  These replace the deprecated program virt-tar.
+
+Virt-win-reg lets you look at and modify the Windows Registry of
+Windows virtual machines."
+libhbalinux,库,工具,FC-HBAAPI implementation using scsi_transport_fc interfaces ,SNIA HBAAPI vendor library built on top of the scsi_transport_fc interfaces. 
 libmemcached,工具,库, Client library and command line tools for memcached server," libmemcached is a C/C++ client library and tools for the memcached server
 (http://memcached.org/). It has been designed to be light on memory
 usage, and provide full access to server side methods.
@@ -419,68 +406,55 @@ memrm       Remove a key(s) from the server
 memslap     Generate testing loads on a memcached cluster
 memstat     Dump the stats of your servers to standard output
 memtouch    Touches a key"
-libreport-plugin-reportuploader,工具,库, libreport's reportuploader plugin, Plugin to report bugs into anonymous FTP site associated with ticketing system.
-libsecret,库,工具,Library for storing and retrieving passwords and other secrets ,"libsecret is a library for storing and retrieving passwords and other secrets.
-It communicates with the ""Secret Service"" using DBus. gnome-keyring and
-KSecretService are both implementations of a Secret Service. "
-libsepol,库,工具, SELinux binary policy manipulation library," Security-enhanced Linux is a feature of the Linux庐 kernel and a number
-of utilities with enhanced security functionality designed to add
-mandatory access controls to Linux.  The Security-enhanced Linux
-kernel contains new architectural components originally developed to
-improve the security of the Flask operating system. These
-architectural components provide general support for the enforcement
-of many kinds of mandatory access control policies, including those
-based on the concepts of Type Enforcement庐, Role-based Access
-Control, and Multi-level Security.
+libproxy-bin,工具,库, Binary to test libproxy, The libproxy-bin package contains the proxy binary for libproxy
+libreport,库,工具, Generic library for reporting various problems," Libraries providing API for reporting different problems in applications
+to different bug targets like Bugzilla, ftp, trac, etc..."
+libreport-rhel,库,工具, Default configuration for reporting bugs via Red Hat infrastructure," Default configuration for reporting bugs via Red Hat infrastructure
+used to easily configure the reporting process for Red Hat systems. Just
+install this package and you're done."
+libsmi,库,工具, A library to access SMI MIB information," Libsmi is a C library to access MIB module information through
+a well defined API that hides the nasty details of locating
+and parsing SMIv1/v2 MIB modules.
 
-libsepol provides an API for the manipulation of SELinux binary policies.
-It is used by checkpolicy (the policy compiler) and similar tools, as well
-as by programs like load_policy that need to perform specific transformations
-on binary policies such as customizing policy boolean settings."
-libstoragemgmt-smis-plugin,库,工具,Files for SMI-S generic array support for libstoragemgmt ,"The libstoragemgmt-smis-plugin package contains plug-in for generic SMI-S array
+This package contains tools to check, dump, and convert MIB
+definitions and a steadily maintained and revised archive
+of all IETF and IANA maintained standard MIB modules."
+libtiff-tools,工具,库, Command-line utility programs for manipulating TIFF files," This package contains command-line programs for manipulating TIFF format
+image files using the libtiff library."
+libutempter,库,工具,A privileged helper for utmp/wtmp updates ,"This library provides interface for terminal emulators such as
+screen and xterm to record user sessions to utmp and wtmp files. "
+libvirt-client,工具,库, Client side utilities of the libvirt library," The client binaries needed to access the virtualization
+capabilities of recent versions of Linux (and other OSes)."
+libzip-tools,工具,库, Command line tools from libzip," The libzip-tools package provides command line tools split off libzip:
+- zipcmp
+- zipmerge
+- ziptool"
+libertas-sd8686-firmware,其它,库,Firmware for Marvell Libertas SD 8686 Network Adapter ,Firmware for Marvell Libertas SD 8686 Network Adapter 
+libertas-usb8388-olpc-firmware,其它,库,OLPC firmware for Marvell Libertas USB 8388 Network Adapter ,"Firmware for Marvell Libertas USB 8388 Network Adapter with OLPC mesh network
 support. "
-python3-libsvm,库,工具, Python3 tools and interfaces for libsvm," Python3 tools and interfaces for libsvm.
-Install this package if you want to develop
-programs with libsvm in Python3."
-libwmf,库,工具, Windows MetaFile Library, A library for reading and converting Windows MetaFile vector graphics (WMF).
-linuxdoc-tools,工具,库, A text formatting package based on SGML," Linuxdoc-tools is a text formatting suite based on SGML (Standard
-Generalized Markup Language), using the LinuxDoc document type.
-Linuxdoc-tools allows you to produce LaTeX, HTML, GNU info, LyX, RTF,
-plain text (via groff), and other format outputs from a single SGML
-source.  Linuxdoc-tools is intended for writing technical software
-documentation."
-libertas-sd8787-firmware,库,其它,Firmware for Marvell Libertas SD 8787 Network Adapter ,Firmware for Marvell Libertas SD 8787 Network Adapter 
-lldb,工具,库, Next generation high-performance debugger," LLDB is a next generation, high-performance debugger. It is built as a set
-of reusable components which highly leverage existing libraries in the
-larger LLVM Project, such as the Clang expression parser and LLVM
-disassembler."
+lld,工具,库, The LLVM Linker, The LLVM project linker.
 llvm,工具,库, The Low Level Virtual Machine," LLVM is a compiler infrastructure designed for compile-time, link-time,
 runtime, and idle-time optimization of programs from arbitrary programming
 languages. The compiler infrastructure includes mirror sets of programming
 tools as well as libraries with equivalent functionality."
-lorax-lmc-virt,工具,服务, livemedia-creator libvirt dependencies, Additional dependencies required by livemedia-creator when using it with qemu-kvm.
-lorax-templates-rhel,其它,库, RHEL8 build templates for lorax and livemedia-creator," RHEL-specific Lorax templates for creating the boot.iso and live isos are
-placed in /usr/share/lorax/templates.d/80-rhel"
-lpsolve,工具,库, A Mixed Integer Linear Programming (MILP) solver," Mixed Integer Linear Programming (MILP) solver lpsolve solves pure linear,
-(mixed) integer/binary, semi-continuous and special ordered sets (SOS) models."
-lrzsz,工具,库, The lrz and lsz modem communications programs," Lrzsz (consisting of lrz and lsz) is a cosmetically modified
-zmodem/ymodem/xmodem package built from the public-domain version of
-the rzsz package. Lrzsz was created to provide a working GNU
-copylefted Zmodem solution for Linux systems."
-mariadb-backup,服务,工具, The mariabackup tool for physical online backups," MariaDB Backup is an open source tool provided by MariaDB for performing
-physical online backups of InnoDB, Aria and MyISAM tables.
-For InnoDB, ""hot online"" backups are possible."
-mariadb-pam,服务,库, PAM authentication plugin for the MariaDB server, PAM authentication server-side plugin for MariaDB.
-maven-monitor,库,工具, Compatibility Maven monitor artifact, Maven monitor artifact
-maven-plugin-registry,工具,库, Compatibility Maven plugin registry artifact, Maven plugin registry artifact
-maven-artifact-resolver,库,工具, Maven Artifact Resolution API, Provides a component for plugins to easily resolve project dependencies.
+lorax-templates-generic,其它,工具, Generic build templates for lorax and livemedia-creator," Lorax templates for creating the boot.iso and live isos are placed in
+/usr/share/lorax/templates.d/99-generic"
+mailcap,工具,库,Helper application and MIME type associations for file types ,"The mailcap file is used by the metamail program.  Metamail reads the
+mailcap file to determine how it should display non-text or multimedia
+material.  Basically, mailcap associates a particular type of file
+with a particular program that a mail agent or other program can call
+in order to handle the file.  Mailcap should be installed to allow
+certain programs to be able to handle non-text files.
+
+Also included in this package is the mime.types file which contains a
+list of MIME types and their filename ""extension"" associations, used
+by several applications e.g. to determine MIME types for filenames. "
+mariadb-common,服务,工具, The shared files required by server and client," The package provides the essential shared files for any MariaDB program.
+You will need to install this package to use any other MariaDB package."
 maven-doxia-module-rtf,工具,库, RTF module for maven-doxia, This package provides RTF module for maven-doxia.
-maven-plugins-pom,库,工具, Maven Plugins POM," This package provides Maven Plugins parent POM used by different
-Apache Maven plugins."
-maven-resolver,库,工具, Apache Maven Artifact Resolver library," Apache Maven Artifact Resolver is a library for working with artifact
-repositories and dependency resolution. Maven Artifact Resolver deals with the
-specification of local repository, remote repository, developer workspaces,
-artifact transports and artifact resolution."
+maven-enforcer,工具,库, Maven Enforcer, Enforcer is a build rule execution framework.
+maven-enforcer-plugin,工具,库, Enforcer Rules, This component contains the standard Enforcer Rules.
+maven-resolver-transport-http,库,工具, Maven Artifact Resolver Transport HTTP, A transport implementation for repositories using http:// and https:// URLs.
 maven-failsafe-plugin,库,工具, Maven plugin for running integration tests," The Failsafe Plugin is designed to run integration tests while the
 Surefire Plugins is designed to run unit. The name (failsafe) was
 chosen both because it is a synonym of surefire and because it implies
@@ -496,19 +470,38 @@ phases of the build lifecycle to execute the integration tests of an
 application. The Failsafe Plugin will not fail the build during the
 integration-test phase thus enabling the post-integration-test phase
 to execute."
-maven-surefire,库,工具, Test framework project, Surefire is a test framework project.
-mecab,工具,库, Yet Another Part-of-Speech and Morphological Analyzer," MeCab is a open source morphological analyzer which uses
-CRF (Conditional Random Fields) as the estimation of parameters.
+maven-wagon-http-shared,工具,库, http-shared module for maven-wagon, http-shared module for maven-wagon.
+mc,工具,库, User-friendly text console file manager and visual shell," Midnight Commander is a visual shell much like a file manager, only with
+many more features. It is a text mode application, but it also includes
+mouse support. Midnight Commander's best features are its ability to FTP,
+view tar and zip files, and to poke into RPMs for specific files."
+mcpp,工具,库, Alternative C/C++ preprocessor," C/C++ preprocessor defines and expands macros and processes '#if',
+'#include' and some other directives.
 
-NOTE:
-You have to install MeCab dictionary rpm to make use
-of MeCab."
-metacity,服务,工具, Unobtrusive window manager," Metacity is a window manager that integrates nicely with the GNOME desktop.
-It strives to be quiet, small, stable, get on with its job, and stay out of
-your attention."
-mingw32-filesystem,工具,库, MinGW cross compiler base filesystem and environment for the win32 target," This package contains the base filesystem layout, RPM macros and
-environment for all MinGW packages."
-mingw64-cpp,工具,库, MinGW Windows cross-C Preprocessor for the win64 target., MinGW Windows cross-C Preprocessor for the win64 target
+MCPP is an alternative C/C++ preprocessor with the highest conformance.
+It supports multiple standards: K&R, ISO C90, ISO C99, and ISO C++98.
+MCPP is especially useful for debugging a source program which uses
+complicated macros and also useful for checking portability of a source.
+
+Though mcpp could be built as a replacement of GCC's resident
+preprocessor or as a stand-alone program without using library build of
+mcpp, this package installs only a program named 'mcpp' which links
+shared library of mcpp and behaves independent from GCC."
+mecab-ipadic-EUCJP,库,工具, IPA dictionary for Mecab with encoded by EUC-JP," 
+MeCab IPA is a dictionary for MeCab using CRF estimation
+based on IPA corpus.
+This dictionary is for EUC-JP use."
+mesa-filesystem,库,工具, Mesa driver filesystem, Mesa driver filesystem.
+microcode_ctl,工具,服务,CPU microcode updates for Intel x86 processors ,"This package provides microcode update files for Intel x86 and x86_64 CPUs.
+
+The microcode update is volatile and needs to be uploaded on each system
+boot i.e. it isn't stored on a CPU permanently; reboot and it reverts
+back to the old microcode.
+
+Package name ""microcode_ctl"" is historical, as the binary with the same name
+is no longer used for microcode upload and, as a result, no longer provided. "
+micropipenv,工具,库, A simple wrapper around pip to support Pipenv and Poetry files," A lightweight wrapper for pip to support Pipenv and Poetry lock files or
+converting them to pip-tools compatible output."
 mlocate,工具,服务,An utility for finding files by name ,"mlocate is a locate/updatedb implementation.  It keeps a database of
 all existing files and allows you to lookup files by name.
 
@@ -519,45 +512,58 @@ mod_fcgid,库,服务, FastCGI interface module for Apache 2," mod_fcgid is a bin
 mod_fcgid has a new process management strategy, which concentrates on reducing
 the number of fastcgi servers, and kicking out corrupt fastcgi servers as soon
 as possible."
-ndctl,服务,库,"Manage ""libnvdimm"" subsystem devices (Non-volatile Memory) ","Utility library for managing the ""libnvdimm"" subsystem.  The ""libnvdimm""
-subsystem defines a kernel device model and control message interface for
-platform NVDIMM resources like those defined by the ACPI 6+ NFIT (NVDIMM
-Firmware Interface Table). "
-nm-connection-editor,工具,库, A network connection configuration editor for NetworkManager," This package contains a network configuration editor and Bluetooth modem
-utility for use with NetworkManager."
-python3-nftables,库,工具, Python module providing an interface to libnftables, The nftables python module provides an interface to libnftables via ctypes.
-nmstate,库,工具, Declarative network manager API," Nmstate is a library with an accompanying command line tool that manages host
-networking settings in a declarative manner and aimed to satisfy enterprise
-needs to manage host networking through a northbound declarative API and multi
-provider support on the southbound."
-nodejs-nodemon,工具,服务, Simple monitor script for use during development of a node.js app," Simple monitor script for use during development of a node.js app.
+mousetweaks,工具,服务, Mouse accessibility support for the GNOME desktop," The Mousetweaks package provides mouse accessibility enhancements for
+the GNOME desktop, such as performing various clicks without using any
+hardware button. The options can be accessed through the Accessibility
+tab of the Mouse Preferences of GNOME Control Center or through command-line."
+mozvoikko,工具,库, Finnish Voikko spell-checker extension for Mozilla programs," This is mozvoikko, an extension for Mozilla programs for using the Finnish
+spell-checker Voikko."
+mpv,工具,库, Movie player playing most video formats and DVDs," Mpv is a movie player based on MPlayer and mplayer2. It supports a wide variety
+of video file formats, audio and video codecs, and subtitle types. Special
+input URL types are available to read input from a variety of sources other
+than disk files. Depending on platform, a variety of different video and audio
+output methods are supported."
+mtx,工具,库, SCSI media changer control program," The MTX program controls the robotic mechanism in autoloaders and tape
+libraries such as the HP SureStore DAT 40x6, Exabyte EZ-17, and
+Exabyte 220. This program is also reported to work with a variety of
+other tape libraries and autochangers from ADIC, Tandberg/Overland,
+Breece Hill, HP, and Seagate.
 
-For use during development of a node.js based application.
+If you have a backup tape device capable of handling more than one
+tape at a time, you should install MTX."
+mysql-errmsg,服务,库, The error messages files required by MySQL server, The package provides error messages files for the MySQL daemon
+nbdkit-nbd-plugin,工具,库, NBD proxy / forward plugin for nbdkit," This package lets you forward NBD connections from nbdkit
+to another NBD server."
+nbdkit-python-plugin,库,工具, Python 3 plugin for nbdkit, This package lets you write Python 3 plugins for nbdkit.
+net-snmp,库,服务, A collection of SNMP protocol tools and libraries," SNMP (Simple Network Management Protocol) is a protocol used for
+network management. The NET-SNMP project includes various SNMP tools:
+an extensible agent, an SNMP library, tools for requesting or setting
+information from SNMP agents, tools for generating and handling SNMP
+traps, a version of the netstat command which uses SNMP, and a Tk/Perl
+mib browser. This package contains the snmpd and snmptrapd daemons,
+documentation, etc.
 
-nodemon will watch the files in the directory in which nodemon
-was started, and if any files change, nodemon will automatically
-restart your node application.
-
-nodemon does not require any changes to your code or method of
-development. nodemon simply wraps your node application and keeps
-an eye on any files that have changed. Remember that nodemon is a
-replacement wrapper for node, think of it as replacing the word ""node""
-on the command line when you run your script."
-ntfsprogs,工具,库, NTFS filesystem libraries and utilities," The ntfsprogs package currently consists of a library and utilities such as
-mkntfs, ntfscat, ntfsls, ntfsresize, and ntfsundelete (for a full list of
-included utilities see man 8 ntfsprogs after installation)."
-ntpstat,工具,服务, Utility to print NTP synchronization status," This package contains a script which prints a brief summary of the system
-clock's synchronisation status when the ntpd or chronyd daemon is running."
-numactl,工具,库,Library for tuning for Non Uniform Memory Access machines ,"Simple NUMA policy support. It consists of a numactl program to run
-other programs with a specific NUMA policy. "
-nydus-rs,服务,工具, Nydus image service," Nydus - the Dragonfly image service, providing fast, secure and easy access to container images."
+You will probably also want to install the net-snmp-utils package,
+which contains NET-SNMP utilities."
+nginx-mod-http-image-filter,库,服务, Nginx HTTP image filter module, Nginx HTTP image filter module.
+nkf,库,工具, A Kanji code conversion filter," Nkf is a Kanji code converter for terminals, hosts, and networks. Nkf
+converts input Kanji code to 7-bit JIS, MS-kanji (shifted-JIS) or
+EUC."
+nodejs,库,工具, JavaScript runtime," Node.js is a platform built on Chrome's JavaScript runtime
+for easily building fast, scalable network applications.
+Node.js uses an event-driven, non-blocking I/O model that
+makes it lightweight and efficient, perfect for data-intensive
+real-time applications that run across distributed devices."
 objectweb-asm,库,工具, Java bytecode manipulation and analysis framework," ASM is an all purpose Java bytecode manipulation and analysis
 framework.  It can be used to modify existing classes or dynamically
 generate classes, directly in binary form.  Provided common
 transformations and analysis algorithms allow to easily assemble
 custom complex transformations and code analysis tools."
+ocaml-findlib,工具,库, Objective CAML package manager and build helper, Objective CAML package manager and build helper.
 oceanbase-ce,服务,库, OceanBase CE is a distributed relational database, OceanBase CE is a distributed relational database
-ongres-scram-client,工具,库, Client for ongres-scram, This package contains the client for ongres-scram
+opa-fm,工具,服务,Intel Omni-Path Fabric Management Software ,"opa-fm contains Intel Omni-Path fabric management applications. This
+includes: the Subnet Manager, Baseboard Manager, Performance Manager,
+Fabric Executive, and some fabric management tools. "
 openbox,服务,工具, A highly configurable and standards-compliant X11 window manager," Openbox is a window manager designed explicity for standards-compliance and
 speed. It is fast, lightweight, and heavily configurable (using XML for its
 configuration data). It has many features that make it unique among window
@@ -568,112 +574,143 @@ For a full list of the FreeDesktop.org standards with which it is compliant,
 please see the COMPLIANCE file in the included documentation of this package.
 For a graphical configuration editor, you'll need to install the obconf
 package."
-openldap-clients,工具,库,LDAP client utilities ,"OpenLDAP is an open-source suite of LDAP (Lightweight Directory Access
+openldap-servers,服务,库, LDAP server," OpenLDAP is an open-source suite of LDAP (Lightweight Directory Access
 Protocol) applications and development tools. LDAP is a set of
 protocols for accessing directory services (usually phone book style
 information, but other information is possible) over the Internet,
 similar to the way DNS (Domain Name System) information is propagated
-over the Internet. The openldap-clients package contains the client
-programs needed for accessing and modifying OpenLDAP directories. "
-openssl-perl,工具,库,Perl scripts provided with OpenSSL ,"OpenSSL is a toolkit for supporting cryptography. The openssl-perl
-package provides Perl scripts for converting certificates and keys
-from other formats to the formats used by the OpenSSL toolkit. "
-orc,库,工具, The Oil Run-time Compiler," Orc is a library and set of tools for compiling and executing
-very simple programs that operate on arrays of data.  The ""language""
-is a generic assembly language that represents many of the features
-available in SIMD architectures, including saturated addition and
-subtraction, and many arithmetic operations."
-osbuild-composer-core,工具,库, The core osbuild-composer binary, The core osbuild-composer binary. This is suitable both for spawning in containers and by systemd.
-osbuild-composer-dnf-json,工具,库, The dnf-json binary used by osbuild-composer and the workers, The dnf-json binary used by osbuild-composer and the workers.
-p7zip,工具,库, Very high compression ratio file archiver," p7zip is a port of 7za.exe for Unix. 7-Zip is a file archiver with a very high
-compression ratio. The original version can be found at http://www.7-zip.org/."
-pcm,库,工具, Processor Counter Monitor," 
-Processor Counter Monitor (PCM) is an application programming
-interface (API) and a set of tools based on the API to monitor
-performance and energy metrics of Intel(r) Core(tm), Xeon(r), Atom(tm)
-and Xeon Phi(tm) processors. PCM works on Linux, Windows, Mac OS X,
-FreeBSD and DragonFlyBSD operating systems."
-pcp-system-tools,工具,服务, Performance Co-Pilot (PCP) System and Monitoring Tools," This PCP module contains additional system monitoring tools written
-in the Python language."
-pcsc-lite,库,服务, PC/SC Lite smart card framework and applications," The purpose of PC/SC Lite is to provide a Windows(R) SCard interface
-in a very small form factor for communicating to smartcards and
-readers.  PC/SC Lite uses the same winscard API as used under
-Windows(R).  This package includes the PC/SC Lite daemon, a resource
-manager that coordinates communications with smart card readers and
-smart cards that are connected to the system, as well as other command
-line tools."
-apcu-panel,服务,工具, APCu control panel," This package provides the APCu control panel, with Apache
-configuration, available on http://localhost/apcu-panel/"
-pkgconf-m4,工具,库, m4 macros for pkgconf," This package includes m4 macros used to support PKG_CHECK_MODULES
-when using pkgconf with autotools."
-plasma-breeze-common,工具,库, Common files shared between KDE 4 and Plasma 5 versions of the Breeze style, Common files shared between KDE 4 and Plasma 5 versions of the Breeze style.
-plotutils,工具,库, GNU vector and raster graphics utilities and libraries," The GNU plotutils package contains software for both programmers and
-technical users. Its centerpiece is libplot, a powerful C/C++ function
-library for exporting 2-D vector graphics in many file formats, both
-vector and raster. It can also do vector graphics animations. Besides
-libplot, the package contains command-line programs for plotting
-scientific data. Many of them use libplot to export graphics"
-plymouth-scripts,工具,服务, Plymouth related scripts," This package contains scripts that help integrate Plymouth with
-the system."
-policycoreutils-newrole,工具,服务,The newrole application for RBAC/MLS ,"RBAC/MLS policy machines require newrole as a way of changing the role
-or level of a logged in user. "
+over the Internet. This package contains the slapd server and related files."
+opensc,库,工具,Smart card library and applications ,"OpenSC provides a set of libraries and utilities to work with smart cards. Its
+main focus is on cards that support cryptographic operations, and facilitate
+their use in security applications such as authentication, mail encryption and
+digital signatures. OpenSC implements the PKCS#11 API so applications
+supporting this API (such as Mozilla Firefox and Thunderbird) can use it. On
+the card OpenSC implements the PKCS#15 standard and aims to be compatible with
+every software/card that does so, too. "
+openscap-scanner,工具,库, OpenSCAP Scanner Tool (oscap)," The openscap-scanner package contains oscap command-line tool. The oscap
+is configuration and vulnerability scanner, capable of performing
+compliance checking using SCAP content."
+openssh-keycat,服务,工具,A mls keycat backend for openssh ,"OpenSSH mls keycat is backend for using the authorized keys in the
+openssh in the mls mode. "
+orc-compiler,工具,库, Orc compiler," The Orc compiler, to produce optimized code."
+orca,工具,库, Assistive technology for people with visual impairments," Orca is a screen reader that provides access to the graphical desktop via
+user-customizable combinations of speech and/or braille. Orca works with
+applications and toolkits that support the assistive technology service
+provider interface (AT-SPI), e.g. the GNOME desktop."
+os-maven-plugin,库,工具, Maven plugin for generating platform-dependent properties," os-maven-plugin is a Maven extension/plugin that generates various
+useful platform-dependent project properties normalized from
+${os.name} and ${os.arch}.
+
+${os.name} and ${os.arch} are often subtly different between JVM and
+operating system versions or they sometimes contain machine-unfriendly
+characters such as whitespaces. This plugin tries to remove such
+fragmentation so that you can determine the current operating system
+and architecture reliably."
+p11-kit-server,服务,工具,Server and client commands for p11-kit ,"The p11-kit-server package contains command line tools that enable to
+export PKCS#11 modules through a Unix domain socket.  Note that this
+feature is still experimental. "
+p7zip-plugins,工具,库, Additional plugins for p7zip," Additional plugins that can be used with 7z to extend its abilities.
+This package contains also a virtual file system for Midnight Commander."
+pam,工具,库,An extensible library which provides authentication for applications ,"PAM (Pluggable Authentication Modules) is a system security tool that
+allows system administrators to set authentication policy without
+having to recompile programs that handle authentication. "
+passwd,工具,服务,An utility for setting or changing passwords using PAM ,"This package contains a system utility (passwd) which sets
+or changes passwords, using PAM (Pluggable Authentication
+Modules) library. "
+pcp-import-collectl2pcp,服务,工具, Performance Co-Pilot tools for importing collectl log files into PCP archive logs," Performance Co-Pilot (PCP) front-end tools for importing collectl data
+into standard PCP archive logs for replay with any PCP monitoring tool."
+pcp-import-sar2pcp,服务,工具, Performance Co-Pilot tools for importing sar data into PCP archive logs," Performance Co-Pilot (PCP) front-end tools for importing sar data
+into standard PCP archive logs for replay with any PCP monitoring tool."
+pcp-pmda-smart,服务,工具, Performance Co-Pilot (PCP) metrics for S.M.A.R.T values," This package contains the PCP Performance Metric Domain Agent (PMDA) for
+collecting metrics of disk S.M.A.R.T values making use of data from the
+smartmontools package."
+perftest,工具,库,IB Performance Tests ,"Perftest is a collection of simple test programs designed to utilize
+RDMA communications and provide performance numbers over those RDMA
+connections.  It does not work on normal TCP/IP networks, only on
+RDMA networks. "
+php-pear,库,服务, PHP Extension and Application Repository framework," PEAR is a framework and distribution system for reusable PHP
+components.  This package contains the basic PEAR components."
+pidgin-sipe,工具,服务, Pidgin protocol plugin to connect to MS Office Communicator," A third-party plugin for the Pidgin multi-protocol instant messenger.
+It implements the extended version of SIP/SIMPLE used by various products:
+
+    * Skype for Business
+    * Microsoft Office 365
+    * Microsoft Business Productivity Online Suite (BPOS)
+    * Microsoft Lync Server
+    * Microsoft Office Communications Server (OCS 2007/2007 R2)
+    * Microsoft Live Communications Server (LCS 2003/2005)
+
+With this plugin you should be able to replace your Microsoft Office
+Communicator client with Pidgin.
+
+This package provides the icon set for Pidgin."
+polardb,服务,工具, An open-source database system based on PostgreSQL., PolarDB for PostgreSQL (PolarDB for short) is an open-source database system based on PostgreSQL.
+policycoreutils-python-utils,工具,库, SELinux policy core python utilities," The policycoreutils-python-utils package contains the management tools use to manage
+an SELinux environment."
+portreserve,工具,服务,TCP port reservation utility ,"The portreserve program aims to help services with well-known ports that
+lie in the portmap range.  It prevents portmap from a real service's port
+by occupying it itself, until the real service tells it to release the
+port (generally in the init script). "
+postfix,服务,工具,Postfix Mail Transport Agent ,Postfix is a Mail Transport Agent (MTA). 
 postfix-mysql,库,工具, Postfix MySQL map support," This provides support for MySQL maps in Postfix. If you plan to use MySQL
 maps with Postfix, you need this."
-postfix-pgsql,库,工具, Postfix PostgreSQL map support," This provides support for PostgreSQL  maps in Postfix. If you plan to use
-PostgreSQL maps with Postfix, you need this."
-postgresql-test-rpm-macros,库,服务, Convenience RPM macros for build-time testing against PostgreSQL server," This package is meant to be added as BuildRequires: dependency of other packages
-that want to run build-time testsuite against running PostgreSQL server."
-python3-idle,库,工具, A basic graphical development environment for Python," IDLE is Python__ Integrated Development and Learning Environment.
+pygtk2,库,工具, Python bindings for GTK+," PyGTK is an extension module for Python that gives you access to the GTK+
+widget set.  Just about anything you can write in C with GTK+ you can write
+in Python with PyGTK (within reason), but with all the benefits of using a
+high-level scripting language."
+python2-pip,工具,库, A tool for installing and managing Python 2 packages," pip is a package management system used to install and manage software packages
+written in Python. Many packages can be found in the Python Package Index
+(PyPI). pip is a recursive acronym that can stand for either ""Pip Installs
+Packages"" or ""Pip Installs Python""."
+python3-pip,库,工具, A tool for installing and managing Python3 packages," pip is a package management system used to install and manage software packages
+written in Python. Many packages can be found in the Python Package Index
+(PyPI). pip is a recursive acronym that can stand for either ""Pip Installs
+Packages"" or ""Pip Installs Python""."
+python3-rpmfluff,库,工具," Lightweight way of building RPMs, and sabotaging them"," rpmfluff provides a python library for building RPM packages, and
+sabotaging them so they are broken in controlled ways.
 
-IDLE has the following features: Python shell window (interactive
-interpreter) with colorizing of code input, output, and error messages;
-multi-window text editor with multiple undo, Python colorizing,
-smart indent, call tips, auto completion, and other features;
-search within any window, replace within editor windows, and
-search through multiple files (grep); debugger with persistent
-breakpoints, stepping, and viewing of global and local namespaces;
-configuration, browsers, and other dialogs."
-python3-argcomplete,库,工具, Bash tab completion for argparse," Argcomplete provides easy, extensible command line tab completion of
-arguments for your Python script.
-
-It makes two assumptions:
-
- * You are using bash as your shell
- * You are using argparse to manage your command line arguments/options
-
-Argcomplete is particularly useful if your program has lots of
-options or subparsers, and if your program can dynamically suggest
-completions for your argument/option values (for example, if the user
-is browsing resources over the network).
+It is intended for use when validating package analysis tools such as RPM lint.
+It can also be used to construct test cases for package management software
+such as rpm and yum.
 
 Python 3 version."
-python3-coverage,库,工具, Code coverage testing module for Python 3," Coverage.py is a Python 3 module that measures code coverage during Python
-execution. It uses the code analysis tools and tracing hooks provided in the
-Python standard library to determine which lines are executable, and which
-have been executed."
-python3-humanize,库,工具," Turns dates in to human readable format, e.g '3 minutes ago'"," This modest package contains various common humanization utilities, like turning
-a number into a fuzzy human readable duration ('3 minutes ago') or into a human
-readable size or throughput."
-python3-lit,库,工具, LLVM lit test runner for Python 3, lit is a tool used by the LLVM project for executing its test suites.
-python3-sphinx_rtd_theme,库,其它, Sphinx theme for readthedocs.org," This is a prototype mobile-friendly sphinx theme for readthedocs.org.
-It's currently in development and includes some rtd variable checks that
-can be ignored if you're just trying to use it on your project outside
-of that site."
-qemu-kvm-block-rbd,工具,库, QEMU Ceph/RBD block driver," This package provides the additional Ceph/RBD block driver for QEMU.
+python38-wheel,库,工具, Built-package format for Python," A built-package format for Python.
 
-Install this package if you want to access remote Ceph volumes
-using the rbd protocol."
+A wheel is a ZIP-format archive with a specially formatted filename and the
+.whl extension. It is designed to contain all the files for a PEP 376
+compatible install in a way that is very close to the on-disk format.
+
+Python 3 version."
+qatlib,库,服务, Intel QuickAssist user space library," Intel QuickAssist Technology (Intel QAT) provides hardware acceleration
+for offloading security, authentication and compression services from the
+CPU, thus significantly increasing the performance and efficiency of
+standard platform solutions.
+
+Its services include symmetric encryption and authentication,
+asymmetric encryption, digital signatures, RSA, DH and ECC, and
+lossless data compression.
+
+This package provides user space libraries that allow access to
+Intel QuickAssist devices and expose the Intel QuickAssist APIs."
+qemu-kvm-block-iscsi,库,服务, QEMU iSCSI block driver," This package provides the additional iSCSI block driver for QEMU.
+
+Install this package if you want to access iSCSI volumes."
 qperf,工具,库, Measure socket and RDMA performance, Measure socket and RDMA performance.
-qt5-rpm-macros,库,工具, RPM macros for building Qt5 and KDE Frameworks 5 packages, RPM macros for building Qt5 and KDE Frameworks 5 packages.
 qt5-qtbase-common,库,工具, Common files for Qt5, Common files for Qt5.
-qtchooser,工具,库, Wrapper to select between Qt development binary versions," Qt Chooser provides a wrapper to switch between versions of Qt development
-binaries when multiple versions like 4 and 5 are installed or local Qt builds
-are to be used."
-raptor2,工具,库, RDF Parser Toolkit for Redland," Raptor is the RDF Parser Toolkit for Redland that provides
-a set of standalone RDF parsers, generating triples from RDF/XML
-or N-Triples."
-iwpmd,服务,库,iWarp Port Mapper userspace daemon ,"iwpmd provides a userspace service for iWarp drivers to claim
-tcp ports through the standard socket interface. "
+qt5-qttools,库,工具, Qt5 - QtTool components, Qt5 - QtTool components.
+qt5-qtwebengine-devtools,库,工具, WebEngine devtools_resources, Support for remote debugging.
+rasdaemon,服务,工具,Utility to receive RAS error tracings ,"rasdaemon is a RAS (Reliability, Availability and Serviceability) logging tool.
+It currently records memory errors, using the EDAC tracing events.
+EDAC is drivers in the Linux kernel that handle detection of ECC errors
+from memory controllers for most chipsets on i386 and x86_64 architectures.
+EDAC drivers for other architectures like arm also exists.
+This userspace component consists of an init script which makes sure
+EDAC drivers and DIMM labels are loaded at system startup, as well as
+an utility for reporting current error counts from the EDAC sysfs files. "
+rasqal,库,工具, RDF Query Library," Rasqal is a library providing full support for querying Resource
+Description Framework (RDF) including parsing query syntaxes, constructing
+the queries, executing them and returning result formats.  It currently
+handles the RDF Data Query Language (RDQL) and SPARQL Query language."
 redhat-lsb-desktop,库,工具, LSB Desktop module support," The Linux Standard Base (LSB) Desktop Specifications define components that are
 required to be present on an LSB conforming system."
 redhat-support-tool,工具,库, Tool for console access to Red Hat subscriber services," This package contains the Red Hat Support Tool.  The Red Hat Support Tool
@@ -681,44 +718,82 @@ provides console based access to Red Hat's subscriber services.  These
 services include, but are not limited to, console based access to
 knowledge-base solutions, case management, automated diagnostic
 services, etc."
-rootfiles,库,工具,The basic required files for the root user's directory ,"The rootfiles package contains basic required files that are placed
-in the root user's account.  These files are basically the same
-as those in /etc/skel, which are placed in regular
-users' home directories. "
-rpcbind,服务,工具, Universal Addresses to RPC Program Number Mapper," The rpcbind utility is a server that converts RPC program numbers into
-universal addresses.  It must be running on the host to be able to make
-RPC calls on a server on that machine."
-rpm-plugin-selinux,库,服务, Rpm plugin for SELinux functionality, Rpm plugin for SELinux functionality
-rpm-sign,工具,库,Package signing support ,This package contains support for digitally signing RPM packages. 
-rshim,服务,库, User-space driver for Mellanox BlueField SoC," This is the user-space driver to access the BlueField SoC via the rshim
-interface. It provides ways to push boot stream, debug the target or login
-via the virtual console or network interface."
-rsyslog-gnutls,库,服务, TLS protocol support for rsyslog via GnuTLS library," The rsyslog-gnutls package contains the rsyslog plugins that provide the
-ability to send and receive syslog messages via TCP or RELP using TLS
-encryption via GnuTLS library. For details refer to rsyslog doc on imtcp
-and omfwd modules."
-rsyslog-mmfields,库,服务, Fields extraction module," The mmfield module permits to extract fields. Using this module is of special
-advantage if a field-based log format is to be processed, like for example CEF
-and either a large number of fields is needed or a specific field is used multiple
-times inside filters."
+redis,服务,工具, A persistent key-value database," Redis is an advanced key-value store. It is often referred to as a data
+structure server since keys can contain strings, hashes, lists, sets and
+sorted sets.
+
+You can run atomic operations on these types, like appending to a string;
+incrementing the value in a hash; pushing to a list; computing set
+intersection, union and difference; or getting the member with highest
+ranking in a sorted set.
+
+In order to achieve its outstanding performance, Redis works with an
+in-memory dataset. Depending on your use case, you can persist it either
+by dumping the dataset to disk every once in a while, or by appending
+each command to a log.
+
+Redis also supports trivial-to-setup master-slave replication, with very
+fast non-blocking first synchronization, auto-reconnection on net split
+and so forth.
+
+Other features include Transactions, Pub/Sub, Lua scripting, Keys with a
+limited time-to-live, and configuration settings to make Redis behave like
+a cache.
+
+You can use Redis from most programming languages also."
+rng-tools,服务,工具,Random number generator related utilities ,"This is a random number generator daemon and its tools. It monitors
+a set of entropy sources present on a system (like /dev/hwrng, RDRAND,
+TPM, jitter) and supplies entropy from them to a kernel entropy pool. "
+rrdtool,工具,服务, Round Robin Database Tool to store and display time-series data," RRD is the Acronym for Round Robin Database. RRD is a system to store and
+display time-series data (i.e. network bandwidth, machine-room temperature,
+server load average). It stores the data in a very compact way that will not
+expand over time, and it presents useful graphs by processing the data to
+enforce a certain data density. It can be used either via simple wrapper
+scripts (from shell or Perl) or via frontends that poll network devices and
+put a friendly user interface on it."
 rsyslog-mmkubernetes,服务,库, Provides the mmkubernetes module," The rsyslog-mmkubernetes package provides module for adding kubernetes
 container metadata."
-rsyslog-mmsnmptrapd,库,服务, Message modification module for snmptrapd generated messages," This message modification module takes messages generated from snmptrapd and
-modifies them so that they look like they originated from the read originator."
-rsyslog-mysql,服务,库, MySQL support for rsyslog," The rsyslog-mysql package contains a dynamic shared object that will add
-MySQL database support to rsyslog."
-ruby,工具,库, An interpreter of object-oriented scripting language," Ruby is the interpreted scripting language for quick and easy
-object-oriented programming.  It has many features to process text
-files and to do system management tasks (as in Perl).  It is simple,
-straight-forward, and extensible."
-samba,服务,工具, Server and Client software to interoperate with Windows machines," Samba is the standard Windows interoperability suite of programs for Linux and
-Unix."
-samba-winexe,工具,库,Samba Winexe Windows Binary ,Winexe is a Remote Windows庐-command executor 
-sassist,服务,工具, Dell SupportAssist log collector, Dell SupportAssist log collector for Linux.
-sgml-common,工具,库,Common SGML catalog and DTD files ,"The sgml-common package contains a collection of entities and DTDs
-that are useful for processing SGML, but that don't need to be
-included in multiple packages.  Sgml-common also includes an
-up-to-date Open Catalog file. "
+rsyslog-pgsql,服务,库, PostgresSQL support for rsyslog," The rsyslog-pgsql package contains a dynamic shared object that will add
+PostgreSQL database support to rsyslog."
+rubygem-rake,工具,库, Ruby based make-like utility," Rake is a Make-like program implemented in Ruby. Tasks and dependencies are
+specified in standard Ruby syntax."
+rust-toolset,库,工具, Package that installs rust-toolset, This is the main package for rust-toolset.
+samba-pidl,工具,库,Perl IDL compiler ,"The samba-pidl package contains the Perl IDL compiler used by Samba
+and Wireshark to parse IDL and similar protocols "
+samba-winbind,服务,库, Samba winbind," The samba-winbind package provides the winbind NSS library, and some client
+tools.  Winbind enables Linux to be a full member in Windows domains and to use
+Windows user and group accounts on Linux."
+sane-backends-drivers-scanners,库,服务, SANE backend drivers for scanners, This package contains backend drivers to access scanner hardware through SANE.
+python3-scons,工具,库, An Open Source software construction tool," SCons is an Open Source software construction tool--that is, a build
+tool; an improved substitute for the classic Make utility; a better way
+to build software. SCons is based on the design which won the Software
+Carpentry build tool design competition in August 2000.
+
+SCons ""configuration files"" are Python scripts, eliminating the need
+to learn a new build tool syntax. SCons maintains a global view of
+all dependencies in a tree, and can scan source (or other) files for
+implicit dependencies, such as files specified on #include lines. SCons
+uses MD5 signatures to rebuild only when the contents of a file have
+really changed, not just when the timestamp has been touched. SCons
+supports side-by-side variant builds, and is easily extended with user-
+defined Builder and/or Scanner objects."
+scrub,工具,库, Disk scrubbing program," Scrub writes patterns on files or disk devices to make
+retrieving the data more difficult.  It operates in one of three
+modes: 1) the special file corresponding to an entire disk is scrubbed
+and all data on it is destroyed;  2) a regular file is scrubbed and
+only the data in the file (and optionally its name in the directory
+entry) is destroyed; or 3) a regular file is created, expanded until
+the file system is full, then scrubbed as in 2)."
+seavgabios-bin,工具,库, Seavgabios for x86, SeaVGABIOS is an open-source VGABIOS implementation.
+selinux-policy,服务,库, SELinux policy configuration," SELinux Base package for SELinux Reference Policy - modular.
+Based off of reference policy: Checked out revision  2.20091117"
+sendmail-cf,服务,工具, The files needed to reconfigure Sendmail," This package includes the configuration files you need to generate the
+sendmail.cf file distributed with the sendmail package. You will need
+the sendmail-cf package if you ever need to reconfigure and rebuild
+your sendmail.cf file."
+xml-common,库,工具,Common XML catalog and DTD files ,"The xml-common is a subpackage of sgml-common which contains
+a collection XML catalogs that are useful for processing XML,
+but that don't need to be included in main package. "
 python3-wx-siplib,工具,库, SIP - Python 3/C++ Bindings Generator for wx," This is the Python 3 build of wx-siplib.
 
 
@@ -731,108 +806,76 @@ SIP was originally designed to generate Python bindings for KDE and so has
 explicit support for the signal slot mechanism used by the Qt/KDE class
 libraries. However, SIP can be used to generate Python bindings for any C++
 class library."
-sisu-plexus,库,工具, Sisu Plexus, This package contains Sisu Plexus.
 skkdic,库,工具, Dictionaries for SKK (Simple Kana-Kanji conversion program)," This package includes the SKK dictionaries, including the large dictionary
 SKK-JISYO.L and pubdic+ dictionary."
-sos-audit,工具,库,Audit use of some commands for support purposes ,"
-Sos-audit provides configuration files for the Linux Auditing System
-to track the use of some commands capable of changing the configuration
-of the system. Currently storage and filesystem commands are audited. "
-spamassassin,工具,库, Spam filter for email which can be invoked from mail delivery agents," SpamAssassin provides you with a way to reduce if not completely eliminate
-Unsolicited Commercial Email (SPAM) from your incoming email.  It can
-be invoked by a MDA such as sendmail or postfix, or can be called from
-a procmail script, .forward file, etc.  It uses a genetic-algorithm
-evolved scoring system to identify messages which look spammy, then
-adds headers to the message so they can be filtered by the user's mail
-reading software.  This distribution includes the spamd/spamc components
-which create a server that considerably speeds processing of mail.
+spec-version-maven-plugin,库,工具, Spec Version Maven Plugin," Maven Plugin to configure APIs version and
+specs in a MANIFEST.MF file."
+squid,服务,工具, The Squid proxy caching server," Squid is a high-performance proxy caching server for Web clients,
+supporting FTP, gopher, and HTTP data objects. Unlike traditional
+caching software, Squid handles all requests in a single,
+non-blocking, I/O-driven process. Squid keeps meta data and especially
+hot objects cached in RAM, caches DNS lookups, supports non-blocking
+DNS lookups, and implements negative caching of failed requests.
 
-To enable spamassassin, if you are receiving mail locally, simply add
-this line to your ~/.procmailrc:
-INCLUDERC=/etc/mail/spamassassin/spamassassin-default.rc
-
-To filter spam for all users, add that line to /etc/procmailrc
-(creating if necessary)."
-spice-vdagent,服务,工具, Agent for Spice guests," Spice agent for Linux guests offering the following features:
-
-Features:
-* Client mouse mode (no need to grab mouse by client, no mouse lag)
-  this is handled by the daemon by feeding mouse events into the kernel
-  via uinput. This will only work if the active X-session is running a
-  spice-vdagent process so that its resolution can be determined.
-* Automatic adjustment of the X-session resolution to the client resolution
-* Support of copy and paste (text and images) between the active X-session
-  and the client"
-sshpass,工具,库, Non-interactive SSH authentication utility," Tool for non-interactively performing password authentication with so called
-""interactive keyboard password authentication"" of SSH. Most users should use
-more secure public key authentication of SSH instead."
-sssd-ad,库,服务, The AD back end of the SSSD," Provides the Active Directory back end that the SSSD can utilize to fetch
-identity data from and authenticate against an Active Directory server."
-sssd-common,服务,库, Common files for the SSSD," Common files for the SSSD. The common package includes all the files needed
-to run a particular back end, however, the back ends are packaged in separate
-sub-packages such as sssd-ldap."
+Squid consists of a main server program squid, a Domain Name System
+lookup program (dnsserver), a program for retrieving FTP data
+(ftpget), and some management and client tools."
 sssd-krb5,服务,库, The Kerberos authentication back end for the SSSD," Provides the Kerberos back end that the SSSD can utilize authenticate
 against a Kerberos server."
 sssd-ldap,服务,库, The LDAP back end of the SSSD," Provides the LDAP back end that the SSSD can utilize to fetch identity data
 from and authenticate against an LDAP server."
+stratisd-dracut,服务,工具, Dracut modules for use with stratisd," 
+This package contains dracut modules to be used with stratisd
+to enable using Stratis filesystems as the root filesystem for
+a Linux install."
+subscription-manager-migration-data,工具,库, RHN Classic to RHSM migration data," This package provides certificates for migrating a system from
+RHN Classic to RHSM."
 subversion-gnome,服务,库, GNOME Keyring support for Subversion," The subversion-gnome package adds support for storing Subversion
 passwords in the GNOME Keyring."
-syslinux-tftpboot,库,服务,"SYSLINUX modules in /tftpboot, available for network booting ","All the SYSLINUX/PXELINUX modules directly available for network
-booting in the /tftpboot directory. "
-system-config-printer-libs,库,工具, Libraries and shared code for printer administration tool," The common code used by both the graphical and non-graphical parts of
-the configuration tool."
 systemd-libs,库,工具, systemd libraries, Libraries for systemd and udev.
-texlive-euro,工具,库, Provide Euro values for national currency amounts," Converts arbitrary national currency amounts using the Euro as
-base unit, and typesets monetary amounts in almost any desired
-way. Write, e.g., \ATS{17.6} to get something like '17,60 oS
-(1,28 Euro)' automatically. Conversion rates for the initial
-Euro-zone countries are already built-in. Further rates can be
-added easily. The package uses the fp package to do its sums."
+tcl,工具,库," Tool Command Language, pronounced tickle"," The Tcl (Tool Command Language) provides a powerful platform for
+creating integration applications that tie together diverse
+applications, protocols, devices, and frameworks. When paired with the
+Tk toolkit, Tcl provides a fastest and powerful way to create
+cross-platform GUI applications.  Tcl can also be used for a variety
+of web-related tasks and for creating powerful command languages for
+applications."
+tex-fonts-hebrew,其它,工具, Culmus Hebrew fonts support for LaTeX, Support using the Culmus Hebrew fonts in LaTeX.
+texlive-arphic,库,工具, Arphic (Chinese) font packages," These are font bundles for the Chinese Arphic fonts which work
+with the CJK package. Arphic is actually the name of the
+company that which created the fonts (and put them under a GPL-
+like licence)."
+texlive-cns,库,工具, cns package, cns package
+texlive-collection-fontsrecommended,库,工具, Recommended fonts," Recommended fonts, including the base 35 PostScript fonts,
+Latin Modern, TeX Gyre, and T1 and other encoding support for
+Computer Modern, in outline form."
 texlive-fancyvrb,库,工具, Sophisticated verbatim text," Flexible handling of verbatim text including: verbatim commands
 in footnotes; a variety of verbatim environments with many
 parameters; ability to define new customized verbatim
 environments; save and restore verbatim text and environments;
 write and read files in verbatim mode; build ""example""
 environments (showing both result and verbatim source)."
-texlive-fontwrap,库,工具, Bind fonts to specific unicode blocks," The package (which runs under XeLaTeX) lets you bind fonts to
-specific unicode blocks, for automatic font tagging of
-multilingual text. The package uses Perl (via perltex) to
-construct its tables."
+texlive-fncychap,库,工具, Seven predefined chapter heading styles," Each style can be modified using a set of simple commands.
+Optionally one can modify the formatting routines in order to
+create additional chapter headings. This package was previously
+known as FancyChapter."
+texlive-fontware,库,工具, fontware package, fontware package
 texlive-hyphen-base,库,工具, hyphen-base package, hyphen-base package
-texlive-kpathsea,库,工具, Path searching library for TeX-related files," Kpathsea is a library and utility programs which provide path
-searching facilities for TeX file types, including the self-
-locating feature required for movable installations, layered on
-top of a general search mechanism. It is not distributed
-separately, but rather is released and maintained as part of
-the TeX live sources."
-texlive-lm-math,库,工具, OpenType maths fonts for Latin Modern," Latin Modern Math is a maths companion for the Latin Modern
-family of fonts, in OpenType format. For use with LuaLaTeX or
-XeLaTeX, support is available from the unicode-math package."
-texlive-marvosym,库,工具, Martin Vogel's Symbols (marvosym) font," Martin Vogel's Symbol font (marvosym) contains the Euro
-currency symbol as defined by the European commission, along
-with symbols for structural engineering; symbols for steel
-cross-sections; astronomy signs (sun, moon, planets); the 12
-signs of the zodiac; scissor symbols; CE sign and others. The
-package contains both the original TrueType font and the
-derived Type 1 font, together with support files for TeX
-(LaTeX)."
+texlive-ifmtarg,库,工具, If-then-else command for processing potentially empty arguments, ifmtarg package
+texlive-knuth-lib,库,工具, A small library of MetaFont sources," A collection of miscellaneous MetaFont source, including the
+means to generate the logo font that is used for MetaFont and
+MetaPost."
+texlive-mfnfss,库,工具, Packages to typeset oldgerman and pandora fonts in LaTeX," This bundle contains two packages: - oldgerm, a package to
+typeset with old german fonts designed by Yannis Haralambous. -
+pandora, a package to typeset with Pandora fonts designed by
+Neena Billawala. Note that support for the Pandora fonts is
+also available via the pandora-latex package."
 texlive-mparhack,库,工具, A workaround for a LaTeX bug in marginpars," Implements a workaround for the LaTeX bug that marginpars will
 sometimes come out at the wrong margin."
-texlive-philokalia,库,工具, A font to typeset the Philokalia Books," The philokalia package has been designed to ease the use of the
-Philokalia-Regular OpenType font with XeLaTeX. The font started
-as a project to digitize the typeface used to typeset the
-Philokalia books."
-texlive-qstest,库,工具, Bundle for unit tests and pattern matching," This is the public release of the qstest bundle (written for
-DocScape Publisher) (C) 2006, 2007 QuinScape GmbH. The bundle
-contains the packages 'makematch' for matching patterns to
-targets (with a generalization in the form of pattern lists and
-keyword lists), and 'qstest' for performing unit tests,
-allowing the user to run a number of logged tests ensuring the
-consistency of values, properties and call sequences during
-execution of test code. Both packages make extensive use of in
-their package documentation, providing illustrated examples
-that are automatically verified to work as expected. Check the
-README file for details."
+texlive-paralist,库,工具, Enumerate and itemize within paragraphs," Provides enumerate and itemize environments that can be used
+within paragraphs to format the items either as running text or
+as separate paragraphs with a preceding number or symbol. Also
+provides compacted versions of enumerate and itemize."
 texlive-seminar,库,工具, Make overhead slides," A class that produces overhead slides (transparencies), with
 many facilities. The class requires availability of the
 fancybox package. Seminar is also the basis of other classes,
@@ -842,18 +885,55 @@ recent classes such as powerdot or beamer, both of which are
 tuned to 21st-century presentation styles. Note that the
 seminar distribution relies on the xcomment package, which was
 once part of the bundle, but now has a separate existence."
-tigervnc-server-module,库,服务, TigerVNC module to Xorg," This package contains libvnc.so module to X server, allowing others
-to access the desktop on your machine."
-tog-pegasus,服务,库, OpenPegasus WBEM Services for Linux," OpenPegasus WBEM Services for Linux enables management solutions that deliver
-increased control of enterprise resources. WBEM is a platform and resource
-independent DMTF standard that defines a common information model and
-communication protocol for monitoring and controlling resources from diverse
-sources."
-tog-pegasus-libs,库,工具, The OpenPegasus Libraries, The OpenPegasus libraries.
-tpm2-abrmd-selinux,库,服务,SELinux policies for tpm2-abrmd ,SELinux policy modules for tpm2-abrmd. 
-trace-cmd,工具,库,A user interface to Ftrace ,"trace-cmd is a user interface to Ftrace. Instead of needing to use the
-debugfs directly, trace-cmd will handle of setting of options and
-tracers and will record into a data file. "
+texlive-sepnum,库,工具," Print numbers in a ""friendly"" format"," Provides a command to print a number with (potentially
+different) separators every three digits in the parts either
+side of the decimal point (the point itself is also
+configurable). The macro is fully expandable and not fragile
+(unless one of the separators is). There is also a command
+\sepnumform, that may be used when defining \the<counter>
+macros."
+texlive-tex-gyre,工具,库, TeX Fonts extending freely available URW fonts," The TeX-GYRE bundle consists of six font families: TeX Gyre
+Adventor is based on the URW Gothic L family of fonts (which is
+derived from ITC Avant Garde Gothic, designed by Herb Lubalin
+and Tom Carnase). TeX Gyre Bonum is based on the URW Bookman L
+family (from Bookman Old Style, designed by Alexander
+Phemister). TeX Gyre Chorus is based on URW Chancery L Medium
+Italic (from ITC Zapf Chancery, designed by Hermann Zapf in
+1979). TeX-Gyre Cursor is based on URW Nimbus Mono L (based on
+Courier, designed by Howard G. Kettler in 1955, for IBM). TeX
+Gyre Heros is based on URW Nimbus Sans L (from Helvetica,
+prepared by Max Miedinger, with Eduard Hoffmann in 1957). TeX
+Gyre Pagella is based on URW Palladio L (from Palation,
+designed by Hermann Zapf in the 1940s). TeX Gyre Schola is
+based on the URW Century Schoolbook L family (which was
+designed by Morris Fuller Benton for the American Type
+Founders). TeX Gyre Termes is based on the URW Nimbus Roman No9
+L family of fonts (whose original, Times, was designed by
+Stanley Morison together with Starling Burgess and Victor
+Lardent and first offered by Monotype). The constituent
+standard faces of each family have been greatly extended, and
+contain nearly 1200 glyphs each (though Chorus omits Greek
+support, has no small-caps family and has approximately 900
+glyphs). Each family is available in Adobe Type 1 and Open Type
+formats, and LaTeX support (for use with a variety of
+encodings) is provided. Vietnamese and Cyrillic characters were
+added by Han The Thanh and Valek Filippov, respectively."
+texlive-trimspaces,库,工具, Trim spaces around an argument or within a macro," A very short package that allows you to expandably remove
+spaces around a token list (commands are provided to remove
+spaces before, spaces after, or both); or to remove surrounding
+spaces within a macro definition, or to define space-stripped
+macros."
+texlive-varwidth,库,工具, A variable-width minipage," The varwidth environment is superficially similar to minipage,
+but the specified width is just a maximum value -- the box may
+get a narrower ""natural"" width."
+texlive-wadalab,工具,库, Wadalab (Japanese) font packages," These are font bundles for the Japanese Wadalab fonts which
+work with the CJK package. All subfonts now have glyph names
+compliant to the Adobe Glyph List, making ToUnicode CMaps in
+PDF documents (created automatically by dvipdfmx) work
+correctly. All font bundles now contain virtual Unicode
+subfonts."
+tk,工具,库, The graphical toolkit for the Tcl scripting language," When paired with the Tcl scripting language, Tk provides a fast and powerful
+way to create cross-platform GUI applications."
 python3-tracer,工具,库, Common files for tracer," Tracer determines which applications use outdated files and prints them. For
 special kind of applications such as services or daemons, it suggests a standard
 command to restart it. Detecting whether file is outdated or not is based on a
@@ -862,78 +942,56 @@ which is provided by any package updated since system was booted up, tracer
 consider this application as outdated.
 
 Python 3 version."
-tracker-miners,工具,库, Tracker miners and metadata extractors," Tracker is a powerful desktop-neutral first class object database,
-tag/metadata database and search tool.
-
-This package contains various miners and metadata extractors for tracker."
-udisks2,服务,库, Disk Manager," The Udisks project provides a daemon, tools and libraries to access and
-manipulate disks, storage devices and technologies."
-udisks2-lvm2,库,服务, Module for LVM2, This package contains module for LVM2 configuration.
+tuned-profiles-compat,库,服务,Additional tuned profiles mainly for backward compatibility with tuned 1.0 ,"Additional tuned profiles mainly for backward compatibility with tuned 1.0.
+It can be also used to fine tune your system for specific scenarios. "
+udisks2-iscsi,库,工具, Module for iSCSI, This package contains module for iSCSI configuration.
 unbound-libs,库,服务, Libraries used by the unbound server and client applications, Contains libraries used by the unbound server and client applications
-uuid,工具,库, Universally Unique Identifier library," OSSP uuid is a ISO-C:1999 application programming interface (API)
-and corresponding command line interface (CLI) for the generation
-of DCE 1.1, ISO/IEC 11578:1996 and RFC 4122 compliant Universally
-Unique Identifier (UUID). It supports DCE 1.1 variant UUIDs of version
-1 (time and node based), version 3 (name based, MD5), version 4
-(random number based) and version 5 (name based, SHA-1). Additional
-API bindings are provided for the languages ISO-C++:1998 and Perl:5
-Optional backward compatibility exists for the ISO-C DCE-1.1 and Perl
-Data::UUID APIs."
-vapoursynth-tools,工具,库, Extra tools for VapourSynth, This package contains the vspipe tool for interfacing with VapourSynth.
-WALinuxAgent-udev,服务,库, Udev rules for Microsoft Azure, Udev rules specific to Microsoft Azure Virtual Machines.
-web-assets-filesystem,服务,库, The basic directory layout for Web Assets, The basic directory layout for Web Assets.
-wget,工具,库, A utility for retrieving files using the HTTP or FTP protocols," GNU Wget is a file retrieval utility which can use either the HTTP or
-FTP protocols. Wget features include the ability to work in the
-background while you are logged out, recursive retrieval of
-directories, file name wildcard matching, remote file timestamp
-storage and comparison, use of Rest with FTP servers and Range with
-HTTP servers to retrieve files over slow or unstable connections,
-support for Proxy servers, and configurability."
-x3270,工具,库,An X Window System based IBM 3278/3279 terminal emulator ,"The x3270 package contains files needed for emulating the IBM 3278/3279
-terminals, commonly used with mainframe applications.
+libblkid,库,工具, Block device ID library," This is block device identification library, part of util-linux."
+varnish,服务,工具, High-performance HTTP accelerator," This is Varnish Cache, a high-performance HTTP accelerator.
 
-You will also need to install a frontend for x3270. Available frontends
-are x3270-x11 (for the X Window System) and x3270-text (for text mode). "
-xdg-desktop-portal-gtk,服务,工具, Backend implementation for xdg-desktop-portal using GTK+," A backend implementation for xdg-desktop-portal that is using GTK+ and various
+Varnish Cache stores web pages in memory so web servers don__ have to
+create the same web page over and over again. Varnish Cache serves
+pages much faster than any application server; giving the website a
+significant speed up.
+
+Documentation wiki and additional information about Varnish Cache is
+available on: https://www.varnish-cache.org/"
+vmaf,库,工具, Video Multi-Method Assessment Fusion," VMAF is a perceptual video quality assessment algorithm developed by
+Netflix. VMAF Development Kit (VDK) is a software package that contains
+the VMAF algorithm implementation, as well as a set of tools that allows
+a user to train and test a custom VMAF model. For an overview, read this
+tech blog post, or this slide deck.
+
+https://github.com/Netflix/vmaf/blob/master/resource/doc/VMAF_ICIP17.pdf"
+vsftpd,服务,工具, Very Secure Ftp Daemon," vsftpd is a Very Secure FTP daemon. It was written completely from
+scratch."
+vulkan-loader,服务,工具, Vulkan ICD desktop loader," This project provides the Khronos official Vulkan ICD desktop
+loader for Windows, Linux, and MacOS."
+xdg-desktop-portal-gtk,服务,库, Backend implementation for xdg-desktop-portal using GTK+," A backend implementation for xdg-desktop-portal that is using GTK+ and various
 pieces of GNOME infrastructure, such as the org.gnome.Shell.Screenshot or
 org.gnome.SessionManager D-Bus interfaces."
-xdg-user-dirs,库,工具, Handles user special directories," Contains xdg-user-dirs-update that updates folders in a users
-homedirectory based on the defaults configured by the administrator."
-xerces-j2,库,工具, Java XML parser," Welcome to the future! Xerces2 is the next generation of high performance,
-fully compliant XML parsers in the Apache Xerces family. This new version of
-Xerces introduces the Xerces Native Interface (XNI), a complete framework for
-building parser components and configurations that is extremely modular and
-easy to program.
+xmlrpc-c-client++,库,工具, C++ client libraries for xmlrpc-c," XML-RPC is a quick-and-easy way to make procedure calls over the
+Internet. It converts the procedure call into XML document, sends it
+to a remote server using HTTP, and gets back the response as XML.
 
-The Apache Xerces2 parser is the reference implementation of XNI but other
-parser components, configurations, and parsers can be written using the Xerces
-Native Interface. For complete design and implementation documents, refer to
-the XNI Manual.
-
-Xerces2 is a fully conforming XML Schema processor. For more information,
-refer to the XML Schema page.
-
-Xerces2 also provides a complete implementation of the Document Object Model
-Level 3 Core and Load/Save W3C Recommendations and provides a complete
-implementation of the XML Inclusions (XInclude) W3C Recommendation. It also
-provides support for OASIS XML Catalogs v1.1.
-
-Xerces2 is able to parse documents written according to the XML 1.1
-Recommendation, except that it does not yet provide an option to enable
-normalization checking as described in section 2.13 of this specification. It
-also handles name spaces according to the XML Namespaces 1.1 Recommendation,
-and will correctly serialize XML 1.1 documents if the DOM level 3 load/save
-APIs are in use."
+This library provides a modular implementation of XML-RPC for C++
+clients."
 xmvn-resolve,库,工具, XMvn Resolver," This package provides XMvn Resolver, which is a very simple
 commald-line tool to resolve Maven artifacts from system repositories.
 Basically it's just an interface to artifact resolution mechanism
 implemented by XMvn Core.  The primary intended use case of XMvn
 Resolver is debugging local artifact repositories."
-xorg-x11-apps,工具,库, X.Org X11 applications, A collection of common X Window System applications.
-xorg-x11-server-common,服务,工具, Xorg server common files, Common files shared among all X servers.
+xmvn-tools-pom,库,工具, XMvn Tools POM, This package provides XMvn Tools parent POM.
 xorg-x11-util-macros,库,工具, X.Org X11 Autotools macros," X.Org X11 autotools macros required for building the various packages that
 comprise the X Window System."
 xorg-x11-xinit,服务,工具, X.Org X11 X Window System xinit startup scripts, X.Org X11 X Window System xinit startup scripts.
+yasm,库,工具, Modular Assembler," Yasm is a complete rewrite of the NASM assembler under the ""new"" BSD License
+(some portions are under other licenses, see COPYING for details). It is
+designed from the ground up to allow for multiple assembler syntaxes to be
+supported (eg, NASM, TASM, GAS, etc.) in addition to multiple output object
+formats and even multiple instruction sets. Another primary module of the
+overall design is an optimizer module."
+zvbi-fonts,其它,工具, Fonts from zvbi converted to X11, Fonts from zvbi converted for use with X11
 zziplib-utils,工具,库, Utilities for the zziplib library," The zziplib library is intentionally lightweight, it offers the ability to
 easily extract data from files archived in a single zip file. Applications
 can bundle files into a single zip archive and access them. The implementation

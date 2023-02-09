@@ -171,7 +171,7 @@ class BERT_GraphSAGE:
     def __init__(self, bert_path, max_length, hidden_size, num_classes, neighbor_num, n_hidden,
                  with_tfidf=True, tfidf_features=500,
                  end2end=False,
-                 use_bias=True, aggregator_type="mean",
+                 use_bias=True, aggregator_type="pooling",
                  dropout_rate=0.0, l2_reg=0, activation=tf.nn.relu):
         self.num_classes = num_classes
         self.end2end = end2end
