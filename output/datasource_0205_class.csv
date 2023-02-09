@@ -220,16 +220,16 @@ after successful installation of Anolis OS.
 This web page advises users on how to register their Anolis OS software and how
 to get any support they might need. "
 anolis-backgrounds,工具," Anolis OS related desktop backgrounds  Licensed only for approved usage, see COPYING for details.", Anolis OS related desktop backgrounds," Licensed only for approved usage, see COPYING for details."
-anolis-logos,工具,"Anolis OS related icons and pictures  Licensed only for approved usage, see COPYING for details. ",Anolis OS related icons and pictures ,"Licensed only for approved usage, see COPYING for details. "
+anolis-logos,库,"Anolis OS related icons and pictures  Licensed only for approved usage, see COPYING for details. ",Anolis OS related icons and pictures ,"Licensed only for approved usage, see COPYING for details. "
 anolis-logos-httpd,库,"Anolis OS related icons and pictures used by httpd  Licensed only for approved usage, see COPYING for details. ",Anolis OS related icons and pictures used by httpd ,"Licensed only for approved usage, see COPYING for details. "
 anolis-logos-ipa,库," Anolis OS related icons and pictures used by ipa  Licensed only for approved usage, see COPYING for details.", Anolis OS related icons and pictures used by ipa," Licensed only for approved usage, see COPYING for details."
-anolis-epao-release,其它, EPAO Packages for Anolis OS 8 repository configuration  This package contains the EPAO Packages for Anolis OS 8 repository  GPG key as well as configuration for yum., EPAO Packages for Anolis OS 8 repository configuration," This package contains the EPAO Packages for Anolis OS 8 repository
+anolis-epao-release,库, EPAO Packages for Anolis OS 8 repository configuration  This package contains the EPAO Packages for Anolis OS 8 repository  GPG key as well as configuration for yum., EPAO Packages for Anolis OS 8 repository configuration," This package contains the EPAO Packages for Anolis OS 8 repository
 GPG key as well as configuration for yum."
-anolis-experimental-release,其它, Experimental Packages for Anolis OS 8 repository configuration  This package contains the Experimental Packages for Anolis OS 8 repository  GPG key as well as configuration for yum., Experimental Packages for Anolis OS 8 repository configuration," This package contains the Experimental Packages for Anolis OS 8 repository
+anolis-experimental-release,库, Experimental Packages for Anolis OS 8 repository configuration  This package contains the Experimental Packages for Anolis OS 8 repository  GPG key as well as configuration for yum., Experimental Packages for Anolis OS 8 repository configuration," This package contains the Experimental Packages for Anolis OS 8 repository
 GPG key as well as configuration for yum."
-anolis-gpg-keys,其它, Anolis OS RPM keys  Anolis OS RPM signature keys, Anolis OS RPM keys, Anolis OS RPM signature keys
-anolis-release,其它,Anolis OS 8 release file  Anolis OS 8 release files ,Anolis OS 8 release file ,Anolis OS 8 release files 
-anolis-repos,其它,Anolis OS package repositories  Anolis OS package repository files for yum and dnf ,Anolis OS package repositories ,Anolis OS package repository files for yum and dnf 
+anolis-gpg-keys,库, Anolis OS RPM keys  Anolis OS RPM signature keys, Anolis OS RPM keys, Anolis OS RPM signature keys
+anolis-release,库,Anolis OS 8 release file  Anolis OS 8 release files ,Anolis OS 8 release file ,Anolis OS 8 release files 
+anolis-repos,库,Anolis OS package repositories  Anolis OS package repository files for yum and dnf ,Anolis OS package repositories ,Anolis OS package repository files for yum and dnf 
 ansible-collection-microsoft-sql,工具, The Ansible collection for Microsoft SQL Server management  This RPM installs the Ansible collection for Microsoft SQL Server management  microsoft.sql. This RPM also installs the roles provided by the collection in  the legacy roles format for users of Ansible < 2.9., The Ansible collection for Microsoft SQL Server management," This RPM installs the Ansible collection for Microsoft SQL Server management
 microsoft.sql. This RPM also installs the roles provided by the collection in
 the legacy roles format for users of Ansible < 2.9."
@@ -3317,11 +3317,11 @@ well as large image collections.
 eog is extensible through a plugin system."
 epel-aliyuncs-next-release,服务, Extra Packages for Enterprise Linux Next repository configuration  This package contains the Extra Packages for Enterprise Linux (EPEL) Next  configuration for yum., Extra Packages for Enterprise Linux Next repository configuration," This package contains the Extra Packages for Enterprise Linux (EPEL) Next
 configuration for yum."
-epel-aliyuncs-release,其它, Extra Packages for Enterprise Linux repository configuration  This package contains the Extra Packages for Enterprise Linux (EPEL) repository  GPG key as well as configuration for yum., Extra Packages for Enterprise Linux repository configuration," This package contains the Extra Packages for Enterprise Linux (EPEL) repository
+epel-aliyuncs-release,库, Extra Packages for Enterprise Linux repository configuration  This package contains the Extra Packages for Enterprise Linux (EPEL) repository  GPG key as well as configuration for yum., Extra Packages for Enterprise Linux repository configuration," This package contains the Extra Packages for Enterprise Linux (EPEL) repository
 GPG key as well as configuration for yum."
 epel-next-release,服务, Extra Packages for Enterprise Linux Next repository configuration  This package contains the Extra Packages for Enterprise Linux (EPEL) Next  configuration for yum., Extra Packages for Enterprise Linux Next repository configuration," This package contains the Extra Packages for Enterprise Linux (EPEL) Next
 configuration for yum."
-epel-release,其它, Extra Packages for Enterprise Linux repository configuration  This package contains the Extra Packages for Enterprise Linux (EPEL) repository  GPG key as well as configuration for yum., Extra Packages for Enterprise Linux repository configuration," This package contains the Extra Packages for Enterprise Linux (EPEL) repository
+epel-release,库, Extra Packages for Enterprise Linux repository configuration  This package contains the Extra Packages for Enterprise Linux (EPEL) repository  GPG key as well as configuration for yum., Extra Packages for Enterprise Linux repository configuration," This package contains the Extra Packages for Enterprise Linux (EPEL) repository
 GPG key as well as configuration for yum."
 epel-rpm-macros,服务, Extra Packages for Enterprise Linux RPM macros  This package contains the Extra Packages for Enterprise Linux (EPEL) RPM  macros for building EPEL packages., Extra Packages for Enterprise Linux RPM macros," This package contains the Extra Packages for Enterprise Linux (EPEL) RPM
 macros for building EPEL packages."
@@ -6666,7 +6666,7 @@ hunspell-wa,工具, Walloon hunspell dictionaries  Walloon hunspell dictionaries
 hunspell-xh,工具, Xhosa hunspell dictionaries  Xhosa hunspell dictionaries., Xhosa hunspell dictionaries, Xhosa hunspell dictionaries.
 hunspell-yi,工具, Yiddish hunspell dictionaries  Yiddish hunspell dictionaries., Yiddish hunspell dictionaries, Yiddish hunspell dictionaries.
 hunspell-zu,工具, Zulu hunspell dictionaries  Zulu hunspell dictionaries., Zulu hunspell dictionaries, Zulu hunspell dictionaries.
-hwdata,其它,"Hardware identification and configuration data  hwdata contains various hardware identification and configuration data,  such as the pci.ids and usb.ids databases. ",Hardware identification and configuration data ,"hwdata contains various hardware identification and configuration data,
+hwdata,库,"Hardware identification and configuration data  hwdata contains various hardware identification and configuration data,  such as the pci.ids and usb.ids databases. ",Hardware identification and configuration data ,"hwdata contains various hardware identification and configuration data,
 such as the pci.ids and usb.ids databases. "
 hwinfo,工具, Hardware information tool  hwinfo is to probe for the hardware present in the system. It can be used to  generate a system overview log which can be later used for support., Hardware information tool," hwinfo is to probe for the hardware present in the system. It can be used to
 generate a system overview log which can be later used for support."
@@ -10763,9 +10763,9 @@ to run Anaconda."
 lorax-lmc-virt,工具, livemedia-creator libvirt dependencies  Additional dependencies required by livemedia-creator when using it with qemu-kvm., livemedia-creator libvirt dependencies, Additional dependencies required by livemedia-creator when using it with qemu-kvm.
 lorax-templates-generic,其它, Generic build templates for lorax and livemedia-creator  Lorax templates for creating the boot.iso and live isos are placed in  /usr/share/lorax/templates.d/99-generic, Generic build templates for lorax and livemedia-creator," Lorax templates for creating the boot.iso and live isos are placed in
 /usr/share/lorax/templates.d/99-generic"
-lorax-templates-anolis,其它, Anolis OS build templates for lorax and livemedia-creator  Anolis OS specific Lorax templates for creating the boot.iso and live isos are  placed in /usr/share/lorax/templates.d/80-anolis, Anolis OS build templates for lorax and livemedia-creator," Anolis OS specific Lorax templates for creating the boot.iso and live isos are
+lorax-templates-anolis,库, Anolis OS build templates for lorax and livemedia-creator  Anolis OS specific Lorax templates for creating the boot.iso and live isos are  placed in /usr/share/lorax/templates.d/80-anolis, Anolis OS build templates for lorax and livemedia-creator," Anolis OS specific Lorax templates for creating the boot.iso and live isos are
 placed in /usr/share/lorax/templates.d/80-anolis"
-lorax-templates-rhel,其它, RHEL8 build templates for lorax and livemedia-creator  RHEL-specific Lorax templates for creating the boot.iso and live isos are  placed in /usr/share/lorax/templates.d/80-rhel, RHEL8 build templates for lorax and livemedia-creator," RHEL-specific Lorax templates for creating the boot.iso and live isos are
+lorax-templates-rhel,库, RHEL8 build templates for lorax and livemedia-creator  RHEL-specific Lorax templates for creating the boot.iso and live isos are  placed in /usr/share/lorax/templates.d/80-rhel, RHEL8 build templates for lorax and livemedia-creator," RHEL-specific Lorax templates for creating the boot.iso and live isos are
 placed in /usr/share/lorax/templates.d/80-rhel"
 lpsolve,工具," A Mixed Integer Linear Programming (MILP) solver  Mixed Integer Linear Programming (MILP) solver lpsolve solves pure linear,  (mixed) integer/binary, semi-continuous and special ordered sets (SOS) models.", A Mixed Integer Linear Programming (MILP) solver," Mixed Integer Linear Programming (MILP) solver lpsolve solves pure linear,
 (mixed) integer/binary, semi-continuous and special ordered sets (SOS) models."
@@ -19105,7 +19105,7 @@ to interpret SELinux AVC denials."
 setserial,工具,"A utility for configuring serial ports  Setserial is a basic system utility for displaying or setting serial  port information. Setserial can reveal and allow you to alter the I/O  port and IRQ that a particular serial device is using, and more. ",A utility for configuring serial ports ,"Setserial is a basic system utility for displaying or setting serial
 port information. Setserial can reveal and allow you to alter the I/O
 port and IRQ that a particular serial device is using, and more. "
-setup,服务," A set of system configuration and setup files  The setup package contains a set of important system configuration and  setup files, such as passwd, group, and profile.", A set of system configuration and setup files," The setup package contains a set of important system configuration and
+setup,库," A set of system configuration and setup files  The setup package contains a set of important system configuration and  setup files, such as passwd, group, and profile.", A set of system configuration and setup files," The setup package contains a set of important system configuration and
 setup files, such as passwd, group, and profile."
 sevctl,工具, Administrative utility for AMD SEV  Administrative utility for AMD SEV., Administrative utility for AMD SEV, Administrative utility for AMD SEV.
 sg3_utils,工具,"Utilities for devices that use SCSI command sets  Collection of Linux utilities for devices that use the SCSI command set.  Includes utilities to copy data based on ""dd"" syntax and semantics (called  sg_dd, sgp_dd and sgm_dd); check INQUIRY data and VPD pages (sg_inq); check  mode and log pages (sginfo, sg_modes and sg_logs); spin up and down  disks (sg_start); do self tests (sg_senddiag); and various other functions.  See the README, CHANGELOG and COVERAGE files. Requires the linux kernel 2.4  series or later. In the 2.4 series SCSI generic device names (e.g. /dev/sg0)  must be used. In the 2.6 series other device names may be used as  well (e.g. /dev/sda).    Warning: Some of these tools access the internals of your system  and the incorrect usage of them may render your system inoperable. ",Utilities for devices that use SCSI command sets ,"Collection of Linux utilities for devices that use the SCSI command set.
@@ -23368,7 +23368,7 @@ libwayland-client,库, Wayland client library  Wayland client library, Wayland c
 libwayland-cursor,库, Wayland cursor library  Wayland cursor library, Wayland cursor library, Wayland cursor library
 libwayland-egl,库, Wayland egl library  Wayland egl library, Wayland egl library, Wayland egl library
 libwayland-server,库, Wayland server library  Wayland server library, Wayland server library, Wayland server library
-web-assets-filesystem,服务, The basic directory layout for Web Assets  The basic directory layout for Web Assets., The basic directory layout for Web Assets, The basic directory layout for Web Assets.
+web-assets-filesystem,库, The basic directory layout for Web Assets  The basic directory layout for Web Assets., The basic directory layout for Web Assets, The basic directory layout for Web Assets.
 webkit2gtk3,库, GTK Web content engine library  WebKitGTK is the port of the portable web rendering engine WebKit to the  GTK platform.    This package contains WebKit2 based WebKitGTK for GTK 3., GTK Web content engine library," WebKitGTK is the port of the portable web rendering engine WebKit to the
 GTK platform.
 

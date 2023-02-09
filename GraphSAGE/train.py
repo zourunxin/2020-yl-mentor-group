@@ -8,6 +8,7 @@ import scipy.sparse as sp
 import matplotlib.pyplot as plt
 from sklearn.metrics import classification_report
 from tensorflow.python.keras.optimizers import adam_v2
+from sklearn.metrics import confusion_matrix
 
 import utils.CommonUtils as CommonUtils
 import utils.NLPUtils as NLPUtils
@@ -87,8 +88,8 @@ keyword_features = Extractors.keyword_feat_extractor(texts)
 # tfidf_features = Extractors.tfidf_class_feat_extractor(list(df_data["label"]), texts)
 tfidf_features = Extractors.tfidf_feat_extractor(texts, onehot_labels, feature_num=1000)
 # bow_features = Extractors.bow_feat_extractor(texts)
-# features = np.hstack((name_features, keyword_features, tfidf_features))
-features = tfidf_features
+features = np.hstack((name_features, keyword_features, tfidf_features))
+# features = tfidf_features
 
 # 构建邻接矩阵
 adj = sp.coo_matrix((np.ones(len(df_edges)), 
@@ -171,7 +172,8 @@ df_result = df_result[df_result["name"].map(lambda x: test_mask[name_idx_map[x]]
 df_error = df_result.loc[df_result["predict"] != df_result["label"]]
 df_error = df_error.loc[:,["name", "label", "predict", "summary", "description"]]
 df_error.to_csv("GraphSAGE_result.csv", index=False)
-report = classification_report(df_result["label"], df_result["predict"])
+report = classification_report(df_result["label"], df_result["predict"], digits=3)
 print(report)
-
+matrix = confusion_matrix(df_result["label"], df_result["predict"])
+print(matrix)
 CommonUtils.show_learning_curves(history)

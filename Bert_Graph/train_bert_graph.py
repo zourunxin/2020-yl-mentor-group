@@ -103,11 +103,11 @@ A = preprocess_adj(adj)
 maxlen = 32
 hidden_size = 768
 graph_batch_size = A.shape[0]
-bert_epochs = 1
-graph_epochs = 1
-all_epochs = 1
+bert_epochs = 50
+graph_epochs = 3000
+all_epochs = 200
 mode = "both"
-with_tfidf = True
+with_tfidf = False
 tf_idf_feat_num = 1000
 end2end = True
 
@@ -192,7 +192,7 @@ if end2end:
     df_all_error = df_test.loc[df_test["label"] != df_test["bert_graph_pred"]]
     df_all_error.to_csv("bert_graph_end2end_result_error.csv", index=False)
 
-    all_report = classification_report(df_test["label"], df_test["bert_graph_pred"])
+    all_report = classification_report(df_test["label"], df_test["bert_graph_pred"], digits=3)
     print("all result:")
     print(all_report)
 
@@ -221,11 +221,11 @@ else:
     df_bert_error.to_csv("bert_result_error.csv", index=False)
     df_graph_error.to_csv("bert_graph_result_error.csv", index=False)
 
-    bert_report = classification_report(df_test["label"], df_test["bert_pred"])
+    bert_report = classification_report(df_test["label"], df_test["bert_pred"], digits=3)
     print("bert result:")
     print(bert_report)
 
-    bert_graph_report = classification_report(df_test["label"], df_test["graph_pred"])
+    bert_graph_report = classification_report(df_test["label"], df_test["graph_pred"], digits=3)
     print("bert_graph result:")
     print(bert_graph_report)
 

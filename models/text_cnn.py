@@ -6,7 +6,7 @@ class TextCNN(object):
     def __init__(self, maxlen,
                  num_features,
                  class_num=1,
-                 last_activation='softmax'):
+                 last_activation='relu'):
         self.maxlen = maxlen
         self.num_features = num_features
         self.class_num = class_num
@@ -18,7 +18,7 @@ class TextCNN(object):
         # Embedding part can try multichannel as same as origin paper
         # embedding = Embedding(self.max_features, self.embedding_dims, input_length=self.maxlen)(input)
         convs = []
-        for kernel_size in [3, 4, 5]:
+        for kernel_size in [1, 2, 3]:
             c = Conv1D(128, kernel_size, activation='relu')(input)
             c = GlobalMaxPooling1D()(c)
             convs.append(c)
