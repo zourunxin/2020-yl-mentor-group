@@ -1,7 +1,12 @@
+import pdb
 import sys
+
+from utils.CommonUtils import convert_label
+
 sys.path.append("../")
 import csv
 import numpy as np
+import pandas as pd
 import utils.NLPUtils as NLPUtils
 
 from sklearn.feature_selection import SelectKBest
@@ -9,6 +14,7 @@ from sklearn.feature_selection import chi2
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer, TfidfTransformer
 from gensim.models.word2vec import Word2Vec
 import pdb
+from utils.FileUtil import xlrd_reader, csv_reader
 
 def _extract_name_feat(label):
     label = str(label)
@@ -142,6 +148,39 @@ def meta_feat_extractor(_df_data, df_edges):
     
     return df_feat.values.tolist()
 
+def unique_feat_extractor(text_list, max_features=3000, speci_layer='all'):
+    """
+    核心：'text + text'    aa aa   cnt=2
+    系统：'text + text'    bb bb bb   cnt=3
+    应用：'text + text'
+    其它：'text + text'
+    """
+    reader = csv_reader('/Users/zourunxin/Mine/Seminar/20Data/1228/datasource_1228_rpm.csv')
+    layer_text = {}
+    for line in reader:
+        layer = convert_label(line[1], mode='layer')
+        text = " ".join(set(s.lower() for s in NLPUtils.preprocess_text(line[2]).split(' ')))
+        lText = layer_text.get(layer, "") + " " + text
+        layer_text[layer] = lText
+    # 建立词袋模型，获得 unique word
+    print("开始提取 unique word 特征(每个类的预料为一个文档)")
+    tv = TfidfVectorizer(max_features=max_features, max_df=1, stop_words="english")
+    tfidf = tv.fit_transform(layer_text.values())
+    print(tfidf)
+    print(tfidf[0])
+    pdb.set_trace()
+    unique_word = tv.get_feature_names()
+
+    print("提取分层人工特征")
+    feats = []
+    for text in text_list:
+        feat = []
+        for word in unique_word:
+            feat.append(1 if text.find(word) != -1 else 0)
+        feats.append(feat)
+    return feats
+
+
 def bow_feat_extractor(text_list):
     # 建立词袋模型
     print("建立词袋模型")
@@ -158,18 +197,25 @@ def bow_feat_extractor(text_list):
 
     return word_vecs
 
-def tfidf_feat_extractor(text_list, label_list, feature_num=1000):
+def tfidf_feat_extractor(text_list, label_list=None, feature_num=1000):
     '''
      传入顺序一致的text列表 和 one-hot 形式的标签列表
     '''
     # 建立 tf-idf 特征
+    # print("开始提取 TF-IDF 特征(每个包的语料为一个文档)")
+    # tv = TfidfVectorizer(max_features=9999, stop_words="english")
+    # tfidf = tv.fit_transform(text_list)
+    # skb = SelectKBest(chi2, k=feature_num)# 选择 k 个最佳特征
+    # tfidf = skb.fit_transform(tfidf, np.argmax(label_list, axis=1))
+    #
+    # return tfidf.toarray()
+    # 建立词袋模型
     print("开始提取 TF-IDF 特征(每个包的语料为一个文档)")
-    tv = TfidfVectorizer(max_features=9999, stop_words="english")
+    tv = TfidfVectorizer(max_features=1000, stop_words="english")
     tfidf = tv.fit_transform(text_list)
-    skb = SelectKBest(chi2, k=feature_num) # 选择 k 个最佳特征
-    tfidf = skb.fit_transform(tfidf, np.argmax(label_list, axis=1))
+    weights=tfidf.toarray() # 将tf-idf矩阵抽取出来，元素a[i][j]表示j词在i类文本中的tf-idf权重
 
-    return tfidf.toarray()
+    return weights
 
 
 def tfidf_class_feat_extractor(label_list, text_list):

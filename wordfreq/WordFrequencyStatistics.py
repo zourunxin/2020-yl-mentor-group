@@ -1,6 +1,6 @@
 from utils.FileUtil import csv_reader, write_csv, dot_reader
 from utils.ModelEvaluationUtil import main2
-from utils.utils import get_label_layer_map
+from utils.util import get_label_layer_map
 
 
 def pkg_vector():

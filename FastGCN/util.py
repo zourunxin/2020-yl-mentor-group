@@ -3,7 +3,7 @@ import numpy as np
 
 from sklearn.metrics import precision_recall_fscore_support
 
-from utils.utils import get_label_list
+from utils.util import get_label_list
 
 
 def sparse_mx_to_torch_sparse_tensor(sparse_mx):

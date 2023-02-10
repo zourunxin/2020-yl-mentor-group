@@ -5,7 +5,7 @@ import csv
 import pandas as pd
 from preprocess import gen_feature, gen_idx_label, util3
 from random import shuffle
-from utils.utils import get_label_list
+from utils.util import get_label_list
 
 def merge_label(src_pkg_list, merge_mode="class", label_map = None):
 

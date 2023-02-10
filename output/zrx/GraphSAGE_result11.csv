@@ -1,0 +1,1865 @@
+name,label,predict,summary,description
+389-ds-base-libs,系统,应用, Core libraries for 389 Directory Server," Core libraries for the 389 Directory Server base package.  These libraries
+are used by the main package and the -devel package.  This allows the -devel
+package to be installed with just the -libs package and without the main package."
+acpid,系统,应用, ACPI Event Daemon, acpid is a daemon that dispatches ACPI events to user-space programs.
+adcli,应用,系统,Active Directory enrollment ,"adcli is a tool for joining an Active Directory domain using
+standard LDAP and Kerberos calls. "
+adobe-mappings-pdf,应用,系统, PDF mapping resources from Adobe," Mapping resources for PDF have a variety of functions, such as mapping CIDs
+(Character IDs) to character codes, or mapping character codes to other
+character codes.
+
+These mapping resources for PDF should not be confused with CMap resources.
+While both types of resources share the same file structure and syntax, they
+have very different functions.
+
+These PDF mapping resources are useful for some applications (e.g. Ghostscript)
+to function properly."
+alsa-lib,系统,核心, The Advanced Linux Sound Architecture (ALSA) library," The Advanced Linux Sound Architecture (ALSA) provides audio and MIDI
+functionality to the Linux operating system.
+
+This package includes the ALSA runtime libraries to simplify application
+programming and provide higher level functionality as well as support for
+the older OSS API, providing binary compatibility for most OSS programs."
+alsa-sof-firmware,系统,其它,Firmware and topology files for Sound Open Firmware project ,This package contains the firmware binaries for the Sound Open Firmware project. 
+alsa-tools-firmware,系统,应用, ALSA tools for uploading firmware to some soundcards," This package contains tools for flashing firmware into certain sound cards.
+The following tools are available:
+
+* hdsploader   - for RME Hammerfall DSP cards
+* mixartloader - for Digigram miXart soundcards
+* vxloader     - for Digigram VX soundcards
+* usx2yloader  - second phase firmware loader for Tascam USX2Y USB soundcards"
+alsa-utils-alsabat,系统,应用, Advanced Linux Sound Architecture (ALSA) - Basic Audio Tester," This package contains tool for basic audio testing using Advanced Linux Sound
+Architecture (ALSA) framework and Fast Fourier Transform library."
+anolis-backgrounds,核心,应用, Anolis OS related desktop backgrounds," Licensed only for approved usage, see COPYING for details."
+ansible-core,应用,系统," SSH-based configuration management, deployment, and task execution system"," Ansible is a radically simple model-driven configuration management,
+multi-node deployment, and remote task execution system. Ansible works
+over SSH and does not require any software or daemons to be installed
+on remote nodes. Extension modules can be written in any language and
+are transferred to managed machines automatically."
+ansible-pcp,应用,系统, Ansible Metric collection for Performance Co-Pilot," A collection containing roles for Performance Co-Pilot (PCP) and related
+software such as Redis and Grafana.  The collection is made up of several
+Ansible roles, including:
+
+redhat.rhel_metrics.pcp
+A role for core PCP capabilities, configuring live performance analysis
+with a large base set of metrics from the kernel and system services, as
+well as data recording and rule inference.
+
+redhat.rhel_metrics.redis
+A role for configuring a local Redis server, suitable for use with a
+Performance Co-Pilot archive repository (for single or many hosts) and
+fast, scalable querying of metrics.
+
+redhat.rhel_metrics.grafana
+A role for configuring a local Grafana server, providing web frontend
+visuals for Performance Co-Pilot metrics, both live and historically.
+Data sources for Vector (live), Redis (historical) and interactive
+bpftrace (eBPF) scripts can be configured by this role.  The PCP REST
+API service (from the core pcp role) should be configured in order to
+use this role.
+
+redhat.rhel_metrics.bpftrace
+A role that extends the core PCP role, providing metrics from bpftrace
+scripts using Linux eBPF facilities.  Configuring authentication of a
+local user capable of running bpftrace scripts via the PCP agent is a
+key task of this role.
+
+redhat.rhel_metrics.elasticsearch
+A role that extends the core PCP role, providing metrics from a live
+ElasticSearch instance for PCP analysis or exporting of PCP metric
+values (and metadata) to ElasticSearch for the indexing and querying
+of performance data."
+appstream-data,应用,系统, Cached AppStream metadata," This package provides the distribution specific AppStream metadata required
+for the GNOME and KDE software centers."
+arpwatch,应用,系统,Network monitoring tools for tracking IP addresses on a network ,"The arpwatch package contains arpwatch and arpsnmp.  Arpwatch and
+arpsnmp are both network monitoring tools.  Both utilities monitor
+Ethernet or FDDI network traffic and build databases of Ethernet/IP
+address pairs, and can report certain changes via email.
+
+Install the arpwatch package if you need networking monitoring devices
+which will automatically keep track of the IP addresses on your
+network. "
+atlas,系统,应用,Automatically Tuned Linear Algebra Software ,"The ATLAS (Automatically Tuned Linear Algebra Software) project is an
+ongoing research effort f(ocusing on applying empirical techniques in
+order to provide portable performance. At present, it provides C and
+Fortran77 interfaces to a portably efficient BLAS implementation, as
+well as a few routines from LAPACK.
+
+The performance improvements in ATLAS are obtained largely via
+compile-time optimizations and tend to be specific to a given hardware
+configuration. In order to package ATLAS some compromises
+are necessary so that good performance can be obtained on a variety
+of hardware. This set of ATLAS binary packages is therefore not
+necessarily optimal for any specific hardware configuration.  However,
+the source package can be used to compile customized ATLAS packages;
+see the documentation for information. "
+authd,系统,应用, A RFC 1413 ident protocol daemon," authd is a small and fast RFC 1413 ident protocol daemon
+with both xinetd server and interactive modes that
+supports IPv6 and IPv4 as well as the more popular features
+of pidentd."
+authselect-compat,系统,应用, Tool to provide minimum backwards compatibility with authconfig," This package will replace /usr/sbin/authconfig with a tool that will
+translate some of the authconfig calls into authselect calls. It provides
+only minimum backward compatibility and users are encouraged to migrate
+to authselect completely."
+authselect-libs,系统,应用, Utility library used by the authselect tool," Common library files for authselect. This package is used by the authselect
+command line tool and any other potential front-ends."
+autoconf,应用,系统, A GNU tool for automatically configuring source code," GNU's Autoconf is a tool for configuring source code and Makefiles.
+Using Autoconf, programmers can create portable and configurable
+packages, since the person building the package is allowed to
+specify various configuration options.
+
+You should install Autoconf if you are developing software and
+would like to create shell scripts that configure your source code
+packages. If you are installing Autoconf, you will also need to
+install the GNU m4 package.
+
+Note that the Autoconf package is not required for the end-user who
+may be configuring software with an Autoconf-generated script;
+Autoconf is only required for the generation of the scripts, not
+their use."
+autofs,应用,系统,A tool for automatically mounting and unmounting filesystems ,"autofs is a daemon which automatically mounts filesystems when you use
+them, and unmounts them later when you are not using them.  This can
+include network filesystems, CD-ROMs, floppies, and so forth. "
+python38-babel,应用,系统, Library for internationalizing Python applications," Babel is composed of two major parts:
+
+* tools to build and work with gettext message catalogs
+
+* a Python interface to the CLDR (Common Locale Data Repository),
+  providing access to various locale display names, localized number
+  and date formatting, etc."
+bacula-logwatch,应用,系统, Bacula Director logwatch scripts," Bacula is a set of programs that allow you to manage the backup, recovery, and
+verification of computer data across a network of different computers. It is
+based on a client/server architecture.
+
+This package contains logwatch scripts for Bacula Director."
+bash,核心,系统,The GNU Bourne Again shell ,"The GNU Bourne Again shell (Bash) is a shell or command language
+interpreter that is compatible with the Bourne shell (sh). Bash
+incorporates useful features from the Korn shell (ksh) and the C shell
+(csh). Most sh scripts can be run by bash without modification. "
+bc,核心,应用, GNU's bc (a numeric processing language) and dc (a calculator)," The bc package includes bc and dc. Bc is an arbitrary precision
+numeric processing arithmetic language. Dc is an interactive
+arbitrary precision stack based calculator, which can be used as a
+text mode calculator.
+
+Install the bc package if you need its number handling capabilities or
+if you would like to use its text mode calculator."
+bison,系统,应用, A GNU general-purpose parser generator," Bison is a general purpose parser generator that converts a grammar
+description for an LALR(1) context-free grammar into a C program to
+parse that grammar. Bison can be used to develop a wide range of
+language parsers, from ones used in simple desk calculators to complex
+programming languages. Bison is upwardly compatible with Yacc, so any
+correctly written Yacc grammar should work with Bison without any
+changes. If you know Yacc, you shouldn't have any trouble using
+Bison. You do need to be very proficient in C programming to be able
+to use Bison. Bison is only needed on systems that are used for
+development.
+
+If your system will be used for C development, you should install
+Bison."
+bison-runtime,系统,应用, Runtime support files used by Bison-generated parsers," The bison-runtime package contains files used at runtime by parsers
+that Bison generates.  Packages whose binaries contain parsers
+generated by Bison should depend on bison-runtime to ensure that
+these files are available.  See the Internationalization in the
+Bison manual section for more information."
+brltty-dracut,应用,核心, brltty module for Dracut, This package provides brltty module for Dracut.
+bubblewrap,应用,系统, Core execution tool for unprivileged containers," Bubblewrap (/usr/bin/bwrap) is a core execution engine for unprivileged
+containers that works as a setuid binary on kernels without
+user namespaces."
+buildah,应用,系统, A command line tool used for creating OCI Images," The buildah package provides a command line tool which can be used to
+* create a working container from scratch
+or
+* create a working container from an image as a starting point
+* mount/umount a working container's root file system for manipulation
+* save container's root file system layer to create a new image
+* delete a working container or an image"
+cairo-gobject,系统,应用, GObject bindings for cairo," Cairo is a 2D graphics library designed to provide high-quality display
+and print output.
+
+This package contains functionality to make cairo graphics library
+integrate well with the GObject object system used by GNOME."
+cairomm,系统,应用, C++ API for the cairo graphics library," Cairomm is the C++ API for the cairo graphics library. It offers all the power
+of cairo with an interface familiar to C++ developers, including use of the
+Standard Template Library where it makes sense."
+libusal,应用,系统, Library to communicate with SCSI devices," The libusal package contains C libraries that allows applications
+to communicate with SCSI devices and is well suitable for writing
+CD-R media."
+ntsysv,系统,应用,A tool to set the stop/start of system services in a runlevel ,"Ntsysv provides a simple interface for setting which system services
+are started or stopped in various runlevels (instead of directly
+manipulating the numerous symbolic links in /etc/rc.d). Unless you
+specify a runlevel or runlevels on the command line (see the man
+page), ntsysv configures the current runlevel (5 if you're using X). "
+cifs-utils,系统,应用,Utilities for mounting and managing CIFS mounts ,"The SMB/CIFS protocol is a standard file sharing protocol widely deployed
+on Microsoft Windows machines. This package contains tools for mounting
+shares on Linux using the SMB/CIFS protocol. The tools in this package
+work in conjunction with support in the kernel to allow one to mount a
+SMB/CIFS share onto a client and use it as if it were a standard Linux
+file system. "
+clang,系统,应用, A C language family front-end for LLVM," clang: noun
+    1. A loud, resonant, metallic sound.
+    2. The strident call of a crane or goose.
+    3. C-language family front-end toolkit.
+
+The goal of the Clang project is to create a new C, C++, Objective C
+and Objective C++ front-end for the LLVM compiler. Its tools are built
+as libraries and designed to be loosely-coupled and extensible.
+
+Install compiler-rt if you want the Blocks C language extension or to
+enable sanitization and profiling options when building, and
+libomp-devel to enable -fopenmp."
+clang-analyzer,系统,应用, A source code analysis framework," The Clang Static Analyzer consists of both a source code analysis
+framework and a standalone tool that finds bugs in C and Objective-C
+programs. The standalone tool is invoked from the command-line, and is
+intended to run in tandem with a build of a project or code base."
+clang-libs,系统,应用, Runtime library for clang, Runtime library for clang.
+clutter-gst2,系统,应用, GStreamer integration for Clutter," Clutter is an open source software library for creating fast, visually
+rich and animated graphical user interfaces.
+
+Clutter GStreamer enables the use of GStreamer with Clutter."
+clutter-gst3,系统,应用, GStreamer integration library for Clutter," Clutter is an open source software library for creating fast, visually
+rich and animated graphical user interfaces.
+
+Clutter GStreamer enables the use of GStreamer with Clutter."
+libcmocka,应用,系统, Lightweight library to simplify and generalize unit tests for C," There are a variety of C unit testing frameworks available however many of them
+are fairly complex and require the latest compiler technology. Some development
+requires the use of old compilers which makes it difficult to use some unit
+testing frameworks. In addition many unit testing frameworks assume the code
+being tested is an application or module that is targeted to the same platform
+that will ultimately execute the test. Because of this assumption many
+frameworks require the inclusion of standard C library headers in the code
+module being tested which may collide with the custom or incomplete
+implementation of the C library utilized by the code under test.
+
+CMocka only requires a test application is linked with the standard C library
+which minimizes conflicts with standard C library headers. Also, CMocka tries
+to avoid the use of some of the newer features of C compilers.
+
+This results in CMocka being a relatively small library that can be used to
+test a variety of exotic code. If a developer wishes to simply test an
+application with the latest compiler then other unit testing frameworks may be
+preferable.
+
+This is the successor of Google's Cmockery."
+compat-libgfortran-48,应用,系统, Compatibility Fortran runtime library version 4.8.5," This package includes a Fortran 95 runtime library for compatibility
+with GCC 4.8.x-RH compiled Fortran applications."
+convmv,应用,系统, Convert filename encodings," This package contains the tool convmv with which you can convert the encodings
+of filenames, e.g. from Latin1 to UTF-8."
+corosync-qnetd,应用,系统, The Corosync Cluster Engine Qdevice Network Daemon," This package contains the Corosync Cluster Engine Qdevice Network Daemon,
+script for creating NSS certificates and an init script."
+cpio,系统,应用, A GNU archiving program," GNU cpio copies files into or out of a cpio or tar archive.  Archives
+are files which contain a collection of other files plus information
+about them, such as their file name, owner, timestamps, and access
+permissions.  The archive can be another file on the disk, a magnetic
+tape, or a pipe.  GNU cpio supports the following archive formats:  binary,
+old ASCII, new ASCII, crc, HPUX binary, HPUX old ASCII, old tar and POSIX.1
+tar.  By default, cpio creates binary format archives, so that they are
+compatible with older cpio programs.  When it is extracting files from
+archives, cpio automatically recognizes which kind of archive it is reading
+and can read archives created on machines with a different byte-order.
+
+Install cpio if you need a program to manage file archives."
+createrepo_c,应用,系统, Creates a common metadata repository," C implementation of Createrepo.
+A set of utilities (createrepo_c, mergerepo_c, modifyrepo_c)
+for generating a common metadata repository from a directory of
+rpm packages and maintaining it."
+veritysetup,核心,系统,A utility for setting up dm-verity volumes ,"The veritysetup package contains a utility for setting up
+disk verification using dm-verity kernel module. "
+libcurl,系统,应用,A library for getting files from web servers ,"libcurl is a free and easy-to-use client-side URL transfer library, supporting
+FTP, FTPS, HTTP, HTTPS, SCP, SFTP, TFTP, TELNET, DICT, LDAP, LDAPS, FILE, IMAP,
+SMTP, POP3 and RTSP. libcurl supports SSL certificates, HTTP POST, HTTP PUT,
+FTP uploading, HTTP form based upload, proxies, cookies, user+password
+authentication (Basic, Digest, NTLM, Negotiate, Kerberos4), file transfer
+resume, http proxy tunneling and more. "
+custodia,应用,系统," A service to manage, retrieve and store secrets for other processes"," A service to manage, retrieve and store secrets for other processes
+
+
+Custodia is a Secrets Service Provider, it stores or proxies access to
+keys, password, and secret material in general. Custodia is built to
+use the HTTP protocol and a RESTful API as an IPC mechanism over a local
+Unix Socket. It can also be exposed to a network via a Reverse Proxy
+service assuming proper authentication and header validation is
+implemented in the Proxy.
+
+Custodia is modular, the configuration file controls how authentication,
+authorization, storage and API plugins are combined and exposed."
+cyrus-sasl-lib,应用,系统, Shared libraries needed by applications which use Cyrus SASL," The cyrus-sasl-lib package contains shared libraries which are needed by
+applications which use the Cyrus SASL library."
+dbus-common,核心,系统, D-BUS message bus configuration," The dbus-common package provides the configuration and setup files for D-Bus
+implementations to provide a System and User Message Bus."
+dbus-tools,核心,系统, D-BUS Tools and Utilities," Tools and utilities to interact with a running D-Bus Message Bus, provided by
+the reference implementation."
+dbus-x11,核心,应用, X11-requiring add-ons for D-BUS," D-BUS contains some tools that require Xlib to be installed, those are
+in this separate package so server systems need not install X."
+dbus-glib,系统,应用, GLib bindings for D-Bus," 
+D-Bus add-on library to integrate the standard D-Bus library with
+the GLib thread abstraction and main loop."
+python3-dbus,系统,应用, D-Bus bindings for python3, D-Bus bindings for python3.
+dialog,应用,系统, A utility for creating TTY dialog boxes," Dialog is a utility that allows you to show dialog boxes (containing
+questions or messages) in TTY (text mode) interfaces.  Dialog is called
+from within a shell script.  The following dialog boxes are implemented:
+yes/no, menu, input, message, text, info, checklist, radiolist, and
+gauge.
+
+Install dialog if you would like to create TTY dialog boxes."
+diffstat,应用,系统, A utility which provides statistics based on the output of diff," The diff command compares files line by line.  Diffstat reads the
+output of the diff command and displays a histogram of the insertions,
+deletions and modifications in each file.  Diffstat is commonly used
+to provide a summary of the changes in large, complex patch files.
+
+Install diffstat if you need a program which provides a summary of the
+diff command's output."
+dlm-lib,系统,应用, Library for dlm," The dlm-lib package contains the libraries needed to use the dlm
+from userland applications."
+dmidecode,系统,应用, Tool to analyse BIOS DMI data," dmidecode reports information about x86 & ia64 hardware as described in the
+system BIOS according to the SMBIOS/DMI standard. This information
+typically includes system manufacturer, model name, serial number,
+BIOS version, asset tag as well as a lot of other details of varying
+level of interest and reliability depending on the manufacturer.
+
+This will often include usage status for the CPU sockets, expansion
+slots (e.g. AGP, PCI, ISA) and memory module slots, and the list of
+I/O ports (e.g. serial, parallel, USB)."
+docbook5-schemas,应用,系统," Norman Walsh's schemas (DTD, Relax NG, W3C schema) for Docbook 5.X"," Docbook 5.X is a complete rewrite of Docbook in RELAX NG and not compatible
+with previous Docbook versions. This package contains Relax NG , DTD and W3C
+schema for Docbook 5.X. Syntax of those schemas is XML-compliant and is
+developed by the OASIS consortium."
+dosfstools,应用,系统,Utilities for making and checking MS-DOS FAT filesystems on Linux ,"The dosfstools package includes the mkdosfs and dosfsck utilities,
+which respectively make and check MS-DOS FAT filesystems on hard
+drives or on floppies. "
+dracut-squash,核心,系统,dracut module to build an initramfs with most files in a squashfs image ,"This package provides a dracut module to build an initramfs, but store most files
+in a squashfs image, result in a smaller initramfs size and reduce runtime memory
+usage. "
+driverctl,系统,应用, Device driver control utility," driverctl is a tool for manipulating and inspecting the system
+device driver choices.
+
+Devices are normally assigned to their sole designated kernel driver
+by default. However in some situations it may be desireable to
+override that default, for example to try an older driver to
+work around a regression in a driver or to try an experimental alternative
+driver. Another common use-case is pass-through drivers and driver
+stubs to allow userspace to drive the device, such as in case of
+virtualization.
+
+driverctl integrates with udev to support overriding
+driver selection for both cold- and hotplugged devices from the
+moment of discovery, but can also change already assigned drivers,
+assuming they are not in use by the system. The driver overrides
+created by driverctl are persistent across system reboots
+by default."
+dropwatch,应用,系统, Kernel dropped packet monitor," dropwatch is an utility to interface to the kernel to monitor for dropped
+network packets."
+e2fsprogs,核心,应用," Utilities for managing ext2, ext3, and ext4 file systems"," The e2fsprogs package contains a number of utilities for creating,
+checking, modifying, and correcting any inconsistencies in second,
+third and fourth extended (ext2/ext3/ext4) file systems. E2fsprogs
+contains e2fsck (used to repair file system inconsistencies after an
+unclean shutdown), mke2fs (used to initialize a partition to contain
+an empty ext2 file system), debugfs (used to examine the internal
+structure of a file system, to manually repair a corrupted
+file system, or to create test cases for e2fsck), tune2fs (used to
+modify file system parameters), and most of the other core ext2fs
+file system utilities.
+
+You should install the e2fsprogs package if you need to manage the
+performance of an ext2, ext3, or ext4 file system."
+libss,核心,应用, Command line interface parsing library," This is libss, a command line interface parsing library, part of e2fsprogs.
+
+This package includes a tool that parses a command table to generate
+a simple command-line interface parser, the include files needed to
+compile and use it.
+
+It was originally inspired by the Multics SubSystem library."
+efibootmgr,核心,系统,EFI Boot Manager ,"efibootmgr displays and allows the user to edit the Intel Extensible
+Firmware Interface (EFI) Boot Manager variables.  Additional
+information about EFI can be found at
+http://developer.intel.com/technology/efi/efi.htm and http://uefi.org/. "
+efi-filesystem,系统,应用,The basic directory layout for EFI machines ,"The efi-filesystem package contains the basic directory layout for EFI
+machine bootloaders and tools. "
+elfutils-libelf,核心,系统, Library to read and write ELF files," The elfutils-libelf package provides a DSO which allows reading and
+writing ELF files on a high level.  Third party programs depend on
+this package to read internals of ELF files.  The programs of the
+elfutils package use it also to generate new ELF files."
+elfutils-libs,核心,系统, Libraries to handle compiled objects," The elfutils-libs package contains libraries which implement DWARF, ELF,
+and machine-specific ELF handling and process introspection.  These
+libraries are used by the programs in the elfutils package.  The
+elfutils-devel package enables building other programs using these
+libraries."
+environment-modules,系统,应用,Provides dynamic modification of a user's environment ,"The Environment Modules package provides for the dynamic modification of
+a user's environment via modulefiles.
+
+Each modulefile contains the information needed to configure the shell
+for an application. Once the Modules package is initialized, the
+environment can be modified on a per-module basis using the module
+command which interprets modulefiles. Typically modulefiles instruct
+the module command to alter or set shell environment variables such as
+PATH, MANPATH, etc. modulefiles may be shared by many users on a system
+and users may have their own collection to supplement or replace the
+shared modulefiles.
+
+Modules can be loaded and unloaded dynamically and atomically, in an
+clean fashion. All popular shells are supported, including bash, ksh,
+zsh, sh, csh, tcsh, as well as some scripting languages such as perl.
+
+Modules are useful in managing different versions of applications.
+Modules can also be bundled into metamodules that will load an entire
+suite of different applications.
+
+NOTE: You will need to get a new shell after installing this package to
+have access to the module alias. "
+epel-rpm-macros,核心,系统, Extra Packages for Enterprise Linux RPM macros," This package contains the Extra Packages for Enterprise Linux (EPEL) RPM
+macros for building EPEL packages."
+eth-tools-basic,系统,应用, Management level tools and scripts, Contains basic tools for fabric management necessary on all compute nodes.
+evolution-data-server-perl,应用,系统, Supplemental utilities that require Perl, This package contains supplemental utilities for evolution-data-server that require Perl.
+filesystem,核心,应用, The basic directory layout for a Linux system," The filesystem package is one of the basic packages that is installed
+on a Linux system. Filesystem contains the basic directory layout
+for a Linux operating system, including the correct permissions for
+the directories."
+firewall-applet,系统,应用, Firewall panel applet," The firewall panel applet provides a status information of firewalld and also
+the firewall settings."
+flatpak-selinux,应用,系统, SELinux policy module for flatpak, This package contains the SELinux policy module for flatpak.
+flex,系统,应用, A tool for creating scanners (text pattern recognizers)," The flex program generates scanners.  Scanners are programs which can
+recognize lexical patterns in text.  Flex takes pairs of regular
+expressions and C code as input and generates a C source file as
+output.  The output file is compiled and linked with a library to
+produce an executable.  The executable searches through its input for
+occurrences of the regular expressions.  When a match is found, it
+executes the corresponding C code.  Flex was designed to work with
+both Yacc and Bison, and is used by many programs as part of their
+build process.
+
+You should install flex if you are going to use your system for
+application development."
+fontpackages-filesystem,应用,其它, Directories used by font packages," This package contains the basic directory layout used by font packages,
+including the correct permissions for the directories."
+fpc-srpm-macros,系统,应用, RPM macros needed by packages built with Free Pascal Compiler," This package contains RPM macros needed by packages built with the
+Free Pascal Compiler. For example, it makes available a macro that
+lists all architectures where fpc is available."
+freeradius-utils,应用,系统, FreeRADIUS utilities," The FreeRADIUS server has a number of features found in other servers,
+and additional features not found in any other server. Rather than
+doing a feature by feature comparison, we will simply list the features
+of the server, and let you decide if they satisfy your needs.
+
+Support for RFC and VSA Attributes Additional server configuration
+attributes Selecting a particular configuration Authentication methods"
+fwupd,系统,应用,Firmware update daemon ,fwupd is a daemon to allow session software to update device firmware. 
+gawk,核心,系统, The GNU version of the AWK text processing utility," The gawk package contains the GNU version of AWK text processing utility. AWK is
+a programming language designed for text processing and typically used as a data
+extraction and reporting tool.
+
+The gawk utility can be used to do quick and easy text pattern matching,
+extracting or reformatting. It is considered to be a standard Linux tool for
+text processing."
+libgcab1,系统,应用, Library to create Cabinet archives, libgcab is a library to manipulate Cabinet archive using GIO/GObject.
+cpp,系统,应用, The C Preprocessor," Cpp is the GNU C-Compatible Compiler Preprocessor.
+Cpp is a macro processor which is used automatically
+by the C compiler to transform your program before actual
+compilation. It is called a macro processor because it allows
+you to define macros, abbreviations for longer
+constructs.
+
+The C preprocessor provides four separate functionalities: the
+inclusion of header files (files of declarations that can be
+substituted into your program); macro expansion (you can define macros,
+and the C preprocessor will replace the macros with their definitions
+throughout the program); conditional compilation (using special
+preprocessing directives, you can include or exclude parts of the
+program according to various conditions); and line control (if you use
+a program to combine or rearrange source files into an intermediate
+file which is then compiled, you can use line control to inform the
+compiler about where each source line originated).
+
+You should install this package if you are a C programmer and you use
+macros."
+gcc-gfortran,系统,应用, Fortran support," The gcc-gfortran package provides support for compiling Fortran
+programs with the GNU Compiler Collection."
+libatomic-static,系统,应用,The GNU Atomic static library ,This package contains GNU Atomic static libraries. 
+libstdc++,系统,应用,GNU Standard C++ Library ,"The libstdc++ package contains a rewritten standard compliant GCC Standard
+C++ Library. "
+libstdc++-docs,系统,应用, Documentation for the GNU standard C++ library," Manual, doxygen generated API information and Frequently Asked Questions
+for the GNU standard C++ library."
+gcc-toolset-9-dyninst,系统,应用, An API for Run-time Code Generation," 
+Dyninst is an Application Program Interface (API) to permit the insertion of
+code into a running program. The API also permits changing or removing
+subroutine calls from the application program. Run-time code changes are
+useful to support a variety of applications including debugging, performance
+monitoring, and to support composing applications out of existing packages.
+The goal of this API is to provide a machine independent interface to permit
+the creation of tools and applications that use run-time code patching."
+gcc-toolset-9-dyninst-static,系统,应用, Static libraries for the compiling programs with Dyninst," dyninst-static includes the static versions of the library files for
+the dyninst user-space libraries and interfaces."
+gcc-toolset-9-systemtap-runtime,系统,应用, Programmable system-wide instrumentation system - runtime," SystemTap runtime contains the components needed to execute
+a systemtap script that was already compiled into a module
+using a local or remote systemtap-devel installation."
+gdbm-libs,核心,应用, Libraries files for gdbm, Libraries for the Gdbm GNU database indexing library
+genwqe-vpd,应用,系统,GenWQE adapter VPD tools ,The genwqe-vpd package contains GenWQE adapter VPD tools. 
+gettext,核心,应用, GNU libraries and utilities for producing multi-lingual messages," The GNU gettext package provides a set of tools and documentation for
+producing multi-lingual messages in programs. Tools include a set of
+conventions about how programs should be written to support message
+catalogs, a directory and file naming organization for the message
+catalogs, a runtime library which supports the retrieval of translated
+messages, and stand-alone programs for handling the translatable and
+the already translated strings. Gettext provides an easy to use
+library and tools for creating, using, and modifying natural language
+catalogs and is a powerful and simple method for internationalizing
+programs."
+gettext-libs,核心,应用, Libraries for gettext, This package contains libraries used internationalization support.
+git,应用,系统, Fast Version Control System," Git is a fast, scalable, distributed revision control system with an
+unusually rich command set that provides both high-level operations
+and full access to internals.
+
+The git rpm installs common set of tools which are usually using with
+small amount of dependencies. To install all git packages, including
+tools for integrating with other SCMs, install the git-all meta-package."
+git-daemon,应用,系统, Git protocol daemon, The git daemon for supporting git:// access to git repositories
+git-svn,应用,系统, Git tools for interacting with Subversion repositories, Git tools for interacting with Subversion repositories.
+perl-Git,应用,系统, Perl interface to Git, Perl interface to Git.
+perl-Git-SVN,应用,系统, Perl interface to Git::SVN, Perl interface to Git::SVN.
+glib2,系统,应用, A library of handy utility functions," GLib is the low-level core library that forms the basis for projects
+such as GTK+ and GNOME. It provides data structure handling for C,
+portability wrappers, and interfaces for such runtime functionality
+as an event loop, threads, dynamic loading, and an object system."
+glibc,核心,系统, The GNU libc libraries," The glibc package contains standard libraries which are used by
+multiple programs on the system. In order to save disk space and
+memory, as well as to make upgrading easier, common system code is
+kept in one place and shared between programs. This particular package
+contains the most important sets of shared libraries: the standard C
+library and the standard math library. Without these two libraries, a
+Linux system will not function."
+glibc-locale-source,核心,应用,The sources for the locales ,"The sources for all locales provided in the language packs.
+If you are building custom locales you will most likely use
+these sources as the basis for your new locale. "
+glibc-static,核心,应用, C library static libraries for -static linking.," The glibc-static package contains the C library static libraries
+for -static linking.  You don't need these, unless you link statically,
+which is highly discouraged."
+glusterfs-rdma,应用,系统,GlusterFS rdma support for ib-verbs ,"GlusterFS is a distributed file-system capable of scaling to several
+petabytes. It aggregates various storage bricks over Infiniband RDMA
+or TCP/IP interconnect into one large parallel network file
+system. GlusterFS is one of the most sophisticated file systems in
+terms of features and extensibility.  It borrows a powerful concept
+called Translators from GNU Hurd kernel. Much of the code in GlusterFS
+is in user space and easily manageable.
+
+This package provides support to ib-verbs library. "
+gmp,核心,应用, A GNU arbitrary precision library," The gmp package contains GNU MP, a library for arbitrary precision
+arithmetic, signed integers operations, rational numbers and floating
+point numbers. GNU MP is designed for speed, for both small and very
+large operands. GNU MP is fast because it uses fullwords as the basic
+arithmetic type, it uses fast algorithms, it carefully optimizes
+assembly code for many CPUs' most common inner loops, and it generally
+emphasizes speed over simplicity/elegance in its operations.
+
+Install the gmp package if you need a fast arbitrary precision
+library."
+gmp-c++,核心,应用,C++ bindings for the GNU MP arbitrary precision library ,Bindings for using the GNU MP arbitrary precision library in C++ applications. 
+gnu-efi,系统,应用, Development Libraries and headers for EFI," This package contains development headers and libraries for developing
+applications that run under EFI (Extensible Firmware Interface)."
+gnupg2-smime,系统,应用,CMS encryption and signing tool and smart card support for GnuPG ,"GnuPG is GNU's tool for secure communication and data storage. This
+package adds support for smart cards and S/MIME encryption and signing
+to the base GnuPG package "
+gnutls,核心,系统, A TLS protocol implementation," GnuTLS is a secure communications library implementing the SSL, TLS and DTLS
+protocols and technologies around them. It provides a simple C language
+application programming interface (API) to access the secure communications
+protocols as well as APIs to parse and write X.509, PKCS #12, OpenPGP and
+other required structures."
+gnutls-dane,核心,应用, A DANE protocol implementation for GnuTLS," GnuTLS is a secure communications library implementing the SSL, TLS and DTLS
+protocols and technologies around them. It provides a simple C language
+application programming interface (API) to access the secure communications
+protocols as well as APIs to parse and write X.509, PKCS #12, OpenPGP and
+other required structures.
+This package contains library that implements the DANE protocol for verifying
+TLS certificates through DNSSEC."
+gnutls-utils,核心,应用, Command line tools for TLS protocol," GnuTLS is a secure communications library implementing the SSL, TLS and DTLS
+protocols and technologies around them. It provides a simple C language
+application programming interface (API) to access the secure communications
+protocols as well as APIs to parse and write X.509, PKCS #12, OpenPGP and
+other required structures.
+This package contains command line TLS client and server and certificate
+manipulation tools."
+google-gson,其它,应用, Java lib for conversion of Java objects into JSON representation," Gson is a Java library that can be used to convert a Java object into its
+JSON representation. It can also be used to convert a JSON string into an
+equivalent Java object. Gson can work with arbitrary Java objects including
+pre-existing objects that you do not have source-code of."
+gperf,核心,应用, A perfect hash function generator," Gperf is a perfect hash function generator written in C++. Simply
+stated, a perfect hash function is a hash function and a data
+structure that allows recognition of a key word in a set of words
+using exactly one probe into the data structure."
+grafana-pcp,应用,系统, Performance Co-Pilot Grafana Plugin," This Grafana plugin for Performance Co-Pilot includes datasources for
+scalable time series from pmseries(1) and Redis, live PCP metrics and
+bpftrace scripts from pmdabpftrace(1), as well as several dashboards."
+grub2-tools-extra,核心,系统, Support tools for GRUB.," 
+The GRand Unified Bootloader (GRUB) is a highly configurable and
+customizable bootloader with modular architecture.  It supports a rich
+variety of kernel formats, file systems, computer architectures and
+hardware devices.
+
+This subpackage provides tools for support of all platforms."
+gupnp-av,系统,应用, A collection of helpers for building UPnP AV applications," GUPnP is an object-oriented open source framework for creating UPnP
+devices and control points, written in C using GObject and libsoup.
+The GUPnP API is intended to be easy to use, efficient and flexible.
+
+GUPnP-AV is a collection of helpers for building AV (audio/video)
+applications using GUPnP."
+gupnp-dlna,系统,应用, A collection of helpers for building UPnP AV applications," GUPnP is an object-oriented open source framework for creating UPnP
+devices and control points, written in C using GObject and libsoup.
+The GUPnP API is intended to be easy to use, efficient and flexible.
+
+GUPnP-dlna is a collection of helpers for building DLNA (Digital
+Living Network Alliance) compliant applications using GUPnP."
+gupnp-igd,系统,应用, Library to handle UPnP IGD port mapping, gupnp-igd is a library to handle UPnP IGD port mapping.
+gvfs-client,系统,应用, Client modules of backends for the gio framework in GLib," The gvfs package provides client modules of backend implementations for the gio
+framework in GLib."
+gvfs-gphoto2,系统,应用, gphoto2 support for gvfs," This package provides support for reading and writing files on
+PTP based cameras (Picture Transfer Protocol) and MTP based
+media players (Media Transfer Protocol) to applications using gvfs."
+gvfs-mtp,系统,应用, MTP support for gvfs," This package provides support for reading and writing files on
+MTP based devices (Media Transfer Protocol) to applications using gvfs."
+gvfs-smb,系统,应用, Windows fileshare support for gvfs," This package provides support for reading and writing files on windows
+shares (SMB) to applications using gvfs."
+helm,应用,系统, Kubernetes charts manager," 
+Helm is a tool for managing Kubernetes charts. Charts are packages of
+pre-configured Kubernetes resources.
+
+%gopkg"
+perl-hivex,应用,系统, Perl bindings for hivex, perl-hivex contains Perl bindings for hivex.
+http-parser,应用,系统, HTTP request/response parser for C," This is a parser for HTTP messages written in C. It parses both requests and
+responses. The parser is designed to be used in performance HTTP applications.
+It does not make any syscalls nor allocations, it does not buffer data, it can
+be interrupted at anytime. Depending on your architecture, it only requires
+about 40 bytes of data per message stream (in a web server that is per
+connection)."
+hwinfo,系统,应用, Hardware information tool," hwinfo is to probe for the hardware present in the system. It can be used to
+generate a system overview log which can be later used for support."
+hwloc,应用,系统,Portable Hardware Locality - portable abstraction of hierarchical architectures ,"The Portable Hardware Locality (hwloc) software package provides
+a portable abstraction (across OS, versions, architectures, ...)
+of the hierarchical topology of modern architectures, including
+NUMA memory nodes,  shared caches, processor sockets, processor cores
+and processing units (logical processors or ""threads""). It also gathers
+various system attributes such as cache and memory information. It primarily
+aims at helping applications with gathering information about modern
+computing hardware so as to exploit it accordingly and efficiently.
+
+hwloc may display the topology in multiple convenient formats.
+It also offers a powerful programming interface (C API) to gather information
+about the hardware, bind processes, and much more. "
+hwloc-libs,应用,系统, Run time libraries for the hwloc, Run time libraries for the hwloc
+icu,系统,应用,International Components for Unicode ,Tools and utilities for developing with icu. 
+icu4j,系统,应用, International Components for Unicode for Java," The International Components for Unicode (ICU) library provides robust and
+full-featured Unicode services on a wide variety of platforms. ICU supports
+the most current version of the Unicode standard, and provides support for
+supplementary characters (needed for GB 18030 repertoire support).
+
+Java provides a very strong foundation for global programs, and IBM and the
+ICU team played a key role in providing globalization technology into Sun's
+Java. But because of its long release schedule, Java cannot always keep
+up-to-date with evolving standards. The ICU team continues to extend Java's
+Unicode and internationalization support, focusing on improving
+performance, keeping current with the Unicode standard, and providing
+richer APIs, while remaining as compatible as possible with the original
+Java text and internationalization API design."
+imake,应用,系统, imake source code configuration and build system," Imake is a deprecated source code configuration and build system which
+has traditionally been supplied by and used to build the X Window System
+in X11R6 and previous releases.  As of the X Window System X11R7 release,
+the X Window system has switched to using GNU autotools as the primary
+build system, and the Imake system is now deprecated, and should not be
+used by new software projects.  Software developers are encouraged to
+migrate software to the GNU autotools system."
+initial-setup,应用,系统, Initial system configuration utility," The initial-setup utility runs after installation.  It guides the user through
+a series of steps that allows for easier configuration of the machine."
+initscripts,系统,应用, Basic support for legacy System V init scripts," This package provides basic support for legacy System V init scripts, and some
+other legacy tools & utilities."
+intltool,系统,应用, Utility for internationalizing various kinds of data files," This tool automatically extracts translatable strings from oaf, glade,
+bonobo ui, nautilus theme, .desktop, and other data files and puts
+them in the po files."
+python3-javapackages,应用,系统, Module for handling various files for Java packaging," Module for handling, querying and manipulating of various files for Java
+packaging in Linux distributions"
+kabi-dw,核心,应用,Detect changes in the ABI between kernel builds ,"The aim of kabi-dw is to detect any changes in the ABI between the successive
+builds of the Linux kernel. This is done by dumping the DWARF type information
+(the .debug_info section) for the specific symbols into the text files and
+later comparing the text files. "
+kata-containers,应用,核心, Kata Containers version 3.x repository," 
+Kata Containers version 3.x repository. Kata Containers is an open source
+project and community working to build a standard implementation of lightweight
+Virtual Machines (VMs) that feel and perform like containers, but provide the
+workload isolation and security advantages of VMs. https://katacontainers.io/.
+
+%gopkg"
+kdump-anaconda-addon,系统,应用, Kdump configuration anaconda addon, Kdump anaconda addon
+keentuned,系统,应用, KeenTune tuning tools, KeenTune tuning tools rpm package
+keentune-target,系统,应用," Parameters setting, reading and backup models for KeenTune"," Parameters setting, reading and backup models for KeenTune"
+keepalived,系统,应用," High Availability monitor built upon LVS, VRRP and service pollers"," Keepalived provides simple and robust facilities for load balancing
+and high availability to Linux system and Linux based infrastructures.
+The load balancing framework relies on well-known and widely used
+Linux Virtual Server (IPVS) kernel module providing Layer4 load
+balancing. Keepalived implements a set of checkers to dynamically and
+adaptively maintain and manage load-balanced server pool according
+their health. High availability is achieved by VRRP protocol. VRRP is
+a fundamental brick for router failover. In addition, keepalived
+implements a set of hooks to the VRRP finite state machine providing
+low-level and high-speed protocol interactions. Keepalived frameworks
+can be used independently or all together to provide resilient
+infrastructures."
+kernel,其它,核心," The Linux kernel, based on version 5.10.112, heavily modified with backports"," This is the package which provides the Linux kernel for Alibaba Cloud Linux.
+It is based on upstream Linux at version 5.10.112 and maintains kABI
+compatibility of a set of approved symbols, however it is heavily modified with
+backports and fixes pulled from newer upstream Linux kernel releases. This means
+this is not a 5.10.112 kernel anymore: it includes several components which come
+from newer upstream linux versions, while maintaining a well tested and stable
+core. Some of the components/backports that may be pulled in are: changes like
+updates to the core kernel (eg.: scheduler, cgroups, memory management, security
+fixes and features), updates to block layer, supported filesystems, major driver
+updates for supported hardware in Alibaba Cloud Linux, enhancements for
+enterprise customers, etc."
+kernel-abi-stablelists,其它,核心,The Red Hat Enterprise Linux kernel ABI symbol stablelists ,"The kABI package contains information pertaining to the Red Hat Enterprise
+Linux kernel ABI, including lists of kernel symbols that are needed by
+external Linux kernel modules, and a yum plugin to aid enforcement. "
+kernel-core,其它,核心, The Linux kernel," The kernel package contains the Linux kernel (vmlinuz), the core of any
+Linux operating system.  The kernel handles the basic functions
+of the operating system: memory allocation, process allocation, device
+input and output, etc."
+kernel-debug-core,其它,核心, The Linux kernel compiled with extra debugging enabled," The kernel package contains the Linux kernel (vmlinuz), the core of any
+Linux operating system.  The kernel handles the basic functions
+of the operating system:  memory allocation, process allocation, device
+input and output, etc.
+
+This variant of the kernel has numerous debugging options enabled.
+It should only be installed when trying to gather additional information
+on kernel bugs, as some of these options impact performance noticably."
+kernel-headers,其它,核心, Header files for the Linux kernel for use by glibc," Kernel-headers includes the C header files that specify the interface
+between the Linux kernel and userspace libraries and programs.  The
+header files define structures and constants that are needed for
+building most standard programs and are also needed for rebuilding the
+glibc package."
+kernel-tools,核心,系统, Assortment of tools for the Linux kernel," This package contains the tools/ directory from the kernel source
+and the supporting documentation."
+kernel-tools-libs,其它,应用, Libraries for the kernel-tools," This package contains the libraries built from the tools/ directory
+from the kernel source."
+kmod-libs,核心,系统, Libraries to handle kernel module loading and unloading," The kmod-libs package provides runtime libraries for any application that
+wishes to load or unload Linux kernel modules from the running system."
+kmod-kvdo,核心,系统,Kernel Modules for Virtual Data Optimizer ,"Virtual Data Optimizer (VDO) is a device mapper target that delivers
+block-level deduplication, compression, and thin provisioning.
+
+This package provides the kernel modules for VDO. "
+kpatch,核心,系统,Dynamic kernel patch manager ,"kpatch is a live kernel patch module manager.  It allows the user to manage
+a collection of binary kernel patch modules which can be used to dynamically
+patch the kernel without rebooting. "
+lapack-static,应用,系统, LAPACK static libraries, LAPACK static libraries.
+ldns,应用,系统, Low-level DNS(SEC) library with API," ldns is a library with the aim to simplify DNS programming in C. All
+low-level DNS/DNSSEC operations are supported. We also define a higher
+level API which allows a programmer to (for instance) create or sign
+packets."
+libappstream-glib,系统,应用,Library for AppStream metadata ,"This library provides GObjects and helper methods to make it easy to read and
+write AppStream metadata. It also provides a simple DOM implementation that
+makes it easy to edit nodes and convert to and from the standardized XML
+representation. "
+bsdtar,系统,应用, Manipulate tape archives," The bsdtar package contains standalone bsdtar utility split off regular
+libarchive packages."
+bsdcat,系统,应用, Expand files to standard output," The bsdcat program typically takes a filename as an argument or reads standard
+input when used in a pipe.  In both cases decompressed data it written to
+standard output."
+libbpf-static,系统,应用, Static library for libbpf development," The libbpf-static package contains static library for
+developing applications that use libbpf"
+libburn,系统,应用," Library for reading, mastering and writing optical discs"," Libburn is a library by which preformatted data get onto optical media:
+CD, DVD and BD (Blu-Ray). It also offers a facility for reading data
+blocks from its drives without using the normal block device I/O, which
+has advantages and disadvantages. It seems appropriate, nevertheless,
+to do writing and reading via same channel. On several Linux systems,
+the block device driver needs reloading of the drive tray in order to
+make available freshly written data. The libburn read function does not
+need such a reload. The code of libburn is independent of cdrecord."
+libbytesize,系统,应用, A library for working with sizes in bytes," The libbytesize is a C library that facilitates work with sizes in
+bytes. Be it parsing the input from users or producing a nice human readable
+representation of a size in bytes this library takes localization into
+account. It also provides support for sizes bigger than MAXUINT64."
+libcap,核心,系统, Library for getting and setting POSIX.1e capabilities," libcap is a library for getting and setting POSIX.1e (formerly POSIX 6)
+draft 15 capabilities."
+libcap-ng,核心,系统, An alternate posix capabilities library, Libcap-ng is a library that makes using posix capabilities easier
+libdmx,系统,应用, X.Org X11 DMX runtime library, The X.Org X11 DMX (Distributed Multihead X) runtime library.
+libdnf,系统,应用, Library providing simplified C and Python API to libsolv, A Library providing simplified C and Python API to libsolv.
+libestr,应用,系统, String handling essentials library," This package compiles the string handling essentials library
+used by the Rsyslog daemon."
+libevent,应用,系统, Abstract asynchronous event notification library," The libevent API provides a mechanism to execute a callback function
+when a specific event occurs on a file descriptor or after a timeout
+has been reached. libevent is meant to replace the asynchronous event
+loop found in event driven network servers. An application just needs
+to call event_dispatch() and can then add or remove events dynamically
+without having to change the event loop."
+libfprint,应用,系统, Toolkit for fingerprint scanner, libfprint offers support for consumer fingerprint reader devices.
+libgit2,应用,系统, C implementation of the Git core methods as a library with a solid API," libgit2 is a portable, pure C implementation of the Git core methods
+provided as a re-entrant linkable library with a solid API, allowing
+you to write native speed custom Git applications in any language
+with bindings."
+libgudev,系统,应用, GObject-based wrapper library for libudev," This library makes it much simpler to use libudev from programs
+already using GObject. It also makes it possible to easily use libudev
+from other programming languages, such as Javascript, because of
+GObject introspection support."
+libguestfs-tools,系统,应用, System administration tools for virtual machines," This package contains miscellaneous system administrator command line
+tools for virtual machines.
+
+Guestfish is the Filesystem Interactive SHell, for accessing and
+modifying virtual machine disk images from the command line and shell
+scripts.
+
+The guestmount command lets you mount guest filesystems on the host
+using FUSE and libguestfs.
+
+Virt-alignment-scan scans virtual machines looking for partition
+alignment problems.
+
+Virt-builder is a command line tool for rapidly making disk images
+of popular free operating systems.
+
+Virt-cat is a command line tool to display the contents of a file in a
+virtual machine.
+
+Virt-copy-in and virt-copy-out are command line tools for uploading
+and downloading files and directories to and from virtual machines.
+
+Virt-customize is a command line tool for customizing virtual machine
+disk images.
+
+Virt-df is a command line tool to display free space on virtual
+machine filesystems.  Unlike other tools, it doesn__ just display the
+amount of space allocated to a virtual machine, but can look inside
+the virtual machine to see how much space is really being used.  It is
+like the df(1) command, but for virtual machines, except that it also
+works for Windows virtual machines.
+
+Virt-diff shows the differences between virtual machines.
+
+Virt-edit is a command line tool to edit the contents of a file in a
+virtual machine.
+
+Virt-filesystems is a command line tool to display the filesystems,
+partitions, block devices, LVs, VGs and PVs found in a disk image
+or virtual machine.  It replaces the deprecated programs
+virt-list-filesystems and virt-list-partitions with a much more
+capable tool.
+
+Virt-format is a command line tool to erase and make blank disks.
+
+Virt-get-kernel extracts a kernel/initrd from a disk image.
+
+Virt-inspector examines a virtual machine and tries to determine the
+version of the OS, the kernel version, what drivers are installed,
+whether the virtual machine is fully virtualized (FV) or
+para-virtualized (PV), what applications are installed and more.
+
+Virt-log is a command line tool to display the log files from a
+virtual machine.
+
+Virt-ls is a command line tool to list out files in a virtual machine.
+
+Virt-make-fs is a command line tool to build a filesystem out of
+a collection of files or a tarball.
+
+Virt-rescue provides a rescue shell for making interactive,
+unstructured fixes to virtual machines.
+
+Virt-resize can resize existing virtual machine disk images.
+
+Virt-sparsify makes virtual machine disk images sparse (thin-provisioned).
+
+Virt-sysprep lets you reset or unconfigure virtual machines in
+preparation for cloning them.
+
+Virt-tail follows (tails) a log file within a guest, like 'tail -f'.
+
+Virt-tar-in and virt-tar-out are archive, backup and upload tools
+for virtual machines.  These replace the deprecated program virt-tar.
+
+Virt-win-reg lets you look at and modify the Windows Registry of
+Windows virtual machines."
+ruby-libguestfs,系统,应用, Ruby bindings for libguestfs, ruby-libguestfs contains Ruby bindings for libguestfs.
+libhugetlbfs,系统,应用, A library which provides easy access to huge pages of memory," libhugetlbfs is a library which provides easy access to huge pages of memory.
+It is a wrapper for the hugetlbfs file system. Applications can use huge pages
+to fulfill malloc() requests without being recompiled by using LD_PRELOAD.
+Alternatively, applications can be linked against libhugetlbfs without source
+modifications to load BSS or BSS, data, and text segments into large pages."
+libhugetlbfs-utils,系统,应用,Userspace utilities for configuring the hugepage environment ,"This packages contains a number of utilities that will help administrate the
+use of huge pages on your system.  hugeedit modifies binaries to set default
+segment remapping behavior. hugectl sets environment variables for using huge
+pages and then execs the target program. hugeadm gives easy access to huge page
+pool size control. pagesize lists page sizes available on the machine. "
+libid3tag,应用,系统, ID3 tag manipulation library," libid3tag is a library for reading and (eventually) writing ID3 tags,
+both ID3v1 and the various versions of ID3v2."
+idn2,核心,系统, IDNA2008 internationalized domain names conversion tool," The idn2 package contains the idn2 command line tool for testing
+IDNA2008 conversions."
+libieee1284,系统,应用, A library for interfacing IEEE 1284-compatible devices, The libieee1284 library is for communicating with parallel port devices.
+libinput,系统,应用, Input device library," libinput is a library that handles input devices for display servers and other
+applications that need to directly deal with input devices.
+
+It provides device detection, device handling, input device event processing
+and abstraction so minimize the amount of custom input code the user of
+libinput need to provide the common set of functionality that users expect."
+libisoburn,系统,应用, Library to enable creation and expansion of ISO-9660 filesystems," Libisoburn is a front-end for libraries libburn and libisofs which
+enables creation and expansion of ISO-9660 filesystems on all CD/
+DVD/BD media supported by libburn. This includes media like DVD+RW,
+which do not support multi-session management on media level and
+even plain disk files or block devices. Price for that is thorough
+specialization on data files in ISO-9660 filesystem images. And so
+libisoburn is not suitable for audio (CD-DA) or any other CD layout
+which does not entirely consist of ISO-9660 sessions."
+xorriso,系统,应用, ISO-9660 and Rock Ridge image manipulation tool," Xorriso is a program which copies file objects from POSIX compliant
+filesystems into Rock Ridge enhanced ISO-9660 filesystems and allows
+session-wise manipulation of such filesystems. It can load management
+information of existing ISO images and it writes the session results
+to optical media or to filesystem objects. Vice versa xorriso is able
+to copy file objects out of ISO-9660 filesystems.
+
+Filesystem manipulation capabilities surpass those of mkisofs. Xorriso
+is especially suitable for backups, because of its high fidelity of
+file attribute recording and its incremental update sessions. Optical
+supported media: CD-R, CD-RW, DVD-R, DVD-RW, DVD+R, DVD+R DL, DVD+RW,
+DVD-RAM, BD-R and BD-RE."
+liblockfile,应用,系统, This implements a number of functions found in -lmail on SysV systems," This library implements a number of functions found in -lmail on SysV
+systems. These functions are designed to lock the standard mailboxes in
+/var/mail (or wherever the system puts them).
+
+In additions, this library adds a number of functions to create,
+manage and remove generic lockfiles."
+libmnl,应用,系统,A minimalistic Netlink library ,"libmnl is a minimalistic user-space library oriented to Netlink developers.
+There are a lot of common tasks in parsing, validating, constructing of both
+the Netlink header and TLVs that are repetitive and easy to get wrong.
+This library aims to provide simple helpers that allows you to re-use code and
+to avoid re-inventing the wheel. "
+libmodulemd1,应用,系统, Compatibility package for libmodulemd 1.x, Compatibility library for libmodulemd 1.x
+python3-libmodulemd,应用,系统, Python 3 bindings for libmodulemd, Python 3 bindings for libmodulemd
+nbdfuse,应用,系统, FUSE support for libnbd, This package contains FUSE support for libnbd.
+libnetfilter_cthelper,系统,应用, User-space infrastructure for connection tracking helpers," This library provides the infrastructure for the user-space helper
+infrastructure available since the Linux kernel 3.6."
+libnice,系统,应用, GLib ICE implementation," libnice is an implementation of the IETF draft Interactive Connectivity
+Establishment standard (ICE). ICE is useful for applications that want to
+establish peer-to-peer UDP data streams. It automates the process of traversing
+NATs and provides security against some attacks. Existing standards that use
+ICE include the Session Initiation Protocol (SIP) and Jingle, XMPP extension
+for audio/video calls."
+liboauth,系统,应用, OAuth library functions," liboauth is a collection of POSIX-c functions implementing the OAuth
+Core RFC 5849 standard. liboauth provides functions to escape and
+encode parameters according to OAuth specification and offers
+high-level functionality to sign requests or verify OAuth signatures
+as well as perform HTTP requests."
+libpng,系统,应用, A library of functions for manipulating PNG image format files," The libpng package contains a library of functions for creating and
+manipulating PNG (Portable Network Graphics) image format files.  PNG
+is a bit-mapped graphics format similar to the GIF format.  PNG was
+created to replace the GIF format, since GIF uses a patented data
+compression algorithm.
+
+Libpng should be installed if you need to manipulate PNG format image
+files."
+libpq,应用,系统, PostgreSQL client library," The libpq package provides the essential shared library for any PostgreSQL
+client program or interface.  You will need to install this package to use any
+other PostgreSQL package or any clients that need to connect to a PostgreSQL
+server."
+libqrtr-glib,系统,应用,Support library to use and manage the QRTR (Qualcomm IPC Router) bus. ,"This package contains the libraries that make it easier to use and
+manage the QRTR (Qualcomm IPC Router) bus. "
+libreoffice-opensymbol-fonts,应用,其它, LibreOffice dingbats font," A dingbats font, OpenSymbol, suitable for use by LibreOffice for bullets and
+mathematical symbols."
+libreport-anaconda,应用,系统, Default configuration for reporting anaconda bugs," Default configuration for reporting Anaconda problems or uploading the gathered
+data over ftp/scp..."
+librepository,系统,应用, Hierarchical repository abstraction layer," LibRepository provides a simple abstraction layer to access bulk content that
+is organized in a hierarchical layer."
+librx,应用,系统, POSIX regexp functions," Rx is, among other things, an implementation of the interface
+specified by POSIX for programming with regular expressions.  Some
+other implementations are GNU regex.c and Henry Spencer's regex
+library."
+libseccomp,核心,系统, Enhanced seccomp library," The libseccomp library provides an easy to use interface to the Linux Kernel's
+syscall filtering mechanism, seccomp.  The libseccomp API allows an application
+to specify which syscalls, and optionally which syscall arguments, the
+application is allowed to execute, all of which are enforced by the Linux
+Kernel."
+libsecret,应用,系统,Library for storing and retrieving passwords and other secrets ,"libsecret is a library for storing and retrieving passwords and other secrets.
+It communicates with the ""Secret Service"" using DBus. gnome-keyring and
+KSecretService are both implementations of a Secret Service. "
+libselinux-static,核心,系统, Static libraries used to build SELinux," The libselinux-static package contains the static libraries
+needed for developing SELinux applications."
+libsigsegv,系统,应用,Library for handling page faults in user mode ,"This is a library for handling page faults in user mode. A page fault
+occurs when a program tries to access to a region of memory that is
+currently not available. Catching and handling a page fault is a useful
+technique for implementing:
+  - pageable virtual memory
+  - memory-mapped access to persistent databases
+  - generational garbage collectors
+  - stack overflow handlers
+  - distributed shared memory "
+libsolv,系统,应用, Package dependency solver," A free package dependency solver using a satisfiability algorithm. The
+library is based on two major, but independent, blocks:
+
+- Using a dictionary approach to store and retrieve package
+  and dependency information.
+
+- Using satisfiability, a well known and researched topic, for
+  resolving package dependencies."
+libstoragemgmt-udev,应用,系统,Udev files for libstoragemgmt ,"The libstoragemgmt-udev package contains udev rules and helper utilities for
+uevents generated by the kernel. "
+network-scripts-team,应用,系统,libteam legacy network service support ,"This provides the ifup and ifdown scripts for libteam use with the legacy
+network service. "
+teamd,应用,系统, Team network device control daemon, The teamd package contains team network device control daemon.
+python3-tevent,应用,系统, Python 3 bindings for the Tevent library, Python 3 bindings for libtevent
+libvirt-daemon-driver-storage-logical,系统,应用, Storage driver plugin for lvm volumes," The storage driver backend adding implementation of the storage APIs for block
+volumes using lvm."
+libvirt-gconfig,系统,应用, libvirt object APIs for processing object configuration," This package provides APIs for processing the object configuration
+data"
+libvma,应用,系统, A library for boosting TCP and UDP traffic (over RDMA hardware)," libvma is a LD_PRELOAD-able library that boosts performance of TCP and
+UDP traffic. It allows application written over standard socket API to
+handle fast path data traffic from user space over Ethernet and/or
+Infiniband with full network stack bypass and get better throughput,
+latency and packets/sec rate.
+
+No application binary change is required for that.
+libvma is supported by RDMA capable devices that support ""verbs""
+IBV_QPT_RAW_PACKET QP for Ethernet and/or IBV_QPT_UD QP for IPoIB."
+libxcb,系统,应用, A C binding to the X11 protocol," The X protocol C-language Binding (XCB) is a replacement for Xlib featuring a
+small footprint, latency hiding, direct access to the protocol, improved
+threading support, and extensibility."
+python3-libxml2,应用,系统,Python 3 bindings for the libxml2 library ,"The libxml2-python3 package contains a Python 3 module that permits
+applications written in the Python programming language, version 3, to use the
+interface supplied by the libxml2 library to manipulate XML files.
+
+This library allows to manipulate XML files. It includes support
+to read, modify and write XML and HTML files. There is DTDs support
+this includes parsing and validation even with complex DTDs, either
+at parse time or later once the document has been modified. "
+libyaml,应用,系统, YAML 1.1 parser and emitter written in C," YAML is a data serialization format designed for human readability and
+interaction with scripting languages.  LibYAML is a YAML parser and
+emitter written in C."
+lld,核心,应用, The LLVM Linker, The LLVM project linker.
+lld-libs,核心,应用, LLD shared libraries, Shared libraries for LLD.
+lldb,系统,应用, Next generation high-performance debugger," LLDB is a next generation, high-performance debugger. It is built as a set
+of reusable components which highly leverage existing libraries in the
+larger LLVM Project, such as the Clang expression parser and LLVM
+disassembler."
+llvm,系统,应用, The Low Level Virtual Machine," LLVM is a compiler infrastructure designed for compile-time, link-time,
+runtime, and idle-time optimization of programs from arbitrary programming
+languages. The compiler infrastructure includes mirror sets of programming
+tools as well as libraries with equivalent functionality."
+lorax-templates-anolis,核心,应用, Anolis OS build templates for lorax and livemedia-creator," Anolis OS specific Lorax templates for creating the boot.iso and live isos are
+placed in /usr/share/lorax/templates.d/80-anolis"
+lorax-templates-rhel,核心,应用, RHEL8 build templates for lorax and livemedia-creator," RHEL-specific Lorax templates for creating the boot.iso and live isos are
+placed in /usr/share/lorax/templates.d/80-rhel"
+lua-posix,应用,系统, A POSIX library for Lua," This is a POSIX library for Lua which provides access to many POSIX features
+to Lua programs."
+lz4-libs,核心,应用, Libaries for lz4, This package contains the libaries for lz4.
+man-pages,应用,系统,Linux kernel and C library user-space interface documentation ,A large collection of manual pages from the Linux Documentation Project (LDP). 
+mariadb-connector-c-config,应用,系统, Configuration files for packages that use /etc/my.cnf as a configuration file," This package delivers /etc/my.cnf that includes other configuration files
+from the /etc/my.cnf.d directory and ships this directory as well.
+Other packages should only put their files into /etc/my.cnf.d directory
+and require this package, so the /etc/my.cnf file is present."
+libmcpp,应用,系统, Alternative C/C++ preprocessor (library build), This package provides a library build of mcpp.
+mcstrans,应用,系统,SELinux Translation Daemon ,"Security-enhanced Linux is a feature of the Linux庐 kernel and a number
+of utilities with enhanced security functionality designed to add
+mandatory access controls to Linux.  The Security-enhanced Linux
+kernel contains new architectural components originally developed to
+improve the security of the Flask operating system. These
+architectural components provide general support for the enforcement
+of many kinds of mandatory access control policies, including those
+based on the concepts of Type Enforcement庐, Role-based Access
+Control, and Multi-level Security.
+
+mcstrans provides an translation daemon to translate SELinux categories
+from internal representations to user defined representation. "
+mdadm,系统,应用,The mdadm program controls Linux md devices (software RAID arrays) ,"The mdadm program is used to create, manage, and monitor Linux MD (software
+RAID) devices.  As such, it provides similar functionality to the raidtools
+package.  However, mdadm is a single program, and it can perform
+almost all functions without a configuration file, though a configuration
+file can be used to help with some common tasks. "
+mdevctl,系统,应用, Mediated device management and persistence utility," mdevctl is a utility for managing and persisting devices in the
+mediated device device framework of the Linux kernel.  Mediated
+devices are sub-devices of a parent device (ex. a vGPU) which
+can be dynamically created and potentially used by drivers like
+vfio-mdev for assignment to virtual machines."
+memcached,应用,系统," High Performance, Distributed Memory Object Cache"," memcached is a high-performance, distributed memory object caching
+system, generic in nature, but intended for use in speeding up dynamic
+web applications by alleviating database load."
+microdnf,系统,应用,Lightweight implementation of DNF in C ,"Micro DNF is a lightweight C implementation of DNF, designed to be used
+for doing simple packaging actions when you don't need full-blown DNF and
+you want the tiniest useful environments possible.
+
+That is, you don't want any interpreter stack and you want the most
+minimal environment possible so you can build up to exactly what you need. "
+minizip,应用,系统, Minizip contrib in zlib with the latest bug fixes and advanced features," Minizip zlib contribution that includes:
+* AES encryption
+* I/O buffering
+* PKWARE disk splitting
+It also has the latest bug fixes that having been found all over the internet."
+modulemd-tools,系统,应用, Collection of tools for parsing and generating modulemd YAML files," Tools provided by this package:
+
+repo2module - Takes a YUM repository on its input and creates modules.yaml
+    containing YAML module definitions generated for each package.
+
+dir2module - Generates a module YAML definition based on essential module
+    information provided via command-line parameters. The packages provided by
+    the module are found in a specified directory or a text file containing
+    their list.
+
+createrepo_mod - A small wrapper around createrepo_c and modifyrepo_c to provide
+    an easy tool for generating module repositories.
+
+modulemd-merge - Merge several modules.yaml files into one. This is useful for
+    example if you have several yum repositories and want to merge them into one.
+
+modulemd-generate-macros - Generate module-build-macros SRPM package, which is
+    a central piece for building modules. It should be present in the buildroot
+    before any other module packages are submitted to be built.
+
+bld2repo - Simple tool for dowloading build required RPMs of a modular build from koji."
+mokutil,应用,系统,Tool to manage UEFI Secure Boot MoK Keys ,"mokutil provides a tool to manage keys for Secure Boot through the MoK
+(""Machine's Own Keys"") mechanism. "
+mpfr,系统,应用, A C library for multiple-precision floating-point computations," The MPFR library is a C library for multiple-precision floating-point
+computations with ""correct rounding"". The MPFR is efficient and
+also has a well-defined semantics. It copies the good ideas from the
+ANSI/IEEE-754 standard for double-precision floating-point arithmetic
+(53-bit mantissa). MPFR is based on the GMP multiple-precision library."
+mrtg,应用,系统, Multi Router Traffic Grapher," The Multi Router Traffic Grapher (MRTG) is a tool to monitor the traffic
+load on network-links. MRTG generates HTML pages containing PNG
+images which provide a LIVE visual representation of this traffic."
+mstflint,系统,应用, Mellanox firmware burning tool," This package contains firmware update tool, vpd dump and register dump tools
+for network adapters based on Mellanox Technologies chips."
+mtdev,系统,应用, Multitouch Protocol Translation Library," mtdev is a stand-alone library which transforms all variants of kernel MT
+events to the slotted type B protocol. The events put into mtdev may be from
+any MT device, specifically type A without contact tracking, type A with
+contact tracking, or type B with contact tracking."
+mysql-server,应用,系统, The MySQL server and related files," MySQL is a multi-user, multi-threaded SQL database server. MySQL is a
+client/server implementation consisting of a server daemon (mysqld)
+and many different client programs and libraries. This package contains
+the MySQL server and some accompanying files and directories."
+nasm,应用,系统, A portable x86 assembler which uses Intel-like syntax," NASM is the Netwide Assembler, a free portable assembler for the Intel
+80x86 microprocessor series, using primarily the traditional Intel
+instruction mnemonics and syntax."
+ncurses-c++-libs,核心,应用,Ncurses C++ bindings ,"The curses library routines are a terminal-independent method of
+updating character screens with reasonable optimization.  The ncurses
+(new curses) library is a freely distributable replacement for the
+discontinued 4.4 BSD classic curses library.
+
+This package contains C++ bindings of the ncurses ABI version 6 libraries. "
+ncurses-compat-libs,核心,系统,Ncurses compatibility libraries ,"The curses library routines are a terminal-independent method of
+updating character screens with reasonable optimization.  The ncurses
+(new curses) library is a freely distributable replacement for the
+discontinued 4.4 BSD classic curses library.
+
+This package contains the ABI version 5 of the ncurses libraries for
+compatibility. "
+ncurses-term,核心,系统,Terminal descriptions ,"This package contains additional terminal descriptions not found in
+the ncurses-base package. "
+netcf-libs,系统,应用, Libraries for netcf, The libraries for netcf.
+net-snmp-perl,应用,系统, The perl NET-SNMP module and the mib2c tool," The net-snmp-perl package contains the perl files to use SNMP from within
+Perl.
+
+Install the net-snmp-perl package, if you want to use mib2c or SNMP
+with perl."
+NetworkManager,系统,应用, Network connection manager and user applications," NetworkManager is a system service that manages network interfaces and
+connections based on user or automatic configuration. It supports
+Ethernet, Bridge, Bond, VLAN, Team, InfiniBand, Wi-Fi, mobile broadband
+(WWAN), PPPoE and other devices, and supports a variety of different VPN
+services."
+nfs4-acl-tools,系统,核心,The nfs4 ACL tools ,"This package contains commandline ACL utilities for the Linux
+NFSv4 client. "
+nss-softokn,系统,应用, Network Security Services Softoken Module, Network Security Services Softoken Cryptographic Module
+nss-util,系统,应用, Network Security Services Utilities Library, Utilities for Network Security Services and the Softoken module
+nss_wrapper,系统,应用," A wrapper for the user, group and hosts NSS API"," There are projects which provide daemons needing to be able to create, modify
+and delete Unix users. Or just switch user ids to interact with the system e.g.
+a user space file server. To be able to test that you need the privilege to
+modify the passwd and groups file. With nss_wrapper it is possible to define
+your own passwd and groups file which will be used by software to act correctly
+while under test.
+
+If you have a client and server under test they normally use functions to
+resolve network names to addresses (dns) or vice versa. The nss_wrappers allow
+you to create a hosts file to setup name resolution for the addresses you use
+with socket_wrapper.
+
+To use it set the following environment variables:
+
+LD_PRELOAD=libuid_wrapper.so
+NSS_WRAPPER_PASSWD=/path/to/passwd
+NSS_WRAPPER_GROUP=/path/to/group
+NSS_WRAPPER_HOSTS=/path/to/host
+
+This package doesn't have a devel package cause this project is for
+development/testing."
+nss-pam-ldapd,系统,应用, An nsswitch module which uses directory servers," The nss-pam-ldapd daemon, nslcd, uses a directory server to look up name
+service information (users, groups, etc.) on behalf of a lightweight
+nsswitch module."
+numactl,系统,应用,Library for tuning for Non Uniform Memory Access machines ,"Simple NUMA policy support. It consists of a numactl program to run
+other programs with a specific NUMA policy. "
+numatop,系统,应用,Memory access locality characterization and analysis ,"NumaTOP is an observation tool for runtime memory locality characterization and
+analysis of processes and threads running on a NUMA system. It helps the user
+characterize the NUMA behavior of processes and threads and identify where the
+NUMA-related performance bottlenecks reside.
+
+NumaTOP supports the Intel Xeon processors and PowerPC processors. "
+nvme-cli,系统,应用,NVMe management command line interface ,nvme-cli provides NVM-Express user space tooling for Linux. 
+opa-basic-tools,应用,系统, OPA management level tools and scripts, Contains basic tools for fabric management necessary on all compute nodes.
+opa-fastfabric,应用,系统,Management level tools and scripts ,Contains tools for managing fabric on a management node. 
+opencl-filesystem,应用,系统, OpenCL filesystem layout, This package provides some directories required by packages which use OpenCL.
+opendnssec,应用,系统, DNSSEC key and zone management software," OpenDNSSEC was created as an open-source turn-key solution for DNSSEC.
+It secures zone data just before it is published in an authoritative
+name server. It requires a PKCS#11 crypto module library, such as softhsm"
+OpenEXR-libs,系统,应用, OpenEXR runtime libraries, OpenEXR runtime libraries.
+opensm,应用,系统,OpenIB InfiniBand Subnet Manager and management utilities ,"OpenSM is the OpenIB project's Subnet Manager for Infiniband networks.
+The subnet manager is run as a system daemon on one of the machines in
+the infiniband fabric to manage the fabric's routing state.  This package
+also contains various tools for diagnosing and testing Infiniband networks
+that can be used from any machine and do not need to be run on a machine
+running the opensm daemon. "
+openssh,系统,应用, An open source implementation of SSH protocol version 2," SSH (Secure SHell) is a program for logging into and executing
+commands on a remote machine. SSH is intended to replace rlogin and
+rsh, and to provide secure encrypted communications between two
+untrusted hosts over an insecure network. X11 connections and
+arbitrary TCP/IP ports can also be forwarded over the secure channel.
+
+OpenSSH is OpenBSD's version of the last free version of SSH, bringing
+it up to date in terms of security and features.
+
+This package includes the core files necessary for both the OpenSSH
+client and server. To make this package useful, you should also
+install openssh-clients, openssh-server, or both."
+openssh-clients,系统,应用,An open source SSH client applications ,"OpenSSH is a free version of SSH (Secure SHell), a program for logging
+into and executing commands on a remote machine. This package includes
+the clients necessary to make encrypted connections to SSH servers. "
+openssh-keycat,系统,应用,A mls keycat backend for openssh ,"OpenSSH mls keycat is backend for using the authorized keys in the
+openssh in the mls mode. "
+openssl-perl,核心,系统,Perl scripts provided with OpenSSL ,"OpenSSL is a toolkit for supporting cryptography. The openssl-perl
+package provides Perl scripts for converting certificates and keys
+from other formats to the formats used by the OpenSSL toolkit. "
+openssl-pkcs11,核心,系统,A PKCS#11 engine for use with OpenSSL ,"openssl-pkcs11 enables hardware security module (HSM), and smart card support in
+OpenSSL applications. More precisely, it is an OpenSSL engine which makes
+registered PKCS#11 modules available for OpenSSL applications. The engine is
+optional and can be loaded by configuration file, command line or through the
+OpenSSL ENGINE API. "
+python3-osbuild,系统,应用, A build system for OS images, A build system for OS images
+oscap-anaconda-addon,应用,系统, Anaconda addon integrating OpenSCAP to the installation process," This is an addon that integrates OpenSCAP utilities with the Anaconda installer
+and allows installation of systems following restrictions given by a SCAP
+content."
+osinfo-db,系统,应用, osinfo database files," The osinfo database provides information about operating systems and
+hypervisor platforms to facilitate the automated configuration and
+provisioning of new virtual machines"
+os-prober,系统,应用, Probes disks on the system for installed operating systems," This package detects other OSes available on a system and outputs the results
+in a generic machine-readable format. Support for new OSes and Linux
+distributions can be added easily."
+pacemaker,系统,应用, Scalable High-Availability cluster resource manager," Pacemaker is an advanced, scalable High-Availability cluster resource
+manager.
+
+It supports more than 16 node clusters with significant capabilities
+for managing resources and dependencies.
+
+It will run scripts at initialization, when machines go up or down,
+when related resources fail and can be configured to periodically check
+resource health.
+
+Available rpmbuild rebuild options:
+  --with(out) : cibsecrets coverage doc hardening pre_release profiling stonithd"
+pacemaker-cluster-libs,系统,应用, Cluster Libraries used by Pacemaker," Pacemaker is an advanced, scalable High-Availability cluster resource
+manager.
+
+The pacemaker-cluster-libs package contains cluster-aware shared
+libraries needed for nodes that will form part of the cluster nodes."
+pacemaker-libs,系统,应用, Core Pacemaker libraries," Pacemaker is an advanced, scalable High-Availability cluster resource
+manager.
+
+The pacemaker-libs package contains shared libraries needed for cluster
+nodes and those just running the CLI tools."
+pacemaker-schemas,系统,应用, Schemas and upgrade stylesheets for Pacemaker," Schemas and upgrade stylesheets for Pacemaker
+
+Pacemaker is an advanced, scalable High-Availability cluster resource
+manager."
+papi-testsuite,应用,系统, Set of tests for checking PAPI functionality," PAPI-testsuite includes compiled versions of papi tests to ensure
+that PAPI functions on particular hardware."
+passwd,系统,应用,An utility for setting or changing passwords using PAM ,"This package contains a system utility (passwd) which sets
+or changes passwords, using PAM (Pluggable Authentication
+Modules) library. "
+patchutils,应用,系统, A collection of programs for manipulating patch files," This is a collection of programs that can manipulate patch files in
+a variety of ways, such as interpolating between two pre-patches,
+combining two incremental patches, fixing line numbers in hand-edited
+patches, and simply listing the files modified by a patch."
+pcp-gui,系统,应用, Visualization tools for the Performance Co-Pilot toolkit," Visualization tools for the Performance Co-Pilot toolkit.
+The pcp-gui package primarily includes visualization tools for
+monitoring systems using live and archived Performance Co-Pilot
+(PCP) sources."
+pcs-snmp,系统,应用, Pacemaker cluster SNMP agent, SNMP agent that provides information about pacemaker cluster to the master agent (snmpd)
+perl-JSON-XS,系统,应用," JSON serializing/de-serializing, done correctly and fast"," This module converts Perl data structures to JSON and vice versa. Its
+primary goal is to be correct and its secondary goal is to be fast. To
+reach the latter goal it was written in C."
+pesign,应用,系统, Signing utility for UEFI binaries," This package contains the pesign utility for signing UEFI binaries as
+well as other associated tools."
+php-pecl-xdebug3,应用,系统, Provides functions for function traces and profiling," The Xdebug extension helps you debugging your script by providing a lot of
+valuable debug information. The debug information that Xdebug can provide
+includes the following:
+
+* stack and function traces in error messages with:
+  o full parameter display for user defined functions
+  o function name, file name and line indications
+  o support for member functions
+* memory allocation
+* protection for infinite recursions
+
+Xdebug also provides:
+
+* profiling information for PHP scripts
+* code coverage analysis
+* capabilities to debug your scripts interactively with a debug client
+
+Documentation: https://xdebug.org/docs/"
+pinfo,应用,核心, An info file viewer," Pinfo is an info file (or man page) viewer with a user interface
+similar to the Lynx Web browser's interface.  Pinfo supports searching
+using regular expressions, and is based on the ncurses library."
+pipewire,应用,系统, Media Sharing Server," PipeWire is a multimedia server for Linux and other Unix like operating
+systems."
+pixman,应用,系统, Pixel manipulation library, Pixman is a pixel manipulation library for X and Cairo.
+libpkgconf,核心,系统, Backend library for pkgconf," This package provides libraries for applications to use the functionality
+of pkgconf."
+pkgconf-pkg-config,核心,应用, pkgconf shim to provide /usr/bin/pkg-config," This package provides the shim links for pkgconf to be automatically
+used in place of pkgconfig. This ensures that pkgconf is used as
+the system provider of pkg-config."
+pki-ca,应用,系统, PKI CA Package," The Certificate Authority (CA) is a required PKI subsystem which issues,
+renews, revokes, and publishes certificates as well as compiling and
+publishing Certificate Revocation Lists (CRLs).
+
+The Certificate Authority can be configured as a self-signing Certificate
+Authority, where it is the root CA, or it can act as a subordinate CA,
+where it obtains its own signing certificate from a public CA."
+podman-remote,应用,系统," A remote CLI for Podman: A Simple management tool for pods, containers and images"," podman-remote provides a local client interacting with a Podman backend
+node through a RESTful API tunneled through a ssh connection. In this context,
+a podman node is a Linux system with Podman installed on it and the API
+service activated.
+
+Credentials for this session can be passed in using flags, environment
+variables, or in containers.conf."
+policycoreutils-sandbox,系统,应用, SELinux sandbox utilities," The policycoreutils-sandbox package contains the scripts to create graphical
+sandboxes"
+polkit,系统,应用, An authorization framework," polkit is a toolkit for defining and handling authorizations.  It is
+used for allowing unprivileged processes to speak to privileged
+processes."
+polkit-docs,系统,应用,Development documentation for polkit ,Development documentation for polkit. 
+postfix-perl-scripts,应用,系统, Postfix utilities written in perl," This package contains perl scripts pflogsumm and qshape.
+
+Pflogsumm is a log analyzer/summarizer for the Postfix MTA. It is
+designed to provide an over-view of Postfix activity. Pflogsumm
+generates summaries and, in some cases, detailed reports of mail
+server traffic volumes, rejected and bounced email, and server
+warnings, errors and panics.
+
+qshape prints Postfix queue domain and age distribution."
+ppp,系统,应用,The Point-to-Point Protocol daemon ,"The ppp package contains the PPP (Point-to-Point Protocol) daemon and
+documentation for PPP support. The PPP protocol provides a method for
+transmitting datagrams over serial point-to-point links. PPP is
+usually used to dial in to an ISP (Internet Service Provider) or other
+organization over a modem and phone line. "
+psacct,应用,核心,Utilities for monitoring process activities ,"The psacct package contains several utilities for monitoring process
+activities, including ac, lastcomm, accton and sa. The ac command
+displays statistics about how long users have been logged on. The
+lastcomm command displays information about previous executed
+commands. The accton command turns process accounting on or off. The
+sa command summarizes information about previously executed
+commands. "
+pulseaudio-libs,系统,应用, Libraries for PulseAudio clients," This package contains the runtime libraries for any application that wishes
+to interface with a PulseAudio sound server."
+pulseaudio-module-x11,系统,应用, X11 support for the PulseAudio sound server, X11 bell and security modules for the PulseAudio sound server.
+pulseaudio-utils,系统,应用, PulseAudio sound server utilities, This package contains command line utilities for the PulseAudio sound server.
+python3-cairo,系统,应用, Python 3 bindings for the cairo library, Python 3 bindings for the cairo library.
+pygobject2,系统,应用, Python 2 bindings for GObject," The pygobject2 package provides a convenient wrapper for the GObject library
+for use in Python programs."
+python3-gobject,系统,应用, Python 3 bindings for GObject Introspection," The python3-gobject package provides a convenient wrapper for the GObject
+library and and other libraries that are compatible with GObject Introspection,
+for use in Python 3 programs."
+python2-tkinter,系统,应用, A graphical user interface for the Python 2 scripting language," 
+The Tkinter (Tk interface) program is an graphical user interface for
+the Python 2 scripting language.
+
+You should install the python2tkinter package if you'd like to use a graphical
+user interface for Python 2 programming."
+python3-augeas,系统,应用, Python 3 bindings to augeas, python3-augeas is a set of Python bindings around augeas.
+python39-iniconfig,系统,应用, Brain-dead simple parsing of ini files," iniconfig is a small and simple INI-file parser module
+having a unique set of features:
+
+* tested against Python2.4 across to Python3.2, Jython, PyPy
+* maintains order of sections and entries
+* supports multi-line values with or without line-continuations
+* supports ""#"" comments everywhere
+* raises errors with proper line-numbers
+* no bells and whistles like automatic substitutions
+* iniconfig raises an Error if two sections have the same name."
+python3-jwcrypto,系统,应用," Implements JWK, JWS, JWE specifications using python-cryptography"," Implements JWK, JWS, JWE specifications using python-cryptography"
+python-nose-docs,系统,应用, Nose Documentation, Documentation for Nose.
+python3-pillow,系统,应用, Python 3 image processing library," Python image processing library, fork of the Python Imaging Library (PIL)
+
+This library provides extensive file format support, an efficient
+internal representation, and powerful image processing capabilities.
+
+There are these subpackages: tk (tk interface),
+devel (development) and doc (documentation)."
+python2-PyMySQL,系统,应用, Pure-Python MySQL client library," This package contains a pure-Python MySQL client library. The goal of PyMySQL is
+to be a drop-in replacement for MySQLdb and work on CPython, PyPy, IronPython
+and Jython."
+python38-resolvelib,系统,应用, Resolve abstract dependencies into concrete ones," ResolveLib at the highest level provides a Resolver class that
+includes dependency resolution logic. You give it some things, and a little
+information on how it should interact with them, and it will spit out a
+resolution result. Intended Usage :: import resolvelib Things I want to
+resolve. requirements [...] Implement logic so the resolver understands the
+requirement format. class..."
+python2-scour,系统,应用, An SVG scrubber, An SVG scrubber.
+python3-simpleline,系统,应用, A Python3 library for creating text UI," Simpleline is a Python3 library for creating text UI.
+It is designed to be used with line-based machines
+and tools (e.g. serial console) so that every new line
+is appended to the bottom of the screen.
+Printed lines are never rewritten!"
+python-sphinx-locale,系统,应用, Locale files for python-sphinx," Sphinx is a tool that makes it easy to create intelligent and
+beautiful documentation for Python projects (or other documents
+consisting of multiple reStructuredText sources), written by Georg
+Brandl. It was originally created to translate the new Python
+documentation, but has now been cleaned up in the hope that it will be
+useful to many other projects.
+
+This package contains locale files for Sphinx"
+python3-sphinx-theme-alabaster,系统,应用, Configurable sidebar-enabled Sphinx theme," This theme is a modified ""Kr"" Sphinx theme from @kennethreitz (especially as
+used in his Requests project), which was itself originally based on @mitsuhiko's
+theme used for Flask & related projects."
+python39-toml,系统,应用," Python Library for Tom's Obvious, Minimal Language"," TOML aims to be a minimal configuration file format that's easy to read due to
+obvious semantics. TOML is designed to map unambiguously to a hash table. TOML
+should be easy to parse into data structures in a wide variety of languages.
+This package loads toml file into python dictionary and dump dictionary into
+toml file."
+qemu-kvm-docs,系统,应用, qemu-kvm documentation, qemu-kvm-docs provides documentation files regarding qemu-kvm.
+qemu-kvm-ui-opengl,系统,应用, QEMU opengl support, This package provides opengl support.
+qemu-kvm-ui-spice,系统,应用, QEMU spice support, This package provides spice support.
+qt5-qttranslations,应用,系统, Qt5 - QtTranslations module, Qt5 - QtTranslations module.
+quota-nls,系统,应用, Gettext catalogs for disk quota tools, Disk quota tools messages translated into different natural languages.
+rear,应用,系统, Relax-and-Recover is a Linux disaster recovery and system migration tool," Relax-and-Recover is the leading Open Source disaster recovery and system
+migration solution. It comprises of a modular
+frame-work and ready-to-go workflows for many common situations to produce
+a bootable image and restore from backup using this image. As a benefit,
+it allows to restore to different hardware and can therefore be used as
+a migration tool as well.
+
+Currently Relax-and-Recover supports various boot media (incl. ISO, PXE,
+OBDR tape, USB or eSATA storage), a variety of network protocols (incl.
+sftp, ftp, http, nfs, cifs) as well as a multitude of backup strategies
+(incl.  IBM TSM, HP DataProtector, Symantec NetBackup, EMC NetWorker,
+Bacula, Bareos, BORG, Duplicity, rsync).
+
+Relax-and-Recover was designed to be easy to set up, requires no maintenance
+and is there to assist when disaster strikes. Its setup-and-forget nature
+removes any excuse for not having a disaster recovery solution implemented.
+
+Professional services and support are available."
+redhat-lsb-core,核心,系统, LSB Core module support," The Linux Standard Base (LSB) Core module support provides the fundamental
+system interfaces, libraries, and runtime environment upon which all conforming
+applications and libraries depend."
+redhat-lsb-cxx,核心,系统, LSB CXX module support," The Linux Standard Base (LSB) CXX module supports the core interfaces by
+providing system interfaces, libraries, and a runtime environment for
+applications built using the C++ programming language. These interfaces
+provide low-level support for the core constructs of the language, and
+implement the standard base C++ libraries."
+redhat-lsb-languages,核心,系统, LSB Languages module support," The Linux Standard Base (LSB) Languages module supports components for runtime
+languages which are found on an LSB conforming system."
+redhat-lsb-printing,核心,系统, LSB Printing module support," The Linux Standard Base (LSB) Printing specifications define components that
+are required to be present on an LSB conforming system."
+rpcgen,系统,应用, RPC protocol compiler," rpcgen is a tool that generates C code to implement an RPC protocol.
+The input to rpcgen is a language similar to C known as RPC Language
+(Remote Procedure Call Language)."
+rpm-apidocs,系统,应用,API documentation for RPM libraries ,"This package contains API documentation for developing applications
+that will manipulate RPM packages and databases. "
+rpmdevtools,系统,应用, RPM Development Tools," This package contains scripts and (X)Emacs support files to aid in
+development of RPM packages.
+rpmdev-setuptree    Create RPM build tree within user's home directory
+rpmdev-diff         Diff contents of two archives
+rpmdev-newspec      Creates new .spec from template
+rpmdev-rmdevelrpms  Find (and optionally remove) ""development"" RPMs
+rpmdev-checksig     Check package signatures using alternate RPM keyring
+rpminfo             Print information about executables and libraries
+rpmdev-md5/sha*     Display checksums of all files in an archive file
+rpmdev-vercmp       RPM version comparison checker
+spectool            Expand and download sources and patches in specfiles
+rpmdev-wipetree     Erase all files within dirs created by rpmdev-setuptree
+rpmdev-extract      Extract various archives, ""tar xvf"" style
+rpmdev-bumpspec     Bump revision in specfile
+...and many more."
+rpm-mpi-hooks,系统,应用, RPM dependency generator hooks for MPI packages," RPM dependency generator hooks for MPI packages. This package should be added
+as a BuildRequires to all mpi implementations (i.e. openmpi, mpich) as well as
+a Requires to the their -devel packages."
+rpm-ostree-libs,系统,应用, Shared library for rpm-ostree, The rpm-ostree-libs package includes the shared library for rpm-ostree.
+python3-rrdtool,应用,系统, Python RRDtool bindings, Python RRDtool bindings.
+rrdtool-perl,应用,系统, Perl RRDtool bindings, The Perl RRDtool bindings
+rsync,应用,系统, A program for synchronizing files over a network," Rsync uses a reliable algorithm to bring remote and host files into
+sync very quickly. Rsync is fast because it just sends the differences
+in the files over the network instead of sending the complete
+files. Rsync is often used as a very powerful mirroring process or
+just as a more capable replacement for the rcp command. A technical
+report which describes the rsync algorithm is included in this
+package."
+rls,系统,应用, Rust Language Server for IDE integration," The Rust Language Server provides a server that runs in the background,
+providing IDEs, editors, and other tools with information about Rust programs.
+It supports functionality such as 'goto definition', symbol search,
+reformatting, and code completion, and enables renaming and refactorings."
+samba-krb5-printing,应用,系统,Samba CUPS backend for printing with Kerberos ,"If you need Kerberos for print jobs to a printer connection to cups via the SMB
+backend, then you need to install that package. It will allow cups to access
+the Kerberos credentials cache of the user issuing the print job. "
+samba-pidl,应用,系统,Perl IDL compiler ,"The samba-pidl package contains the Perl IDL compiler used by Samba
+and Wireshark to parse IDL and similar protocols "
+sanlk-reset,系统,应用, Host reset daemon and client using sanlock," The sanlk-reset package contains the reset daemon and client.
+A cooperating host running the daemon can be reset by a host
+running the client, so long as both maintain access to a
+common sanlock lockspace."
+sblim-gather,应用,系统, SBLIM Gatherer," Standards Based Linux Instrumentation for Manageability
+Performance Data Gatherer Base.
+This package contains the agents and control programs for gathering
+and providing performance data."
+scl-utils,系统,应用, Utilities for alternative packaging, Run-time utility for alternative packaging.
+python3-scons,应用,系统, An Open Source software construction tool," SCons is an Open Source software construction tool--that is, a build
+tool; an improved substitute for the classic Make utility; a better way
+to build software. SCons is based on the design which won the Software
+Carpentry build tool design competition in August 2000.
+
+SCons ""configuration files"" are Python scripts, eliminating the need
+to learn a new build tool syntax. SCons maintains a global view of
+all dependencies in a tree, and can scan source (or other) files for
+implicit dependencies, such as files specified on #include lines. SCons
+uses MD5 signatures to rebuild only when the contents of a file have
+really changed, not just when the timestamp has been touched. SCons
+supports side-by-side variant builds, and is easily extended with user-
+defined Builder and/or Scanner objects."
+scrub,应用,系统, Disk scrubbing program," Scrub writes patterns on files or disk devices to make
+retrieving the data more difficult.  It operates in one of three
+modes: 1) the special file corresponding to an entire disk is scrubbed
+and all data on it is destroyed;  2) a regular file is scrubbed and
+only the data in the file (and optionally its name in the directory
+entry) is destroyed; or 3) a regular file is created, expanded until
+the file system is full, then scrubbed as in 2)."
+seavgabios-bin,系统,应用, Seavgabios for x86, SeaVGABIOS is an open-source VGABIOS implementation.
+sg3_utils-libs,系统,应用, Shared library for sg3_utils, This package contains the shared library for sg3_utils.
+python3-pyqt5-sip,应用,系统, SIP - Python 3/C++ Bindings Generator for pyqt5, This is the Python 3 build of pyqt5-SIP.
+skopeo,应用,系统, Inspect container images and repositories on registries," Command line utility to inspect images and repositories directly on Docker
+registries without the need to pull them"
+slirp4netns,系统,应用, slirp for network namespaces," slirp for network namespaces, without copying buffers across the namespaces."
+socket_wrapper,系统,应用, A library passing all socket communications through Unix sockets," socket_wrapper aims to help client/server software development teams willing to
+gain full functional test coverage. It makes it possible to run several
+instances of the full software stack on the same machine and perform locally
+functional testing of complex network configurations.
+
+To use it set the following environment variables:
+
+LD_PRELOAD=libsocket_wrapper.so
+SOCKET_WRAPPER_DIR=/path/to/swrap_dir
+
+This package doesn't have a devel package because this project is for
+development/testing."
+spice-vdagent,应用,系统, Agent for Spice guests," Spice agent for Linux guests offering the following features:
+
+Features:
+* Client mouse mode (no need to grab mouse by client, no mouse lag)
+  this is handled by the daemon by feeding mouse events into the kernel
+  via uinput. This will only work if the active X-session is running a
+  spice-vdagent process so that its resolution can be determined.
+* Automatic adjustment of the X-session resolution to the client resolution
+* Support of copy and paste (text and images) between the active X-session
+  and the client"
+splix,系统,应用, Driver for QPDL/SPL2 printers (Samsung and several Xerox printers)," This driver is usable by all printer devices which understand the QPDL
+(Quick Page Description Language) also known as SPL2 (Samsung Printer Language)
+language. It covers several Samsung, Xerox and Dell printers.
+Splix doesn't support old SPL(1) printers."
+lemon,系统,应用, A parser generator," Lemon is an LALR(1) parser generator for C or C++. It does the same
+job as bison and yacc. But lemon is not another bison or yacc
+clone. It uses a different grammar syntax which is designed to reduce
+the number of coding errors. Lemon also uses a more sophisticated
+parsing engine that is faster than yacc and bison and which is both
+reentrant and thread-safe. Furthermore, Lemon implements features
+that can be used to eliminate resource leaks, making is suitable for
+use in long-running programs such as graphical user interfaces or
+embedded controllers."
+sqlite,系统,应用,Library that implements an embeddable SQL database engine ,"SQLite is a C library that implements an SQL database engine. A large
+subset of SQL92 is supported. A complete database is stored in a
+single disk file. The API is designed for convenience and ease of use.
+Applications that link against SQLite can enjoy the power and
+flexibility of an SQL database without the administrative hassles of
+supporting a separate database server.  Version 2 and version 3 binaries
+are named to permit each to be installed on a single host "
+sqlite-libs,系统,应用, Shared library for the sqlite3 embeddable SQL database engine., This package contains the shared library for sqlite.
+squashfs-tools,系统,应用, Utility for the creation of squashfs filesystems," Squashfs is a highly compressed read-only filesystem for Linux.  This package
+contains the utilities for manipulating squashfs filesystems."
+squid,应用,系统, The Squid proxy caching server," Squid is a high-performance proxy caching server for Web clients,
+supporting FTP, gopher, and HTTP data objects. Unlike traditional
+caching software, Squid handles all requests in a single,
+non-blocking, I/O-driven process. Squid keeps meta data and especially
+hot objects cached in RAM, caches DNS lookups, supports non-blocking
+DNS lookups, and implements negative caching of failed requests.
+
+Squid consists of a main server program squid, a Domain Name System
+lookup program (dnsserver), a program for retrieving FTP data
+(ftpget), and some management and client tools."
+srt-libs,应用,系统, Secure Reliable Transport protocol libraries, Secure Reliable Transport protocol libraries
+ssar,系统,应用, ssar for SRE, log the system details
+sshpass,系统,应用, Non-interactive SSH authentication utility," Tool for non-interactively performing password authentication with so called
+""interactive keyboard password authentication"" of SSH. Most users should use
+more secure public key authentication of SSH instead."
+rmt,应用,系统,Provides certain programs with access to remote tape devices ,"The rmt utility provides remote access to tape devices for programs
+like dump (a filesystem backup program), restore (a program for
+restoring files from a backup), and tar (an archiving program). "
+spax,应用,系统,Portable archive exchange ,"The pax utility shall read and write archives, write lists of the members of
+archive files and copy directory hierarchies as is defined in IEEE Std 1003.1. "
+strace,系统,应用,Tracks and displays system calls associated with a running process ,"The strace program intercepts and records the system calls called and
+received by a running process.  Strace can print a record of each
+system call, its arguments and its return value.  Strace is useful for
+diagnosing problems and debugging, as well as for instructional
+purposes.
+
+Install strace if you need a tool to track the system calls made and
+received by a process. "
+swtpm-tools-pkcs11,系统,应用, Tools for creating a local CA based on a TPM pkcs11 device, Tools for creating a local CA based on a pkcs11 device
+symlinks,系统,应用,A utility which maintains a system's symbolic links ,"The symlinks utility performs maintenance on symbolic links.  Symlinks
+checks for symlink problems, including dangling symlinks which point
+to nonexistent files.  Symlinks can also automatically convert
+absolute symlinks to relative symlinks.
+
+Install the symlinks package if you need a program for maintaining
+symlinks on your system. "
+syslinux,核心,系统, Simple kernel loader which boots from a FAT filesystem," SYSLINUX is a suite of bootloaders, currently supporting DOS FAT
+filesystems, Linux ext2/ext3 filesystems (EXTLINUX), PXE network boots
+(PXELINUX), or ISO 9660 CD-ROMs (ISOLINUX).  It also includes a tool,
+MEMDISK, which loads legacy operating systems from these media."
+syslinux-nonlinux,核心,系统, SYSLINUX modules which aren't run from linux.," All the SYSLINUX binaries that run from the firmware rather than from a
+linux host. It also includes a tool, MEMDISK, which loads legacy operating
+systems from media."
+systemd,核心,系统, System and Service Manager," systemd is a system and service manager that runs as PID 1 and starts
+the rest of the system. It provides aggressive parallelization
+capabilities, uses socket and D-Bus activation for starting services,
+offers on-demand starting of daemons, keeps track of processes using
+Linux control groups, maintains mount and automount points, and
+implements an elaborate transactional dependency-based service control
+logic. systemd supports SysV and LSB init scripts and works as a
+replacement for sysvinit. Other parts of this package are a logging daemon,
+utilities to control basic system configuration like the hostname,
+date, locale, maintain a list of logged-in users, system accounts,
+runtime directories and settings, and daemons to manage simple network
+configuration, network time synchronization, log forwarding, and name
+resolution."
+systemd-container,核心,应用,Tools for containers and VMs ,"Systemd tools to spawn and manage containers and virtual machines.
+
+This package contains systemd-nspawn, machinectl, systemd-machined,
+and systemd-importd. "
+system-storage-manager,系统,应用,A single tool to manage your storage ,"System Storage Manager provides an easy to use command line interface to manage
+your storage using various technologies like lvm, btrfs, encrypted volumes and
+more.
+
+In more sophisticated enterprise storage environments, management with Device
+Mapper (dm), Logical Volume Manager (LVM), or Multiple Devices (md) is becoming
+increasingly more difficult.  With file systems added to the mix, the number of
+tools needed to configure and manage storage has grown so large that it is
+simply not user friendly.  With so many options for a system administrator to
+consider, the opportunity for errors and problems is large.
+
+The btrfs administration tools have shown us that storage management can be
+simplified, and we are working to bring that ease of use to Linux file systems
+in general.
+
+You should install the ssm if you need to manage your storage with various
+technologies via a single unified interface. "
+tar,核心,系统,A GNU file archiving program ,"The GNU tar program saves many files together in one archive and can
+restore individual files (or all of the files) from that archive. Tar
+can also be used to add supplemental files to an archive and to update
+or list files in the archive. Tar includes multivolume support,
+automatic archive compression/decompression, the ability to perform
+remote archives, and the ability to perform incremental and full
+backups.
+
+If you want to use tar for remote backups, you also need to install
+the rmt package on the remote box. "
+tcl,系统,应用," Tool Command Language, pronounced tickle"," The Tcl (Tool Command Language) provides a powerful platform for
+creating integration applications that tie together diverse
+applications, protocols, devices, and frameworks. When paired with the
+Tk toolkit, Tcl provides a fastest and powerful way to create
+cross-platform GUI applications.  Tcl can also be used for a variety
+of web-related tasks and for creating powerful command languages for
+applications."
+info,核心,应用,A stand-alone TTY-based reader for GNU texinfo documentation ,"The GNU project uses the texinfo file format for much of its
+documentation. The info package provides a standalone TTY-based
+browser program for viewing texinfo files. "
+texinfo,核心,系统, Tools needed to create Texinfo format documentation files," Texinfo is a documentation system that can produce both online
+information and printed output from a single source file. The GNU
+Project uses the Texinfo file format for most of its documentation.
+
+Install texinfo if you want a documentation system for producing both
+online and print documentation from the same source file and/or if you
+are going to write documentation for the GNU Project."
+texinfo-tex,核心,应用, Tools for formatting Texinfo documentation files using TeX," Texinfo is a documentation system that can produce both online
+information and printed output from a single source file. The GNU
+Project uses the Texinfo file format for most of its documentation.
+
+The texinfo-tex package provides tools to format Texinfo documents
+for printing using TeX."
+tigervnc-server,应用,系统, A TigerVNC server," The VNC system allows you to access the same desktop from a wide
+variety of platforms.  This package includes set of utilities
+which make usage of TigerVNC server more user friendly. It also
+contains x0vncserver program which can export your active
+X session."
+tpm2-abrmd,系统,应用,A system daemon implementing TPM2 Access Broker and Resource Manager ,"tpm2-abrmd is a system daemon implementing the TPM2 access broker (TAB) and
+Resource Manager (RM) spec from the TCG. "
+tpm2-tools,系统,应用,A TPM2.0 testing tool build upon TPM2.0-TSS ,tpm2-tools is a batch of testing tools for tpm2.0. It is based on tpm2-tss. 
+tpm-quote-tools,系统,应用,TPM-based attestation using the TPM quote operation (tools) ,"TPM Quote Tools is a collection of programs that provide support
+for TPM based attestation using the TPM quote operation. "
+kernelshark,系统,应用, GUI analysis for Ftrace data captured by trace-cmd," Kernelshark is the GUI frontend for analyzing data produced by
+'trace-cmd extract'"
+tss2,应用,系统,IBM's TCG Software Stack (TSS) for TPM 2.0 and related utilities ,"TSS2 is a user space Trusted Computing Group's Software Stack (TSS) for
+TPM 2.0.  It implements the functionality equivalent to the TCG TSS
+working group's ESAPI, SAPI, and TCTI layers (and perhaps more) but with
+a hopefully far simpler interface.
+
+It comes with about 80 ""TPM tools"" that can be used for rapid prototyping,
+education and debugging. "
+tuna,应用,系统,Application tuning GUI & command line utility ,"Provides interface for changing scheduler and IRQ tunables, at whole CPU and at
+per thread/IRQ level. Allows isolating CPUs for use by a specific application
+and moving threads and interrupts to a CPU by just dragging and dropping them.
+Operations can be done on CPU sockets, understanding CPU topology.
+
+Can be used as a command line utility without requiring the GUI libraries to be
+installed. "
+tuned-utils-systemtap,应用,系统, Disk and net statistic monitoring systemtap scripts," This package contains several systemtap scripts to allow detailed
+manual monitoring of the system. Instead of the typical IO/sec it collects
+minimal, maximal and average time between operations to be able to
+identify applications that behave power inefficient (many small operations
+instead of fewer large ones)."
+tzdata,核心,应用,Timezone data ,"This package contains data files with rules for various timezones around
+the world. "
+udftools,系统,应用, Linux UDF Filesystem userspace utilities, Linux UDF Filesystem userspace utilities.
+libudisks2,应用,系统, Dynamic library to access the udisksd daemon," This package contains the dynamic library, which provides
+access to the udisksd daemon."
+unzip,应用,核心, A utility for unpacking zip files," The unzip utility is used to list, test, or extract files from a zip
+archive.  Zip archives are commonly found on MS-DOS systems.  The zip
+utility, included in the zip package, creates zip archives.  Zip and
+unzip are both compatible with archives created by PKWARE(R)'s PKZIP
+for MS-DOS, but the programs' options and default behaviors do differ
+in some respects.
+
+Install the unzip package if you need to list, test or extract files from
+a zip archive."
+update-motd,系统,应用, Framework for dynamically generating MOTD," Framework and scripts for producing a dynamically generated Message Of The Day.
+Based on and compatible with the framework implemented Ubuntu."
+upower,系统,应用, Power Management Service," UPower (formerly DeviceKit-power) provides a daemon, API and command
+line tools for managing power devices attached to the system."
+upower-devel-docs,系统,应用, Developer documentation for for libupower-glib, Developer documentation for for libupower-glib.
+usbguard,系统,应用, A tool for implementing USB device usage policy," The USBGuard software framework helps to protect your computer against rogue USB
+devices by implementing basic whitelisting/blacklisting capabilities based on
+USB device attributes."
+usbguard-notifier,系统,应用, A tool for detecting usbguard policy and device presence changes," The usbguard-notifier package detects usbguard policy modifications as well as
+device presence changes and displays them as pop-up notifications."
+usbguard-tools,系统,应用, USBGuard Tools," The usbguard-tools package contains optional tools from the USBGuard
+software framework."
+libsmartcols,核心,系统, Formatting library for ls-like programs.," This is library for ls-like terminal programs, part of util-linux."
+util-linux-user,核心,应用,libuser based util-linux utilities ,chfn and chsh utilities with dependence on libuser 
+uuid,核心,应用, Universally Unique Identifier library," OSSP uuid is a ISO-C:1999 application programming interface (API)
+and corresponding command line interface (CLI) for the generation
+of DCE 1.1, ISO/IEC 11578:1996 and RFC 4122 compliant Universally
+Unique Identifier (UUID). It supports DCE 1.1 variant UUIDs of version
+1 (time and node based), version 3 (name based, MD5), version 4
+(random number based) and version 5 (name based, SHA-1). Additional
+API bindings are provided for the languages ISO-C++:1998 and Perl:5
+Optional backward compatibility exists for the ISO-C DCE-1.1 and Perl
+Data::UUID APIs."
+valgrind,系统,应用, Tool for finding memory management bugs in programs," Valgrind is an instrumentation framework for building dynamic analysis
+tools. There are Valgrind tools that can automatically detect many
+memory management and threading bugs, and profile your programs in
+detail. You can also use Valgrind to build new tools. The Valgrind
+distribution currently includes six production-quality tools: a memory
+error detector (memcheck, the default tool), two thread error
+detectors (helgrind and drd), a cache and branch-prediction profiler
+(cachegrind), a call-graph generating cache and branch-prediction
+profiler (callgrind), and a heap profiler (massif)."
+vm-dump-metrics,系统,应用,Virtualization host metrics dump ,"Executable to dump all available virtualization host metrics to stdout
+or a file. "
+virt-top,应用,系统, Utility like top(1) for displaying virtualization stats," virt-top is a 'top(1)'-like utility for showing stats of virtualized
+domains.  Many keys and command line options are the same as for
+ordinary 'top'.
+
+It uses libvirt so it is capable of showing stats across a variety of
+different virtualization systems."
+vte-profile,应用,系统, Profile script for VTE terminal emulator library," The vte-profile package contains a profile.d script for the VTE terminal
+emulator library."
+WALinuxAgent-udev,系统,应用, Udev rules for Microsoft Azure, Udev rules specific to Microsoft Azure Virtual Machines.
+wget,应用,系统, A utility for retrieving files using the HTTP or FTP protocols," GNU Wget is a file retrieval utility which can use either the HTTP or
+FTP protocols. Wget features include the ability to work in the
+background while you are logged out, recursive retrieval of
+directories, file name wildcard matching, remote file timestamp
+storage and comparison, use of Rest with FTP servers and Range with
+HTTP servers to retrieve files over slow or unstable connections,
+support for Proxy servers, and configurability."
+which,系统,核心, Displays where a particular program in your path is located," The which command shows the full pathname of a specified program, if
+the specified program is in your PATH."
+whois-nls,系统,应用, Gettext catalogs for whois tools, whois tools messages translated into different natural languages.
+libxdp,应用,系统, XDP helper library," The libxdp package contains the libxdp library for managing XDP programs,
+used by the xdp-tools package"
+xdp-tools,应用,系统, Utilities and example programs for use with XDP, Utilities and example programs for use with XDP
+xmltoman,应用,系统, Scripts for converting XML to roff or HTML," This package provides xmltoman and xmlmantohtml scripts, to compile
+the xml representation of manual page to either roff source, or HTML
+(while providing the CSS stylesheet for eye-candy look). XSL stylesheet
+for doing rougly the same job is provided."
+xz-libs,核心,应用, Libraries for decoding LZMA compression, Libraries for decoding files compressed with LZMA or XZ utils.
+yasm,应用,系统, Modular Assembler," Yasm is a complete rewrite of the NASM assembler under the ""new"" BSD License
+(some portions are under other licenses, see COPYING for details). It is
+designed from the ground up to allow for multiple assembler syntaxes to be
+supported (eg, NASM, TASM, GAS, etc.) in addition to multiple output object
+formats and even multiple instruction sets. Another primary module of the
+overall design is an optimizer module."
+ypserv,系统,应用, The NIS (Network Information Service) server," The Network Information Service (NIS) is a system that provides
+network information (login names, passwords, home directories, group
+information) to all of the machines on a network. NIS can allow users
+to log in on any machine on the network, as long as the machine has
+the NIS client programs running and the user's password is recorded in
+the NIS passwd database. NIS was formerly known as Sun Yellow Pages
+(YP).
+
+This package provides the NIS server, which will need to be running on
+your network. NIS clients do not need to be running the server.
+
+Install ypserv if you need an NIS server for your network. You also
+need to install the yp-tools and ypbind packages on any NIS client
+machines."
+yp-tools,系统,应用, NIS (or YP) client programs," The Network Information Service (NIS) is a system which provides
+network information (login names, passwords, home directories, groupinformation) to all of the machines on a network.  NIS can enable
+information) to all of the machines on a network.  NIS can enable
+users to login on any machine on the network, as long as the machine
+has the NIS client programs running and the user's password is
+recorded in the NIS passwd database.  NIS was formerly known as Sun
+Yellow Pages (YP).
+
+This package's NIS implementation is based on FreeBSD's YP and is a
+special port for glibc 2.x and libc versions 5.4.21 and later.  This
+package only provides the NIS client programs.  In order to use the
+clients, you'll need to already have an NIS server running on your
+network. An NIS server is provided in the ypserv package.
+
+Install the yp-tools package if you need NIS client programs for machines
+on your network.  You will also need to install the ypbind package on
+every machine running NIS client programs.  If you need an NIS server,
+you'll need to install the ypserv package on one machine on the network."
+zip,应用,系统,A file compression and packaging utility compatible with PKZIP ,"The zip program is a compression and file packaging utility.  Zip is
+analogous to a combination of the UNIX tar and compress commands and
+is compatible with PKZIP (a compression and file packaging utility for
+MS-DOS systems).
+
+Install the zip package if you need to compress files using the zip
+program. "
+zlib,核心,系统, The compression and decompression library," Zlib is a general-purpose, patent-free, lossless data compression
+library which is used by many different programs."
+zlib-static,核心,应用, Static libraries for Zlib development," The zlib-static package includes static libraries needed
+to develop programs that use the zlib compression and
+decompression library."
+zsh,系统,核心,Powerful interactive shell ,"The zsh shell is a command interpreter usable as an interactive login
+shell and as a shell script command processor.  Zsh resembles the ksh
+shell (the Korn shell), but includes many enhancements.  Zsh supports
+command line editing, built-in spelling correction, programmable
+command completion, shell functions (with autoloading), a history
+mechanism, and more. "
+zsh-html,系统,应用, Zsh shell manual in html format," The zsh shell is a command interpreter usable as an interactive login
+shell and as a shell script command processor.  Zsh resembles the ksh
+shell (the Korn shell), but includes many enhancements.  Zsh supports
+command line editing, built-in spelling correction, programmable
+command completion, shell functions (with autoloading), a history
+mechanism, and more.
+
+This package contains the Zsh manual in html format."
+libzstd,系统,应用, Zstd shared library, Zstandard compression shared library.
+zvbi,其它,系统," Raw VBI, Teletext and Closed Caption decoding library"," ZVBI provides functions to capture and decode VBI data. The vertical blanking
+interval (VBI) is an interval in a television signal that temporarily suspends
+transmission of the signal for the electron gun to move back up to the first
+line of the television screen to trace the next screen field. The vertical
+blanking interval can be used to carry data, since anything sent during the VBI
+would naturally not be displayed; various test signals, closed captioning, and
+other digital data can be sent during this time period."
+zvbi-fonts,其它,应用, Fonts from zvbi converted to X11, Fonts from zvbi converted for use with X11

@@ -60,7 +60,7 @@ def get_idx_name_map(names):
     for i, name in enumerate(name_list):
         name_idx_map[name] = i
         idx_name_map[i] = name
-    
+
     return idx_name_map, name_idx_map
 
 def get_num_label_map(labels):
@@ -75,10 +75,12 @@ def get_num_label_map(labels):
     # label_list = list(set(list(labels)))
     label_num_map = {}
     num_label_map = {}
-    for i, label in enumerate(label_list):
+    label_list = []
+    # for i, label in enumerate(label_list):
+    for i, label in enumerate(['核心', '系统', '应用', '其它']):
         label_num_map[label] = i
         num_label_map[i] = label
-    
+
     return num_label_map, label_num_map
 
 def get_sample_splits(x, y, sample_size=100):

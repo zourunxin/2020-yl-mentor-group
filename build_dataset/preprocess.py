@@ -3,7 +3,7 @@ import re
 import sys
 
 from utils.FileUtil import txt_reader, csv_reader, write_csv
-from utils.utils import class_cnt, get_label_list
+from utils.util import class_cnt, get_label_list
 
 
 def get_pkg_idx(file):

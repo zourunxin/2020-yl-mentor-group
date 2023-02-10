@@ -1,4 +1,4 @@
-from utils.utils import get_digit_layer_map
+from utils.util import get_digit_layer_map
 digit_label_map = get_digit_layer_map()
 
 

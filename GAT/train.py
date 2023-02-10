@@ -16,7 +16,7 @@ from keras.callbacks import EarlyStopping, TensorBoard, ModelCheckpoint
 from keras.models import Model
 from keras.regularizers import l2
 from keras.optimizers import Adam
-from utils.utils import get_label_list
+from utils.util import get_label_list
 
 
 # =================================== load data =====================================
