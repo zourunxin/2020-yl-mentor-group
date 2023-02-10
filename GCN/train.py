@@ -11,7 +11,7 @@ import pandas as pd
 import argparse
 
 # =============================== util.py =================================
-from utils.utils import get_label_list
+from utils.util import get_label_list
 
 
 def encode_onehot(labels):

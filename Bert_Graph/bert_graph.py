@@ -11,7 +11,7 @@ from keras.initializers import glorot_uniform, Zeros
 from keras.models import Sequential, Model
 from keras.layers import Input, Dense, LSTM, Embedding, Conv1D, MaxPooling1D, Dropout, Layer
 from keras.layers import Flatten,Dropout,Concatenate,Lambda,Multiply,Reshape,Dot,Bidirectional
-# from tensorflow.python.keras.optimizers import adam_v2
+from tensorflow.python.keras.optimizers import adam_v2
 import keras.backend as K
 from keras.utils import to_categorical
 from sklearn.metrics import accuracy_score,precision_score,recall_score,f1_score
@@ -20,6 +20,13 @@ from bert4keras.optimizers import Adam, extend_with_piecewise_linear_lr
 
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report
+
+def glorot(shape, name=None):
+    """Glorot & Bengio (AISTATS 2010) init."""
+    init_range = np.sqrt(6.0 / (shape[0] + shape[1]))
+    initial = tf.random.uniform(shape, minval=-init_range, maxval=init_range, dtype=tf.float32)
+    tf.reshape(initial, (1, initial.shape[0], initial.shape[1]))
+    return tf.Variable(initial, name=name)
 
 class MeanAggregator(Layer):
     
@@ -115,6 +122,7 @@ class PoolingAggregator(Layer):
             regularizer=l2(self.l2_reg),
 
             name="neigh_weights")
+        self.ag_weights = glorot([self.input_dim, self.output_dim],name='ag_weights')
 
         if self.use_bias:
             self.bias = self.add_weight(shape=(self.output_dim,),
@@ -123,11 +131,15 @@ class PoolingAggregator(Layer):
 
         self.built = True
 
-    def call(self, inputs, mask=None):
+    def call(self, inputs, i, mask=None):
 
-        features, node, neighbours = inputs
+        features, node, neighbours, raw_features = inputs
 
         node_feat = tf.nn.embedding_lookup(features, node)
+        if i == 0:
+            raw_features = tf.matmul(tf.nn.embedding_lookup(raw_features, node), self.ag_weights)
+        else:
+            node_feat = node_feat + raw_features
         neigh_feat = tf.nn.embedding_lookup(features, neighbours)
 
         dims = tf.shape(neigh_feat)
@@ -157,7 +169,7 @@ class PoolingAggregator(Layer):
 
         # output = tf.nn.l2_normalize(output, dim=-1)
 
-        return output
+        return output, raw_features
 
     def get_config(self):
         config = {'output_dim': self.output_dim,
@@ -175,6 +187,11 @@ class BERT_GraphSAGE:
                  dropout_rate=0.0, l2_reg=0, activation=tf.nn.relu):
         self.num_classes = num_classes
         self.end2end = end2end
+
+        if aggregator_type == 'mean':
+            aggregator = MeanAggregator
+        else:
+            aggregator = PoolingAggregator
 
 
         def bert_loss(y_true, y_pred):
@@ -203,29 +220,27 @@ class BERT_GraphSAGE:
             node_input = Input(shape=(1,), dtype=tf.int32)
             neighbor_input = [Input(shape=(l,), dtype=tf.int32) for l in neighbor_num]
             graph_input_list = [graph_features, tfidf_features, node_input] + neighbor_input
-            if aggregator_type == 'mean':
-                aggregator = MeanAggregator
-            else:
-                aggregator = PoolingAggregator
             if with_tfidf:
                 h = Concatenate()([graph_features, tfidf_features])
+                raw_features = h
             else:
                 h = graph_features
+                raw_features = h
             for i in range(0, len(neighbor_num)):
                 if i > 0:
                     feature_dim = n_hidden
                 if i == len(neighbor_num) - 1:
                     activation = tf.nn.softmax
                     n_hidden = num_classes
-                h = aggregator(units=n_hidden, input_dim=feature_dim, activation=activation, l2_reg=l2_reg, use_bias=use_bias,
+                h, raw_features = aggregator(units=n_hidden, input_dim=feature_dim, activation=activation, l2_reg=l2_reg, use_bias=use_bias,
                                 dropout_rate=dropout_rate, neigh_max=neighbor_num[i], aggregator=aggregator_type)(
-                    [h, node_input, neighbor_input[i]])
+                    [h, node_input, neighbor_input[i], raw_features], i)
 
             output = h
 
             self.bert_model = Model(text_inputs, bert_concat_output)
             AdamLR = extend_with_piecewise_linear_lr(Adam, name='AdamLR')
-            self.bert_model.compile(loss=bert_loss, optimizer=AdamLR(learning_rate=1e-5, lr_schedule={1:1, 50:0.1, 100:0.001}))
+            self.bert_model.compile(loss=bert_loss, optimizer=AdamLR(learning_rate=1e-5))
 
             self.graph_model = Model(graph_input_list, outputs=output)
             self.graph_model.compile(optimizer=Adam(5e-4), loss='categorical_crossentropy', weighted_metrics=['categorical_crossentropy', 'acc'])
@@ -250,31 +265,30 @@ class BERT_GraphSAGE:
             node_input = Input(shape=(1,), dtype=tf.int32)
             neighbor_input = [Input(shape=(l,), dtype=tf.int32) for l in neighbor_num]
             graph_input_list = [tfidf_features, node_input] + neighbor_input
-            
-            if aggregator_type == 'mean':
-                aggregator = MeanAggregator
-            else:
-                aggregator = PoolingAggregator
+
             if with_tfidf:
                 h = Concatenate()([graph_features, tfidf_features])
+                raw_features = h
             else:
                 h = graph_features
+                raw_features = h
+            pdb.set_trace()
             for i in range(0, len(neighbor_num)):
                 if i > 0:
                     feature_dim = n_hidden
                 if i == len(neighbor_num) - 1:
                     activation = tf.nn.softmax
                     n_hidden = num_classes
-                h = aggregator(units=n_hidden, input_dim=feature_dim, activation=activation, l2_reg=l2_reg, use_bias=use_bias,
+                h, raw_features = aggregator(units=n_hidden, input_dim=feature_dim, activation=activation, l2_reg=l2_reg, use_bias=use_bias,
                                 dropout_rate=dropout_rate, neigh_max=neighbor_num[i], aggregator=aggregator_type)(
-                    [h, node_input, neighbor_input[i]])
+                    [h, node_input, neighbor_input[i], raw_features], i)
 
             output = h
             all_input_list = text_inputs + graph_input_list       
             AdamLR = extend_with_piecewise_linear_lr(Adam, name='AdamLR')
             self.all_model = Model(all_input_list, outputs=output)
-            self.all_model.compile(loss='categorical_crossentropy', optimizer=AdamLR(learning_rate=1e-4, lr_schedule={1:1, 200:0.1, 250:0.01, 300:0.001}), weighted_metrics=['categorical_crossentropy', 'acc'])
-    
+            self.all_model.compile(loss='categorical_crossentropy', optimizer = tf.keras.optimizers.Adam(learning_rate=1e-3), weighted_metrics=['categorical_crossentropy', 'acc'])
+
 
     def evaluate_bert(self, bert_model, inputs, y_true, mask):
         idxs = [m[0] for m in np.argwhere(mask)]
@@ -411,6 +425,7 @@ class BERT_GraphSAGE:
         
             all_prob = self.predict_all(model_input, batch_size=graph_batch_size)
             all_history = {"train_acc": all_train_score_list, "val_acc": all_val_socre_list}
+            pdb.set_trace()
 
         return bert_prob, graph_prob, all_prob, bert_history, graph_history, all_history
 

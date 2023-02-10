@@ -40,15 +40,16 @@ tokenizer = AutoTokenizer.from_pretrained(bert_path)
 
 # ========== dataset: ==========
 print("开始读取数据")
-df_data = pd.read_csv('../output/datasource_0205_class.csv')
+df_data = pd.read_csv('../output/datasource_1228.csv')
 # df_data = df_data.sample(4000, random_state=666)
 df_edges = pd.read_csv('../output/edges.csv')
 # df_edges = df_edges.loc[lambda df : (df['out'].isin(df_data["name"])) & (df['in'].isin(df_data["name"]))]
 processed_texts = list(df_data["text"].apply(lambda x: NLPUtils.preprocess_text(x)))
-idx_name_map, name_idx_map = CommonUtils.get_idx_name_map(df_data["name"])
+idx_name_map, name_idx_map, idx_list = CommonUtils.get_idx_name_map(df_data["name"])
 num_label_map, label_num_map = CommonUtils.get_num_label_map(df_data["label"])
 num_classes = len(num_label_map)
 onehot_labels = encode_onehot(label_num_map, list(df_data["label"]))
+pdb.set_trace()
 
 
 adj = sp.coo_matrix((np.ones(len(df_edges)), 
@@ -100,16 +101,16 @@ A = preprocess_adj(adj)
 
 
 # ========== parameters: ==========
-maxlen = 32
+maxlen = 128
 hidden_size = 768
 graph_batch_size = A.shape[0]
-bert_epochs = 50
-graph_epochs = 3000
-all_epochs = 200
+bert_epochs = 100
+graph_epochs = 500
+all_epochs = 100
 mode = "both"
-with_tfidf = False
-tf_idf_feat_num = 1000
-end2end = True
+with_tfidf = True
+feat_num = 1000
+end2end = False
 
 def tokenize(df):
     t = time.time()
@@ -150,9 +151,11 @@ neigh_number = [5, 10]
 neigh_maxlen = []
 
 X_input_ids, X_token_type_ids, X_attention_mask, y, name = tokenize(df_data)
-X_tfidf = Extractors.tfidf_feat_extractor(processed_texts, onehot_labels, feature_num=tf_idf_feat_num)
+X_tfidf = Extractors.tfidf_feat_extractor(processed_texts, onehot_labels, feature_num=1000)
+X_unique_word = Extractors.unique_feat_extractor(processed_texts)
+X_features = X_tfidf
 
-model_input = [X_input_ids, X_token_type_ids, X_attention_mask, X_tfidf, np.asarray(indexs, dtype=np.int32)]
+model_input = [X_input_ids, X_token_type_ids, X_attention_mask, X_features, np.asarray(indexs, dtype=np.int32)]
 
 for num in neigh_number:
     sample_neigh, sample_neigh_len = sample_neighs(G, indexs, num, self_loop=True)
@@ -161,8 +164,8 @@ for num in neigh_number:
 
 
 model = bert_graph.BERT_GraphSAGE(bert_path, maxlen, hidden_size, num_classes, neigh_maxlen, 
-                                  end2end=end2end, tfidf_features=tf_idf_feat_num,
-                                  n_hidden=16, use_bias=True, with_tfidf=with_tfidf)
+                                  end2end=end2end, tfidf_features=feat_num,
+                                  n_hidden=16, use_bias=True, with_tfidf=with_tfidf, aggregator_type='pooling')
 
 y = [y_train, y_test]
 mask = [train_mask, test_mask]

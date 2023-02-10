@@ -41,6 +41,8 @@ def write_excel(file: str, sheet_name: str, first_row: list, res: list):
     :param res:
     :return:
     """
+    if len(res) == 0:
+        res.append([''] * len(first_row))
     res = DataFrame(res)
     if os.path.exists(file) is False:
         with ExcelWriter(file) as writer:

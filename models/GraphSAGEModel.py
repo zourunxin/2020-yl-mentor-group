@@ -1,9 +1,19 @@
+import pdb
+
 import tensorflow as tf
 from tensorflow.python.keras.models import  Model
 from tensorflow.python.keras.layers import Input, Dense, Dropout, Layer, LSTM
 from tensorflow.python.keras.models import Model
 from tensorflow.python.keras.regularizers import l2
 from tensorflow.python.keras.initializers import glorot_uniform, Zeros
+import numpy as np
+
+def glorot(shape, name=None):
+    """Glorot & Bengio (AISTATS 2010) init."""
+    init_range = np.sqrt(6.0 / (shape[0] + shape[1]))
+    initial = tf.random.uniform(shape, minval=-init_range, maxval=init_range, dtype=tf.float32)
+    tf.reshape(initial, (1, initial.shape[0], initial.shape[1]))
+    return tf.Variable(initial, name=name)
 
 
 class MeanAggregator(Layer):
@@ -36,8 +46,9 @@ class MeanAggregator(Layer):
         self.dropout = Dropout(self.dropout_rate)
         self.built = True
 
-    def call(self, inputs, training=None):
-        features, node, neighbours = inputs
+    def call(self, inputs, i, training=None):
+
+        features, node, neighbours, raw_features = inputs
 
         node_feat = tf.nn.embedding_lookup(features, node)
         neigh_feat = tf.nn.embedding_lookup(features, neighbours)
@@ -90,7 +101,6 @@ class PoolingAggregator(Layer):
         # if neigh_input_dim is None:
 
     def build(self, input_shapes):
-
         self.dense_layers = [Dense(
             self.input_dim, activation='relu', use_bias=True, kernel_regularizer=l2(self.l2_reg))]
 
@@ -101,6 +111,7 @@ class PoolingAggregator(Layer):
             regularizer=l2(self.l2_reg),
 
             name="neigh_weights")
+        self.ag_weights = glorot([self.input_dim, self.output_dim],name='ag_weights')
 
         if self.use_bias:
             self.bias = self.add_weight(shape=(self.output_dim,),
@@ -109,11 +120,15 @@ class PoolingAggregator(Layer):
 
         self.built = True
 
-    def call(self, inputs, mask=None):
+    def call(self, inputs, i, mask=None):
 
-        features, node, neighbours = inputs
+        features, node, neighbours, raw_features = inputs
 
         node_feat = tf.nn.embedding_lookup(features, node)
+        if i == 0:
+            raw_features = tf.matmul(tf.nn.embedding_lookup(raw_features, node), self.ag_weights)
+        else:
+            node_feat = node_feat + raw_features
         neigh_feat = tf.nn.embedding_lookup(features, neighbours)
 
         dims = tf.shape(neigh_feat)
@@ -143,7 +158,7 @@ class PoolingAggregator(Layer):
 
         # output = tf.nn.l2_normalize(output, dim=-1)
 
-        return output
+        return output, raw_features
 
     def get_config(self):
         config = {'output_dim': self.output_dim,
@@ -165,15 +180,16 @@ def GraphSAGE(feature_dim, neighbor_num, n_hidden, n_classes, use_bias=True, act
         aggregator = PoolingAggregator
 
     h = features
+    raw_features = features
     for i in range(0, len(neighbor_num)):
         if i > 0:
             feature_dim = n_hidden
         if i == len(neighbor_num) - 1:
             activation = tf.nn.softmax
             n_hidden = n_classes
-        h = aggregator(units=n_hidden, input_dim=feature_dim, activation=activation, l2_reg=l2_reg, use_bias=use_bias,
+        h, raw_features = aggregator(units=n_hidden, input_dim=feature_dim, activation=activation, l2_reg=l2_reg, use_bias=use_bias,
                        dropout_rate=dropout_rate, neigh_max=neighbor_num[i], aggregator=aggregator_type)(
-            [h, node_input, neighbor_input[i]])  #
+            [h, node_input, neighbor_input[i], raw_features], i)  #
 
     output = h
     input_list = [features, node_input] + neighbor_input
