@@ -132,6 +132,7 @@ def edge_statistic():
     G.add_nodes_from(pkg_label.keys())
     G.add_edges_from(edges)
     nums[3] = len(list(nx.isolates(G)))
+    write_excel('/Users/zourunxin/Mine/Seminar/20Data/1228/analy_src_data/specificEdge_pkg.xlsx', '没有边的包', ['pkg'], list(nx.isolates(G)))
     # 画包种类图
     plt.subplot(2, 2, 2)
     plt.pie(nums, labels=['仅有同层边的包数量', '同层-不同层边均有的包数量', '仅有不同层边的包数量', '没有边的包数量'], autopct=make_autopct(nums))

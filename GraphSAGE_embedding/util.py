@@ -38,7 +38,7 @@ def load_data(cfg):
 
 
 def load_data2(cfg):
-    df_data = pd.read_csv('../output/datasource_1228.csv')
+    df_data = pd.read_csv('../output/datasource_1228_without_isolate_node.csv')
     processed_texts = list(df_data["text"].apply(lambda x: NLPUtils.preprocess_text(x)))
     feat_data = Extractors.tfidf_feat_extractor(processed_texts, feature_num=1000)
     idx_name_map, node_map = CommonUtils.get_idx_name_map(df_data["name"])
