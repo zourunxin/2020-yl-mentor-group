@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 from utils import NLPUtils
-from utils.FileUtil import csv_reader, write_csv, write_excel
+from utils.FileUtil import csv_reader, write_csv, write_excel, xlrd_reader
 from utils.CommonUtils import convert_label
 
 
@@ -24,25 +24,24 @@ def del_illegal_edge():
     return
 
 
-def layer_feat_extractor():
+def delete_isolate_node():
     """
-    使用 tfidf 获得 unique word
+    删除孤立节点
     """
-    reader = csv_reader('/Users/zourunxin/Mine/Seminar/20Data/1228/datasource_1228_rpm.csv')
-    layer_text = {}
-    for line in reader:
-        layer = convert_label(line[1], mode='layer')
-        text = " ".join(set(s.lower() for s in NLPUtils.preprocess_text(line[2]).split(' ')))
-        lText = layer_text.get(layer, "") + " " + text
-        layer_text[layer] = lText
-    # 建立词袋模型
-    print("开始提取 TF-IDF 特征(每个包的预料为一个文档)")
-    tv = TfidfVectorizer(max_features=300, max_df=1, stop_words="english")
-    tfidf = tv.fit_transform(layer_text.values())
-    write_excel('/Users/zourunxin/Mine/Seminar/20Data/1228/analy_src_data/distinct_word.xlsx', '300feat', ['word'], tv.get_feature_names())
+    reader = xlrd_reader('/Users/zourunxin/Mine/Seminar/20Data/1228/analy_src_data/specificEdge_pkg.xlsx', '没有边的包')
+    isolate_node = []
+    for i in range(1, reader.nrows):
+        isolate_node.append(reader.row_values(i)[0])
 
-    return tv.get_feature_names()
+    reader = csv_reader('../output/datasource_1228.csv')
+    res = []
+    for line in reader:
+        if line[0] in isolate_node:
+            continue
+        res.append(line)
+    write_csv('../output/datasource_1228_without_isolate_node.csv', ['name', 'label', 'text', 'summary', 'description'], res)
+
 
 
 if __name__ == '__main__':
-    print(layer_feat_extractor())
+    print(delete_isolate_node())
