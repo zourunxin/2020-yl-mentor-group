@@ -2,24 +2,24 @@
 import numpy as np
 import tensorflow as tf
 import os
-from util import load_data2
+from GraphSAGE_embedding.util import load_data2
 
 class config():
     def __init__(self):
         self._configs = {}
 
         self._configs['path']         = '/Users/zourunxin/Mine/Seminar/20/model-repo/graphsage_tf/cora/'
-        self._configs['dims']         = 128
+        self._configs['dims']         = 1024
         self._configs['lr']           = 0.01
-        self._configs['epochs']       = 10
-        self._configs['num_nodes']    = 2708
-        self._configs['num_features'] = 1433
-        self._configs['num_classes']  = 7
+        self._configs['epochs']       = 1
+        self._configs['num_nodes']    = 6514
+        self._configs['num_features'] = 1000
+        self._configs['num_classes']  = 4
         self._configs['sample_num']   = 10
-        self._configs['clf_ratio']    = 0.5
-        self._configs['batchsize']    = 1000
+        # self._configs['clf_ratio']    = 0.5
+        self._configs['batchsize']    = 10000
         self._configs['depth']        = 2 # 1 or 2
-        self._configs['neg_num']      = 20 # negative sampling number for unsupervised training
+        self._configs['neg_num']      = 50 # negative sampling number for unsupervised training
         self._configs['act']          = tf.nn.relu
         self._configs['features']     = None
         self._configs['adj_lists']    = None
@@ -122,6 +122,9 @@ class config():
 
 cfg = config()
 feat_data, labels, adj_lists, node_map = load_data2(cfg)
+cfg.update_config('num_nodes', len(node_map))
+cfg.update_config('num_features', len(feat_data))
+cfg.update_config('num_classes', len(set(labels)))
 cfg.update_config('features',feat_data)
 cfg.update_config('labels',labels)
 cfg.update_config('adj_lists',adj_lists)

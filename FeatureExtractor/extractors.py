@@ -155,6 +155,18 @@ def unique_feat_extractor(text_list, max_features=3000, speci_layer='all'):
     应用：'text + text'
     其它：'text + text'
     """
+    def get_fixed_num_word(layer_text, layer_cnt=0.8):
+        feature_names = tv.get_feature_names_out()
+        X = tfidf.toarray()
+        unique_word = []
+        for layer, line in zip(layer_text.keys(), X):
+            layer_unique_word = [a[1] for a in sorted([(x, feature_names[i]) for i, x in enumerate(line) if x != 0], reverse=True)]
+            # pdb.set_trace()
+            unique_word.extend(layer_unique_word[:int(len(layer_unique_word) * layer_cnt)])
+            print('{}层的 unique word 数量有: {}'.format(layer, len(layer_unique_word)))
+            print('{}层的 unique word 分别是: {}'.format(layer, layer_unique_word[:int(len(layer_unique_word) * layer_cnt)]))
+        return unique_word
+
     reader = csv_reader('/Users/zourunxin/Mine/Seminar/20Data/1228/datasource_1228_rpm.csv')
     layer_text = {}
     for line in reader:
@@ -166,17 +178,15 @@ def unique_feat_extractor(text_list, max_features=3000, speci_layer='all'):
     print("开始提取 unique word 特征(每个类的预料为一个文档)")
     tv = TfidfVectorizer(max_features=max_features, max_df=1, stop_words="english")
     tfidf = tv.fit_transform(layer_text.values())
-    print(tfidf)
-    print(tfidf[0])
-    pdb.set_trace()
-    unique_word = tv.get_feature_names()
+    unique_word = get_fixed_num_word(layer_text)
+    # unique_word = tv.get_feature_names()
 
     print("提取分层人工特征")
     feats = []
     for text in text_list:
         feat = []
         for word in unique_word:
-            feat.append(1 if text.find(word) != -1 else 0)
+            feat.append(1 if word in text.split(' ') else 0)
         feats.append(feat)
     return feats
 
@@ -211,7 +221,7 @@ def tfidf_feat_extractor(text_list, label_list=None, feature_num=1000):
     # return tfidf.toarray()
     # 建立词袋模型
     print("开始提取 TF-IDF 特征(每个包的语料为一个文档)")
-    tv = TfidfVectorizer(max_features=1000, stop_words="english")
+    tv = TfidfVectorizer(max_features=feature_num, stop_words="english")
     tfidf = tv.fit_transform(text_list)
     weights=tfidf.toarray() # 将tf-idf矩阵抽取出来，元素a[i][j]表示j词在i类文本中的tf-idf权重
 

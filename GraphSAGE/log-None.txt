@@ -1,0 +1,24 @@
+result:
+              precision    recall  f1-score   support
+
+          其它       0.03      0.29      0.05        73
+          应用       0.41      0.05      0.09       825
+          核心       0.02      0.05      0.03        63
+          系统       0.31      0.30      0.31       393
+
+    accuracy                           0.14      1354
+   macro avg       0.19      0.17      0.12      1354
+weighted avg       0.34      0.14      0.15      1354
+
+result:
+              precision    recall  f1-score   support
+
+          其它       0.07      0.63      0.13        73
+          应用       0.63      0.18      0.28       825
+          核心       0.04      0.11      0.06        63
+          系统       0.38      0.28      0.33       393
+
+    accuracy                           0.23      1354
+   macro avg       0.28      0.30      0.20      1354
+weighted avg       0.50      0.23      0.28      1354
+

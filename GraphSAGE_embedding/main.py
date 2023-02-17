@@ -2,14 +2,16 @@
 import pdb
 
 import tensorflow as tf
+import sys
+sys.path.append("../")
 tf.compat.v1.disable_v2_behavior()
 import numpy as np
 from sklearn.metrics import f1_score
 from collections import defaultdict
 import time
 import random
-from config import cfg
-from aggregator import *
+import GraphSAGE_embedding.config as cfg
+from GraphSAGE_embedding.aggregator import *
 import networkx as nx
 import itertools as it
 from sklearn import preprocessing
@@ -22,7 +24,7 @@ os.environ["CUDA_VISIBLE_DEVICES"]='1'
 class graphsage():
     def __init__(self):
         self.cfg = cfg
-        self.features = tf.Variable(self.cfg.features,dtype=tf.float32,trainable=False)
+        self.features = tf.Variable(self.cfg.features,dtype=tf.float32,trainable=False)     # tf.Variable 初始化变量
         if self.cfg.aggregator == 'mean':
             self.aggregator = mean_aggregator
         elif self.cfg.aggregator == 'pooling':
@@ -137,7 +139,7 @@ class graphsage():
         random.shuffle(walk_pairs)
         return walk_pairs,nodes,degrees
 
-    def sample(self,pos_nodes,nodes,p):
+    def neg_sample(self, pos_nodes, nodes, p):
         sample_nodes = []
         while len(sample_nodes)<self.cfg.neg_num:
             x = np.random.choice(nodes,size=1,replace=False,p=p)[0]
@@ -178,7 +180,7 @@ class graphsage():
                 input_1,input_2 = zip(*batchpairs)
                 input_1 = list(input_1)
                 input_2 = list(input_2)
-                input_3 = self.sample(input_2,nodes,p)
+                input_3 = self.neg_sample(input_2, nodes, p)
                 unique_nodes = list(set(input_1+input_2+input_3))
                 look_up = {x:i for i,x in enumerate(unique_nodes)}
                 samp_neighs_1st = self.sample_neighs(unique_nodes)
