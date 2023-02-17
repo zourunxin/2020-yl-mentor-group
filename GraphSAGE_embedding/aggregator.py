@@ -1,7 +1,9 @@
 #-*-coding:utf-8-*-
+import pdb
+
 import tensorflow as tf
 import numpy as np
-from config import cfg
+from GraphSAGE_embedding.config import cfg
 import random
 import os
 os.environ["CUDA_VISIBLE_DEVICES"]='1'
@@ -35,9 +37,9 @@ def lstm_aggregator(node_features,neigh_features,out_dims,scope_name):
             to_feats = tf.concat([neigh_features,node_embed],1)
         else:
             to_feats = neigh_features
-        lstm = tf.contrib.rnn.MultiRNNCell([tf.nn.rnn_cell.LSTMCell(out_dims) for _ in range(1)], state_is_tuple = True)
+        lstm = tf.compat.v1.nn.rnn_cell.MultiRNNCell([tf.compat.v1.nn.rnn_cell.LSTMCell(out_dims) for _ in range(1)], state_is_tuple = True)
         init_state = lstm.zero_state(tf.shape(to_feats)[0], dtype=tf.float32)
-        outputs, state = tf.nn.dynamic_rnn(lstm, inputs=to_feats, initial_state=init_state, time_major=False)
+        outputs, state = tf.compat.v1.nn.dynamic_rnn(lstm, inputs=to_feats, initial_state=init_state, time_major=False)
         combined = state[-1][1]
     return combined
 

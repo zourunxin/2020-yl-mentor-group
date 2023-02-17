@@ -136,10 +136,10 @@ class PoolingAggregator(Layer):
         features, node, neighbours, raw_features = inputs
 
         node_feat = tf.nn.embedding_lookup(features, node)
-        if i == 0:
-            raw_features = tf.matmul(tf.nn.embedding_lookup(raw_features, node), self.ag_weights)
-        else:
-            node_feat = node_feat + raw_features
+        # if i == 0:
+        #     raw_features = tf.matmul(tf.nn.embedding_lookup(raw_features, node), self.ag_weights)
+        # else:
+        #     node_feat = node_feat + raw_features
         neigh_feat = tf.nn.embedding_lookup(features, neighbours)
 
         dims = tf.shape(neigh_feat)
@@ -265,6 +265,7 @@ class BERT_GraphSAGE:
             node_input = Input(shape=(1,), dtype=tf.int32)
             neighbor_input = [Input(shape=(l,), dtype=tf.int32) for l in neighbor_num]
             graph_input_list = [tfidf_features, node_input] + neighbor_input
+            pdb.set_trace()
 
             if with_tfidf:
                 h = Concatenate()([graph_features, tfidf_features])
@@ -272,7 +273,6 @@ class BERT_GraphSAGE:
             else:
                 h = graph_features
                 raw_features = h
-            pdb.set_trace()
             for i in range(0, len(neighbor_num)):
                 if i > 0:
                     feature_dim = n_hidden

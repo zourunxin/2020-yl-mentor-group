@@ -68,7 +68,7 @@ class MeanAggregator(Layer):
         # output = tf.nn.l2_normalize(output,dim=-1)
         output._uses_learning_phase = True
 
-        return output
+        return output, raw_features
 
     def get_config(self):
         config = {'units': self.units,
@@ -109,7 +109,6 @@ class PoolingAggregator(Layer):
             initializer=glorot_uniform(
                 seed=self.seed),
             regularizer=l2(self.l2_reg),
-
             name="neigh_weights")
         self.ag_weights = glorot([self.input_dim, self.output_dim],name='ag_weights')
 
@@ -124,37 +123,34 @@ class PoolingAggregator(Layer):
 
         features, node, neighbours, raw_features = inputs
 
-        node_feat = tf.nn.embedding_lookup(features, node)
-        if i == 0:
-            raw_features = tf.matmul(tf.nn.embedding_lookup(raw_features, node), self.ag_weights)
-        else:
-            node_feat = node_feat + raw_features
+        node_feat = tf.nn.embedding_lookup(features, node)   # 从 features 选取 node 对应的特征组成新的特征（扩一维）
+        # if i == 0:
+        #     raw_features = tf.matmul(tf.nn.embedding_lookup(raw_features, node), self.ag_weights)
+        # else:
+        #     node_feat = node_feat + raw_features
         neigh_feat = tf.nn.embedding_lookup(features, neighbours)
 
-        dims = tf.shape(neigh_feat)
+        dims = tf.shape(neigh_feat)    # 获取张量形状
         batch_size = dims[0]
         num_neighbors = dims[1]
-        h_reshaped = tf.reshape(
-            neigh_feat, (batch_size * num_neighbors, self.input_dim))
+        h_reshaped = tf.reshape(neigh_feat, (batch_size * num_neighbors, self.input_dim))   # 将 neigh_feat 转换成指定形状
 
         for l in self.dense_layers:
             h_reshaped = l(h_reshaped)
-        neigh_feat = tf.reshape(
-            h_reshaped, (batch_size, num_neighbors, int(h_reshaped.shape[-1])))
+        neigh_feat = tf.reshape(h_reshaped, (batch_size, num_neighbors, int(h_reshaped.shape[-1])))
 
         if self.pooling == "meanpooling":
-            neigh_feat = tf.reduce_mean(neigh_feat, axis=1, keep_dims=False)
+            neigh_feat = tf.reduce_mean(neigh_feat, axis=1, keepdims=False)
         else:
             neigh_feat = tf.reduce_max(neigh_feat, axis=1)
 
-        output = tf.concat(
-            [tf.squeeze(node_feat, axis=1), neigh_feat], axis=-1)
+        output = tf.concat([tf.squeeze(node_feat, axis=1), neigh_feat], axis=-1)   # tf.squeeze 将维度为 1 的列表删掉（丢弃不合规的节点）。tf.concat 的 axis=-1 表示在最后一维对元素进行拼接
 
         output = tf.matmul(output, self.neigh_weights)
         if self.use_bias:
             output += self.bias
         if self.activation:
-            output = self.activation(output)
+            output = self.activation(output)    # activation=tf.nn.relu 将小于 0 的值置 0，大于 0 的值保持不变
 
         # output = tf.nn.l2_normalize(output, dim=-1)
 

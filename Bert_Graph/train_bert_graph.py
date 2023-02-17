@@ -45,11 +45,10 @@ df_data = pd.read_csv('../output/datasource_1228.csv')
 df_edges = pd.read_csv('../output/edges.csv')
 # df_edges = df_edges.loc[lambda df : (df['out'].isin(df_data["name"])) & (df['in'].isin(df_data["name"]))]
 processed_texts = list(df_data["text"].apply(lambda x: NLPUtils.preprocess_text(x)))
-idx_name_map, name_idx_map, idx_list = CommonUtils.get_idx_name_map(df_data["name"])
+idx_name_map, name_idx_map = CommonUtils.get_idx_name_map(df_data["name"])
 num_label_map, label_num_map = CommonUtils.get_num_label_map(df_data["label"])
 num_classes = len(num_label_map)
 onehot_labels = encode_onehot(label_num_map, list(df_data["label"]))
-pdb.set_trace()
 
 
 adj = sp.coo_matrix((np.ones(len(df_edges)), 
@@ -110,7 +109,7 @@ all_epochs = 100
 mode = "both"
 with_tfidf = True
 feat_num = 1000
-end2end = False
+end2end = True
 
 def tokenize(df):
     t = time.time()
